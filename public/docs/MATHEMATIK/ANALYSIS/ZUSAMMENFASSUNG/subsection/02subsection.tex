@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Differenzierbarkeit einer Funktion}
+\subsection{Der Differenzenquotient}
+Gegeben sei die Funktion $f\left(x\right)$ einer Kurve. Die \textbf{Steigung der Sekante} aus der Differenz zweier Punkte $P$ und $Q$ sei gegeben durch 
+\begin{equation}
+\boxed{m_{\text{Sek},PQ}=\tan\left(\epsilon\right)=\dfrac{\triangle y}{\triangle x}=\dfrac{f\left(x_Q\right)-f\left(x_P\right)}{x_Q-x_P}=\dfrac{f\left(x_P+\triangle x\right)-f\left(x_P\right)}{\triangle x}}
+\end{equation}
+\subsection{Der Differentialquotient}
+Gegeben sei die Funktion $f\left(x\right)$ einer Kurve. Die \textbf{Steigung der Tangente} an der Stelle $x_P$ entsteht aus dem Grenzwert für $x_Q\rightarrow x_P$ bzw. $\triangle x\rightarrow 0$. Ist der Grenzwert vorhanden, so ist die Funktion $f\left(x\right)$ an der Stelle $P$ \textbf{differenzierbar}.
+\begin{equation}
+\boxed{\begin{array}{lll}
+m_{\text{Tan},P}=\tan\left(\alpha\right)&=&\displaystyle \lim_{\triangle x\rightarrow 0}\dfrac{\triangle y}{\triangle x}=\displaystyle \lim_{x_Q\rightarrow x_P}\dfrac{f\left(x_Q\right)-f\left(x_P\right)}{x_Q-x_P}\\
+&=&\displaystyle \lim_{\triangle x\rightarrow 0}\dfrac{f\left(x_P+\triangle x\right)-f\left(x_P\right)}{\triangle x}\\
+&=&\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]=f'\left(x_P\right)
+\end{array}}
+\end{equation}
+\subsection{Die Ableitungsfunktion}
+Die \textbf{Ableitungsfunktion} $f'\left(x\right)$ ordnet jeder Stelle $x$ aus einem Intervall $I$ den Steigungswert der dortigen Kurventangente als Funktionswert zu. Man spricht dann kurz von der ersten Ableitung oder dem ersten Differentialquotient von $f\left(x\right)$.
+\newline\newline
+Eine differenzierbare Funktion ist immer \textbf{stetig}. Eine Funktion mit einer stetigen Ableitung wird als \textbf{stetig differenzierbar} bezeichnet.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ableitungen elementarer Funktionen}
+\subsection{Ableitungen der Potenzfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[x^n\Big]=n\cdot x^{n-1}$
+\end{enumerate}
+\subsection{Ableitungen der trigonometrischen Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\sin\left(x\right)\Big]=\cos\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\cos\left(x\right)\Big]=-\sin\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\tan\left(x\right)\Big]=\dfrac{1}{\cos^2\left(x\right)}=1+\tan^2\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\cot\left(x\right)\Big]=-\dfrac{1}{\sin^2\left(x\right)}=-1-\cot^2\left(x\right)$
+\end{enumerate}
+\subsection{Ableitungen der Arkusfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\arcsin\left(x\right)\Big]=\dfrac{1}{\sqrt{1-x^2}}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\arccos\left(x\right)\Big]=-\dfrac{1}{\sqrt{1-x^2}}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\arctan\left(x\right)\Big]=\dfrac{1}{1+x^2}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\arccot\left(x\right)\Big]=-\dfrac{1}{1+x^2}$
+\end{enumerate}
+\subsection{Ableitungen der Exponentialfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[e^x\Big]=e^x$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[a^x\Big]=\Big(\ln\left(a\right)\Big)\cdot a^x$
+\end{enumerate}
+\subsection{Ableitungen der Logarithmusfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\ln\left(x\right)\Big]=\dfrac{1}{x}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\log_a\left(x\right)\Big]=\dfrac{1}{\Big(\ln\left(a\right)\Big)\cdot x}$
+\end{enumerate}
+\subsection{Ableitungen der Hyperbelfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\sinh\left(x\right)\Big]=\cosh\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\cosh\left(x\right)\Big]=\sinh\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\tanh\left(x\right)\Big]=\dfrac{1}{\cosh^2\left(x\right)}=1-\tanh^2\left(x\right)$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\coth\left(x\right)\Big]=-\dfrac{1}{\sinh^2\left(x\right)}=1-\coth^2\left(x\right)$
+\end{enumerate}
+\subsection{Ableitungen der Areafunktionen}
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\text{Arsinh}\left(x\right)\Big]=\dfrac{1}{\sqrt{x^2+1}}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\text{Arcosh}\left(x\right)\Big]=\dfrac{1}{\sqrt{x^2-1}}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\text{Artanh}\left(x\right)\Big]=\dfrac{1}{1-x^2}$
+\item $\dfrac{\text{d}}{\text{d}x}\Big[\text{Arcoth}\left(x\right)\Big]=\dfrac{1}{1-x^2}$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ableitungsregeln}
+\subsection{Ableitung einer Konstante}
+Ein konstanter Faktor $C$ ist beim Differenzieren null
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[C\Big]=0}
+\end{equation}
+\subsection{Faktorregel}
+Ein konstanter Faktor $C$ bleibt beim Differenzieren erhalten
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[C\cdot f\left(x\right)\Big]=C\cdot \dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]}
+\end{equation}
+\subsection{Summenregel}
+Eine endliche Summe von Funktionen darf gliedweise differenziert werden
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[f_1\left(x\right)+\dotso+f_n\left(x\right)\Big]=\dfrac{\text{d}}{\text{d}x}\Big[f_1\left(x\right)\Big]+\dotso+\dfrac{\text{d}}{\text{d}x}\Big[f_n\left(x\right)\Big]}
+\end{equation}
+\subsection{Produktregel}
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\cdot v\left(x\right)\Big]=\dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\Big]\cdot v\left(x\right)+u\left(x\right)\cdot \dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]}
+\end{equation}
+\subsection{Quotientregel}
+Gebrochenrationale Funktionen werden nach dieser Regel differenziert
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[\dfrac{u\left(x\right)}{v\left(x\right)}\Big]=\dfrac{\dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\Big]\cdot v\left(x\right)-u\left(x\right)\cdot \dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]}{\Big[v\left(x\right)\Big]^2},\quad \Big(v\left(x\right)\neq 0\Big)}
+\end{equation}
+\subsection{Kettenregel}
+Die Ableitung einer aus den beiden elementaren Funktionen $F\left(u\right)$ und $u\left(x\right)$ zusammengesetzten verketteten Funktion $f\left(x\right)=F\Big(u\left(x\right)\Big)$ ist das Produkt aus der äusseren und der inneren Ableitung.
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]=\dfrac{\text{d}}{\text{d}u}\Big[F\left(u\right)\Big]\cdot \dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\Big]}
+\end{equation}
+\subsection{Logarithmische Differentiation}
+Bei der logarithmischen Differentiation wird die Funktion $f\left(x\right)$ zunächst beiderseits logarithmiert und anschliessend unter Verwendung der Kettenregel differenziert. Die Ableitung der logarithmierten Funktion $\ln\Big(f\left(x\right)\Big)$ heisst logarithmische Ableitung von $f\left(x\right)$.
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[\ln\Big(f\left(x\right)\Big)\Big]=\dfrac{1}{f\left(x\right)}\cdot \dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]}
+\end{equation}
+\subsection{Ableitung der Umkehrfunktion}
+Sei $y=f\left(x\right)$ eine umkehrbare Funktion und $x=g\left(y\right)$ die nach der Variablen $x$ aufgelöste Form von $y=f\left(x\right)$. Zwischen den Ableitungen besteht dann folgende Beziehung aus der sich die Ableitung der Umkehrfunktion bestimmen lässt, indem man zunächst in der Ableitung die Variable $x$ durch $g\left(y\right)$ ersetzt und anschliessend auf beiden Seiten die Variablen $x$ und $y$ vertauscht.
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[g\left(y\right)\Big]=\dfrac{1}{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]},\quad \Big(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\neq 0\Big)}
+\end{equation}
+\subsection{Ableitungen implizite Funktionen}
+Sei $F\left(x;y\right)=0$ die Gleichung der implizite Funktion. Die Ableitung lässt sich nach den folgenden zwei Methoden bestimmen.
+\subsubsection{Unter Verwendung der Kettenregel}
+Die Funktionsgleichung $F\left(x\right)=0$ wird gliedweise nach der Variablen $x$ differenziert, wobei $y$ als eine von $x$ abhängige Funktion zu betrachten ist. Daher ist jeder die Variable $y$ enthaltene Term unter Verwendung der Kettenregel zu differenzieren. Anschliessend wird die Gleichung nach $y'$ aufgelöst.
+\subsubsection{Unter Verwendung partieller Ableitungen}
+\begin{equation}
+\boxed{y'=-\dfrac{F_{x}\left(x;y\right)}{F_y\left(x;y\right)},\quad \Big(F_y\left(x;y\right)\Big)\neq 0}
+\end{equation}
+\subsection{Ableitung einer parameterabhängige Funktion}
+Sei $x=x\left(t\right)$ und $y=y\left(t\right)$ eine in der Parameterform dargestellten Funktion.
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x\left(t\right)}\Big[y\left(t\right)\Big]=\dfrac{\dfrac{\text{d}}{\text{d}t}\Big[y\left(t\right)\Big]}{\dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]}=\dfrac{\dot{y}\left(t\right)}{\dot{x}\left(t\right)}}
+\end{equation}
+\begin{equation}
+\boxed{\dfrac{\text{d}^2}{\text{d}x\left(t\right)^2}\Big[y\left(t\right)\Big]=\dfrac{\dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]\cdot \dfrac{\text{d}^2}{\text{d}t^2}\Big[y\left(t\right)\Big]-\dfrac{\text{d}}{\text{d}t}\Big[y\left(t\right)\Big]\cdot \dfrac{\text{d}^2}{\text{d}t^2}\Big[x\left(t\right)\Big]}{\Big[\dfrac{\text{d}}{\text{d}x}\Big[x\left(t\right)\Big]\Big]^3}}
+\end{equation}
+\subsection{Ableitung einer Funktion in Polarkoordinaten}
+Eine in Polarkoordinaten dargestellte Kurve mit der Gleichung $r\left(\varphi\right)$ lautet in der Parameterform
+$x\left(\varphi\right)=r\left(\varphi\right)\cdot \cos\left(\varphi\right)$ und $y\left(\varphi\right)=r\left(\varphi\right)\cdot \sin\left(\varphi\right)$, somit lauten die erste und die zweite Ableitungen
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x\left(\varphi\right)}\Big[y\left(\varphi\right)\Big]=\dfrac{\dfrac{\text{d}}{\text{d}\varphi}\Big[r\left(\varphi\right)\Big]\cdot \sin\left(\varphi\right)+r\left(\varphi\right)\cdot \cos\left(\varphi\right)}{\dfrac{\text{d}}{\text{d}\varphi}\Big[r\left(\varphi\right)\Big]\cdot \cos\left(\varphi\right)+r\left(\varphi\right)\cdot \sin\left(\varphi\right)}}
+\end{equation}
+\begin{equation}
+\boxed{\dfrac{\text{d}^2}{\text{d}x\left(\varphi\right)^2}=\dfrac{r\left(\varphi\right)^2+2\cdot \Big[\dfrac{\text{d}}{\text{d}\varphi}r\left(\varphi\right)\Big]^2-r\left(\varphi\right)\cdot \dfrac{\text{d}^2}{\text{d}\varphi^2}\Big[r\left(\varphi\right)\Big]}{\Big[\dfrac{\text{d}}{\text{d}\varphi}\Big[r\left(\varphi\right)\Big]\cdot \cos\left(\varphi\right)-r\left(\varphi\right)\cdot \sin\left(\varphi\right)\Big]^3}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Anwendungen der Differentialrechnung}
+\subsection{Geschwindigkeit und Beschleunigung}
+Geschwindigkeit $v\left(t\right)$ und Beschleunigung $a\left(t\right)$ einer geradlinigen Bewegung erhält man als 1. bzw. 2. Ableitung des Weg-Zeit-Gesetzes $s=s\left(t\right)$ nach der Zeit $t$
+\begin{equation}
+\boxed{v\left(t\right)=\dfrac{\text{d}}{\text{d}t}\Big[s\left(t\right)\Big]}
+\end{equation}
+\begin{equation}
+\boxed{a\left(t\right)=\dfrac{\text{d}}{\text{d}t}\Big[v\left(t\right)\Big]=\dfrac{\text{d}^2}{\text{d}t^2}\Big[s\left(t\right)\Big]}
+\end{equation}
+\subsection{Tangente und Normale}
+Tangente und Normale im Kurvenpunkt $P=\left(x_P;y_P\right)$ einer Kurve $y=f\left(x\right)$ stehen senkrecht aufeinander. Die Gleichung der \textbf{Tangente} und der \textbf{Normale} lauten
+\begin{equation}
+\boxed{\dfrac{y-y_P}{x-x_P}=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]}\quad \boxed{\dfrac{y-y_P}{x-x_P}=-\dfrac{1}{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]}}
+\end{equation}
+\subsection{Linearisierung einer Funktion}
+Eine nichtlinieare Funktion $y=f\left(x\right)$ lässt sich in der unmittelbaren Umgebung des Kurvenpunktes $P=\left(x_P;y_P\right)$ durch die dortige Kurventangente, d.h. durch eine lineare Funktion approximieren. Die Gleichung der \textbf{linearisierten Funktion} lautet
+\begin{equation}
+\boxed{y-y_P=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]\cdot \left(x-x_P\right)}
+\end{equation}
+\subsection{Monotonie und Krümmung einer Kurve}
+\subsubsection{Monotonie-Verhalten}
+Die 1. Ableitung einer Funktion $f\left(x\right)$ ist die Steigung der Kurventangente und bestimmt somit das Monotonie-Verhalten der Funktion
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]>0$: so ist $f\left(x_P\right)$ an der Stelle $x_P$ \textbf{streng monoton wachsend} und die Steigung der Tangente in $x_P$ ist positiv.
+\item $\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]<0$: so ist $f\left(x_P\right)$ an der Stelle $x_P$ \textbf{streng monoton fallend} und die Steigung der Tangente in $x_P$ ist negativ.
+\end{enumerate}
+\subsubsection{Krümmungs-Verhalten}
+Die 2. Ableitung einer Funktion $f\left(x\right)$ bestimmt das Krümmungs-Verhalten der Funktion
+\begin{enumerate}[$(a)$]
+\item $\dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]>0$: so hat die Funktion $f\left(x\right)$ an der Stelle $x_P$ eine \textbf{Linkskrümmung} bzw. eine \textbf{konvexe Krümmung} $\left(\curvearrowleft\right)$.
+\item $\dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]<0$: so hat die Funktion $f\left(x\right)$ an der Stelle $x_P$ eine \textbf{Rechtskrümmung} bzw. eine \textbf{konkave Krümmung} $\left(\curvearrowright\right)$.
+\end{enumerate}
+\subsubsection{Kurvenkrümmung}
+Die Krümmung $\kappa$ einer ebenen Kurve $y=f\left(x\right)$ im Kurvenpunkt $P=\left(x_P; y_P\right)$ ist ein quantitatives Mass dafür, wie stark der Kurvenverlauf in der unmittelbaren Umgebung dieses Punktes $P$ von dem einer Geraden abweicht
+\begin{equation}
+\boxed{\kappa_{\left(P\right)}=\dfrac{\dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]}{\Big[1+\left(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]\right)^2\Big]^{3/2}}}
+\end{equation}
+\begin{enumerate}[$(a)$]
+\item Ist $\kappa_{\left(P\right)}>0$: so liegt um Punkt $P$ eine \textbf{Linkskrümmung} vor $\left(\curvearrowleft\right)$.
+\item Ist $\kappa_{\left(P\right)}<0$: so liegt um Punkt $P$ eine \textbf{Rechtskrümmung} vor $\left(\curvearrowright\right)$.
+\end{enumerate}
+\subsubsection{Krümmungskreis}
+Der Krümmungskreis einer Kurve $f\left(x\right)$ im Kurvenpunkt $P\left(x_P;y_P\right)$ berührt dort die Kurve von 2. Ordnung. Der Radius dieses Kreies heisst \textbf{Krümmungsradius}, der Mittelpunkt $M=\left(x_M; y_M\right)$ \textbf{Krümmungsmittelpunkt}. 
+\subsubsection{Krümmungsradius}
+\begin{equation}
+\boxed{\rho=\dfrac{1}{\Big\vert \kappa\Big\vert}=\dfrac{\Big[1+\left(\dfrac{\text{d}}{\text{d}x}\Big[\left(x_P\right)\Big]\right)^2\Big]^{3/2}}{\Big\vert \dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]\Big\vert}}
+\end{equation}
+\subsubsection{Krümmungsmittelpunkt}
+Der Krümmungsmittelpunkt $M$ liegt stets auf der Kurvennormale des Berührungspunktes $P$. Die Verbindungslinie aller Krümmungsmittelpunkte einer Kurve heisst \textbf{Evolute}, die Kurve selbst wird als \textbf{Evolvente} bezeichnet. Die Koordinaten $x_M$ und $y_M$ des Krümmungsmittelpunktes sind dabei Funktionen der $x$-Koordinate des laufenden Kurvenpunktes $P$ und bilden daher eine Parameterdarstellung der zur Kurve gehörenden Evolute.
+\begin{equation}
+\boxed{x_M=x_P-\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]\cdot \dfrac{1+\left(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]\right)^2}{\dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]}}
+\end{equation}
+\begin{equation}
+\boxed{y_M=y_P+\dfrac{1+\left(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]\right)^2}{\dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]}}
+\end{equation}
+\subsection{Relative Extremwerte}
+Eine Funktion $f\left(x\right)$ besitzt in $x_P$ ein relatives Maximum bzw. ein relatives Minimum, wenn in einer gewissen Umgebung von $x_P$ stets $f\left(x_P\right)>f\left(x\right)$ bzw. $f\left(x_P\right)<f\left(x\right)$ ist mit $x\neq x_P$.
+\subsubsection{Relatives Minimum (Tiefpunkt)}
+Die Kurve $f\left(x\right)$ besitzt in $x_P$ eine \textbf{waagrechte Tangente} und \textbf{Linkskrümmung} $\left(\curvearrowleft\right)$ wenn
+\begin{equation} 
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]=0\quad \text{ und } \quad \dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]>0}
+\end{equation} 
+\subsubsection{Relatives Maximum (Hochpunkt)}
+Die Kurve $f\left(x\right)$ besitzt in $x_P$ eine \textbf{waagrechte Tangente} und \textbf{Rechtskrümmung} $\left(\curvearrowright\right)$ wenn
+\begin{equation} 
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]=0\quad \text{ und } \quad \dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]<0}
+\end{equation}
+\subsection{Wendepunkte und Sattelpunkte}
+\subsubsection{Wendepunkt}
+In einem \textbf{Wendepunkt} ändert sich die Art der Kurvenkrümmung, d.h. die Kurve geht dort von einer \textbf{Links- in eine Rechtskurve} über oder \textbf{umgekehrt}. In einem Wendepunkt ändert sichsomit der Drehsinn der Kurventangente. Folgende Bedingung ist hinreichend
+\begin{equation} 
+\boxed{\dfrac{\text{d}^2}{\text{d}x^2}\Big[x_P\Big]=0\quad \text{ und }\quad \dfrac{\text{d}^3}{\text{d}x^3}\Big[x_P\Big]\neq 0}
+\end{equation} 
+\subsubsection{Sattelpunkt}
+Ein \textbf{Sattelpunkt} auch \textbf{Terrasenpunkt} ist ein Wendepunkt mit waagrechter tangente. Die hinreichende Bedingung ist daher
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x_P\right)\Big]=0,\quad \dfrac{\text{d}^2}{\text{d}x^2}\Big[f\left(x_P\right)\Big]=0,\quad \dfrac{\text{d}^3}{\text{d}x^3}\Big[f\left(x_P\right)\Big]\neq 0}
+\end{equation}

@@ -1,0 +1,89 @@
+\section{Lineare Gleichungssysteme}
+Ein lineares Gleichungssystem besteht aus $m$ linearen Gleichungen und $n$ Unbekannte.
+\begin{equation}
+\boxed{\left\vert
+\begin{array}{ccccccccc}
+a_{11}x_1&+&a_{12}x_2&+&\dotso&+&a_{1n}x_n&=&b_1\\
+a_{21}x_1&+&a_{22}x_2&+&\dotso&+&a_{2n}x_n&=&b_2\\
+\vdots&&\vdots&&\ddots&&\vdots&&\vdots\\
+a_{m1}x_1&+&a_{m2}x_2&+&\dotso&+&a_{mn}x_n&=&b_m\\
+\end{array}
+\right\vert}
+\end{equation}
+Das System heisst homogen (Ebenen gehen durch $\overrightarrow{O}$), wenn alle $b_i=0$, anderenfalls inhomogen (Ebenen nicht durch $\overrightarrow{O}$).
+\newline\newline
+Das lineare Gleichungssystem besitzt keine Lösung, so nennt man inkonsistenz (zwei Ebenen schneiden sich in einer Gerade, diese Gerade ist parallel zu einer andere Gerade). Hat das lineare Gleichungssytem eine oder unendlich viele Lösungen, so nennt man konsistent (drei Ebenen schneiden sich in einem Punkt oder gehen durch eine Gerade).
+\newline\newline
+Die Matrix $A$ heisst Koeffizientenmatrix und wird durch elementare Zeilenoperationen oder linear Kombinationen umgeformt. Die erweiterte Koeffizientenmatrix $B=\left(A|\overrightarrow{b}\right)$ stellt eine Beziehung mit dem Spaltenvektor $\overrightarrow{b}$
+\newline\newline
+Durch elementare Zeilenoperationen (Zeilenvertauschung, Multiplikation einer Zeile mit einer konstanten ungleich null und Addition einer Zeile zu einer anderen Zeile) wird das lineare Gleichungssystemin Zeilenstufenform vermwandelt. Hieraus bestimmt man die Unbekannten des linearen Gleichungssystems durch Rückwärtseinsetzen oder durch die Cramersche Regel, wobei zwei Arten von Variablen auftreten: Die abhängige Variable, welche durch Pivotstellen bestimmt wird und die freie Variablen, also die Restlichen.
+\newline\newline
+Um die lineare Abhängigkeit einer Matrix $A$ eines linearen Gleichungssystems zu prüfen, transponiert man die Matrix $A$ und bringt sie durch Gauss-Eliminations-verfahren auf Zeilenstufenform. Hat es eine Nullzeile, so ist das System linear abhängig, sonst linear unabhängig.
+\newline\newline
+Die Anzahl $r$ von Zeilen verschieden von null ist eindeutig bestimmt. In jeder Zeile stehen links vor dem Pivotelement nur Null-Elementen, ebenso in den Spalten unter dem Pivotelement. Liest man von oben nach unten, so rückt die Pivotposition pro Zeile um mindestens eine Stelle nach rechts. Folgende Eigenschaften des Rangs $r(A)$ einer Matrix $A$ sind
+\begin{enumerate}[$(i)$]
+\item Der Rang ist die Anzahl der Zeilen ungleich null in der Zeilenstufenform.
+\item Der Rang ist die Anzahl linear unabhängiger Zeilen oder Spalten von $A$.
+\item Der Rang ist die Ordnung der grössten Unterdeterminante verschieden von Null der Matrix $A$ 
+\item $r\left(A\odot B\right)\leq \min\left[r\left(A\right), r\left(B\right)\right]$
+\item $r\left(A\odot A^T\right)=r\left(A^T\odot A\right)=r\left(A\right)$
+\end{enumerate}
+Sei $A\in\mathbb{R}^{n\times n}$ eine quadratische Matrix. Die Spur einer quadratischen Matrix ist die Summe seiner Diagonalelemente. Den Eigenschaften mit $x_i\in \mathbb{R}$ der Spur gehören dabei
+\begin{equation}
+\boxed{\text{Spur}\left(A\right)=\displaystyle \sum_{i=1}^na_{ii}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\text{Spur}\left(x_1\cdot A+x_2\cdot B\right)=x_1\cdot \text{Spur}\left(A\right)+x_2\cdot \text{Spur}\left(B\right)$
+\item $\text{Spur}\left(A\odot B\right)=\text{Spur}\left(B\odot A\right)$, wobei $A\in\mathbb{R}^{m\times n}$ und $B\in\mathbb{R}^{n\times m}$ 
+\item $\text{Spur}\left(A\right)=\displaystyle \sum_{i=1}^n\lambda_i$, ($\lambda_i$ sind die Eigenwerte von $A$)
+\end{enumerate}
+Für den Fall der unendlich viele Lösungen ist die Anzahl an freie variablen, wobei $n$ die Anzahl an Unbekannten und $r(A)$ der Rang der Matrix $A$, also die Anzahl an nciht Nullzeilen nach Gauss-Elimination. 
+\begin{equation}
+\boxed{\text{Anzahl an freie variablen} = n-r(A)}
+\end{equation}
+Die Anzahl an Lösungen eines homogenen Systems ist abhängig von der Anzahl an linearen Gleichungen $m$ und der Anzahl an Unbekannten $n$.
+\begin{equation} 
+\boxed{
+\begin{array}{l}
+n<m\Rightarrow\left\{
+\begin{matrix}r(A)=n\Rightarrow\text{eine Lösung}\\r(A)<n\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n=m\Rightarrow\left\{
+\begin{matrix}r(A)=n \text{ und } \det(A)\neq 0\Rightarrow\text{eine Lösung}\\r(A)<n \text{ und } \det(A)=0\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n>m\Rightarrow \infty\text{ - Lösungen}
+\end{array}
+}
+\end{equation}
+Die Anzahl an Lösungen eines inhomogenen Systems ist abhängig von der Anzahl an linearen Gleichungen $m$ und der Anzahl an Unbekannten $n$.
+\begin{equation} 
+\boxed{
+\begin{array}{l}
+n<m\Rightarrow\left\{
+\begin{matrix}r(A)<r(B)\Rightarrow\text{keine Lösung}\\r(A)=r(B)=n\Rightarrow\text{ eine Lösung}\\r(A)=r(B)<n\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n=m\Rightarrow\left\{
+\begin{matrix}r(A)=r(B)=n \text{ und } \det(A)\neq 0\Rightarrow\text{eine Lösung}\\r(A)<r(B) \Rightarrow\text{ keine Lösung}\\r(A)=r(B)<n \Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n>m\Rightarrow\left\{
+\begin{matrix}r(A)<r(B) \Rightarrow\text{keine Lösung}\\r(A)=r(B) \Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+\end{array}
+}
+\end{equation} 
+Hat das lineare Gleichungssystem keine Lösung, dann bleibt für alle $\overrightarrow{x}$ ein Defekt.
+\begin{equation}
+\boxed{\overrightarrow{d}=A\odot \overrightarrow{x}-\overrightarrow{b}}
+\end{equation}
+Wird für ein $\overrightarrow{x}$ die mittlere quadratische Abweichung minimal
+\begin{equation}
+\boxed{\eta=\sqrt{\dfrac{1}{m}\left(\epsilon_1^2+\epsilon_2^2+\dotso+2+\epsilon_n^2\right)}=\dfrac{1}{m}\cdot \Big\vert A\odot \overrightarrow{x}-\overrightarrow{b}\Big\vert}
+\end{equation}
+\begin{equation}
+\boxed{\left\{
+\begin{array}{lll}
+\epsilon_1&=&a_{11}\cdot x_1+a_{12}\cdot x_2+\dotso+a_{1n}\cdot x_n-b_1\\
+&=&\dotso\\
+\epsilon_m&=&a_{m1}\cdot x_1+a_{m2}\cdot x_2+\dotso+a_{mn}\cdot x_n-b_m\\   
+\end{array}
+\right\}}
+\end{equation}
+so nennt man $\overrightarrow{x}$ eine im quadratischen Mittel beste Lösung. Die Gauss-Normalgleichung hat für jedes $A$ und $\overrightarrow{b}$ stets eine Lösung. Die Gauss-Normalgleichung lautet
+\begin{equation}
+\boxed{A^T\odot A\odot \overrightarrow{x}=A^T\odot \overrightarrow{b}}
+\end{equation}

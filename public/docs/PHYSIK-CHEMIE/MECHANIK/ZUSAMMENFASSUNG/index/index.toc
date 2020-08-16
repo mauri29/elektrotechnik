@@ -1,0 +1,42 @@
+\contentsline {chapter}{\numberline {1}Statik}{3}%
+\contentsline {section}{\numberline {1.1}Kräfte}{3}%
+\contentsline {subsection}{\numberline {1.1.1}Definition der Kraft}{3}%
+\contentsline {subsection}{\numberline {1.1.2}Das Reaktionsprinzip}{4}%
+\contentsline {subsection}{\numberline {1.1.3}Innere und äussere Kräfte}{4}%
+\contentsline {subsection}{\numberline {1.1.4}Verteilte Kräfte und Kraftdichte}{4}%
+\contentsline {section}{\numberline {1.2}Leistung}{5}%
+\contentsline {subsection}{\numberline {1.2.1}Leistung einer Einzelkraft}{5}%
+\contentsline {subsection}{\numberline {1.2.2}Gesamtleistung mehrerer Kräfte}{6}%
+\contentsline {subsection}{\numberline {1.2.3}Gesamtleistung eines starren Massensystems}{6}%
+\contentsline {section}{\numberline {1.3}Äquivalenz und Reduktion}{7}%
+\contentsline {subsection}{\numberline {1.3.1}Statische Äquivalenz}{7}%
+\contentsline {subsection}{\numberline {1.3.2}Resultierende und Moment einer Kräftegruppe}{8}%
+\contentsline {subsection}{\numberline {1.3.3}Statische Äquivalenz bei speziellen Kräftegruppen}{10}%
+\contentsline {subsection}{\numberline {1.3.4}Kräftegruppen im Gleichgewicht}{12}%
+\contentsline {subsection}{\numberline {1.3.5}Reduktion einer Kräftegruppe}{12}%
+\contentsline {section}{\numberline {1.4}Parallele Kräfte und Schwerpunkt}{14}%
+\contentsline {subsection}{\numberline {1.4.1}Kräftemittelpunkt}{14}%
+\contentsline {subsection}{\numberline {1.4.2}Linien- und flächenverteilte Kräfte, Flächenmittelpunkt}{16}%
+\contentsline {subsection}{\numberline {1.4.3}Raumkräfte, Schwerpunkt und Massenmittelpunkt}{18}%
+\contentsline {section}{\numberline {1.5}Ruhe und Gleichgewicht}{20}%
+\contentsline {subsection}{\numberline {1.5.1}Definitionen}{20}%
+\contentsline {subsection}{\numberline {1.5.2}Berechnung von virtuellen Leistungen}{21}%
+\contentsline {subsection}{\numberline {1.5.3}Das Grundprinzip der Statik}{22}%
+\contentsline {subsection}{\numberline {1.5.4}Der Hauptsatz der Statik}{22}%
+\contentsline {section}{\numberline {1.6}Lagerbindungen und Lagerkräfte}{23}%
+\contentsline {subsection}{\numberline {1.6.1}Ebene Unterlagen}{23}%
+\contentsline {subsection}{\numberline {1.6.2}Lager bei Balkenträgern und Wellen}{24}%
+\contentsline {subsection}{\numberline {1.6.3}Vorgehen zur Ermittlung der Lagerkräfte}{25}%
+\contentsline {subsection}{\numberline {1.6.4}Bemerkungen}{25}%
+\contentsline {section}{\numberline {1.7}Statisch bestimmte Fachwerke}{27}%
+\contentsline {subsection}{\numberline {1.7.1}Ideale Fachwerke, Pendelstützen}{27}%
+\contentsline {subsection}{\numberline {1.7.2}Knotengleichgewicht}{28}%
+\contentsline {subsection}{\numberline {1.7.3}Dreikräfteschnitt}{29}%
+\contentsline {subsection}{\numberline {1.7.4}Anwendung des PdvL}{29}%
+\contentsline {section}{\numberline {1.8}Reibung}{30}%
+\contentsline {subsection}{\numberline {1.8.1}Physikalische Grundlage}{30}%
+\contentsline {subsection}{\numberline {1.8.2}Haftreibung}{31}%
+\contentsline {subsection}{\numberline {1.8.3}Gleireibung}{31}%
+\contentsline {subsection}{\numberline {1.8.4}Gelenk- und Lagerreibung}{32}%
+\contentsline {section}{\numberline {1.9}Seilstatik}{32}%
+\contentsline {section}{\numberline {1.10}Beanspruchung}{32}%

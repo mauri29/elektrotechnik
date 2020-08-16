@@ -1,6 +1,6 @@
 <h3>Analysis 2</h3>
 <p><b>Nummer:</b> an2. <b>ECTS:</b> 3.0. <b>Niveau:</b> basic</p>
-<p><b>Inhalt: </b> 
+<p><b>Inhalt: </b>
 <p>
 <ol>
 <li><b>Integralrechnung</b>
@@ -51,3 +51,5 @@
 </p>
 <p><b>Empfohlene Vorkenntnisse:</b> Analysis 1 (an1)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/MATHEMATIK/ANALYSIS/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> ANALYSIS</a></p>

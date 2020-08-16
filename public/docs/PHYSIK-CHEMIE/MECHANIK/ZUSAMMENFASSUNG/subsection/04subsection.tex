@@ -1,0 +1,204 @@
+Die Länge zwischen dem Verbindungsvektor $\overrightarrow{a}=\overrightarrow{MM'}$ zweier Massenpunkten sowie der Winkel zweier Verbindungsvektoren $\overrightarrow{a}=\overrightarrow{MM'}$ und $\overrightarrow{b}=\overrightarrow{MM''}$ dreier Massenpunkten $\measuredangle\left(M'MM''\right)$ eines starren Körpers bleiben konstant.
+\begin{equation}  
+\boxed{\overrightarrow{a}\bullet \overrightarrow{a}=\text{konstant}}\quad \boxed{\overrightarrow{a}\bullet \overrightarrow{b}=\Big\vert\overrightarrow{a}\Big\vert\cdot \Big\vert\overrightarrow{b}\Big\vert\cdot \cos\left(\alpha\right)}
+\end{equation}  
+\subsection{Satz der projizierten Geschwindigkeiten}
+Betrachte zwei beliebige Massenpunkte $M$ und $N$ eines starren Körpers und ihre Geschwindigkeiten $\overrightarrow{v}_M$ und $\overrightarrow{v}_N$ zum Zeitpunkt $t$ bezüglich $O_{xyz}$. Die Projektionen von $\overrightarrow{v}_M$ und $\overrightarrow{v}_N$ auf die Verbindungsgerade $\overrightarrow{r}_{MN}$ seien $\overrightarrow{v}_M'$ und $\overrightarrow{v}_N'$. Die Geschwindigkeiten $\overrightarrow{v}_M$ und $\overrightarrow{v}_N$ weisen zu allen Zeiten gleiche Projektionen in Richtung ihrer Verbindungsgerade $\overrightarrow{r}_{MN}$ auf. Der Satz der projizierten Geschwindigkeiten stellt eine Eigenschaft starrer Körper dar.
+\begin{equation}
+\boxed{
+\overrightarrow{v}_M'=\overrightarrow{v}_N'\Longleftrightarrow \overrightarrow{r}_{MN}\bullet \overrightarrow{v}_M=\overrightarrow{r}_{MN}\bullet\overrightarrow{v}_N
+} 
+\end{equation} 
+Zum Beweis gelten zwei willkürliche Massenpunkte $M$ mit $\overrightarrow{r}_M$ bzw. $\overrightarrow{v}_M$ und $N$ mit $\overrightarrow{r}_N$ bzw. $\overrightarrow{v}_N$ eines starren Massensystems $S$ mit 
+\begin{equation}
+\boxed{\begin{array}{lll}
+&&\overrightarrow{v}_M=\overrightarrow{\omega}\times \overrightarrow{r}_M,\quad \overrightarrow{v}_N=\overrightarrow{\omega}\times \overrightarrow{r}_N\\\\
+\overrightarrow{v}_M\bullet \overrightarrow{r}_{MN}&=&\overrightarrow{v}_M\bullet \left(\overrightarrow{r}_N-\overrightarrow{r}_M\right)\\
+&=&\left(\overrightarrow{v}_M\bullet \overrightarrow{r}_N\right)-\underbrace{\left(\overrightarrow{v}_M\bullet \overrightarrow{r}_M\right)}_{0}\\
+&=&\left(\overrightarrow{\omega}\times \overrightarrow{r}_M\right)\bullet \overrightarrow{r}_N\\\\
+\overrightarrow{v}_N\bullet \overrightarrow{r}_{MN}&=&\overrightarrow{v}_N\bullet \left(\overrightarrow{r}_N-\overrightarrow{r}_M\right)\\
+&=&\underbrace{\left(\overrightarrow{v}_N\bullet \overrightarrow{r}_N\right)}_{0}-\left(\overrightarrow{v}_N\bullet \overrightarrow{r}_M\right)\\
+&=&-\left(\overrightarrow{\omega}\times \overrightarrow{r}_N\right)\bullet \overrightarrow{r}_M=\\
+&=&\left(\overrightarrow{\omega}\times \overrightarrow{r}_M\right)\bullet \overrightarrow{r}_N\\\\
+&&\Longrightarrow\overrightarrow{r}_{MN}\bullet \overrightarrow{v}_M=\overrightarrow{r}_{MN}\bullet\overrightarrow{v}_N
+\end{array}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Translation}
+Bei der Bewegung eines starren Körpers bezüglich $O_{xyz}$ bleibt nicht nur der Betrag des Verbindungsvektors $\overrightarrow{MN}$ zweier Massenpunkte $M$ und $N$ sondern auch seine Richtung für alle Zeiten konstant. Somit sind alle Bahnkurven aller Massenpunkte vom starren Körper kongruent. Alle Geschwindigkeiten sind uniform gleichgerichtet und betragsmässig gleich.
+\begin{equation}
+\boxed{\overrightarrow{v}_M=\overrightarrow{v}_N}
+\end{equation}
+Bei geradlinigen Translationen heisst die Translation auch \textbf{geradlinig}, sonst ist die Translation \textbf{krummlinig}. Sind die Bahnkurven eben, so liegt eine ebene \textbf{krummlinige Translation} vor. Bei Federmechanismen, so nennt man diese Schwingungen \textbf{Translationsschwingungen}. Ist die Translation von Massenpunkte auf einem Kreis, so heisst sie \textbf{kreisförmige Translation}. Ist an einem Massensystem $S$ die Geschwindigkeit nur zu einem bestimmten Zeitpunkt $t=t_0$ gleichmässig verteilt, dann befindet sich das System in einer \textbf{momentanen Translation}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rotation}
+Bleiben bei der Bewegung eines starren Körpers bezüglich $O_{xyz}$ zwei Massenpunktep $A$ und $B$ für alle Zeiten ohne Lageänderung, so heisst die Bewegung \textbf{Rotation}.
+\newline\newline
+Die \textbf{Rotationsachse} $\mu:=\overrightarrow{AB}$ läuft durch die Massenpunkte $A$ und $B$ und ist auch in Ruhe. Jeder Massenpunkt ausserhalb dieser Rotationsachse beschreibt eine Kreisbahn senkrecht zu $\mu$ mit dem Mittelpunkte auf $\mu$. Alle Masenpunkte ausserhalb der Rotationsachse drehen sich auf ihren Kreisbahnen um den gleichen \textbf{Drehwinkel} $\phi\left(t\right)$ der Rotation und folgt daraus, dass alle Massenpunkte auf ihren Kreisbahnen mit gleicher Winkelschnelligkeit $\dot{\phi}\left(t\right)$.
+\begin{equation}
+\boxed{\overrightarrow{\omega}=\dot{\phi}\cdot \overrightarrow{e}_{\mu}=\omega\cdot \overrightarrow{e}_{\mu}}
+\end{equation}
+Diese gemeinsame Winkelgeschwindigkeit heisst \textbf{Rotationsgeschwindigkeit} und die skalare Grösse $\omega$ \textbf{Rotationsschnelligkeit}. Bleibt $\dot{\phi}$ konstant, so liegt eine \textbf{gleichförmige Rotation} vor.
+\newline\newline
+Bei der Rotation eines starren Körpers beschreibt jeder Massenpunkt eine Kreisbewegung mit der gleichen Winkelgeschwindigkeit $\overrightarrow{\omega}$ um die gemeinsame Rotationsachse $\mu$.
+\newline\newline
+Da der Ortsvektor $\overrightarrow{r}$ je nach Punkt $M$ verschiedene Beträge und Richtungen aufweist, sind die Geschwindigkeiten zu jedem Zeitpunkt örtlich veränderlich verteilt. Der Betrag der Geschwindigkeit zum Abstand von der Rotationsachse ist proportional. Der Betrag von $\overrightarrow{\omega}$ ist die Anzahl Umdrehungen pro Minute.
+\begin{equation}
+\boxed{\overrightarrow{v}\left(\overrightarrow{r}, t\right)=\overrightarrow{\omega}(t)\times \overrightarrow{r}}\quad \boxed{\Big\vert\overrightarrow{\omega}\Big\vert=\Big\vert\dot{\phi}\Big\vert=2\pi\dfrac{n}{60}} 
+\end{equation}
+Ist an einem Massensystem die Geschwindigkeitsverteilung nur zu einem bestimmten Zeitpunkt$t=t_0$ gegeben, dann befindet sich das System zu diesem Zeitpunkt in einer momentanen Rotation.
+\newline\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rollen und Gleiten}
+Das \textbf{Rollen} eines starren Massensystems $S$ ist der Berührungspunkt $\overrightarrow{r}_Z$ mit einer ruhenden Lage momentan in Ruhe $\overrightarrow{v}_Z=\overrightarrow{0}$. Die Geschwindigkeiten der restlichen Massenpunkte auf dem rollenden Massensystem liegen tangential zum Verbindungsvektor $\overrightarrow{v}_M\perp \overrightarrow{r}_{ZM}$. Der Punkt $Z$ heisst \textbf{Momentanzentrum}. 
+\newline\newline
+Zum Zeitpunkt $t_0$ eine Geschwindigkeitsverteilung mit $\overrightarrow{\omega}=\omega\cdot \overrightarrow{e}_{\mu}$ und liegt auf der Berührungsgerade zwischen Massensystem $S$ und ruhende Lage. Die Rollbewegung entspricht also einer momentanen Rotation um die jeweilige Berührungsgerade. Die mit der Berührungsgerade zusammenfallende Achse $\mu$ der momentanen Rotation verschiebt sich parallel auf der horizontalen Ebene. Die Bahnkurven der einzelnen Punkte sind Zykloiden mit Krümmungsmittelpunkten $Z\left(t_0\right)$ auf der jeweiligen Achse der momentanen Rotation.
+\newline\newline
+Das \textbf{Gleiten} hat Berührungspunkte mit nicht verschwindender Geschwindigkeit, da die Geschwindigkeiten tangential zur Berührungsebene sind. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kreiselung}
+Bleibt bei der BEwegung eines starren Massensystems bezüglich $O_{xyz}$ ein Punkt $P\in S$ für alle Zeiten $t$ fest, ohne Lageänderung, so heisst deie Bewegung eine \textbf{Kreiselung}. \newline\newline
+Jeder Massenpunkt $M\in S$ führt eine sphärische Bewegung mit Bahnkurve auf der Kugeloberfläche vom Radius $\overrightarrow{r}_{PM}$ und seine Geschwindigkeit liegt senkrecht $\overrightarrow{v}_M\perp \overrightarrow{r}_{PM}$ dazu. Das Massensystem $S$ rotiert um eine momentane Rotationsachse $\mu$ durch $P$, seine Winkelgeschwindigkeit ist $\overrightarrow{\omega}=\omega\cdot \overrightarrow{e}_{\mu}$, wobei $\overrightarrow{e}_{\mu}$ ein veränderlicher Einheitsvektor ist.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Die allgemeinste Bewegung}
+Ein starrer Massensystem $S$ zum Zeitpunkt $t$ bewegt sich bezüglich $O_{xyz}$. Die Bewegung des Systems wird durch einen Bezugspunkt $B\in S$ mit dem Ortsvektor $\overrightarrow{r}_B$ und einen Massenpunkt $M\in S$ mit dem Ortsvektor 
+\begin{equation}
+\boxed{\overrightarrow{r}_M=\overrightarrow{r}_B+\overrightarrow{r}_{BM}}
+\end{equation}
+Somit läuft die Bewegung auf einer Kugeloberfläche mit Radius $\Big\vert\overrightarrow{r}_{BM}\Big\vert$ und Radius $B$ als Zentrum. Die Kugel führt hierbei eine Translationsbewegung mit der Geschwindigkeit $\overrightarrow{v}_B\left(t\right)=\dot{\overrightarrow{r}_B}\left(t\right)$.
+\newline\newline
+Die Geschwindigkeit vom Massenpunkt $M$ besteht aus folgenden Beziehungen. Der Vektor $\overrightarrow{\omega}=\omega\cdot \overrightarrow{e}_{\mu}$ entspricht der momentanen Rotationsgeschwindigkeit der Kreiselung um den gewählten Bezugspunkt $B\in S$
+\begin{equation}
+\boxed{\overrightarrow{v}_M=\dot{\overrightarrow{r}_M}=\dot{\overrightarrow{r}_B}+\dot{\overrightarrow{r}}_{BM}}
+\end{equation}
+\begin{equation}
+\boxed{\dot{\overrightarrow{r}}_{BM}=\overrightarrow{\omega}\times \overrightarrow{r}_{BM}}\quad \boxed{\overrightarrow{\omega}=\omega\cdot \overrightarrow{e}_{\mu}}
+\end{equation}
+Die Grundgleichung des Bewegungszustandes eines starren Massensystems $S$ lautet
+\begin{equation}
+\boxed{\overrightarrow{v}_M=\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BM},\quad \forall B,M\in S}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item Ist $\overrightarrow{\omega}=0$ für alle $t$, so führt das Massensystem $S$ eine \textbf{Translation} mit $\overrightarrow{v}_B=\overrightarrow{v}_M$.
+\item Ist $\overrightarrow{v}_B=\overrightarrow{0}$ für alle $t$, so beschreibt das Massensystem $S$ eine \textbf{Kreiselung} um $B$.
+\item Falls sowohl $\overrightarrow{\omega}\neq \overrightarrow{0}$, so liegt eine allgemeine Bewegung vor und setzt sich aus einer \textbf{Translation} und aus einer \textbf{Kreiselung} zusammen.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kinemate und Invarianzen}
+Die Kinemate in $B$ ist $\{\overrightarrow{v}_B, \overrightarrow{\omega}\}$ und besteht aus dem Vektor der Translation $\overrightarrow{v}_B$ und aus dem Vektor $\overrightarrow{\omega}$ der momentane Rotation um die Achse $\mu$ und allgemein die Kreiselung um $B$. 
+\newline\newline
+Da Bezugspunkte im Massensystem $S$ frei wählbar sind erhält man durch die Kinemate in $B$ als Bezugspunkt einen weiteren Bezugspunkt $B'$
+\begin{equation} 
+\boxed{\overrightarrow{v}_{B'}=\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}}
+\end{equation} 
+Mit der Kinemate in $B$ $\{\overrightarrow{v}_{B}, \overrightarrow{\omega}\}$ und die Kinemate in $B'$ $\{\overrightarrow{v}_{B'}, \overrightarrow{\omega'}\}$, untersucht man die Kinemate in einem weiteren Massenpunkt $M$ unter der Bedingung, dass $\overrightarrow{r}_{BM}=\overrightarrow{r}_{BB'}+\overrightarrow{r}_{B'M}$ und $\overrightarrow{v}_{B'}=\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}$ sind.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\overrightarrow{v}_M&=&\overrightarrow{v}_M\\
+\overrightarrow{v}_B+\overrightarrow{\omega}\times \left(\overrightarrow{r}_{BM}\right)&=&\overrightarrow{v}_{B'}+\overrightarrow{\omega'}\times \overrightarrow{r}_{B'M}\\
+\overrightarrow{v}_B+\overrightarrow{\omega}\times \left(\overrightarrow{r}_{BB'}+\overrightarrow{r}_{B'M}\right)&=&\overrightarrow{v}_{B'}+\overrightarrow{\omega}'\times \overrightarrow{r}_{B'M}\\
+\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}+\overrightarrow{\omega}\times \overrightarrow{r}_{B'M}&=&\left(\overrightarrow{v}_{B'}\right)+\overrightarrow{\omega}'\times \overrightarrow{r}_{B'M}\\
+\cancel{\left(\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}\right)}+\left(\overrightarrow{\omega}\times \overrightarrow{r}_{B'M}\right)&=&\cancel{\left(\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}\right)}+\left(\overrightarrow{\omega}'\times \overrightarrow{r}_{B'M}\right)\\
+\left(\overrightarrow{\omega}\times \overrightarrow{r}_{B'M}\right)-\left(\overrightarrow{\omega'}\times \overrightarrow{r}_{B'M}\right)&=&\overrightarrow{0}\\
+\left(\overrightarrow{\omega}- \overrightarrow{\omega'}\right)\times \overrightarrow{r}_{B'M}&=&\overrightarrow{0}
+\end{array}} 
+\end{equation} 
+\textbf{1. Invariante:} Zu jedem Zeitpunkt ist daher die Rotationsgeschwindigkeit $\overrightarrow{\omega}$ ärtlich konstant verteilt.
+\begin{equation}
+\boxed{\overrightarrow{\omega}=\overrightarrow{\omega'}\quad \forall B,\,B'\in S}
+\end{equation}
+Aus der Kinemate in $M$ durch den Bezugspunkt $B$ erweitert man durch die Bildung des Skalarproduktes auf beiden Seiten mit $\overrightarrow{\omega}$. Das Skalarproduukt weist in jedem Punkt des Massensystems $S$ den gleichen Wert auf. Die Komponente der Geschwindigkeit in $\overrightarrow{\omega}$-Richtung in jedem Massenpunkt des Massensystems durch den gleichen Vektor gegeben ist, dass also zu jedem Zeitpunkt und bei jeder nicht translatorischen Bewegung des Massensystems ist. Der neue Vektor $\overrightarrow{v}_{\omega}$ entsteht aus der Projektion der Vektoren $\overrightarrow{v}_M$ und $\overrightarrow{v}_B$ in Richtung von $\overrightarrow{\omega}$.
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{v}_M&=&\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BM}\\
+\overrightarrow{v}_M\bullet \overrightarrow{\omega}&=&\left(\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BM}\right)\bullet \overrightarrow{\omega}\\
+\overrightarrow{v}_M\bullet \overrightarrow{\omega}&=&\overrightarrow{v}_B\bullet \overrightarrow{\omega}+\underbrace{\left(\overrightarrow{\omega}\times \overrightarrow{r}_{BM}\right)\bullet \overrightarrow{\omega}}_{0}\\
+v_{\omega}&=&v_{\omega}
+\end{array}}
+\end{equation}
+\textbf{2. Invariante:} Die Komponente $v_{\omega}$ ist gleich für alle Punkte von $S$. Der neue Vektor $\overrightarrow{v}_{\omega}$ ist in Richtung der Rotationsgeschwindigkeit $\overrightarrow{\omega}$.
+\begin{equation}
+\boxed{\overrightarrow{v}_{\omega}=v_{\omega}\cdot \overrightarrow{e}_{\omega}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Zentralachse und Schraube}
+Auf einer Geraden $g$ betrachte man einen Bezugspunkt $B$ mit Kinemate $\{\overrightarrow{v}_B, \overrightarrow{\omega}\}$ und daraus alle weitere Bezugspunkte $B'$ bezüglich $B$ auf $g$. Die Geschwindigkeit in $B'$ wird durch eine in $g$ senkrecht gerichtete Komponente $\left(\overrightarrow{v}_{B'}\right)^{\perp}$ und eine in $\overrightarrow{\omega}$ parallel gerichetete Komponente $\overrightarrow{v}_{\omega}$. Somit folgt
+\begin{equation}
+\boxed{\left(\overrightarrow{v}_{B'}\right)^{\perp}=\left(\overrightarrow{v}_B\right)^{\perp}+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}}
+\end{equation}
+Die Vektoren $\left(\overrightarrow{v}_B\right)^{\perp}$ und $\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}$ sind senkrecht zur Ebene, welche von $\overrightarrow{\omega}$ und $g$ zueinander parallel. Auf die Gerade $g$ existiert einen Massenpunkt mit $\left(\overrightarrow{v}_Z\right)^{\perp}=0$. Der Verbindungsvektor erfüllt folgende Beziehung
+\begin{equation}
+\boxed{\overrightarrow{\omega}\times \overrightarrow{r}_{BZ}=-\left(\overrightarrow{v}_B\right)^{\perp}}
+\end{equation}
+Die skalare Auswertung der obigen Gleichung ergibt den Abstand $d_Z:=\Big\vert\overrightarrow{r}_{BZ}\Big\vert$
+\begin{equation}
+\boxed{d_Z=\dfrac{\Big\vert\overrightarrow{\left(\overrightarrow{v}_B\right)^{\perp}}\Big\vert}{\Big\vert\overrightarrow{\omega}\Big\vert}}
+\end{equation}
+Die Kinemate in $Z$ $\{\overrightarrow{v}_Z\equiv \overrightarrow{v}_{\omega}, \overrightarrow{\omega}\}$ besteht aus einer Translationsgeschwindigkeit parallel dazu. Diese Kinemate in $Z$ entspricht eine \textbf{momentane Schraubung}, welche aus einer momentanen Rotation mit $\overrightarrow{\omega}$ und einer momentanen Translation mit $\overrightarrow{v}_{\omega}$ in Richtung von $\overrightarrow{\omega}$ besteht.
+\newline\newline
+Stellt man den allgemeinsten Bewegungszustand eines Massenpunktes $S$ bezüglich $Z$, also durch eine Schraube, dar, so erkennt man dass für alle Massenpunkte $Z'$ auf der Geraden $\xi$ durch $Z$ in Richtung $\overrightarrow{\omega}$ die Geschwindigkeit $\overrightarrow{v}_{Z'}=\overrightarrow{v}_{\omega}$, also keine zu $\overrightarrow{\omega}$ senkrechte Komponente besitzt, denn der Zusatzterm mit dem Vektorprodukt zwischen $\overrightarrow{\omega}$ und $\overrightarrow{r}_{ZZ'}$ verschwindet. Diese Gerade $\xi$ heisst \textbf{Zentralachse} des Bewegungszustandes von $S$ zum Zeitpunkt $t$. Diese Zentralachse ist eine Gerade parallel zu $\overrightarrow{\omega}$ und liegt in der Ebene durch $B$ senkrecht zu $\left(\overrightarrow{v}_B\right)^{\perp}$.
+\newline\newline
+Die Kinemate in den Massenpunkten $Z$ der Zentralachse besteht aus den beiden Invarianzen $\overrightarrow{v}_Z\equiv \overrightarrow{v}_{\omega}$ und $\overrightarrow{\omega}$ und heisst \textbf{Schraube}. 
+\newline\newline
+Die allgemeinste Bewegung eines starren Massensystems ist eine \textbf{Schraubung um die Zentralachse}.
+\newline\newline
+Seien $B$ und $B'$ zwei Bezugspunkte und $Z\in \xi$ und $Z'\in \xi'$ zwei Massenpunkte auf der entsprechenden Zentralachsen. Wobei $\overrightarrow{v}_{\omega}$ als 2. Invariante des allgemeinsten Bewegungszustandes vom Bezugspunkt unabhängig bleibt. 
+\begin{equation}
+\boxed{\begin{array}{llll}
+&\overrightarrow{v}_{B'}&=&\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}\\\\
+(i)&\overrightarrow{v}_Z&=&\overrightarrow{v}_{\omega}=\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BZ}\\\\
+(ii)&\overrightarrow{v}_{Z'}&=&\overrightarrow{v}_{\omega}=\overrightarrow{v}_{B'}+\overrightarrow{\omega}\times \overrightarrow{r}_{B'Z'}\\
+&&=&\overrightarrow{v}_{\omega}=\left(\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BB'}\right)+\overrightarrow{\omega}\times \overrightarrow{r}_{B'Z'}\\
+&&=&\overrightarrow{v}_{\omega}=\overrightarrow{v}_{B}+\overrightarrow{\omega}\times \overrightarrow{r}_{BZ'}\\\\
+(i)=(ii)&\overrightarrow{0}&=&\left(\overrightarrow{\omega}\times \overrightarrow{r}_{BZ'}\right)-\left(\overrightarrow{\omega}\times \overrightarrow{r}_{BZ}\right)\\
+&\overrightarrow{0}&=&\overrightarrow{\omega}\times \left(\overrightarrow{r}_{BZ'}-\overrightarrow{r}_{BZ}\right)\\
+\end{array}}
+\end{equation}
+Folgende Gleichung kann nnur für Massenpunkte $Z'$ erfüllt werden, welche auf der Geraden durch $Z$ parallel zu $\overrightarrow{\omega}$, also auf der Zentralachse $\xi$ liegen; folglich fallen $\xi$ und $\xi'$ zusammen.
+\begin{equation}
+\boxed{\overrightarrow{\omega}\times \left(\overrightarrow{r}_{BZ'}-\overrightarrow{r}_{BZ}\right)=\overrightarrow{0}}
+\end{equation}
+Die Konstruktion der Zentralachse versagt, falls $\overrightarrow{\omega}=\overrightarrow{0}$ ist, mithin der Bewegungszustand einer momentanen Translation entspricht und die Zentralachse wandert ins Unendliche. Die Schraube degeneriert, falls $\overrightarrow{v}_{\omega}=\overrightarrow{0}$ oder $\overrightarrow{v}_{\omega}=\overrightarrow{0}$ ist, was gleich bedeutend ist mit
+\begin{equation} 
+\boxed{\overrightarrow{\omega}\bullet \overrightarrow{v}_B=0}
+\end{equation}
+Damit die obige Formel gültig ist, müssen eine der folgenden Bedingungen erfüllt sein
+\begin{enumerate}[$(i)$] 
+\item $\boxed{\overrightarrow{\omega}=\overrightarrow{0}}$ : Es liegt eine momentane Translation vor. Die 2. Invariante wird durch $\overrightarrow{v}_B$ übernommen.
+\item $\boxed{\overrightarrow{v}_B=\overrightarrow{0}}$ : Es liegt eine momentane Rotation um die Achse $\mu$ durch $B$ in $\overrightarrow{\omega}$-Richtung vor. Die 2. Invariante $\overrightarrow{v}_{\omega}=\overrightarrow{0}$ verschwindet und die Zentralachse reduziert sich auf die Momentanachse $\mu\equiv\xi$ durch $B$.
+\item $\boxed{\overrightarrow{v}_B\perp\overrightarrow{\omega}}$ : Die 2. Invariante verschwindet. Die Zentralachse $\xi$ geht nicht durch $B$, hat aber alle Punkte $Z$ mit $\overrightarrow{v}_{\omega}=\overrightarrow{0}$, degeneriert also wieder zu einer momentaner Rotationsachse $\mu$. Dieser Fall kommt in der ebene Bewegung Zustande. 
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Die ebene Bewegung}
+Die Bewegung eines starren Massensystems $S$ heisst \textbf{ebene Bewegung}, wenn die Bahnkurve aller Massenpunkte auf der Ebene sind. Die Bahnkurven sind kongruent zur parallelen Ebene $O_{xy}$. Die Geschwindigkeiten sind zu allen Zeiten parallel zur Ebene. 
+\newline\newline
+Die Lage eines Massensystems $S$ bezüglich eines ebenen Bezugssystems $O_{xy}$ hängt von den den kartesischen Koordinaten in $x$- und $y$-Richtung, sowie durch den Winkel zwischen dem Bezugspunkt $B$ und betrachtetem Massenpunkt $M$. 
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{r}_{BM}&=&\rho\cdot \cos\left(\varphi\right)\cdot \overrightarrow{e}_x+\rho\cdot \sin\left(\varphi\right)\cdot \overrightarrow{e}_y\\\\
+\dot{\overrightarrow{r}}_{BM}&=&-\rho\cdot \dot{\varphi}\cdot \sin\left(\varphi\right)\cdot \overrightarrow{e}_x+\rho\cdot \dot{\varphi}\cdot \cos\left(\varphi\right)\cdot \overrightarrow{e}_y\\
+&=&\left(\dot{\varphi}\cdot \overrightarrow{e}_z\right)\times\left(\rho\cdot \cos\left(\varphi\right)\cdot \overrightarrow{e}_x+\rho\cdot \sin\left(\varphi\right)\cdot \overrightarrow{e}_y\right)\\
+&=&\dot{\varphi}\cdot \overrightarrow{e}_z\times \overrightarrow{r}_{BM}\\
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{llll}
+&\overrightarrow{r}_M&=&\overrightarrow{r}_B+\overrightarrow{r}_{BM}\\\\
+(i)&\dot{\overrightarrow{r}}_M&=&\left(\dot{\overrightarrow{r}}_B\right)+\left(\dot{\overrightarrow{r}}_{BM}\right)\\
+&&=&\overrightarrow{v}_B+\left(\dot{\varphi}\cdot \overrightarrow{e}_z\times \overrightarrow{r}_{BM}\right)\\\\
+(ii)&\overrightarrow{v}_M&=&\overrightarrow{v}_B+\overrightarrow{\omega}\times \overrightarrow{r}_{BM}\\\\
+(i)=(ii)&\overrightarrow{\omega}&=&\dot{\varphi}\cdot \overrightarrow{e}_z
+\end{array}}
+\end{equation}
+Daraus folgt die Beziehung der Rotationsgeschwindigkeit $\overrightarrow{\omega}$ senkrehct auf der Ebene in $z$-Richtung mit Betrag als Rotationsschnelligkeit $\dot{\varphi}$, als zeitliche Ableitung des Winkels zwischen den Bezugspunkt $B$ und den betrachteten Massenpunkt $M$. 
+\begin{equation}
+\boxed{\overrightarrow{\omega}=\dot{\varphi}\cdot \overrightarrow{e}_z}
+\end{equation}
+Ausserdem erkennt man dass $\overrightarrow{v}_B\perp \overrightarrow{\omega}$ ist. Die Zentralachse reduziert sich auf eine momentane Drehachse $\mu$ mit Richtungsvektor $\overrightarrow{\omega}$. Die 2. Invariante $\overrightarrow{\omega}=\overrightarrow{0}$ verschwindet für alle Massenpunkte des Massensystems $S$, so fällt die auftretende senkrechte Komponente $\left(\overrightarrow{v}_B\right)^{\perp}$ mit $\overrightarrow{v}_B$ zusammen und so ist im Schnittpunkt von $\mu\in E$ die Geschwindigkeit $\overrightarrow{v}_Z=\overrightarrow{0}$ und sich die Schraube auf $\overrightarrow{\omega}$ reduziert. Der Schnittpunkt $Z$ wird genannt \textbf{Momentanzentrum} und ist der einzige momentan ruhende Massenpunkt. 
+\newline\newline D
+ie Geschwindigkeit $\overrightarrow{v}_M$ eines Massenpunktes $M$ ist dann senkrecht zur Verbindungsgeraden mit dem Momentanzentrum $Z$ und besitzt den durch den Drehsinn von $\overrightarrow{\omega}=\omega\cdot \overrightarrow{e}_z=\dot{\varphi}\cdot \overrightarrow{e}_z$ vorgeschriebenen Richtungssinn sowie den mit dem Abstand $r$ von $Z$ gebildeten Betrag
+\begin{equation}  
+\boxed{v_M=\omega\cdot r}
+\end{equation}  

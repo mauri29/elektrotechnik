@@ -1,0 +1,114 @@
+Dieses Kapitel beinhaltet unter anderem Anweisungen, mit denen der Kontrolfluss in einem M-File gesteuert werden kann. Die Ausführung von Befehlen kann damit z.B, von logischen Bedingungen abhängig gemacht werden. Eine logische Bedingung, die wahr ist, hat in Matlab den Wert 1, eine nicht wahre Bedingung den Wert 0.
+\\\\
+Folgende vier Auswahl- und Wiederholungsanweisungen stehen in Matlab zur Verfügung:
+\begin{enumerate}[$a)$]
+\item \texttt{if}, zusammen mit \texttt{else} und \texttt{else if}, führt eine Gruppe von Befehlen dann aus, wenn eine vorgegebene logische Bedingung erfüllt ist.
+\item \texttt{for} durchläuft eine Schlaufe mit Befehlen für eine feste Anzahl von Wiederholungen.
+\item \texttt{while} repetiert solange eine von einer logischen Bedingung abhängige Schlaufe, bis die logische Bedingung nicht mehr erfüllt ist.
+\item \texttt{switch}, zusammen mit \texttt{case} und \texttt{otherwise}, führt abhängig von einer Entscheidungsvariablen unterschiedliche Gruppen von Befehlen aus.  
+\end{enumerate}
+\section{Bedingte Befehlsabfolge}
+Der Befehl \boxed{\textbf{{if}}} führt abhängig von einer logischen Bedingung eine Gruppe von Befehlen aus. Die allgemeine Formel einer \texttt{if}-Anweisung lautet
+\\\\
+{\color{red}{\texttt{
+if Ausdruck1\\
+\indent Anweisungen\\
+elseif Ausdruck2\\
+\indent Anweisungen\\
+else \\
+\indent Anweisungen\\
+end}
+}}
+\\\\
+Falls der zu \texttt{if} gehörende Ausdruck, der eine logische Bedingung beschreibt, wahr ist, werden die darauf folgenden Befehle abgearbeitet. Dasselbe gilt für \texttt{elseif}. Ist keiner der Ausdrücke von \texttt{if} oder \texttt{elseif} wahr, werden die auf \texttt{else} folgenden Befehle ausgeführt.
+\\\\
+Es können mehrere \texttt{elseif} innerhalb der \texttt{if}-Anweisung vorkommen, \texttt{elseif} und \texttt{else} müssen aber nicht zwingend vorkommen.
+\\\\
+Wenn kein Ausdruck wahr ist, und kein \texttt{else} vorkommt, fährt MATLAB mit dem auf \texttt{end} folgenden Befehl fort. Für die logische Bedingung können die logischen Operatoren {\color{red}\texttt{==}}, {\color{red}\texttt{<}}, {\color{red}\texttt{>}}, {\color{red}\texttt{<=}}, {\color{red}\texttt{>=}} oder {\color{red}\texttt{$\sim$=}} verwendet werden.
+\lstinputlisting[language=Matlab, caption={Übung M2b) Teil 3}]{../../PROJEKTE/bspif/bspif.m}
+Der Befehl \boxed{\textbf{\texttt{for}}} ist eine Schlaufe mit einer festen Anzahl Durchläufe. Die allgemeine Form lautet
+\\\\
+{\color{red}
+\texttt{
+for Index=Start:Inkrement:Ende\\
+\indent statements\\
+end\\
+}
+}
+\\\\
+Index bezeichnet die Variable in der for-Schlaufe. Wird siegestartet,so wird demIndex der Startwert zugewiesen. Bei jedem Durchlauf werden die Anweisungen in der for-Schlaufe ausgeführt, und der Index erhöht sich jeweils um den Wert des Inkrements bis der Endwert erreicht wird. Das Inkrement kann auch negativ sein. Das vordefinierte Inkrement hat den Wert 1. Mit dem Befehl {\color{red}\texttt{break}} kann aus einer Schlaufe vorzeitig ausgestiegen werden.
+\lstinputlisting[language=Matlab, caption={For-Schleife}]{../../PROJEKTE/bspfor/bspfor.m}
+\lstinputlisting[language=Matlab, caption={For-Schleife}]{../../PROJEKTE/bspfor/bspfor2.m}
+Der Befehl \boxed{\textbf{\texttt{while}}} durchläuft eine Schlaufe in Abhängigkeit einer logischen Bedingung. Die allgemeine Form einer while-Schlaufe lautet
+\\\\
+{\color{red}\texttt{
+while Ausdruck\\
+\indent Anweisungen\\   
+end
+}}
+\\\\
+Solange die logische Bedingung wahr ({\color{red}\texttt{>0}}) ist, wird die Schlaufe durchlaufen, d.h. die Befehle werden ausgeführt. Für die logische Bedingung können die logischen Operatoren {\color{red}\texttt{==}}, {\color{red}\texttt{<}}, {\color{red}\texttt{>}}, {\color{red}\texttt{<=}}, {\color{red}\texttt{>=}}, {\color{red}\texttt{$\sim$=}} verwendet werden. Mit dem Befehl {\color{red}\texttt{break}} kann vorzeitig aus einer Schlaufe ausgestiegen werden.
+\lstinputlisting[language=Matlab, caption={While}]{../../PROJEKTE/bspwhile/bspwhile.m}
+Der Befehl \boxed{\textbf{\texttt{switch}}} ist abhängig vom Wert, den ein festgelegter Ausdruck annimmt. Dieser Befehl führt unterschiedliche Teile eines M-Files aus. Die allgemeine Form einer switch-Bedingung lautet
+\\\\
+{\color{red}\texttt{
+switch Ausdruck\\
+\indent case Wert1\\
+\indent \indent Anweisungen\\
+\indent case \{Wert2, Wert3\}\\
+\indent \indent Anweisungen\\
+\indent $\dotso$\\
+\indent otherwise\\
+\indent \indent Anweisungen\\
+end
+}}
+\\\\
+\texttt{switch} vergleicht den Wert von Ausdruck mit den Werten in den verschiedenen \texttt{case}. Das erste \texttt{case}, von dem einer der Werte mit dem Wert von Ausdruck übereinstimmt, wird ausgeführt. Ein \texttt{case} kann mehrere Werte haben. Es wird maximal ein \texttt{case} ausgeführt. Stimmt keiner der WErte mit dem Wert von Ausdruck überein, so werden die unter \texttt{otherwise} aufgelisteten Befehle abgearbeitet, falls \texttt{otherwise} existiert.
+\lstinputlisting[language=Matlab, caption={Switch}]{../../PROJEKTE/bspswitch/bspswitch.m}
+\lstinputlisting[language=Matlab, caption={Switch}]{../../PROJEKTE/bspswitch/bspswitch2.m}
+\section{MATLAB Funktionen} 
+Mit dem Befehl \boxed{\textbf{\texttt{function}}} wird eine neue Funktion in MATLAB definiert. Eine Funktion in MATLAB ist ein spezielles M-File, das durch den Befehl \texttt{function} in der ersten Zeile gekennzeichnet ist. Im Gegensatz zu Skript M-Files müssen bei Funktionen Variablen explizit übergeben und zurückgegeben werden. Skript M-Files arbeiten mit den Variablen aus dem MATLAB-Workspace. Funktionen dagegen haben ihren lokalen Workspace. 
+\\\\
+In einer Funktion verwendete Variablen sind im MATLAB-Workspace nicht definiert und umgekehrt. Eine Funktion besteht aus der Kopfzeile, dem help-Text und den Befehlszeilen.
+\\\\
+{\color{red}\texttt{function y = fname(x)}} 
+\\\\
+Die Kopfzeile weist ein M-File als MATLAB-Funktion aus und legt die Syntax der Funktion fest. Die hier verwendeten Variablennamen müssen nicht identisch sein mit den später beim Funktionsaufruf verwendeten Variablennamen.
+\\\\
+Die Kopfzeile muss mit dem Befehl {\color{red}\texttt{function}} beginnen. Nach einem Leerzeichen werden die Ausgabeargumente definiert. Auf das Gleichheitszeichen folgt der Name der MATLAB-Funktion. Sie trägt bis auf die File-Erweiterung \boxed{\textbf{\texttt{``.m''}}} (die weggelassen wird) denselben Namen wie das M-File, in dem sie abgespeichert wird. Direkt nach dem Namen werden in einem Klammerpaar die Eingabeargumente definiert.
+\\\\
+Es ist von Vorteil, eine Funktion mit einem ausführlichen Kommentar zu versehen. Damit kann leichter nachvollzogen werden, welchen Zweck die Funktion hat.
+\\\\
+Auf die Kopfzeile folgt direkt der help-Text der Funktion, der durch \%-Zeichen am Zeilenanfang als Kommentar gekennzeichnet ist. Wird in MATLAB \texttt{help fname} eingegeben, so wird dieser help-Text wiedergegeben. Die erste Zeile des help-Texts sollte den Funktionsnamen enthalten und mit einigen charakteristischen Begriffen den Zweck der Funktion umreisen. Der Befehl {\color{red}\texttt{lookfor}} referenziert diese erste Zeile bei der Stichwortsuche in MATLAB.
+\\\\
+Es erscheinen nur diejenigen Kommentare als help-Text, die zwischen der Kopfzeile und der ersten Befehlszeile liegen.
+\\\\
+Die Funktionen kann weiter Unterfunktionen, Schlaufen, Kalkulationen, Wertzuweisungen, Kommentare und Leerzeilen beinhalten oder andere Funktionen aufrufen.
+\\\\
+Mit dem Befehl {\color{red}\texttt{return}} kann eine Funktion vorzeitig verlassen werden, z.B. wenn eine vorgegebene Abbruchbedingung in der Funktion eingetreten ist.
+\lstinputlisting[language=Matlab, caption={botta}]{../../PROJEKTE/functions/botta.m}
+Der Befehl \boxed{\textbf{\texttt{nargin}}} bestimmt die Anzahl der Eingabeargumente einer Funktion. In einer Funktion eruiert der Befehl {\color{red}\texttt{nargin}}, wieviele Arguemntedie Funktion erhalten hat. Je nach Anzahl der Argumente können dann z.B. unter Verwendung von if-Anweisungen unterschiedliche Aufgaben zw. Berechnungen durchgeführt werden.
+\\\\
+{\color{red}\texttt{nargin('fname')}} gibt die Anzahl der definierten Eingabeargumente der Funktion ``fname''.
+\lstinputlisting[language=Matlab, caption={nargin}]{../../PROJEKTE/bspnargin/bspnargin.m}
+Der Befehl \boxed{\textbf{\texttt{nargout}}} bestimmt die Anzahl Ausgabeargumente einer Funktion. In einer Funktion eruiert der Befehl {\color{red}\texttt{nargout}}, wieviele Werte die Funktion auszugeben hat. Je nach Anzahl der verlangten Ausgabeargumente können dann z.B. mittels einer if-Anweisung unterschiedliche Befehle zur Ausführung gelangen.
+\\\\
+{\color{red}{\texttt{nargout('fname')}}} gibt die Anzahl der definierten Ausgabeargumente der Funktion ``fname''.
+\lstinputlisting[language=Matlab, caption={nargout}]{../../PROJEKTE/bspnargout/bspnargout.m}
+Der Befehl \boxed{\textbf{\texttt{global}}} definiert eine globale Variable. Grundsätzlich sind ie in einer Funktion verwendeten Variablen nur lokal definiert. Aus einer anderen Funktion oder aus dem Workspace kann nicht darauf zugegriffen werden. Wie auch die Funktion selber nicht auf Variablen des workspace oder anderer Funktionen zugreifen kann.
+\\\\
+Wenn aber in einer Funktion eine Variable als globale Variable definiert wird, ist sie für alle anderen Funktionen und für den workspace zugänglich, sofern soe dort ebenfalls für global erklärt wurde.
+\lstinputlisting[language=Matlab, caption={nargout}]{../../PROJEKTE/bspglobal/bspglobal.m}
+\section{Befehle auswerten und ausführen} 
+Der Befehl \boxed{\textbf{\texttt{eval}}} führt einen in einem String enthaltenen MATLAB-Befehl aus. {\color{red}\texttt{eval(`Befehl')}} interpretiert den String als MATLAB-Befehl und behandelt ihn dementsprechend. Mit {\color{red}\texttt{eval(`Befehl1', `Befehl2')}} besteht die Möglichkeit, Fehlermeldungen zu unterdrücken, indem in zwei Strings für eine Berechnung zwei unterschiedliche Befehle eingegeben werden. 
+\\\\
+Falls einer der beiden Befehle einen Fehler erzeugt, wird ohne Fehlermeldung der andere ausgeführt. Im ersten String kann z.B. eine neue Berechnung ausprobiert werden, unnd im zweiten der alte Befehl eingegeben werden. Damit ist eine Ausgabe garantiert.
+\\\\
+Der Befehl \boxed{\textbf{\texttt{feval}}} führt eine in einem String enthaltene MATLAB-Funktion aus. {\color{red}{\texttt{feval(`Funktion,x1,...,xn')}}} interpretiert den String als MATLAB-Funktion und behandelt ihn dementsprechend. \texttt{feval} berechnet die genannte Funktion, die gewöhnlich in einem separaten M-File definiert wird, an den Stellen \texttt{x1} bis \texttt{xn}.
+\\\\
+Der Befehl \boxed{\textbf{\texttt{run}}} führt ein M-File aus, das nicht in einem Directory des aktuellen Pfads gespeichert ist. Normalerweise wird der Name eines M-Filies im Command Window eingetippt, um es auszuführen. Dies funktioniert jedoch nur, wenn das das M-File enthaltene Directory im aktuellen Pfad vermerkt ist. 
+\\\\
+Mit dem Befehl Der Befehl {\color{red}{\texttt{run}}} kann nun ein M-File ausgeführt werden, das sich nicht im aktuellen Pfad befindet. Mit {\color{red}{\texttt{run Dateinamen}}} wird das entsprechende M-File gestartet. Wird im Dateinamen der komplette Pfadname angegeben, so wechselt \texttt{run} vom momentan aktiven Directory zu dem Directory, in dem sich das betreffende M-File befindet, führt es aus, und wechselt wieder ins ursprünglich aktive Directory zurück. 
+
+
+

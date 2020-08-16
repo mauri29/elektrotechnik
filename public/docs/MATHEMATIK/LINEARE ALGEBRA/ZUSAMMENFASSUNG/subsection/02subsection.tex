@@ -1,0 +1,60 @@
+\section{Das Skalarprodukt}
+Für $\overrightarrow{OA}$ und $\overrightarrow{OB}$, die den Winkel $\varphi$ einschliessen, ist das Skalarprodukt folgendermassen definert
+\begin{equation} 
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=\Big\vert \overrightarrow{OA}\Big\vert\cdot \Big\vert \overrightarrow{OB}\Big\vert\cdot \cos\left(\varphi\right)}
+\end{equation} 
+und entspricht die Länge des Schattens von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$. Zu den Eigenschaften des Skalarproduktes zählen
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=\overrightarrow{OB}\bullet \overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda\cdot \overrightarrow{OA}\right)\bullet \overrightarrow{OB}=\lambda\cdot \left(\overrightarrow{OA}\bullet \overrightarrow{OB}\right)}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda\cdot\overrightarrow{OA}\right)\bullet \left(\mu\cdot\overrightarrow{OB}\right)=\left(\lambda\cdot \mu\right)\cdot \left(\overrightarrow{OA}\bullet \overrightarrow{OB}\right)}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \left(\overrightarrow{OB}+\overrightarrow{OC}\right)=\overrightarrow{OA}\bullet \overrightarrow{OB}+\overrightarrow{OA}\bullet \overrightarrow{OC}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OA}=\Big\vert\overrightarrow{OA}\Big\vert^2\cdot \cos\left(0\right)=\Big\vert\overrightarrow{OA}\Big\vert^2}
+\end{equation}
+\begin{equation}
+\boxed{\Big\vert\overrightarrow{OA}\bullet\overrightarrow{OB}\Big\vert\leq\Big\vert\overrightarrow{OB}\Big\vert,\quad (\text{Kathete}\leq\text{Hypothenuse})}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=0\Leftrightarrow \overrightarrow{OA}\perp \overrightarrow{OB},\quad (\text{Orthogonalität})}
+\end{equation}
+Das Skalarprodukt einer Orthogonalbasis in $\mathbb{R}^n$ lautet
+\begin{equation}
+\boxed{\begin{array}{l}
+\begin{pmatrix}OA_1\\OA_2\\\vdots\\OA_n\end{pmatrix}\bullet \begin{pmatrix}OB_1\\OB_2\\\vdots\\OB_n\end{pmatrix}\\
+=\left(OA_1\cdot OB_1\right)\cdot\left(\overrightarrow{e}_1\bullet \overrightarrow{e}_1\right)+\dotso+\left(OA_n\cdot OB_n\right)\cdot\left(\overrightarrow{e}_n\bullet \overrightarrow{e}_n\right)\\
+=\left(OA_1\cdot OB_1\right)+\dotso+\left(OA_n\cdot OB_n\right)=\displaystyle \sum_{i=1}^nOA_i\cdot OB_i\\
+\end{array}}
+\end{equation}
+Der Winkel zwischen Vektoren lautet
+\begin{equation}
+\boxed{\varphi=\arccos\left(\dfrac{\overrightarrow{OA}\bullet \overrightarrow{OB}}{\Big\vert\overrightarrow{OA}\Big\vert\cdot \Big\vert\overrightarrow{OB}\Big\vert}\right)}
+\end{equation}
+Die orthogonale Projektion von $\overrightarrow{OB}$ auf die durch den Vektor $\overrightarrow{OA}$ gegebene Richtung ist der Vektor $\overrightarrow{OB}_{\overrightarrow{OA}}=k\cdot \overrightarrow{OA}$ mit
+\begin{equation} 
+\boxed{k=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\overrightarrow{OA}\bullet \overrightarrow{OA}}=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert^2}}
+\end{equation} 
+Die Projektion von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$ steht parallel zu $\overrightarrow{OA}$
+\begin{equation}
+\boxed{\overrightarrow{OB}_{\overrightarrow{OA}}=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert^2}\cdot \overrightarrow{OA}=\underbrace{\left(\overrightarrow{OB}\bullet \dfrac{\overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert}\right)}_{\text{Schattenlänge}}\cdot \underbrace{\dfrac{\overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert}}_{\text{normierte Richtung}}}
+\end{equation}
+Das Lot von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$ steht senkrecht zu $\overrightarrow{OA}$
+\begin{equation}
+\boxed{\overrightarrow{OH}=\overrightarrow{OB}-\overrightarrow{OB}_{\overrightarrow{OA}}}
+\end{equation}
+Aus diesem Grund erzeugt es sich beispielsweise die Projektion eines Punktes auf einer Geraden durch den Ursprung (Lot). 
+\begin{equation}
+\boxed{\overrightarrow{OP}'=\overrightarrow{OP}-\left(\overrightarrow{OP}\bullet \overrightarrow{n}\right)\cdot \overrightarrow{n}}\quad \boxed{\overrightarrow{n}=\dfrac{\overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}}
+\end{equation}
+und die Spiegelung eines Punktes auf einer Geraden durch den Ursprung
+\begin{equation}
+\boxed{\overrightarrow{OP}''=\overrightarrow{OP}-2\cdot \left(\overrightarrow{OP}\bullet \overrightarrow{n}\right)\cdot \overrightarrow{n}}\quad \boxed{\overrightarrow{n}=\dfrac{\overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}}
+\end{equation}
+\lstinputlisting[language=Matlab, caption={Das Skalarprodukt}]{../programs/scalarproduct.m}

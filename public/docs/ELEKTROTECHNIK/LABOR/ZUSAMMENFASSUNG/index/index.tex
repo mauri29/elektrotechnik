@@ -1,0 +1,104 @@
+\documentclass[8pt, a4paper]{scrreprt}
+%%%%%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FONTS %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+%\usepackage{mathptmx} %Times
+%\usepackage{mathpazo} %Palatino
+%\usepackage{helvet} %Helvetica
+%\usepackage{avant} %Avant Garde
+%\usepackage{courier} %Courier
+%\usepackage{chancery} %Zapf Chancery
+
+%%%%%%%%%%%%%%%%%%%%%%%% MARGINS %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,includeheadfoot, landscape]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{comment} 
+\usepackage[explicit]{titlesec}
+\usepackage{float}
+\usepackage[margin=1cm, justification=centering, singlelinecheck=no,tablename=Tab., figurename=Abb.]{caption}
+\usepackage{subfigure}
+\restylefloat{figure}
+%%%%%%%%%%%%%%%%%%%%%%%% MATH %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{esint}
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arccot}{arccot}
+
+%%%%%%%%%%%%%%%%%%%%%%%% COLORS %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{sectsty}
+%\chapterfont{\color{cyan}}
+\sectionfont{\color{orange}}
+\subsectionfont{\color{violet}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% BOLD %%%%%%%%%%%%%%%%%%%%%%%%
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{cyan}{\oldtextbf{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER LAYOUT %%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\chapter}
+  {\normalfont\Large\bfseries\color{cyan}}{\thechapter \quad \MakeUppercase{#1}}{.5em}{\vspace{.5ex}}[\titlerule]
+\titlespacing*{\chapter}
+  {0pt}{0pt}{15pt}
+
+\makeatletter
+\renewcommand*{\chapterformat}{%
+  \mbox{\chapapp~\thechapter\autodot:\enskip}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%% BOXED %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*{\boxedcolor}{cyan}
+\makeatletter
+\renewcommand{\boxed}[1]{\textcolor{\boxedcolor}{%
+  \fbox{\normalcolor\m@th$\displaystyle#1$}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% LSTLISTINGS %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings} 
+\lstset{numbers=left, numberstyle=\tiny, numbersep=10pt} \lstset{language=Java} % Code einbinden
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.4pt}
+\input{../section/01section}
+\input{../section/02section}
+\input{../section/03section}
+\input{../section/04section}
+\end{multicols}
+\end{document}
+    

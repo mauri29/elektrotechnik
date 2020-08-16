@@ -1,0 +1,81 @@
+\textbf{Drehbuch}
+\begin{enumerate}[$\bullet$]
+\item Administration Unterricht, Leistungsbewertung, Unterlagen, Homepage.
+\item Matlab und Toolboxen: eine Einführung.
+\item Erster Start von MATLAB, Fensterorganisation und Erklärungen.
+\item Gastreferenten aus der Praxis zeigen den Umgang mit Matlab
+\end{enumerate}
+\textbf{Lernziele}
+Die Studierenden...
+\begin{enumerate}[$\bullet$]
+\item haben Klarheit über die Unterrichtsorganisation und die Leistungsbeurteilung.
+\item lernen Matlab kennen mit den wichtigsten Fenstern.
+\item kennen die wichtigsten Toolboxen für ihr Studium mit einem Beispiel.
+\item und wissen, wie man überprüfen kann, welche installiert sind
+\end{enumerate}
+\section{Getting started in Matlab}
+\begin{enumerate}
+\item Sie definieren eine Variable \texttt{a} mit dem Wert 5 $\Longrightarrow$ {\color{magenta}\texttt{a=5}}
+\item Sie definieren einen Vektor mit 100 Werten $\Longrightarrow$ {\color{magenta}\texttt{linspace(0,1)}}
+\item Sie löschen den Bildschirm $\Longrightarrow {\color{magenta}\texttt{clc}}$
+\end{enumerate}
+\section{Die Matlab Homepage}
+Matlab besitzt eine gute Homepage. Sie finden diese unter folgendem Link:
+%\hyperlink{https://ch.mathworks.com/de/}{https://ch.mathworks.com/de/}
+Unter der Mathworks Community finden Sie viele Antworten auf Ihre Probleme.
+\\\\
+\textbf{Aufgabe:}
+Suchen Sie in der Community Hilfe für den Befehl {\color{red}\texttt{rotate surface}}.
+Wählen Sie das erste Beispiel aus.
+Dieses Beispiel kann direkt im Webbrowser (ohne Benutzung von Matlab) ausgeführt werden.
+\\\\
+Probieren Sie dies aus:
+$\Rightarrow$ Try this example $\Rightarrow$ Try it in your browser
+ändern Sie den Code auf 
+{\color{red}\texttt{surf(peaks(100),'Parent',t)}}
+ab und führen Sie diesen aus.
+Waren Sie erfolgreich? Nein
+\section{Was ist eigentlich Simulink?}
+Simulink basiert auf Matlab und ist eine zusätzliche Umgebung. Während Matlab ein textbasiertes Programm ist, ist Simulink grafisch orientiert. Man kann komplexe Gleichungen einfach grafisch darstellen.
+\begin{enumerate}
+\item Die Programmierung in Matlab erfolgt: {\color{magenta}mittels Text}.
+\item Die Programmierung in Simulink ist: {\color{magenta}grafisch aufgebaut}.
+\item Simulationen in Simulink: {\color{magenta}sind immer in Funktion der Zeit}.
+\item Komplexe differentialgleichungen können: {\color{magenta}einfach grafisch dargestellt werden}.
+\item Programmblöcke werden mittels: {\color{magenta}grafischer Linien miteinander verbunden}.
+\end{enumerate}
+\section{Toolboxen in Matlab und Simulink}
+\begin{enumerate}
+\item Eigentlich ist Matlab ein numerisches Programm. Die {\color{magenta}Symbolic Math Toolbox} bildet eine Ausnahme. Diese Toolbox wurde vor einigen Jahren von einer externen Firma eingekauft und integriert.
+\item {\color{magenta}Simscape} erlaubt die Simulation von physikalischen Systemen.
+\item Die {\color{magenta}Signal Processing Toolbox} ist ein Zusatz in Matlab und erlaubt die Verarbeitung von z.B. Audiosignalen. 
+\item Die {\color{magenta}Control System Toolbox} war eine der ersten Toolboxen in Matlab. Sie ist extrem mächtig. Sie wird häufig in der Regelungstechnik verwendet und beihaltet Auslegungen von z.B. einem PID-Regler.
+\item {\color{magenta}Matlab} kennen Sie bereits: dies ist ein leistungsstarker texbasierter Editor.
+\item {\color{magenta}Simulink} ist dagegen grafisch orientiert.
+\end{enumerate}
+\section{Model Based Design}
+Ein Design wird folgendermassen umgesetzt:
+\begin{enumerate}
+\item {\color{magenta}Aufbau des Modells:}
+Aufbau des Modells (Physik) vor allem in Simulink z.T. auch in Matlab (embedded Functions)
+Regelungen werden direkt in Simulink gezeichnet
+\item {\color{magenta}Simulation des Modells:}
+Das System wird in Simulink simuliert.
+Für die Physik wird häufig Simscape verwendet (z.B. Umrichter, Motoren, Kondensatoren, ...)
+\item {\color{magenta}Generation von C-Code}
+Falls die Simulation erfolgreich ist, wird direkt aus dem Simulink Modell der C-Code compiliert und auf die Target-hardware heruntergeladen.
+Dies geht übrigens auch für kleine Prozessoren und DSPs.
+\item {\color{magenta}Optional: Simulation des Systems mit einem RTS (real time simulator)}
+Es gibt Leistungsrechner  (dSpace). Mit denen kann die programmierte Hardware in Echtzeit getestet werden.
+Auf diesen Rechnern wird die "Physik" implementiert... und auch diese Rechner werden in Simulink programmiert.
+Dies ist "State of the art" für die Automobilindustrie, Flugzeugindustrie und Traction.
+\item {\color{magenta}Testen und watchen}
+Die Software wird auf der Target-hardware und im Feld getestet. 
+\end{enumerate}
+
+
+
+
+
+
+

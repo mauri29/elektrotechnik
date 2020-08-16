@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kräftemittelpunkt}
+Eine Kräftegruppe aus beliebig vielen Kräften mit parallelen Wirkungslinien haben folgende Massenangriffspunkte
+\begin{equation}
+\boxed{\overrightarrow{r}_i=x_i\cdot \overrightarrow{e}_x+y_i\cdot \overrightarrow{e}_y+z_i\cdot \overrightarrow{e}_z,\quad i=1\dotso n}
+\end{equation}
+und bei der statisch äquivalente Reduktion auf den Ursprung $O$ des Koordinatensystems wird im Allgemeinen eine Einzelkraft mit dem Vektoranteil längs der $z$-Achse sowie ein Kräftepaar entsteht, dessen Momentvektor $\overrightarrow{M}_O$ in der $xy$-Ebene liegt und die Komponenten $M_x$ und $M_y$ hat
+\begin{equation}
+\boxed{\overrightarrow{R}=\displaystyle \sum_{i=1}^nZ_i\overrightarrow{e}_z}\quad \boxed{M_x=\displaystyle \sum_{i=1}^ny_iZ_i}\quad \boxed{M_y=-\displaystyle \sum_{i=1}^nx_iZ_i}
+\end{equation}
+Die beiden Komponenten des Gesamtmomentes entsprechen den Summen der Einzelmomente bezüglich der $x$- bzw. $y$-Achse.
+\newline\newline
+Da $\overrightarrow{R}\bullet \overrightarrow{M}_O=0$ ist, kann eine Kräftegruppe von parallelen Kräfte stets auf eine Einzelkraft oder ein Kräftepaar statisch äquivalent reduziert werden. Der letztere Fall tritt für $\overrightarrow{R}=\overrightarrow{0}$ auf und führt auf ein Kräftepaar in einer zur $z$-Achse parallelen Ebene, dessen Moment also senkrecht zur $z$-Achse steht. Für $\overrightarrow{R}\neq \overrightarrow{0}$ fällt die Wirkungslinie der statisch äquivalenten Einzelkraft mit der Zentralachse zusammen, welche in diesem Fall zur $z$-Achse parallel ist.
+\newline\newline
+Haben die gegebenen Kräfte alle denselben Richtungssinn, so spricht man von einer \textbf{gleich gerichteten Kräftegruppe}. Diese lässt sich stets auf eine Einzelkraft reduzieren, denn in diesem Fall gilt sicher $\overrightarrow{R}\neq \overrightarrow{0}$.
+\newline\newline
+Man betrachte eine gleich gerichtete Kräftegruppe von parallelen Kräften, deren Wirkungslinien einem Einheitsvektor $\overrightarrow{e}$ mit beliebiger Richtung parallel sind. Die einzelnen Kraftvektoren schreibt man als $\overrightarrow{F}_i=F_i\overrightarrow{e}$, wobi $F_i>0$ ist. Der Vektor der statisch äquivalenten resultierenden Kraft hat die Eigenschaft $R>0$.
+\begin{equation}
+\boxed{\overrightarrow{R}=\displaystyle \sum_{i=1}^nF_i\cdot\overrightarrow{e}=R\cdot \overrightarrow{e}}
+\end{equation}
+Sei $A$ ein Punkt auf der Wirkungslinie der statisch äquivalenten Einzelkraft. Da das Moment dieser Kraft bezüglich des Koordinatenursprungs $O$ dem Gesamtmoment der Kräftegruppe gleich sein muss, gilt für den Ortsvektor $\overrightarrow{r}_A$
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{r}_A\times \overrightarrow{R}&=&\displaystyle \sum_{i=1}^n\overrightarrow{r}_i\times \overrightarrow{F}_i\\
+\overrightarrow{r}_A\times \displaystyle \sum_{i=1}^n\overrightarrow{F}_i\overrightarrow{e}&=&\displaystyle \sum_{i=1}^n\overrightarrow{r}_i\times F_i\overrightarrow{e}\\
+\left(\overrightarrow{r}_A\displaystyle \sum_{i=1}^nF_i-\displaystyle \sum_{i=1}^nF_i\overrightarrow{r}_i\right)\times \overrightarrow{e}&=&0\\
+\end{array}}
+\end{equation}
+Der Vektor im Klammern muss entweder verschwinden oder parallel zu $\overrightarrow{e}$ sein. Der Ortsvektor $\overrightarrow{r}_A$ auf der Wirkungslinie der statisch äquivalenten resultierenden Kraft ist, wobei $\lambda$ eine beliebige reelle Zahl ist
+\begin{equation}
+\boxed{\overrightarrow{r}_A=\underbrace{\dfrac{\displaystyle \sum_{i=1}^nF_i\overrightarrow{r}_i}{\displaystyle \sum_{i=1}^nF_i}}_{\overrightarrow{r}_S}+\lambda \overrightarrow{e}}
+\end{equation}
+Der Vektor $\overrightarrow{r}_S$ entspricht einem besonderen Punkt auf der Wirkungslinie der resultierenden Kraft mit folgender Eigenschaft: Dreht man alle Kräfte der gleich gerichteten Kräftegruppe bei fest bleibenden Massenangriffspunkten um den gleichen Drehwinkel $\alpha$, so dass die Kraftvektoren zu einem neuen Einheitsvektor $\overrightarrow{e'}$ parallel sind, so bleibt der Punkt $S$ fest, und die Wirkungslinie der resultierenden Kraft dreht sich um den gleichen Winkel $\alpha$ um $S$. Der Ortsvektor eines beliebigen Punktes $A'$ auf der neuen Wirkungslinie ist dann
+\begin{equation}
+\boxed{\overrightarrow{r}_{A'}=\overrightarrow{r}_S+\lambda \overrightarrow{e'}}
+\end{equation}
+Man nennt den Punkt $S$ mit dem Ortsvektor $\overrightarrow{r}_S$ Kräftemittelpunkt der gleich gerichteten Kräftegruppe
+\begin{equation}
+\boxed{\overrightarrow{r}_S=\dfrac{\displaystyle \sum_{i=1}^nF_i\overrightarrow{r}_i}{\displaystyle \sum_{i=1}^nF_i}}
+\end{equation}
+Lässt sich ein dreidimensionaler Körper mit Masse $M$ in $n$ Körper mit Massen $m_i$ und Schwerpunktortsvektoren $\overrightarrow{r}_i$ zerlegen, so gilt für den Ortsvektor $\overrightarrow{r}_S$ des Körpers
+\begin{equation}
+\boxed{\overrightarrow{r}_S=\dfrac{\displaystyle \sum_{i=1}^nm_i\overrightarrow{r}_i}{\displaystyle \sum_{i=1}^nm_i}}
+\end{equation}
+Der Kräftemittelpunkt $S$ einer gleich gerichteten Kräftegruppe ist ein Punkt auf der Wirkungslinie der statisch äquivalenten resultierenden Kraft, um den sich diese Kraft dreht, wenn man alle Kräfte der Kräftegruppe um ihre Massenangriffspunkte um den gleichen Winkel dreht. Die kartesischen Komponenten dieses Vektors sind
+\begin{equation}
+\boxed{x_S\displaystyle \sum_{i=1}^nF_i=\displaystyle \sum_{i=1}^nx_iF_i}\quad\boxed{y_S\displaystyle \sum_{i=1}^nF_i=\displaystyle \sum_{i=1}^ny_iF_i}\quad \boxed{z_S\displaystyle \sum_{i=1}^nF_i=\displaystyle \sum_{i=1}^nz_iF_i}
+\end{equation}
+Wählt man einen anderen Bezugspunkt $O'$ als Ursprung, so lauten due neuen Ortsvektoren 
+\begin{equation}
+\boxed{\overrightarrow{r'}_i=\overrightarrow{r}_i+\overrightarrow{r}_{O'O}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{r'}_{S'}\displaystyle \sum_{i=1}^nF_i=\displaystyle \sum_{i=1}^nF_i\overrightarrow{r'}_i=\displaystyle \sum_{i=1}^nF_i\overrightarrow{r}_i+\displaystyle \sum_{i=1}^nF_i\overrightarrow{r}_{O'O}=\overrightarrow{r}_S\displaystyle \sum_{i=1}^nF_i+\overrightarrow{r}_{O'O}\displaystyle \sum_{i=1}^nF_i}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{r'}_{S'}=\overrightarrow{r}_S+\overrightarrow{r}_{O'O}}
+\end{equation}
+Da aber für den Ortsvektor $\overrightarrow{r'}_S$ die gleiche Beziehung, d.h. $\overrightarrow{r'}_S=\overrightarrow{r}_S+\overrightarrow{r}_{O'O}$, gilt, fallen $S'$ und $S$ zusammen. Die relative Lage des Kräftemittelpunktes bezüglich des starren Massenpunktes ist demzufolge von der Wahl des Koordinatensystems unabhängig.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Linien- und flächenverteilte Kräfte, Flächenmittelpunkt}
+Betrachte man eine \textbf{Linienverteilung} in einem Geradenstück mit Kraftdichte $\overrightarrow{q}=q\cdot \overrightarrow{e}$, wobei $q$ der Wert einer beliebigen integrierbaren Funktion $q\left(x\right)$ im Intervall $x\in\left[0,L\right]$ sein kann.Die REsultierende wird aus der Summe der infinitesimalen Kraftvektoren $\text{d}\overrightarrow{F}=q\text{d}x\overrightarrow{e}$ als
+\begin{equation}
+\boxed{\overrightarrow{R}=\displaystyle \int_0^L\text{d}\overrightarrow{F}=\left(\displaystyle \int_0^Lq\,\text{d}x\right)}
+\end{equation}
+berechnet. Das Moment bezüglich $A$ ist
+\begin{equation}
+\boxed{\overrightarrow{M}_A=\displaystyle \int_0^L\text{}\overrightarrow{M}_A=\displaystyle \int_0^L\overrightarrow{r}\times \text{d}\overrightarrow{F}=\displaystyle \int_0^L\left(x\overrightarrow{e}_x\times q\text{d}x\overrightarrow{e}\right)=-\left(\displaystyle \int_0^Lx\, q\, \text{d}x\right)\sin\left(\alpha\right)\overrightarrow{e}_z}
+\end{equation}
+Der Kräftemittelpunkt ergibt sich aus
+\begin{equation} 
+\boxed{\overrightarrow{r}_{AS}\times \overrightarrow{R}=\overrightarrow{M}_A}
+\end{equation} 
+\begin{equation}
+\boxed{x_S=\dfrac{\displaystyle \int_0^Lx \,q \,\text{d}x}{\displaystyle \int_0^Lq\,\text{d}x}} 
+\end{equation} 
+Die Kräftevertilung heisst \textbf{uniform} falls $q\left(x\right)=q_0$ konstant ist. Somit ist $x_S=\dfrac{L}{2}$ und die Resultierende beträgt $\overrightarrow{R}=R=L\cdot q_0$. 
+\newline\newline
+Für eine \textbf{Dreiecksverteilung} gilt $q\left(x\right)=\dfrac{x}{L}q_0$ wobei $q_0=q\left(L\right)$ ist. Somit sind $x_S=\dfrac{2L}{3}$ und $\overrightarrow{R}=R=\dfrac{Lq_0}{2}$
+\newline\newline
+Für eine \textbf{flächenverteilung} an einem Flächenstück, das beliebig gekrümmt sein kann, wird die Richtung der Flächenkraftdichte $\overrightarrow{s}=s\overrightarrow{e}$ durch den Einheitsvektor $\overrightarrow{e}$ charakterisiert. Die Skalare $s$ kann der Funktionswert einer beliebigen integrierbaren FUnktion $s\left(x,y,z\right)$ der Koordinaten des jeweiligen Massenangriffpunktes der Flächenkraftdichte sein. In Abhängigkeit des Ortsvektors $\overrightarrow{r}$ dieses Massenangriffpunktes kann die gleiche Funktion als $s\left(\overrightarrow{r}\right)$ dargestellt werden. Die Resultierende ergibt sich aus der Summe der infinitesimalen Kräfte $\text{d}\overrightarrow{F}=s\,\overrightarrow{e}\,\text{d}A$, wobei $\text{d}A$ der Flächeninhalt der inifitesimalen Fläche um den jeweiligen Massenangriffspunkt ist. Für die Resultierende folgt eine doppelte Integral über den Flächenbereich BCDE.
+\begin{equation}
+\boxed{\overrightarrow{R}=\displaystyle \iint\text{d}\overrightarrow{F}=\left[\displaystyle \iint s\left(\overrightarrow{r}\right)\,\text{d}A\right]\overrightarrow{e}=\left[\displaystyle \int_{\text{BCDE}}s\left(\overrightarrow{r}\right)\,\text{d}A\right]\overrightarrow{e}}
+\end{equation}
+Das Moment bezüglich $O$ lässt sich wieder aus dem Momentensumme der infinitesimalen Kräfte zu folgendem Term berechnen
+\begin{equation}
+\boxed{\begin{array}{lll}\overrightarrow{M}_O&=&\displaystyle \int_{\text{BCDE}}\text{d}\overrightarrow{M}_O=\displaystyle \int_{\text{BCDE}}\overrightarrow{r}\times \text{d}\overrightarrow{F}=\displaystyle \int_{BCDE}\overrightarrow{r}\times s\left(\overrightarrow{r}\right)\text{d}A\,\overrightarrow{e}\\&=&\left[\displaystyle \int_{BCDE}\overrightarrow{r}\,s\left(\overrightarrow{r}\right)\,\text{d}A\right]\times \overrightarrow{e}\end{array}}
+\end{equation}
+Der Ortsvektor $\overrightarrow{r}_S$ des Kräftemittelpunktes $S$ ergibt sich 
+\begin{equation}
+\boxed{\overrightarrow{r}_S=\dfrac{\displaystyle \int_{BCDE}\overrightarrow{r}\,s\,\text{d}A}{\displaystyle \int_{BCDE}s\,\text{d}A}}
+\end{equation}
+Ist die Kräfteverteilung uniform mit $s=s_0$, so fällt der Kräftemittelpunkt $S$ mit dem Flächenmittelpunkt $C$ zusammen, der manachmal als Schwerpunkt der Fläche genannt wird. Der entsprechende Ortsvektor $\overrightarrow{r}_C$ gilt dann, wobei $\triangle A$ der Flächeninhalt von BCDE ist
+\begin{equation}
+\boxed{\overrightarrow{r}_C=\dfrac{1}{\triangle A}\displaystyle \int_{\text{BCDE}}\overrightarrow{r}\,\text{d}A}
+\end{equation}
+Man beachte, dass der Flächenmittelpunkt einer gekrümmten Fläche im Allgemeinen ausserhalb der Fläche liegt.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Raumkräfte, Schwerpunkt und Massenmittelpunkt}
+Die Resultierende bei kontinuerlich verteilten parallelen Fernkräften geht man von der Raumkraftdichte $\overrightarrow{f}=f\overrightarrow{e}$ aus
+\begin{equation}
+\boxed{\overrightarrow{R}=\left[\displaystyle \iint f\,\text{d}V\right]\overrightarrow{e}=\left[\displaystyle \int_K f\,\text{d}V\right]\overrightarrow{e}}
+\end{equation}
+Die integration über den räumlichen Bereich des betrachteten Körpers $K$ erstreckt sich mit dem Volumeninhalt $\triangle V$. Die skalare Kraftdichte $f$ ist im Allgemeinen von den Koordinaten des jeweiligen Massenpunktes abhängig. Eine uniforme Raumverteilung liegt vor, falls $f=f_0$ konstant ist. Die Resultierende und das Moment sind 
+\begin{equation}
+\boxed{\overrightarrow{R}=f_0\,\triangle V \overrightarrow{e},\quad \overrightarrow{M}_O=\left[\displaystyle \int_K\overrightarrow{r}f\,\text{d}V\right]}
+\end{equation}
+Das Resultat ist
+\begin{equation}
+\boxed{\overrightarrow{r}_S=\dfrac{\displaystyle \int_K\overrightarrow{r}\,f\,\text{d}V}{\displaystyle \int_Kf\,\text{d}V}}
+\end{equation}
+Der Begriff des Kräftemittelpunktes von parallelen Raumkräfteverteilungen findet eine wichtige Anwendung bei der \textbf{Gravitationskraft} in der Nähe der Erdoberfläche für Körper mit kleinen Abmessungen im vergleich zum Erdradius (Gewicht). Auf dem Körper bilden wirkenden verteilten Gewichtskräfte eine glecihgerichtet Kräftegruppe aus.
+\newline\newline
+Die skalare Raumkraftdichte $f$ wird bei Gewichtskräften mit $\gamma$ bezeichnet und \textbf{spezifisches Gewicht} genannt. Die Resultierende der verteilten Gewichtskräfte heisst \textbf{Gesamtgewicht} des Körpers und beträgt allgemein
+\begin{equation}
+\boxed{G=\displaystyle \int_K\text{d}G=\displaystyle \int_K\gamma\left(x,y,z\right)\,\text{d}V}
+\end{equation}
+Der Kräftemittelpunkt der verteilten Gewichtskräfte an einem Körper heisst \textbf{Schwerpunkt}. Sein Ortsvektor ist
+\begin{equation}
+\boxed{\overrightarrow{r}_S=\dfrac{1}{G}\displaystyle \int_K\overrightarrow{r}\,\text{d}G=\dfrac{1}{G}\displaystyle \int_K=\overrightarrow{r}\gamma\,\text{d}V}
+\end{equation}
+und seine kartesische Koordinaten sind
+\begin{equation}
+\boxed{x_S=\dfrac{1}{G}\displaystyle \int_Kx\gamma\,\text{d}V}\quad \boxed{y_S=\dfrac{1}{G}\displaystyle \int_Ky\gamma\,\text{d}V}\quad \boxed{z_S=\dfrac{1}{G}\displaystyle \int_Kz\gamma\,\text{d}V}
+\end{equation}
+Der Schwerpunkt ist der Massenangriffspunkt der resultierenden Gewichtskraft an einem Körper $K$ unabhängig von der Richtung des Gewichtes bezüglich des Körpers. Solange $K$ bleibt in der Nähe der Erdoberfläche, ändert sich also bei Starrkörperbewegungen von $K$ die relative Lage des Schwerpunktes bezüglich $K$ nicht. Der Kräftemittelpunkt muss nicht unbedingt innerhalb des Körpers $K$ liegen.
+\newline\newline
+Ein Körper $K$ aus $n$ Teilkörpern $K_i$ mit den teilgewichtsbeträgen $G_i$ und den Teilschwerpunkten $S_i$ mit den Ortsvektoren $\overrightarrow{r}_i$ ist
+\begin{equation}
+\boxed{G=\displaystyle \sum_{i=1}^nG_i},\quad \boxed{\dfrac{1}{G}\displaystyle \int_K\overrightarrow{r}\gamma\,\text{d}V=\dfrac{1}{G}\displaystyle \sum_{i=1}^{n}\int_{K_i}\overrightarrow{r}\gamma\,\text{d}V=\dfrac{1}{G}\displaystyle \sum_{i=1}^nG_i\overrightarrow{r}_i}
+\end{equation}
+Die kartesischen koordinaten des Schwerpunktes sind folgendermassen definiert. Die Koordinaten können auch durch Gewichte der Teilkörper in ihrem Schwerpunkten und Momentenbedingungen
+\begin{equation}
+\boxed{x_S=\dfrac{1}{G}\displaystyle \sum_{i=1}^nG_ix_i}\quad \boxed{y_S=\dfrac{1}{G}\displaystyle \sum_{i=1}^nG_iy_i}\quad \boxed{z_S=\dfrac{1}{G}\displaystyle \sum_{i=1}^nG_iz_i}
+\end{equation}
+Im Zusammenhang mit der Bewegung eines materiellen Massensystems wird die \textbf{spezifische Masse} $\rho$ eingeführt. Diese ist ein Proportionalitätsfaktor zwischen der Beschleunigung $\overrightarrow{a}$ eines materiellen Massenpunktes $M$ und einer fiktiven Raumkraftdichte, der \textbf{Trägheitskraftdichte} $\overrightarrow{f}_T$, welche den Einfluss der Bewegung in der allgemeinen Form des Prinzip der virtuellen Leistungen berücksichtigt. Die spezifische Masse $\rho$ wird auch \textbf{Dichte} genannt und hat die Dimension $\left[\rho\right]=\text{ML}^{-3}$ 
+\newline\newline
+Bei einem Körper ergibt sich der Betrag des spezifischen Gewichts $\gamma$ aus der spezifischen Masse $\rho$ und dem Betrag der Erdbeschleunigung $g$. Es muss zwischen der in der Trägheitskraftdichte auftretenden spezifischen trägen Masse und der bei der Gravitationskraft auftretenden spezifischen schweren Masse unterschieden.
+\begin{equation}
+\boxed{\gamma=\rho\cdot g}
+\end{equation}
+Die infinitesimale Masse $\text{d}m$ eines infinitesimalen Volumenelements $\text{d}V$ um den Massenpunkt $P$ ist
+\begin{equation}
+\boxed{\text{d}m=\rho\,\text{d}V}
+\end{equation}
+Die GEsamtmasse $m$ eines Kärpers $K$ erhält man durch Integration als
+\begin{equation}
+\boxed{\displaystyle \int_K\text{d}m=\displaystyle \int_K\rho\,\text{d}V=\displaystyle \iiint\rho\,\text{d}V}
+\end{equation}
+wobei die spezifische Masse der Funktionswert einer ortsabhängigen Funktion $\rho\left(x,y,z\right)$ ist. In Analogie mit dem Ortsvektor $\overrightarrow{r}_S$ des Schwerpunktes $S$ definiert man den Ortsvektor $\overrightarrow{r}_C$ des \textbf{Massenmittelpunktes} $C$ von $K$
+\begin{equation}
+\boxed{\overrightarrow{r}_C=\dfrac{1}{m}\displaystyle \int_K\overrightarrow{r}\,\text{d}m=\dfrac{1}{m}\displaystyle \int_K\overrightarrow{r}\,\rho\,\text{d}V=\dfrac{1}{m}\displaystyle \iiint\overrightarrow{r}\,\rho\,\text{d}V}
+\end{equation}
+Ist die spezifische Masse $\rho$ im ganzen gebiet des Körpers $K$ gleichmässig verteilt, d.h. $\rho=\rho_0$, so wird der Körper als \textbf{homogen} bezeichnet. Man kann dann $\rho_0$ aus den Integralen herausziehen und erhält für die Gesamtsumme $m=\rho_0\cdot V$ und für den Ortsvektor des Massenmittelpunktes wobei $V$ der Volumeninhalt des Körpers $K$ ist.
+\begin{equation} 
+\boxed{\overrightarrow{r}_C=\dfrac{1}{V}\displaystyle \int_K\overrightarrow{r}\,\text{d}V}
+\end{equation} 

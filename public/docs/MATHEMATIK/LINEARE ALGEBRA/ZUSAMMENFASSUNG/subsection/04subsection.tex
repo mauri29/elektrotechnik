@@ -1,0 +1,90 @@
+\section{Geometrie}
+\subsection{Die Gerade}
+Die \textbf{Parameterdarstellung} der Gerade, mit $\overrightarrow{OA}$ als Bezugspunkt und $\overrightarrow{AB}$ als Richtungsvektor mit $\lambda\in \mathbb{R}$ als Parameter, lautet
+\begin{equation}
+\boxed{g:\overrightarrow{r}=\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}}
+\end{equation}
+Die \textbf{Hessesche Normalform} der Gerade, mit $\overrightarrow{OA}$ als Bezugspunkt und $\overrightarrow{n}_E$ als Normalensvektor der Geraden, lautet
+\begin{equation}
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E=0}
+\end{equation}
+Die \textbf{Koordinatenform} der Gerade, mit $n_i$ Komponenten des Normalenvektors $\overrightarrow{n}_E$ zur Richtungsvektor der Gerade, wobei diese Form zweidimensionell ist, lautet
+\begin{equation}
+\boxed{n_x\cdot x+n_y\cdot y+d=0}
+\end{equation}
+Von der parameterform in die Hessesche Normalenform der Gerade muss man aus dem Richtungsvektor $\overrightarrow{AB}$ der Gerade den Normalenvektor $\overrightarrow{n}_E$ erzeugen.\newline\newline
+Von der hessesche Normalenform im Koordinatenform muss man das Skalarprodukt und Terme berechnen. 
+\newline\newline
+Aus dem Koordinatenform in die Hessesche Normalenform muss aus den Koeffizienten den $\overrightarrow{n}_E$ auslesen. $\overrightarrow{OA}$ generieren durch die Wahl einer Koordinate und die andere mit der Koordinatengleichung berehcnen. 
+\subsection{Die Ebene}
+Die Parameterdarstellung der Ebene, wobei $\overrightarrow{OA}$ der Bezugspunkt und $\overrightarrow{AB}$ und $\overrightarrow{AC}$ die Richtungsvektoren mit $\lambda$, $\mu\in\mathbb{R}$ als Parametern, ausserdem die Richtungsvektoren müssen nicht unbedingt zueinander senkrecht bzw. nciht kollinear liegen, lautet
+\begin{equation}
+\boxed{E:\overrightarrow{r}=\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}+\mu\cdot \overrightarrow{AC}}
+\end{equation}
+Für die Ebene definiert man den Normalenvektor $\overrightarrow{n}'_E$ und den Ortsvektor des Bezugspunktes$\overrightarrow{OA}$. Somit wird die Normalenform der Ebene erzeugt.
+\begin{equation}
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet\overrightarrow{n}'_E=\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\overrightarrow{OA}\right]\bullet \left(\overrightarrow{AB}\times \overrightarrow{AC}\right)=0}
+\end{equation}
+Die Ebene $E$ ist definiert durch den normierten Normalenvektor $\overrightarrow{n}_E$ und den Bezugspunkt $\overrightarrow{OA}$. Somit wird die Hessesche Normalenform erzeugt.
+\begin{equation} 
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet \dfrac{\overrightarrow{n}'_E}{\Big\vert \overrightarrow{n}'_E\Big\vert}=\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\overrightarrow{OA}\right]\bullet \dfrac{\overrightarrow{AB}\times \overrightarrow{AC}}{\Big\vert\overrightarrow{AB}\times \overrightarrow{AC}\Big\vert}=0}
+\end{equation} 
+Die Ebene ist definiert durch die vier Parameter $n_1'$, $n_2'$, $n_3'$ und $n_4'$ und es gilt $(n_1')^2+(n_2')^2+(n_3')^2=1$. Der Wert $\vert n_4'\vert$ ist der Abstand zum Ursprung. Für den allgemeinen Punkt $\overrightarrow{r}$ in der Ebene gilt
+\begin{equation}
+\boxed{E:n_1'\cdot x+n_2'\cdot y+n_3'\cdot z+n_4'=0}
+\end{equation}
+Die Achsenabschnittsform der Ebene lautet
+\begin{equation}
+\boxed{E:\dfrac{1}{c_1}x+\dfrac{1}{c_2}y+\dfrac{1}{c_3}z-1=0}\quad \boxed{c_i=\dfrac{-n_4'}{n_i'}\quad \text{mit }i=1,2,3}
+\end{equation}
+Von der Koordinatenform in die Parameterform erfinde man drei Vektoren und erzeugt man daraus ein Bezugspunkt und zwei Richtungsvektoren.
+\begin{equation}
+\boxed{\overrightarrow{OA}=\begin{pmatrix}0\\0\\-n_4'/n_3'\end{pmatrix}, \overrightarrow{OB}=\begin{pmatrix}-n_4'/n_1'\\0\\0\end{pmatrix}, \overrightarrow{OC}=\begin{pmatrix}0\\-n_4'/n_2'\\0\end{pmatrix}}
+\end{equation}
+Von der Koordinatenform in die Normalenform erfinde man einen Bezugspunkt und aus den Konstanten $n_i'$ deb Normalenvektor. Mit diesen Informationen kann man die Normalenform und die Hessesche Normalenform der Ebene erzeugen.
+\begin{equation}
+\boxed{\overrightarrow{OA}=\begin{pmatrix}0\\0\\-n_4'/n_3'\end{pmatrix},\quad \overrightarrow{n}'_E=\begin{pmatrix}n_1'\\n_2'\\n_3'\end{pmatrix}}
+\end{equation}
+Von der Parameterform in die Koordinatenform berechnet man aus den Richtungsvektoren den Normalenvektor. Die Komponenten des Normalenvektors $\overrightarrow{n}'_E$ und das Einsetzen des Bezugspunktes $\overrightarrow{OA}$ erzeugt die Koordinatenform der Ebene.
+\newline\newline
+Von der Parameterform in die Normalenform erzeugt man den Normalenvektor aus den Richtungsvektoren. Mit den Bezugspunkt und den Normalenvektor erzeugt man die Normalenform der Ebene.
+\newline\newline
+Von der Normalenform in die Koordinatenform multipliziert man alles aus und so wird die gewnschte Form erzeugt.
+\newline\newline
+Von der Normalenform in die Parameterform erhält man, indem man die Normalenform in die Koordinatenform umwandelt ud dann diese in die Parameterform.
+\subsection{Abstände}
+Der Abstand eines Punktes $\overrightarrow{OP}$ zur Gerade $g:\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}$ erhält man aus der Berechnung der Fläche des Parallelograms. 
+\begin{equation}
+\boxed{d=\dfrac{\Big\vert\overrightarrow{AB}\times\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\Big\vert}{\Big\vert\overrightarrow{AB}\Big\vert}=\left\vert\dfrac{\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}\right\vert}
+\end{equation}
+Für die Berechnung des Fusspunktes eines Punktes $\overrightarrow{OP}$ auf einer Gerade $g:\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}$ sei den Fusspunkt $\overrightarrow{OF}$ gegeben. Man zerlegt den Vektor $\overrightarrow{AP}$ erstens in einer parallelen Komponente mit Betrag $\Big\vert\overrightarrow{AF}\Big\vert$ und Richtung $\overrightarrow{AB}$ und zweitens in eine senkrechte Komponente mit Betrag $\Big\vert\overrightarrow{FP}\Big\vert$ mit Richtung senkrecht zu $\overrightarrow{AB}$.
+\newline\newline
+Die Projektion von $\overrightarrow{AP}$ auf $\overrightarrow{AB}$ und Fusspunkt lauten
+\begin{equation}
+\boxed{\overrightarrow{OF}=\overrightarrow{OA}+\overrightarrow{AF}=\overrightarrow{OA}+\left[\overrightarrow{AP}\bullet \dfrac{\overrightarrow{AB}}{\Big\vert\overrightarrow{AB}\Big\vert}\right]\cdot \dfrac{\overrightarrow{AB}}{\Big\vert\overrightarrow{AB}\Big\vert}}
+\end{equation}
+Das Lot ist der Vektor zwischen dem Punkt $\overrightarrow{OP}$ und der Fusspunkt $\overrightarrow{OF}$
+\begin{equation}
+\boxed{\overrightarrow{h}_{\overrightarrow{OP}}=\overrightarrow{OP}-\overrightarrow{OF}}
+\end{equation}
+Der Abstand des Fusspunktes zum Punkt $\overrightarrow{OP}$ übereinstimmt mit dem Abstand Punkt-Gerade
+\begin{equation}
+\boxed{d=\Big\vert\overrightarrow{h}_{\overrightarrow{OP}}\Big\vert}
+\end{equation}
+Der Abstand eines Punktes $\overrightarrow{OP}$ von der Ebene $E$ in Parameterdarstellung lautet
+\begin{equation}
+\boxed{d=\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \dfrac{\overrightarrow{AB}\times \overrightarrow{AC}}{\Big\vert\overrightarrow{AB}\times \overrightarrow{AC}\Big\vert}=\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E}
+\end{equation}
+\begin{equation}
+\boxed{\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E-d=0}
+\end{equation}
+Die Punkte $\overrightarrow{OP}$ auf der Ebene $E$ kann man berechnen, indem $d=0$, so wird die Hessesche Form der Ebene erzeugt.
+\newline\newline
+Für die Projektion eines Punktes an einer Ebene wird der Punkt $\overrightarrow{OP}$ durch $\overrightarrow{OP}'$ auf die Ebene $E$ mit Bezugspunkt $\overrightarrow{OC}$ projiziert.
+\begin{equation}
+\boxed{\overrightarrow{OP}'=\overrightarrow{OP}-\left(\overrightarrow{CP}\bullet \overrightarrow{n}_E\right)\cdot \overrightarrow{n}_E}
+\end{equation}
+Durch $\overrightarrow{OP}''$ wird der Punkt $\overrightarrow{OP}$ an der Ebene mit Bezugspunkt $\overrightarrow{OC}$ gespiegelt.
+\begin{equation}
+\boxed{\overrightarrow{OP}''=\overrightarrow{OP}-2\cdot \left(\overrightarrow{CP}\bullet \overrightarrow{n}_E\right)\cdot \overrightarrow{n}_E}
+\end{equation}

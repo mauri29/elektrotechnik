@@ -1,0 +1,171 @@
+Hiermit betrachtet man Kräftegruppen $\left\{G\right\}$ und $\left\{G'\right\}$ und heissen \textbf{äquivalent}, wenn sie auf ein Massensystem $S$ die gleiche Wirkung ausüben. Die Ermittlung einer möglichst einfachen zu $\left\{G\right\}$ statisch äquivalenten Kräftegruppe $\left\{G'\right\}$ heisst \textbf{Reduktion} der Kräftegruppe $\left\{G\right\}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Statische Äquivalenz}
+Zwei an einem Massensystem $S$ angreifende Kräftegruppen $\left\{G\right\}$ und $\left\{G'\right\}$ heissen \textbf{statisch äquivalent}, falls für jede Bewegung bezüglich eines Bezugspunktes $O\in S$ die Gesamtleistung von $\left\{G\right\}$ gleich der Gesamtleistung von $\left\{G'\right\}$ ist. Die statishe Äquivalenz drückt eine augenblickliche energetische Gleichwertigkeit der Kräftegruppen bei Bewegungen des erstarrten Massensystems aus.
+\begin{equation}
+\boxed{\begin{array}{lll}
+\mathcal{P}\left(\left\{G\right\}\right)&=&\mathcal{P}\left(\left\{G'\right\}\right)\\
+\overrightarrow{R}\bullet \overrightarrow{v}_O+\overrightarrow{\omega}\bullet \overrightarrow{M}_O&=&\overrightarrow{R'}\bullet \overrightarrow{v}_O+\overrightarrow{\omega}\bullet \overrightarrow{M'}_{O},\quad \forall\left\{\overrightarrow{v}_B,\overrightarrow{\omega}\right\}
+\end{array}}
+\end{equation}
+Zwei Kräftegruppen $\left\{G\right\}$ und $\left\{G'\right\}$ an einem Massensystem $S$ sind dann und nur dann statisch äquivalent, wenn ihre Resultierenden und ihre Gesamtmomente bezüglich eines beliebigen Bezugspunktes gleich sind.
+\begin{equation}
+\boxed{\begin{array}{lllll}
+\left(\overrightarrow{R}-\overrightarrow{R'}\right)\bullet \overrightarrow{v}_O&=&0&\Rightarrow& \overrightarrow{R}=\overrightarrow{R'}\\
+\left(\overrightarrow{M}_O-\overrightarrow{M'}_{O}\right)\bullet \overrightarrow{v}_B&=&0&\Rightarrow &\overrightarrow{M}_O=\overrightarrow{M'}_O
+\end{array}}
+\end{equation}
+\newline\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Resultierende und Moment einer Kräftegruppe}
+Die Summe der Vektoranteile aller beteiligten Kräfte einer Kräftegruppe eines Massensystems $S$ heisst \textbf{Resultierende der Kräftegrupe}. Aus $n$ Einzelkräfte lautet die Resultierende
+\begin{equation}
+\boxed{\overrightarrow{R}:=\displaystyle \sum_{i=1}^n\overrightarrow{F}_i}
+\end{equation}
+Das \textbf{Moment einer Einzelkraft} $\left\{A, \overrightarrow{F}\right\}$ bezüglich eines Bezugspunktes $O$ ist
+\begin{equation}
+\boxed{\overrightarrow{M}_O:=\overrightarrow{r}_{OA}\times \overrightarrow{F}}
+\end{equation}
+\begin{equation}
+\boxed{M_O=\Big\vert\overrightarrow{F}\Big\vert\cdot \Big\vert\overrightarrow{r}_{OA}\Big\vert\cdot \sin\left(\alpha\right)=F\cdot a}
+\end{equation}
+Die Gerade durch den Massenangriffspunkt $A$, welche den Kraftvektor $\overrightarrow{F}$ trägt und in der Ebene $E$ liegt, heisst \textbf{Wirkungslinie} der Kraft. Der Abstand zwischen dem Bezugspunkt $O$ und der Wirkungslinie ist mit $a$ bezeichnet, der Betrag $\Big\vert\overrightarrow{F}\Big\vert$ des Kraftvektors und der Winkel $\alpha$ zwischen $OA$ und der Wirkungslinie.
+\newline\newline
+Der \textbf{Verschiebungssatz} besagt, dass das Moment einer Kraft $\overrightarrow{M}_O$ bezüglich eines Bezugspunktes $O$ bleibt gleich, wenn bei gleich bleibendem Vektoranteil der Massenangriffspunkt $A$ der Kraft $\overrightarrow{F}$ längs ihrer Wirkungslinie verschoben wird. Tatsächlich bleiben der Abstand $a$ und $M_O$ erhalten. 
+\newline\newline
+Das \textbf{Moment der Kraft bezüglich einer Koordinatenachse} ist die Zerlegung des Moments in seine kartesischen Komponenten.  
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+M_O^{\left(x\right)}&=&\Big\vert\overrightarrow{r}_{OA}^{\left(y\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(z\right)}\Big\vert-\Big\vert\overrightarrow{r}_{OA}^{\left(z\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(y\right)}\Big\vert\\\\
+M_O^{\left(y\right)}&=&\Big\vert\overrightarrow{r}_{OA}^{\left(z\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(x\right)}\Big\vert-\Big\vert\overrightarrow{r}_{OA}^{\left(x\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(z\right)}\Big\vert\\\\
+M_O^{\left(z\right)}&=&\Big\vert\overrightarrow{r}_{OA}^{\left(x\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(y\right)}\Big\vert-\Big\vert\overrightarrow{r}_{OA}^{\left(y\right)}\Big\vert\cdot \Big\vert\overrightarrow{F}^{\left(z\right)}\Big\vert\\
+\end{array}}
+\end{equation}
+Das \textbf{Moment einer Kraft} $\left\{A, \overrightarrow{F}\right\}$ \textbf{bezüglich einer Achse} $\gamma$ ist die Projektion auf $\gamma$ des Momentes $\overrightarrow{M}_O$ bezüglich eines beliebigen Bezugspunktes $O$ auf der Achse $\gamma$.
+\begin{equation}
+\boxed{M_{\gamma}=\overrightarrow{e}_{\gamma}\bullet \overrightarrow{M}_O}
+\end{equation}
+Der Wert von $M_{\gamma}$ ist unabhängig von der Wahl des Bezugspunktes $O\in \gamma$. Es gilt
+\begin{equation}
+\boxed{\begin{array}{lll}
+M_{\gamma}'&=&\overrightarrow{e}_{\gamma}\bullet \overrightarrow{M}_O'=\overrightarrow{e}_{\gamma}\bullet \left(\overrightarrow{r}_{O'A}\times \overrightarrow{F}\right)\\
+&=&\overrightarrow{e}_{\gamma}\bullet \Big[\left(\overrightarrow{r}_{O'O}+\overrightarrow{r}_{OA}\right)\times \overrightarrow{F}\Big]\\
+&=&\overrightarrow{e}_{\gamma}\bullet \Big[\underbrace{\left(\overrightarrow{r}_{O'O}\times \overrightarrow{F}\right)}_{0}+\underbrace{\left(\overrightarrow{r}_{OA}\times \overrightarrow{F}\right)}_{\overrightarrow{M}_O}\Big]\\
+&=&\underbrace{\overrightarrow{e}_{\gamma}\bullet \left(\overrightarrow{r}_{O'O}\times \overrightarrow{F}\right)}_{0,\Longleftrightarrow\overrightarrow{e}_{\gamma}\parallel \overrightarrow{r}_{O'O}}+\overrightarrow{e}_{\gamma}\bullet\underbrace{\left(\overrightarrow{r}_{OA}\times \overrightarrow{F}\right)}_{\overrightarrow{M}_O}\\
+&=&\overrightarrow{e}_{\gamma}\bullet \overrightarrow{M}_O\\
+&=&M_{\gamma}
+\end{array}}
+\end{equation}
+Somit beeinflusst die Wahl vom Bezugspunkt den Wert von $M_{\gamma}$ nicht, so ist es vorteilhaft, $O$ als Schnittpunkt der Ahcse $\gamma$ mit der auf $\gamma$ senkrechten Ebene $E^{\perp}$ durch $A$ zu wählen. Zerlegt man den Vektor $\overrightarrow{F}$ in eine parallele Komponente zu $\gamma$ $\overrightarrow{F}_{\gamma}$ und eine senkrechte Komponente $\overrightarrow{F}^{\perp}$ zu Ebene $E$, so erkennt man dass der Beitrag von $\overrightarrow{F}_{\gamma}$ zu $\overrightarrow{M}_O$ senkrehct auf $\gamma$ steht und deswegen bei der Bildung des Skalarproduktes verschwindet.
+\begin{equation} 
+\boxed{\overrightarrow{r}_{OA}\times \overrightarrow{F}^{\perp}=M_{\gamma}\cdot \overrightarrow{e}_{\gamma}}
+\end{equation} 
+\begin{enumerate}[$(i)$]
+\item Das Moment einer Kraft $\left\{A, \overrightarrow{F}\neq \overrightarrow{0}\right\}$ bezüglich einer Achse $\gamma$ verschwindet dann und nur dann, wenn die Wirkungslinie die Achse $\gamma$ oder zu ihr parallel ist.
+\item Um das Moment einer Kraft $\left\{A, \overrightarrow{F}\neq \overrightarrow{0}\right\}$ bezüglich einer Achse $\gamma$ zu erhalten, zerlege man $\overrightarrow{F}$ vorerst in zwei Komponenten $\overrightarrow{F}_{\gamma}$ und $\overrightarrow{F}^{\perp}$ und multipliziere de Betrag der zu $\gamma$ normalen Komponente $\overrightarrow{F}^{\perp}$ mit dem Abstand $a$ zwischen der Achse und der Wirkungslinie von $\overrightarrow{F}^{\perp}$ in $A$.
+\begin{equation}
+\boxed{\Big\vert M_{\gamma}\Big\vert=a\cdot \Big\vert\overrightarrow{F}^{\perp}\Big\vert}
+\end{equation}
+Das Vorzeichen ergibt sich aus dem Drehsinn von $\overrightarrow{F}^{\perp}$ bezüglich des Einheitsvektors $\overrightarrow{e}_{\gamma}$ auf der Achse.
+\end{enumerate}
+Das \textbf{Moment einer Kräftegruppe} bezüglich eines beliebig wählbaren Bezugspunktes $O$ ist die Summe der Momente der einzelnen Kräfte bezüglich $O$.
+\begin{equation}
+\boxed{\overrightarrow{M}_O:=\displaystyle \sum_{i=1}^n\left(\overrightarrow{r}_{OA_i}\times \overrightarrow{F}_i\right)}
+\end{equation}
+Wählt man einen anderen Bezugspunkt $P$, so entsteht ein neuer und im Allgemeinen von $\overrightarrow{M}_O$ verschiedener Momentvektor $\overrightarrow{M}_P$ in $P$. Das Moment einer Kräftegruppe ist demzufolge ein punktgebundener Vektor.
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{M}_P:&=&\displaystyle \sum_{i=1}^n\left(\overrightarrow{r}_{PA_i}\times \overrightarrow{F}_i\right)\\
+&=&\displaystyle \sum_{i=1}^n\left(\left(\overrightarrow{r}_{PO}+\overrightarrow{r}_{OA_i}\right)\times \overrightarrow{F}_i\right)\\
+&=&\displaystyle \sum_{i=1}^n\left(\overrightarrow{r}_{PO}\times \overrightarrow{F}_i+\overrightarrow{r}_{OA_i}\times \overrightarrow{F}_i\right)\\
+&=&\overrightarrow{r}_{PO}\times \displaystyle \sum_{i=1}^n\left(\overrightarrow{F}_i\right)+\underbrace{\displaystyle \sum_{i=1}^n\left(\overrightarrow{r}_{OA_i}\times \overrightarrow{F}_i\right)}_{\overrightarrow{M}_O}\\
+&=&\overrightarrow{r}_{PO}\times \overrightarrow{R}+\overrightarrow{M}_O=\overrightarrow{R}\times \overrightarrow{r}_{OP}+\overrightarrow{M}_O
+\end{array}}
+\end{equation}
+Die Grundformel, welche das Moment der Kräftegruppe bezüglich $P$ mit jenem bezüglich $O$ verbindet ist. Die folgende Formel ist das Moment bezüglich $P$ der resultierenden Kraft in $O$.
+\begin{equation}
+\boxed{\overrightarrow{M}_P=\overrightarrow{M}_O+\overrightarrow{R}\times \overrightarrow{r}_{OP}}
+\end{equation}
+Die Analogie der obigen Formel mit demr Formel der allgemeinsten Bewegungszustand eines Körpers kommt aus der Definition der Leistung einer Kräftegruppe an einem Massensystem $S$.
+\newline\newline
+Die Resultierende $\overrightarrow{R}$ einer Kräftegruppe $\{G\}$ sowie das definierte Moment der Kräftegruppe $\overrightarrow{M}_O$  bezüglich eines beliebigen Bezugspunktes in $O$ ergeben das \textbf{Dyname der Kräftegruppe} $\{\overrightarrow{R}, \overrightarrow{M}_O\}$ in $O$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Statische Äquivalenz bei speziellen Kräftegruppen}
+Zwei Einzelkräfte sind dann und nur dann statisch äquivalent, wenn sie den gleichen Vektoranteil und die gleiche Wirkungslinie besitzen.
+\newline\newline
+Die resultierende Kraft $\overrightarrow{R}=\overrightarrow{F}_1+\overrightarrow{F}_2$ in einem gemeinsamen Massenangriffspunkt $A$ ist zur Kräftegruppe $\left\{\left\{A, \overrightarrow{F}_1\right\}, \left\{A, \overrightarrow{F}_2\right\}\right\}$ statisch äquivalent, denn die Resultierenden sind trivialerweise gleich und die Momente bezüglich des Massenangriffspunktes $A$ auch $(\overrightarrow{M}_A=\overrightarrow{0})$.
+\newline\newline
+Eine \textbf{ebene Kräftegruppe} besteht aus nichtparallelen Kräften, deren Wirkungslinien und Massenangriffspunkte in derselben Ebene liegen. Die Resultierende $\overrightarrow{R}=\overrightarrow{F}_1+\overrightarrow{F}_2$ einer Kräftegruppe $\left\{\left\{A_1, \overrightarrow{F}_1\right\}, \left\{A_2, \overrightarrow{F}_2\right\}\right\}$ mit dem gemeinsamen Massenangriffspunkt $A$ ist in der Ebene statisch äquivalent. Das Moment von $\left\{A, \overrightarrow{R}\right\}$ und das Gesamtmoment der beiden Kräfte bezüglich des Schnittpunktes $S$ der drei Wirkungslinien ist null.
+\newline\newline
+Die Kräfte von $\left\{\left\{A_1, \overrightarrow{F}_1\right\}, \left\{A_2, \overrightarrow{F}_2\right\}\right\}$ können einzeln längs ihrer Wirkungslinien bis zum Schnittpunkt $S$ statisch verschoben werden. DAmit entsteht eine statisch äquivalente Kräftegruppe mit gemeinsamen Angriffspunkt $S$, der Vektor $\overrightarrow{R}$ in $S$
+ ergibt eine statisch äquivalente resultierende Kraft, welche wiederum längs ihrer Wirkungslinie bis zum frei wählbaren Punkt $A$ statisch äquivalent verschiben werden kann. Dies stellt das \textbf{graphische Prinzip der Statik}.
+ \newline
+ Die Kraft $\overrightarrow{R}=\overrightarrow{F}_1+\overrightarrow{F}_2$ mit Angriffspunkt $A$ ist $\left\{\left\{A, \overrightarrow{F}_1\right\}, \left\{A, \overrightarrow{F}_2\right\}\right\}$ der Kräftegruppe statisch äuivalent, falls die Abstände $a_1$, $a_2$ durch die Momentenformel, auch \textbf{Hebelgesetzt} genannt, miteinander verknüpft sind.
+ \begin{equation}
+ \boxed{a_1\cdot \Big\vert\overrightarrow{F}_1\Big\vert=a_2\cdot \Big\vert\overrightarrow{F}_2\Big\vert}
+ \end{equation}
+ Somit ist das Moment von $\left\{A, \overrightarrow{R}\right\}$ als auch das Gesamtmoment bezüglich eines Massenangriffspunktes $A$ $\left\{\left\{A_1, \overrightarrow{F}_1\right\}, \left\{A_2, \overrightarrow{F}_2\right\}\right\}$ null. Die Bedingungen sind der statischen Äquivalenz sind damit erfüllt.
+\newline\newline
+Eine aus zwei parallelen Kräften bestehende Kräftegruppe $\left\{\left\{A_1, \overrightarrow{F}\right\}, \left\{A_2, -\overrightarrow{F}\right\}\right\}$ mit verschindender Resultierende heisst \textbf{Kräftepaar}.
+\begin{equation}
+\boxed{\overrightarrow{R}=\overrightarrow{F}_1+\overrightarrow{F}_2=\overrightarrow{F}-\overrightarrow{F}=\overrightarrow{0}}
+\end{equation}
+Der Abstand $b$ der beiden Wirkungslinien beider Kräfte wird als \textbf{Breite des Kräftepaares} bezeichnet. Das Moment der Kräftegruppe bezüglich eines beliebigen Punktes $O$.  
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{M}_O&=&\left(\overrightarrow{r}_{{OA}_1}\times \overrightarrow{F}\right)-\left(\overrightarrow{r}_{{OA}_2}\times \overrightarrow{F}\right)\\
+&=&\left(\overrightarrow{r}_{OA_1}-\overrightarrow{r}_{OA_2}\right)\times \overrightarrow{F}\\
+&=&\overrightarrow{r}_{A_2A_1}\times \overrightarrow{F}
+\end{array}}
+\end{equation}
+Das \textbf{Moment eines Kräftepaars} ist vom Bezugspunkt unabhängig und lässt sich durch folgenden Ausdruck vektoriell schreiben als
+\begin{equation}
+\boxed{\overrightarrow{M}\left(\text{Kräftepaar}\right)=\overrightarrow{r}_{A_2A_1}\times \overrightarrow{F}}
+\end{equation}
+Dieses Momentenvektor ist ein freier Vektor, der von einer Verschiebung der beiden Kräfte längs ihrer Wirkungslinie nicht abhängt. Dessen Richtung ist zur Ebene $E$ des Kräftepaares senkrecht und bildet den Drehsinn des Kräftepaars eine Rechtsschraube. Sein Betrag ist das Produkt des Kraftbetrages mit der Breite des Kräftepaars und lautet
+\begin{equation}
+\boxed{\Big\vert \overrightarrow{M}\Big\vert=:M=\pm b\cdot \Big\vert\overrightarrow{F}\Big\vert}
+\end{equation}
+Das positive Vorzeichen entsteht aus dem \textbf{Gegenuhrzeigersinn}. Der Momentenvektor steht senkrecht auf der Ebene ist und sein Richtung wird durch das Voezeichen beschrieben. Da die Resultierende eines Kräftepaars null ist, kann das Kräftepaar niemals einer EInzelkraft statisch äquivalent sein.
+\newline\newline
+Zwei Kräftepaare mit gleichem Moment sind statisch äquivalent, da auch ihre Resultierende null, also gleich sind. Es folgt, dass die Wirkung eines Kräftepaars an einem starren Massensystem durch das Moment des Kräftepaars $\overrightarrow{M}$ vollständig beschrieben ist. Somit darf ein Kräftepaar, das auf einem starren Massensystem wirkt, in seiner Ebene beliebig verschoben und verdreht werden.
+\newline\newline
+Man darf sogar den Kraftbetrag und die Breite ändern oder das Kräftepaar in eine parallele Ebene  verschieben, sofern man nur sein Moment konstant hält.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kräftegruppen im Gleichgewicht}
+Eine Kräftegruppe ist im \textbf{Gleichgewicht}, wenn ihre Resultierende und ihr Moment bezüglich eines Punktes verschwinden. Folgende Bedingungen sind die Gleichgewichtsbedingungen
+\begin{equation} 
+\boxed{\overrightarrow{R}=\overrightarrow{0}}\quad \boxed{\overrightarrow{M}_O=\overrightarrow{0}} 
+\end{equation}
+Die erste Bedingung ist die \textbf{Komponentenbedingung} udnd die zweite Bedingung ist die \textbf{Momentenbedingung}. Sind die obigen Bedingungen erfüllt, so folgt daraus, dass die Momentenbedingung auch bezüglich jedes anderen Punktes des Raumes erfüllt sein muss.
+\newline\newline
+Bei räumliche Kräftegruppen ergeben die obigen Bedingungen insgesamt sechs skalare Gleichungen. Bei ebenen Kräftegruppen reduziert sich diese Anzahl auf drei, nämlich zwei Komponentenbedingungen und eine einzige Momentenbedingung in normaler Richtung zur Ebene der Kräftegruppe.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reduktion einer Kräftegruppe}
+Die Erzeugung einer einfachen statisch äquivalenten Kräftegruppe $\left\{G'\right\}$ zu einer gegebene Kräftegruppe $\left\{G\right\}$ heisst \textbf{Reduktion}. Eine Kräftegruppe wird durch die Dyname $\left\{\overrightarrow{R}, \overrightarrow{M}_B\right\}$ in einem frei wählnaren Bezugspunkt $B$ charakterisiert.. Eine Kräftegruppe $\left\{G'\right\}$ aus einer Einzelkraft $\left\{B | \overrightarrow{R}\right\}$ und einen Kräftepaar $\left\{\overrightarrow{F}, -\overrightarrow{F}\right\}$ mit Moment $\overrightarrow{M}_B$, würde die gleiche Dyname in $B$ aufweisen wie die gegebene Kräftegruppe $\left\{G\right\}$. Die Kräftegruppe $\left\{G'\right\}$ wird mit der Einzelkraft $\left\{B | \overrightarrow{R}\right\}$ und dem Moment $\overrightarrow{M}_B$ bezüglich $B$, oder noch kürzer, mit der Dyname $\left\{\overrightarrow{R}, \overrightarrow{M}_B\right\}$ in $B$ charakterisiert. Die gegebene Kräftegruppe $\left\{G\right\}$ wird auf ihre Dyname $\left\{\overrightarrow{R}, \overrightarrow{M}_B\right\}$ in $B$ reduziert.
+\newline\newline
+Bei der Reduktion einer Kräftegruppe auf ihre Dyname kann der Bezugspunkt willkürlich gewählt werden. Der Vektoranteil $\overrightarrow{R}$ der Einzelkraft ist vom Bezugs-punkt unabhängig, die Resultierende einer Kräftegruppe heissst deshalb die \textbf{1. Invariante} dieser Kräftegruppe.
+\newline\newline
+Das in der Dyname in $B$ auftretende Moment $\overrightarrow{M}_B$ der Kräftegruppe hingegen ist gemäss der Grundformel vom Bezugspunkt abhängig. Es zeigt sich eine Analogie zur Transformationsformel für die Translationsgeschwindigkeit in der Kinemate.
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{M}_P=\overrightarrow{M}_O+\overrightarrow{R}\times \overrightarrow{r}_{OP}\\
+\overrightarrow{v}_P=\overrightarrow{v}_O+\overrightarrow{\omega}\times \overrightarrow{r}_{OP}\\
+\end{array}}
+\end{equation}
+Beim GBewegungszustand ist die Rotationsgeschwindigkeit $\overrightarrow{\omega}$ die \textbf{1. Invariante}, bei einer Kräftegruppe ist es nun die Resultierende $\overrightarrow{R}$. Somit gilt
+\begin{equation}
+\boxed{\overrightarrow{R}\bullet \overrightarrow{M}_P=\overrightarrow{R}\bullet \overrightarrow{M}_O}
+\end{equation}
+Die Projektion des Momentes einer Kräftegruppe auf ihre Resultierende kann als \textbf{2. Invariante} bezeichnet werden, denn sie hat in allen Bezugspunkten des Raumes denselben Wert. Eine \textbf{Zentralachse} $\xi$ kann auch ermittelt werden
+\begin{equation}
+\boxed{\overrightarrow{M}_Z=\overrightarrow{M}^{\left(R\right)}=\lambda\cdot \overrightarrow{R}}
+\end{equation}
+Die Zentralachse enthält alle Bezugspunkte $Z$ mit dem Momentvektor parallel zur Resultierenden der Kräftegruppe. Die Dyname $\left\{\overrightarrow{R}, \overrightarrow{M}_Z=\overrightarrow{M}^{\left(R\right)}\right\}$ in den Punkten $Z\in \xi$ der Zentralachse wird als \textbf{Schraube der Kräftegruppe} bezeichnet.  
+\newline\newline
+Jede Kräftegruppe mit $\overrightarrow{R}\neq \overrightarrow{0}$ lässt sich statisch äquivalent auf eine resultierende Kraft $\left\{Z|\overrightarrow{R}\right\}$ mit Massenangriffspunkt $Z$ auf der Zentralachse $\xi$ der Kräftegruppe und ein Kräftepaar in einer Ebene senkrecht zur Zentralachse reduzieren. Das Moment dieses Kräftepaars muss gleich der \textbf{2. Invariante} $\overrightarrow{M}^{\left(R\right)}$ der Kräftegruppe sein, die Zentralachse fällt mit der Wirkungslinie der resultierenden Kraft $\left\{Z|\overrightarrow{R}\right\}$ zusammen.
+\newline\newline 
+Verschwindet die 2. Invariante $\overrightarrow{M}^{\left(R\right)}$, ist also das Moment der Kräftegruppe bezüglich eines beliebigen Punktes $B$ des Raums senkrecht zur Resultierenden der Kräftegruppe $\left(\overrightarrow{R}\bullet \overrightarrow{M}_B=0\right)$, so lässt sich die Kräftegruppe statisch äquivalent auf eine EInzelkraft $\left\{Z|\overrightarrow{R}\right\}$ mit Massenangriffspunkt $Z$ auf der Zentralachse $\xi$ und mit Wirkungslinie $\xi$ reduzieren. Eine Kräftepaar mit verschwindender Resultierenden $\overrightarrow{R}=\overrightarrow{0}$ ist einem Kräftepaar statisch äquivalent, dessen Moment gleich dem (invarianten) Moment der Kräftegruppe ist.
+\newline\newline
+Bei einem \textbf{ebenen Kräftegruppe} bestehend aus Kräften, deren Wirkungslinien in einer Ebene $E$ liegen, sind die einzelnen Momente bezüglich eines beliebigen Punktes $B\in E$ definitionsgemäss senkrecht zur Ebene. Ist die Resultierende der Kräftegruppe $\overrightarrow{R}\neq \overrightarrow{0}$, so liegt sie in der Ebene und muss folglich senkrecht stehen zum Gesamtmoment der Kräftegruppe bezüglich $B$. Es gilt also $\overrightarrow{R}\bullet \overrightarrow{M}_B=0$, so dass, wegen der Invarianz dieses Skalarproduktes, nicht nur bezüglich $B\in E$, sondern bezüglich aller Punkte des Raumes das Moment der Kräftegruppe notwendigerweise senkrecht zu $\overrightarrow{R}$ sein muss. Eine ebene Kräftegruppe mit $\overrightarrow{R}\neq \overrightarrow{0}$ lässt sich also stets auf eine statisch äquivalente Einzelkraft längs der Zentralachse reduzieren. Diese liegt ebenfalls in der Ebene der Kräftegruppe. 

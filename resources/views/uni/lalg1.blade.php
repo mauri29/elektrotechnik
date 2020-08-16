@@ -21,3 +21,5 @@
     </ul>
 </p>
 <p><b>Lernziele:</b> Erfahrungsnote und schriftliche MSP</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/MATHEMATIK/LINEARE ALGEBRA/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> LINEARE ALGEBRA</a></p>

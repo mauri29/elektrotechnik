@@ -1,0 +1,98 @@
+\section{RCL-Netzwerke mit Wechselstrom}
+Feste Einschaltevorgang nennt man stationär. Das Verhalten um den Zeitpunkt herum, wo die Wechselspannung ein- oder ausgeschaltet wird, heisst transient.
+\newline\newline
+RCL-Netzwerke mit linearen Elementen, die mit einer festen Wechselspannung der Frequenz $\nu$ oder Winkelfrewuenz $\omega$ betrieben werden
+\begin{equation}
+\boxed{\nu=\dfrac{1}{T}}\quad \boxed{\omega=\dfrac{2\pi}{T}}
+\end{equation}
+Die Wechselspannung lautet
+\begin{equation}
+\boxed{u_Q\left(t\right)=\hat{u}\cdot\cos\left(\omega\cdot t\right)}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\begin{pmatrix}\hat{u}\cos\left(\omega\cdot \overrightarrow{t}\right)\\\hat{u}\cdot \sin\left(\omega\cdot \overrightarrow{t}\right)\end{pmatrix}}
+\end{equation}
+Lineare Netzwerke, die mit einer Wechselspannung der Frequenz $<omega$ betrieben werden, werden nach kurzer Zeit mit der frequenz $\omega$ schwingen. Die transiente Lösung fällt schnell exponentiell ab und es bleibt die stationäre Lösung bestehen. Da in der stationären Lösung Strom und Spannung mit Frequenz $\omega$ schwingen, führt man für beide die Basis $\overrightarrow{e}_1=\cos\left(\omega\cdot t\right)$ und $\overrightarrow{e}_e=\sin\left(\omega\cdot t\right)$.
+\newline\newline
+Man will die Spannungsabfall an den linearen Elementen betrachten. Man kann die Kirchhoff'sche Maschenregel anwenden um den Wechselstrom zu beschreiben, also die Summe aller Spannungen über jede geschlossene Masche muss null sein. Dabei sind $u_i\left(t\right)$ die Spannungen an den jeweiligen Elementen und $u_q\left(t\right)$.
+\begin{equation}
+\boxed{\displaystyle \sum_iu_i-u_q=0}
+\end{equation}
+Eine Kapazität $C$ ist proportional zur angelegten Spannung $u$. Um den Strom in Verbindung mit der Spannung zu bringen, leitet man auf beide Seiten nach der Zeiten ab. Die zeitliche Änderung des Spannungsabfalls und die zeitliche Spannung sind ausserdem
+\begin{equation}
+\boxed{q\left(t\right)=C\cdot u\left(t\right)}\quad \boxed{\underbrace{\dfrac{\text{d}q(t)}{\text{d}t}}_{i(t)}=\underbrace{\dfrac{\text{d}C}{\text{d}t}\cdot u(t)}_{0}+C\cdot \dfrac{\text{d}u(t)}{\text{d}t}\Rightarrow i(t)=C\cdot \dfrac{\text{d}u(t)}{\text{d}t}}
+\end{equation}
+\begin{equation}
+\boxed{\dfrac{\text{d}u(t)}{\text{d}t}=\dfrac{i(t)}{C}}\quad \boxed{u(t)=\displaystyle \int_{\infty}^t\dfrac{i\left(\tau\right)}{C}\text{d}\tau}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert des der Kapazität
+\begin{equation}
+\boxed{Z_C=\begin{pmatrix}0&-\dfrac{1}{\omega C}\\\dfrac{1}{\omega C}&0\end{pmatrix}}\quad \boxed{G_C=\left(Z_C\right)^{-1}=\begin{pmatrix}0&\omega C\\\omega C&0\end{pmatrix}}
+\end{equation}
+
+
+Aus einem Ohmschen Widerstand fällt folgende Spannung ab
+\begin{equation}
+\boxed{u(t)=R\cdot i(t)}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert des Widerstandes
+\begin{equation}
+\boxed{Z_R=\begin{pmatrix}R&0\\0&R\end{pmatrix}}\quad \boxed{G_R=\left(Z_R\right)^{-1}=\begin{pmatrix}\dfrac{1}{R}&0\\0&\dfrac{1}{R}\end{pmatrix}}
+\end{equation}
+Aus einem Ohmschen Widerstand fällt folgenden Strom, wobei $G$ der Leitwert ist, ab
+\begin{equation}
+\boxed{i(t)=G\cdot u(t)}
+\end{equation}
+An einer Induktivität fällt folgende Spannung ab
+\begin{equation}
+\boxed{u(t)=L\cdot \dfrac{\text{d}}{\text{d}t}i(t)}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert der Induktivität
+\begin{equation}
+\boxed{Z_L=\begin{pmatrix}0&\omega L\\-\omega L&0\end{pmatrix}}\quad \boxed{G_L=\left(Z_L\right)^{-1}=\begin{pmatrix}0&-\dfrac{1}{\omega L}\\\dfrac{1}{\omega L}&0\end{pmatrix}}
+\end{equation}
+Die Gesamt Impendanz eines Netzwerkes entsteht durch Maschenregel, um die Impendanz einer Serienschaltung von zwei Impendanzen zu berechnen. Die Ströme $i_1(t)$ und $i_2(t)$ in einer Serienschaltung sind gleich. Das heisst die Widerstände können addiert werden und analog mit den Impendanzen weiter berechnen
+\begin{equation}
+R_1\cdot i_1(t)+R_2\cdot i_2(t)=\left(R_1+R_2\right)\cdot i(t)-u_Q\left(t\right)=0
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\left(Z_1+Z_2\right)\cdot \overrightarrow{i}(t),\quad \text{(Serie)}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\left(Z_1^{-1}+Z_2^{-1}\right)^{-1}\cdot i(t)=\left(G_1+G_2\right)^{-1}\cdot \overrightarrow{i}(t),\quad \text{(Parallel)}}
+\end{equation}
+Eine Kapazität $C$ und eine Induktivität $L$ in Serienkreis mit einer Wechselspannung $u_Q(t)$ sei gegeben. Es ergibt sich aus dem Maschenregel
+\begin{equation*}
+\begin{array}{lll}
+u_C+u_L-u_Q(t)&=&0\\
+\left(Z_C+Z_L\right)\odot \overrightarrow{i}(t)&=&\overrightarrow{u}_Q(t)\\
+\overrightarrow{i}(t)&=&\left(Z_C+Z_L\right)^{-1}\odot \overrightarrow{u}_Q(t)\\
+\overrightarrow{i}(t)&=&\begin{pmatrix}0&-\dfrac{1}{\omega C}+\omega L\\\dfrac{1}{\omega C}-\omega L&0\end{pmatrix}^{-1}\odot \overrightarrow{u}_Q(t)\\
+\end{array}
+\end{equation*}
+Der Phasenwinkel bei Cosinus entsteht falls
+\begin{equation}
+\boxed{
+\begin{array}{l}
+A=\sqrt{a^2+b^2}\\
+\varphi=-\arctan\left(b/a\right)+\Big\{\begin{matrix}+\pi,\quad (a<0)\\+0,\quad \text{sonst}\end{matrix}\\
+\tau=\omega t
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{a\cdot \cos\left(\tau\right)+b\cdot \sin\left(\tau\right)=A\cdot \cos\left(\tau+\varphi\right)}
+\end{equation}
+Der Phasenwinkel bei Sinus entsteht falls
+\begin{equation}
+\boxed{
+\begin{array}{l}
+A=\sqrt{a^2+b^2}\\
+\varphi=\arctan\left(a/b\right)+\Big\{\begin{matrix}+\pi,\quad (b<0)\\+0,\quad \text{sonst}\end{matrix}\\
+\tau=\omega t
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{a\cdot \cos\left(\tau\right)+b\cdot \sin\left(\tau\right)=A\cdot \sin\left(\tau+\varphi\right)}
+\end{equation}

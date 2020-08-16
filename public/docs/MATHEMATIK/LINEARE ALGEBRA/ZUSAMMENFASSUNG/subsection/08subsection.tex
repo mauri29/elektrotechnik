@@ -1,0 +1,43 @@
+\section{Transformationen von Basen}
+Die Vektoren $\overrightarrow{c}_{b,i}$ heissen Basisvektoren des Vektorraumes $V$, falls diese linear unabhängig sind und jeder Vektor $V$ als Linearkombination von den Basisvektoren geschrieben werden kann.
+\newline\newline
+Die Anzahl der Basisvektoren eines Vektorraums $V$ heisst Dimension von $V$.
+\newline\newline
+Seien $OA_i$ sind die Komponenten der Basisvektoren des Vektorraums $V$ gegeben. 
+\begin{equation}
+\boxed{\overrightarrow{OA}=OA_1\cdot \overrightarrow{e}_{b,1}+OA_2\cdot \overrightarrow{e}_{b,2}+\dotso+OA_n\cdot \overrightarrow{e}_{b,n}=\displaystyle \sum_{i=1}^nOA_i\cdot \overrightarrow{e}_i}
+\end{equation}
+Die Vektoren $\overrightarrow{e}_i$ heissen Standard-Basis, auch kartesische Basis oder kartesisches Koordinatensystem.
+\begin{equation}  
+\boxed{\overrightarrow{OA}=OA_1\cdot \overrightarrow{e}_1+OA_2\cdot \overrightarrow{e}_2+OA_3\cdot \overrightarrow{e}_3=\displaystyle \sum_{i=1}^3OA_i\cdot \overrightarrow{e}_i}
+\end{equation}  
+Eine Basis heisst normiert, wenn die Basisvektoren die Länge 1 haben.
+\newline\newline
+Sei $A\in\mathbb{R}^{n\times n}$ eine Matrix und enthält die Basisvektoren in den Spalten
+\begin{equation}
+\boxed{A=\begin{pmatrix}\overrightarrow{OA}_1&\overrightarrow{OA}_2&\dotso&\overrightarrow{OA}_n\end{pmatrix}}
+\end{equation}
+Ein Vektor $\overrightarrow{OA}$ kann auf eine andere Basis ausgedrückt werden
+\begin{equation}
+\boxed{\overrightarrow{OA}=\lambda_1\cdot \overrightarrow{OF}_1+\lambda_2\cdot \overrightarrow{OF}_2+\dotso+\lambda_n\cdot \overrightarrow{OF}_n}
+\end{equation}
+Sei $A$ und $B$ zwei Matrizen zweier Basen. Seien $\overrightarrow{x}^A$ die Koordinaten bezüglich $A$ und $\overrightarrow{x}^B$ die Koordinaten von $\overrightarrow{x}$ bezüglich $B$. Jeder Vektor kann durch die Transformationsmatrix $T$ ausgedrückt werden. Es gilt dann
+\begin{equation}
+\boxed{\overrightarrow{x}^B=T\odot \overrightarrow{x}^A}\quad \boxed{T=B^{-1}\odot A}\quad \boxed{\overrightarrow{OB}_n=T\odot \overrightarrow{OA}_n}
+\end{equation}
+Ist die Basis sowohl orthogonal wie auch normiert, heisst sie Orthonormalbasis und die Vektoren sind linear unabhängig. Bei der Basis-Transformation von der Standard-Basis von vektoren mit $\overrightarrow{OA}_i\in\mathbb{R}^{n\times 1}$ in die Orthonormal-Basis mit $\overrightarrow{OB}_i\in\mathbb{R}^{n\times 1}$ kann der Vektor $\overrightarrow{OA}$ in die neue Komponenten umgewandelt werden.
+\begin{equation}
+\boxed{\overrightarrow{OA}_i=\lambda_1\cdot \overrightarrow{OB}_1+\lambda_2\cdot \overrightarrow{OB}_2+\dotso+\lambda_n\cdot \overrightarrow{OB}_n}\quad \boxed{\lambda_i=\overrightarrow{OA}_i\bullet \overrightarrow{OB}_i}
+\end{equation}
+Sei $B$ die Matrix eomer Orthonormalbasis aus den $\overrightarrow{OB}_i$ orthonormierten Vektoren. Seien $\overrightarrow{OA}_i$ die Koordianten von der Vektoren in der Standardbasis. Die Koordinaten aller Vektoren $\overrightarrow{OB}_i$ ergeben sich ausserdem aus
+\begin{equation} 
+\boxed{\overrightarrow{OB}_i=T\odot \overrightarrow{OA}_i}\quad \boxed{T=B^{-1}\odot A=B^T\odot A=B^T}
+\end{equation}
+Die Basisvektoren heisst orthogonale Basis, wenn die Basisvektoren rechtwinklig zueinander sind. Ihr Skalarprodukt ist null. Bei der Basis-Transformation von der Standard-Basis von vektoren $\overrightarrow{OA}_i\in\mathbb{R}^{n\times 1}$ in die Orthogonal-basis mit $\overrightarrow{OB}_i\in\mathbb{R}^{n\times 1}$ kann der Vektor $\overrightarrow{OA}$ in die neue Komponenten umgewandelt werden.
+\begin{equation}
+\boxed{\overrightarrow{OA}_i=\lambda_1\cdot \overrightarrow{OB}_1+\lambda_2\cdot \overrightarrow{OB}_2+\dotso+\lambda_n\cdot \overrightarrow{OB}_n}\quad \boxed{\lambda_i=\dfrac{\overrightarrow{OA}_i\bullet \overrightarrow{OB}_i}{\Big\vert\overrightarrow{OB}_i\Big\vert^2}}
+\end{equation}
+Seien $A$ und $B$ Basismatrizen. Bezüglich $A$ hat die lineare Abbildung $L$ die Darstellung $L\left(\overrightarrow{x}_A\right)=M\cdot \overrightarrow{x}$ und bezüglich der Basis $B$ die Darstellung $L\left(\overrightarrow{x}_B\right)=K\cdot \overrightarrow{x}$, so gilt
+\begin{equation}
+\boxed{K=T\odot M\odot T^{-1}}\quad \boxed{T=B^{-1}\odot A}
+\end{equation}

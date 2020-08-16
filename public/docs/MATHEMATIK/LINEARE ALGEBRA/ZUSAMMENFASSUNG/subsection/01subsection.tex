@@ -1,0 +1,112 @@
+\section{Vektor}
+\subsection{Vektordefinition}
+Vektoren kommen in der Kinematik udn Statik, Geschwindigkeit, Beschleunigung, Impuls, Kraft, elektrische und magnetische Feldstärke vor.
+\newline\newline
+Ein Vektor ist ein Element eines Vektorraums, also ein Objekt, das zu anderen Vektoren addiert und mit Skalaren multipliziert werden kann. Vektoren beschreiben Parallelverschiebungen in der Ebene oder im Raum. Vektoren werden durch Pfeile, der einen Urbildpunkt mit seinem Bildpunkt verbindet, dargestellt werden. In der Ebene werden Vektoren durch Zahlenpaare und im Raum durch Tripel bzw. Spaltenvektoren dargestellt. Im mehrdimensionalen Räume spricht man von Vektoren mit $n$-Tupel reeller Zahlen.
+\newline\newline
+Vektoren haben einen Betrag und eine Richtung. Sie bezeichnen Punkte im Raum durch Bezugspunkte wie den Ursprung $O$.
+\begin{equation}
+\boxed{\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}=\begin{pmatrix}OB_x-OA_x\\OB_y-OA_y\\OB_z-OA_z\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\vert \overrightarrow{AB}\vert=\sqrt{(OB_x-OA_x)^2+(OB_y-OA_y)^2+(OB_z-OA_z)^2}}
+\end{equation}
+Zwei Vektoren $\overrightarrow{OA}$ und $\overrightarrow{OB}$ werden addiert, indem
+\begin{equation}
+\boxed{\overrightarrow{OS}=\overrightarrow{OA}+\overrightarrow{OB}}
+\end{equation}
+$\overrightarrow{OB}$ parallel verschoben wird bis sein Anfangspunkt mit dem Endpunkt vom Vektor $\overrightarrow{OA}$ zusammenfällt. Der Summenvektor geht vom Anfangspunkt von $\overrightarrow{OA}$ bis zum Endpunkt von $\overrightarrow{OB}$.
+\newline\newline
+Der Differenz-Vektor ist die Summe von $\overrightarrow{OA}$ und $-\overrightarrow{OB}$
+\begin{equation}
+\boxed{\overrightarrow{OD}=\overrightarrow{OA}-\overrightarrow{OB}}
+\end{equation}
+Zu jedem Vektor $\overrightarrow{OA}$ gibt es einen Gegenvektor $-\overrightarrow{OA}$. Er besitzt den gleichen Betrag aber die entgegengesetzte Richtung.
+\begin{equation}
+\boxed{\overrightarrow{OA}+\left(-\overrightarrow{OA}\right)=\overrightarrow{O}}
+\end{equation}
+Durch die Multiplikation von $\overrightarrow{OA}$ mit einer reellen Zahl $\lambda$ entsteht ein neuer Vektor mit Betrag und Richtung. Für $\lambda>0$ ist er parallel und für $\lambda<0$ antiparallel zu $\overrightarrow{OA}$ gerichtet
+\begin{equation}
+\boxed{\lambda\overrightarrow{OA}=\lambda\cdot \overrightarrow{OA}}
+\end{equation}
+Ein Normalenvektor hat die Länge 1 und heisst deshalb normiert.
+\begin{equation}
+\boxed{\overrightarrow{n}_{\overrightarrow{OA}}=\dfrac{\overrightarrow{n}'_{\overrightarrow{OA}}}{\Big\vert \overrightarrow{n}'_{\overrightarrow{OA}}\Big\vert}}\quad \boxed{\overrightarrow{n}'_{OA}=\begin{pmatrix}-OA_y\\OA_x\end{pmatrix}=\begin{pmatrix}OA_y\\-OA_x\end{pmatrix}}
+\end{equation}
+\subsection{Vektorräume}
+Ein Vektorraum über $\mathbb{R}$ ist eine Menge $V$ mit einer Addition und einer skalaren Multiplikation. Seien $\overrightarrow{OA}$ und $\overrightarrow{OB}$ beliebige Elemente des Vektorraums $V$ mit $\lambda$, $\mu\in \mathbb{R}$, es gilt
+\begin{equation}
+\boxed{\overrightarrow{OA}+\overrightarrow{OB}=\overrightarrow{OB}+\overrightarrow{OA},\quad \text{mit }\overrightarrow{OA}+\overrightarrow{OB}\in V}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}+\overrightarrow{O}=\overrightarrow{OA}}\quad \boxed{\overrightarrow{OA}\cdot 1=\overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}+\left(-\overrightarrow{OA}\right)=\overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\lambda\cdot\left(\mu\cdot \overrightarrow{OA}\right)=\left(\lambda\cdot \mu\right)\cdot \overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\lambda\cdot \left(\overrightarrow{OA}\cdot \overrightarrow{OB}\right)=\lambda\cdot \overrightarrow{OA}+\lambda\cdot \overrightarrow{OB},\quad \text{mit }\lambda\cdot \overrightarrow{OA}\in V}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda+\mu\right)\cdot \overrightarrow{OA}=\lambda\cdot \overrightarrow{OA}+\mu\cdot \overrightarrow{OA}}
+\end{equation}
+\subsection{Beziehungen von Vektoren}
+Die Menge von Vektoren heisst linear abhängig genau dann, wenn die Gleichung eine Lösung mit $\lambda_i\neq 0$ für mindestens einen Koeffizienten gilt
+\begin{equation}
+\boxed{\lambda_1\cdot \overrightarrow{OA}_1+\lambda_2\cdot \overrightarrow{OA}_2+\dotso+\lambda_n\cdot \overrightarrow{OA}_n=\displaystyle \sum_{k=1}^n\lambda_i\cdot \overrightarrow{OA}_i=\overrightarrow{O},\quad \lambda_i\in \mathbb{R}}
+\end{equation}
+Zwei Vektoren sind kollinear, wenn es eine Zahl $\lambda$ gibt, so dass
+\begin{equation}
+\boxed{\overrightarrow{OA}_1-\lambda\cdot \overrightarrow{OA}_2=\overrightarrow{O}}
+\end{equation}
+Somit bilden eine Linearkombination und sind linear abhängig. Diese Vektoren liegen auf einer Geraden, zeigen in dieselbe Richtung und haben verschiedene Längen. Die Kollinearirär wird bei der Lagebeziehung mehreren Geraden durchgeführt.
+\newline\newline
+Drei Vektoren sind komplenar, wenn die Vektoren auf einer Ebene liegen und eine Vektorenkette schliessen., die zum Nullpunkt hinführt. Einer der drei Vektoren lässt sich also als Linearkombination der beiden anderen Vektoren darstellen. Somit sind sie linear abhängig. Dioe Komplanaität wird für die Lagebeziehung zwischen Geraden oder Lagebeziehung zwischen Gerade und Ebene verwendet.
+\begin{equation}
+\boxed{\lambda_1\cdot \overrightarrow{OA}_1+\lambda_2\cdot \overrightarrow{OA}_2+\lambda_3\cdot \overrightarrow{OA}_3=\overrightarrow{O}}
+\end{equation}
+Linear unabhängige Vektoren haben keine spezielle Lage zueinander. Zwei linear unabhängige Vektoren spannen eine Fläche auf. Drei linear unabhängige Vektoren spannen ein Hypervolumen auf. Wenn man entlang von jedem Vektor geht, kommt man nie wieder zum Ursprung zurück, ausser wenn man alle Schrittlängen auf null setzt.
+\newline\newline
+Aus zwei Vektoren $\overrightarrow{OP}$ und $\overrightarrow{OQ}$ lässt sich den Mittelpunkt wie folgt bestimmen
+\begin{equation}
+\boxed{\overrightarrow{OM}=\overrightarrow{OP}+\dfrac{1}{2}\cdot\left(\overrightarrow{OQ}-\overrightarrow{OP}\right)}
+\end{equation}
+Aus drei Vektoren $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$ die ein Dreieck bilden, lautet den zugehörigen Schwerpunkt
+\begin{equation}
+\boxed{\overrightarrow{OS}=\dfrac{1}{3}\cdot\left(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\right)}
+\end{equation}
+Bilden $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$ ein gleichschenkliges Dreieck. Den Flächeninhalt lautet
+\begin{equation}
+\boxed{F=\dfrac{1}{2}\cdot \Big\vert\overrightarrow{AB}\Big\vert\cdot \Big\vert\overrightarrow{M_cC}\Big\vert}
+\end{equation}
+Um die Orthogonalität eines Vektors zu überprüfen, wird dieser Vektor mit seinen zugehörigen senkrechten Komponenten skalar multipliziert und dies ergibt null
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OA}^{\perp}=0}
+\end{equation}
+\lstinputlisting[language=Matlab, caption={Vektoren und Matrizen}]{../programs/vectors.m}
+\begin{comment}
+\section{Trigonometrie}
+Unter dem Bogenmass $x$ versteht man die Länge des Bogens auf dem Einheitskreis
+\begin{equation}
+\boxed{\dfrac{x}{2\pi}=\dfrac{\alpha}{360^{\circ}}}
+\end{equation}
+Die Arkustangens-Funktion ordnet den Komponenten $x$ und $y$ den Winkel $\varphi$ zu. Dabei sind $x$, $y\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\arctan\left(\dfrac{y}{x}\right)+\left\{\begin{matrix}0^{\circ}\quad (Q_1\text{ und }Q_4)\\180^{\circ}\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Die Arkussinus-Funktion ordnet der Komponente $y$ und dem Radius $r$ den Winkel $\varphi$ zu. Dabei sind $r$, $y\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\left\{\begin{matrix}\arcsin\left(\dfrac{y}{r}\right)\quad (Q_1\text{ und }Q_4)\\180^{\circ}-\arcsin\left(\dfrac{y}{r}\right)\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Die Arkuskosinus-Funktion ordnet der Komponente $x$ und dem Radius $r$ den Winkel $\varphi$ zu. Dabei sind $r$, $x\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\left\{\begin{matrix}\arccos\left(\dfrac{x}{r}\right)\quad (Q_1\text{ und }Q_2)\\360^{\circ}-\arccos\left(\dfrac{x}{r}\right)\quad (Q_3\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Somit lassen sich die Polarkoordinaten definieren
+\begin{equation}
+\boxed{\overrightarrow{OB}=\Big\vert\overrightarrow{OB}\Big\vert\cdot \begin{pmatrix}\cos\left(\varphi\right)\\\sin\left(\varphi\right)\end{pmatrix}}\quad \boxed{\varphi=\arctan\left(\dfrac{y}{x}\right)+\left\{\begin{matrix}0^{\circ}\quad (Q_1\text{ und }Q_4)\\180^{\circ}\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+\end{comment}

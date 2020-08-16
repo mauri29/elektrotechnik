@@ -1,0 +1,51 @@
+\section{Einleitung}
+Die Basis der objektorientierte Programmierung liegt bei drei Grundelemente: Unterstützung vomn Vererbungsmechanismen, Unterstützung von Datenkapselung und Unterstützung von Polymorphie.
+\\\\
+Die Unified Modelling Language (UML) ist ein Modellierungsmittel. Die objektorientierte Analyse betrachtet eine Domäne als System von kooperierenden Objekten. Entwurfsmuster sind Elemente wiederverwendbarer objektorientierter Software und dienen als objektorientierte Methoden.
+\\\\
+Jede Sprache hat ihre eigene Stärken, jede macht bestimmte Sachen einfach, und jede hat ihre eigenen Idiome und Muster. Je mehr Programmiersprachen man kennt, desto mehr Vorgehensweisen lernt man oft.
+\\\\
+Korrektheit: Software soll genau das tun, was von ihr erwartet wird. Benutzerfreundlichkeit: Software soll einfach und intuitiv zu benutzen sein. Effizient: Software soll mit wenigen Ressourcen auskommen und gute Antwortzeiten für Anwender haben. Wartbarkeit: Software soll mit wenig Aufwand erweiterbar und änderbar sein.
+\section{Basis oder Objektorientierung}
+Die \textbf{Datenkapselung}, die \textbf{Polymorphie} und die \textbf{Vererbung} sind drei Werkzeugen, die einem erlaubt, die Zielsetzungen der Entwicklung von Software anzugehen. Der Speicher enthält Daten, die bearbeitet werden, andererseits enthält er Instruktionen, die bestimmen, was das Programm macht.
+\\\\
+\textbf{Routinen} sind das Basiskonstrukt der strukturierten Programmierung. Indem ein Programm in Unterprogramme zerlegt wird, erhält es seine grundsätzliche Struktur. Eine Routine kann entweder Parameter haben oder ein Ergebnis zurückgeben. Eine Routine wird auch als Unterprogramm bezeichnet.
+\\\\
+Eine \textbf{Funktion} ist eine Routine, die einen speziellen Wert zurückliefert, ihren Rückgabewert. 
+\\\\
+Eine \textbf{Prozedur} ist eine Routine, die keinen Rückgabewert hat. Eine Übergabe von Ergebnissen an einen Aufrufer kann trotzdem über die Werte der Parameter erfolgen.
+\\\\
+Die \textbf{Strukturierung} der Instruktionen und der Daten erfolgen durch Verzweigungen, Zyklen und Routinen. Man benutzt globale und lokale, statisch und dynamisch allozierte Variablen, deren Inhalte definierte Strukturen wie Datentypen, Zeiger, Records, Arrays, Listen, Bäume oder Mengen haben. Das Strukturieren ist die Beherrschung der Komplexität.
+\\\\
+Daten und Routinen sind voneinander getrennt. Die Objektorientierung verändert diese zwei durch die Einführung von Objekten. Daten gehören nun explizit einem Objekt. Objekte können ihre Daten verändern oder auch lesend auf sie zuzugreifen. Ein Objekt kann selbst dafür sorgen, dass die Konsistenz der Daten gewahrt bleibt.
+\\\\
+Das Prinzip der \textbf{Datenkapselung} stellt die Konsistenz von Daten sicher und somit ist die Korrektheit gewährleistet. Vorgehensweisen und interne Daten können reduziert werden, ohne das Resultat zu beeinflussen.
+\\\\
+Die \textbf{Polymorphie} ist die Vielgestaltigkeit. Ein Bezeichner nimmt abhängig von seiner Verwendung Objekte unterschiedlichen Datentyps an. Die Nutzung der Polymorphie führt zu wesentlich flexibleren Programmen. Sie steigert damit die Wartbarkeit und Änderbarkeit.
+\\\\
+Objekte erhalten durch \textbf{Vererbung} die Attribute und Methoden anderer Objekte. 
+\section{Prinzipien des objektorientierten Entwurfs}
+Unter einem \textbf{Modul} (Objjekte, Klassen, Datentypen) versteht man einen überschaubaren und eigenständigen Teil einer Anwendung. Solch ein Modul hat nun innerhalb einer Anwendung eine ganz bestimmte Aufgabe, für die es die Verantwortung trägt. Ein Modul hat eine oder mehrere Verantwortungen. Module bestehen aus weitere abhängigen Untermodulen. 
+\\\\
+Das Prinzip der einzigen Verantwortung besagt, dass jedes Modul genau eine Verantwortung übernimmt und ede Verantwortung genau einem Modul zugeordnet werden soll. Die Verantwortung setzt bestimmte zeitliche ändernbare Anforderungen des Moduls um.
+\\\\
+Ein Modul soll zusammenhängend (kohäsiv) sein. Alle Teile eines Moduls sollten mit anderen Teilen des Moduls zusammenhängen und voneinander abhängig sein. Haben Teile eines Moduls keinen Bezug zu anderen Teilen, kann man davon ausgehen, dass man diese Teile als eigenständige Module implementieren kann. Eine Zerlegung in Teilmodule bietet sich damit an.
+\\\\
+Wenn für die Umsetzung viele Module zusammenarbeiten müssen, bestehen Abhängigkeiten zwischen diesen Modulen. Die Module sind gekoppelt. Die Kopplung zwischen Module sollte möglichst gering sein. Das kann man erreichen, indem man die Verwntwortung für die Koordination der Abhängigkeiten einem neuen Modul zuweist. Hierbei sollte man aber darauf achten, dass man bestehende Abhängigkeiten durch die Einführung eines vermittelten Moduls nicht verschleiert.
+\\\\
+Eine Aufgabe, die ein Programm umsetzen muss, betrifft häufig mehrere voneinander zusammenhängende und abgschlossene Anliegen, die getrennt betrachtet und als getrennte Anforderungen formuliert werden können. Eine identifizierbare Funktionalität eines Systems sollte innerhalb dieses Systems nur einmal umgesetzt sein, Wiederholungen vermeiden.
+\\\\
+Module sollten angepasst werden, offen für Erweiterung und geschlossen für Änderung. Das Modul kann so strukturiert werden, dass die Funktionalität, die fpr eine Variante spezifisch ist, sich durch eine andere Funktionalität leicht ersetzen lässt. Die Funktionalität der Standardvariante muss dabei nicht unbedingt in ein separates Modul ausgelagert werden. Das Modul soll definierte Erweiterungspunkte bieten, an die sich die Erweiterungsmodule anknüpfen lassen.
+\\\\
+Erweiterungspunkte kann man in der Regel durch das Hinzufügen einer \textbf{Indirektion} erstellen. Das Modul darf die variantenspezifische Funktionalität nicht direkt aufrufen. Das Modul konsultiert eine Stelle, die bestimmt, ob die Standardimplementierung oder ein Erweiterungsmodul aufgerufen werden soll.
+\\\\
+Jede Abhängigkeit zwischen zwei Module sollte explizit formuliert und dokumentiert sein. Ein Modul sollte immer von einer klar definierten Schnittstelle des anderen Moduls abhängig sein und nicht von der Art der Implementierung der Schnittstelle. Die Schnittstelle eines Modulssollte getrennt von der Implementierung betrachtet werden können.
+\\\\
+Eine Abstraktion beschreibt das in einem gewählten Kontext Wesentliche eines Gegenstands oder eines Begriffs. Durch eine Abstraktion werden die Details ausgeblendet, die für eine bestimmte Betrachtungsweise nicht relevant sind. Abstraktionen ermöglichen es, unterschiedliche Elemente zusammenzufassenm, die unter einem bestimmten Gesichtspiunkt gleich sind.  
+\section{Die Struktur der Obektorientierung}
+
+
+
+
+
+

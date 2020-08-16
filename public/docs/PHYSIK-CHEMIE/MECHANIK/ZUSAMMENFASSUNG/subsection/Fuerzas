@@ -1,0 +1,10 @@
+\subsection{Kräfte}
+Kräfte beeinflussen Körperzustände. Kräfte können den Bewegungszustand eines Körpers, die Geschwindigkeit, die Arbeit und die Energie eines Körpers beeinflussen und somit den Körper deformieren. Die Einheit der Kraft ist das Newton.
+\newline\newline
+Eine Kraft kann man durch ihren Betrag $\Big\vert\overrightarrow{F}\Big\vert$, ihre Richtung $\dfrac{\overrightarrow{F}}{\Big\vert\overrightarrow{F}\Big\vert}$ und ihre Wirkungslinie. Die Kraft ist definiert durch
+\begin{equation}
+\boxed{\overrightarrow{F}=\begin{pmatrix}F_x\\F_y\\F_z\end{pmatrix}=F_x\cdot \overrightarrow{e}_x+F_y\cdot \overrightarrow{e}_y+F_z\cdot \overrightarrow{e}_z}
+\end{equation}
+\begin{equation}
+\boxed{\Big\vert\overrightarrow{F}\Big\vert=\sqrt{F_x^2+F_y^2+F_z^2}}
+\end{equation}

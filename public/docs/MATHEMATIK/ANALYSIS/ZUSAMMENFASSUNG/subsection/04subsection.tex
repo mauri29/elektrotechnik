@@ -1,0 +1,323 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Unendliche Reihe}
+\subsection{Grundbegriffe}
+Aus den Gliedern einer \textbf{unendlichen Zahlenfolge} $\langle a_n\rangle=a_1, a_2,\dotso, a_n, \dotso$ werden wie folgt Partial- oder Teilsummen $s_n$ gebildet.
+\begin{equation}
+\boxed{s_n=a_1+a_2+a_3+\dotso + a_n=\displaystyle \sum_{k=1}^na_k}
+\end{equation}
+Die Folge $\langle s_n\rangle$ dieser Partialsummen heisst \textbf{unendliche Reihe}. Besitzt die Folge der Partialsummen $s_n$ einen Grenzwert $s$, $\displaystyle \lim_{n\rightarrow \infty}s_n=s$, so heisst die unendliche Reihe $\displaystyle \sum_{n=1}^{\infty}a_n$ \textbf{konvergent} mit dem Summenwert $s$. Besitzt die Partialsumme keinen Grenzwert, so heisst die unendliche Reihe \textbf{divergent}. 
+\begin{equation}
+\boxed{\displaystyle \sum_{n=1}^{\infty}a_n=a_1+a_2+a_3+\dotso + a_n+\dotso=s}
+\end{equation}
+Eine unendliche Reihe $\displaystyle \sum_{n=1}^{\infty}a_n$ heisst \textbf{absolut konvergent}, wenn die aus den Beträgen ihrer Glieder gebildete Reihe $\displaystyle \sum_{n=1}^{\infty}\Big\vert a_n\Big\vert$ konvergiert. Eine Reihe mit dem Summenwert $s=\pm\infty$ ist divergent.
+\subsection{Konvergenzkriterien}
+Die Bedingung $\displaystyle \lim_{n\rightarrow \infty}a_n=0$ ist zwar notwendig, nicht aber hinreichend für die Konvergenz der Reihe $\displaystyle \sum_{n=1}^{\infty}a_n$. Die Reihenglieder einer konvergenten Reihe müssen also eine \textbf{Nullfolge} bilden.
+\newline\newline
+Folgende Bedingungen stellen hinreichende Konvergenzbedingungen dar. Sie ermöglichen in vielen Fällen eine Entscheidung darüber, ob eine vorgegebene Reihe \textbf{konvergiert} oder \textbf{divergiert}. 
+\subsubsection{Quotientenkriterium}
+\begin{equation}
+\boxed{\displaystyle \lim_{n\rightarrow \infty}\Big\vert\dfrac{a_{n+1}}{a_n} \Big\vert=q<1}
+\end{equation}
+Für $q>1$ divergiert die Reihe, für $q=1$ versagt das Kriterium, d.h. eine Entscheidung über Konvergenz oder Divergenz ist anhand dieses Kriteriums nicht möglich.
+\subsubsection{Wurzelkriterium}
+\begin{equation}
+\boxed{\displaystyle \lim_{n\rightarrow \infty}\sqrt[n]{a_n}=q<1}
+\end{equation}
+Für $q>1$ divergiert die Reihe, für $q=1$ versagt das Kriterium, d.h. eine Entscheidung über Konvergenz oder Divergenz ist anhand dieses Kriteriums nicht möglich.
+\subsubsection{Vergleichskriterien}
+Das Konvergenzverhalten einer unendlichen Reihe $\displaystyle \sum_{n=1}^{\infty}a_n$ mit positiven Gliedern kann oft mit Hilfe einer geeigneten konvergenten bzw. divergenten Vergleichsreihe $\displaystyle \sum_{n=1}^{\infty}b_n$ bestimmt werden. Mit dem \textbf{Majorantenkriterium} kann die Konvergenz, mit dem \textbf{Minorantenkriterium} die Divergenz einer Reihe festgestellt werden. 
+\subsubsection{Majorantenkriterium}
+Die vorliegende Reihe konvergiert, wenn die Vergleichsreihe konvergiert und zwischen den Gliedern beider Reihen die Beziehung besteht
+\begin{equation}
+\boxed{a_n\leq b_n,\quad \forall n\in \mathbb{N}^*}
+\end{equation}
+Die konvergente Vergleichsreihe wird als \textbf{Majorante} bezeichnet. Es genügt wenn die angegebene Bedingung $a_n\leq b_n$ von einem gewissen $n_0$ an, d.h. für alle Reihenglieder mit $n\geq n_0$ erfüllt wird.
+\subsubsection{Minorantenkriterium}
+Die vorliegende Reihe divergiert, wenn die Vergleichsreihe divergiert und zwischen den Gliedern beider Reihen die Beziehung besteht
+\begin{equation}
+\boxed{a_n\geq b_n,\quad \forall n\in \mathbb{N}^*}
+\end{equation}
+Die divergente  Vergleichsreihe wird als \textbf{Minorante} bezeichnet. Es genügt wenn die angegebene Bedingung $a_n\geq b_n$ von einem gewissen $n_0$ an, d.h. für alle Reihenglieder mit $n\geq n_0$ erfüllt wird.
+\subsubsection{Leibnizkriterien}
+Eine alternierende Reihe konvergiert, wenn sie die folgenden Bedingungen erfüllt: Die Glieder eine rkonvergenten alternierende Reihe bilden dem Betrage nach eine monoton fallende Nullfolge. Die Reihe konvergiert auch dann, wenn die erste der beiden Bedingungen erst von einem bestimmten Glied an erfüllt ist.
+\subsubsection{Eigenschaften}
+\begin{enumerate}[$(a)$]
+\item Eine konvergente Reihe bleibt konvergent, wenn man endlich viele Glieder weglässt oder hinzufügt oder abändert. Dabei kann sich jedoch der Summenwert ändern. Klammern dürfen in Allgemeinen nicht weggelassen werden, ebenso wenig darf die Reihenfolge der Glieder verändert werden.
+\item Aufeinander folgende Glieder einer konvergenten Reihe dürfen durch eine Klammer zusammengefasst werden; der Summenwert der Reihe bleibt dabei erhalten.
+\item Eine konvergente Reihe darf gliedweise mit einer Konstanten multipliziert werden, wobei sich auch der Summenwert der Reihe mit dieser Konstanten multipliziert.
+\item Konvergente Reihen dürfen gliedweise addiert und subtrahiert werden, wobei sich ihre SUmmenwerte addieren bzw. subtrahieren.
+\item Eine absolut konvergente Reihe ist stets konvergent. Für solche Reihen gelten sinngemäss die gleichen Rechenregeln wie für endliche Summen gliedweise Addition, Subtraktion und Multiplikation, beliebige Anordnung der Reihenglieder usw.
+\end{enumerate}
+\subsection{Spezielle konvergente Reihen}
+\subsubsection{Geometrische Reihe}
+Divergenz für $\Big\vert q\Big\vert\geq 1$
+\begin{equation}
+\boxed{\displaystyle \sum_{n=1}^{\infty}\left(a\cdot q^{n-1}\right)=a+aq+aq^2+\dotso+aq^{n-1}+\dotso=\dfrac{a}{1-q},\quad \left(\Big\vert q\Big\vert<1\right)}
+\end{equation}
+\subsubsection{Weitere konvergente Reihen}
+\begin{enumerate}[$(a)$]
+\item $1+\dfrac{1}{1!}+\dfrac{1}{2!}+\dfrac{1}{3!}+\dotso+\dfrac{1}{n!}+\dotso=e$
+\item $1-\dfrac{1}{2}+\dfrac{1}{3}-\dfrac{1}{4}+-\dotso+\left(-1\right)^{n+1}\cdot \dfrac{1}{n}+\dotso=\ln\left(2\right)$
+\item $1-\dfrac{1}{3}+\dfrac{1}{5}-\dfrac{1}{7}+-\dotso+\left(-1\right)^{n+1}\cdot \dfrac{1}{2n-1}+\dotso=\dfrac{\pi}{4}$
+\item $\dfrac{1}{1^2}+\dfrac{1}{2^2}+\dfrac{1}{3^2}+\dfrac{1}{4^2}+\dotso+\dfrac{1}{n^2}+\dotso=\dfrac{\pi^2}{6}$
+\item $\dfrac{1}{1^2}-\dfrac{1}{2^2}+\dfrac{1}{3^2}-\dfrac{1}{4^2}+-\dotso+\left(-1\right)^{n+1}\cdot \dfrac{1}{n^2}+\dotso=\dfrac{\pi^2}{12}$
+\item $\dfrac{1}{1\cdot 2}+\dfrac{1}{2\cdot 3}+\dfrac{1}{3\cdot 4}+\dfrac{1}{4\cdot 5}+\dotso+\dfrac{1}{n\cdot \left(n+1\right)}+\dotso=1$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Potenzreihen}
+\subsection{Definition einer Potenzreihe}
+\subsubsection{Entwicklung um die Stelle $x_0$}
+\begin{equation}
+\boxed{P\left(x\right)=\displaystyle \sum_{n=0}^{\infty}a_n \left(x-x_0\right)^n=a_0+a_1 \left(x-x_0\right)+a_2 \left(x-x_0\right)^2+\dotso+a_n \left(x-x_0\right)^n+\dotso}
+\end{equation}
+\subsubsection{Entwicklung um den Nullpunkt $x_0=0$}
+\begin{equation}
+\boxed{P\left(x\right)=\displaystyle \sum_{n=0}^{\infty}a_nx^n=a_0+a_1x+a_2x^2+\dotso+a_nx^n+\dotso}
+\end{equation}
+\subsection{Konvergenzradius und Konvergenzbereich}
+
+Der Konvergenzbereich einer Potenzreihe $\displaystyle \sum_{n=0}^{\infty}a_nx^n$ besteht aus dem offenen Intervall positive Zahl $r$ heisst Konvergenzradius. Für $\Big\vert x\Big\vert>r$ divergiert die Potenzreihe.
+\subsubsection{Berechnung des Konvergenzradius $r$}
+Folgende Formeln gelten auch für eine um die Stelle $x_0$ entwickelte Potenzreihe. Die Reihe konvergiert dann im Intervall $\Big\vert x-x_0\Big\vert<r$, zu dem gegebenfalls noch ein oder gar beide Randpunkte hinzukommen. 
+\begin{equation} 
+\boxed{r=\displaystyle \lim_{n\rightarrow \infty}\Big\vert \dfrac{a_n}{a_{n+1}}\Big\vert}\quad \boxed{r=\dfrac{1}{\displaystyle \lim_{n\rightarrow \infty}\sqrt[n]{\Big\vert a_n\Big\vert}}}
+\end{equation} 
+\begin{enumerate}[$(i)$]
+\item Sei $r=0$ so ist konvergiert die Potenzreihe nur für $n\rightarrow \infty$
+\item Sei $r=\infty$, so konvergiert die Potenzreihe beständig, d.h. für jedes $x\in \mathbb{R}$ 
+\end{enumerate}
+\subsection{Eigenschaften einer Potenzreihe}
+\begin{enumerate}[$(i)$]
+\item Eine Potenzreihe konvergiert innerhalb ihres Konvergentbereiches absolut.
+\item Eine Potenzreihe darf innerhalb ihres Konvernegzbereiches gliedweise differenziert und integriert werden. Die neuen Potenzreihen haben dabei denselben Konvergenzradius $r$ wie die ursprüngliche Reihe.
+\item Zwei Potenzreihen dürfen im gemeinsamen Konvergenzbereich der Reihen gliedweise addiert, subtrahiert und multipliziert werden. Die neuen Potenzreihen konvergieren dann mindestens im gemeinsamen Konvergenzbereich der beiden Ausgangsreihen. 
+\end{enumerate}
+\section{Taylor-Reihen}
+\subsection{Taylorsche und Mac Laurinsche Formel}
+\subsubsection{Taylorsche Formel}
+\begin{equation}
+\boxed{f_n\left(x\right)=f\left(x_0\right)+\dfrac{f'\left(x_0\right)}{1!}\left(x-x_0\right)+\dfrac{f''\left(x_0\right)}{2!}\left(x-x_0\right)^2+\dotso+\dfrac{f^{\left(n\right)}\left(x_0\right)}{n!}\left(x-x_0\right)^n}
+\end{equation}
+\begin{equation}
+\boxed{R_n\left(x\right)=\dfrac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_0\right)^{n+1},\quad \left(x< \xi< x_0\right)}
+\end{equation}
+\begin{equation}
+\boxed{f\left(x\right)=f_n\left(x\right)+R_n\left(x\right)}
+\end{equation}
+\subsubsection{Mac Laurinsche Formel}
+\begin{equation}
+\boxed{f_n\left(x\right)=f\left(0\right)+\dfrac{f'\left(0\right)}{1!}\left(x\right)+\dfrac{f''\left(0\right)}{2!}\left(x\right)^2+\dotso+\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\left(x\right)^n}
+\end{equation}
+\begin{equation}
+\boxed{R_n\left(x\right)=\dfrac{f^{\left(n+1\right)}\left(\theta x\right)}{\left(n+1\right)!}\left(x\right)^{n+1},\quad \left(0< \theta< 1\right)}
+\end{equation}
+\begin{equation}
+\boxed{f\left(x\right)=f_n\left(x\right)+R_n\left(x\right)}
+\end{equation}
+\subsection{Taylorsche Reihe}
+$f\left(x\right)$ ist in der Umgebung von $x_0$ beliebig oft differenzierbar und das Restglied $R_n\left(x\right)$ in der Taylorschen Formel verschwindet für $n\rightarrow \infty$
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+f\left(x\right)&=&f\left(x_0\right)+\dfrac{f'\left(x_0\right)}{1!}\left(x-x_0\right)+\dfrac{f''\left(x_0\right)}{2!}\left(x-x_0\right)^2+\dotso\\
+&=&\displaystyle \sum_{n=0}^{\infty}\dfrac{f^{\left(n\right)}\left(x_0\right)}{n!}\left(x-x_0\right)^n
+\end{array}
+}
+\end{equation}
+\subsection{Mac Laurinsche Reihe}
+Die Mac Laurinsche Reihe ist eine spezielle Form der Taylorschen Reihe für das Entwicklungszentrum $x_0=0$. Bei einer geraden Funktion treten nur gerade Potenzen auf, bei einer ungeraden Funktion nur ungerade Potenzen.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+f\left(x\right)&=&f\left(0\right)+\dfrac{f'\left(0\right)}{1!}x+\dfrac{f''\left(0\right)}{2}x^2+\dotso\\
+&=&\displaystyle \sum_{n=0}^{\infty}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x^n
+\end{array}
+}
+\end{equation}
+\section{Spezielle Potenzreihenentwicklungen}
+\subsubsection{Allgemeine Binomische Reihe}
+\begin{enumerate}[$(a)$]
+\item $\left(1\pm x\right)^n=1\pm \displaystyle \binom{n}{1}x+\displaystyle \binom{n}{2}x^2\pm \displaystyle \binom{n}{3}x^3+\displaystyle \binom{n}{4}x^4\pm \dotso$
+\item $\left(a\pm x\right)^n=a^n\pm \displaystyle \binom{n}{1}a^{n-1}x+\displaystyle \binom{n}{2}a^{n-2}x^2\pm \displaystyle \binom{n}{3}a^{n-3}x^3+\displaystyle \binom{n}{4}a^{n-4}x^4\pm \dotso$
+\end{enumerate}
+\subsubsection{Spezielle Binomische Reihen}
+\begin{enumerate}[$(a)$]
+\item $\left(1\pm x\right)^{1/4}=1\pm \dfrac{1}{4}x-\dfrac{1}{4}\dfrac{3}{8}x^2\pm \dfrac{1}{4}\dfrac{3}{8}\dfrac{7}{12}x^3-\dfrac{1}{4}\dfrac{3}{8}\dfrac{7}{12}\dfrac{11}{16}x^4\pm \dotso\quad \Bigg\{\begin{matrix}n>0: \Big\vert x\Big\vert\leq 1\\n<0: \Big\vert x\Big\vert< 1\end{matrix}$
+\item $\left(1\pm x\right)^{1/3}=1\pm \dfrac{1}{3}x-\dfrac{1}{3}\dfrac{2}{6}x^2\pm \dfrac{1}{3}\dfrac{2}{6}\dfrac{5}{9}x^3-\dfrac{1}{3}\dfrac{2}{6}\dfrac{5}{9}\dfrac{8}{12}x^4\pm \dotso\quad \Bigg\{\begin{matrix}n>0: \Big\vert x\Big\vert\leq \Big\vert a\Big\vert\\n<0: \Big\vert x\Big\vert< \Big\vert a\Big\vert\end{matrix}$
+\item $\left(1\pm x\right)^{1/2}=1\pm \dfrac{1}{2}x-\dfrac{1}{2}\dfrac{1}{4}x^2\pm \dfrac{1}{2}\dfrac{1}{4}\dfrac{3}{6}x^3-\dfrac{1}{2}\dfrac{1}{4}\dfrac{3}{6}\dfrac{5}{8}x^4\pm \dotso\quad \Big\vert x\Big\vert\leq 1$
+\item $\left(1\pm x\right)^{3/2}=1\pm \dfrac{3}{2}x+\dfrac{3}{2}\dfrac{1}{4}x^2\mp \dfrac{3}{2}\dfrac{1}{4}\dfrac{1}{6}x^3+\dfrac{3}{2}\dfrac{1}{4}\dfrac{1}{6}\dfrac{3}{8}x^4\mp \dotso\quad \Big\vert x\Big\vert\leq 1$
+\item $\left(1\pm x\right)^{-1/4}=1\mp \dfrac{1}{4}x+\dfrac{1}{4}\dfrac{5}{8}x^2\mp \dfrac{1}{4}\dfrac{5}{8}\dfrac{9}{12}x^3+\dfrac{1}{4}\dfrac{5}{8}\dfrac{9}{12}\dfrac{13}{16}x^4\mp \dotso\quad \Big\vert x\Big\vert< 1$
+\item $\left(1\pm x\right)^{-1/3}=1\mp \dfrac{1}{3}x+\dfrac{1}{3}\dfrac{4}{6}x^2\mp \dfrac{1}{3}\dfrac{4}{6}\dfrac{7}{9}x^3+\dfrac{1}{3}\dfrac{4}{6}\dfrac{7}{9}\dfrac{10}{12}x^4\mp \dotso\quad \Big\vert x\Big\vert< 1$
+\item $\left(1\pm x\right)^{-1/2}=1\mp \dfrac{1}{2}x+\dfrac{1}{2}\dfrac{3}{4}x^2\mp \dfrac{1}{2}\dfrac{3}{4}\dfrac{5}{6}x^3+\dfrac{1}{2}\dfrac{3}{4}\dfrac{5}{6}\dfrac{7}{8}x^4\mp \dotso\quad \Big\vert x\Big\vert< 1$
+\item $\left(1\pm x\right)^{-1}=1\mp x+x^2\mp x^3+x^4\mp \dotso\quad \Big\vert x\Big\vert\leq 1$
+\item $\left(1\pm x\right)^{-3/2}=1\mp \dfrac{3}{2}x+\dfrac{3}{2}\dfrac{5}{4}x^2\mp \dfrac{3}{2}\dfrac{5}{4}\dfrac{7}{6}x^3+\dfrac{3}{2}\dfrac{5}{4}\dfrac{7}{6}\dfrac{9}{8}x^4\mp \dotso\quad \Big\vert x\Big\vert< 1$
+\item $\left(1\pm x\right)^{-2}=1\mp 2x+3x^2\mp 4x^3+5x^4\mp \dotso\quad \Big\vert x\Big\vert< 1$
+\item $\left(1\pm x\right)^{-3}=1\mp \dfrac{1}{2}\left(2\cdot 3x\mp 3\cdot 4x^2+4\cdot 5x^3\mp 5\cdot 6x^4+\dotso\right)\quad \Big\vert x\Big\vert< 1$
+\end{enumerate}
+\subsubsection{Reihen der Exponentialfunktionen}
+\begin{enumerate}[$(a)$]
+\item $e^x=1+\dfrac{x}{1!}+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\dfrac{x^4}{4!}+\dotso=\displaystyle \sum_{k=0}^{\infty}\dfrac{z^k}{k!}\quad \Big\vert x\Big\vert< \infty$
+\item $e^{-x}=1-\dfrac{x}{1!}+\dfrac{x^2}{2!}-\dfrac{x^3}{3!}+\dfrac{x^4}{4!}-+\dotso\quad \Big\vert x\Big\vert< \infty$
+\item $a^x=1+\dfrac{\ln\left(a\right)}{1!}x+\dfrac{\left(\ln\left(a\right)\right)^2}{2!}x^2+\dfrac{\left(\ln\left(a\right)\right)^3}{3!}x^3+\dfrac{\left(\ln\left(a\right)\right)^4}{4!}x^4+\dotso\quad \Big\vert x\Big\vert< \infty$
+\end{enumerate}
+\subsubsection{Reihen der logarithmischen Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\ln\left(x\right)=\left(x-1\right)-\dfrac{1}{2}\left(x-1\right)^2+\dfrac{1}{3}\left(x-1\right)^3-\dfrac{1}{4}\left(x-1\right)^4+-\dotso\quad 0<x\leq 2$
+\item $\ln\left(x\right)=2\Big[\left(\dfrac{x-1}{x+1}\right)+\dfrac{1}{3}\left(\dfrac{x-1}{x+1}\right)^3+\dfrac{1}{5}\left(\dfrac{x-1}{x+1}\right)^5+\dfrac{1}{7}\left(\dfrac{x-1}{x+1}\right)^7+\dotso\Big]\quad x>0$
+\item $\ln\left(1+x\right)=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\dfrac{x^4}{4}+-\dotso\quad -1<x\leq 1$
+\item $\ln\left(1-x\right)=-\Big[x+\dfrac{x}{2}+\dfrac{x^3}{3}+\dfrac{x^4}{4}+\dotso\Big]\quad -1\leq x\leq 1$
+\item $\ln\left(\dfrac{1+x}{1-x}\right)=2\Big[x+\dfrac{x^3}{3}+\dfrac{x^5}{5}+\dfrac{x^7}{7}+\dotso\Big]\quad \Big\vert x\Big\vert<1$
+\end{enumerate}
+\subsubsection{Reihen der trigonometrischen Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(x\right)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+-\dotso=\displaystyle \sum_{k=0}^{\infty}\left(-1\right)^k\dfrac{z^{2k+1}}{\left(2k+1\right)!}\quad \Big\vert x\Big\vert<\infty$
+\item $\cos\left(x\right)=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+-\dotso=\displaystyle \sum_{k=0}^{\infty}\left(-1\right)^k\dfrac{z^{2k}}{\left(2k\right)!}\quad \Big\vert x\Big\vert<\infty$
+\item $\tan\left(x\right)=x+\dfrac{1}{3}x^3+\dfrac{2}{15}x^5+\dfrac{17}{315}x^7+\dfrac{62}{2835}x^9+\dotso\quad \Big\vert x\Big\vert<\dfrac{\pi}{2}$
+\item $\cot\left(x\right)=\dfrac{1}{x}-\dfrac{1}{3}x-\dfrac{1}{45}x^3-\dfrac{2}{945}x^5-\dotso\quad 0<\Big\vert x\Big\vert<\pi$
+\end{enumerate}
+\subsubsection{Reihen der Arkusfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\arcsin\left(x\right)=x+\dfrac{1}{2\cdot 3}x^3+\dfrac{1\cdot 3}{2\cdot 4\cdot 5}x^5+\dfrac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6\cdot 7}x^7+\dotso\Big\vert x\Big\vert<1$
+\item $\arccos\left(x\right)=\dfrac{\pi}{2}-\Big[x+\dfrac{1}{2\cdot 3}x^3+\dfrac{1\cdot 3}{2\cdot 4\cdot 5}x^5+\dfrac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6\cdot 7}x^7+\dotso\Big]\quad \Big\vert x\Big\vert<1$
+\item $\arctan\left(x\right)=x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+-\dotso\quad \Big\vert x\Big\vert<1$ 
+\item $\arccot\left(x\right)=\dfrac{\pi}{2}-\Big[x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+-\dotso\Big]\quad \Big\vert x\Big\vert<1$ 
+\end{enumerate}
+\subsubsection{Reihen der Hyperbelfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x\right)=x+\dfrac{x^3}{3!}+\dfrac{x^5}{5!}+\dfrac{x^7}{7!}+\dotso=\displaystyle \sum_{k=0}^{\infty}\dfrac{z^{2k+1}}{\left(2k+1\right)!}\quad \Big\vert x\Big\vert<\infty$
+\item $\cosh\left(x\right)=1+\dfrac{x^2}{2!}+\dfrac{x^4}{4!}+\dfrac{x^6}{6!}+\dotso=\displaystyle \sum_{k=0}^{\infty}\dfrac{z^{2k}}{\left(2k\right)!}\quad \Big\vert x\Big\vert<\infty$
+\item $\tanh\left(x\right)=x-\dfrac{1}{3}x^3+\dfrac{2}{15}x^5-\dfrac{17}{315}x^7+\dfrac{62}{2835}x^9-+\dotso\quad \Big\vert x\Big\vert<\dfrac{\pi}{2}$
+\item $\coth\left(x\right)=\dfrac{1}{x}+\dfrac{1}{3}x-\dfrac{1}{45}x^3+\dfrac{2}{945}x^5-+\dotso\quad 0<\Big\vert x\Big\vert<\pi$
+\end{enumerate}
+\subsubsection{Reihen der Areafunktionen}
+\begin{enumerate}[$(a)$]
+\item $\text{Arsinh}\left(x\right)=x-\dfrac{1}{2\cdot 3}x^3+\dfrac{1\cdot 3}{2\cdot 4\cdot 5}x^5-\dfrac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6\cdot 7}x^7+-\dotso=\displaystyle \sum_{k=0}^{\infty}\binom{-1/2}{k}\dfrac{z^{2k+1}}{2k+1}\quad \Big\vert x\Big\vert<1$
+\item $\text{Arcosh}\left(x\right)=\ln\left(2x\right)-\dfrac{1}{2\cdot 2x^2}+\dfrac{1\cdot 3}{2\cdot 4\cdot 4x^4}-\dfrac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6\cdot 6x^6}-\dotso\quad \Big\vert x\Big\vert>1$
+\item $\text{Artanh}\left(x\right)=x+\dfrac{x^3}{3}+\dfrac{x^5}{5}+\dfrac{x^7}{7}+\dotso=\displaystyle \sum_{k=0}^{\infty}\dfrac{z^{2k+1}}{2k+1}\quad \Big\vert x\Big\vert<1$
+\item $\text{Arcoth}\left(x\right)=\dfrac{1}{x}+\dfrac{1}{3x^3}+\dfrac{1}{5x^5}+\dfrac{1}{7x^7}+\dotso\quad \Big\vert x\Big\vert>1$
+\end{enumerate}
+\section{Näherungspolynome einer Funktion}
+Bricht man die Potenzreihenentwicklung einer Funktion $f\left(x\right)$ nach der $n$-ten POtenz ab, so erhält man ein Näherungspolynom $f_n\left(x\right)$ vom Grade $n$ für $f\left(x\right)$, das sogenannte Mac. Laurinsches bzw. Taylorsches Polynom. Funktion $f\left(x\right)$ und $f_n\left(x\right)$ stimmen an der Entwicklungsstelle $x_0$ in ihrem Funktionswert und in ihren ersten $n$ Ableitungen miteinander überein.
+\subsection{Fehlerabschätzung}
+Der durch den Abbruch der Potenzreihe entstandene Fehler lässt sich in Allgemeinen anhand der Lagrangeschen Restgliedformel abschätzen. Er liegt in der Grössenordnung des grössten Reihengliedes, das in der Näherung nicht mehr berücksichtigt wurde.
+\subsection{Näherungspolynome spezieller Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\left(1\pm x\right)^n=\Bigg\{\begin{matrix}=1+\pm nx,\quad \text{(1. Näherung)}\\=1\pm nx+\dfrac{n\left(n-1\right)}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $e^x=\Bigg\{\begin{matrix}=1+x,\quad \text{(1. Näherung)}\\=1+x+\dfrac{1}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $e^{-x}=\Bigg\{\begin{matrix}=1-x,\quad \text{(1. Näherung)}\\=1-x+\dfrac{1}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $a^{x}=\Bigg\{\begin{matrix}=1+\ln\left(a\right)x,\quad \text{(1. Näherung)}\\=1+\ln\left(a\right)x+\dfrac{\left(\ln\left(a\right)\right)^2}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\ln\left(1+x\right)=\Bigg\{\begin{matrix}=x,\quad \text{(1. Näherung)}\\=x-\dfrac{1}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\ln\left(1-x\right)=\Bigg\{\begin{matrix}=-x,\quad \text{(1. Näherung)}\\=-x-\dfrac{1}{2}x^2,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\ln\left(\dfrac{1+x}{1-x}\right)=\Bigg\{\begin{matrix}=2x,\quad \text{(1. Näherung)}\\=2x+\dfrac{2}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\sin\left(x\right)=\Bigg\{\begin{matrix}=x,\quad \text{(1. Näherung)}\\=x-\dfrac{1}{6}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\cos\left(x\right)=\Bigg\{\begin{matrix}=1-\dfrac{1}{2}x^2,\quad \text{(1. Näherung)}\\=1-\dfrac{1}{2}x^2+\dfrac{1}{24}x^4,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\tan\left(x\right)=\Bigg\{\begin{matrix}=x,\quad \text{(1. Näherung)}\\=x+\dfrac{1}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\arcsin\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x+\dfrac{1}{6}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\arccos\left(x\right)=\Bigg\{\begin{matrix}=\dfrac{\pi}{2}-x,\text{(1. Näherung)}\\=\dfrac{\pi}{2}-x-\dfrac{1}{6}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\arctan\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x-\dfrac{1}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\arccot\left(x\right)=\Bigg\{\begin{matrix}=\dfrac{\pi}{2}-x,\text{(1. Näherung)}\\=\dfrac{\pi}{2}-x+\dfrac{1}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\sinh\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x+\dfrac{1}{6}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\cosh\left(x\right)=\Bigg\{\begin{matrix}=1+\dfrac{1}{2}x^2,\text{(1. Näherung)}\\=1+\dfrac{1}{2}x^2+\dfrac{1}{24}x^4,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\tanh\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x-\dfrac{1}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\text{Arsinh}\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x-\dfrac{1}{6}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\item $\text{Artanh}\left(x\right)=\Bigg\{\begin{matrix}=x,\text{(1. Näherung)}\\=x+\dfrac{1}{3}x^3,\quad \text{(2. Näherung)}\end{matrix}$
+\end{enumerate}
+\section{Fourier-Reihen}
+\subsection{Fourier-Reihe einer periodischen Funktion}
+Eine periodische Funktion $f\left(x\right)$ mit der Periode $p=2\pi$ lässt sich unter bestimmten Voraussetzungen in eine unendliche trigonometrische Reihe der Form entwickeln.
+\begin{equation}
+\boxed{f\left(x\right)=\dfrac{a_0}{2}+\displaystyle \sum_{n=1}^{\infty}\Big[a_n\cdot \cos\left(nx\right)+b_n\cdot \sin\left(nx\right)\Big]}
+\end{equation}
+\subsubsection{Berechnung der Fourier-Koeffizienten $a_n$ und $b_n$}
+\begin{equation}
+\boxed{a_0=\dfrac{1}{\pi}\displaystyle \int_0^{2\pi}f\left(x\right)\,\text{d}x}
+\end{equation}
+\begin{equation}
+\boxed{a_n=\dfrac{1}{\pi}\displaystyle \int_0^{2\pi}f\left(x\right)\cdot \cos\left(nx\right)\,\text{d}x,\quad b_n=\dfrac{1}{\pi}\displaystyle \int_0^{2\pi}f\left(x\right)\cdot \sin\left(nx\right)\,\text{d}x}
+\end{equation}
+\begin{enumerate}[$(1)$]
+\item Voraussetzung ist, dass die folgenden Dirichletschen Bedingungen erfüllt sind
+\begin{enumerate}[$(a)$]
+\item Das Periodenintervall lässt sich in endlich Teilintervalle zerlegen, in denen $f\left(x\right)$ stetig und monoton ist.
+\item Besitzt die Funktion $f\left(x\right)$ im Periodenintervall Unstetigkeitsstellen, so existiert in ihnen sowohl der links-als auch der rechtsseitige Grenzwert. 
+\end{enumerate}
+\item In den Sprungstellen der Funktion $f\left(x\right)$ liefert die Fourier-Reihe von $f\left(x\right)$ das arithmetische Mittel aus dem links- und rechtsseitigen Grenzwert der Funktion.
+\end{enumerate}
+\subsubsection{Symmetriebetrachtungen}
+$f\left(x\right)$ ist eine gerade Funktion:
+\begin{equation}
+\boxed{f\left(x\right)=\dfrac{a_0}{2}+\displaystyle \sum_{n=1}^{\infty}a_n\cdot \cos\left(nx\right),\quad \left(b_n=0\text{ für } n\in \mathbb{N}^*\right)}
+\end{equation}
+$f\left(x\right)$ ist eine ungerade Funktion:
+\begin{equation}
+\boxed{f\left(x\right)=\displaystyle \sum_{n=1}^{\infty}b_n\cdot \sin\left(nx\right),\quad \left(a_n=0\text{ für } n\in \mathbb{N}^*\right)}
+\end{equation}
+\subsubsection{Komplexe Darstellung der Fourier-Reihe}
+\begin{equation}
+\boxed{f\left(x\right)=\displaystyle \sum_{n=-\infty}^{\infty}c_n\cdot e^{jnx},\quad c_n=\dfrac{1}{2\pi}\displaystyle \int_{0}^{2\pi}f\left(x\right)\cdot e^{-jnx},\quad \left(n\in \mathbb{Z}\right)}
+\end{equation}
+Die komplexe Fourier-Reihe lässt sich auch wie folgt aufspalten
+\begin{equation}
+\boxed{f\left(x\right)=\displaystyle \sum_{n=-\infty}^{\infty}c_n\cdot e^{jnx}=c_0+\displaystyle \sum_{n=1}^\infty c_{-n}\cdot e^{-jnx}+\displaystyle \sum_{n=1}^{\infty}c_n\cdot e^{jnx}}
+\end{equation}
+Der Koeffizient $c_{-n}$ ist dabei konjugiert komplex zu $c_n$, d.h. $c_{-n}=c_n^*$
+\subsubsection{Zusammenhang zwischen den Koeffizienten $a_n$, $b_n$ und $c_n$}
+Übergang von der reellen zur komplexen Form
+\begin{equation}
+\boxed{c_0=\dfrac{1}{2}a_0,\quad c_n=\dfrac{1}{2}\left(a_n-jb_n\right),\quad c_{-n}=\dfrac{1}{2}\left(a_n+jb_n\right),\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+Übergang von der komplexen zur reellen Form
+\begin{equation}
+\boxed{a_0=2c_0,\quad a_n=c_n+c_{-n},\quad b_{n}=j\left(c_n-c_{-n}\right),\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+\subsection{Fourier einer nichtsinusförmigen Schwingung}
+Eine nichtsinusförmig verlaufende Schwingung $y=y\left(t\right)$ mit der Kreisfrequenz $\omega_0$ und der Schwingungsdauer (Periodendauer) $T=2\pi/\omega$ lässt sich nach Fourier wie folgt in ihre harmonischen Bestandteile zerlegen. $\omega_0=2\pi/T$ ist die Kreisfrequenz der Grundschwingung. $n\omega_0$ sind die Kreisfrequenzen der harmonischen Oberschwingungen $\left(n=2, 3, 4, \dotso \right)$ 
+\begin{equation}
+\boxed{y\left(t\right)=\dfrac{a_0}{2}+\displaystyle \sum_{n=1}^{\infty}\Big[a_n\cdot \cos\left(n\omega_0t\right)+b_n\cdot \sin\left(n\omega_0t\right)\Big]}
+\end{equation}
+\subsubsection{Berechnung der Fourier-Koeffizienten $a_n$ und $b_n$}
+\begin{equation}
+\boxed{a_0=\dfrac{2}{T}\displaystyle\int_{\left(T\right)}y\left(t\right)\,\text{d}t}
+\end{equation}
+\begin{equation}
+\boxed{a_n=\dfrac{2}{T}\displaystyle \int_{\left(T\right)}y\left(t\right)\cdot \cos\left(n\omega_0t\right)\,\text{d}t,\quad b_n=\dfrac{2}{T}\displaystyle \int_{\left(T\right)}y\left(t\right)\cdot \sin\left(n\omega_0t\right)\,\text{d}t}
+\end{equation}
+\subsubsection{Fourier-Zerlegung in phasenverschobene Sinusschwingungen}
+\begin{equation}
+\boxed{y\left(t\right)=\dfrac{a_0}{2}+\displaystyle \sum_{n=1}^{\infty}\Big[a_n\cdot \cos\left(n\omega_0t\right)+b_n\sin\left(n\omega_0t\right)\Big]=A_0+\displaystyle \sum_{n=1}^{\infty}A_n\cdot \sin\left(n\omega_0t+\varphi_n\right)}
+\end{equation}
+\begin{equation}
+\boxed{A_0=\dfrac{a_0}{2},\quad A_n=\sqrt{a_n^2+b_n^2},\quad \tan\left(\varphi_n\right)=\dfrac{a_n}{b_n}\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+\subsubsection{Fourier-Zerlegung in komplexer Form}
+\begin{equation}
+\boxed{y\left(t\right)=\displaystyle \sum_{n=-\infty}^{\infty}c_n\cdot e^{jn\omega_0t}}
+\end{equation}
+\begin{equation}
+\boxed{c_n=\dfrac{1}{T}\displaystyle \int_{0}^Ty\left(t\right)\cdot e^{-jn\omega_0t}\,\text{d}t}
+\end{equation}
+\subsection{Spezielle Fourier-Reihen}
+\subsubsection{Rechteckskurve}
+\begin{equation}
+\boxed{y\left(t\right)=\Bigg\{\begin{matrix}\hat{y}&\texttt{für}&0\leq t\leq \dfrac{T}{2}\\0&\texttt{für}&\dfrac{T}{2}\leq t\leq T\end{matrix}}
+\end{equation}
+\begin{equation}
+\boxed{y\left(t\right)=\dfrac{\hat{y}}{2}+\dfrac{2\hat{y}}{\pi}\left(\sin\left(\omega_0t\right)+\dfrac{1}{3}\sin\left(3\omega_0t\right)+\dfrac{1}{5}\sin\left(5\omega_0t\right)+\dotso\right)}
+\end{equation}
+\subsubsection{Rechtecksimpuls}
+\begin{equation}
+\boxed{b=\dfrac{T}{2}-2a}
+\end{equation}
+\begin{equation}
+\boxed{y\left(t\right)\Bigg\{\begin{matrix}\hat{y}&\text{für}&a<t<\dfrac{T}{2}-a\\-\hat{y}&\text{für}&\dfrac{T}{2}+a<t<T-a\\0&&\text{im übrigen Intervall}\end{matrix}}
+\end{equation}
+\begin{equation}
+\boxed{y\left(t\right)=\dfrac{4\hat{y}}{\pi}\left(\dfrac{\cos\left(\omega_0a\right)}{1}\cdot \sin\left(\omega_0t\right)+\dfrac{\cos\left(3\omega_0a\right)}{3}\cdot \sin\left(3\omega_0t\right)+\dotso\right)}
+\end{equation}
+\subsubsection{Dreieckskurve}
+\begin{equation}
+\boxed{y\left(t\right)\Bigg\{\begin{matrix}-\dfrac{2\hat{y}}{T}+\hat{y}&\text{für}&0\leq t\leq \dfrac{T}{2}\\\dfrac{2\hat{y}}{T}t-\hat{y}&\text{für}&\dfrac{T}{2}\leq t \leq T\\\end{matrix}}
+\end{equation}
+\begin{equation}
+\boxed{y\left(t\right)=\dfrac{\hat{y}}{2}+\dfrac{4\hat{y}}{\pi^2}\left(\dfrac{1}{1^2}\cdot\cos\left(\omega_0t\right)+\dfrac{1}{3^2}\cdot \cos\left(3\omega_0t\right)+\dfrac{1}{5^2}\cdot \cos\left(5\omega_0t\right)+\dotso\right)}
+\end{equation}

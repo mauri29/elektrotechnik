@@ -1,0 +1,1333 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.26)  4 AUG 2020 15:39
+entering extended mode
+**"G:/UNI/public/docs/ELEKTROTECHNIK/ALLGEMEINE ELEKTROTECHNIK/ZUSAMMENFASSUNG/
+index/index.tex"
+
+("G:/UNI/public/docs/ELEKTROTECHNIK/ALLGEMEINE ELEKTROTECHNIK/ZUSAMMENFASSUNG/i
+ndex/index.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrreprt.cl
+s
+Document Class: scrreprt 2020/04/19 v3.30 KOMA-Script document class (report)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.st
+y
+Package: scrkbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
+y
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+)))
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.st
+y
+Package: tocbasic 2020/04/19 v3.30 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box45
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 137.
+
+
+Package scrreprt Warning: You've used obsolete option `9pt'.
+(scrreprt)                Usage of this option indicates an old document
+(scrreprt)                and changes compatibility level using
+(scrreprt)                `fontsize=9pt,version=first,
+(scrreprt)                enabledeprecatedfontcommands' that may result
+(scrreprt)                in further warnings.
+(scrreprt)                If you don't want this, you should simply
+(scrreprt)                replace option `9pt' by `fontsize=9pt'.
+
+Class scrreprt Info: Switching compatibility level to `first'.
+
+Class scrreprt Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrreprt)              Note, that this option was already depreacted when
+(scrreprt)              it has been defined. Support for old font commands
+(scrreprt)              has been removed from KOMA-Script more than one
+(scrreprt)              decade ago. It is not recommended to use them any
+(scrreprt)              longer. Therefore usage of this class option also
+(scrreprt)              is not recommended.
+
+Class scrreprt Info: File `size9.clo' used to setup font sizes on input line 24
+24.
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size9.clo
+File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.st
+y
+Package: typearea 2020/04/19 v3.30 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count167
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+
+
+Package typearea Warning: DIV for 9.0pt and used papersize
+(typearea)                not defined!
+(typearea)                Using DIV=calc.
+
+DIV calculation for typearea with good linewidth.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 6
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 298.75397pt
+(typearea)              DIV departure   = 2%
+(typearea)              \evensidemargin = 77.107pt
+(typearea)              \oddsidemargin  = 77.107pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 425.09988pt
+(typearea)              \topmargin      = 38.4587pt
+(typearea)              \headheight     = 13.68748pt
+(typearea)              \headsep        = 16.42499pt
+(typearea)              \topskip        = 9.0pt
+(typearea)              \footskip       = 38.32497pt
+(typearea)              \baselineskip   = 10.95pt
+(typearea)              on input line 1738.
+)
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\scr@dte@chapter@maxnumwidth=\skip53
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\chapter on input line 5588.
+\scr@dte@section@maxnumwidth=\skip54
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\section on input line 5598.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\section on input line 5598.
+\scr@dte@part@maxnumwidth=\skip55
+Class scrreprt Info: using compatibility default `afterindent=true'
+(scrreprt)           for `\part on input line 5607.
+\scr@dte@subsection@maxnumwidth=\skip56
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsection on input line 5617.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsection on input line 5617.
+\scr@dte@subsubsection@maxnumwidth=\skip57
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsubsection on input line 5627.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsubsection on input line 5627.
+\scr@dte@paragraph@maxnumwidth=\skip58
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\paragraph on input line 5637.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\paragraph on input line 5637.
+\scr@dte@subparagraph@maxnumwidth=\skip59
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subparagraph on input line 5647.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subparagraph on input line 5647.
+\abovecaptionskip=\skip60
+\belowcaptionskip=\skip61
+\c@pti@nb@sid@b@x=\box46
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6883.
+
+\scr@dte@figure@maxnumwidth=\skip62
+\c@figure=\count175
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6900.
+
+\scr@dte@table@maxnumwidth=\skip63
+\c@table=\count176
+Class scrreprt Info: Using old \@makefntext due to compatibility level
+(scrreprt)           less than 3.22 on input line 7056.
+Class scrreprt Info: Redefining `\numberline' on input line 7069.
+\bibindent=\dimen134
+) (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2020/06/10 3.45 The Babel package
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2020/06/10 3.45 Babel common definitions
+\babel@savecnt=\count177
+\U@D=\dimen135
+\l@babelnohyphens=\language79
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count178
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\german.ldf
+Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
+y)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germanb.ld
+f
+Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograp
+hy)
+Package babel Info: Making " an active character on input line 135.
+))) (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\charter.sty
+Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count179
+\Gm@cntv=\count180
+\c@Gm@tempcnt=\count181
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
+\Gm@dimlist=\toks18
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count182
+\mult@box=\box47
+\multicol@leftmargin=\dimen144
+\c@unbalance=\count183
+\c@collectmore=\count184
+\doublecol@number=\count185
+\multicoltolerance=\count186
+\multicolpretolerance=\count187
+\full@width=\dimen145
+\page@free=\dimen146
+\premulticols=\dimen147
+\postmulticols=\dimen148
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box48
+\last@line=\box49
+\maxbalancingoverflow=\dimen149
+\mult@rightbox=\box50
+\mult@grightbox=\box51
+\mult@gfirstbox=\box52
+\mult@firstbox=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\c@minrows=\count188
+\c@columnbadness=\count189
+\c@finalcolumnbadness=\count190
+\last@try=\dimen150
+\multicolovershoot=\dimen151
+\multicolundershoot=\dimen152
+\mult@nat@firstbox=\box91
+\colbreak@box=\box92
+\mc@col@check@num=\count191
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen155
+\WF@size=\dimen156
+\c@WF@wrappedlines=\count192
+\WF@box=\box93
+\WF@everypar=\toks19
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks20
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box94
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen157
+\ttl@minus=\dimen158
+\ttl@toksa=\toks21
+\titlewidth=\dimen159
+\titlewidthlast=\dimen160
+\titlewidthfirst=\dimen161
+
+
+Package titlesec Warning: Non standard sectioning command \section
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsubsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \paragraph
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subparagraph
+(titlesec)                detected. Using default spacing and no format.
+
+)
+Class scrreprt Info: Unknown `titesec' release.
+(scrreprt)           Cross your fingers, that is compatible on input line 26.
+ (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks22
+\float@box=\box95
+\@float@everytoks=\toks23
+\@floatcapt=\box96
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/05/30 v1.12 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen162
+\captionmargin@=\dimen163
+\captionwidth=\dimen164
+\caption@tempdima=\dimen165
+\caption@indent=\dimen166
+\caption@parindent=\dimen167
+\caption@hangindent=\dimen168
+Package caption Info: KOMA-Script document class detected.
+)
+Package caption Info: KOMA-Script document class.
+Package caption Info: Option `tablename' requires the `newfloat' package on inp
+ut line 266.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/newfloat\newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: `wrapfig' package detected.
+)
+\c@caption@flags=\count194
+\c@continuedfloat=\count195
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip68
+\subfigcapskip=\skip69
+\subfigcaptopadj=\dimen169
+\subfigbottomskip=\skip70
+\subfigcapmargin=\dimen170
+\subfiglabelskip=\skip71
+\c@subfigure=\count196
+\c@lofdepth=\count197
+\c@subtable=\count198
+\c@lotdepth=\count199
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg
+)
+\subfig@top=\skip72
+\subfig@bottom=\skip73
+)
+\@float@every@figure=\toks24
+ (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks25
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip74
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen171
+))
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen172
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box97
+\strutbox@=\box98
+\big@size=\dimen173
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count271
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip16
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks27
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks28
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
+\@envbody=\toks29
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/esint\esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+)
+
+Class scrreprt Warning: Incompatible package `sectsty' loaded!
+(scrreprt)              Package `sectsty' up to version 2.0.2 is incompatible
+(scrreprt)              with KOMA-Script from version 2.8e released in 2001.
+(scrreprt)              You should avoid that package and configure the
+(scrreprt)              section titles of your document using the KOMA-Script
+(scrreprt)              user interface, e.g., \chapterlinesformat,
+(scrreprt)              \RedeclareSectionCommand etc. or you should ask
+(scrreprt)              the `sectsty' maintainer for a more compatible release.
+
+(scrreprt)              Ignoring this warning could result in several error
+(scrreprt)              messages and formatting issues after loading package
+(scrreprt)              `sectsty' on input line 41.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count278
+\lst@gtempboxa=\box99
+\lst@token=\toks31
+\lst@length=\count279
+\lst@currlwidth=\dimen180
+\lst@column=\count280
+\lst@pos=\count281
+\lst@lostspace=\dimen181
+\lst@width=\dimen182
+\lst@newlines=\count282
+\lst@lineno=\count283
+\lst@maxwidth=\dimen183
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count284
+\lst@skipnumbers=\count285
+\lst@framebox=\box100
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+mode.def
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count286
+\l__pdf_internal_box=\box101
+) (index.aux)
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 95
+.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
+File: t1bch.fd 2004/10/18 font definitions for T1/bch.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 788.14136pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 540.60239pt, 28.45274pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=788.14136pt
+* \textheight=472.16495pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-43.81725pt
+* \headheight=13.68748pt
+* \headsep=16.42499pt
+* \topskip=9.0pt
+* \footskip=38.32497pt
+* \marginparwidth=99.58466pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count287
+\scratchdimen=\dimen184
+\scratchbox=\box102
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen185
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks33
+)
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
+\c@lstlisting=\count293
+ (../section/01section.tex
+chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
+(../subsection/01subsection.tex
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
+.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<../img/I/Ia.png, id=1, 384.43625pt x 215.80624pt>
+File: ../img/I/Ia.png Graphic file (type png)
+<use ../img/I/Ia.png>
+Package pdftex.def Info: ../img/I/Ia.png  used on input line 12.
+(pdftex.def)             Requested size: 192.21765pt x 107.90285pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+6.
+
+(C:\Users\robay\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+File: uesint.fd 
+)
+<../img/I/Ib.png, id=3, 203.76125pt x 86.3225pt>
+File: ../img/I/Ib.png Graphic file (type png)
+<use ../img/I/Ib.png>
+Package pdftex.def Info: ../img/I/Ib.png  used on input line 28.
+(pdftex.def)             Requested size: 101.88037pt x 43.16113pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
+
+ []
+
+[1
+
+{C:/Users/robay/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <../img/I/Ia.png
+> <../img/I/Ib.png>]
+<../img/I/Ih.png, id=19, 188.705pt x 157.58875pt>
+File: ../img/I/Ih.png Graphic file (type png)
+<use ../img/I/Ih.png>
+Package pdftex.def Info: ../img/I/Ih.png  used on input line 56.
+(pdftex.def)             Requested size: 113.22386pt x 94.55397pt.
+<../img/I/Ic.png, id=20, 207.77625pt x 167.62625pt>
+File: ../img/I/Ic.png Graphic file (type png)
+<use ../img/I/Ic.png>
+Package pdftex.def Info: ../img/I/Ic.png  used on input line 57.
+(pdftex.def)             Requested size: 114.27728pt x 92.1947pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
+
+ []
+
+<../img/I/Id.png, id=21, 126.4725pt x 100.375pt>
+File: ../img/I/Id.png Graphic file (type png)
+<use ../img/I/Id.png>
+Package pdftex.def Info: ../img/I/Id.png  used on input line 91.
+(pdftex.def)             Requested size: 75.88408pt x 60.22545pt.
+<../img/I/Ij.png, id=22, 123.46124pt x 130.4875pt>
+File: ../img/I/Ij.png Graphic file (type png)
+<use ../img/I/Ij.png>
+Package pdftex.def Info: ../img/I/Ij.png  used on input line 98.
+(pdftex.def)             Requested size: 74.0773pt x 78.29309pt.
+[2 <../img/I/Ih.png> <../img/I/Ic.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+<../img/I/Ik.png, id=33, 182.6825pt x 189.70876pt>
+File: ../img/I/Ik.png Graphic file (type png)
+<use ../img/I/Ik.png>
+Package pdftex.def Info: ../img/I/Ik.png  used on input line 110.
+(pdftex.def)             Requested size: 91.34102pt x 94.85414pt.
+<../img/I/Il.png, id=34, 428.60126pt x 233.87375pt>
+File: ../img/I/Il.png Graphic file (type png)
+<use ../img/I/Il.png>
+Package pdftex.def Info: ../img/I/Il.png  used on input line 129.
+(pdftex.def)             Requested size: 171.43745pt x 93.54782pt.
+<../img/I/If.png, id=35, 281.05pt x 137.51375pt>
+File: ../img/I/If.png Graphic file (type png)
+<use ../img/I/If.png>
+Package pdftex.def Info: ../img/I/If.png  used on input line 141.
+(pdftex.def)             Requested size: 140.52464pt x 68.7567pt.
+[3 <../img/I/Id.png> <../img/I/Ij.png> <../img/I/Ik.png> <../img/I/Il.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
+
+ []
+
+[4 <../img/I/If.png>]
+<../img/I/Ig.png, id=47, 253.94875pt x 199.74625pt>
+File: ../img/I/Ig.png Graphic file (type png)
+<use ../img/I/Ig.png>
+Package pdftex.def Info: ../img/I/Ig.png  used on input line 198.
+(pdftex.def)             Requested size: 152.3704pt x 119.84866pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
+
+ []
+
+)) (../section/02section.tex [5 <../img/I/Ig.png>] [6]
+chapter 2.
+(../subsection/02subsection.tex
+<../img/II/IIa.png, id=55, 344.28625pt x 213.79875pt>
+File: ../img/II/IIa.png Graphic file (type png)
+<use ../img/II/IIa.png>
+Package pdftex.def Info: ../img/II/IIa.png  used on input line 6.
+(pdftex.def)             Requested size: 172.1427pt x 106.89911pt.
+<../img/II/IIb.png, id=56, 268.00125pt x 122.4575pt>
+File: ../img/II/IIb.png Graphic file (type png)
+<use ../img/II/IIb.png>
+Package pdftex.def Info: ../img/II/IIb.png  used on input line 17.
+(pdftex.def)             Requested size: 134.00029pt x 61.22859pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--29
+
+ []
+
+<../img/II/IIc.png, id=57, 392.46625pt x 223.83624pt>
+File: ../img/II/IIc.png Graphic file (type png)
+<use ../img/II/IIc.png>
+Package pdftex.def Info: ../img/II/IIc.png  used on input line 44.
+(pdftex.def)             Requested size: 196.23264pt x 111.91785pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--48
+
+ []
+
+[7 <../img/II/IIa.png> <../img/II/IIb.png>]
+<../img/II/IId.png, id=64, 227.85126pt x 123.46124pt>
+File: ../img/II/IId.png Graphic file (type png)
+<use ../img/II/IId.png>
+Package pdftex.def Info: ../img/II/IId.png  used on input line 55.
+(pdftex.def)             Requested size: 136.71179pt x 74.0773pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+[8 <../img/II/IIc.png> <../img/II/IId.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--125
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
+
+ []
+
+<../img/II/IIe.png, id=74, 244.915pt x 109.40875pt>
+File: ../img/II/IIe.png Graphic file (type png)
+<use ../img/II/IIe.png>
+Package pdftex.def Info: ../img/II/IIe.png  used on input line 148.
+(pdftex.def)             Requested size: 146.95012pt x 65.64574pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--173
+
+ []
+
+[10 <../img/II/IIe.png>]
+<../img/II/IIf.png, id=79, 290.08376pt x 240.9pt>
+File: ../img/II/IIf.png Graphic file (type png)
+<use ../img/II/IIf.png>
+Package pdftex.def Info: ../img/II/IIf.png  used on input line 185.
+(pdftex.def)             Requested size: 174.05159pt x 144.5411pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--193
+
+ []
+
+<../img/II/IIg.png, id=80, 355.3275pt x 206.7725pt>
+File: ../img/II/IIg.png Graphic file (type png)
+<use ../img/II/IIg.png>
+Package pdftex.def Info: ../img/II/IIg.png  used on input line 208.
+(pdftex.def)             Requested size: 213.19814pt x 124.06445pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--212
+
+ []
+
+[11 <../img/II/IIf.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
+
+ []
+
+[12 <../img/II/IIg.png>])) (../section/03section.tex [13]
+chapter 3.
+(../subsection/03subsection.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+<../img/III/IIIa.png, id=94, 337.26pt x 82.3075pt>
+File: ../img/III/IIIa.png Graphic file (type png)
+<use ../img/III/IIIa.png>
+Package pdftex.def Info: ../img/III/IIIa.png  used on input line 15.
+(pdftex.def)             Requested size: 168.62958pt x 41.15364pt.
+<../img/III/IIIb.png, id=95, 340.27126pt x 64.24pt>
+File: ../img/III/IIIb.png Graphic file (type png)
+<use ../img/III/IIIb.png>
+Package pdftex.def Info: ../img/III/IIIb.png  used on input line 22.
+(pdftex.def)             Requested size: 170.13521pt x 32.11992pt.
+<../img/III/IIIc.png, id=96, 295.1025pt x 168.63pt>
+File: ../img/III/IIIc.png Graphic file (type png)
+<use ../img/III/IIIc.png>
+Package pdftex.def Info: ../img/III/IIIc.png  used on input line 31.
+(pdftex.def)             Requested size: 147.55087pt x 84.31479pt.
+[14 <../img/III/IIIa.png> <../img/III/IIIb.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+<../img/III/IIId.png, id=102, 448.67625pt x 333.245pt>
+File: ../img/III/IIId.png Graphic file (type png)
+<use ../img/III/IIId.png>
+Package pdftex.def Info: ../img/III/IIId.png  used on input line 51.
+(pdftex.def)             Requested size: 224.33757pt x 166.62209pt.
+<../img/III/IIIe.png, id=103, 325.215pt x 153.57375pt>
+File: ../img/III/IIIe.png Graphic file (type png)
+<use ../img/III/IIIe.png>
+Package pdftex.def Info: ../img/III/IIIe.png  used on input line 61.
+(pdftex.def)             Requested size: 162.6071pt x 76.78668pt.
+<../img/III/IIIj.png, id=104, 301.125pt x 140.525pt>
+File: ../img/III/IIIj.png Graphic file (type png)
+<use ../img/III/IIIj.png>
+Package pdftex.def Info: ../img/III/IIIj.png  used on input line 62.
+(pdftex.def)             Requested size: 165.61925pt x 77.28897pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--66
+
+ []
+
+<../img/III/IIIf.png, id=105, 257.96375pt x 163.61125pt>
+File: ../img/III/IIIf.png Graphic file (type png)
+<use ../img/III/IIIf.png>
+Package pdftex.def Info: ../img/III/IIIf.png  used on input line 72.
+(pdftex.def)             Requested size: 128.98155pt x 81.80542pt.
+<../img/III/IIIg.png, id=106, 218.8175pt x 158.5925pt>
+File: ../img/III/IIIg.png Graphic file (type png)
+<use ../img/III/IIIg.png>
+Package pdftex.def Info: ../img/III/IIIg.png  used on input line 73.
+(pdftex.def)             Requested size: 109.40848pt x 79.29604pt.
+<../img/III/IIIh.png, id=107, 185.69376pt x 132.495pt>
+File: ../img/III/IIIh.png Graphic file (type png)
+<use ../img/III/IIIh.png>
+Package pdftex.def Info: ../img/III/IIIh.png  used on input line 74.
+(pdftex.def)             Requested size: 92.84665pt x 66.24733pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--78
+
+ []
+
+[15 <../img/III/IIIc.png> <../img/III/IIId.png> <../img/III/IIIe.png> <../img/I
+II/IIIj.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--100
+
+ []
+
+<../img/III/IIIi.png, id=115, 259.97125pt x 178.6675pt>
+File: ../img/III/IIIi.png Graphic file (type png)
+<use ../img/III/IIIi.png>
+Package pdftex.def Info: ../img/III/IIIi.png  used on input line 109.
+(pdftex.def)             Requested size: 129.9853pt x 89.33353pt.
+<../img/III/IIIk.png, id=116, 416.55624pt x 142.5325pt>
+File: ../img/III/IIIk.png Graphic file (type png)
+<use ../img/III/IIIk.png>
+Package pdftex.def Info: ../img/III/IIIk.png  used on input line 123.
+(pdftex.def)             Requested size: 208.2776pt x 71.26607pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
+
+ []
+
+[16 <../img/III/IIIf.png> <../img/III/IIIg.png> <../img/III/IIIh.png> <../img/I
+II/IIIi.png>]
+<../img/III/IIIl.png, id=124, 417.56pt x 166.6225pt>
+File: ../img/III/IIIl.png Graphic file (type png)
+<use ../img/III/IIIl.png>
+Package pdftex.def Info: ../img/III/IIIl.png  used on input line 133.
+(pdftex.def)             Requested size: 208.77948pt x 83.31104pt.
+<../img/III/IIIm.png, id=125, 166.6225pt x 150.5625pt>
+File: ../img/III/IIIm.png Graphic file (type png)
+<use ../img/III/IIIm.png>
+Package pdftex.def Info: ../img/III/IIIm.png  used on input line 159.
+(pdftex.def)             Requested size: 99.97426pt x 90.33818pt.
+ [17 <../img/III/IIIk.png> <../img/III/IIIl.png>]
+<../img/III/IIIn.png, id=131, 288.07625pt x 159.59625pt>
+File: ../img/III/IIIn.png Graphic file (type png)
+<use ../img/III/IIIn.png>
+Package pdftex.def Info: ../img/III/IIIn.png  used on input line 175.
+(pdftex.def)             Requested size: 158.44241pt x 87.7782pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--179
+
+ []
+
+<../img/III/IIIo.png, id=132, 250.9375pt x 168.63pt>
+File: ../img/III/IIIo.png Graphic file (type png)
+<use ../img/III/IIIo.png>
+Package pdftex.def Info: ../img/III/IIIo.png  used on input line 183.
+(pdftex.def)             Requested size: 138.01604pt x 92.74678pt.
+<../img/III/IIIp.png, id=133, 277.035pt x 234.8775pt>
+File: ../img/III/IIIp.png Graphic file (type png)
+<use ../img/III/IIIp.png>
+Package pdftex.def Info: ../img/III/IIIp.png  used on input line 184.
+(pdftex.def)             Requested size: 138.51715pt x 117.43846pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
+
+ []
+
+<../img/III/IIIq.png, id=134, 165.61874pt x 172.645pt>
+File: ../img/III/IIIq.png Graphic file (type png)
+<use ../img/III/IIIq.png>
+Package pdftex.def Info: ../img/III/IIIq.png  used on input line 198.
+(pdftex.def)             Requested size: 91.09058pt x 94.95503pt.
+[18 <../img/III/IIIm.png> <../img/III/IIIn.png> <../img/III/IIIo.png> <../img/I
+II/IIIp.png>]
+<../img/III/IIIr.png, id=142, 178.6675pt x 149.55875pt>
+File: ../img/III/IIIr.png Graphic file (type png)
+<use ../img/III/IIIr.png>
+Package pdftex.def Info: ../img/III/IIIr.png  used on input line 209.
+(pdftex.def)             Requested size: 98.26741pt x 82.25755pt.
+<../img/III/IIIs.png, id=143, 252.945pt x 128.48pt>
+File: ../img/III/IIIs.png Graphic file (type png)
+<use ../img/III/IIIs.png>
+Package pdftex.def Info: ../img/III/IIIs.png  used on input line 225.
+(pdftex.def)             Requested size: 139.12018pt x 70.6642pt.
+<../img/III/IIIt.png, id=144, 338.26375pt x 164.615pt>
+File: ../img/III/IIIt.png Graphic file (type png)
+<use ../img/III/IIIt.png>
+Package pdftex.def Info: ../img/III/IIIt.png  used on input line 235.
+(pdftex.def)             Requested size: 186.04562pt x 90.53853pt.
+<../img/III/IIIu.png, id=145, 339.2675pt x 163.61125pt>
+File: ../img/III/IIIu.png Graphic file (type png)
+<use ../img/III/IIIu.png>
+Package pdftex.def Info: ../img/III/IIIu.png  used on input line 246.
+(pdftex.def)             Requested size: 186.59769pt x 89.98645pt.
+ [19 <../img/III/IIIq.png> <../img/III/IIIr.png> <../img/III/IIIs.png> <../img/
+III/IIIt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 254--258
+
+ []
+
+<../img/III/IIIv.png, id=154, 156.585pt x 166.6225pt>
+File: ../img/III/IIIv.png Graphic file (type png)
+<use ../img/III/IIIv.png>
+Package pdftex.def Info: ../img/III/IIIv.png  used on input line 263.
+(pdftex.def)             Requested size: 93.95172pt x 99.97426pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--267
+
+ []
+
+<../img/III/IIIw.png, id=155, 156.585pt x 149.55875pt>
+File: ../img/III/IIIw.png Graphic file (type png)
+<use ../img/III/IIIw.png>
+Package pdftex.def Info: ../img/III/IIIw.png  used on input line 280.
+(pdftex.def)             Requested size: 93.95172pt x 89.73593pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--284
+
+ []
+
+[20 <../img/III/IIIu.png> <../img/III/IIIv.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
+
+ []
+
+<../img/III/IIIx.png, id=161, 419.5675pt x 167.62625pt>
+File: ../img/III/IIIx.png Graphic file (type png)
+<use ../img/III/IIIx.png>
+Package pdftex.def Info: ../img/III/IIIx.png  used on input line 297.
+(pdftex.def)             Requested size: 230.76283pt x 92.1947pt.
+<../img/III/IIIy.png, id=162, 260.975pt x 150.5625pt>
+File: ../img/III/IIIy.png Graphic file (type png)
+<use ../img/III/IIIy.png>
+Package pdftex.def Info: ../img/III/IIIy.png  used on input line 308.
+(pdftex.def)             Requested size: 156.5862pt x 90.33818pt.
+[21 <../img/III/IIIw.png> <../img/III/IIIx.png> <../img/III/IIIy.png>]
+<../img/III/IIIz.png, id=169, 241.90375pt x 194.7275pt>
+File: ../img/III/IIIz.png Graphic file (type png)
+<use ../img/III/IIIz.png>
+Package pdftex.def Info: ../img/III/IIIz.png  used on input line 330.
+(pdftex.def)             Requested size: 145.14336pt x 116.83739pt.
+<../img/III/IIIaa.png, id=170, 307.1475pt x 279.0425pt>
+File: ../img/III/IIIaa.png Graphic file (type png)
+<use ../img/III/IIIaa.png>
+Package pdftex.def Info: ../img/III/IIIaa.png  used on input line 367.
+(pdftex.def)             Requested size: 184.28992pt x 167.42679pt.
+ [22 <../img/III/IIIz.png>]
+<../img/III/IIIbb.png, id=175, 259.97125pt x 280.04625pt>
+File: ../img/III/IIIbb.png Graphic file (type png)
+<use ../img/III/IIIbb.png>
+Package pdftex.def Info: ../img/III/IIIbb.png  used on input line 384.
+(pdftex.def)             Requested size: 155.98395pt x 168.02904pt.
+<../img/III/IIIcc.png, id=176, 300.12125pt x 281.05pt>
+File: ../img/III/IIIcc.png Graphic file (type png)
+<use ../img/III/IIIcc.png>
+Package pdftex.def Info: ../img/III/IIIcc.png  used on input line 385.
+(pdftex.def)             Requested size: 180.07413pt x 168.63129pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--397
+
+ []
+
+<../img/III/IIIdd.png, id=177, 208.78pt x 152.57pt>
+File: ../img/III/IIIdd.png Graphic file (type png)
+<use ../img/III/IIIdd.png>
+Package pdftex.def Info: ../img/III/IIIdd.png  used on input line 406.
+(pdftex.def)             Requested size: 125.26895pt x 91.5427pt.
+<../img/III/IIIee.png, id=178, 401.5pt x 179.67125pt>
+File: ../img/III/IIIee.png Graphic file (type png)
+<use ../img/III/IIIee.png>
+Package pdftex.def Info: ../img/III/IIIee.png  used on input line 407.
+(pdftex.def)             Requested size: 240.90184pt x 107.80356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--411
+
+ []
+
+[23 <../img/III/IIIaa.png> <../img/III/IIIbb.png> <../img/III/IIIcc.png>]
+<../img/III/IIIff.png, id=185, 260.975pt x 170.6375pt>
+File: ../img/III/IIIff.png Graphic file (type png)
+<use ../img/III/IIIff.png>
+Package pdftex.def Info: ../img/III/IIIff.png  used on input line 438.
+(pdftex.def)             Requested size: 156.5862pt x 102.38327pt.
+<../img/III/IIIgg.png, id=186, 353.32pt x 163.61125pt>
+File: ../img/III/IIIgg.png Graphic file (type png)
+<use ../img/III/IIIgg.png>
+Package pdftex.def Info: ../img/III/IIIgg.png  used on input line 439.
+(pdftex.def)             Requested size: 211.99364pt x 98.1675pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--443
+
+ []
+
+[24 <../img/III/IIIdd.png> <../img/III/IIIee.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 444--447
+
+ []
+
+<../img/III/IIIhh.png, id=192, 236.885pt x 163.61125pt>
+File: ../img/III/IIIhh.png Graphic file (type png)
+<use ../img/III/IIIhh.png>
+Package pdftex.def Info: ../img/III/IIIhh.png  used on input line 454.
+(pdftex.def)             Requested size: 130.28714pt x 89.98645pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--464
+
+ []
+
+<../img/III/IIIii.png, id=193, 330.23375pt x 131.49126pt>
+File: ../img/III/IIIii.png Graphic file (type png)
+<use ../img/III/IIIii.png>
+Package pdftex.def Info: ../img/III/IIIii.png  used on input line 479.
+(pdftex.def)             Requested size: 198.14177pt x 78.89534pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--483
+
+ []
+
+[25 <../img/III/IIIff.png> <../img/III/IIIgg.png> <../img/III/IIIhh.png>]
+<../img/III/IIIjj.png, id=201, 472.76625pt x 133.49875pt>
+File: ../img/III/IIIjj.png Graphic file (type png)
+<use ../img/III/IIIjj.png>
+Package pdftex.def Info: ../img/III/IIIjj.png  used on input line 486.
+(pdftex.def)             Requested size: 283.66193pt x 80.09984pt.
+<../img/III/IIIkk.png, id=202, 479.7925pt x 134.5025pt>
+File: ../img/III/IIIkk.png Graphic file (type png)
+<use ../img/III/IIIkk.png>
+Package pdftex.def Info: ../img/III/IIIkk.png  used on input line 513.
+(pdftex.def)             Requested size: 287.8777pt x 80.7021pt.
+))
+[26 <../img/III/IIIii.png> <../img/III/IIIjj.png> <../img/III/IIIkk.png>]
+(index.aux) ) 
+Here is how much of TeX's memory you used:
+ 11096 strings out of 480790
+ 186433 string characters out of 2897301
+ 764521 words of memory out of 3000000
+ 26874 multiletter control sequences out of 15000+200000
+ 560428 words of font info for 60 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,28n,72p,10211b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\robay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecsx1000.pk> <C:\Users\robay\AppData\Local\MiKTeX\fonts/pk/ljfour/public
+/esint/dpi540\esint10.pk>{C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/en
+c/dvips/base/8r.enc} <C:\Users\robay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecsx1095.pk><C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/bitstrea/charter/bchb8a.pfb><C:/Users/robay/AppData/Local/Programs/MiKTeX/
+fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/robay/AppData/Local/Programs
+/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/robay/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Users/robay/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/
+robay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
+:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+9.pfb><C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr5.pfb><C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr6.pfb><C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Users/robay/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/robay/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/robay/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on index.pdf (26 pages, 1073430 bytes).
+PDF statistics:
+ 371 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+

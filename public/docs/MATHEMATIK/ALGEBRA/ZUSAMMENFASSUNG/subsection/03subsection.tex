@@ -1,0 +1,138 @@
+\chapter{Ortskurven}
+\section{Einführung}
+Eine Ortskurve ist eine parametrisierte Abbildung in die Gauss'sche Zahlenebene der Form
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+f&:&\mathbb{R}\rightarrow \mathbb{C}\\
+t&\mapsto&z\left(t\right)=x\left(t\right)+jy\left(t\right)\\
+\end{array}
+}
+\end{equation}
+Gegeben sei eine veränderliche komplexe Grösse. Die komplexe Grösse kann bekanntlich als Zeiger in der Gauss'schen Zahlenebene aufgefasst werden. Die Ortskurve beinhaltet nun alle Zeigerspitzen der veränderlichen komplexen Grösse.
+\section{Kurven in der Gauss'schen Zahlenebene}
+\subsection{Die Gerade in der Gauss'schen Zahlenebene}
+Die allgemeine Gleichung einer Geraden in der Gauss'schen Zahlenebene lautet
+\begin{equation}
+\boxed{z\left(t\right)=z_0+f\left(t\right)z_1}
+\end{equation}
+Dabei bezeichnen $z_0$ und $z_1$ komplexe Zahlen (Zeiger) und $f\left(t\right)$ eine reellwertige Funktion für den Parameter. Analog der Parametergleichung
+\begin{equation}
+\boxed{\overrightarrow{r}=\overrightarrow{r}_0+t\overrightarrow{r}_1}
+\end{equation}
+Eine besonders einfache Form der Beschreibung einer Geraden in der Gauss'schen Zahlenebene liefert die folgende Gleichung
+\begin{equation}
+\boxed{z\left(t\right)=a\left(1+i\cdot f\left(t\right)\right)=a\left(1+i\cdot t\right)=\underbrace{\left(a\right)}_{z_0}+\underbrace{\left(i\cdot a\right)}_{z_1}\cdot t}
+\end{equation}
+Die komplexen Zeiger $z_0=a$ und $z_1=i\cdot a$ stehen senkrecht zueinader und die komplee Zahl $a$ ist der kürzeste Zeiger vom Ursprung auf die Gerade.
+\subsection{Der Kreis in der Gauss'schen Zahlenebene}
+Für einen beliebigen Kreis verschiebt man nun den Kreis um die komplexe Zahl $b$ und multiplizieren mit $a$. Der Mittelpunkt des Kreises lautet
+\begin{equation}
+\boxed{M\left(\dfrac{\text{Re}\left(a\right)}{2}+\text{Re}\left(b\right), \dfrac{\text{Im}\left(a\right)}{2}+\text{Im}\left(b\right)\right)}
+\end{equation}
+\begin{equation}
+\boxed{z\left(t\right)=az_0\left(t\right)+b}
+\end{equation}
+\section{Inversion}
+\subsection{Inversion einer Geraden durch den Ursprung}
+Betrachte die Gerade durch den Ursprung mit der Gleichung
+\begin{equation} 
+\boxed{z\left(t\right)=f\left(t\right)z_0}
+\end{equation} \tabularnewline
+Für die Inversion $w=\dfrac{1}{z}$ findet man
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{f\left(t\right)z_0}=\dfrac{1}{f\left(t\right)}\dfrac{\overline{z_0}}{z_0\overline{z_0}}}
+\end{equation}
+Dies ist eine Gerade durch den Ursprung mit der Parametrisierung: $g\left(t\right)=\dfrac{1}{f\left(t\right)}$ und der Richtung $w_0=\dfrac{\overline{z_0}}{z_0\overline{z_0}}$. Die invertierte Gerade ist die Spiegelung der gegebenen Geraden an der reellen Achse.
+\subsection{Inversion einer Geraden nicht durch den Ursprung}
+Betrachte die Gerade mit $a=\Big\vert a\Big\vert e^{\text{j}\varphi}$
+\begin{equation}
+\boxed{z\left(t\right)=a\left(1+\text{j} f\left(t\right)\right)}
+\end{equation}
+Die Inversion ergibt
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{a\left(1+\text{j}f\left(t\right)\right)}=\underbrace{\dfrac{1}{a}}_{\text{Drehstreckung}}\cdot \underbrace{\dfrac{1}{1+\text{j}f\left(t\right)}}_{\text{Kreis durch den Ursprung}}}
+\end{equation}
+Die Inversion einer Geraden nicht durch den Ursprung ergibt einen Kreis durch den Ursprung mit den Daten
+\begin{equation}
+\boxed{R=\dfrac{1}{2\Big\vert a \Big\vert}}\quad \boxed{M\left(\dfrac{1}{2\Big\vert a\Big\vert}\cos\left(-\varphi\right), \dfrac{1}{2\Big\vert a\Big\vert}\sin\left(-\varphi\right)\right)}
+\end{equation}
+\subsection{Inversion eines Kreises durch den Ursprung}
+Die Inversion eines Kreises durch den Ursprung muss nach den Überlegungen des letzten Abschnittes eine Gerade ergeben, welche nicht durch den Ursprung geht. Sei also ein Kreis mit dem Mittelpunkt gegeben. 
+\begin{equation}
+\boxed{M\left(\dfrac{\Big\vert a\Big\vert}{2}\cos\left(\varphi\right), \dfrac{\Big\vert a\Big\vert}{2}\sin\left(\varphi\right)\right)\Rightarrow R=\dfrac{\Big\vert a\Big\vert}{2}}
+\end{equation}
+Diesen Kreis kann man duch die folgende Gleichung beschrieben.
+\begin{equation}
+\boxed{z\left(t\right)=a\dfrac{1}{1+\text{j}f\left(t\right)}}
+\end{equation}
+Die Inversion ergibt nun
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{a}\left(1+\text{j}f\left(t\right)\right)=\dfrac{1}{\Big\vert a\Big\vert}e^{-\text{j}\varphi}\left(1+\text{j}f\left(t\right)\right)}
+\end{equation}
+Die Inversion eines Kreises durch den Ursprung ergibt eine Gerade die nicht durch den Ursprung geht. Dies ist eine Gerade durch den Punkt $z_0=\dfrac{1}{\Big\vert a\Big\vert}e^{-\text{j}\varphi}$ mit der Richtung $z_1=\text{j}z_0=\dfrac{1}{\Big\vert a\Big\vert}e^{\text{j}\dfrac{\pi}{2}-\varphi}$. 
+\subsection{Inversion eines Kreises nicht durch den Ursprung}
+Die Inversion des Kreises $z\left(t\right)$ mit Mittelpunkt $z_M$ und Radius $R$ hat folgende Inversion
+\begin{equation}
+\boxed{z\left(t\right)=b+a\dfrac{1}{1+\text{j}f\left(t\right)}}
+\end{equation}
+\begin{equation}
+\boxed{z_M=\dfrac{a}{2}+b}
+\end{equation}
+\begin{equation}
+\boxed{R=\dfrac{\Big\vert a\Big\vert}{2}}
+\end{equation}
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{b+a\dfrac{1}{1+\text{j}f\left(t\right)}}=\dfrac{1+\text{j}f\left(t\right)}{a+b\left(1+\text{j}f\left(t\right)\right)}}
+\end{equation}
+Die Inversion eines Kreises nicht durch den Ursprung ergibt wieder einen Kreis der nicht durch den Ursprung geht.
+\begin{equation}
+\boxed{z_{w,n}=z_M\pm R_z\dfrac{z_M}{\Big\vert z_M\Big\vert}=z_M\left(1\pm \dfrac{R_z}{\Big\vert z_M\Big\vert}\right)=\dfrac{z_M}{\Big\vert z_M\Big\vert}\left(\Big\vert z_M\Big\vert\pm R_z\right)}
+\end{equation}
+\begin{equation}
+\boxed{w_{n,w}=\dfrac{1}{\dfrac{z_M}{\Big\vert z_M\Big\vert}\left(\Big\vert z_M\Big\vert\pm R_z\right)}=\dfrac{\overline{z_M}}{\Big\vert z_M\Big\vert}\cdot \dfrac{1}{\Big\vert z_M\Big\vert\pm R_z}}
+\end{equation}
+Der Mittelpunkt liegt zwischen diesen beiden Punkten.
+\begin{equation}
+\boxed{w_M=\dfrac{1}{2}\left(w_M+w_n\right)=\dfrac{\overline{z_M}}{2\Big\vert z_M\Big\vert}\left(\dfrac{1}{\Big\vert z_M\Big\vert-R_z}+\dfrac{1}{\Big\vert z_M\Big\vert+R_z}\right)=\dfrac{\overline{z_M}}{\Big\vert z_M\Big\vert^2-R_z^2}}
+\end{equation}
+Den Radius des neuen Kreises erhält man aus dem halben Betrag der Differenz der beiden Zeiger
+\begin{equation}
+\boxed{R_w=\dfrac{1}{2}\Big\vert W_w-W_n\Big\vert=\dfrac{R_z}{\Big\vert z_M\Big\vert^2-R_z^2}}
+\end{equation}
+\section{Ortskurven in MATLAB}
+Ortskurve
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{syms omega}}
+\item {\color{red}\texttt{omega\_r = [0,100];}}
+\item {\color{red}\texttt{omega\_w = [0,10,20,30,40,50,100];}}
+\item {\color{red}\texttt{z=0.5+i*omega*0.01}}
+\item {\color{red}\texttt{ezplot(real(z),imag(z),omega\_r)}}
+\item {\color{red}\texttt{hold on}}
+\item {\color{red}\texttt{for k=1:length(omega\_w)}}
+\item $\quad${\color{red}\texttt{zz=subs(z,omega,omega\_w(k));}}
+\item $\quad${\color{red}\texttt{xx=real(zz);}}
+\item $\quad${\color{red}\texttt{yy=imag(zz);}}
+\item $\quad${\color{red}\texttt{plot(xx,yy,'r*')}}
+\item $\quad${\color{red}\texttt{text(xx,yy,strcat('$\backslash$leftarrow $\backslash$omega=', num2str(omega\_w(k)), `1/\_s'))}}
+\item {\color{red}\texttt{end}}
+\end{enumerate}
+Inverse der Ortskurve
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{z\_inv=1/z}}
+\item {\color{red}\texttt{ezplot(real(z\_inv), imag(z\_inv), omega\_r);}}
+\item {\color{red}\texttt{hold on}}
+\item {\color{red}\texttt{for k=1:length(omega\_w)}}
+\item $\quad${\color{red}\texttt{zz=subs(z\_inv, omega, omega\_w(k));}}
+\item $\quad${\color{red}\texttt{xx=real(zz);}}
+\item $\quad${\color{red}\texttt{yy=img(zz);}}
+\item $\quad${\color{red}\texttt{plot(xx, yy, `r*')}}
+\item $\quad${\color{red}\texttt{text(xx,yy,strcat('$\backslash$leftarrow $\backslash$omega=', num2str(omega\_w(k)), `1/\_s'))}}
+\item {\color{red}\texttt{end}}
+\end{enumerate}
+
+
+
+
+
+

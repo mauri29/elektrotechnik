@@ -71,3 +71,5 @@
 </p>
 <p><b>Empfohlene Vorkenntnisse: </b> Analysis 2 (an2) und Algebra (alg)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/MATHEMATIK/ANALYSIS/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> ANALYSIS</a></p>

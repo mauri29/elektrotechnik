@@ -1,0 +1,134 @@
+\section{Matrizen}
+\subsection{Matrizenarten}
+Ein Spaltenvektor ist eine Anordnung von Elementen in einer Spalte.
+\begin{equation}
+\boxed{\overrightarrow{a}_i=\begin{pmatrix}a_{1i}\\a_{2i}\\\vdots\\a_{ni}\end{pmatrix},\quad a_{mi}\in \mathbb{R}^n, \quad i\in \mathbb{N}}
+\end{equation}
+Ein Zeilenvektor ist eine Anordnung von ELementen in einer Zeile
+\begin{equation}
+\boxed{\overrightarrow{a}_i^T=\begin{pmatrix}a_{i1}&a_{i2}&\dotso&a_{in}\end{pmatrix},\quad a_{ni}\in \mathbb{R}^n,\quad i\in\mathbb{N}}
+\end{equation}
+Das Matrix-Produkt aus einem Spalten- und einem Zeilenvektor ergibt 
+\begin{equation}
+\boxed{\overrightarrow{a}_i\odot \overrightarrow{a}_i^T=a_{1i}^2+a_{2i}^2+\dotso+a_{ni}^2}
+\end{equation}
+Die Länge eines Spaltenvektors entspricht
+\begin{equation}
+\boxed{\Big\vert\overrightarrow{a}\Big\vert=\sqrt{\overrightarrow{a}^T\odot \overrightarrow{a}}=\sqrt{a_{1i}^2+a_{2i}^2+\dotso+a_{ni}^2}}
+\end{equation}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ ist eine rechteeckige Tabelle mit Zahlen angeordnet in $m$ Zeilen und $n$ Spalten
+\begin{equation}
+\boxed{A=\begin{pmatrix}a_{11}&a_{12}&\dotso&a_{1n}\\a_{21}&a_{22}&\dotso&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\dotso&a_{mn}\end{pmatrix}}
+\end{equation}
+Aus der Matrix $A\in\mathbb{R}^{m\times n}$ wird eine Matrix der Form $A\in\mathbb{R}^{n\times m}$ erzeugt. Diese Matrix ist die Transponierte Matrix $A^T$ von $A$. Folgende Eigenschaften sind
+\begin{equation}
+\boxed{A^T=\left(a^T\right)_{mn}=\left(a\right)_{nm}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A+B\right)^T=A^T+B^T$
+\item $\left(A\odot B\right)^T=B^T\odot A^T$
+\item $\left(A^T\right)^T=A$
+\end{enumerate}
+Eine Matrix $A\in\mathbb{R}^{n\times n}$ heisst quadratische Matrix, wenn die Anzahl an Spalten und der an Zeilen übereinstimmt.
+\newline\newline
+Eine Diagonalmatrix ist eine quadratische Matrix falls alle Elemente ausserhalb der Diagonale gleich null sind
+\begin{equation}
+\boxed{D=\text{diag}\begin{pmatrix}a_{11}&a_{22}&\dotso&a_{nn}\end{pmatrix},\quad a_{ij}=0, \,i<j}
+\end{equation}
+Eine Einheitsmatrix ist eine Diagonalmatrix mit Eins-Elementen.
+\begin{equation}
+\boxed{I=\text{diag}\begin{pmatrix}a_{11}&a_{22}&\dotso&a_{nn}\end{pmatrix},\quad \text{für}\quad \begin{matrix}a_{ij}=1, \,i=j\\a_{ij}=0, \,i\neq j\end{matrix}}
+\end{equation}
+Eine untere Dreiecksmatrix besitzt Null-Elemente oberhalb der Diagonale ($a_{ij}=0$ für $i<j$). Eine obere Dreiecksmatrix besitzt Nul-Elemente oberhalb der Diagonale.
+\newline\newline
+Eine Matrix heisst symmetrisch, falls 
+\begin{equation}
+\boxed{A=A^T\Leftrightarrow a_{ij}=a_{ji},\quad \text{für alle }i,\,j}
+\end{equation}
+Eine Matrix heisst antisymmetrisch, falls
+\begin{equation}
+\boxed{A=-A^T\Leftrightarrow a_{ij}=-a_{ji},\quad \text{für alle }i,\,j,\text{ sonst }0\text{ für }i=j}
+\end{equation}
+Eine quadratische Matrix $A$ heisst Exponentialmatrix für
+\begin{equation}
+\boxed{e^A=\displaystyle \sum_{n=0}^{\infty}\dfrac{1}{n!}A^n}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $e^{A+B}=e^A\cdot e^B,\quad $ falls $A\cdot B=B\cdot A$
+\item $\left(e^A\right)^{-1}=e^{-A}$
+\item $\dfrac{\text{d}}{\text{d}x}e^{x\cdot A}=A\cdot e^{x\cdot A}$
+\end{enumerate}
+Eine quadratische Matrix $A$ heisst orthogonal wenn
+\begin{equation}
+\boxed{A^T\odot A=I}\quad \boxed{A^T=A^{-1}}
+\end{equation}
+Sei $A\in\mathbb{R}^{n\times n}$ eine quadratische Matrix. Es existiert eine Matrix $A^{-1}$ mit $\det\left(A\right)\neq 0$, wobei die Zeilen/Spalten von $A$ linear unabhängig sind. Die Matrix $A$ nennt man invertierbar und die Matrix $A^{-1}$ die Inverse von $A$
+\begin{equation}
+\boxed{A\odot A^{-1}=A^{-1}\odot A=I}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A\odot B\right)^{-1}=B^{-1}\odot A^{-1}$
+\item $\left(A^{-1}\right)^T=\left(A^T\right)^{-1}$
+\item $A\cdot \overrightarrow{x}=\overrightarrow{b}\Leftrightarrow \underbrace{ A^{-1}\odot A}_{I}\odot \overrightarrow{x}=\overrightarrow{x}=A^{-1}\odot\overrightarrow{b}$
+\item $\left(A^{-1}\right)^{-1}=A$
+\item $A^{-1}=A^T$, wobei $A$ ist orthogonal
+\end{enumerate}
+Die inverse Matrix einer Matrix $A\in\mathbb{R}^{2\times 2}$ lautet
+\begin{equation}
+\boxed{A^{-1}=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}=\dfrac{1}{\det\left(A\right)}\cdot \begin{pmatrix}a_{22}&-a_{12}\\-a_{21}&a_{11}\end{pmatrix}}
+\end{equation}
+Mit elementaren Zeilenumformungen lässt sich die Inverse Matrix durch das Gauss-Jordan-Verfahren oder die Jacobi-Methode berechnen
+\begin{equation}
+\boxed{\left(A\Big\vert I\right)=\left(I\Big\vert A^{-1}\right)}
+\end{equation}
+Sei eine Matrix $C$ bestehen aus Untermatrizen $A\in\mathbb{R}^{p\times p}$ und $B\in\mathbb{R}^{q\times q}$. Die Inverse Matrix $C^{-1}$ lautet
+\begin{equation} 
+\boxed{C^{-1}=\begin{pmatrix}A&0\\0&B\end{pmatrix}^{-1}=\begin{pmatrix}A^{-1}&0\\0&B^{-1}\end{pmatrix}^{-1}}
+\end{equation} 
+\subsection{Matrixalgebra}
+Zwei Matrizen $A$ und $B$ können addiert bzw. subtrahiert werden, wenn beide Matrizen die geiche Anzahl an Zeilen/Spalten besitzen
+\begin{equation}
+\boxed{C=A+B\Rightarrow c_{ij}=a_{ij}\pm b_{ij},\quad i,j\in \mathbb{N}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A+B\right)+C=A+\left(B+C\right)$
+\item $A+O=O+A=A$
+\item $A+(-A)=(-A)+A=O$
+\item $A+B=B+A$
+\end{enumerate}
+Zwei Matrizen $A$ und $B$ können mit einem Skalar $\lambda\in\mathbb{R}$ multipliziert werden. Es gilt
+\begin{equation}
+\boxed{C=\lambda\cdot A\Rightarrow c_{ij}=\lambda\cdot a_{ij},\quad i,j\in\mathbb{N},\quad \lambda\in\mathbb{R}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\lambda\cdot \left(A+B\right)=\lambda\cdot A+\lambda\cdot B$
+\item $\left(\lambda+\mu\right)\cdot A=\lambda\cdot A+\mu\cdot A$
+\item $\left(\lambda\cdot \mu\right)\cdot A=\lambda\cdot\left(\mu\cdot A\right)$
+\item $1\cdot A=A$
+\end{enumerate}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ kann mit einem Spaltenvektor $\overrightarrow{x}\in\mathbb{R}^{n\times 1}$ multipliziert werden und es wird einen Vektor $\overrightarrow{b}\in\mathbb{R}^{m\times 1}$ erzeugt. Es gilt
+\begin{equation}
+\boxed{\overrightarrow{b}=A\odot \overrightarrow{x}=x_1\cdot \overrightarrow{a}_1+x_2\cdot \overrightarrow{a}_2+\dotso+x_n\cdot \overrightarrow{a}_m}
+\end{equation}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ kann mit eine Matrix $B\in\mathbb{R}^{n\times p}$ multipliziert werden und es wird eine Matrix $C\in\mathbb{R}^{m\times p}$ erzeugt. Die Anzahl an Spalten von $A$ muss mit den Anzahl an Zeilen von $B$ übereinstimmen. Es gelten ausserdem folgende Eigenschaften
+\begin{equation}  
+\boxed{\begin{array}{lll}  
+C&=&A\odot B\Rightarrow c_{mp}=a_{mn}\cdot b_{np}=\displaystyle \sum_{k=1}^na_{mk}\cdot b_{np}\\
+&=&A\odot \begin{pmatrix}\overrightarrow{b}_1&\overrightarrow{b}_2&\dotso&\overrightarrow{b}_p\end{pmatrix}\\
+&=&\begin{pmatrix}A\odot \overrightarrow{b}_1&A\odot \overrightarrow{b}_2&\dotso&A\odot \overrightarrow{b}_p\end{pmatrix}\\
+\end{array}}  
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $I\odot A=A\odot I=A$
+\item $\left(A\odot B\right)\odot C=A\odot\left(B\odot C\right)$
+\item $A\odot\left(B+C\right)=A\odot B+A\odot C$
+\item $A\odot B\neq B\odot A$
+\end{enumerate}
+Seien $A\in\mathbb{R}^{m\times n}$ und $B\in\mathbb{R}^{m\times n}$ zwei Matrizen in Funktion von $x$. Es gelten folgende Eigenschaften
+\begin{enumerate}[$(i)$]
+\item $A'\left(x\right)=\left(a_{ij}'\left(x\right)\right)$
+\item $\left(A\left(x\right)+B\left(x\right)\right)'=A'\left(x\right)+B'\left(x\right)$
+\item $\left(A\left(x\right)\odot B\left(x\right)\right)'=A\left(x\right)\odot B'\left(x\right)+A'\left(x\right)\odot B\left(x\right)$
+\item $\left(A^2\left(x\right)\right)'=A\left(x\right)\odot A'\left(x\right)+A'\left(x\right)\odot A\left(x\right)$
+\item $\left(A^{-1}\left(x\right)\right)'=-A^{-1}\left(x\right)\odot A'\left(x\right)\odot A^{-1}\left(x\right)$
+\end{enumerate}  

@@ -1,0 +1,72 @@
+\section{Matrix-Manipulationen}
+\subsection{Elementare Matrizen}
+Der Befehl \boxed{\textbf{\texttt{zeros}}} setzt alle Koeffizienten einer Matrix gleich Null. Der Befehl {\color{red}\texttt{zeros(n)}} bildet eine \texttt{n$\times$n} Matrix, deren Elemente alle den Wert Null besitzen. Der Befehl {\color{red}\texttt{zeros(n,m)}} steht für eine Rechtecksmatrix mit \texttt{n} Zeilen und \texttt{m} Kolonnen mit lauter Nullen.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{ones}}} weist allen Koeffizienten einer Matrix den Wert Eins zu. Der Befehl {\color{red}\texttt{ones(n)}} bildet eine quadratische Matrix, deren Elemente alle den Betrag Eins haben. Der Befehl {\color{red}\texttt{ones(n,m)}} bildet eine Matrix aus \texttt{n} Zeilen und \texttt{m} Kolonnen. Jeder Variable muss ein numerischer Wert zugewiesen werden.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{eye(n)}}} bildet die quadratische \texttt{n$\times$n}-Identitätsmatrix. Der Befehl {\color{red}\texttt{eye(n,m)}} definiert eine Rechtsmatrix mit \texttt{n} Zeilen und \texttt{m} Kolonnen. Die Diagonalelemente haben den Betrag Eins. 
+\newline\newline
+Mit \boxed{\textbf{\texttt{diag(a)}}} wird der Vektor \texttt{a} in der Diagonale einer quadratischen Matrix eingebettet. Die Koeffizienten ausserhalb der Diagonale sind Null. Der \boxed{\textbf{\texttt{diag(A)}}} bildet die Diagonale einer beliebigen Matrix in einem Kolonnenvektor ab. 
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{rand(n)}}} weist allen Koeffizienten einer quadratischen Matrix mit gleichmässig verteilte Zufallszahl zwischen Null und Eins. Der Befehl {\color{red}\texttt{rand(n,m)}} hat \texttt{n} Zeilen und \texttt{m} Kolonnen mit gleichmässig verteilten Zufallszahlen. Der Befehl {\color{red}\texttt{rand(n,m,p)}} erzeugt \texttt{p} Matrizen mit \texttt{n} Zeilen und \texttt{m} Kolonnen. 
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{linspace(xstart, xend)}}} erzeugt einen Vektor zwischen \texttt{xstart} und \texttt{xend}, der in 99 gleiche Intervalle unterteilt wird. Der Vektor besteht somit aus 100 linear, gleichmässig verteilten Punkten. Der Befehl {\color{red}\texttt{linspace(xstart, xend, n)}} bildet einen Vektor mit \texttt{n} linear unterteilten Punkten zwischen \texttt{xstart} und \texttt{xend}.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{[X,Y]=meshgrid(x,y)}}} formt aus den Vektoren \texttt{x$\in\mathbb{R}^m$} und \texttt{y$\in\mathbb{R}^n$} die Matrizen \texttt{X} und \texttt{Y} mit je \texttt{n$\times$m} Elementen. Die Matrizen \texttt{X} und \texttt{Y} werden für das Plotten von Funktionen mit zwei Varaiblen und für dreidimensionale Oberflächen Graphiken verwendet.
+\newline\newline
+Der Befehl {\color{red}\texttt{[X,Y,Z]=meshgrid(x,y,z)}} formt ein dreidimensionaler Gitter. Die Matrizen \texttt{X}, \texttt{Y} und \texttt{Z} werden für das Plotten von Funktionen mit drei Varaiblen und für dreidimensionale Volumen Graphiken verwendet.
+\subsection{Informationen über die Dimension}
+Der Befehl \boxed{\textbf{\texttt{size(A}}} informiert über die Dimension der Matrix \texttt{A}. Die erste Zahl des zweizeiligen Ausgabevektors steht für die Anzhl Zeilen von \texttt{A}, die zweite für die Anzahl Kolonnen. Mit {\color{red}\texttt{[M,N]=size(A)}} werden die Zeilen- und kolonnenzahl von \texttt{A} den Variablen \texttt{M} und \texttt{N} zugewiesen. Der Befehl {\color{red}\texttt{size(A,1)}} gibt Auskunft über die Anzahl Zeilen der Matrix \texttt{A} und {\color{red}\texttt{size(A,2)}} über die Anzahl Kolonnen.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{length(a)}}} ermittelt die Anzahl Zeilen des Kolonnenvektors \texttt{a} bzw. die Anzahl Kolonnen des Zeilenvektors \texttt{a}.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{disp(X)}}} editiert im Command Window die in \texttt{X} definierte Zeilenfolge. Dabei wird der Namen der Zeilenfolge bei der Ausgabe unterdrückt. Ist \texttt{X} ein String, so erscheint ein beliebiger Text im Command Window. Damit können in M-Files Kontrollpunkte eingefügt werden. Sobald der Rechner im M-File eine bestimmte Teilaufgabe erfolgreich gelöst hat, kann dies mit {\color{red}\texttt{disp('test')}} im Command Window angezeigt werden. Für diese Kommunikation zwischen M-File und Command Window eignen sich die Befehle \texttt{disp} und \texttt{input}.
+\subsection{Spezielle Variablen und Konstanten}
+Die zuletzt berechnete Ausgabe wird der Variable \boxed{\textbf{\texttt{ans}}} zugewiesen, falls kein anderer Namen definiert wurde. Die Konstante \boxed{\textbf{\texttt{eps}}} gibt den Abstand an, der zwischen der Zahl Eins und der nächstmöglichen Fliesskomma-Stelle liegt. Es ist der kleinste Wert, der zu Zahl Eins addiert werden kann, damit sich die Summe von Eins unterscheidet. Mit \boxed{\textbf{\texttt{realmax}}} eruiert MATLAB die grösstmögliche positive reelle Zahl, die der Computer berechnen kann. Mit \boxed{\textbf{\texttt{realmin}}} eruiert MATLAB die kleinstmögliche positive reelle Zahl, die der Computer berechnen kann. Die Konstante \boxed{\textbf{\texttt{pi}}} gibt das Verhältnis zwischen dem Kreisumfang und dem Kreisdurchmesser und kann mit bis 16 Stellen ermittelt werden. MATLAB antwortet mit dem Ausdruck \boxed{\textbf{\texttt{inf}}}, falls ein Wert gegen unendlich geht. Strebt während einer Berechnung ein bestimmter Wert gegen unendlich, so wird dies im Command Window angezeigt.
+\section{Lineare Algebra} 
+\subsection{Grundoperationen}
+Die linke Division \boxed{\textbf{\texttt{$\backslash$}}} von \texttt{A$\backslash$B} entspricht der Multiplikation der Inversen der regulären Matrix (regulär: \texttt{det(A)$\neq$0}) \texttt{A} mit der Matrix \texttt{B}, d.h. \texttt{inv(A)*B}. Dasselbe gilt für \texttt{A$\backslash$B} und \texttt{B*inv(A)}. \texttt{A$\backslash$b} ist die Lösung des linearen Gleichungssystems \texttt{Ax=b}, falls \texttt{A$\in\mathbb{R}^{n\times n}$} und \texttt{Rang(A)=n}. Für ein unterbestimmtes Gleichungssystem \texttt{n$<$m} gibt es unendlich viele Lösungen. MATLAB sucht sich selber eine aus. Bei einer Rechtsmatrix \texttt{A$\in\mathbb{R}^{n\times m}$} mit \texttt{n$>$m} handelt es sich um ein überbestimmtes Gleichungssystem. Das System hat keine exakte Lösung. Mit \texttt{A$\backslash$b} liefert MATLAB jene approximierte Lösung, für die der totale Fehler \texttt{e} für alle \texttt{n} Gleichungen am kleinsten ist. Dieser entspricht im MATLAB der Summe aller Fehler im Quadrat.
+\begin{equation}
+\boxed{e=\displaystyle \sum_{i=1}^n\left(b_i-\displaystyle \sum_{j=1}^m a_{i,j} x_j \right)^2=\Big\Vert b-Ax\Big\Vert_2^2}
+\end{equation}
+Sei \texttt{A$\in\mathbb{R}^{n\times m}$} eine reelle Matrix mit den Einträgen \texttt{[a$_{\texttt{ij}}$]}. Ihre Transponierte ist definiert durch \texttt{$A^T=[a_{\texttt{ji}}]$}. In MATLAB wird das halbe \boxed{\textbf{\texttt{'}}} Anführungszeichen für die transponierte \texttt{A'} der Matrix \texttt{A} verwendet. Ist \texttt{A} symmetrisch, so ist \texttt{A'=A}. \texttt{A.'} ist der Befehl für die nicht-konjugiert-transponierte Matrix einer komplexen Matrix \texttt{A}.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{inv(A)}}} berechnet die inverse Matrix der quadratischen regulären Matrix \texttt{A}. Die quadratische Matrix heisst regulär, wenn \texttt{det(A)$\neq$0} ist. Falls sie singulär ist, erscheint im Command Window eine Fehlermeldung. Die Definition der inversen Matrix von \texttt{A} lautet
+\begin{equation}
+\boxed{X=A^{-1}=\dfrac{1}{\det(A)}[(-1)^{i+j}\det(A_{ji})]}
+\end{equation}
+Der Befehl \boxed{\textbf{\texttt{cond(A)}}} gibt mit einer reellen Zahl Auskunft über die Kondition des Systems, das durch Matrix \texttt{A} beschrieben wird. Sie ist grösser oder gleich Eins, und misst die Empfindlichkeit der Lösung \texttt{x} auf Störungen im linearen Gleichungssystem \texttt{Ax=b}. Die Kondition ist das Verhältnis zwischen dem grössten und dem kleinsten Singulärwert einer Matrix. Die Singulärwerte \texttt{$\sigma$} von \texttt{A} lassen sich mit der Euklidischen Norm berechnen. Sie sind die positiven Quadratwurzeln der grössten Eigenwerte der Hermiteschen Matrix \texttt{A$^H$A}. 
+\begin{equation}
+\boxed{\sigma_i(A=\sqrt{\lambda_i(A^HA)}}
+\end{equation}
+wobei \texttt{$A^H$} ist die konjugiert-transponierte Matrix von \texttt{A$\in\mathbb{C}^{n\times n}$}. Bei regulären Matrizen ist der kleinste Singulärwert immer grösser Null. Singuläre Matrizen sind nicht invertierbar, und haben einen Singulärwert bei Null. Die Kondition einer sungulären Matrix geht somit gegen unendlich. Eine grosse Zahl zeigt an, dass sich die betreffende Matrix nahe bei einer singulären Matrix befindet, d.h. das System ist schlecht konditioniert. 
+\newline\newline
+Der Rang einer Matrix \texttt{A} wird durch den Befehl \boxed{\textbf{\texttt{rank(A}}} bestimmt. Der Rang berechnet die Anzahl linear unabhängiger zeilen oder Kolonnen der Matrix \texttt{A}. 
+\newline\newline
+Die Norm eines Vektors ist ein Skalar. Er misst die Grösse bzw. die Länge eines Vektors. Die Euklidische Norm kann man berechnen durch \boxed{\textbf{\texttt{norm(a)}}}. Dies entspricht \texttt{sum(abs(a).\^\,2)\^\,(1/2)}
+\begin{equation}
+\boxed{\Big\Vert a\Big\Vert_2=\sqrt{\displaystyle \sum_{k}\Big\vert a_k\Big\vert^2}}
+\end{equation}
+Der Befehl {\color{red}\texttt{norm(a,1)}} berechnet die Summe der absoluten Beträge von jedem Vektorelement, \texttt{sum(abs(a))}
+\begin{equation}
+\boxed{\Vert a\Vert_1=\displaystyle \sum_k\Big\vert a_k\Big\vert}
+\end{equation}
+Der Befehl {\color{red}\texttt{norm(a, inf)}} ermittelt die $\infty$-Norm von \texttt{a}. Sie steht für das betragsmässig grösste Zeilenelement von \texttt{a}, \texttt{max(abs(a))}.
+\newline\newline
+Die Norm einer Matrix misst die Grösse bzw. den Betrag einer Matrix. Der Befehl {\color{red}\texttt{norm(A)}} eruiert die Euklidische Norm der Matrix \texttt{A}. Sie entspricht dem grössten Singulärwert von \texttt{A}, \texttt{max(svd(A))}.
+\newline\newline
+Der Befehl {\color{red}\texttt{norm(A,1)}} berechnet die betragsmässig grösste Summe der absoluten Beträge von jedem Kolonnenelement von \texttt{A}, \texttt{max(sum(abs(A)))}.
+\newline\newline
+Der Befehl {\color{red}\texttt{norm(A, inf)}} ermittelt die betragsmässig grösste Summe der absoluten Beträge von jedem Zeilenelemente von \texttt{A}, \texttt{max(sum(abs(A')))}.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{det(A)}}} berechnet die Determinante einer Matrix \texttt{A}. Für eine Matrix \texttt{A$\in\mathbb{R}^{n\times n}$}, wobei \texttt{n$>$1} ist und \texttt{j}-te Kolonnen, gilt für die Determinante von \texttt{A}
+\begin{equation}
+\boxed{\det(A)=\displaystyle \sum_{k=1}^n(-1)^{j+k}a_{kj}\det(A_{kj})}
+\end{equation}
+Die Spur einer Matrix \texttt{A} ist die Summe der Diagonalelemente. Der Befehl \boxed{\textbf{\texttt{trace(A)}}} berechnet die Sput einer Matrix.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{orth(A)}}} erzeugt die orthonormierte Basisvektoren einer Matrix \texttt{A}, die denselben Raum wie die Matrix \texttt{A} spannen. Die Anzahl Kolonnen der orthonormierten Basismatrix entspricht dem Rang einer Matrix \texttt{A}. Die Identitätsmatrix erhält man durch folgende Rechnung \texttt{(orth(A))'*orth(A)}
+\subsection{Eigenwerte und Singulärwerte}
+Die Eigenwerte \texttt{$\lambda$} berechnet man durch den Befehle \boxed{\textbf{\texttt{eig(A)}}} und die dazu gehörenden Eigenvektoren \texttt{x} einer Matrix \texttt{A$\in\mathbb{R}^{n\times n}$} durch {\color{red}\texttt{[eigv, eigw]=eig(A)}} und weist der Variable \texttt{eigv} die Eigenvektoren von \texttt{A} zu. In der Diagonalmatrix \texttt{eigw} befinden sich die dazugehörenden Eigenwerte.
+\newline\newline
+Der Befehl \boxed{\textbf{\texttt{svd(A)}}} ermittelt alle Singulärwerte der Matrix \texttt{A}. Die Singulärwerte \texttt{$\sigma$} der Matrix \texttt{A} die positiven Quadratwurzeln der grössten Eigenwerte der Hermiteschen Matrix \texttt{$A^H$}. Die Singulärwerte geben an, um welchen Faktor sich ein Vektor \texttt{x} durch die Abbildung mit der Matrix \texttt{A} in der Länge und der Richtung verändert. Sie charakterisieren das Verstärkungsverhalten einer beliebigen Matrix.

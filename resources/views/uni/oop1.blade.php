@@ -22,3 +22,5 @@
 </p>
 <p><b>Empfohlene Vorkenntnisse:</b> keine</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/PROGRAMMIERUNG/JAVA/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> JAVA</a></p>

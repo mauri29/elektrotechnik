@@ -38,3 +38,5 @@
 </p>
 <p><b>Empfohlene Vorkenntnisse:</b> Lineare Algebra 1 (lalg1)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/MATHEMATIK/ALGEBRA/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> ALGEBRA</a></p>

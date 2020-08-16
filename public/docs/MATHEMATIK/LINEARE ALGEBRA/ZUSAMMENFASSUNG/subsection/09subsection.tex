@@ -1,0 +1,31 @@
+\section{Diskrete Fouriertransformationen}
+Die Amplituden von Teilschwingungen heissen Fourier-Koeffizienten und sind $a_0$, $a_1$, $a_2$, $b_1$ und $b_2$ für Stützstellen $\overrightarrow{t}$ und zugehörige Funktionswerte $\overrightarrow{f}\left(\overrightarrow{t}\right)$ einer gegebenen Funktion. Die Menge aller Fourier-Koeffizienten einer Schwingung bezeichnet man als ihr Fourier-Spektrum, diskret gelten die Vektoren $\overrightarrow{c}_i$ und kontinuerlich die trigonometrischen Funktionen. Die Koeffizienten gehören zur Funktion.
+\begin{equation}
+\boxed{\overrightarrow{t}=\begin{pmatrix}0\\\pi/3\\2\pi/3\\\pi\\4\pi/3\\5\pi/3\end{pmatrix}\quad \overrightarrow{f}=\begin{pmatrix}f\left(0\right)\\f\left(\pi/3\right)\\f\left(2\pi/3\right)\\f\left(\pi\right)\\f\left(4\pi/3\right)\\f\left(5\pi/3\right)\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}\overrightarrow{f}\left(\overrightarrow{t}\right)&=&a_0\overbrace{\cos\left(0\overrightarrow{t}\right)}^{\overrightarrow{c}_0=1}+a_1\overbrace{\cos\left(1\overrightarrow{t}\right)}^{\overrightarrow{c}_1=\cos\left(t\right)}+a_2\overbrace{\cos\left(2\overrightarrow{t}\right)}^{\overrightarrow{c}_2=\cos\left(2t\right)}+a_3\overbrace{\cos\left(3\overrightarrow{t}\right)}^{\overrightarrow{c}_3=\cos\left(3t\right)}+\\
+&&+b_1\underbrace{\sin\left(1\overrightarrow{t}\right)}_{\overrightarrow{s}_1=\sin\left(t\right)}+b_2\underbrace{\sin\left(2\overrightarrow{t}\right)}_{\overrightarrow{s}_2=\sin\left(2t\right)}
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{\begin{array}{l}
+\overrightarrow{c}_0=\begin{pmatrix}1\\1\\1\\1\\1\\1\\\end{pmatrix}\quad \overrightarrow{c}_1=\begin{pmatrix}1\\1/2\\-1/2\\-1\\-1/2\\1/2\end{pmatrix}\quad \overrightarrow{c}_2=\begin{pmatrix}1\\-1/2\\-1/2\\1\\-1/2\\-1/2\end{pmatrix}\\
+\overrightarrow{c}_3=\begin{pmatrix}1\\-1\\1\\-1\\1\\-1\end{pmatrix}\quad \overrightarrow{s}_1=\begin{pmatrix}0\\\sqrt{3}/2\\\sqrt{3}/2\\0\\-\sqrt{3}/2\\-\sqrt{3}/2\end{pmatrix}\quad \overrightarrow{s}_2=\begin{pmatrix}0\\\sqrt{3}/2\\-\sqrt{3}/2\\0\\\sqrt{3}/2\\-\sqrt{3}/2\end{pmatrix}
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{a_i=\dfrac{\overrightarrow{f}\odot \overrightarrow{c}_i}{\Big\vert\overrightarrow{c}_i\Big\vert^2}}\quad \boxed{b_i=\dfrac{\overrightarrow{f}\odot \overrightarrow{s_i}}{\Big\vert\overrightarrow{s}_i\Big\vert^2}}
+\end{equation}
+Die periodische Funktionen auf einem Intervall $[0,T]$ ergeben sich die Cosinus- und Sinus-Listen mit der Winkelfrequenz
+\begin{equation}
+\boxed{\omega=\dfrac{2\pi}{T}}
+\end{equation}
+Die Abtastewerte an den Stellen $t_k=k\dfrac{T}{N}$ für $k=0$ bis $N-1$
+\begin{equation}
+\boxed{\overrightarrow{c}_j=\begin{pmatrix}\cos\left(t_0\cdot j\cdot \omega\right)\\\vdots\\\cos\left(t_{N-1}\cdot j\cdot \omega\right)\end{pmatrix}}\quad \boxed{\overrightarrow{s}_j=\begin{pmatrix}\sin\left(t_0\cdot j\cdot \omega\right)\\\vdots\\\sin\left(t_{N-1}\cdot j\cdot \omega\right)\end{pmatrix}}
+\end{equation}
+Es sei $N$ gerade und $n=N/2$. Die $n+1$ Cosinus-Listen $\overrightarrow{c}_0,\dotso, \overrightarrow{c}_n$ und die $n-1$ Sinus-Listen $\overrightarrow{s}_0,\dotso,\overrightarrow{s}_{n-1}$ bilden eine orthogonale Basis des Vektorraums aller $N$-Listen. Die Basisvektoren haben die Dimension $V$.
+\newline\newline
+Es sei $N$ ungerade und $n=(N-1)/2$. Die $n+1$ Cosinus-Listen $\overrightarrow{c}_0,\dotso, \overrightarrow{c}_n$ und die $n-1$ Sinus-Listen $\overrightarrow{s}_0,\dotso,\overrightarrow{s}_{n}$ bilden eine orthogonale Basis des Vektorraums aller $N$-Listen. Die Basisvektoren haben die Dimension $V$.

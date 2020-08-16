@@ -22,3 +22,5 @@
 </p>
 <p><b>Empfohlene Vorkenntnisse:</b> Die Studierenden werden anhand ihrer beruflichen Vorkenntnisse in die entsprechende Gruppe eingeteilt</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote</p>
+<div class="col"><hr></div>
+<p><b>Zusammenfassung:</b> <a href="docs/ELEKTROTECHNIK/LABOR/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> LABOR</a></p>

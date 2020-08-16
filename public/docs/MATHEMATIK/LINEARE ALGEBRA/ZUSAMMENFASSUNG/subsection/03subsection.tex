@@ -1,0 +1,22 @@
+\section{Das Spatprodukt}
+Betrachte man drei Vektoren $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$. Das Parallelepiped aufgespannt durch die drei Vektoren nennt man Spat. Für die Vektoren heisst die Zahl Spatprodukt.
+\begin{equation}
+\boxed{\det\left(\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\right)=\overrightarrow{OA}\bullet \left(\overrightarrow{OB}\times \overrightarrow{OC}\right)}
+\end{equation}
+Der Vektor $\overrightarrow{OB}\times \overrightarrow{OC}$ ist senkrecht auf das Parallelogram aufgespannt durch $\overrightarrow{OB}$ und $\overrightarrow{OC}$. Die Fläche des Parallelograms ist $\Big\vert\overrightarrow{OB}\times \overrightarrow{OC}\Big\vert$.
+\newline\newline
+Durch das Skalarprodukt wird der Schatten von $\overrightarrow{OA}$ auf $\overrightarrow{OB}\times \overrightarrow{OC}$ berechnet
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \left(\overrightarrow{OB}\times \overrightarrow{OC}\right)=\cos\left(\varphi\right)\cdot \Big\vert\overrightarrow{OA}\Big\vert\cdot \Big\vert\overrightarrow{OB}\times \overrightarrow{OC}\Big\vert}
+\end{equation}
+Der Betrag des Spatprodukts ist gleich dem Volumen des Spats. Dies ist genau die Höhe des Körpers aufgespannt durch die Vektoren und wird mit der Grundfläche multipliziert.
+\newline \newline
+Das Volumen des Spats ist unabhängig von der Reihenfolge. Nur das Vorzeichen kann eventuell ändern, wenn die Reihenfolge vertauscht wird.
+\begin{equation}
+\boxed{\Big[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\Big]=\Big[\overrightarrow{OC}, \overrightarrow{OA}, \overrightarrow{OB}\Big]=\Big[\overrightarrow{OB}, \overrightarrow{OC}, \overrightarrow{OA}\Big]}
+\end{equation}
+\begin{equation}
+\boxed{\Big[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\Big]=-\Big[\overrightarrow{OA}, \overrightarrow{OC}, \overrightarrow{OB}\Big]}
+\end{equation}
+Falls das Volumen des Spats bzw. der Betrag des Spatprodukts null ist, sind die Vektoren linear abhängig und liegen auf einer Ebene.
+\lstinputlisting[language=Matlab, caption={Das Spatprodukt}]{../programs/spatproduct.m}
