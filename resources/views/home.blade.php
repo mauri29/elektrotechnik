@@ -14,11 +14,13 @@
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <div class="row">
                                         <div class="col"><hr></div>
-                                        <div class="col-auto"><i class="fa fa-book" aria-hidden="true"></i> ELEKTROTECHNIK<hr></div>
+                                        <div class="col-auto"><i class="fa fa-book" aria-hidden="true"></i> ELEKTROTECHNIK</div>
+                                        <div class="col"><hr></div>
                                     </div>
                                     <a class="nav-link" id="v-pills-aet1-tab" data-toggle="pill" href="#v-pills-aet1" role="tab" aria-controls="v-pills-aet1" aria-selected="true">Allgemeine Elektrotechnik 1</a>
                                     <a class="nav-link" id="v-pills-dt1-tab" data-toggle="pill" href="#v-pills-dt1" role="tab" aria-controls="v-pills-dt1" aria-selected="true">Digitaltechnik 1</a>
                                     <div class="row">
+                                        <div class="col"><hr></div>
                                         <div class="col-auto"><i class="fa fa-book" aria-hidden="true"></i> MATHEMATIK</div>
                                         <div class="col"><hr></div>
                                     </div>

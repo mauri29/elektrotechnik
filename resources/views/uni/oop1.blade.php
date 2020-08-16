@@ -24,3 +24,11 @@
 <p><b>Leistungsbewertung:</b> Erfahrungsnote</p>
 <div class="col"><hr></div>
 <p><b>Zusammenfassung:</b> <a href="docs/PROGRAMMIERUNG/JAVA/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> JAVA</a></p>
+<div class="col"><hr></div>
+<p><b>Literatur:</b> <a href="literatur/JavaistaucheineInsel.pdf"><i class="fa fa-book" aria-hidden="true"></i> JAVA ist eine Insel</a></p>
+<div class="col"><hr></div>
+<p><b>Literatur:</b> <a href="literatur/ObjektorientierteProgrammierung.pdf"><i class="fa fa-book" aria-hidden="true"></i> Objektorientierte Programmierung</a></p>
+<div class="col"><hr></div>
+<p><b>Literatur:</b> <a href="literatur/python3.pdf"><i class="fa fa-book" aria-hidden="true"></i> Python 3</a></p>
+<div class="col"><hr></div>
+<p><b>Literatur:</b> <a href="literatur/PHP7_MySQL.pdf"><i class="fa fa-book" aria-hidden="true"></i> PHP/MySQL</a></p>
