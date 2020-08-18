@@ -1,0 +1,82 @@
+\documentclass[10pt, a4paper]{report}
+%%%%%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+%MATHEMATIK
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{enumerate}
+\usepackage{esint}
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arccot}{arccot}
+
+%LAYOUT
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{float}
+\usepackage[margin=1cm, justification=centering, singlelinecheck=no,tablename=Tab., figurename=Abb.]{caption}
+\usepackage{comment}
+\usepackage{graphicx}
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+
+% BOLD
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{cyan}{\oldtextbf{#1}}}
+
+% COLORS
+\usepackage{sectsty}
+\chapterfont{\color{cyan}}
+\sectionfont{\color{orange}}
+\subsectionfont{\color{blue}}
+\subsubsectionfont{\color{violet}}
+
+% BOXED
+\newcommand*{\boxedcolor}{orange}
+\makeatletter
+\renewcommand{\boxed}[1]{\textcolor{\boxedcolor}{%
+  \fbox{\normalcolor\m@th$\displaystyle#1$}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% LSTLISTINGS %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=10pt} \lstset{language=Java} % Code einbinden
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+% DOCUMENT
+\begin{document}
+\input{../section/01section}
+\input{../section/02section}
+\input{../section/03section}
+\input{../section/04section}
+\newpage
+\input{../section/01ubung}
+\input{../section/02ubung}
+\input{../section/03ubung}
+\end{document}

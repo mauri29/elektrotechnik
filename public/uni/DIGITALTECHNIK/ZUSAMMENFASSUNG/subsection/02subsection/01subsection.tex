@@ -1,0 +1,98 @@
+Damit Informationen von Systemen verarbeitet weden können, müssen diese in geeigneter Form kodiert sein. Im Folgenden werden also verschiedene Methoden aufgezeigt, wie Informationen für digitale Verarbeitungssysteme abgebildet werden können. 
+\section{Zahlencodes}
+\subsection{Vorzeichenlose Ganzzahlen}
+Für die {\color{red}\textbf{Kodierung der natürlichen Zahlen inklusive 0}} wird der vorzeichenlose Binärcode eingesetzt. Dieser ist ein Stellenwertsystem, was bedeutet, dass jede Ziffer gemäss ihrer Position in der Nummer eine andere {\color{red}\textbf{Wertigkeit}} hat. Für den vorzeichenlosen Binärcode lässt sich dieser Sachverhalt gemäss folgende Gleichung beschreiben, wobei $i$ die Position der Ziffer von rechts, $z$ der Zifferwert und $N$ die Anzahl Stellen sind.
+\begin{equation}
+\boxed{Z=\displaystyle \sum_{i=0}^{N-1}\left(z_i\cdot 2^i\right)}
+\end{equation}
+\subsection{Von der Binär- ins Dezimalsystem}
+Der dezimalen Wert der vorzeichenlosen Binärzahl {\color{red}\texttt{1011}} kann berechnet werden, indem man die Produkte der Ziffern mit ihren zugehörigen Wertigkeiten aufsummiert.
+\begin{equation*}
+Z=[\texttt{1011}]_{\texttt{2}}={\color{red}\texttt{1}}\cdot 2^3+{\color{red}\texttt{0}}\cdot 2^2+{\color{red}\texttt{1}}\cdot 2^1+{\color{red}\texttt{1}}\cdot 2^0=\texttt{8}+\texttt{0}+\texttt{2}+\texttt{1}=[\texttt{11}]_{\texttt{10}}
+\end{equation*}
+\subsection{Von der Dezimal- ins Binärsystem}
+Die Umwandlung von Dezimalzahlen in einer vorzeichenlose Binärzahlen geschieht durch eine iterative Division durch die Zahlenbasis des Zielformats. Dieser Vorgang wird so lange wiederholt, bis das Divisionsergebnis 0 ist.
+\begin{equation*}
+[\texttt{11}]_{\texttt{10}}:2=\underbrace{5\text{ mod } {\color{red}1}}_{1, 2^0},\quad 5:2=\underbrace{2\text{ mod }{\color{red}1}}_{1\Rightarrow 2^1},\quad 2:2=\underbrace{1\text{ mod }{\color{red}0}}_{0\Rightarrow 2^2},\quad 1:2=\underbrace{0\text{ mod }{\color{red}1}}_{1\Rightarrow 2^2}
+\end{equation*}
+\subsection{Wertebereich}
+Rechenwerke arbeiten mit fixen Wortlängen, also mit einer festen Anzahl von Ziffern. Die Wortlänge einer binären Zahl entspricht der Anzahl Ziffern, also \textbf{Bits}, aus der diese Zahl zusammengesetzt ist. Der Wertebereich von digitalen Rechenwerken ist begrenzt. 
+\newline\newline
+Der Werteberiech einer vorzeichenlose Binärzahl kann folgendermassen berechnet werden, wobei $N$ die Anzahl Stellen oder Bits sind. Binärzahlen sind \texttt{nibble}, \texttt{byte}, \texttt{word} und \texttt{double word}. 
+\begin{equation}
+\boxed{\text{Wertebereich} = 0\dotso\left(2^{N}-1\right)}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item Ein \texttt{nibble} besitzt 4 Bits und hat einen Wertebereich von 0 bis 15 
+\item Ein \texttt{byte} besitzt 8 Bits und hat einen Wertebereich von 0 bis 255
+\item Ein \texttt{word} besitzt 16 Bits und hat einen Wertebereich von 0 bis 65'636
+\item Ein \texttt{double word} besitzt 32 Bits und hat einen Wertebereich von 0 bis 4'294'967'296
+\end{enumerate}
+\subsection{Die Problematik des Überlaufs}
+In den digitalen Rechenwerken ist die Anzahl Stellen von binären zahlen begrenzt und damit auch der darstellbare Zahlenraum. Ist die letzte darstellbare zahl erreicht und wird zu dieser 1 hinzuaddiert, findet wegen des Fehlens einer weiteren nötigen Ziffer ein {\color{red}\textbf{Überlauf}} statt. Das Resultat also ist eine 0. Den selben Mechanismus ist beim Subtrahieren von 0-1 zu beobachten. Hier findet ein Unterlauf statt und anstelle des erwarteten Resultats "-1" wird die grösste darstellbareZahl ausgegeben. Bei Zahlensystemen mit einer begrenzten Anzahl Ziffern, findet man keinen linearen Zahlenstrahl, sondern einen {\color{red}\textbf{zyklischen Zahlenkreis}}.
+\subsection{Der Hexadezimalcode}
+Beim HExadezimalcode beträgt die Zahlenbasis 16. Mit einer einzelnen Ziffer lässt sich damit den Wertebereich 0 bis 15 abdecken. Für die Werte 0 bis 9 wie beim Dezimalsystem und für die Werte 10 bis 15 die Buchstaben A bis F. Dieser Code wird häufig zur Darstellung von vorzeichenlosen binären Zahlen verwendet, wobei sich hiermit jeweils 4 Bits zu einer Ziffer zusammenfassen lassen und damit eine kürzere Schreibweise möglich ist.   
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\text{Dezimal}&\text{Hexadezimal}&\text{Binär}\\\\
+\texttt{0}&\texttt{0}&\texttt{0000}\\
+\texttt{1}&\texttt{1}&\texttt{0001}\\
+\texttt{2}&\texttt{2}&\texttt{0010}\\
+\texttt{3}&\texttt{3}&\texttt{0011}\\
+\texttt{4}&\texttt{4}&\texttt{0100}\\
+\texttt{5}&\texttt{5}&\texttt{0101}\\
+\texttt{6}&\texttt{6}&\texttt{0110}\\
+\texttt{7}&\texttt{7}&\texttt{0111}\\
+\texttt{8}&\texttt{8}&\texttt{1000}\\
+\texttt{9}&\texttt{9}&\texttt{1001}\\
+\texttt{10}&\texttt{A}&\texttt{1010}\\
+\texttt{11}&\texttt{B}&\texttt{1011}\\
+\texttt{12}&\texttt{C}&\texttt{1100}\\
+\texttt{13}&\texttt{D}&\texttt{1101}\\
+\texttt{14}&\texttt{E}&\texttt{1110}\\
+\texttt{15}&\texttt{F}&\texttt{1111}\\
+\end{array}
+}
+\end{equation}
+Die {\color{red}\textbf{Umwandlung von Binär- nach Hexadezimal}} gestaltet sich sehr einfach, indem man 4er Gruppen von Bits her nimmt und dann gruppenweise umwandelt. Analog funktioniert die {\color{red}\textbf{Umwandlung von Hexadezimal nach Binär}} 
+\begin{equation}
+[\texttt{10100110}]_{\texttt{2}}=[\texttt{1010{\color{red}'}0110}]_{\texttt{2}}=[\texttt{A'6}]_{\texttt{16}}=\texttt{0xA6}
+\end{equation}
+\begin{equation}
+[\texttt{0x31AB}]_{\texttt{16}}=[\texttt{31AB}]_{\texttt{16}}=[\texttt{0011{\color{red}'}0001{\color{red}'}1010{\color{red}'}1011}]_{\texttt{2}}
+\end{equation}
+\subsection{Die vorzeichenlose binäre Addition}
+Die Addition von Binärzahlen geschieht Ziffern-weise von rechts nach links unter Berücksichtigung des Übertrags der Summe der jeweils vorhergehenden Ziffer. So gilt für die Einzelsumme einer jeden Ziffer \texttt{i}, wobei $a_i$ der Summand 1, $b_i$ der Summand 2, $c_i$ der Übertrag der vorhergehenden Ziffer und $c_{i+1}$ der Übertrag sind.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+sum_i=\Bigg\{\begin{matrix}1&\text{wenn}&c_i+a_i+b_1&\text{ungerade}\\0&\text{sonst}\end{matrix}\\
+c_{i+1}=\Bigg\{\begin{matrix}1&\text{wenn}&(c_i+a_i+b_1)>1&\\0&\text{sonst}\end{matrix}\\
+\end{array}
+}
+\end{equation}
+Das Summenbit ist also 1, wenn die Summe der Summandenbits und des Übertragsbits ungerade ist. Ansonsten ist das Summenbit 0. Das Übertragsbit für die nächste Ziffer ist 1, wenn die Summe der Summandenbits und des Übertragsbits grösser als 1 ist.
+\begin{equation}
+\underbrace{[\texttt{1100}]_{\texttt{2}}}_{\text{Summand 1}}+\underbrace{[\texttt{1010}]_{\texttt{2}}}_{\text{Summand 2}}=\underbrace{[\texttt{10000}]_{\texttt{2}}}_{\text{Übertrag}}=\underbrace{[\texttt{10110}]_{\texttt{2}}}_{\text{Summe}}
+\end{equation}
+\subsection{Die vorzeichenlose binäre Subtraktion}
+Die Subtraktion von Binärzahlen geschieht Ziffern-weise von rechts nach links unter Berücksichtigung des Übertrags der Differenz der jeweils vorhergehenden Ziffer. So gilt für die EInzeldifferenz einer jeden Ziffer \texttt{i}, wobei $a_i$ der Minuend, $b_i$ der Subtrahend, $c_i$ der Übertrag der vorhergehenden Ziffer und $c_{i+1}$ der Übertrag
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+diff_i=\Bigg\{\begin{matrix}1&\text{wenn}&a_i-(a_1+b_1)&\text{ungerade}\\0&\text{sonst}\end{matrix}\\
+c_{i+1}=\Bigg\{\begin{matrix}1&\text{wenn}&(a_i-(b_1+c_1))<0&\\0&\text{sonst}\end{matrix}\\
+\end{array}
+}
+\end{equation}
+Das jeweilige Bit der Differenz ist also 1, wenn Minuend-(Subtrahend+Übetrag) ungerade ist, sonst istes 0. Das Übertragsbit (borrow) für die nächste Stelle wird gesetzt, wenn das Resultat der aktuellen Stelle negativ ist.
+\begin{equation}
+\underbrace{[\texttt{1100}]_{\texttt{2}}}_{\text{Minuend}}-\underbrace{[\texttt{0110}]_{\texttt{2}}}_{\text{Subtrahend}}=\underbrace{[\texttt{1100}]_{\texttt{2}}}_{\text{Borrow}}=\underbrace{[\texttt{0110}]_{\texttt{2}}}_{\text{Differenz}}
+\end{equation}
+Alternativ kann die Subtraktion mittels Addition durchgeführt werden. DAbei wird zum Minuenden das {\color{red}\textbf{Zweierkomplement des Subtrahenden}} addiert. 
+\begin{equation}
+\underbrace{[\texttt{1100}]_{\texttt{2}}}_{\text{Minuend}}-\underbrace{[\texttt{0110}]_{\texttt{2}}}_{\text{Subtrahend}}\Longrightarrow \underbrace{[\texttt{1010}]_{\texttt{2}}}_{\text{Zweierkomplement}}\Longrightarrow [\texttt{1100}]_{\texttt{2}}+[\texttt{1010}]_{\texttt{2}}=\underbrace{[\texttt{10000}]_{\texttt{2}}}_{\text{Übertrag}}=\underbrace{[\texttt{0110}]_{\texttt{2}}}_{\text{Differenz}}
+\end{equation}
+\subsection{Vorzeichenbehaftete Zahlen}
+Es gibt mehrere Möglichkeiten, vorzeichenbehaftete Zahlen darzustellen. Im Folgenden wird lediglich die Zweierkomplement-Darstellung behandelt, da die anderen Systeme nur schwach verbreitet sind. Im Speziellen sind hier die Betrag-Vorzeichen-Darstellung und Bias-Darstellung zu nennen. 

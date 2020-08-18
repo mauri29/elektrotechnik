@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  3 JUN 2020 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  18 AUG 2020 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,286 +6,165 @@ entering extended mode
 (./index.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2020/01/24 v3.29 KOMA-Script document class (report)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen135
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks19
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks20
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count188
+\float@exts=\toks23
+\float@box=\box47
+\@float@everytoks=\toks24
+\@floatcapt=\box48
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks25
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
-)))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip47
-\scr@dte@tocline@numbox=\box45
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@tempdima=\dimen147
+\caption@indent=\dimen148
+\caption@parindent=\dimen149
+\caption@hangindent=\dimen150
+Package caption Info: Standard document class detected.
 )
-Package tocbasic Info: omitting babel extension for `toc'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 137.
-
-
-Package scrreprt Warning: You've used obsolete option `8pt'.
-(scrreprt)                Usage of this option indicates an old document
-(scrreprt)                and changes compatibility level using
-(scrreprt)                `fontsize=8pt,version=first,
-(scrreprt)                enabledeprecatedfontcommands' that may result
-(scrreprt)                in further warnings.
-(scrreprt)                If you don't want this, you should simply
-(scrreprt)                replace option `8pt' by `fontsize=8pt'.
-
-Class scrreprt Info: Switching compatibility level to `first'.
-
-Class scrreprt Warning: deprecated option `enabledeprecatedfontcommands'.
-(scrreprt)              Note, that this option was already depreacted when
-(scrreprt)              it has been defined. Support for old font commands
-(scrreprt)              has been removed from KOMA-Script more than one
-(scrreprt)              decade ago. It is not recommended to use them any
-(scrreprt)              longer. Therefore usage of this class option also
-(scrreprt)              is not recommended.
-
-Class scrreprt Info: File `size8.clo' used to setup font sizes on input line 24
-21.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/extsizes/size8.clo
-File: size8.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: Document class `report' detected.
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
-\ta@bcor=\skip48
-\ta@div=\count167
-Package typearea Info: You've used standard option `a4paper'.
-(typearea)             This is correct!
-(typearea)             Internally I'm using `paper=a4'.
-(typearea)             If you'd like to set the option with \KOMAoptions,
-(typearea)             you'd have to use `paper=a4' there
-(typearea)             instead of `a4paper', too.
-\ta@hblk=\skip49
-\ta@vblk=\skip50
-\ta@temp=\skip51
-\footheight=\skip52
-
-
-Package typearea Warning: DIV for 8.0pt and used papersize
-(typearea)                not defined!
-(typearea)                Using DIV=calc.
-
-DIV calculation for typearea with good linewidth.
-
-Package typearea Warning: Very low DIV value!
-(typearea)                DIV values less than 6 result in textwidth/-height
-(typearea)                smaller than total marginwidth/-height.
-(typearea)                You should e.g. increase DIV, increase fontsize or
-(typearea)                change papersize.
-
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 5
-(typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 239.00317pt
-(typearea)              DIV departure   = 14%
-(typearea)              \evensidemargin = 106.98239pt
-(typearea)              \oddsidemargin  = 106.98239pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 340.5pt
-(typearea)              \topmargin      = 70.6144pt
-(typearea)              \headheight     = 11.875pt
-(typearea)              \headsep        = 14.25pt
-(typearea)              \topskip        = 8.0pt
-(typearea)              \footskip       = 33.25pt
-(typearea)              \baselineskip   = 9.5pt
-(typearea)              on input line 1719.
+\c@caption@flags=\count189
+\c@continuedfloat=\count190
+Package caption Info: float package is loaded.
 )
-\c@part=\count168
-\c@chapter=\count169
-\c@section=\count170
-\c@subsection=\count171
-\c@subsubsection=\count172
-\c@paragraph=\count173
-\c@subparagraph=\count174
-\scr@dte@chapter@maxnumwidth=\skip53
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\chapter on input line 5547.
-\scr@dte@section@maxnumwidth=\skip54
-Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\section on input line 5557.
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\section on input line 5557.
-\scr@dte@part@maxnumwidth=\skip55
-Class scrreprt Info: using compatibility default `afterindent=true'
-(scrreprt)           for `\part on input line 5566.
-\scr@dte@subsection@maxnumwidth=\skip56
-Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsection on input line 5576.
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsection on input line 5576.
-\scr@dte@subsubsection@maxnumwidth=\skip57
-Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsubsection on input line 5586.
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsubsection on input line 5586.
-\scr@dte@paragraph@maxnumwidth=\skip58
-Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\paragraph on input line 5596.
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\paragraph on input line 5596.
-\scr@dte@subparagraph@maxnumwidth=\skip59
-Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subparagraph on input line 5606.
-Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subparagraph on input line 5606.
-\abovecaptionskip=\skip60
-\belowcaptionskip=\skip61
-\c@pti@nb@sid@b@x=\box46
-Package tocbasic Info: omitting babel extension for `lof'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 6842.
-\scr@dte@figure@maxnumwidth=\skip62
-\c@figure=\count175
-Package tocbasic Info: omitting babel extension for `lot'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 6859.
-\scr@dte@table@maxnumwidth=\skip63
-\c@table=\count176
-Class scrreprt Info: Using old \@makefntext due to compatibility level
-(scrreprt)           less than 3.22 on input line 7015.
-Class scrreprt Info: Redefining `\numberline' on input line 7028.
-\bibindent=\dimen134
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
-)
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/03/22 3.42 The Babel package
+(/usr/local/texlive/2020/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2020/03/22{} The CircuiTikz circuit drawing package version
+ 1.0.2
 
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/03/22 3.42 Babel switching mechanism
-)
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-german/german.ldf
-Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
-y)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen151
+\pgfutil@tempdimb=\dimen152
 
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-german/germanb.ldf
-Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograp
-hy)
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count177
-\U@D=\dimen135
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count178
-)
-Package babel Info: Making " an active character on input line 135.
-)))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/charter.sty
-Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box49
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-\Gm@cnth=\count179
-\Gm@cntv=\count180
-\c@Gm@tempcnt=\count181
-\Gm@bindingoffset=\dimen136
-\Gm@wd@mp=\dimen137
-\Gm@odd@mp=\dimen138
-\Gm@even@mp=\dimen139
-\Gm@layoutwidth=\dimen140
-\Gm@layoutheight=\dimen141
-\Gm@layouthoffset=\dimen142
-\Gm@layoutvoffset=\dimen143
-\Gm@dimlist=\toks18
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count182
-\mult@box=\box47
-\multicol@leftmargin=\dimen144
-\c@unbalance=\count183
-\c@collectmore=\count184
-\doublecol@number=\count185
-\multicoltolerance=\count186
-\multicolpretolerance=\count187
-\full@width=\dimen145
-\page@free=\dimen146
-\premulticols=\dimen147
-\postmulticols=\dimen148
-\multicolsep=\skip64
-\multicolbaselineskip=\skip65
-\partial@page=\box48
-\last@line=\box49
-\maxbalancingoverflow=\dimen149
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
-\@tempa=\box54
-\@tempa=\box55
-\@tempa=\box56
-\@tempa=\box57
-\@tempa=\box58
-\@tempa=\box59
-\@tempa=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\c@minrows=\count188
-\c@columnbadness=\count189
-\c@finalcolumnbadness=\count190
-\last@try=\dimen150
-\multicolovershoot=\dimen151
-\multicolundershoot=\dimen152
-\mult@nat@firstbox=\box91
-\colbreak@box=\box92
-\mc@col@check@num=\count191
-)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -306,7 +185,61 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen155
+\pgf@y=\dimen156
+\pgf@xa=\dimen157
+\pgf@ya=\dimen158
+\pgf@xb=\dimen159
+\pgf@yb=\dimen160
+\pgf@xc=\dimen161
+\pgf@yc=\dimen162
+\pgf@xd=\dimen163
+\pgf@yd=\dimen164
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count191
+\c@pgf@countb=\count192
+\c@pgf@countc=\count193
+\c@pgf@countd=\count194
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count195
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count196
+\pgfsyssoftpath@bigbuffer@items=\count197
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -323,366 +256,374 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen155
-\WF@size=\dimen156
-\c@WF@wrappedlines=\count192
-\WF@box=\box93
-\WF@everypar=\toks19
-Package: wrapfig 2003/01/31  v 3.6
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen165
+\pgfmath@count=\count198
+\pgfmath@box=\box50
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks20
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count199
+)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
-
-Excluding comment 'comment')
-(/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box94
-\beforetitleunit=\skip66
-\aftertitleunit=\skip67
-\ttl@plus=\dimen157
-\ttl@minus=\dimen158
-\ttl@toksa=\toks21
-\titlewidth=\dimen159
-\titlewidthlast=\dimen160
-\titlewidthfirst=\dimen161
-
-
-Package titlesec Warning: Non standard sectioning command \section
-(titlesec)                detected. Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command \subsection
-(titlesec)                detected. Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command \subsubsection
-(titlesec)                detected. Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command \paragraph
-(titlesec)                detected. Using default spacing and no format.
-
-
-Package titlesec Warning: Non standard sectioning command \subparagraph
-(titlesec)                detected. Using default spacing and no format.
-
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
 )
-Class scrreprt Info: Unknown `titesec' release.
-(scrreprt)           Cross your fingers, that is compatible on input line 26.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count193
-\float@exts=\toks22
-\float@box=\box95
-\@float@everytoks=\toks23
-\@floatcapt=\box96
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen162
-\captionmargin@=\dimen163
-\captionwidth=\dimen164
-\caption@tempdima=\dimen165
-\caption@indent=\dimen166
-\caption@parindent=\dimen167
-\caption@hangindent=\dimen168
-Package caption Info: KOMA-Script document class detected.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count266
 )
-Package caption Info: KOMA-Script document class.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/newfloat/newfloat.sty
-Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
-Package newfloat Info: `wrapfig' package detected.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen184
 )
-\c@caption@flags=\count194
-\c@continuedfloat=\count195
-Package caption Info: float package is loaded.
-Package caption Info: wrapfig package is loaded.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip68
-\subfigcapskip=\skip69
-\subfigcaptopadj=\dimen169
-\subfigbottomskip=\skip70
-\subfigcapmargin=\dimen170
-\subfiglabelskip=\skip71
-\c@subfigure=\count196
-\c@lofdepth=\count197
-\c@subtable=\count198
-\c@lotdepth=\count199
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip72
-\subfig@bottom=\skip73
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-\@float@every@figure=\toks24
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen188
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count267
+\pgf@shadingcount=\count268
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks25
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box54
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip74
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen171
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box55
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen172
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count266
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count267
-\leftroot@=\count268
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count269
-\DOTSCASE@=\count270
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box97
-\strutbox@=\box98
-\big@size=\dimen173
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count271
-\c@MaxMatrixCols=\count272
-\dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
-\tag@help=\toks27
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
-\andhelp@=\toks28
-\eqnshift@=\dimen174
-\alignsep@=\dimen175
-\tagshift@=\dimen176
-\tagwidth@=\dimen177
-\totwidth@=\dimen178
-\lineht@=\dimen179
-\@envbody=\toks29
-\multlinegap=\skip75
-\multlinetaggap=\skip76
-\mathdisplay@stack=\toks30
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
-Package: esint 
-\symlargesymbolsA=\mathgroup6
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
-)
-
-Class scrreprt Warning: Incompatible package `sectsty' loaded!
-(scrreprt)              Package `sectsty' up to version 2.0.2 is incompatible
-(scrreprt)              with KOMA-Script from version 2.8e released in 2001.
-(scrreprt)              You should avoid that package and configure the
-(scrreprt)              section titles of your document using the KOMA-Script
-(scrreprt)              user interface, e.g., \chapterlinesformat,
-(scrreprt)              \RedeclareSectionCommand etc. or you should ask
-(scrreprt)              the `sectsty' maintainer for a more compatible release.
-
-(scrreprt)              Ignoring this warning could result in several error
-(scrreprt)              messages and formatting issues after loading package
-(scrreprt)              `sectsty' on input line 41.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count278
-\lst@gtempboxa=\box99
-\lst@token=\toks31
-\lst@length=\count279
-\lst@currlwidth=\dimen180
-\lst@column=\count280
-\lst@pos=\count281
-\lst@lostspace=\dimen181
-\lst@width=\dimen182
-\lst@newlines=\count282
-\lst@lineno=\count283
-\lst@maxwidth=\dimen183
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count284
-\lst@skipnumbers=\count285
-\lst@framebox=\box100
-)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen192
+\pgffor@skip=\dimen193
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count269
+\pgfplotmarksize=\dimen194
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+\tikz@lastx=\dimen195
+\tikz@lasty=\dimen196
+\tikz@lastxsaved=\dimen197
+\tikz@lastysaved=\dimen198
+\tikz@lastmovetox=\dimen199
+\tikz@lastmovetoy=\dimen256
+\tikzleveldistance=\dimen257
+\tikzsiblingdistance=\dimen258
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count270
+\tikznumberofchildren=\count271
+\tikznumberofcurrentchild=\count272
+\tikz@fig@count=\count273
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count274
+\pgfmatrixcurrentcolumn=\count275
+\pgf@matrix@numberofcolumns=\count276
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\tikz@expandcount=\count277
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen259
+\pgfarrowlength=\dimen260
+\pgfarrowwidth=\dimen261
+\pgfarrowlinewidth=\dimen262
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.co
+de.tex
+File: pgfmodulebending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineart
+ransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgftransformnonlinearflatness=\dimen263
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvili
+near.code.tex
+File: pgflibrarycurvilinear.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@curvilinear@time@a=\dimen264
+\pgf@curvilinear@length@a=\dimen265
+\pgf@curvilinear@length@b=\dimen266
+\pgf@curvilinear@length@c=\dimen267
+\pgf@curvilinear@length@d=\dimen268
+)
+\pgf@arrows@the@rigidity=\dimen269
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfpu.code.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count278
+\pgf@circ@count@b=\count279
+\pgf@circ@count@c=\count280
+\pgf@circ@res@up=\dimen270
+\pgf@circ@res@down=\dimen271
+\pgf@circ@res@zero=\dimen272
+\pgf@circ@res@left=\dimen273
+\pgf@circ@res@right=\dimen274
+\pgf@circ@res@other=\dimen275
+\pgf@circ@res@step=\dimen276
+\pgf@circ@res@temp=\dimen277
+\pgfstartlinewidth=\dimen278
+\pgf@circ@Rlen=\dimen279
+\pgf@circ@scaled@Rlen=\dimen280
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count281
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.te
+x) (/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
+
+Package circuitikz Warning: You did not specify one of the voltage directions:
+(circuitikz)                  oldvoltagedirection, nooldvoltagedirection, 
+(circuitikz)                  RPvoltages or EFvoltages 
+(circuitikz)                Default directions may have changed, 
+(circuitikz)                please check the manual.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count286
-\l__pdf_internal_box=\box101
-)
-(./index.aux)
+\l__kernel_color_stack_int=\count282
+\l__pdf_internal_box=\box60
+) (./index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 95
-.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1bch.fd
-File: t1bch.fd 2004/10/18 font definitions for T1/bch.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 788.14136pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 540.60239pt, 28.45274pt)
-* \paperwidth=845.04684pt
-* \paperheight=597.50787pt
-* \textwidth=788.14136pt
-* \textheight=481.22739pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-43.81725pt
-* \headheight=11.875pt
-* \headsep=14.25pt
-* \topskip=8.0pt
-* \footskip=33.25pt
-* \marginparwidth=119.50159pt
-* \marginparsep=12.8401pt
-* \columnsep=10.0pt
-* \skip\footins=7.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
+ ABD: EveryShipout initializing macros
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen184
-\scratchbox=\box102
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen185
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count283
+\scratchdimen=\dimen281
+\scratchbox=\box61
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen282
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: listings package is loaded.
-Package caption Info: subfigure package is loaded.
-Package caption Info: End \AtBeginDocument code.
-Package newfloat Info: `float' package detected.
-\c@lstlisting=\count293
-
 (../section/01section.tex
-chapter 1.
-
-Class scrreprt Warning: \float@addtolists detected!
-(scrreprt)              Implementation of \float@addtolist became
-(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrreprt)              has been replaced by several more flexible
-(scrreprt)              features of package `tocbasic`.
-(scrreprt)              Since Version 3.12 support for deprecated
-(scrreprt)              \float@addtolist interface has been
-(scrreprt)              restricted to only some of the KOMA-Script
-(scrreprt)              features and been removed from others.
-(scrreprt)              Loading of package `scrhack' may help to
-(scrreprt)              avoid this warning, if you are using a
-(scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@addtolist interface .
-
+Chapter 1.
 (../subsection/01subsection.tex
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<../img/I/Ia.png, id=1, 190.7125pt x 156.585pt>
+<../img/I/Ia.png, id=4, 190.7125pt x 156.585pt>
 File: ../img/I/Ia.png Graphic file (type png)
 <use ../img/I/Ia.png>
 Package pdftex.def Info: ../img/I/Ia.png  used on input line 6.
@@ -699,123 +640,629 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-0.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-<../img/I/Ib.png, id=3, 234.8775pt x 115.43124pt>
+<../img/I/Ib.png, id=6, 234.8775pt x 115.43124pt>
 File: ../img/I/Ib.png Graphic file (type png)
 <use ../img/I/Ib.png>
 Package pdftex.def Info: ../img/I/Ib.png  used on input line 17.
 (pdftex.def)             Requested size: 140.92758pt x 69.25926pt.
-<../img/I/Ic.png, id=4, 258.9675pt x 158.5925pt>
+ [1
+
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img/
+I/Ia.png>]
+<../img/I/Ic.png, id=19, 258.9675pt x 158.5925pt>
 File: ../img/I/Ic.png Graphic file (type png)
 <use ../img/I/Ic.png>
 Package pdftex.def Info: ../img/I/Ic.png  used on input line 25.
 (pdftex.def)             Requested size: 168.32686pt x 103.08388pt.
-<../img/I/Id.png, id=5, 229.85875pt x 164.615pt>
+<../img/I/Id.png, id=20, 229.85875pt x 164.615pt>
 File: ../img/I/Id.png Graphic file (type png)
 <use ../img/I/Id.png>
 Package pdftex.def Info: ../img/I/Id.png  used on input line 33.
 (pdftex.def)             Requested size: 149.4064pt x 106.99847pt.
-<../img/I/Ie.png, id=6, 268.00125pt x 227.85126pt>
+
+[2 <../img/I/Ib.png> <../img/I/Ic.png>]
+<../img/I/Ie.png, id=26, 268.00125pt x 227.85126pt>
 File: ../img/I/Ie.png Graphic file (type png)
 <use ../img/I/Ie.png>
 Package pdftex.def Info: ../img/I/Ie.png  used on input line 43.
 (pdftex.def)             Requested size: 160.80197pt x 136.71179pt.
- [1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img/
-I/Ia.png> <../img/I/Ib.png> <../img/I/Ic.png> <../img/I/Id.png>]
-<../img/I/If.png, id=24, 271.0125pt x 225.84375pt>
+<../img/I/If.png, id=27, 271.0125pt x 225.84375pt>
 File: ../img/I/If.png Graphic file (type png)
 <use ../img/I/If.png>
 Package pdftex.def Info: ../img/I/If.png  used on input line 50.
 (pdftex.def)             Requested size: 189.70744pt x 158.08954pt.
-<../img/I/Ig.png, id=25, 192.72pt x 135.50626pt>
+
+Overfull \hbox (4.76913pt too wide) in paragraph at lines 47--52
+\OT1/cmr/m/n/10 Die Spannung-Strom-Kennlinie einer Gl^^?uhlampe ist keine Ger-a
+de. Das Verh^^?altnis
+ []
+
+[3 <../img/I/Id.png> <../img/I/Ie.png>]
+<../img/I/Ig.png, id=33, 192.72pt x 135.50626pt>
 File: ../img/I/Ig.png Graphic file (type png)
 <use ../img/I/Ig.png>
 Package pdftex.def Info: ../img/I/Ig.png  used on input line 57.
 (pdftex.def)             Requested size: 134.90306pt x 94.85371pt.
-<../img/I/Ih.png, id=26, 369.38pt x 201.75375pt>
+
+Overfull \hbox (12.62115pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 tro-nen durch $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 pro Sekund
+e. Es gilt das \OT1/cmr/bx/n/10 Ohm-sche Gesetz \OT1/cmr/m/n/10 f^^?ur beide Wi
+derst^^?ande 
+ []
+
+<../img/I/Ih.png, id=34, 369.38pt x 201.75375pt>
 File: ../img/I/Ih.png Graphic file (type png)
 <use ../img/I/Ih.png>
 Package pdftex.def Info: ../img/I/Ih.png  used on input line 81.
 (pdftex.def)             Requested size: 258.56422pt x 141.22665pt.
- [2 <../img/I/Ie.png> <../img/I/If.png> <../img/I/Ig.png>]
-<../img/I/Ii.png, id=35, 324.21124pt x 182.6825pt>
+[4 <../img/I/If.png> <../img/I/Ig.png>]
+<../img/I/Ii.png, id=42, 324.21124pt x 182.6825pt>
 File: ../img/I/Ii.png Graphic file (type png)
 <use ../img/I/Ii.png>
 Package pdftex.def Info: ../img/I/Ii.png  used on input line 89.
 (pdftex.def)             Requested size: 226.94632pt x 127.87686pt.
 
+Overfull \hbox (11.94582pt too wide) in paragraph at lines 84--91
+\OT1/cmr/m/n/10 je-doch der \OT1/cmr/bx/n/10 max-i-male Aus-gangsstrom \OT1/cmr
+/m/n/10 be-grenzt wer-den. Zieht die angeschlossene
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
  []
 
-<../img/I/Ij.png, id=36, 231.86626pt x 207.77625pt>
+[5 <../img/I/Ih.png> <../img/I/Ii.png>]
+<../img/I/Ij.png, id=48, 231.86626pt x 207.77625pt>
 File: ../img/I/Ij.png Graphic file (type png)
 <use ../img/I/Ij.png>
 Package pdftex.def Info: ../img/I/Ij.png  used on input line 97.
 (pdftex.def)             Requested size: 139.12082pt x 124.6667pt.
-<../img/I/Ik.png, id=37, 168.63pt x 65.24374pt>
+<../img/I/Ik.png, id=49, 168.63pt x 65.24374pt>
 File: ../img/I/Ik.png Graphic file (type png)
 <use ../img/I/Ik.png>
 Package pdftex.def Info: ../img/I/Ik.png  used on input line 102.
 (pdftex.def)             Requested size: 118.04018pt x 45.6703pt.
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 1
-09.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-) [3 <../img/I/Ih.png> <../img/I/Ii.png> <../img/I/Ij.png> <../img/I/Ik.png>]
-<../img/I/Il.png, id=46, 182.6825pt x 243.91125pt>
+ [6 <../img/I/Ij.png> <../img/I/Ik.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \item I
+             n welchem Bereich können Sie die Ausgangsspannung des Netzger�...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \item I
+             n welchem Bereich können Sie die Ausgangsspannung des Netzger�...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \item I
+             n welchem Bereich können Sie die Ausgangsspannung des Netzger�...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \item W
+             ie genau ist die Anzeige der Ausgangsspannung des Netzgeräts i...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \item W
+             ie genau ist die Anzeige der Ausgangsspannung des Netzgeräts i...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \item W
+             ie genau ist die Anzeige der Ausgangsspannung des Netzgeräts i...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 \item I
+             n welchem Bereich können Sie den Ausgangsstrom des Netzgeräts...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 \item I
+             n welchem Bereich können Sie den Ausgangsstrom des Netzgeräts...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 \item I
+             n welchem Bereich können Sie den Ausgangsstrom des Netzgeräts...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \item W
+             elchen Wert zeigt das Voltmeter am Netzgerät an?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \item W
+             elchen Wert zeigt das Voltmeter am Netzgerät an?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \item W
+             elchen Wert zeigt das Voltmeter am Netzgerät an?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/I/Il.png, id=56, 182.6825pt x 243.91125pt>
 File: ../img/I/Il.png Graphic file (type png)
 <use ../img/I/Il.png>
 Package pdftex.def Info: ../img/I/Il.png  used on input line 141.
 (pdftex.def)             Requested size: 127.87686pt x 170.7367pt.
-<../img/I/Im.png, id=47, 176.66pt x 115.43124pt>
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \item V
+             erändern Sie nun den Wert des einstellbaren Widerstands und tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \item V
+             erändern Sie nun den Wert des einstellbaren Widerstands und tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \item V
+             erändern Sie nun den Wert des einstellbaren Widerstands und tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 \end{table}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7 <../img/I/Il.png>]
+<../img/I/Im.png, id=62, 176.66pt x 115.43124pt>
 File: ../img/I/Im.png Graphic file (type png)
 <use ../img/I/Im.png>
 Package pdftex.def Info: ../img/I/Im.png  used on input line 161.
 (pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
-<../img/I/Imm.png, id=48, 176.66pt x 115.43124pt>
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \item �
+             �ndern Sie die Ausgangsspannung des Netzgeräts und tragen Sie ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \item �
+             �ndern Sie die Ausgangsspannung des Netzgeräts und tragen Sie ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \item �
+             �ndern Sie die Ausgangsspannung des Netzgeräts und tragen Sie ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 \end{table}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/I/Imm.png, id=63, 176.66pt x 115.43124pt>
 File: ../img/I/Imm.png Graphic file (type png)
 <use ../img/I/Imm.png>
 Package pdftex.def Info: ../img/I/Imm.png  used on input line 186.
 (pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
- [4 <../img/I/Il.png> <../img/I/Im.png>]
-<../img/I/Immm.png, id=54, 176.66pt x 115.43124pt>
+[8 <../img/I/Im.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \item Z
+             eichnen Sie die Strom-Spannungs-Kennlinie für alle drei Widers...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \item Z
+             eichnen Sie die Strom-Spannungs-Kennlinie für alle drei Widers...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \item Z
+             eichnen Sie die Strom-Spannungs-Kennlinie für alle drei Widers...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/I/Immm.png, id=68, 176.66pt x 115.43124pt>
 File: ../img/I/Immm.png Graphic file (type png)
 <use ../img/I/Immm.png>
 Package pdftex.def Info: ../img/I/Immm.png  used on input line 222.
 (pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
-<../img/I/Immmm.png, id=55, 176.66pt x 115.43124pt>
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9 <../img/I/Imm.png>]
+Overfull \hbox (13.99979pt too wide) in paragraph at lines 228--229
+\OT1/cmr/m/n/10 Wiederholen Sie die \OT1/cmr/bx/n/10 Auf-gabe 4\OT1/cmr/m/n/10 
+, in-dem Sie den Wider-stand durch eine \OT1/cmr/bx/n/10 Gl^^?uhlampe
+ []
+
+
+Overfull \hbox (4.38019pt too wide) in paragraph at lines 228--229
+\OT1/cmr/m/n/10 er-set-zen. Achten Sie da-rauf, dass die Span-nung nun $12[]$ n
+icht mehr ^^?uberschreiten
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \item Z
+             eichnen Sie wiederum die Spannung-Strom-Kennlinie der Glühlamp...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \item Z
+             eichnen Sie wiederum die Spannung-Strom-Kennlinie der Glühlamp...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \item Z
+             eichnen Sie wiederum die Spannung-Strom-Kennlinie der Glühlamp...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 \end{table}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/I/Immmm.png, id=73, 176.66pt x 115.43124pt>
 File: ../img/I/Immmm.png Graphic file (type png)
 <use ../img/I/Immmm.png>
 Package pdftex.def Info: ../img/I/Immmm.png  used on input line 246.
 (pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
-<../img/I/In.png, id=56, 159.59625pt x 230.8625pt>
+<../img/I/In.png, id=74, 159.59625pt x 230.8625pt>
 File: ../img/I/In.png Graphic file (type png)
 <use ../img/I/In.png>
 Package pdftex.def Info: ../img/I/In.png  used on input line 253.
 (pdftex.def)             Requested size: 111.7166pt x 161.60263pt.
- [5 <../img/I/Imm.png> <../img/I/Immm.png> <../img/I/Immmm.png>])) (../section/
-02section.tex [6 <../img/I/In.png>]
-chapter 2.
+[10 <../img/I/Immm.png> <../img/I/Immmm.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.270 \item W
+             as können Sie über die Summe der beiden Spannungen aussagen?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.270 \item W
+             as können Sie über die Summe der beiden Spannungen aussagen?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.270 \item W
+             as können Sie über die Summe der beiden Spannungen aussagen?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 \item V
+             ersuchen Sie eine Beziehung herzuleiten, mit der sie die Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 \item V
+             ersuchen Sie eine Beziehung herzuleiten, mit der sie die Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 \item V
+             ersuchen Sie eine Beziehung herzuleiten, mit der sie die Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (5.26537pt too wide) in paragraph at lines 269--272
+\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 als Funk-tion der bei-den Wider-standswer
+te $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 und $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m
+/n/10 berech-nen k^^?onnen. 
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)) (../section/02section.tex [11 <../img/I/In.png>] [12]
+Chapter 2.
 (../subsection/02subsection.tex
-<../img/II/IIa.png, id=67, 452.69125pt x 173.64874pt>
+<../img/II/IIa.png, id=87, 452.69125pt x 173.64874pt>
 File: ../img/II/IIa.png Graphic file (type png)
 <use ../img/II/IIa.png>
 Package pdftex.def Info: ../img/II/IIa.png  used on input line 8.
 (pdftex.def)             Requested size: 226.34506pt x 86.82416pt.
-<../img/II/IIb.png, id=68, 381.425pt x 104.39pt>
+ [13
+
+ <../img/II/IIa.png>]
+<../img/II/IIb.png, id=93, 381.425pt x 104.39pt>
 File: ../img/II/IIb.png Graphic file (type png)
 <use ../img/II/IIb.png>
 Package pdftex.def Info: ../img/II/IIb.png  used on input line 31.
 (pdftex.def)             Requested size: 190.71202pt x 52.19485pt.
-<../img/II/IId.png, id=69, 204.765pt x 90.3375pt>
+<../img/II/IId.png, id=94, 204.765pt x 90.3375pt>
 File: ../img/II/IId.png Graphic file (type png)
 <use ../img/II/IId.png>
 Package pdftex.def Info: ../img/II/IId.png  used on input line 35.
@@ -826,16 +1273,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--40
  []
 
 
+Overfull \hbox (0.34871pt too wide) in paragraph at lines 47--50
+\OT1/cmr/bx/n/10 Widerst^^?anden\OT1/cmr/m/n/10 , wo der Span-nungsab-fall am I
+n-nen-wider-stand des Strommessers
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
-<../img/II/IIc.png, id=70, 211.79124pt x 95.35625pt>
+
+Overfull \hbox (17.35176pt too wide) in paragraph at lines 47--50
+\OT1/cmr/m/n/10 Die Span-nungs-fehler-schal-tung wird bei ho-chohmi-gen Last-wi
+derst^^?anden $[]$
+ []
+
+[14 <../img/II/IIb.png> <../img/II/IId.png>]
+<../img/II/IIc.png, id=102, 211.79124pt x 95.35625pt>
 File: ../img/II/IIc.png Graphic file (type png)
 <use ../img/II/IIc.png>
 Package pdftex.def Info: ../img/II/IIc.png  used on input line 52.
 (pdftex.def)             Requested size: 211.79073pt x 95.356pt.
-[7 <../img/II/IIa.png> <../img/II/IIb.png> <../img/II/IId.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
@@ -845,23 +1305,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--67
 
  []
 
-<../img/II/IIe.png, id=80, 274.02374pt x 102.3825pt>
+
+Overfull \hbox (28.74051pt too wide) in paragraph at lines 64--67
+\OT1/cmr/m/n/10 Die Strom-fehler-schal-tung wird bei niederohmi-gen Last-widers
+t^^?anden $[]$
+ []
+
+[15 <../img/II/IIc.png>]
+<../img/II/IIe.png, id=107, 274.02374pt x 102.3825pt>
 File: ../img/II/IIe.png Graphic file (type png)
 <use ../img/II/IIe.png>
 Package pdftex.def Info: ../img/II/IIe.png  used on input line 72.
 (pdftex.def)             Requested size: 219.21928pt x 81.9061pt.
 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \item B
+            erechnen Sie den \textbf{ohmschen Widerstand} einer Stromschiene...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \item B
+            erechnen Sie den \textbf{ohmschen Widerstand} einer Stromschiene...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \item B
+            erechnen Sie den \textbf{ohmschen Widerstand} einer Stromschiene...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \item L
+            eiten Sie die Leistungsformel her
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \item L
+            eiten Sie die Leistungsformel her
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \item L
+            eiten Sie die Leistungsformel her
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item D
+            ie vielfach verwendeten bedrahteten Widerstände (Metallfilmwide...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item D
+            ie vielfach verwendeten bedrahteten Widerstände (Metallfilmwide...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item D
+            ie vielfach verwendeten bedrahteten Widerstände (Metallfilmwide...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 {\color{red}{\begin{center}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16 <../img/II/IIe.png>]
+Overfull \hbox (2.9729pt too wide) in paragraph at lines 113--116
+[]\OT1/cmr/m/n/10 Welche Schal-tungsart (Ohm-me-ter, Span-nungs-fehler-schal-tu
+ng, Strom-fehler-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
-[8 <../img/II/IIc.png> <../img/II/IIe.png>]
+
+Overfull \hbox (10.43643pt too wide) in paragraph at lines 116--117
+\OT1/cmr/m/n/10 nungsmes-sung mit der \OT1/cmr/bx/n/10 Strom-fehler-schal-tung\
+OT1/cmr/m/n/10 . Der Last-wider-stand betr^^?agt
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
-[9])) (../section/03section.tex [10]
-chapter 3.
+[17] [18])) (../section/03section.tex [19]
+Chapter 3.
 (../subsection/03subsection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
@@ -872,61 +1478,623 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
-<../img/III/IIIa.png, id=93, 202.7575pt x 147.55125pt>
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \item A
+            nwenden der \textbf{Norton} und \textbf{Thevenin Ersatzschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \item A
+            nwenden der \textbf{Norton} und \textbf{Thevenin Ersatzschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \item A
+            nwenden der \textbf{Norton} und \textbf{Thevenin Ersatzschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \item A
+            nwenden von \textbf{Strom-} und \textbf{Spannungsfehlerschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \item A
+            nwenden von \textbf{Strom-} und \textbf{Spannungsfehlerschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \item A
+            nwenden von \textbf{Strom-} und \textbf{Spannungsfehlerschaltung}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \item M
+            essen und Auswerten von \textbf{Kennlinien}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \item M
+            essen und Auswerten von \textbf{Kennlinien}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \item M
+            essen und Auswerten von \textbf{Kennlinien}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \item N
+            etzgeräte kennen lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \item N
+            etzgeräte kennen lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \item N
+            etzgeräte kennen lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item \textbf
+                  {Unterschied} zwischen Strom- und Spannungsquelle lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item \textbf
+                  {Unterschied} zwischen Strom- und Spannungsquelle lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item \textbf
+                  {Unterschied} zwischen Strom- und Spannungsquelle lernen
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \item V
+            on einer Autobatterie werden folgende zwei Punkte gemessen: ($U_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \item V
+            on einer Autobatterie werden folgende zwei Punkte gemessen: ($U_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \item V
+            on einer Autobatterie werden folgende zwei Punkte gemessen: ($U_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \item I
+            st die Autobatterie eher eine Strom- oder Spannungsquelle?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \item I
+            st die Autobatterie eher eine Strom- oder Spannungsquelle?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \item I
+            st die Autobatterie eher eine Strom- oder Spannungsquelle?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \item S
+            kizzieren Sie die Kennlinien von einer idealen Strom- und Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \item S
+            kizzieren Sie die Kennlinien von einer idealen Strom- und Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \item S
+            kizzieren Sie die Kennlinien von einer idealen Strom- und Spannu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/III/IIIa.png, id=122, 202.7575pt x 147.55125pt>
 File: ../img/III/IIIa.png Graphic file (type png)
 <use ../img/III/IIIa.png>
 Package pdftex.def Info: ../img/III/IIIa.png  used on input line 30.
 (pdftex.def)             Requested size: 101.3785pt x 73.77544pt.
-<../img/III/IIIb.png, id=94, 204.765pt x 147.55125pt>
+<../img/III/IIIb.png, id=123, 204.765pt x 147.55125pt>
 File: ../img/III/IIIb.png Graphic file (type png)
 <use ../img/III/IIIb.png>
 Package pdftex.def Info: ../img/III/IIIb.png  used on input line 31.
 (pdftex.def)             Requested size: 102.38223pt x 73.77544pt.
-<../img/III/IIIc.png, id=95, 201.75375pt x 147.55125pt>
+<../img/III/IIIc.png, id=124, 201.75375pt x 147.55125pt>
 File: ../img/III/IIIc.png Graphic file (type png)
 <use ../img/III/IIIc.png>
 Package pdftex.def Info: ../img/III/IIIc.png  used on input line 33.
 (pdftex.def)             Requested size: 100.87662pt x 73.77544pt.
-<../img/III/IIId.png, id=96, 203.76125pt x 148.555pt>
+<../img/III/IIId.png, id=125, 203.76125pt x 148.555pt>
 File: ../img/III/IIId.png Graphic file (type png)
 <use ../img/III/IIId.png>
 Package pdftex.def Info: ../img/III/IIId.png  used on input line 34.
 (pdftex.def)             Requested size: 101.88037pt x 74.27731pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--35
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.96356pt too wide) in paragraph at lines 24--35
+\OT1/cmr/m/n/10 Kurzschlussstrom. []Ist die Au-to-bat-terie eher eine Strom- od
+er Span-nungsquelle?
+ []
+
+
+Overfull \hbox (5.41728pt too wide) in paragraph at lines 24--35
+[]\OT1/cmr/m/n/10 Skizzieren Sie die Kennlin-ien von einer ide-alen Strom- und 
+Span-nungsquelle.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--35
 
  []
 
-<../img/III/IIIe.png, id=97, 224.84pt x 111.41624pt>
+[20
+
+]
+<../img/III/IIIe.png, id=129, 224.84pt x 111.41624pt>
 File: ../img/III/IIIe.png Graphic file (type png)
 <use ../img/III/IIIe.png>
 Package pdftex.def Info: ../img/III/IIIe.png  used on input line 42.
 (pdftex.def)             Requested size: 224.83945pt x 111.41597pt.
-<../img/III/IIIf.png, id=98, 465.74pt x 256.96pt>
+<../img/III/IIIf.png, id=130, 465.74pt x 256.96pt>
 File: ../img/III/IIIf.png Graphic file (type png)
 <use ../img/III/IIIf.png>
 Package pdftex.def Info: ../img/III/IIIf.png  used on input line 45.
 (pdftex.def)             Requested size: 232.86943pt x 128.47968pt.
-[11 <../img/III/IIIa.png> <../img/III/IIIb.png> <../img/III/IIIc.png> <../img/I
-II/IIId.png> <../img/III/IIIe.png>]
-<../img/III/IIIg.png, id=107, 229.85875pt x 112.42pt>
+ [21 <../img/III/IIIa.png> <../img/III/IIIb.png> <../img/III/IIIc.png> <../img/
+III/IIId.png> <../img/III/IIIe.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item W
+            ie gross ist der Innenwiderstand des Labornetzgerätes $R_N$ im ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item W
+            ie gross ist der Innenwiderstand des Labornetzgerätes $R_N$ im ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item W
+            ie gross ist der Innenwiderstand des Labornetzgerätes $R_N$ im ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \item W
+            ie gross ist der Innenwiderstand $R_N$, wenn das Laborgerät in ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \item W
+            ie gross ist der Innenwiderstand $R_N$, wenn das Laborgerät in ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \item W
+            ie gross ist der Innenwiderstand $R_N$, wenn das Laborgerät in ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (11.58559pt too wide) in paragraph at lines 64--67
+\OT1/cmr/m/n/10 malen'' Be-trieb? []Wie gross ist der In-nen-wider-stand $\OML/
+cmm/m/it/10 R[]$\OT1/cmr/m/n/10 , wenn das Laborger^^?at
+ []
+
+<../img/III/IIIg.png, id=139, 229.85875pt x 112.42pt>
 File: ../img/III/IIIg.png Graphic file (type png)
 <use ../img/III/IIIg.png>
 Package pdftex.def Info: ../img/III/IIIg.png  used on input line 75.
 (pdftex.def)             Requested size: 229.85817pt x 112.41972pt.
-<../img/III/IIIh.png, id=108, 457.71pt x 232.87pt>
+<../img/III/IIIh.png, id=140, 457.71pt x 232.87pt>
 File: ../img/III/IIIh.png Graphic file (type png)
 <use ../img/III/IIIh.png>
 Package pdftex.def Info: ../img/III/IIIh.png  used on input line 78.
 (pdftex.def)             Requested size: 228.85445pt x 116.43471pt.
 
+Overfull \hbox (130.31781pt too wide) in paragraph at lines 77--88
+\OML/cmm/m/it/10 U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 I[]\OT1/cmr/m/n/10 )$. Tabel-lieren Sie auch die Wider-standswerte.
+ [] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 77--88
 
  []
 
-)) (../section/04section.tex [12 <../img/III/IIIf.png> <../img/III/IIIg.png> <.
-./img/III/IIIh.png>]
-chapter 4.
+[22 <../img/III/IIIf.png> <../img/III/IIIg.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \item B
+            erechnen Sie den Quellenwiderstand der Batterie. Von welchen Par...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \item B
+            erechnen Sie den Quellenwiderstand der Batterie. Von welchen Par...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \item B
+            erechnen Sie den Quellenwiderstand der Batterie. Von welchen Par...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \item W
+            ie gross ist die Leerlaufspannung, wie gross der Kurzschlussstro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \item W
+            ie gross ist die Leerlaufspannung, wie gross der Kurzschlussstro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \item W
+            ie gross ist die Leerlaufspannung, wie gross der Kurzschlussstro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \item M
+            essen Sie den Kurzschlussstrom.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \item M
+            essen Sie den Kurzschlussstrom.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \item M
+            essen Sie den Kurzschlussstrom.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)) (../section/04section.tex [23 <../img/III/IIIh.png>]
+Chapter 4.
 (../subsection/04subsection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
@@ -937,7 +2105,213 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<../img/IV/IVd.png, id=115, 412.54124pt x 130.4875pt>
+
+Overfull \hbox (32.40816pt too wide) in paragraph at lines 8--13
+\OT1/cmr/m/n/10 10-fach (sel-ten 100-fach) Span-nung-steiler einge-baut. Daf^^?
+ur steigt die Ein-gangsimpedanz
+ []
+
+[24
+
+]
+Overfull \hbox (18.06895pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/n/10 Mit dem Funk-tion-s-gen-er-a-tor (FG) lassen sich spezielle ele
+k-trische Span-nungsverl^^?aufe
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item S
+            inus
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item S
+            inus
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item S
+            inus
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \item R
+            echteck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \item R
+            echteck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \item R
+            echteck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \item D
+            reieck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \item D
+            reieck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \item D
+            reieck
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \item S
+            ägezahn
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \item S
+            ägezahn
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \item S
+            ägezahn
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \item P
+            uls
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \item P
+            uls
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \item P
+            uls
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img/IV/IVd.png, id=153, 412.54124pt x 130.4875pt>
 File: ../img/IV/IVd.png Graphic file (type png)
 <use ../img/IV/IVd.png>
 Package pdftex.def Info: ../img/IV/IVd.png  used on input line 27.
@@ -947,61 +2321,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
 
-<../img/IV/IVe.png, id=116, 527.9725pt x 560.0925pt>
+[25 <../img/IV/IVd.png>]
+<../img/IV/IVe.png, id=159, 527.9725pt x 560.0925pt>
 File: ../img/IV/IVe.png Graphic file (type png)
 <use ../img/IV/IVe.png>
 Package pdftex.def Info: ../img/IV/IVe.png  used on input line 46.
 (pdftex.def)             Requested size: 263.9856pt x 280.04556pt.
-[13 <../img/IV/IVd.png>]
-<../img/IV/IVf.png, id=122, 304.13625pt x 187.70125pt>
+
+Overfull \hbox (0.77621pt too wide) in paragraph at lines 49--50
+\OT1/cmr/m/n/10 einen Schal-ter und einen Wider-stand $\OML/cmm/m/it/10 R$ \OT1
+/cmr/m/n/10 an eine Gle-ichspan-nung $\OML/cmm/m/it/10 U[]$ \OT1/cmr/m/n/10 ang
+eschlossen
+ []
+
+<../img/IV/IVf.png, id=160, 304.13625pt x 187.70125pt>
 File: ../img/IV/IVf.png Graphic file (type png)
 <use ../img/IV/IVf.png>
 Package pdftex.def Info: ../img/IV/IVf.png  used on input line 51.
 (pdftex.def)             Requested size: 152.06775pt x 93.85039pt.
-
+[26 <../img/IV/IVe.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 53--56
 
  []
 
-<../img/IV/IVg.png, id=123, 543.02875pt x 489.83pt>
+<../img/IV/IVg.png, id=165, 543.02875pt x 489.83pt>
 File: ../img/IV/IVg.png Graphic file (type png)
 <use ../img/IV/IVg.png>
 Package pdftex.def Info: ../img/IV/IVg.png  used on input line 93.
 (pdftex.def)             Requested size: 244.36067pt x 220.42146pt.
-[14 <../img/IV/IVe.png> <../img/IV/IVf.png>]
+[27 <../img/IV/IVf.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
 
-<../img/IV/IVh.png, id=129, 481.8pt x 168.63pt>
+
+Overfull \hbox (9.52226pt too wide) in paragraph at lines 121--121
+[]\OT1/cmr/bx/n/12 Zusammenfassung: Im-pulsver-hal-ten von RC-Gliedern 
+ []
+
+<../img/IV/IVh.png, id=170, 481.8pt x 168.63pt>
 File: ../img/IV/IVh.png Graphic file (type png)
 <use ../img/IV/IVh.png>
 Package pdftex.def Info: ../img/IV/IVh.png  used on input line 123.
 (pdftex.def)             Requested size: 240.8994pt x 84.31479pt.
-<../img/IV/IVj.png, id=130, 568.1225pt x 612.2875pt>
+[28 <../img/IV/IVg.png>]
+<../img/IV/IVj.png, id=175, 568.1225pt x 612.2875pt>
 File: ../img/IV/IVj.png Graphic file (type png)
 <use ../img/IV/IVj.png>
 Package pdftex.def Info: ../img/IV/IVj.png  used on input line 126.
 (pdftex.def)             Requested size: 255.65276pt x 275.52682pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--150
 
- []
+! LaTeX Error: Command \quotedblbase unavailable in encoding OT1.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--150
-
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 ...mgitters; früher oft als Zentimeter („
+                                                  10mV/cm“) bezeichnet.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 129--150
@@ -1033,7 +2414,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--150
 
  []
 
-[15 <../img/IV/IVg.png> <../img/IV/IVh.png> <../img/IV/IVj.png>]
+
+Overfull \hbox (9.41544pt too wide) in paragraph at lines 129--150
+\OT1/cmr/bx/n/10 Video, TV: \OT1/cmr/m/n/10 Ak-tivieren eines Fil-ters im Trig-
+gerverst^^?arker, das aus einem Videosig-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+[29 <../img/IV/IVh.png> <../img/IV/IVj.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 151--158
 
  []
@@ -1048,64 +2455,660 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--158
 
  []
 
-<../img/IV/IVa.png, id=137, 232.87pt x 199.74625pt>
+<../img/IV/IVa.png, id=181, 232.87pt x 199.74625pt>
 File: ../img/IV/IVa.png Graphic file (type png)
 <use ../img/IV/IVa.png>
 Package pdftex.def Info: ../img/IV/IVa.png  used on input line 159.
 (pdftex.def)             Requested size: 174.65205pt x 149.80931pt.
-<../img/IV/IVb.png, id=138, 563.10374pt x 132.495pt>
+<../img/IV/IVb.png, id=182, 563.10374pt x 132.495pt>
 File: ../img/IV/IVb.png Graphic file (type png)
 <use ../img/IV/IVb.png>
 Package pdftex.def Info: ../img/IV/IVb.png  used on input line 163.
 (pdftex.def)             Requested size: 225.2375pt x 52.99706pt.
-<../img/IV/IVc.png, id=139, 588.1975pt x 181.67876pt>
+[30 <../img/IV/IVa.png>]
+<../img/IV/IVc.png, id=187, 588.1975pt x 181.67876pt>
 File: ../img/IV/IVc.png Graphic file (type png)
 <use ../img/IV/IVc.png>
 Package pdftex.def Info: ../img/IV/IVc.png  used on input line 166.
 (pdftex.def)             Requested size: 235.27483pt x 72.6702pt.
 
-LaTeX Warning: The counter will not be printed.
-             The label is: $\bullet $ on input line 172.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \item S
+             ie möchten von einer \textbf{DC Spannung} von $15\text{V}$ die...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \item S
+             ie möchten von einer \textbf{DC Spannung} von $15\text{V}$ die...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \item S
+             ie möchten von einer \textbf{DC Spannung} von $15\text{V}$ die...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173 \item I
+             n welchem Bereich ist so eine Rippelspannung zu erwarten?
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--186
 
  []
 
-[16 <../img/IV/IVa.png> <../img/IV/IVb.png> <../img/IV/IVc.png>]
 
-LaTeX Warning: The counter will not be printed.
-             The label is: $\bullet $ on input line 202.
+Overfull \hbox (4.83684pt too wide) in paragraph at lines 182--186
+\OT1/cmr/m/n/10 das \OT1/cmr/bx/n/10 Im-pulsver-hal-ten eines RC-Gliedes \OT1/c
+mr/m/n/10 mit diesen bei-den Ger^^?aten ausmessen. 
+ []
 
-)) [17] (./index.aux) ) 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \item F
+             unktionsweiseund Bedienung des Oszilloskops verstehen.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \item F
+             unktionsweiseund Bedienung des Oszilloskops verstehen.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \item F
+             unktionsweiseund Bedienung des Oszilloskops verstehen.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item R
+             ichtige Anwendung des Oszilloskops für alle späteren Versuche...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item R
+             ichtige Anwendung des Oszilloskops für alle späteren Versuche...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item R
+             ichtige Anwendung des Oszilloskops für alle späteren Versuche...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \item G
+             enerierung elementarer Signale mit dem Funktionsgenerator.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \item G
+             enerierung elementarer Signale mit dem Funktionsgenerator.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \item G
+             enerierung elementarer Signale mit dem Funktionsgenerator.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \item A
+             usmessen eines RC-GliedesimZeitbereich als Integrierer und Diff...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \item A
+             usmessen eines RC-GliedesimZeitbereich als Integrierer und Diff...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \item A
+             usmessen eines RC-GliedesimZeitbereich als Integrierer und Diff...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \item V
+             erbinden Sie den Ausgang des Funktionsgenerators (FG) HP 33120A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \item V
+             erbinden Sie den Ausgang des Funktionsgenerators (FG) HP 33120A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \item V
+             erbinden Sie den Ausgang des Funktionsgenerators (FG) HP 33120A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \item S
+             tellen Sie am FG die Signalform auf Sinus, die Amplitude auf 5....
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \item S
+             tellen Sie am FG die Signalform auf Sinus, die Amplitude auf 5....
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \item S
+             tellen Sie am FG die Signalform auf Sinus, die Amplitude auf 5....
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \item V
+             erstellen Sie auf dem FG die Kurvenform (Sinus, Dreieck, Rechte...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \item V
+             erstellen Sie auf dem FG die Kurvenform (Sinus, Dreieck, Rechte...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \item V
+             erstellen Sie auf dem FG die Kurvenform (Sinus, Dreieck, Rechte...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[31 <../img/IV/IVb.png> <../img/IV/IVc.png>]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \item S
+             tellen Sie am FG eine Sinusspannung von 1.0Vpp (Spitzen-Spitzen...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \item S
+             tellen Sie am FG eine Sinusspannung von 1.0Vpp (Spitzen-Spitzen...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \item S
+             tellen Sie am FG eine Sinusspannung von 1.0Vpp (Spitzen-Spitzen...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 \item D
+             er Offset am FG muss 0 sein, es darf kein "Offset" im Display d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 \item D
+             er Offset am FG muss 0 sein, es darf kein "Offset" im Display d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 \item D
+             er Offset am FG muss 0 sein, es darf kein "Offset" im Display d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \item M
+             essen Sie die Werte mit dem DSO. Machen Sie die Einstellungen m...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \item M
+             essen Sie die Werte mit dem DSO. Machen Sie die Einstellungen m...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \item M
+             essen Sie die Werte mit dem DSO. Machen Sie die Einstellungen m...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \quotedblbase unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 ... Sie die Einstellungen mit den beiden „
+                                                  SCALE“-Drehknöpfen, nic...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \item V
+             erwenden Sie auch die "CURSOR"-Möglichkeiten des DSO.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \item V
+             erwenden Sie auch die "CURSOR"-Möglichkeiten des DSO.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \item V
+             erwenden Sie auch die "CURSOR"-Möglichkeiten des DSO.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \item F
+             rage: Wie gross sind die Abweichungen der gemessenen Werte von ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \item F
+             rage: Wie gross sind die Abweichungen der gemessenen Werte von ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \item F
+             rage: Wie gross sind die Abweichungen der gemessenen Werte von ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \item S
+             tellen Sie sicher, dass die Anschlüsse des FG und des DSO auf ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \item S
+             tellen Sie sicher, dass die Anschlüsse des FG und des DSO auf ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \item S
+             tellen Sie sicher, dass die Anschlüsse des FG und des DSO auf ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)) [32] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 10821 strings out of 480608
- 178748 string characters out of 5903630
- 750249 words of memory out of 5000000
- 26490 multiletter control sequences out of 15000+600000
- 562550 words of font info for 63 fonts, out of 8000000 for 9000
+ 26136 strings out of 480608
+ 634526 string characters out of 5903630
+ 982441 words of memory out of 5000000
+ 41627 multiletter control sequences out of 15000+600000
+ 537422 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,72p,10127b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,71p,828b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on index.pdf (17 pages, 2145096 bytes).
+uper/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
+fb>
+Output written on index.pdf (32 pages, 2105115 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 235 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 

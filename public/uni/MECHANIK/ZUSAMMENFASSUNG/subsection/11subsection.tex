@@ -1,0 +1,43 @@
+Ein \textbf{Fachwerk} ist ein Massensystem, das aus mehreren miteinander verbundenen Stabträgern besteht. Die Verbindungsstellen und die Lager der gelagerten Träger heissen \textbf{Knoten} und können als Gelenke, durch Verschweissung oder durch kleinere an den Stabträgern mit Nieten befestigte Plattenzustände realisiert werden. 
+\subsection{Ideale Fachwerke, Pendelstützen}
+Unter einem idealen Fachwerk versteht man ein System von Stabträgern mit folgenden Eigenschaften
+\begin{enumerate}[$(a)$]
+\item Alle Knoten sind bezüglich der Drehmöglichkeit der Stabträger relativ zueinander so weich, dass sie als reibungsfreie Gelenke aufgefasst werden können.
+\item Alle Stabträger sind so leicht, dass sie als gewichtslos gelten können, d.h. die Stangewichte dürfen im Vergleich zu den übrigen Lasten vernachlässigt werden.
+\item Alle Knoten befinden sich an den Stabenden.
+\item Alle Lasten greifen nur in den Knoten an, sie heissen deshalb \textbf{Knotenlasten}.
+\end{enumerate}
+Greift man einen beliebigen Stab aus einem idealen Fachwerk heraus, so folgt aus den drei erwähnten Voraussetzungen, dass er an den beiden Enden $A$, $A'$ durch je eine Kraft $\left\{A | \overrightarrow{S}\right\}$, $\left\{A' | \overrightarrow{S}'\right\}$ belastet ist. In der Ruhelage müssen diese Kräfte im Gleichgewicht sein. Sie müssen also eine Nullgruppe bilden, so dass $\overrightarrow{S}'=-\overrightarrow{S}$ ist. Man nennt $\left\{A | \overrightarrow{S}\right\}$, $\left\{A' | -\overrightarrow{S}\right\}$ \textbf{Stabkräfte}. Sie belasten den Stab auf Zug oder Druck, je nachdem, ob sie in Richtung der äusseren Normalen zum Querschnitt zeigen oder entgegengesetzt dazu. In $A$ ist der Einheitsvektor in Richtung der äusseren Normalen zum Querschnitt $\overrightarrow{e}_N$ und in $A'$ entsprechend $\overrightarrow{e}_N'=-\overrightarrow{e}_N$. Man charakterisiert also beide Kräfte mit der einzigen skalaren Grösse $S$
+\begin{equation}
+\boxed{\overrightarrow{S}=S\cdot \overrightarrow{e}_N}\quad \boxed{\overrightarrow{S}'=-\overrightarrow{S}=S\cdot \overrightarrow{e}_N'}
+\end{equation}
+Ist $S>0$, so ist S eine Zugkraft. Ist $S<0$, so ist S eine Druckkraft. Ein Stabträger, der Bestandteil eines idealen Fachwerkes ist, d.h. an beiden Enden reibungsfrei gelenkig gelagert, gewichtslos und nur an den beiden Enden durch Einzelkräfte belastet ist, heisst \textbf{Pendelstütze}. Ein ideales Fachwerk besteht demzufolge aus Pendelstützen.
+\newline\newline
+Zur Beurteilung der Tragfähigkeit eines ruhenden Fachwerkes ist die Ermittlung einzelner oder aller Stabkräfte unerlässlich. Hierzu seien drei verschiedene Verfahren eingeführt und illustriert: das Knotengleichgewicht, der Dreikräfteschnitt und die Anwendung des PdvL.
+\subsection{Knotengleichgewicht}
+Bei der Analyse eines statisch bestimmten idealen Fachwerkes nach dem Verfahren des \textbf{Knotengleichgewichtes} werden im Rahmen eines ersten Schrittes, mit Hilfe von Gleichgewichtsbedingungen am ganzen Fachwerk oder an zweckmässig zerlegten Teilen, die Lagerkräfte ermittelt.
+\newline\newline
+In einem zweiten Schritt weden die Stabkräfte nach dem verfahren des \textbf{Knotengleichgewichts} ermittelt. Dabei trennt man die Stäbe von den Gelenken und führt an jedem Gelenk die darauf wirkende Kräfte ein. An einem Lager wirken neben den im ersten Schritt ermittelten Lagerkräften auch die von den Stäben auf das Gelenk ausgeübten, gesuchten Stabkräfte. Diese werden so eingetragen, dass ihre Reaktionen an den Stabträgern \textbf{Zugkräfte} sind. Die zugehörigen skalaren Unbekannten $S_i$ lassen sich dann mit je zwei komponentenbedingungen für jedes Gelenk ermitteln. Bei positivem Wert von $S_i$ ist die zugehörige Stabkraft tatsächlich eine Zugkraft, sonst eine Druckkraft.
+\newline\newline
+Betrachte man ein ideales Fachwerk aus $s$ Stäben und $k$ Knoten. Seine äussere Lagerung entspreche gesamthaft $r$ Kraft- und Momentenkomponenten. wseil jeder Stab eine Pendelstütze ist, also nur gerade eine unbekannte Stabkraft beinhaltet, erhält man die Gesamtzahl der Unbekannten als
+\begin{equation}  
+\boxed{n=s+r}
+\end{equation}
+Für jeden Knoten können zwei Komponentenbedingungen formuliert werden, woraus sich die Gesamtzahl der linear unabhängigen Gleichungen zu $m=2k$ ergibt. Der Grad $u$ der statischen Unbestimmtheit von ebenen idealen Fachwerken
+\begin{equation}
+\boxed{u=s+r-2k}
+\end{equation}
+Bei räumliche Fachwerken sind die gleichen Überlegungen gültig, nur erhält man hier drei Komponenten für jedes Knotengleichgewicht. So gilt für räumlichen Fachwerken
+\begin{equation}
+\boxed{u=s+r-3k}
+\end{equation}
+\subsection{Dreikräfteschnitt}
+Bei ruhenden, ebenen, idealen Fachwerken können einzelne Stabkräfte dank geschickt gewähltes Systemabgrenzung mit relativ kleinem REchenaufwand berechnet werden. Dazu werden wieder in einem ersten Schritt die Lagerkräfte mit Hilfe der Gleichgewichtsbedingungen am ganzen Fachwerk, oder am ganzen Teilen des Fachwerkes ermittelt.
+\newline\newline
+Danach versucht man, durch das Fachwerk einen Schnitt zu legen, der den Stab $k$ mit der gesuchten Stabkraft $S_K$ und weitere Stäbe $k+1$ und $k+2$ schneidet. Die Stabträger $k$, $k+1$ und $k+2$ dürfen nicht vom gleichen Knotenpunkt ausgehen. Der erwähnte Schnitt zerlegt das Fachwerk in zwei Teile, von denen nur der eine Teil mit seinen äusseren Kräften, einschliesslich der Lagerkräfte und der drei Stabkräfte $S_k$, $S_{k+1}$ und $S_{k+2}$ betrachtet wird.  
+\newline\newline
+Formuliert man die Momentenbedingungen bezüglich des Schnittpunktes $P$ der beiden Stabachsen $k+1$ und $k+2$, so entsteht eine Gleichung mit der einzigen Unbekannten $S_k$. Sind die Stäbe $k+1$ und $k+2$, so entsteht eine Gleichung mit der einzuigen Unbekannten $S_k$. Sind die Stäbe $k+1$ und $k+2$ parallel, so ergibt eine Komponentenbedingung in der zu diesen parallelen Stabachsen senkrechten Richtung eine Gleichung mit der einzigen Unbekannten $S_k$.
+\subsection{Anwendung des PdvL} 
+Sucht man an einem statisch bestimmten idealen Fachwerk nur die Stabkraft in einem einzigen Stab $AB$, so ergibt die direkte Anwendung des PdvL eine wirkungsvolle Lösungsmethode. Bei der Wahl des virtuellen Bewegungszustandes sollte man darauf achten, dass er den Satz der projizierten Geschwindig-keiten am Stab $AB$ verletzt und sonst mit allen übrigen inneren und äusseren Bindungen verträglich ist. Dann erscheinen bei reibungsfreien Bindungen im Ausdruck für die Gesamtleistung keine überflüssigen Unbekannten. Man bekommt eine Gleichung mit einer einzigen Unbekannten, nämlich der gesuchten Stabkraft.
+\newline\newline
+Man denkt sich den Stab $AB$ mit gesuchter Stabkraft $S_{AB}$. Der Stab $AB$ wird vom System getrennt und stellt eine Wirkung auf das übrig bleibende System durch die Knotenkräfte mit den Vektoren $\overrightarrow{S}$ und $-\overrightarrow{S}$ in $A$ bzw. $B$ dar. Wählt man an einem Ersatzsystem, das bei statisch bestimmten Fachwerken zu einem \textbf{Mechanismus} wird, einen zulässigen virtuellen Bewegungszustand, der allem inneren und äusseren Bindungen genügt, so leisten neben den bekannten Lasten nur die Kräfte $\left\{A | \overrightarrow{S}\right\}$, $\left\{B | -\overrightarrow{S}\right\}$ einen Beitrag zur Gesamtleistung, da der Satz der projizierten Geschwindigkeiten zwischen $A$ und $B$ wegen des fehlenden Stabes nciht mehr erfüllt wird. Setzt man die \textbf{virtuelle Gesamtleistung in der Ruhelage} gemäss PdvL gleich null, so folgt die gesuchte Gleichung für die unbekannte Stabkraft $S_{AB}$.

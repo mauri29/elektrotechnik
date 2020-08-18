@@ -1,0 +1,834 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grundbegriffe der Funktionen}
+\subsection{Definition einer Funktion}
+Unter einer Funktion von einer Variablen versteht man eine Vorschrift, die jedem Element $x\in D$ genau ein Element $y\in W$ zuordnet. 
+\begin{equation}
+\boxed{y=f\left(x\right)}
+\end{equation}
+Somit ist $x$ die unabhängige veränderliche Variable oder \textbf{Argument}, $y$ die abhängige Variable oder \textbf{Funktionswert}, $D$ ist der Definitionsbereich der Funktion und $W$ ist der Wertebereich der Funktion.
+\subsection{Darstellungsform einer Funktion}
+Die \textbf{analytische Darstellung} einer Funktion wird durch eine explizite oder eine implizite Funktionsgleichung dargestellt
+\begin{equation}
+\boxed{\text{explizit:}\quad y=f\left(x\right)}\quad \boxed{\text{implizit:}\quad F\left(x;\,y\right)=0} 
+\end{equation}
+Die \textbf{Parameterdarstellung} einer Funktion ist durch einen reellen Parameter $t$ abhängig
+\begin{equation}
+\boxed{\begin{array}{lll}x&=&x\left(t\right)\\y&=&y\left(t\right)\\\end{array}\Big\}\quad t_1\leq t\leq t_2}
+\end{equation}
+Die \textbf{Polardarstellung} einer Funktion ist durch den Koordinatenursprung und durch eine Achse. Die Polardarstellung benutzt zwei Parameter, einen Polarwinkel $\varphi$ und einen Abstand zum Ursprung $r$.
+\begin{equation}
+\boxed{r=r\left(\varphi\right),\quad \varphi_1\leq \varphi\leq \varphi_2}
+\end{equation}
+Die \textbf{graphische Darstellung} einer Funktion $y=f\left(x\right)$ wird in einem rechtwinkligen Koordinatensystem durch eine Punktmenge dargestellt. Den Wertepaar $\left(x_0,y_0\right)$ mit $y_0=f\left(x_0\right)$ entspricht dabei der Kurvenpunkt $P=\left(x_0; y_0\right)$. Die Koordinate $x_0$ ist die Abszisse und die $y_0$ die Ordinate von $P$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Allgemeine Funktionseigenschaften}
+\subsection{Die Nullstellen}
+Die \textbf{Nullstellen} sind die Schnittstellen der Funktionskurve mit der $x$-Achse.
+\begin{equation}  
+\boxed{f\left(x_0\right)=0}
+\end{equation}  
+\subsection{Die Symmetrie}
+Eine \textbf{gerade Funktion} ist zur $y$-Achsse spiegelsymmetrisch.
+\begin{equation}
+\boxed{f\left(-x\right)=f\left(x\right),\quad \forall x\text{ mit }x\in D \Leftrightarrow -x\in D}
+\end{equation}
+Eine \textbf{ungerade Funktion} ist zur $y$-Achsse punktsymmetrisch.
+\begin{equation}
+\boxed{f\left(-x\right)=-f\left(x\right),\quad \forall x\text{ mit }x\in D \Leftrightarrow -x\in D}
+\end{equation}
+\subsection{Monotonie}
+Eine \textbf{monoton wachsende Funktion} wenn  
+\begin{equation}
+\boxed{f\left(x_1\right)\leq f\left(x_2\right),\quad \forall x_1,\,x_2\in D\text{ mit } x_1<x_2}
+\end{equation}
+Eine \textbf{monoton fallende Funktion} wenn  
+\begin{equation}
+\boxed{f\left(x_1\right)\geq f\left(x_2\right),\quad \forall x_1,\,x_2\in D\text{ mit } x_1<x_2}
+\end{equation}
+\subsection{Periodizität}
+Die Funktionswerte wiederholen sich, wenn man in der $x$-Richtung um eine Periode $p'=\pm k\cdot p$ fortschreitet
+\begin{equation}
+\boxed{f\left(x\pm k\cdot p\right)=f\left(x\right),\quad \forall x\in D}
+\end{equation}
+\subsection{Die inverse Funktion}
+Eine Funktion $y=f\left(x\right)$ heisst \textbf{umkehrbar}, wenn aus $x_1\neq x_2$ stets $f\left(x_1\right)\neq f\left(x_2\right)$ folgt. Zu verschiedenen Abszissen gehören verschiedene Ordinaten. Die Umkehrfunktion von $y=f\left(x\right)$ wird durch das Symbol $y=f^{-1}\left(x\right)$ gekennzeichnet.
+\newline\newline
+Jede monoton fallende oder wachsende Funktion ist umkehrbar. Es werden Definitions- und Wertebereich miteinander vertauscht. Die Funktionsgleichung $y=f\left(x\right)$ wird nach der Variablen $x$ aufgelöst und durch formales Vertauschen der beiden Variablen erhält man die Umkehrfunktion $y=f^{-1}\left(x\right)$. Die inverse Funktion ist eine Spiegelung an der ersten Winkelhalbierenden des 1. Quadranten.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grenzwert und Stetigkeit einer Funktion}
+\subsection{Grenzwert einer Folge}
+Unter einer reellen zahlenfolge versteht man eine geordnete Menge reeller Zahlen. Jeder positiven ganzen Zah $n$ wird in eindeutiger Weise eine reelle zahl $a_n$ zugeordnet.
+\begin{equation}
+\boxed{\langle a_n\rangle=a_1,\,a_2,\,a_3\,\dotso,\, a_n,\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+Die reelle Zahl $g$ heisst Grenzwert oder Limes der Zahlenfolge $\langle a_n\rangle$, wenn es zu jedem $\epsilon >0$ eine positive ganze Zahl $n_0$ gibt, so dass für alle $n\geq n_0$ stets $\Big\vert a_n-g\Big\vert < \epsilon$ ist. Eine Folge heisst \textbf{konvergent}, wenn sie einen Grenzwert $g$ hat. Eine Folge, die keinen Grenzwert hat heisst \textbf{divergent}.
+\begin{equation}
+\boxed{\displaystyle \lim_{n\rightarrow \infty} a_n = g}
+\end{equation}
+\subsection{Grenzwert einer Funktion für $x\rightarrow x_0$}
+Eine Funktion $x=f\left(x\right)$ sei in einer Umgebung von $x_0$ definiert. Gilt dann für jede im Definitionsbereich der DFunktion liegende und gegen die Stelle $x_0$ konvergierende Zahlenfolge $\langle x_n\rangle$ mit $x_n\neq x_0$ stets $\displaystyle \lim_{n\rightarrow \infty} f\left(x_n\right)=g$, so heisst $g$ der Grenzwert von $y=f\left(x\right)$ für $x\rightarrow x_0$ der Grenzwert an der Stelle $x_0$
+\begin{equation} 
+\boxed{\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)=g}
+\end{equation} 
+\subsection{Grenzwert einer Funktion für $x\rightarrow \infty$}
+Besitzt eine Funktion $y=f\left(x\right)$ die Eigenschaft, dass die Folge ihrer Funktionswerte für jede über alle Grenzen hinaus wachsende Zahlenfolge $\langle x_n\rangle$ gegen eine Zahl $g$ strebt, so heisst $g$ der Grenzwert von $y=f\left(x\right)$ für $x\rightarrow \infty$ der Grenzwert im Unendlichen.
+\begin{equation} 
+\boxed{\displaystyle \lim_{x\rightarrow \infty}f\left(x\right)=g}
+\end{equation} 
+\subsection{Rechenregeln für Grenzwert}
+\begin{enumerate}[$(i)$]
+\item $\displaystyle \lim_{x\rightarrow x_0}C\cdot f\left(x\right)=C\cdot \left(\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\right),\quad \left(C\in \mathbb{R}\right)$
+\item $\displaystyle \lim_{x\rightarrow x_0}\Big[f\left(x\right)\pm g\left(x\right)\Big]=\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\pm \displaystyle \lim_{x\rightarrow x_0}g\left(x\right)$
+\item $\displaystyle \lim_{x\rightarrow x_0}\Big[f\left(x\right)\cdot g\left(x\right)\Big]=\left(\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\right)\cdot \left(\displaystyle \lim_{x\rightarrow x_0}g\left(x\right)\right)$
+\item $\displaystyle \lim_{x\rightarrow x_0}\left(\dfrac{f\left(x\right)}{g\left(x\right)}\right)=\dfrac{\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)}{\displaystyle \lim_{x\rightarrow x_0}g\left(x\right)},\quad \left(\displaystyle \lim_{x\rightarrow x_0}g\left(x\right)\neq 0\right)$
+\item $\displaystyle \lim_{x\rightarrow x_0}\sqrt[n]{f\left(x\right)}=\sqrt[n]{\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)}$
+\item $\displaystyle \lim_{x\rightarrow x_0}\Big[f\left(x\right)\Big]^n=\Big[\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\Big]^n$
+\item $\displaystyle \lim_{x\rightarrow x_0}\left(a^{f\left(x\right)}\right)=a^{\left(\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\right)}$
+\item $\displaystyle \lim_{x\rightarrow x_0}\Big[\log_a f\left(x\right)\Big]=\log_a \left(\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)\right),\quad \left(f\left(x\right)<0\right)$
+\end{enumerate}
+\subsection{Grenzwertregel von Bernoulli und de l'Hospital}
+Für Grenzwerte, die auf einen unbestimmten Ausdruck der Form "$0/0$" oder "$\infty/\infty$" führen, gilt die folgende Regel
+\begin{equation}
+\boxed{\displaystyle \lim_{x\rightarrow x_0}\dfrac{f\left(x\right)}{g\left(x\right)}=\lim_{x\rightarrow x_0}\dfrac{f'\left(x\right)}{g'\left(x\right)}}
+\end{equation}
+Unbestimmte Ausdrücke der Form "$0\cdot \infty$", "$\infty-\infty$", "$0^0$", "$1^{\infty}$" oder $\infty^0$ lassen sich durch elementare Umformungen auf den Typ "0/0" oder "$\infty/\infty$".
+\begin{enumerate}[$(i)$]
+\item $\displaystyle \lim_{x\rightarrow x_0} \Big(u\left(x\right)\cdot v\left(x\right)\Big)=0\cdot \infty \Longrightarrow \displaystyle \lim_{x\rightarrow x_0} \Big(\dfrac{u\left(x\right)}{1/v\left(x\right)}\Big)$ oder $\displaystyle \lim_{x\rightarrow x_0} \Big(\dfrac{v\left(x\right)}{1/u\left(x\right)}\Big)$
+\item $\displaystyle \lim_{x\rightarrow x_0} \Big(u\left(x\right)-v\left(x\right)\Big)=\infty-\infty\Longrightarrow \displaystyle \lim_{x\rightarrow x_0}\Big(\dfrac{1/v\left(x\right)-1/u\left(x\right)}{1/\left(u\left(x\right)\cdot v\left(x\right)\right)}\Big)$
+\item $\displaystyle \lim_{x\rightarrow x_0}\Big(u\left(x\right)^{v\left(x\right)}\Big)=0^0, \infty^{\infty}=1^{\infty}\Longrightarrow \displaystyle \lim_{x\rightarrow x_0}\Big(e^{v\left(x\right)\cdot \ln u\left(x\right)}\Big)$ 
+\end{enumerate}
+\subsection{Stetigkeit einer Funktion}
+Eine in $x_0$ und einer gewissen Umgebung von $x_0$ definierte Funktion $y=f\left(x\right)$ heisst an der Stelle $x_0$ \textbf{stetig}, wenn der Grenzwert der Funktion für $x\rightarrow x_0$ vorhanden ist und mit dem dortigen Funktionswert übereinstimmt. 
+\begin{equation}
+\boxed{\displaystyle \lim_{x\rightarrow x_0}f\left(x\right)=f\left(x_0\right)}
+\end{equation}
+Eine Funktion, die an jeder Stelle ihres Definitionsbereichs stetig ist, heisst sie \textbf{stetige Funktion}. Eine Funktion $y=f\left(x\right)$ heisst an der Stelle $x_0$ \textbf{unstetig}, wenn $f\left(x_0\right)$ nicht vorhanden ist oder $f\left(x_0\right)$ vom Grenzwert verschieden ist oder dieser nicht existiert. Den Unstetigkeiten gehören Lücken, Pole oder Sprünge.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Polynomfunktionen}
+\subsection{Definition}
+Ganzrationale Funktionen oder \textbf{Polynomfunktionen} sind überall definiert und stetig. Sie werden in der Regel nach fallenden Potenzen geordnet. Sei $n$ der Polynomgrad mit $n\in \mathbb{N}$ und $a_i$ die reelle Polynomkoeffizienten.
+\begin{equation}
+\boxed{f\left(x\right)=a_nx^n+a_{n-1}x^{n-1}+\dotso + a_1x+a_0,\quad \left(a_n\neq 0\right)}
+\end{equation}
+\subsection{Die Lineare Funktion}
+Die allgemeine Geradengleichung lautet
+\begin{equation}
+\boxed{Ax+By+C=0,\quad \left(A^2+B^2\neq 0\right)}
+\end{equation}
+Gegeben sei die Steigung $m$ und $b$ der $y$-Achsenabschnitt. So lautet die \textbf{Hauptform der Geraden}
+\begin{equation}
+\boxed{y=mx+b=\tan\left(\alpha\right)x+b}
+\end{equation}
+Gegeben sei ein Punkt $P_1=\left(x_1;y_1\right)$ und die Steigung $m$ oder der Steigungswinkel $\alpha$, so lautet die \textbf{Punkt-Steigungsform der Geraden}
+\begin{equation}
+\boxed{m=\dfrac{y-y_1}{x-x_1}}
+\end{equation}
+Gegeben seien zwei verschiedene Punkte $P_1=\left(x_1; y_1\right)$ und $P_2=\left(x_2; y_2\right)$, dann lautet der \textbf{zwei-Punkte-Form einer Geraden}
+\begin{equation}
+\boxed{\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1},\quad \left(x_1\neq x_2\right)}
+\end{equation}
+Gegeben seien die Achsenabschnitte $a$ und $b$ auf der $x$- und $y$-Achse, dann lautet die \textbf{Achsenabschnittsform der Geraden}
+\begin{equation} 
+\boxed{\dfrac{x}{a}+\dfrac{y}{b}=1,\quad \left(a\neq 0, \,b\neq 0\right)}
+\end{equation} 
+Gegeben seien $p$ die senkrechte Abstand vom Ursprung von der Geraden und $\alpha$ der Winkel zwischen Lot vom Ursprung auf die Gerade und der positiven $x$-Achse, dann lautet die \textbf{Hessesche Normalform der Geraden}
+\begin{equation} 
+\boxed{x\cdot \cos\left(\alpha\right)+y\cdot \sin\left(\alpha\right)=p}
+\end{equation} 
+Gegeben ist die Gerade $Ax+By+C=0$ und ein Punkt $P_1=\left(x_1; y_1\right)$, dann lautet der \textbf{Abstand eines Punktes von einer Geraden}  
+\begin{equation}
+\boxed{d=\Big\vert\dfrac{Ax_1+By_1+C}{\sqrt{A^2+B^2}}\Big\vert,\quad \left(A^2+B^2\neq 0\right)}
+\end{equation}
+Gegeben seien zwei Geraden $g_1$ und $g_2$ mit den Gleichungen $y=mx_1+b_1$ und $y=mx_2+b_2$, dann lautet der \textbf{Schnittwinkel zweier Geraden}
+\begin{equation}
+\boxed{\tan\left(\delta\right)=\Big\vert\dfrac{m_2-m_1}{1+m_1\cdot m_2}\Big\vert,\quad \left(0^{\circ}\leq \delta \leq 90^{\circ}\right),\quad \left(m_1\cdot m_2\neq -1\right)}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $g_1\parallel g_2\Longrightarrow m_1=m_2$ und $\delta=0^{\circ}$
+\item $g_1\perp g_2\Longrightarrow m_1\cdot m_2=-1$ und $\delta=90^{\circ}$
+\end{enumerate}
+\subsection{Die Quadratische Funktion}
+Die \textbf{Hauptform der Parabel} besteht aus einem Öffnungsparameter $a\neq 0$, wobei wenn $a>0$ ist die Parabel nach oben geöffnet oder $a<0$ nach unten geöffnet. Der Scheitelpunkt ist $S\left(-\dfrac{b}{2a}; \dfrac{4ac-b^2}{4a}\right)$. Sind $b=c=0$ dann lautet die Parabelfunktion $y=x^2$
+\begin{equation}
+\boxed{y=ax^2+bx+c}
+\end{equation}
+Die \textbf{Produktform der Parabel} besteht aus einem Öffnungsparameter $a\neq 0$, wobei $x_1$ und $x_2$ die Nullstellen der Parabel sind. Sind $x_1=x_2$ dann lautet die Parabelfunktion $y=a\left(x-x_1\right)^2$ und die Parabel berührt die $x$-Achse im Scheitelpunkt $S\left(x_1; 0\right)$
+\begin{equation}
+\boxed{y=a\cdot \left(x-x_1\right)\cdot \left(x-x_2\right)}
+\end{equation}
+Die \textbf{Scheitelform der Parabel} besteht aus einem Öffnungsparameter $a\neq 0$ und aus den Koordinaten des Scheitelpunktes $S\left(x_0;y_0\right)$
+\begin{equation}
+\boxed{y-y_0=a\cdot \left(x-x_0\right)^2}
+\end{equation}
+\subsection{Polynomfunktion $n$-ten Grades}
+Ist $x_1$ eine Nullstelle der Polynomfunktion $f\left(x\right)$ vom Grade $n$, so ist $f\left(x\right)$ in der Produktform darstellbar. Der Faktor $\left(x-x_1\right)$ heisst \textbf{Linearfaktor}, $f_1\left(x\right)$ ist das erste reduzierte Polynom vom Grade $n-1$. 
+\begin{equation}
+\boxed{f\left(x\right)=\left(x-x_1\right)\cdot f_1\left(x\right)}
+\end{equation}
+Das \textbf{Fundamentalsatz der Algebra} laitet: Eine Polynomfunktion $n$-ten Grades besitzt höchstens $n$ reelle Nullstellen. 
+\newline\newline
+Die \textbf{Produktdarstellung} der Polynomfunktion besteht aus einem Öffnungsparameter $a_n$ und aus den Nullstellen $x_i$. Die Faktoren $\left(x-x_i\right)$ heissen Linearfaktoren. Ist $x_1$ eine $k$-fache Nullstelle von $f\left(x\right)$, so tritt der Linearfaktor $\left(x-x_1\right)$ $k$-mal auf. 
+\begin{equation}
+\boxed{f\left(x\right)=a_n\cdot \left(x-x_1\right)\cdot \left(x-x_2\right)\cdot \dotso \cdot \left(x-x_n\right),\quad \left(a_n\neq 0\right)}
+\end{equation}
+Ist die Anzahl $k$ der reellen Nullstellen kleiner als der Polynomgrad $n$, so ist $f^*\left(x\right)$ das Polynomfunktion vom Grade $n-k$ohne reelle Nullstellen und so lautet die Zerlegung 
+\begin{equation}
+\boxed{f\left(x\right)=a_n\cdot \left(x-x_1\right)\cdot \left(x-x_2\right)\cdot \dotso \cdot \left(x-x_k\right)\cdot f^*\left(x\right)}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Gebrochenrationale Funktionen}
+\subsection{Definition}
+Eine \textbf{gebrochenrationale Funktion} $f\left(x\right)$ besteht aus einem Zählerpolynom $g\left(x\right)$ vom Grade $m$, aus einem Nennerpolynom $h\left(x\right)$ vom Grade $n$, wobei wenn $n>m$ dann hendelt es sich um eine echt gebrochenrationale Funktion. Der Definitionsbereich ist $D=x\in \mathbb{R}$ mit Ausnahme der Nullstellen des Nennerpolynoms $h\left(x\right)$.
+\begin{equation}
+\boxed{f\left(x\right)=\dfrac{g\left(x\right)}{h\left(x\right)}=\dfrac{a_mx^m+a_{m-1}x^{m-1}+\dotso + a_1x+a_0}{b_nx^n+b_{n-1}x^{n-1}+\dotso + b_1x+b_0},\quad \left(a_m\neq 0, b_n\neq 0\right)}
+\end{equation}
+\subsection{Nullstellen, Definitionslücken und Pole}
+Ist $x_0$ \textbf{Nullstellen} der gebrochenrationale Funktion $f\left(x_0\right)=0$, so gelten $g\left(x_0\right)=0$ und $h\left(x_0\right)\neq 0$.
+\newline\newline
+Ist $x_0$ \textbf{Definitionslücke} der gebrochenrationale Funktion $f\left(x\right)$ so verschwindet der Nenner an der Stelle $x_0$, also gilt $h\left(x_0\right)=0$. Die Definitionslücken fallen daher mit den reellen Nullstellen des Nenners zusammen. Es gibt somit höchstens $n$ reelle Definitionslücken, ermittelt aus der Gleichung $h\left(x\right)=0$.
+\newline\newline
+Ein \textbf{Pol} $x_0$ ist eine Definitionslücke besonderer Art: Nähert man sich der Stelle $x_0$, so strebt der Funktionswert gegen $\pm \infty$. In einer Polstelle gilt somit $h\left(x_0\right)=0$ und $g\left(x_0\right)\neq 0$, falls Zähler und Nenner keine gemeinsamen Nullstellen haben. Die in einem Pol errichtete Parallele zur $y$-Achse heisst Polgerade oder senkrechte Asymptote. Verhält sich die Funktion  bei Annäherung an den Pol von beiden Seiter her gleichartiig, so liegt ein Pol ohne Vorzeichenwechsel, anderenfalls ein pol mit Vorzeichenwechsel vor.
+\newline\newline
+Ist $x_0$ eine $k$-fache Nullstelle des Nennerpolynoms $h\left(x\right)$, so liegt ein Pol $k$-ter Ordnung vor: 
+\begin{enumerate}[$(i)$]
+\item Ist $k$ gerade dann liegt ein Pol ohne Vorzeichenwechsel.
+\item Ist $k$ ungerade dann liegt ein Pol mit Vorzeichenwechsel. 
+\end{enumerate}
+Die gesuchten Nullstellen und Pole einer gebrochenrationale Funktion $f\left(x \right)$ findet man, indem man das Zähler- und das Nennerpolynom in Linearfaktoren zerlegt und gemeinsame Faktoren herauskürzt. Die bleibenden Linearfaktoren im Zählerpolynom sind die Nullstellen, die bleibenden Linearfaktoren im Nennerpolynom sind die Polstellen. Damit kann Definitionslücken behoben und der Definitionsbereich der Funktion erweitert werden.
+\subsection{Asymptotisches Verhalten im Unendlichen}
+Eine \textbf{echt gebrochenrationale Funktion} nähert sich im Unendlichen, d.h. für $x\rightarrow \pm\infty$ stets der $x$-Achse bei $y=0$.
+\newline\newline
+Eine \textbf{unecht gebrochenrationale Funktion} wird zunächst durch Polynomdivision in eine ganzrationale Funktion $p\left(x\right)$ und eine echt gebrochenrationale Funktion $r\left(x\right)$ zerlegt: $f\left(x\right)=p\left(x\right)+r\left(x\right)$. Im Unendlichen verschwindet $r\left(x\right)$ und die Funktion $f\left(x\right)$ nähert sich daher asymptotisch der Polynomfunktion $p\left(x\right)$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Potenz- und Wurzelfunktionen}
+\subsection{Potenzfunktionen mit ganzzahligen Exponenten}
+\textbf{Potenzfunktionen mit positiv ganzzahligen Exponenten} haben für gerades $n$ erhält man gerade Funktionen, für ungerades $n$ ungerade Funktionen. Die Nullstelle ist $x=0$.
+\begin{equation}
+\boxed{f\left(x\right)=x^n,\quad -\infty < x < \infty,\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+\textbf{Potenzfunktionen mit negativ ganzzahligen Exponenten} haben für gerades $n$ gerade Funktionen, für ungerades $n$ ungerade Funktionen. Die Polstelle ist ist $x=0$ und die Asymptote im Unendlichen ist $y=0$.
+\begin{equation}
+\boxed{f\left(x\right)=x^{-n}=\dfrac{1}{x^n},\quad x\neq 0,\quad \left(n\in \mathbb{N}^*\right)}
+\end{equation}
+\subsection{Wurzelfunktionen}
+\textbf{Wurzelfunktionen} sind die Umkehrfunktionen der auf das Intervall $x\geq 0$ beschränkten Potenzfunktionen. Diese Funktionen sind streng monoton wachsend und haben die Nullstelle $x=0$.
+\begin{equation} 
+\boxed{f\left(x\right)=\sqrt[n]{x},\quad x\geq 0,\quad \left(n=2, 3, 4, \dotso\right)}
+\end{equation}
+\subsection{Potenzfunktionen mit rationalen Exponenten} 
+\textbf{Potenzfunktionen mit rationalen Exponenten} haben bei positiven Exponenten streng monoton wachsende Monotonie, bei negativen Exponenten streng monoton fallende Monotonie. Der Definitionsbereich ist $D=x>0$ und bei positiven Exponenten $D=x\geq 0$.
+\begin{equation}
+\boxed{f\left(x\right)=x^{m/n}=\sqrt[n]{x^m},\quad x>0,\quad \left(m\in \mathbb{Z},\quad n\in \mathbb{N}^*\right)}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Trigonometrische Funktionen}
+\subsection{Winkelmass}
+Die \textbf{trigonometrische Funktionen}, auch Winkelfunktionen oder Kreisfunktionen sind am Einheitskreis erklärt. Der Winkel $\alpha$ wird in Grad oder Bogenmass gemessen. Voller Umlauf ist $360^{\circ}$ oder $2\pi$. Die Winkel erhalten wie folgt ein Vorzeichen: Im Gegenuhrzeigersinn überstrichene Winkel werden positiv, im Uhrzeigersinn überstrichene Winkel negativ gezählt.
+\begin{equation} 
+\boxed{1^{\circ}=\dfrac{\pi}{180^{\circ}}\,\text{Radiant}\approx 0.0174}\quad
+\boxed{1\,\text{Radiant}=\dfrac{180^{\circ}}{\pi}\approx 57.295}
+\end{equation} 
+\subsection{Definition der trigonometrischen Funktionen}
+Folgende sind Definitionen am Einheitskreis. $\alpha$ ist ein spitzer Winkel in einem rechtwinkligen Dreieck $\left(0^{\circ}\leq \alpha \leq 90^{\circ}\right)$. Der $\sin\left(\alpha\right)$ entspricht die Ordinate eines Kreispunktes $P$. Der $\cos\left(\alpha\right)$ ist die Abszisse von $P$. Die $\tan\left(\alpha\right)$ ist der Abschnitt auf der rechten Tangente und der $\cot\left(\alpha\right)$ ist der Abschnitt auf der oberen Tangente.
+\begin{equation}
+\begin{array}{l}
+\boxed{\sin\left(\alpha\right)=\dfrac{y}{1}}\quad \boxed{\cos\left(\alpha\right)=\dfrac{x}{1}}\quad \boxed{\tan\left(\alpha\right)=\dfrac{y}{x}}\quad \boxed{\cot\left(\alpha\right)=\dfrac{x}{y}}\\\boxed{\sec\left(\alpha\right)=\dfrac{1}{\cos\left(\alpha\right)}=\dfrac{1}{x}}\quad \boxed{\csc\left(\alpha\right)=\dfrac{1}{\sin\left(\alpha\right)}=\dfrac{1}{y}}
+\end{array}
+\end{equation}
+\subsection{Die Sinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\sin\left(x\right)}
+\end{equation}
+Folgende sind Eigenschaften der Sinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $D=-\infty < x < \infty$
+\item Wertebereich: $W=-1\leq y \leq 1$
+\item Periode: $p=2\pi$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=k\cdot \pi$
+\item Relative Maxima: $x_{\text{max}}=\dfrac{\pi}{2}+k\cdot 2\pi$
+\item Relative Minima: $x_{\text{min}}=\dfrac{3}{2}\pi+k\cdot 2\pi$
+\item Ableitung: $f'\left(x\right)=\cos\left(x\right)$
+\item Stammfunktion: $F\left(x\right)=-\cos\left(x\right)$
+\end{enumerate}
+\subsection{Die Kosinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\cos\left(x\right)}
+\end{equation}
+Folgende sind Eigenschaften der Kosinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $D=-\infty < x < \infty$
+\item Wertebereich: $W=-1\leq y \leq 1$
+\item Periode: $p=2\pi$
+\item Symmetrie: gerade
+\item Nullstellen: $x_N=\dfrac{\pi}{2}+k\cdot \pi$
+\item Relative Maxima: $x_{\text{max}}=k\cdot 2\pi$
+\item Relative Minima: $x_{\text{min}}=\pi+k\cdot 2\pi$
+\item Ableitung: $f'\left(x\right)=-\sin\left(x\right)$
+\item Stammfunktion: $F\left(x\right)=\sin\left(x\right)$
+\end{enumerate}
+\subsection{Die Tangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\tan\left(x\right)}
+\end{equation}
+Folgende sind Eigenschaften der Tangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $D=x\in \mathbb{R}\backslash \left\{x_k=\dfrac{\pi}{2}+k\cdot \pi\right\}$
+\item Wertebereich: $W=-\infty\leq y \leq \infty$
+\item Periode: $p=\pi$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=k\cdot \pi$
+\item Pole: $x_k=\dfrac{\pi}{2}+k\cdot \pi$
+\item Senkrechte Asymptoten: $x=\dfrac{\pi}{2}+k\cdot \pi$
+\item Ableitung: $f'\left(x\right)=\dfrac{1}{\cos^2\left(x\right)}$
+\item Stammfunktion: $F\left(x\right)=-\ln\Big\vert\cos\left(x\right)\Big\vert$
+\end{enumerate}
+\subsection{Die Kotangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\tan\left(x\right)}
+\end{equation}
+Folgende sind Eigenschaften der Kotangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $D=x\in \mathbb{R}\backslash \left\{x_k=k\cdot \pi\right\}$
+\item Wertebereich: $W=-\infty\leq y \leq \infty$
+\item Periode: $p=\pi$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=\dfrac{\pi}{2}+k\cdot \pi$
+\item Pole: $x_k=k\cdot \pi$
+\item Senkrechte Asymptoten: $x=k\cdot \pi$
+\item Ableitung: $f'\left(x\right)=-\dfrac{1}{\sin^2\left(x\right)}$
+\item Stammfunktion: $F\left(x\right)=\ln\Big\vert\sin\left(x\right)\Big\vert$
+\end{enumerate}
+\subsection{Beziehungen}
+\subsubsection{Beziehungen zwischen trigonometrischen Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\cos\left(x\right)=\sin\left(x+\dfrac{\pi}{2}\right)$
+\item $\sin\left(x\right)=\cos\left(x-\dfrac{\pi}{2}\right)$
+\item $\sin^2\left(x\right)+\cos^2\left(x\right)=1$
+\item $\tan\left(x\right)=\dfrac{\sin\left(x\right)}{\cos\left(x\right)}=\dfrac{1}{\cot\left(x\right)}$
+\item $\cot\left(x\right)=\dfrac{\cos\left(x\right)}{\sin\left(x\right)}=\dfrac{1}{\tan\left(x\right)}$
+\item $\dfrac{1}{\cos^2\left(x\right)}=1+\tan^2\left(x\right)$
+\item $\dfrac{1}{\sin^2\left(x\right)}=1+\cot^2\left(x\right)$
+\end{enumerate}
+\subsubsection{Beziehungen der Additionstheoreme}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(x_1\pm x_2\right)=\sin\left(x_1\right)\cos\left(x_2\right)\pm \cos\left(x_1\right)\sin\left(x_2\right)$
+\item $\cos\left(x_1\pm x_2\right)=\cos\left(x_1\right)\cos\left(x_2\right)\mp \sin\left(x_1\right)\sin\left(x_2\right)$
+\item $\tan\left(x_1\pm x_2\right)=\dfrac{\tan\left(x_1\right)\pm\tan\left(x_2\right)}{1\mp\tan\left(x_1\right)\cdot \tan\left(x_2\right)}$
+\item $\cot\left(x_1\pm x_2\right)=\dfrac{\cot\left(x_1\right)\cdot \cot\left(x_2\right)\mp1}{\cot\left(x_2\right)\pm\cot\left(x_1\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für halbe Winkel}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{1-\cos\left(x\right)}{2}}$
+\item $\cos\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{1+\cos\left(x\right)}{2}}$
+\item $\tan\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{1-\cos\left(x\right)}{1+\cos\left(x\right)}}=\dfrac{\sin\left(x\right)}{1+\cos\left(x\right)}=\dfrac{1-\cos\left(x\right)}{\sin\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für doppelte Winkel}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(2x\right)=2\sin\left(x\right)\cos\left(x\right)$
+\item $\cos\left(2x\right)=\cos^2\left(x\right)-\sin^2\left(x\right)=2\cos^2\left(x\right)-1=1-2\sin^2\left(x\right)$
+\item $\tan\left(2x\right)=\dfrac{2\tan\left(x\right)}{1-\tan^2\left(x\right)}$
+\item $\cot\left(2x\right)=\dfrac{\cot^2\left(x\right)-1}{2\cot\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für dreifache Winkel}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(3x\right)=3\sin\left(x\right)-4\sin^3\left(x\right)$
+\item $\cos\left(3x\right)=4\cos^3\left(x\right)-3\cos\left(x\right)$
+\item $\tan\left(3x\right)=\dfrac{3\tan\left(x\right)-\tan^3\left(x\right)}{1-3\tan^2\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für vierfache Winkel}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(4x\right)=4\sin\left(x\right)\cos\left(x\right)-8\sin^3\left(x\right)\cos\left(x\right)$
+\item $\cos\left(4x\right)=8\cos^4\left(x\right)-8\cos^2\left(x\right)+1$
+\item $\tan\left(4x\right)=\dfrac{4\tan\left(x\right)-4\tan^3\left(x\right)}{1-6\tan^2\left(x\right)+\tan^4\left(x\right)}$ 
+\end{enumerate}
+\subsubsection{Beziehungen für $n$-fache Winkel}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(nx\right)=\displaystyle \binom{n}{1}\sin\left(x\right)\cos^{n-1}\left(x\right)-\displaystyle \binom{n}{3}\sin^3\left(x\right)\cos^{n-3}\left(x\right)+\displaystyle \binom{n}{5}\sin^5\left(x\right)\cos^{n-5}\left(x\right)+\dotso$
+\item $\cos\left(nx\right)=\cos^n\left(x\right)-\displaystyle \binom{n}{2}\sin^2\left(x\right)\cos^{n-2}\left(x\right)+\displaystyle \binom{n}{4}\sin^4\left(x\right)\cos^{n-4}\left(x\right)-\dotso$
+\end{enumerate}
+\subsubsection{Beziehungen für Summen und Differenzen}
+\begin{enumerate}[$(a)$] 
+\item $\sin\left(x_1\right)+\sin\left(x_2\right)=2\sin\left(\dfrac{x_1+x_2}{2}\right)\cos\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\sin\left(x_1\right)-\sin\left(x_2\right)=2\cos\left(\dfrac{x_1+x_2}{2}\right)\sin\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\cos\left(x_1\right)+\cos\left(x_2\right)=2\cos\left(\dfrac{x_1+x_2}{2}\right)\cos\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\cos\left(x_1\right)-\cos\left(x_2\right)=-2\sin\left(\dfrac{x_1+x_2}{2}\right)\sin\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\tan\left(x_1\right)\pm \tan\left(x_2\right)=\dfrac{\sin\left(x_1\pm x_2\right)}{\cos\left(x_1\right)\cdot \cos\left(x_2\right)}$
+\item $\sin\left(x_1+x_2\right)+\sin\left(x_1-x_2\right)=2\sin\left(x_1\right)\cos\left(x_2\right)$
+\item $\sin\left(x_1+x_2\right)-\sin\left(x_1-x_2\right)=2\cos\left(x_1\right)\sin\left(x_2\right)$
+\item $\cos\left(x_1+x_2\right)+\cos\left(x_1-x_2\right)=2\cos\left(x_1\right)\cos\left(x_2\right)$
+\item $\cos\left(x_1+x_2\right)-\cos\left(x_1-x_2\right)=-2\sin\left(x_1\right)\sin\left(x_2\right)$
+\end{enumerate}
+\subsubsection{Beziehungen für Produkte}
+\begin{enumerate}[$(a)$] 
+\item $\sin\left(x_1\right)\cdot \sin\left(x_2\right)=\dfrac{1}{2}\Big[\cos\left(x_1-x_2\right)-\cos\left(x_1+x_2\right)\Big]$
+\item $\cos\left(x_1\right)\cdot \cos\left(x_2\right)=\dfrac{1}{2}\Big[\cos\left(x_1-x_2\right)+\cos\left(x_1+x_2\right)\Big]$
+\item $\sin\left(x_1\right)\cdot \cos\left(x_2\right)=\dfrac{1}{2}\Big[\sin\left(x_1-x_2\right)+\sin\left(x_1+x_2\right)\Big]$
+\item $\tan\left(x_1\right)\cdot \tan\left(x_2\right)=\dfrac{\tan\left(x_1\right)+\tan\left(x_2\right)}{\cot\left(x_1\right)+\cot\left(x_2\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für Potenzen}
+\begin{enumerate}[$(a)$] 
+\item $\sin^{2n}\left(x\right)=\displaystyle \binom{2n}{n}\dfrac{1}{2^{2n}}+\dfrac{1}{2^{2n-1}}\displaystyle \sum_{k=1}^n\left(-1\right)^k\displaystyle \binom{2n}{n-k}\cos\left(2kx\right)$
+\item $\sin^{2n-1}\left(x\right)=\dfrac{1}{2^{2n-2}}\displaystyle \sum_{k=1}^n\left(-1\right)^{k-1}\displaystyle \binom{2n-1}{n-k}\sin\left(2kx-x\right)$
+\item $\cos^{2n}\left(x\right)=\displaystyle \binom{2n}{n}\dfrac{1}{2^{2n}}+\dfrac{1}{2^{2n-1}}\displaystyle \sum_{k=1}^n\displaystyle \binom{2n}{n-k}\cos\left(2kx\right)$
+\item $\cos^{2n-1}\left(x\right)=\dfrac{1}{2^{2n-2}}\displaystyle \sum_{k=1}^n\displaystyle \binom{2n-1}{n-k}\cos\left(2kx-x\right)$
+\end{enumerate}
+\subsubsection{Beziehungen für komplexen Fall}
+\begin{enumerate}[$(a)$]
+\item $\sin\left(iy\right)=i\cdot \sinh\left(y\right)$
+\item $\cos\left(iy\right)=\cosh\left(y\right)$
+\item $\tan\left(iy\right)=i\cdot \tanh\left(y\right)$
+\item $\cot\left(iy\right)=-i\cdot \coth\left(y\right)$
+\end{enumerate}
+\subsubsection{Beziehungen komplexer Zahlen als Argumente}
+\begin{enumerate}[$(a)$] 
+\item $\sin\left(x+iy\right)=\sin\left(x\right)\cos\left(iy\right)+ \cos\left(x\right)\sin\left(iy\right)$
+\item $\cos\left(x+iy\right)=\cos\left(x\right)\cos\left(iy\right)- \sin\left(x\right)\sin\left(iy\right)$
+\item $\tan\left(x+ iy\right)=\dfrac{\tan\left(x\right)+\tan\left(iy\right)}{1-\tan\left(x\right)\tan\left(iy\right)}$
+\item $\cot\left(x+ y\right)=-\dfrac{\cot\left(x\right)\cot\left(iy\right)-1}{\cot\left(x\right)-\cot\left(iy\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen komplexer Zahlen}
+Folgende Eigenschaften gehören den komplexen Zahlen
+\begin{enumerate}[$(a)$]
+\item $\cos\left(x\right)=\dfrac{1}{2}\left(e^{ix}+e^{-ix}\right)$
+\item $\sin\left(x\right)=\dfrac{1}{2i}\left(e^{ix}-e^{-ix}\right)$
+\end{enumerate} 
+\subsubsection{Beziehungen Lösungen trigonometrischer Gleichung}
+\begin{enumerate}[$(i)$]
+\item $\begin{array}{l}\sin\left(x\right)=c,\quad \left(-1\leq c\leq 1\right)\\
+\Longrightarrow x=\left\{\begin{array}{lll}x_0+2n\pi\\\left(\pi-x_0\right)+2n\pi\end{array},\quad \left(n\in\mathbb{Z}\right),\quad x_0=\arcsin\left(c\right)\right\}\end{array}$
+\item $\begin{array}{l}\cos\left(x\right)=c,\quad \left(-1\leq c\leq 1\right)\\
+\Longrightarrow x=\left\{\begin{array}{lll}x_0+2n\pi\\-x_0+2n\pi\end{array},\quad \left(n\in\mathbb{Z}\right),\quad x_0=\arccos\left(c\right)\right\}\end{array}$
+\item $\begin{array}{l}\tan\left(x\right)=c\\
+\Longrightarrow x=\left\{\begin{array}{lll}x_0+n\pi\end{array},\quad \left(n\in\mathbb{Z}\right),\quad x_0=\arctan\left(c\right)\right\}\end{array}$
+\end{enumerate}
+\subsubsection{Beziehungen an einem allgemeinen Dreieck}
+\begin{enumerate}[$(i)$]
+\item $\dfrac{\sin\left(\alpha\right)}{a}=\dfrac{\sin\left(\beta\right)}{b}=\dfrac{\sin\left(\gamma\right)}{c},\quad \text{(Sinussatz)}$
+\item $a^2=b^2+c^2-2bc\cos\left(\alpha\right),\quad \text{(Kosinussatz)}$
+\item $\dfrac{a+b}{a-b}=\dfrac{\tan\left(\dfrac{\alpha+\beta}{2}\right)}{\tan\left(\dfrac{\alpha+\beta}{2}\right)},\quad \text{(Tangenssatz)}$
+\item $A=\dfrac{bc\sin\left(\alpha\right)}{2},\quad \text{(Flächenformel)}$
+\item $\alpha+\beta+\gamma = 180^{\circ},\quad \text{(Winkelsumme)}$
+\end{enumerate}
+\subsubsection{Beziehungen Amplituden-Phasen}
+Folgende sind die Amplituden-Phasen in Polarform von $a\cos\left(x\right)+b\sin\left(x\right)$
+\begin{equation}
+\boxed{
+\left\{\begin{array}{lll}
+a\cos\left(x\right)+b\sin\left(x\right)&=&r\cos\left(x-\varphi\right)\\
+a\sin\left(x\right)+b\cos\left(x\right)&=&r\sin\left(x+\varphi\right)\\
+\end{array}\right\}\\
+}
+\end{equation}
+\begin{equation}
+\boxed{r=\sqrt{a^2+b^2},\quad \varphi=\left\{\begin{array}{lll}\arccos\left(a/r\right),\quad \text{falls }b\geq 0\\-\arccos\left(a/r\right),\quad \text{falls }b<0\\\text{unbestimmt},\quad \text{falls }r=0\end{array}\right\}}
+\end{equation}
+\subsection{Anwendungen in der Schwingungslehre}
+\subsubsection{Allgemeine Sinus- und Kosinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=a\cdot \sin\left(bx+c\right),\quad \left(a>0,\quad b>0\right)}
+\end{equation}
+\begin{equation}
+\boxed{f\left(x\right)=a\cdot \cos\left(bx+c\right),\quad \left(a>0,\quad b>0\right)}
+\end{equation}
+Folgende allgemeine Sinusfunktion hat die Periode $p=2\pi/b$, Wertebereich $W=-a\leq y \leq a$, für $c>0$ ist die Kurve nach links, für $c<0$ nach rechts verschoben. Bezogen auf die elementare Sinusfunktion ist die verschiebung $x_0=-c/b$.
+\subsubsection{Gleichung einer harmonischen Schwingung}
+Die harmonische Schwingung misst die Auslenkung eines Federpendels in Abhängigkeit der Zeit $t$, wobei $A$ die Amplitude (maximale Auslenkung), $\omega$ die Kreisfrequenz der Schwingung, $\varphi$ der Nullphasenwinkel, $T$ die Schwingungs- oder Periodendauer, $f$ die Frequenz 
+\begin{equation}
+\boxed{f\left(t\right)=A\cdot \sin\left(\omega t+\varphi\right)}
+\end{equation}
+\begin{equation}
+\boxed{f\left(t\right)=A\cdot \cos\left(\omega t+\varphi\right)=A\cdot \sin\left(\omega t+\underbrace{\varphi+\dfrac{\pi}{2}}_{\varphi^*}\right)=A\cdot \sin\left(\omega t+\varphi^*\right)}
+\end{equation}
+\begin{equation}
+\boxed{\omega=2\pi f=\dfrac{2\pi}{T}} 
+\end{equation}
+\subsubsection{Darstellung einer harmonischen Schwingung}
+Eine harmonische Schwingung lässt sich in einem Zeigerdiagramm durch einen rotierenden Zeiger der Länge $A$ darstellen. Die Rotation erfolgt dabei aus der durch den Nullphasenwinkel $\varphi$ eindeutig bestimmten Anfangslage heruas um den Nullpunkt mit der Winkelgeschwindigkeit $\omega$ im Gegenuhrzeigersinn. Die Ordinate der Zeigerspitze entspricht dabei dem augenblicklichen Funktionswert der Schwingung.
+\newline\newline
+Bei der bildlichen Darstellung einer Schwingung im zeigerdiagramm zeichnet man die Anfangslage, Zeiger der Länge $A$ unter dem Winkel $\varphi$ gegen die Horizontale. Lässt man einen negativen Amplitudenfaktor $A$ zu, so gelten für das Abtragen der unverschobenen Schwingungen die folgenden Regeln für die \textbf{Sinusschwingung} $f\left(t\right)=A\cdot \sin\left(\omega t\right)$: $A>0$ so nach rechts abtragen, $A<0$ nach links abtragen und für eine \textbf{Kosinusschwingung} $f\left(t\right)=A\cdot \sin\left(\omega t\right)$: $A>0$ nach oben abtragen und $A<0$ nach unten abtragen. 
+\newline\newline
+Liegen die Schwingungen in der \textbf{phasenverschobenen Form} $f\left(t\right)=A\cdot \sin\left(\omega t+\varphi\right)$ bzw. $f\left(t\right)=A\cdot \sin\left(\omega t+\varphi\right)$ vor, so erfolgt eine zusätzliche Drehung um den Nullphasenwinkel $\varphi>0$ im Gegenuhrzeigersinn oder um den Nullphasenwinkel $\varphi<0$ im Uhrzeigersinn.
+\subsubsection{Superposition}
+Die Überlagerung zweier gleichfrequenter harmonischer Schwingungen führt zu einer resultierenden Schwingung der gleichen Frequenz. Im Zeigerdiagramm werden die Zeiger nach dem Parallelogrammregel zu einem resultierenden Zeiger zusammengesetzt. Die übrigen Parameter können folgendermassen berechnet werden
+\begin{equation}
+\boxed{y=y_1+y_2=A\cdot \sin\left(\omega t + \varphi\right)}
+\end{equation}
+\begin{equation}
+\boxed{A=\sqrt{A_1^2+A_2^2+2A_1A_2\cdot \cos\left(\varphi_2-\varphi_1\right)}}
+\end{equation}
+\begin{equation}
+\boxed{\tan\left(\varphi\right)=\dfrac{A_1\cdot \sin\left(\varphi_1\right)+A_2\cdot \sin\left(\varphi_2\right)}{A_1\cdot \cos\left(\varphi_1\right)+A_2\cdot \cos\left(\varphi_2\right)}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Arkusfunktionen}
+Die Umkehrfunktionen der auf bestimmte Intervalle beschränkten trigonome-trischen Funktionen heissen \textbf{Arkus-} oder \textbf{zyklometrische Funktionen}. Die Intervalle müssen dabei so gewählt werden, dass die trigonometrischen Funktionen dort in streng monotoner Weise sämtliche Funktionswerte durchlaufen und somit umkehrbar sind. Der Funktionswert einer Arkusfunktion ist ein Bogen- oder Radiant dargestellter Winkel.
+\subsection{Die Arkussinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\arcsin\left(x\right)}
+\end{equation}
+Die Arkussinusfunktion ist die Umkehrfunktion der Sinusfunktion. Der Arkussinus liefert nur Winkel aus dem 1. und 4. Quadrat. Folgende sind Eigenschaften der Arkussinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-1\leq x \leq 1$
+\item Wertebereich: $-\dfrac{\pi}{2}\leq y\leq \dfrac{\pi}{2}$
+\item Symmetrie: ungerade
+\item Monotonie: streng monoton wachsend
+\item Nullstellen: $x_N=0$
+\item Ableitung: $\dfrac{1}{\sqrt{1-x^2}}$
+\item Stammfunktion: $\displaystyle \int \arcsin\left(\dfrac{x}{a}\right)\text{d}x=x\arcsin\left(\dfrac{x}{a}\right)+\sqrt{a^2-x^2}+C$
+\end{enumerate} 
+\subsection{Die Arkuskosinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\arccos\left(x\right)}
+\end{equation}
+Die Arkuskosinusfunktion ist die Umkehrfunktion der Kosinusfunktion. Der Arkuskosinus liefert nur Winkel aus dem 1. und 2. Quadrant. Folgende sind Eigenschaften der Arkussinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-1\leq x \leq 1$
+\item Wertebereich: $0\leq y\leq \pi$
+\item Symmetrie: punktsymmetrisch zu $\left(0; \dfrac{\pi}{2}\right)$
+\item Monotonie: streng monoton fallend
+\item Nullstellen: $x_N=1$
+\item Ableitung: $-\dfrac{\text{d}}{\text{d}x}\arcsin\left(x\right)=-\dfrac{1}{\sqrt{1-x^2}}$
+\item Stammfunktion: $\displaystyle \int \arccos\left(\dfrac{x}{a}\right)\text{d}x=x\arccos\left(\dfrac{x}{a}\right)-\sqrt{a^2-x^2}+C$
+\end{enumerate} 
+\subsection{Die Arkustangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\arctan\left(x\right)}
+\end{equation}
+Die Arkustangensfunktion ist die Umkehrfunktion der Tangensfunktion. Der Arkustangens liefert nur Winkel aus dem 1. und 4. Quadrant. Folgende sind Eigenschaften der Arkustangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty \leq x \leq \infty$
+\item Wertebereich: $-\dfrac{\pi}{2}\leq y\leq \dfrac{\pi}{2}$
+\item Symmetrie: ungerade
+\item Monotonie: streng monoton wachsend
+\item Asymptoten: $y=\pm\dfrac{\pi}{2}$ 
+\item Nullstellen: $x_N=0$
+\item Ableitung: $\dfrac{1}{1+x^2}=\cos^2\left(\arctan\left(x\right)\right)$
+\item Stammfunktion: $\displaystyle \int \arctan\left(\dfrac{x}{a}\right)\text{d}x=x\arctan\left(\dfrac{x}{a}\right)-\dfrac{a}{2}\ln{a^2+x^2}+C$
+\end{enumerate} 
+\subsection{Die Arkuskotangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\arccot\left(x\right)}
+\end{equation}
+Die Arkuskotangensfunktion ist die Umkehrfunktion der Kotangensfunktion. Der Arkuskotangens liefert nur Winkel aus dem 1. und 2. Quadrant. Folgende sind Eigenschaften der Arkuskotangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty \leq x \leq \infty$
+\item Wertebereich: $0\leq y\leq \pi$
+\item Symmetrie: punktsymmetrisch zu $\left(0; \dfrac{\pi}{2}\right)$
+\item Monotonie: streng monoton fallend
+\item Asymptoten: $y=0$ und $y=\pi$ 
+\item Nullstellen: keine
+\item Ableitung: $-\dfrac{\text{d}}{\text{d}x}\arcsin\left(x\right)=\dfrac{1}{1+x^2}=-\sin^2\left(\arccot\left(x\right)\right)$
+\item Stammfunktion: $\displaystyle \int \arccot\left(\dfrac{x}{a}\right)\text{d}x=x\arccot\left(\dfrac{x}{a}\right)+\dfrac{a}{2}\ln{a^2+x^2}+C$
+\end{enumerate} 
+\subsection{Beziehungen}
+\subsubsection{Beziehungen des negativen Arguments}
+\begin{enumerate}[$(a)$]
+\item $\arcsin\left(-x\right)=-\arcsin\left(x\right)$
+\item $\arccos\left(-x\right)=\pi-\arccos\left(x\right)$
+\item $\arctan\left(-x\right)=-\arctan\left(x\right)$
+\item $\arccot\left(-x\right)=\pi-\arccot\left(x\right)$
+\end{enumerate}
+\subsubsection{Beziehungen der Additionstheoreme}
+\begin{enumerate}[$(a)$]
+\item $\arcsin\left(x\right)+\arccos\left(x\right)=\dfrac{\pi}{2}$
+\item $\arctan\left(x\right)+\arccot\left(x\right)=\dfrac{\pi}{2}$
+\item $\arctan\left(\dfrac{1}{x}\right)=\left\{\begin{array}{l}\pi/2-\arctan\left(x\right),\quad x>0\\-\pi/2-\arctan\left(x\right),\quad x<0\end{array}\right\}$
+\item $\arctan\left(x\right)+\arctan\left(y\right)=\arctan\left(\dfrac{x+y}{1-xy}\right)+\left\{\begin{array}{l}\pi,\quad xy>1,x>0\\0,\quad xy<1\\-\pi,\quad xy>1, x<0\end{array}\right\}$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exponentialfunktionen}
+\subsection{Definition der Exponentialfunktion}
+\subsubsection{Die e-Fnuktion}
+\begin{equation}
+\boxed{f\left(x\right)=e^x,\quad -\infty <x <\infty}\quad \boxed{e=\displaystyle \lim_{n\rightarrow \infty}\left(1+\dfrac{1}{n}\right)^n=2,718281\dotso}
+\end{equation}
+Die exponentialfunktion hat die Eulersche Basis $e$. Die Funktion ist streng monoton wachsend.
+\subsubsection{Die allgemeine Exponentialfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=a^x=e^{\lambda x},\quad \lambda = \ln\left(a\right),\quad -\infty < x < \infty,\quad a>0,\quad a\neq 1}
+\end{equation}
+Die allgemeine Exponentialfunktion hat die Basis $a$. Folgende sind Eigenschaften der allgemeine Exponentialfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty < x < \infty$
+\item Wertebereich: $0 < x < \infty$
+\item Nullstellen: keine
+\item Monotonie für $\lambda > 0$ bzw. $a>1$: streng monoton wachsend
+\item Monotonie für $\lambda < 0$ bzw. $0<a<1$: streng monoton fallend
+\item Asymptote: $y=0$ ($x$-Achse)
+\item Fall $f\left(0\right)=1$: Alle Kurven schneiden die $y$-Achse bei $y=1$
+\item Fall $f\left(x\right)=a^{-x}$: Spiegelung an der $y$-Achse
+\end{enumerate}
+\subsection{Spezielle Exponentialfunktionen}
+\subsubsection{Abklingfunktion}
+\begin{equation}
+\boxed{f\left(t\right)=a\cdot e^{-\lambda t}+b=a\cdot e^{-t/\tau}+b,\quad \lambda=\dfrac{1}{\tau}}
+\end{equation}
+Die Abklingfunktion ist eine streng monoton fallend Funktion. Sie hat eine waagrechte Asymptote für $t\rightarrow \infty$ bei $f\left(t\right)=b$ und hat eine Tangente in $t=0$ und schneidet die Asymptote an der Stelle $\tau=1/\lambda$.
+\subsubsection{Sättigungsfunktion}
+\begin{equation}
+\boxed{f\left(t\right)=a\cdot \left(1-e^{-\lambda t}\right)+b=a\cdot \left(1-e^{-t/\tau}\right)+b,\quad \lambda=\dfrac{1}{\tau}}
+\end{equation}
+Die Sättigungsfunktion ist eine streng monoton wachsende Funktion. Sie hat eine Asymptote für $t\rightarrow \infty$ bei $f\left(t\right)=a+b$. Die Tangente in $t=0$ schneidet die Asymptoten an der Stelle $\tau=1/\lambda.$
+\subsubsection{Wachstumsfunktion}
+\begin{equation}
+\boxed{f\left(t\right)=f_0\cdot e^{\alpha t},\quad t\geq 0}
+\end{equation}
+Die Wachstumsfunktion ist für $f_0>0$ den Anfangsbestand zur Zeit $t=0$ und $\alpha>0$ die Wachstumsrate
+\subsubsection{Gauss-Funktion oder Gausssche Glockenkurve}
+\begin{equation}
+\boxed{f\left(t\right)=a\cdot e^{-b\cdot \left(x-x_0\right)^2}}
+\end{equation}
+Die Gausssche Glockenkurve hat ein Maximumstelle bei $x_0$: $f\left(x_0\right)=a$. Sie hat eine Symmetrieachse bei $x=x_0$ und ist eine Parallele zur $y$-Achse durch das Maximum. Die Asymptote im Unendlichen ist die $x$-Achse
+\subsubsection{Kettenlinie}
+\begin{equation}
+\boxed{f\left(x\right)=a\cdot \cosh\left(\dfrac{x}{a}\right)=\dfrac{a}{2}\left(e^{x/a}+e^{-x/a}\right)}
+\end{equation}
+Eine an zwei Punkten $P_1$ und $P_2$ befestigte freihängende Kette nimmt unter dem Einfluss der Schwerpkraft die geometrische Form einer Kettenlinie an für $a>0$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Logarithmusfunktionen}
+\subsection{Definition der Logarithmusfunktionen}
+\begin{equation}
+\boxed{f\left(x\right)=\log_a\left(x\right)}
+\end{equation}
+Die Logarithmusfunktionen sind die Umkehrfunktionen der Exponentialfunktionen $f\left(x\right)=a^x$ für $a>0$ und $a\neq 1$. Folgende sind Eigenschjaften der allgemeinen Logarithmusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $x>0$
+\item Wertebereich: $-\infty < y < \infty$
+\item Nullstellen: $x_N=1$
+\item Monotonie für $0<a<1$: streng monoton fallend 
+\item Monotonie für $a>1$: streng monoton wachsend 
+\item Asymptote: $x=0$ ($y$-Achse)
+\item Für jede zulässige Basis $a$ gilt: $\log_a1=0$, $\log_aa=1$
+\item Die Funktionskurve der Logarithmusfunktion erhält man durch Spiegelung der Exponentialfunktion an der 1. Winkelhalbierenden.
+\end{enumerate}
+\subsection{Spezielle Logarithmusfunktion}
+\subsubsection{Natürlicher Logarithmus}
+\begin{equation}
+\boxed{f\left(x\right)=\log_ex\equiv \ln\left(x\right),\quad x>0}
+\end{equation}
+\subsubsection{Zehnerlogarithmus: Dekadischer oder Briggscher Logarithmus, $a=10$}
+\begin{equation}
+\boxed{f\left(x\right)=\log_{10}x\equiv \lg\left(x\right),\quad x>0}
+\end{equation}
+\subsubsection{Zweierlogarithmus: Binärlogarithmus, $a=2$}
+\begin{equation}
+\boxed{f\left(x\right)=\log_{2}x\equiv \text{lb}\left(x\right),\quad x>0}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hyperbelfunktionen}
+\subsection{Die Sinushyperbolicusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\sinh\left(x\right)=\dfrac{e^x-e^{-x}}{2}}
+\end{equation}
+Folgende sind Eigenschaften der Sinushyperbolicusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty<x<\infty$
+\item Wertebereich: $-\infty<y<\infty$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=0$
+\item Extremwerte: keine
+\item Monotonie: streng monoton wachsend
+\end{enumerate}
+\subsection{Die Kosinushyperbolicusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\cosh\left(x\right)=\dfrac{e^x+e^{-x}}{2}}
+\end{equation}
+Folgende sind Eigenschaften der Kosinushyperbolicusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty<x<\infty$
+\item Wertebereich: $1\leq y<\infty$
+\item Symmetrie: gerade
+\item Nullstellen: keine
+\item Extremwerte: $x_{\text{min}}=0$
+\item Monotonie: keine
+\end{enumerate}
+\subsection{Die Tangenshyperbolicusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\tanh\left(x\right)=\dfrac{e^x-e^{-x}}{e^x+e^{-x}}}
+\end{equation}
+Folgende sind Eigenschaften der Tangenshyperbolicusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty<x<\infty$
+\item Wertebereich: $1< y<1$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=0$
+\item Polstellen: keine
+\item Monotonie: streng monoton wachsend
+\item Asymptoten: $y=\pm 1$ 
+\end{enumerate}
+\subsection{Die Kotangenshyperbolicusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\coth\left(x\right)=\dfrac{e^x+e^{-x}}{e^x-e^{-x}}}
+\end{equation}
+Folgende sind Eigenschaften der Kotangenshyperbolicusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $\Big\vert x\Big\vert>0$
+\item Wertebereich: $\Big\vert y\Big\vert>1$
+\item Symmetrie: ungerade
+\item Nullstellen: keine
+\item Polstellen: $x_P=0$
+\item Monotonie: keine
+\item Asymptoten: $x=0$ und $y=\pm 1$ 
+\end{enumerate}
+\subsection{Beziehungen}
+\subsubsection{Beziehungen zwischen Hyperbolicusfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\cosh^2\left(x\right)+\sinh^2\left(x\right)=1$
+\item $\tanh\left(x\right)=\dfrac{\sinh\left(x\right)}{\cosh\left(x\right)}$
+\item $\coth\left(x\right)=\dfrac{\cosh\left(x\right)}{\sinh\left(x\right)}=\dfrac{1}{\tanh\left(x\right)}$
+\end{enumerate}
+\subsubsection{Umrechnungen zwischen Hyperbolicusfunktionen}
+Folgende Eigenschaften gelten für $x\geq 0$ für oberes Vorzeichen und für $x<0$ für unteres Vorzeichen.
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x\right)=\pm\sqrt{\cosh^2\left(x\right)-1}=\dfrac{\tanh\left(x\right)}{\sqrt{1-\tanh^2\left(x\right)}}=\pm\dfrac{1}{\sqrt{\coth^2\left(x\right)-1}}$
+\item $\cosh\left(x\right)=\sqrt{\sinh^2\left(x\right)+1}=\dfrac{1}{\sqrt{1-\tanh^2\left(x\right)}}=\pm\dfrac{\coth\left(x\right)}{\sqrt{\coth^2\left(x\right)-1}}$
+\item $\tanh\left(x\right)=\dfrac{\sinh\left(x\right)}{\sqrt{\sinh^2\left(x\right)+1}}=\pm\dfrac{{\sqrt{\cosh^2\left(x\right)-1}}}{\cosh\left(x\right)}=\dfrac{1}{\coth\left(x\right)}$
+\item $\coth\left(x\right)=\dfrac{\sqrt{\sinh^2\left(x\right)+1}}{\sinh\left(x\right)}=\pm\dfrac{\cosh\left(x\right)}{{\sqrt{\cosh^2\left(x\right)-1}}}=\dfrac{1}{\tanh\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen mit negativen Argumenten}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(-x\right)=-\sinh\left(x\right)$
+\item $\cos\left(-x\right)=\cosh\left(x\right)$
+\item $\tanh\left(-x\right)=-\tanh\left(x\right)$
+\item $\coth\left(-x\right)=-\coth\left(x\right)$
+\end{enumerate}
+\subsubsection{Beziehungen mit dem pythagorischen Hyperbolicus}
+\begin{enumerate}[$(a)$]
+\item $\cosh^2\left(x\right)-\sinh^2\left(x\right)=1$
+\item $\tanh\left(x\right)=\dfrac{\sinh\left(x\right)}{\cosh\left(x\right)}$
+\item $\coth\left(x\right)=\dfrac{\cosh\left(x\right)}{\sinh\left(x\right)}=\dfrac{1}{\tanh\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen der Summe zweier Argumenten}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x_1\pm x_2\right)=\sinh\left(x_1\right)\cdot \cosh\left(x_2\right)\pm\cosh\left(x_1\right)\cdot \sinh\left(x_2\right)$
+\item $\cosh\left(x_1\pm x_2\right)=\cosh\left(x_1\right)\cdot \cosh\left(x_2\right)\pm \sinh\left(x_1\right)\cdot \sinh\left(x_2\right)$
+\item $\tanh\left(x_1\pm x_2\right)=\dfrac{\tanh\left(x_1\right)\pm \tanh\left(x_2\right)}{1\pm \tanh\left(x_1\right)\cdot \tanh\left(x_2\right)}$
+\item $\coth\left(x_1\pm x_2\right)=\dfrac{1\pm \coth\left(x_1\right)\cdot \coth\left(x_2\right)}{\coth\left(x_1\right)\pm \coth\left(x_2\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen der Verdoppelung des Arguments}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(2x\right)=2\sinh\left(x\right)\cosh\left(x\right)$
+\item $\cosh\left(2x\right)=\sinh^2\left(x\right)+\cosh^2\left(x\right)$
+\item $\tanh\left(2x\right)=\dfrac{2\tanh\left(x\right)}{1+\tanh^2\left(x\right)}$
+\item $\coth\left(2x\right)=\dfrac{\coth^2\left(x\right)+1}{2\coth\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen der Verdreifachung des Arguments}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(3x\right)=3\sinh\left(x\right)+4\sinh^3\left(x\right)$
+\item $\cosh\left(3x\right)=4\cosh^3\left(x\right)-3\cosh\left(x\right)$
+\item $\tanh\left(3x\right)=\dfrac{3\tanh\left(x\right)+\tanh^3\left(x\right)}{1+3\tanh^2\left(x\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen für $n$-fache Argumente}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(nx\right)=\displaystyle \binom{n}{1}\cosh^{n-1}\left(x\right)\sinh\left(x\right)+\displaystyle \binom{n}{3}\cosh^{n-3}\left(x\right)\sinh^3\left(x\right)+\displaystyle \binom{n}{5}\cosh^{n-5}\left(x\right)\sinh^5\left(x\right)+\dotso$
+\item $\cosh\left(nx\right)=\cosh^{n}\left(x\right)+\displaystyle \binom{n}{2}\cosh^{n-2}\left(x\right)\sinh^2\left(x\right)+\displaystyle \binom{n}{4}\cosh^{n-4}\left(x\right)\sinh^4\left(x\right)+\dotso$
+\end{enumerate}
+\subsubsection{Beziehungen der Hälfte des Arguments}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{\cosh\left(x\right)-1}{2}}$
+\item $\cosh\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{\cosh\left(x\right)+1}{2}}$
+\item $\tanh\left(\dfrac{x}{2}\right)=\pm\sqrt{\dfrac{\cosh\left(x\right)-1}{\cosh\left(x\right)+1}}=\dfrac{\sinh\left(x\right)}{\cosh\left(x\right)+1}$
+\item $\coth\left(2x\right)=\pm\sqrt{\dfrac{\cosh\left(x\right)+1}{\cosh\left(x\right)-1}}=\dfrac{\sinh\left(x\right)}{\cosh\left(x\right)-1}$
+\end{enumerate}
+\subsubsection{Beziehungen der Additionstheoreme}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x_1\right)+\sinh\left(x_2\right)=2\sinh\left(\dfrac{x_1+x_2}{2}\right)\cosh\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\sinh\left(x_1\right)-\sinh\left(x_2\right)=2\cosh\left(\dfrac{x_1+x_2}{2}\right)\sinh\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\cosh\left(x_1\right)+\cosh\left(x_2\right)=2\cosh\left(\dfrac{x_1+x_2}{2}\right)\cosh\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\cosh\left(x_1\right)-\cosh\left(x_2\right)=2\sinh\left(\dfrac{x_1+x_2}{2}\right)\sinh\left(\dfrac{x_1-x_2}{2}\right)$
+\item $\tanh\left(x_1\right)\pm\tanh\left(x_2\right)=\dfrac{\sinh\left(x_1\pm x_2\right)}{\cosh\left(x_1\right)\cosh\left(x_2\right)}$
+\item $\coth\left(x_1\right)\pm\coth\left(x_2\right)=\dfrac{\sinh\left(x_1\pm x_2\right)}{\sinh\left(x_1\right)\sinh\left(x_2\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen der Produkttheoreme}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x_1\right)\cdot \sinh\left(x_2\right)=\dfrac{1}{2}\Big[\cosh\left(x_1+x_2\right)-\cosh\left(x_1-x_2\right)\Big]$
+\item $\sinh\left(x_1\right)\cdot\cosh\left(x_2\right)=\dfrac{1}{2}\Big[\sinh\left(x_1+x_2\right)+\sinh\left(x_1-x_2\right)\Big]$
+\item $\cosh\left(x_1\right)\cdot \cosh\left(x_2\right)=\dfrac{1}{2}\Big[\cosh\left(x_1+x_2\right)+\cosh\left(x_1-x_2\right)\Big]$
+\item $\tanh\left(x_1\right)\cdot \tanh\left(x_2\right)=\dfrac{\tanh\left(x_1\right)+\tanh\left(x_2\right)}{\coth\left(x_1\right)+\coth\left(x_2\right)}$
+\end{enumerate}
+\subsubsection{Beziehungen der komplexen Fall}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(iy\right)=i\cdot \sinh\left(y\right)$ 
+\item $\cosh\left(iy\right)=\cosh\left(y\right)$ 
+\item $\tanh\left(iy\right)=i\cdot \tanh\left(y\right)$ 
+\item $\coth\left(iy\right)=-i\cdot \coth\left(y\right)$ 
+\item $\Big(\cosh\left(x\right)\pm \sinh\left(x\right)\Big)^n=\cosh\left(nx\right)\pm \sinh\left(nx\right)=e^{\pm nx}$
+\end{enumerate}
+\subsubsection{Beziehungen der komplexen Argumente}
+\begin{enumerate}[$(a)$]
+\item $\sinh\left(x\pm i\cdot y\right)=\sinh\left(x\right)\cdot \cosh\left(iy\right)\pm\cosh\left(x\right)\cdot \sinh\left(iy\right)$
+\item $\cosh\left(x\pm i\cdot y\right)=\cosh\left(x\right)\cdot \cosh\left(iy\right)\pm \sinh\left(x\right)\cdot \sinh\left(iy\right)$
+\item $\tanh\left(x\pm iy\right)=\dfrac{\tanh\left(x\right)\pm \tanh\left(iy\right)}{1\pm \tanh\left(x\right)\cdot \tanh\left(iy\right)}$
+\item $\coth\left(x\pm iy\right)=\dfrac{1\pm \coth\left(x\right)\cdot \coth\left(iy\right)}{\coth\left(x\right)\pm \coth\left(iy\right)}$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Areafunktionen}
+\subsection{Die Areasinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\text{Arsinh}\left(x\right)=\ln\left(x+\sqrt{x^2+1}\right)}
+\end{equation}
+Folgende sind Eigenschaften der Areasinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-\infty < x < \infty$
+\item Wertebereich: $-\infty < y < \infty$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=0$
+\item Monotonie: streng monoton wachsend 
+\end{enumerate}
+\subsection{Die Areakosinusfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\text{Arcosh}\left(x\right)=\ln\left(x+\sqrt{x^2+1}\right)}
+\end{equation}
+Folgende sind Eigenschaften der Areakosinusfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $x\geq 1$
+\item Wertebereich: $y \geq 0$
+\item Symmetrie: keine
+\item Nullstellen: $x_N=1$
+\item Monotonie: streng monoton wachsend 
+\end{enumerate}
+\subsection{Die Areatangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\text{Artanh}\left(x\right)=\dfrac{1}{2}\cdot \ln\left(\dfrac{1+x}{1-x}\right)}
+\end{equation}
+Folgende sind Eigenschaften der Areatangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $-1<x<1$
+\item Wertebereich: $-\infty<y<\infty$
+\item Symmetrie: ungerade
+\item Nullstellen: $x_N=0$
+\item Polstellen: $x_P=\pm 1$
+\item Monotonie: streng monoton wachsend
+\item Asymptoten: $x=\pm 1$ 
+\end{enumerate}
+\subsection{Die Areakotangensfunktion}
+\begin{equation}
+\boxed{f\left(x\right)=\text{Arcoth}\left(x\right)=\dfrac{1}{2}\cdot \ln\left(\dfrac{x+1}{x-1}\right)}
+\end{equation}
+Folgende sind Eigenschaften der Areakotangensfunktion
+\begin{enumerate}[$(a)$]
+\item Definitionsbereich: $\Big\vert x\Big\vert> 1$
+\item Wertebereich: $\Big\vert y\Big\vert>0$
+\item Symmetrie: ungerade
+\item Nullstellen: keine
+\item Polstellen: $x_P=\pm 1$
+\item Monotonie: keine
+\item Asymptoten: $x=\pm 1$ und $y=0$ ($x$-Achse) 
+\end{enumerate}
+\subsection{Beziehungen}
+\subsubsection{Umrechnungen zwischen der Areafunktionen}
+Folgende Beziehungen gelten für oberes Vorzeichen für $x>0$ und für unteres Vorzeichen für $x<0$ 
+\begin{enumerate}[$(a)$]
+\item $\text{Arsinh}\left(x\right)=\pm\text{Arcosh}\left(\sqrt{x^2+1}\right)=\text{Artanh}\left(\dfrac{x}{\sqrt{x^2+1}}\right)=\text{Arcoth}\left(\dfrac{\sqrt{x^2+1}}{x}\right)$
+\item $\text{Arcosh}\left(x\right)=\text{Arsinh}\left(\sqrt{x^2-1}\right)=\text{Artanh}\left(\dfrac{\sqrt{x^2-1}}{x}\right)=\text{Arcoth}\left(\dfrac{x}{\sqrt{x^2+1}}\right)$
+\item $\text{Artanh}\left(x\right)=\text{Arsinh}\left(\dfrac{x}{\sqrt{1-x^2}}\right)=\pm\text{Arcosh}\left(\dfrac{1}{\sqrt{1-x^2}}\right)=\text{Arcoth}\left(\dfrac{1}{x}\right)$
+\item $\text{Arcoth}\left(x\right)=\text{Arsinh}\left(\dfrac{1}{\sqrt{x^2-1}}\right)=\pm\text{Arcosh}\left(\dfrac{x}{\sqrt{x^2-1}}\right)=\text{Artanh}\left(\dfrac{1}{x}\right)$
+\end{enumerate}
+\subsubsection{Beziehungen der Additionstheoreme}
+\begin{enumerate}[$(a)$]
+\item $\text{Arsinh}\left(x_1\right)+\text{Arsinh}\left(x_2\right)=\text{Arsinh}\left(x_1\cdot \sqrt{1+x_2^2}\pm x_2\cdot \sqrt{1+x_1^2}\right)$
+\item $\text{Arcosh}\left(x_1\right)+\text{Arcosh}\left(x_2\right)=\text{Arcosh}\left(x_1\cdot x_2\pm \sqrt{\left(x_1^2-1\right)\cdot \left(x_2^2-1\right)}\right)$
+\item $\text{Artanh}\left(x_1\right)+\text{Artanh}\left(x_2\right)=\text{Artanh}\left(\dfrac{x_1\pm x_2}{1\pm x_1\cdot x_2}\right)$
+\item $\text{Arcoth}\left(x_1\right)+\text{Arcoth}\left(x_2\right)=\text{Arcoth}\left(\dfrac{1\pm x_1\cdot x_2}{x_1\pm x_2}\right)$
+\end{enumerate}

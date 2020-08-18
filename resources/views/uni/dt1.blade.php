@@ -25,4 +25,9 @@
 <p><b>Empfohlene Vorkenntnisse:</b> Konvergenz Elektronik (konvE)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote</p>
 <div class="col"><hr></div>
-<p><b>Zusammenfassung:</b> <a href="docs/ELEKTROTECHNIK/DIGITALTECHNIK/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> DIGiTALTECHNIK I</a></p>
+<p><b>Zusammenfassung der Digitaltechnik:</b>
+<p>
+    <object data="uni/DIGITALTECHNIK/ZUSAMMENFASSUNG/index/index.pdf" style="width:100%;height:540px">
+        <a href="uni/DIGITALTECHNIK/ZUSAMMENFASSUNG/index/index.pdf">Laden</a>
+    </object>
+</p>

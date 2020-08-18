@@ -1,0 +1,790 @@
+\section{Darstellungsformen einer komplexe Zahlen}
+\subsection{Die Kartesische Form}
+Eine komplexe Zahl $z$ lässt sich in der Gaussschen Zahlenebene durch einen Bildpunkt $P\left(z\right)$ oder durch einen vom Koordinatenursprung $O$ zum Bildpunkt $P\left(z\right)$ gerichteten Zeiger bildlich darstellen. Die komplexe Zahl besteht aus einem reellen $\text{Re}\left(z\right)=a$, einem imaginären Anteil $\text{Im}\left(z\right)=b$ und eine imaginäre Einheit $\text{j}^2=-1$. Die Menge ist $\mathbb{C}=\left\{z\,\vert\, z=a+\text{j}b\quad\,\text{ mit }a,b\in \mathbb{R}\right\}$
+\begin{equation}
+\boxed{z=a+\text{j}\,b}
+\end{equation}
+Die Länge des Zeigers heisst Betrag $\Big\vert z\Big\vert$ der komplexen Zahl $z$.
+\begin{equation}
+\boxed{\Big\vert z\Big\vert=\sqrt{a^2+b^2}}
+\end{equation}
+Zwei komplexe Zahlen $z_1$ und $z_2$ sind genau gleich, $z_1=z_2$, wenn ihre Bildpunkte zusammenfallen, d.h. $a_1=a_2$ und $b_1=b_2$ ist.
+\newline\newline
+Die zu $z$ konjugiert komplexe Zahl $\overline{z}$ liegt spiegelsymmetrisch zur rellen Achse. Die komplexe Zahl $z$ und ihre konjugiert $\overline{z}$ unterscheiden sich in ihrem Imaginärteil durch das Vorzeichen.
+\begin{equation}
+\boxed{\overline{z}=\overline{a+\text{j}b}=a-\text{j}b}
+\end{equation}
+Somit gelten folgende Ausdrücke
+\begin{enumerate}[$(i)$]
+\item $\text{Re}\left(\overline{z}\right)=\text{Re}\left(z\right)=a$
+\item $\Big\vert \overline{z}\Big\vert=\Big\vert z\Big\vert$
+\item $\overline{\left(\overline{z}\right)}=z$
+\item Gilt $\overline{z}=z$, so ist $z$ reell
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Die Polarform}
+In der Polarform erfolgt die Darstellung einer komplexen Zahl durch die Polarkoordinaten $r$ und $\varphi$. Man beschränkt sich auf $\left[0,2\pi\right)$.
+\begin{equation}
+\boxed{r=\sqrt{a^2+b^2}}\quad \boxed{\varphi=\arctan\left(\dfrac{b}{a}\right)+\left\{\begin{array}{l}+0,\quad \text{(I)}\\+\pi,\quad \text{(II, III)}\\+2\pi,\quad \text{(IV)}\end{array}\right\}}
+\end{equation}
+Die \textbf{goniometrische Form} besteht aus dem Betrag und dem Argument von $z$. Die entsprechende konjugiert komplexe Zahl ist
+\begin{equation}
+\boxed{z=r\cdot \Big(\cos\left(\varphi\right)+\text{j}\sin\left(\varphi\right)\Big)}\quad
+\boxed{\overline{z}=r\cdot \Big(\cos\left(\varphi\right)-\text{j}\sin\left(\varphi\right)\Big)}
+\end{equation}
+Die \textbf{Exponentialform} besteht aus dem Betrag und dem Argument von $z$. Die entsprechende konjugierte komplexe Zahl ist
+\begin{equation}
+\boxed{z=r\cdot e^{\text{j}\varphi}}\quad
+\boxed{\overline{z}=r\cdot e^{-\text{j}\varphi}}
+\end{equation}
+Somit ergeben sich folgende Beziehungen
+\begin{equation}
+\boxed{e^{\text{j}\varphi}=\cos\left(\varphi\right)+\text{j}\sin\left(\varphi\right)}\quad \boxed{e^{-\text{j}\varphi}=\cos\left(\varphi\right)-\text{j}\sin\left(\varphi\right)}
+\end{equation}
+\section{Grundrechenarten für komplexe Zahlen}
+\subsection{Addition und Subtraktion komplexer Zahlen}
+Zwei komplexe Zahlen werden addiert bzw. subtrahiert, indem man ihre Real- und Imaginärteil (jeweils für sich getrennt) addiert bzw. subtrahiert. Addition und Subtraktion sind nur in der karteischen Form durchführbar. Geometrisch entspricht dem Parallelogramregel der Vektorrechnung.
+\begin{equation}
+\boxed{\begin{array}{lll}
+z_1\pm z_2&=&\left(a_1+ \text{j}b_1\right)\pm \left(a_2+ \text{j}b_2\right)\\
+&=&\left(a_1\pm a_2\right)+\text{j}\left(b_1\pm b_2\right)
+\end{array}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $z_1+z_2=z_2+z_1$
+\item $z_1+\left(z_2+z_3\right)=\left(z_1+z_2\right)+z_3$
+\end{enumerate}
+\subsection{Multiplikation komplexer Zahlen}
+Die Multiplikation in \textbf{kartesische Form} erfolgt, indem jeder Summand der ersten Klammer mit jedem Summand der zweiter Klammer unter Beachtung von $\text{j}^2=-1$ multipliziert. Geometrisch erfolgt eine Drehung im Gegenuhrzeigersinn falls $\varphi_2>0$ und im Uhrzeigersinn falls $\varphi_2<0$ und eine Streckung um den Faktor $r_2$.
+\begin{equation}
+\boxed{\begin{array}{lll}
+z_1\cdot z_2&=&\left(a_1+\text{j}b_1\right)\cdot \left(a_2+\text{j}b_2\right)\\
+&=&\left(a_1a_2-b_1b_2\right)+\text{j}\left(a_1b_2+a_2b_1\right)
+\end{array}}
+\end{equation}
+Die Multiplikation in \textbf{Polarform} erfolgt, indem man ihre Beträge multipliziert und die Argumente addiert.
+\begin{equation}
+\boxed{\begin{array}{lll}
+z_1\cdot z_2&=&\Big[r_1\Big(\cos\left(\varphi_1\right)+\text{j}\sin\left(\varphi_1\right)\Big)\Big]\cdot r_2\Big(\cos\left(\varphi_2\right)+\text{j}\sin\left(\varphi_2\right)\Big)\Big]\\
+&=&\left(r_1r_2\right)\cdot \Big[\cos\left(\varphi_1+\varphi_2\right)+\text{j}\sin\left(\varphi_1+\varphi_2\right)\Big]
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{\begin{array}{lll}
+z_1\cdot z_2&=&\Big(r_1\cdot e^{\text{j}\varphi_1}\Big)\cdot \Big(r_2\cdot e^{\text{j}\varphi_2}\Big)\\
+&=&\left(r_1r_2\right)\cdot e^{\text{j}\left(\varphi_1+\varphi_2\right)}
+\end{array}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $z_1z_2=z_2z_1$
+\item $z_1\left(z_2z_3\right)=\left(z_1z_2\right)z_3$
+\item $z_1\left(z_2+z_3\right)=z_1z_2+z_1z_3$
+\item $z\cdot \overline{z}=a^2+b^2=\Big\vert z\Big\vert^2\Longrightarrow \Big\vert z\Big\vert=\sqrt{z\cdot \overline{z}}$
+\item $\text{j}^{4n}=1,\quad \text{j}^{4n+1}=\text{j},\quad \text{j}^{4n+2}=-1,\quad \text{j}^{4n+3}=-\text{j}\quad \left(n\in \mathbb{Z}\right)$
+\end{enumerate}
+\subsection{Division komplexer Zahlen}
+Zähler und Nenner des Quotienten  werden zunächst mit dem konjugiert komplexen Nenner, d.h. der Zahl $\overline{z}_2$ multipliziert, dadurch wird der Nenner reell. Geometrisch erfährt $z_1$ eine Zurückdrehung im Uhrzeigersinn falls $\varphi_2>0$ und im Gegenuhrzeigersinn falls $\varphi_2<0$ und eine Streckung um den Faktor $1/r_2$.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\dfrac{z_1}{z_2}&=&\dfrac{a_1+\text{j}b_1}{a_2+\text{j}b_2}=\dfrac{\left(a_1+\text{j}b_1\right)\cdot \left(a_2+\text{j}b_2\right)}{\left(a_2+\text{j}b_2\right)\cdot \left(a_2+\text{j}b_2\right)}\\\\
+&=&\dfrac{a_1a_2+b_1b_2}{a_2^2+b_2^2}+\text{j}\dfrac{a_2b_1-a_1b_2}{a_2^2+b_2^2}
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\dfrac{z_1}{z_2}&=&\dfrac{r_1\Big[\cos\left(\varphi_1\right)+\text{j}\sin\left(\varphi_1\right)\Big]}{r_2\Big[\cos\left(\varphi_2\right)+\text{j}\sin\left(\varphi_2\right)\Big]}\\
+&=&\left(\dfrac{r_1}{r_2}\right)\cdot \Big[\cos\left(\varphi_1-\varphi_2\right)+\text{j}\sin\left(\varphi_1-\varphi_2\right)\Big]
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{\begin{array}{lll}
+\dfrac{z_1}{z_2}&=&\dfrac{r_1\cdot e^{\text{j}\varphi_1}}{r_2\cdot e^{\text{j}\varphi_2}}=\left(\dfrac{r_1}{r_2}\right)\cdot e^{\text{j}\left(\varphi_1-\varphi_2\right)}\end{array}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\dfrac{1}{z}=\dfrac{1}{r\cdot e^{\text{j}\varphi}}=\left(\dfrac{1}{r}\right)\cdot e^{-\text{j}\varphi}$
+\item $\dfrac{1}{z}=\dfrac{1}{a+\text{j}b}=\dfrac{a}{a^2+b^2}-\text{j}\dfrac{b}{a^2+b^2}$
+\item $\dfrac{1}{\text{j}}=-\text{j}$
+\end{enumerate}
+\section{Potenzieren komplexer Zahlen}
+\subsection{Die kartesische Form}
+In \textbf{kartesischer Form} ist das Potenzieren komplexer Zahlen nach dem binomischen Lehrsatz
+\begin{equation}
+\boxed{z^n=\left(a+\text{j}b\right)^n=a^n+\text{j}\displaystyle \binom{n}{1}a^{n-1}b+\text{j}^2\displaystyle\binom{n}{2}a^{n-2}b^2+\dotso+\text{j}^nb^n}
+\end{equation}
+\subsection{Die Polarform}
+In \textbf{Polarform} wird der Betrag in die $n$-te Potenz erhebt und ihr Argument mit dem Exponenten $n$ multipliziert
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z^n&=&\Big[r\cdot \Big(\cos\left(\varphi\right)+\text{j}\sin\left(\varphi\right)\Big)\Big]^n\\\\
+&=&r^n\cdot \Big[\cos\left(n\varphi\right)+\text{j}\sin\left(n\varphi\right)\Big]
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z^n&=&\Big[r\cdot e^{\text{j}\varphi}\Big]^n=r^n\cdot e^{\text{j}n\varphi}
+\end{array}
+}
+\end{equation}
+\section{Radizieren komplexer Zahlen}
+Eine komplexe Zahl $z$ heisst eine $n$-te Wurzel aus $a$, wenn sie der algebraischen Gleichung $z^n=a$ genügt $\left(a\in\mathbb{C};\quad n\in \mathbb{N}^*\right)$.
+\newline\newline
+Eine algebraische Gleichung $n$-ten Grades von folgendem Typ besitzt in der Menge $\mathbb{C}$ der komplexen Zahlen stets genau $n$ Lösungen. Bei ausschliesslich reellen koeffizienten $a_i$ treten komplexe Lösungen immer paarweise in Form konjugiert komplexer Zahlen auf.
+\begin{equation}
+\boxed{a_nz^n+a_{n-1}z^{n-1}+\dotso + a_1z+a_0=0,\quad \left(a_i:\,\text{reell oder komplex}\right)}
+\end{equation}
+Die $n$ Wurzeln der Gleichung $z^n=a=a_0\cdot e^{\text{j}\varphi}$ mit $a_0>0$ und $n\in \mathbb{N}^*$ lauten
+\begin{equation}
+\boxed{z_k=\sqrt[n]{a_0}\cdot \Big[\cos\left(\dfrac{\alpha+k\,2\pi}{n}\right)+\text{j}\sin\left(\dfrac{\alpha+k\,2\pi}{n}\right)\Big],\quad \left(k=0,\,1,\dotso, n-1\right)}
+\end{equation}
+Der Hauptwert ist bei $k=0$ und für $k=1, 2, \dotso, n-1$ erhält man Nebenwerte. Die Winkel können auch mîm Gradmass angegeben werden.
+\newline\newline
+geometrisch liegen die zugehörige Bildpunkte aufdem Mittelpunktskreis mit dem Radius $R=\sqrt[n]{a_0}$ und bilden die Ecken eines regelmässigen $n$-Ecks.
+\newline\newline
+Die $n$ Lösungen der Gleichung $z^n=1$ heissen $n$-te Einheitswurzeln und lauten
+\begin{equation}
+\boxed{z^n=1\Longrightarrow z_k=\cos\left(\dfrac{k\,2\pi}{n}\right)+\text{j}\sin\left(\dfrac{k\,2\pi}{n}\right)=e^{\text{j}\dfrac{k\,2\pi}{n}}}
+\end{equation}
+\section{Logarithmieren komplexer Zahlen}
+Der natürliche Logarithmus einer komplexen Zahl
+\begin{equation}
+\boxed{z=r\cdot e^{\text{j}\varphi}=r\cdot e^{\text{j}\left(\varphi+k\,2\pi\right)},\quad \left(0\leq \varphi< 2\pi;\,k\in \mathbb{Z}\right)}
+\end{equation}
+ist unendlich vieldeutig, denn der Hauptwert des Winkels wird häufig auch im Intervall $-\pi<\varphi < \pi$
+\begin{equation}
+\boxed{\ln\left(z\right)=\ln\left(r\right)+\text{j}\left(\varphi+k\,2\pi\right),\quad \left(k\in \mathbb{Z}\right)}
+\end{equation}
+\section{Ortskurven}
+\subsection{Komplexwertige Funktion einer reellen Variablen}
+Die von einem reellen Parameter $t$ abhängige komplexe Zahl heisst komplexwertige Funktion $z\left(t\right)$ der reellen Variablen $t$.
+\begin{equation}
+\boxed{z=z\left(t\right)=x\left(t\right)+\text{j}y\left(t\right),\quad \left(a\leq z\leq b\right)}
+\end{equation}
+\subsection{Ortskurve einer parameterabhängigen komplexen Zahl}
+Die von einem parameterabhängigen komplexen Zeiger $\underline{z}=\underline{z}\left(t\right)$ in der Gaussschen Zahlenebene beschriebene Bahn heisst Ortskurve
+\begin{equation}
+\boxed{\underline{z}\left(t\right)=x\left(t\right)+\text{j}y\left(t\right)}
+\end{equation}
+\subsection{Inversion einer Ortskurve}
+Der Übergang von einer komplexen Zahl $z\neq 0$ zu ihrem Kehrwert $w=1/z$ heisst Inversion. Vorzeichenwechsel im Argument, Kehrwertbildung des Betrages von $z$. Geometrisch wird der Zeiger an der reellen Achse gespiegelt und dann gestreckt mit Faktor $1/r^2$.
+\begin{equation}
+\boxed{z=r\cdot e^{\text{j}\varphi}\rightarrow w=\dfrac{1}{z}=\left(\dfrac{1}{r}\right)\cdot e^{-\text{j}\varphi}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item Der Punkt mit dem kleinsten Abstand vom Nullpunkt führt zu dem Bildpunkt mit dem grössten Abstand und umgekehrt.
+\item Ein Punkt oberhalb der reellen Achse führt zu einem Bildpunkt unterhalb der reellen Achse und umgekehrt.
+\item Eine Gerade durch den Nullpunkt auf der $z$-Ebene erzeugt eine Gerade durch den Nullpunkt auf der $w$-Ebene.
+\item Eine Gerade, die nicht durch den Nullpunkt auf der $z$-Ebene geht, erzeugt einen Kreis durch den Nullpunkt auf der $w$-Ebene.
+\item Ein Mittelpunktskreis auf der $z$-Ebene erzeugt einen Mittelpunktskreis auf der $w$-Ebene.
+\item Ein Kreis durch den Nullpunkt auf der $z$-Ebene erzeugt eine Gerade, die nicht durch den Nullpunkt verläuft auf der $w$-Ebene.
+\item Ein Kreis, der nicht durch den Nullpunkt auf der $z$-Ebene verläuft erzeugt einen Kreis, der nicht durch den Nullpunkt verläuft, auf der $w$-Ebene.
+\end{enumerate}
+\section{Komplexe Funktionen}
+\subsection{Definition einer komplexen Funktion}
+Unter der komplexen Funktion versteht man eine Vorschrift, de jeder komplexen Zahl $z\in D$ genau eine komplexe Zahl $w\in W$ zuordnet. Symbolische Schreibweise sind $w=f\left(z\right)$. $D$ und $W$ sind Teilmengen von $\mathbb{C}$.
+\subsection{Definitionsgleichungen elementarer Funktionen}
+\subsubsection{Trigonometrische Funktionen}
+\begin{equation}
+\boxed{\sin\left(z\right)=z-\dfrac{z^3}{3!}+\dfrac{z^5}{5!}-\dotso}
+\quad
+\boxed{\cos\left(z\right)=1-\dfrac{z^2}{4!}+\dfrac{z^4}{4!}-\dotso}
+\end{equation}
+\begin{equation}
+\boxed{\tan\left(z\right)=\dfrac{\sin\left(z\right)}{\cos\left(z\right)}}
+\quad
+\boxed{\cot\left(z\right)=\dfrac{\cos\left(z\right)}{\sin\left(z\right)}=\dfrac{1}{\tan\left(z\right)}}
+\end{equation}
+\subsubsection{Hyperbelfunktionen}
+\begin{equation}
+\boxed{\sinh\left(z\right)=z+\dfrac{z^3}{3!}+\dfrac{z^5}{5!}-\dotso}
+\quad
+\boxed{\cosh\left(z\right)=1+\dfrac{z^2}{4!}+\dfrac{z^4}{4!}-\dotso}
+\end{equation}
+\begin{equation}
+\boxed{\tanh\left(z\right)=\dfrac{\sinh\left(z\right)}{\cosh\left(z\right)}}
+\quad
+\boxed{\coth\left(z\right)=\dfrac{\cosh\left(z\right)}{\sinh\left(z\right)}=\dfrac{1}{\tanh\left(z\right)}}
+\end{equation}
+\subsubsection{Exponentialfunktion}
+\begin{equation}
+\boxed{e^z=1+\dfrac{z}{1!}+\dfrac{z^2}{2!}+\dfrac{z^3}{3!}+\dotso}
+\end{equation}
+\subsection{Beziehungen}
+\subsubsection{Eulersche Formeln}
+\begin{equation}
+\boxed{e^{\text{j}x}=\cos\left(x\right)+\text{j}\sin\left(x\right)}
+\quad
+\boxed{e^{-\text{j}x}=\cos\left(x\right)-\text{j}\sin\left(x\right)}
+\end{equation}
+\subsubsection{Beziehungen trigonometrischen und komplexen $e$-Funktion}
+\begin{equation}
+\boxed{\sin\left(x\right)=\dfrac{1}{2\text{j}}\left(e^{\text{j}x}-e^{-\text{j}x}\right)}
+\quad
+\boxed{\cos\left(x\right)=\dfrac{1}{2}\left(e^{\text{j}x}+e^{-\text{j}x}\right)}
+\end{equation}
+\begin{equation}
+\boxed{\tan\left(x\right)=-\text{j}\dfrac{\left(e^{\text{j}x}-e^{-\text{j}x}\right)}{\left(e^{\text{j}x}+e^{-\text{j}x}\right)}}
+\quad
+\boxed{\cot\left(x\right)=\text{j}\dfrac{\left(e^{\text{j}x}+e^{-\text{j}x}\right)}{\left(e^{\text{j}x}-e^{-\text{j}x}\right)}}
+\end{equation}
+\subsubsection{Beziehungen trigonometrischen und Hyperbelfunktionen}
+\begin{equation}
+\boxed{\sin\left(\text{j}x\right)=\text{j}\cdot \sinh\left(x\right)}\quad \boxed{\cos\left(\text{j}x\right)=\cosh\left(x\right)}\quad \boxed{\tan\left(\text{j}x\right)=\text{j}\cdot \tanh\left (x\right)}
+\end{equation}
+\begin{equation}
+\boxed{\sinh\left(\text{j}x\right)=\text{j}\cdot \sin\left(x\right)}\quad \boxed{\cosh\left(\text{j}x\right)=\cos\left(x\right)}\quad \boxed{\tanh\left(\text{j}x\right)=\text{j}\cdot \tan\left (x\right)}
+\end{equation}
+\subsubsection{Additionstheoreme der trigonometrischen und Hyperbelfunktionen}
+\begin{equation}
+\boxed{\begin{array}{lll}
+\sin\left(x\pm \text{j}y\right)&=&\sin\left(x\right)\cdot \cosh\left(y\right)\pm \text{j}\cdot \cos\left(x\right)\cdot \sinh\left(y\right)\\
+\cos\left(x\pm \text{j}y\right)&=&\cos\left(x\right)\cdot \cosh\left(y\right)\mp \text{j}\cdot \sin\left(x\right)\cdot \sinh\left(y\right)\\
+\tan\left(x\pm \text{j}y\right)&=&\dfrac{\sin\left(2x\right)\pm \text{j}\cdot \sinh\left(2x\right)}{\cos\left(2x\right)+\cosh\left(2x\right)}\\
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{\begin{array}{lll}
+\sinh\left(x\pm \text{j}y\right)&=&\sinh\left(x\right)\cdot \cos\left(y\right)\pm \text{j}\cdot \cosh\left(x\right)\cdot \sin\left(y\right)\\
+\cosh\left(x\pm \text{j}y\right)&=&\cosh\left(x\right)\cdot \cos\left(y\right)\pm \text{j}\cdot \sinh\left(x\right)\cdot \sin\left(y\right)\\
+\tanh\left(x\pm \text{j}y\right)&=&\dfrac{\sinh\left(2x\right)\pm \text{j}\cdot \sin\left(2x\right)}{\cosh\left(2x\right)+\cos\left(2x\right)}\\
+\end{array}}
+\end{equation}
+\subsubsection{Arkus- und Areafunktionen}
+\begin{equation}
+\boxed{\arcsin\left(\text{j}x\right)=\text{j}\cdot \arsinh\left(x\right)}\quad \boxed{\arccos\left(\text{j}x\right)=\text{j}\cdot \text{Arcosh}\left(x\right)}
+\end{equation}
+\begin{equation}
+\boxed{\arsinh\left(\text{j}x\right)=\text{j}\cdot \arcsin\left(x\right)}\quad \boxed{\text{Arcosh}\left(\text{j}x\right)=\text{j}\cdot \arccos\left(x\right)}
+\end{equation}
+\begin{equation}
+\boxed{\arctan\left(\text{j}x\right)=\text{j}\cdot \text{Artanh}\left(x\right)}\quad \boxed{\text{Artanh}\left(\text{j}x\right)=\text{j}\cdot \arctan\left(x\right)}
+\end{equation}
+\section{Komplexe Zahlen in MATLAB}
+\subsection{Definition der imaginäre Einheit}
+Folgende Befehle sind Berechnungen der komplexen Zahlen
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{sqrt(-1) => 0.0000 + 1.0000i}}
+\item {\color{red}\texttt{i\^\,5 => 0.0000 + 1.0000i}}
+\item {\color{red}\texttt{i\^\,10 => -1}}
+\end{enumerate}
+\subsection{Operationen mit komplexen Zahlen}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{double(solve('x\^\,2+x+1')) => -0.5000 + 0.8660i, -0.5000-0.8660i}}
+\item {\color{red}\texttt{z1=3+4*i => 3.0000 + 4.0000i}}
+\item {\color{red}\texttt{z2=complex(3,4) => 3.0000 + 4.0000i}}
+\item {\color{red}\texttt{real(z1) => 3}}
+\item {\color{red}\texttt{imag(z1) => 4}}
+\item {\color{red}\texttt{(3+4*i)+(1+2*i)/(-4+3*i) => 3.0800 + 3.5600i}}
+\item {\color{red}\texttt{conj(1+2*i) => 1.0000 - 2.0000i}}
+\item {\color{red}\texttt{(1+2*i)*conj(1+2*i) => 5}}
+\end{enumerate}
+\subsection{Gauss'sche Zahlenebene}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{plot([1+2*i,2-3*i,4-5*i,-3+i,i, -6, -3-2*i], 'r*')}}
+\item {\color{red}\texttt{z=-2+i = -2.0000 + 1.0000i}}
+\item {\color{red}\texttt{betrag=abs(z) => betrag =  2.2361}}
+\item {\color{red}\texttt{sym=abs(z) => sym =  2.2361}}
+\item {\color{red}\texttt{winkel=angle(z) => winkel =  2.6779}}
+\item {\color{red}\texttt{winkel\_grad=winkel/pi*180 => winkel\_grad = 153.4349}}
+\end{enumerate}
+\subsection{Satz von Moivre}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{(-sqrt(3)-i)\^\,10 => 5.1200e+02 - 8.8681e+02i}}
+\item {\color{red}\texttt{abs((-sqrt(3)-i)\^\,10) => 1.0240e+03}}
+\item {\color{red}\texttt{angle((-sqrt(3)-i)\^\,10) => -1.0472}}
+\item {\color{red}\texttt{(-sqrt(3)-i)\^\,(1/3) => 0.8099 - 0.9652i}}
+\item {\color{red}\texttt{double(solve('z\^\,3-(-sqrt(3)-i)')) => 0.8099 - 0.9652i, -1.2408 - 0.2188i, 0.4309 + 1.1839i}}
+\item {\color{red}\texttt{compass(double(solve('z\^\,3-(-sqrt(3)-i)')))}}
+\end{enumerate}
+\subsection{Eulersche Formel}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{log(-1) = 0.0000 + 3.1416i}}
+\item {\color{red}\texttt{log(-10*i) = 2.3026 - 1.5708i}}
+\item {\color{red}\texttt{log2(sqrt(2)-sqrt(2)*i) = 1.0000 - 1.1331i}}
+\item {\color{red}\texttt{exp(1+i*pi) = -2.7183 + 0.0000i}}
+\item {\color{red}\texttt{2\^i = 0.7692 + 0.6390i}}
+\item {\color{red}\texttt{(-i)\^\,(-i) = 0.2079}}
+\end{enumerate}
+\section{Anwendungen in der Schwingungslehre}
+\subsection{Darstellung einer harmonischen Schwingung durch einen rotierenden komplexen Zeiger}
+Eine harmonische Schwingung vom Typ $y=A\cdot\sin\left(\omega t+\varphi\right)$ mit $A>0$ und $\omega>0$ lässt sich in der Gaussschen Zahlenebene durch einen mit der Winkelgeschwin-digkeit $\omega$ um den Nullpunkt rotierenden komplexen zeitabhängigen Zeiger der Länge $A$ darstellen
+\begin{equation}
+\boxed{\underline{y}\left(t\right)=A\cdot e^{\text{j}\left(\omega t+\varphi\right)}=\underline{A}\cdot e^{\text{j}\omega t}}\quad \boxed{\underline{A}=A\cdot e^{\text{j}\varphi}}
+\end{equation}
+Die Drehung erfolgt im Gegenuhrzeigersinn. Die komplexe Schwingungsamplitude $\underline{A}$ beschreibt dabei die Anfangslage des Zeigers $\underline{y}\left(t\right)$ zur Zeit $t=0$, d.h. es ist $\underline{y}\left(0\right)=\underline{A}$
+\newline\newline
+Eine in der Kosinusform vorliegende Schwingung lässt sich wie folgt ein die Sinusform umschreiben
+\begin{equation}
+\boxed{y=A\cdot \cos\left(\omega t+\varphi\right)=A\cdot \sin\left(\omega t+\varphi+\dfrac{\pi}{2}\right)=A\cdot \sin\left(\omega t+\varphi^*\right)}
+\end{equation}
+Der Nullphasenwinkel beträgt somit $\varphi^*=\varphi+\dfrac{\pi}{2}$, d.h. der Zeiger ist um $90^{\circ}$ vorzudrehen.
+\subsection{Ungestörte überlagerung gleichfrequenter harmonischer Schwingungen}
+Durch ungestörte Überlagerung der gleichfrequenten harmonische Schwingungen
+\begin{equation}
+\boxed{y_1=A_1\cdot \sin\left(\omega t+\varphi_1\right)\quad \text{und}\quad y_2=A_2\cdot \sin\left(\omega t+\varphi_2\right)}
+\end{equation}
+entsteht nach dem Superpositionsprinzip der Physik eine resultierende Schwingung mit derselben Frequenz, wobei $A>0$, $\omega>0$, $A_1>0$ und $A_2>0$
+\begin{equation}
+\boxed{y=y_1+y_2=A_1\cdot \sin\left(\omega t+\varphi_1\right)+A_2\cdot \sin\left(\omega t+\varphi_2\right)=A\cdot \sin\left(\omega t+\varphi\right)}
+\end{equation}
+Die Berechnung der Schwingungsamplitude $A$ und des Phasenwinkels $\varphi$ erfolgt durch Übergang von der reellen zur komplexen Form, danach durch Addition der komplexen Amplituden und Elongationen und zum Schluss Rücktransformation aus der komplexen in die reelle Form.
+\begin{equation}
+\boxed{y_1=A_1\cdot \sin\left(\omega t + \varphi_1\right)\rightarrow \underline{y}_1=\underline{A}_1\cdot e^{\text{j}\omega t}}\quad \boxed{\underline{A}_1=A_1\cdot e^{\text{j}\varphi_1}}
+\end{equation}
+\begin{equation}
+\boxed{y_2=A_2\cdot \sin\left(\omega t + \varphi_2\right)\rightarrow \underline{y}_2=\underline{A}_2\cdot e^{\text{j}\omega t}}\quad \boxed{\underline{A}_2=A_2\cdot e^{\text{j}\varphi_2}}
+\end{equation}
+\begin{equation}
+\boxed{\underline{A}=\underline{A}_1+\underline{A}_2=A\cdot e^{\text{j}\varphi}}
+\end{equation}
+\begin{equation}
+\boxed{\underline{y}=\underline{y}_1+\underline{y}_2=\underline{A}\cdot e^{\text{j}\omega t}=\underline{A}\cdot e^{\text{j}\omega t+\varphi}}
+\end{equation}
+\begin{equation}
+\boxed{y=y_1+y_2=\text{Im}\left(\underline{y}\right)=\text{Im}\left(\underline{A}\cdot e^{\text{j}\omega t}\right)=\text{Im}\left(A\cdot e^{\text{j}\omega t+\varphi}\right)=A\cdot \sin\left(\omega t+\varphi\right)}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item Überlagerung einer Sinusschwingung mit einer Kosinusschwingung: Letztere erst auf die Sinusform bringen.
+\item Überlagerung zweier Kosinusschwingungen: Beide erst auf die Sinusform bringen oder die resultierende Schwingung ebenfalls als Kosinusschwingung darstellen, wobei bei der Rücktransformation der Realteil von $\underline{y}=A\cdot e^{\text{j}\left(\omega t + \varphi\right)}$ zu nehmen ist.
+\end{enumerate}
+\section{Anwendungen komplexer Zahlen in der Wechselstromtechnik}
+\subsection{Harmonische Schwingungen}
+Harmonische Schwingungen sind wichtige Funktionen einer unabhängigen Zeitvariablen $t$ in der Technik.
+\begin{equation}
+\boxed{h_{\text{sin}}\left(t\right)=A\cdot \sin\left(\omega t+\varphi_0\right)+x_0=A\cdot \sin\left(\omega\cdot \left(t-t_0\right)\right)+x_0}
+\end{equation}
+\begin{equation}
+\boxed{h_{\text{cos}}\left(t\right)=A\cdot \cos\left(\omega t+\varphi_0\right)+x_0=A\cdot \cos\left(\omega\cdot \left(t-t_0\right)\right)+x_0}
+\end{equation}
+\begin{enumerate}[$(a)$]
+\item Sei $A$ die Amplitude (maximale Auslenkung aus der Ruhelage)
+\item Sei $x_0$ der lineare Mittelwert (Verschiebung der Kurve in vertikaler Richtung)
+\item Sei $\omega$ die Kreisfrequenz der Schwingung (Anzahl Schwingungen in der Zeitspanne $2\pi$)
+\item Sei $f$ die Frequenz der Schwingung (Anzahl Schwingungen in der Zeitspanne 1). Es gilt $f=\omega/2\pi$
+\item Sei $T$ der Periodendauer einer Schwingung (Zeitdauer bis sich die Schwingung wiederholt). Es gilt $T=1/f=2\pi/\omega$
+\item Sei $\varphi_0$ die Phasenverschiebung (Winkeloffset zum Zeitpunkt $t=0$)
+\item Sei $t_0$ die zeitliche Verschiebung der Schwingung (Zeitpunkt für den Start der Grundschwingung Sinus oder Kosinus)
+\end{enumerate}
+\subsection{Harmonische Schwingungen und komplexe Zahlen}
+Denkt man sich ein rotierender Stab der Länge $A$, dessen eines Ende im Punkt $\left(0,x_0\right)$ befestigt ist, welcher mit eine rfesten Winkelgeschwindigkeit $\omega$ im gegenuhrzeigersinn rotiert und betrachtet man die Schattenlänge des Stabes wenn dieser von der linken Seite angestrahlt wird, so erhält man eine harmonische Schwingung.
+\newline\newline
+Mit Hilfe der Exponentialform kann ein solcher rotierender Stab (in der Gauss'schen Zahlenebene) wie folgt beschrieben werden
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z_S\left(t\right)&=&\sqrt{A^2-\left(h_{\text{sin}}\left(t\right)-x_0\right)^2}+\text{j}\cdot h_{\text{sin}}\left(t\right)\\
+&=&\text{j}x_0+Ae^{\text{j}\left(\omega t+\varphi_0\right)}
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z_C\left(t\right)&=&-\sqrt{A^2-\left(h_{\text{cos}}\left(t\right)-x_0\right)^2}+\text{j}\cdot h_{\text{cos}}\left(t\right)\\
+&=&\text{j}x_0+Ae^{\text{j}\left(\omega t+\varphi_0\right)}\\
+&=&\text{j}x_0+Ae^{\text{j}\left(\omega t+\varphi_0+\pi/2\right)}
+\end{array}
+}
+\end{equation}
+Im weiteren betrachtet man harmonische Schwingungen ohne linearen Mittelwert.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z_{S_0}\left(t\right)&=&\sqrt{A^2-h^2_{\text{sin}}\left(t\right)}+\text{j}\cdot h_{\text{sin}}\left(t\right)\\
+&=&A\cdot e^{\text{j}\left(\omega t+\varphi_0\right)}
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+z_{C_0}\left(t\right)&=&-\sqrt{A^2-h^2_{\text{cos}}\left(t\right)}+\text{j}\cdot h_{\text{cos}}\left(t\right)\\
+&=&A\cdot e^{\text{j}\left(\omega t+\varphi_0+\pi/2\right)}
+\end{array}
+}
+\end{equation}
+Die Schattenlänge ist nun gleich dem Imaginärteil des rotierenden Stabes
+\begin{equation}
+\boxed{h_{\text{sin}}\left(t\right)=\text{Im}\left(z_{S_0}\left(t\right)\right)=\text{Im}\left(Ae^{\text{j}\left(\omega t+\varphi_0\right)}\right)}
+\end{equation}
+\begin{equation}
+\boxed{h_{\text{cos}}\left(t\right)=\text{Im}\left(z_{C_0}\left(t\right)\right)=\text{Im}\left(Ae^{\text{j}\left(\omega t+\varphi_0+\pi/2\right)}\right)}
+\end{equation}
+Mit den Beziehungen $\text{Re}\left(z\right)=\dfrac{z+\overline{z}}{2}$ und $\text{Im}\left(z\right)=\dfrac{z-\overline{z}}{2\text{j}}$ lassen sich die Schwingungen auch wie folgt beschreiben
+\begin{equation}
+\boxed{A\cdot \sin\left(\omega t+\varphi_0\right)=\dfrac{z_{S_0}\left(t\right)-\overline{z_{S_0}\left(t\right)}}{2\text{j}}=\dfrac{A\cdot e^{\text{j}\left(\omega t+\varphi_0\right)}-Ae^{-\text{j}\left(\omega t+\varphi_0\right)}}{2\text{j}}}
+\end{equation}
+\begin{equation}
+\boxed{A\cdot \cos\left(\omega t+\varphi_0\right)=\dfrac{z_{C_0}\left(t\right)-\overline{z_{C_0}\left(t\right)}}{2\text{j}}=\dfrac{A\cdot e^{\text{j}\left(\omega t+\varphi_0\right)}+Ae^{-\text{j}\left(\omega t+\varphi_0\right)}}{2}}
+\end{equation}
+Die eingefügten rotierenden Zeiger sind eine äquivalente Beschreibungsform für die harmonischen Schwingung. Neben den rotierenden Zeigern arbeitet man auch häufig mit nicht rotierenden Zeigern. Dabei ist das Ziel, die Zeitabhängigkeit aus der Beschreibung zu eliminieren. Dazu kann z.B. die folgende Transformation verwendet werden.
+\begin{equation}
+\boxed{h_{\text{sin}}\left(t\right)\longrightarrow H_{\text{sin}}=z_{S_0}\left(t\right)\cdot e^{-\text{j}\omega t}=A\cdot e^{\text{j}\left(\omega t+\varphi_0\right)}\cdot e^{-\text{j}\omega t}=A\cdot e^{\text{j}\varphi_0}}
+\end{equation}
+\begin{equation}
+\boxed{h_{\text{cos}}\left(t\right)\longrightarrow H_{\text{cos}}=z_{C_0}\left(t\right)\cdot e^{-\text{j}\omega t}=A\cdot e^{\text{j}\left(\varphi_0+\dfrac{\pi}{2}\right)}}
+\end{equation}
+Bei dieserTransformation ist die neue Beschreibungsform nicht das Gleiche wie die ursprüngliche harmonische Schwingung. Das zeitabhängige Signal (Zeitbereich) wird durch die Transformation auf eine komplexe Zahl (nicht mehr zeitabhängig) transformiert. Man spricht von einer Beschreibung in der Modellwelt. Zu dieser Transformation gibt es auch eine Rücktransformation. Eine Anwendung dieser Transformation ist die \textbf{Überlagerung} gleichfrequenter harmonischer Schwingungen.
+\begin{equation}
+\boxed{h_{\text{sin}}\left(t\right)\longrightarrow H_{\text{sin}}=\text{Im}\left(H_{\text{sin}}e^{\text{j}\omega t}\right)=\text{Im}\left(A\cdot e^{\text{j}\varphi_0}e^{\text{j}\omega t}\right)}
+\end{equation}
+\begin{equation}
+\boxed{h_{\text{cos}}\left(t\right)\longrightarrow H_{\text{cos}}=\text{Im}\left(H_{\text{cos}}e^{\text{j}\omega t}\right)=\text{Im}\left(A\cdot e^{\text{j}\left(\varphi_0+\dfrac{\pi}{2}\right)}\cdot e^{\text{j}\omega t}\right)}
+\end{equation}
+In der Elektrotechnik wird die Transformation in den Bildbereich wie folgt definiert. Ein Signal $s\left(t\right)=A\cdot \cos\left(\omega t+\varphi_0\right)$ wird wie folgt als komplexe Schwingung definiert
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\underline{s\left(t\right)}&=&A\cdot \Big[\cos\left(\omega t+\varphi_0\right)+\text{j}\cdot \sin\left(\omega t+\varphi_0\right)\Big]\\
+&=&A\cdot e^{\text{j}\left(\omega t +\varphi_0\right)}
+\end{array}
+}
+\end{equation}
+Mathematisch kann dies wie folgt angegeben werden
+\begin{equation}
+\boxed{s\left(t\right)\longrightarrow \underline{s\left(t\right)}=s\left(t\right)+\text{j}\cdot \sqrt{A^2-s^2\left(t\right)}}
+\end{equation}
+\begin{equation}
+\boxed{\underline{s\left(t\right)}\longrightarrow s\left(t\right)=\text{Re}\left(\underline{s\left(t\right)}\right)}
+\end{equation}
+Im Weiteren wird die Zeitabhängigkeit eliminiert, gleichzeitig wird noch die Zeigerlänge vom Amplitudenwert auf den Effektivwert normiert
+\begin{equation}
+\boxed{s\left(t\right)=A\cdot \cos\left(\omega t+\varphi_0\right)\rightarrow \underline{S}=\dfrac{A}{\sqrt{2}}e^{\text{j}\cdot \varphi_0}}
+\end{equation}
+\begin{equation}
+\boxed{s\left(t\right)=A\cdot \sin\left(\omega t+\varphi_0\right)\rightarrow \underline{S}=\dfrac{A}{\sqrt{2}}e^{\text{j}\cdot \left(\varphi_0-\dfrac{\pi}{2}\right)}}
+\end{equation}
+\subsection{Elektrotechnische Grundkenntnisse}
+Bei elektrischen Schaltungen interessiert man sich oft für die Spannung über den Bauteilen, den Strom in den Bauteilen und die Leistung die ein Bauteil bezieht. Dabei unterscheidet man verschiedene Situationen wie Gleichstrom- und Wechselstromtechnik und verschiedene Betrachtungsweisen wie Einschaltvorgänge oder Grössen bei eingeschwungenem stationären Zustand.
+\subsubsection{Gesetze für Gleichstromtechnik}
+\textbf{Ohm'sche Gesetz:} Fliesst durch einen ohmschen Widerstand der Strom $I$, so misst man über dem Widerstand eine zum Strom proportionale Spannung $U$. Der Proportionalitätsfaktor $R$ nennt man Widerstand
+\begin{equation}
+\boxed{U=R\cdot I}
+\end{equation}
+\textbf{Maschenregel:} In einer geschlossenen Masche ist die Summe der Spannungsabfälle gleich der Summe der Quellspannungen.
+\begin{equation}
+\boxed{\displaystyle \sum U_q=\displaystyle \sum U_{ab}}
+\end{equation}
+\textbf{Knotenregel:} Die Summe aller Ströme in einem Knoten ist gleich Null.
+\begin{equation}
+\boxed{\displaystyle \sum I_k=0}
+\end{equation}
+\textbf{Serienschaltung:} In Serie geschaltete Widerstände können durch einen Ersatzwiderstand ersetzt werden. DAbei ist der Widerstand das Ersatzwiderstandes gleich der Summe der einzelnen Widerstände.
+\begin{equation}
+\boxed{R_{\text{ers}}=\displaystyle \sum R_k}
+\end{equation}
+\textbf{Parallelschaltung:} Parallel geschaltete Widerstände können durch einen Ersatzwiderstand ersetzt werden. Dabei ist der Widerstand des Ersatzwiderstandes gleich dem Kehrwert der Summe der Kehrwerte der einzelnen Widerstände.
+\begin{equation}
+\boxed{R_{\text{par}}=\dfrac{1}{\displaystyle \sum \dfrac{1}{R_k}}}
+\end{equation}
+\subsubsection{Gesetze für Spule und Kondensator}
+\textbf{Spule-Induktivität:} Der Spannungsabfall an einer Spule ist proportional zur Stromänderung. Der Faktor $L$ nennt man Induktivität der Spule.
+\begin{equation}
+\boxed{u_L\left(t\right)=L\cdot \dfrac{\text{d}}{\text{d}t}\Big[i\left(t\right)\Big]}
+\end{equation}
+\textbf{Kondensator-Kapazität:} Der Spannungsabfall an einem Kondensator ist proportional zur gespeicherten Ladung $Q$. Die gespeicherte Ladung ist gleich dem Integral des Stromes nach der Zeit. Der Faktor $C$ nennt man Kapazität des Kondensators.
+\begin{equation}
+\boxed{u_C\left(t\right)=\dfrac{1}{C} \displaystyle \int i\left(t\right)\,\text{d}t}
+\end{equation}
+\subsection{Berechnung mit Differentialgleichungen}
+\textbf{Spule, Widerstand, Gleichspannungsquelle:} Eine Spule und einen ohmschen Widerstand werden in Serie an eine Gleichspannungsquelle angeschlossen und den Strom und die Spannungsabfälle an den beiden Bauteilen bestimmt. In der gegebenen Schaltung liegt eine geschlossene Masche vor und daher ist die Summe der Spannungsabfälle gleich der Summe der Quellspannungen. Dies ist eine lineare Differentialgleichung erster Ordnung mit konstanten Koeffizienten.
+\begin{equation}
+\boxed{u_R\left(t\right)+u_L\left(t\right)=R\cdot i\left(t\right)+L\cdot \dfrac{\text{d}}{\text{d}t}\Big[i\left(t\right)\Big]=U_q}
+\end{equation}
+\begin{equation}
+\boxed{i\left(t\right)=\dfrac{U_q}{R}\left(1-e^{-\dfrac{Rt}{L}}\right)}
+\end{equation}
+\begin{equation}
+\boxed{u_R\left(t\right)=U_q\left(1-e^{-\dfrac{Rt}{L}}\right)}
+\end{equation}
+\begin{equation}
+\boxed{u_L\left(t\right)=U_q\left(e^{-\dfrac{Rt}{L}}\right)}
+\end{equation}
+Liegt eine Gleichspannung an einer Schaltung, so berechnet man mit der Differentialgleichung das Einschaltverhalten, d.h. den Übergang von einem stationären Zustand zu einem neuen stationären Zustand. So hat man vor dem Einschalten keinen Stromfluss und nachdem Einschalten steigt der Strom und nähert sich einem Endwert und ist nachher wieder konstant. Analoges Verhalten zeigen die Spannungen. Der eigentliche Einschaltvorgang nennt man auch das \textbf{transiente Verhalten}.
+\subsubsection{MATLAB für Gleichspannungsquelle}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{syms L R Uq I}}
+\item {\color{red}\texttt{dgl=`L*DI+R*I=Uq' => L*DI+R*I=Uq}}
+\item {\color{red}\texttt{lgs=dsolve(dgl) => lsg=Uq/R+exp(-1/L*R*t)*C1}}
+\item {\color{red}\texttt{lsg\_part=dsolve(dgl,'I(0)=0'}}
+\item {\color{red}\texttt{lsg\_part=Uq/R-exp(-1/L*R*t)*Uq/R}}
+\end{enumerate}
+\textbf{Spule, Widerstand, Wechselspannungsquelle:} Eine Spule und einen ohmschen Widerstand in Serie an eine Wechselspannungsquelle wird angeschlossen und den Strom und die Spannungsbfälle an den beiden Bauteilen bestimmt. In der gegebene Schaltung liegt eine geschlossene Masche vor und daher ist die Summe der Spannungsabfälle gleich der Summe der Quellspannungen.
+\begin{equation}
+\boxed{u_R\left(t\right)+u_L\left(t\right)=R\cdot i\left(t\right)+L\cdot \dfrac{\text{d}}{\text{d}t}\Big[i\left(t\right)\Big]=u_q\left(t\right)=\hat{U}\sin\left(\omega t\right)}
+\end{equation}
+\begin{equation}
+\boxed{i\left(t\right)=\dfrac{\hat{U}}{R^2+\left(\omega L\right)^2}\left(\omega Le^{-\dfrac{Rt}{L}}-\omega L\cos\left(\omega t\right)+R\sin\left(\omega t\right)\right)}
+\end{equation}
+\begin{equation}
+\boxed{u_R\left(t\right)=\dfrac{\hat{U}R}{R^2+\left(\omega L\right)^2}\left(\omega L e^{-\dfrac{Rt}{L}}-\omega L\cos\left(\omega t\right)+R\sin\left(\omega t\right)\right)}
+\end{equation}
+\begin{equation}
+\boxed{u_L\left(t\right)=\dfrac{\hat{U}\omega L}{R^2+\left(\omega L\right)^2}\left(-R e^{-\dfrac{Rt}{L}}+\omega L\sin\left(\omega t\right)+R\cos\left(\omega t\right)\right)}
+\end{equation}
+Hier erkennt man einen Einschaltvorgang. Betrachtet man den Strom in der Schaltung, so hat man zwei Summanden. Der erste Suzmmand beschreibt eine armonische Schwingung und der zweite Summand zeigt exponentielles Verhalten. Die Schwingung ist nicht zeitabhängig (konstante Amplitude und Kreisfrequenz) und beschreibt das Verhalten der Schaltung nachdem der Einschaltvorgang abgeschlossen ist (partikuläre Lösung der inhomogenen DGL). Diese Schwingung nennt man auch das stationäre Verhalten der Schaltung. Das zweite Signal ist zeitabhängig und beschreibt den Übergang zwischen den stationären Zuständen (transientes verhalten der Schaltung - partikuläre Lösung der homogenen DGL).
+\subsubsection{MATLAB für Wechselspannungsquelle}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{syms L R U I w t}}
+\item {\color{red}\texttt{dgl='L*DI+R*I=U*sin(w*t)' => dgl=L*DI+R*I=U*sin(w*t)}}
+\item {\color{red}\texttt{lsg=dsolve(dgl)}}
+\item {\color{red}\texttt{lsg\_part=dsolve(dgl, `I(0)=0')}}
+\end{enumerate}
+\subsection{Stationäres Verhalten einer Spule (Induktivität)}
+\textbf{Spule, Wechselspannungsquelle:} An eine Spule legt man eine Wechselspannung an und will daraus den Stromfluss in der Spule untersuchen. Das Verhältnis der Amplituden zwischen Spannung und Strom ist konstant und gleich $\dfrac{U_L}{I_L}=X_L=\omega L$. Der Strom eilt der Spannung um eine Viertelperiode nach.
+\begin{equation}
+\boxed{u_L\left(t\right)=L\cdot \dfrac{\text{d}}{\text{d}t}\Big[i\left(t\right)\Big]=\hat{U}\sin\left(\omega t\right)=u_q\left(t\right)}
+\end{equation}
+\begin{equation}
+\boxed{i\left(t\right)=\dfrac{1}{L}\displaystyle \int u_L\left(t\right)\,\text{d}t=\dfrac{1}{L}\displaystyle \int \hat{U}\sin\left(\omega t\right)\,\text{d}t=-\dfrac{\hat{U}}{\omega L}\cos\left(\omega t\right)}
+\end{equation}
+\subsection{Stationäres Verhalten einer Spule (Kapazität)}
+\textbf{Kondensator, Wechselspannungsquelle:} An einen Kondensator legt man eine Wechselspannung an und will den Stromfluss im Kondensator untersuchen. Das Verhältnis der Amplituden zwischen Spannung und Strom ist konstant und gleich $\dfrac{u_C}{I_C}=X_C=\dfrac{1}{\omega C}$. Der Strom eilt der Spannung um eine Viertelperiode vor.
+\begin{equation}
+\boxed{u_C\left(t\right)=\dfrac{1}{C} \displaystyle \int i\left(t\right)\,\text{d}t=\hat{U}\sin\left(\omega t\right)=u_q\left(t\right)}
+\end{equation}
+\begin{equation}
+\boxed{i\left(t\right)=C\cdot \dfrac{\text{d}}{\text{d}t}\Big[u_C\Big]\left(t\right)=C\cdot \dfrac{\text{d}}{\text{d}t}\Big[\hat{U}\sin\left(\omega t\right)\Big]=\omega C \hat{U}\cos\left(\omega t\right)}
+\end{equation}
+\subsection{Berechnung mit komplexen Zahlen - Bildbereich}
+In diesem Abschnitt werden nur stationären Signale (Vernachlässigung des Einschaltenverhaltens, d.h. der transiente Vorgang) bei Schaltungen die an einer Wechselspannung angeschlossen. Anstelle der Berechnung mittels Differentialgleichungen arbeitet man mit einer Modellwelt für die Grössen und Signale. Da man weisst, dass alle Signale (Ströme und Spannungen) ebenfalls Wechselgrössen (mit der gleichen Kreisfrequenz wie die Quelle) sind, kann man in einer Modellwelt arbeiten, in der die Zeit nicht mehr vorkommt. um eine Wechselgrösse (harmonische Schwingung) zu beschreiben sind drei Angaben von Bedeutung: Amplitude und Schwingung, Kreisfrequenz der Schwingung und Anfangsphase der Schwingung.
+\newline\newline
+Da die Kreisfrequenz aller Signale gleich ist, muss man diese Grösse nicht in der Modellwelt mitführen. um die restlichen beiden Grössen zu beschreiben wählt man nun komplexe Zahlen für die Modellwelt. Eine komplexe Zahl in goniometrischer oder exponentieller Darstellung beinhaltet die beiden Informationen, Betrag und Argument. Nun kann man ein Signal wie folgt durch eine komplexe zahl bzw. einen Zeiger beschreiben.
+\begin{equation}
+\boxed{s\left(t\right)=\hat{A}\cos\left(\omega t+\varphi\right) \rightarrow \underline{S}=\dfrac{\hat{A}}{\sqrt{2}}e^{\text{j}\varphi}}
+\end{equation}
+\begin{equation}
+\boxed{s\left(t\right)=\hat{A}\sin\left(\omega t+\varphi\right) \rightarrow \underline{S}=\dfrac{\hat{A}}{\sqrt{2}}e^{\text{j}\left(\varphi-\dfrac{\pi}{2}\right)}}
+\end{equation}
+Der Elektrotechniker arbeitet meist nicht mit den Amplituden sondern mit den Effektivwerten. Bei harmonischen Signalen ist die Amplitude des Signals um den Faktor $\sqrt{2}$ grösser als der Effektivwert.
+\subsubsection{Impendanz eines Widerstandes}
+Stom und Spannung an einem Widerstand sind in Phase und das Verhältnis zwischen Strom und Spannung ist durch den Widerstandswert gegeben. Daher definiert man die Impendanz wie folgt:
+\begin{equation}
+\boxed{Z_R=R\Longrightarrow U_R=Z_R\cdot I_R}
+\end{equation}
+\subsubsection{Impendanz einer Spule}
+Die Spannung eilt in einer Spule dem Strom um eine Viertelperiode vor und das Verhältnis zwischen Strom und Spannung ist durch $X_L=\omega L$ gegeben. Daher definiert man die Impendanz wie folgt:
+\begin{equation}
+\boxed{\underline{Z_L}=\text{j}\omega L\longrightarrow \underline{U_L}=\underline{Z_L}\cdot \underline{I_L}}
+\end{equation}
+\subsubsection{Impendanz eines Kondensators}
+Die Spannung eilt in einem Kondensator dem Strom um eine Viertelperiode nach und das Verhältnis zwischen Strom und Spannung ist durch $X_C=\dfrac{1}{\omega C}$ gegeben. Daher definiert man die Impendanz wie folgt:
+\begin{equation}
+\boxed{\underline{Z_C}=-\text{j}\dfrac{1}{\omega C}\Longrightarrow \underline{U_C}=\underline{Z_C}\cdot \underline{I_C}}
+\end{equation}
+\subsubsection{Wechselstromschaltung}
+Nun können Wechselstromschaltungen in der Modellwelt analog zu Gleichspannungsschaltungen berechnet werden. Die Serieschaltung einer Spule mit einem Widerstand, welche an eine Wechselquelle angeschlossen sind
+\begin{equation}
+\boxed{u_q\left(t\right)=\hat{U}\cos\left(\omega t\right)\longrightarrow U_q=\dfrac{\hat{U}}{\sqrt{2}}}
+\end{equation}
+\begin{equation}
+\boxed{\underline{Z_R}=R}\quad \boxed{\underline{Z_L}=\text{j}\omega L}\quad \boxed{\underline{Z_{\text{ers}}}=\underline{Z_R}+\underline{Z_L}=R+\text{j}\omega L}
+\end{equation}
+\begin{equation}
+\boxed{i\left(t\right)=\sqrt{2}\Big\vert\underline{I}\Big\vert\cos\left(\omega t+\text{arg}\left(\underline{I}\right)\right)\longrightarrow \underline{I}=\dfrac{\underline{U_q}}{\underline{Z_{\text{ers}}}}=\dfrac{\hat{U}}{\sqrt{2}}\dfrac{R-\text{j}\omega L}{R^2+\omega^2L^2}}
+\end{equation}
+\begin{equation}
+\boxed{u_R\left(t\right)=\sqrt{2}\Big\vert\underline{U_R}\Big\vert\cos\left(\omega t+\text{arg}\left(\underline{U_R}\right)\right)\longrightarrow \underline{U_R}=\underline{I}\cdot \underline{Z_R}=\dfrac{\hat{U}}{\sqrt{2}}\dfrac{R^2-\text{j}\omega LR}{R^2+\omega^2L^2}}
+\end{equation}
+\begin{equation}
+\boxed{u_L\left(t\right)=\sqrt{2}\Big\vert\underline{U_L}\Big\vert\cos\left(\omega t+\text{arg}\left(\underline{U_L}\right)\right)\longrightarrow \underline{U_L}=\underline{I}\cdot \underline{Z_L}=\dfrac{\hat{U}}{\sqrt{2}}\dfrac{R\omega^2L^2+\text{j}\omega LR}{R^2+\omega^2L^2}}
+\end{equation}
+Sind somit Signale und Grössen gegeben, so müssen sie in eine komplexe Form transformiert werden. Das Problem kann mittels Algebra der komplexen Zahlen gelöst werden.
+\begin{comment}
+\section{Komplexe Zahlen in MATLAB}
+\subsection{Definition der imaginäre Einheit}
+Folgende Befehle sind Berechnungen der komplexen Zahlen
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{sqrt(-1) => 0.0000 + 1.0000i}}
+\item {\color{red}\texttt{i\^\,5 => 0.0000 + 1.0000i}}
+\item {\color{red}\texttt{i\^\,10 => -1}}
+\end{enumerate}
+\subsection{Operationen mit komplexen Zahlen}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{double(solve('x\^\,2+x+1')) => -0.5000 + 0.8660i, -0.5000-0.8660i}}
+\item {\color{red}\texttt{z1=3+4*i => 3.0000 + 4.0000i}}
+\item {\color{red}\texttt{z2=complex(3,4) => 3.0000 + 4.0000i}}
+\item {\color{red}\texttt{real(z1) => 3}}
+\item {\color{red}\texttt{imag(z1) => 4}}
+\item {\color{red}\texttt{(3+4*i)+(1+2*i)/(-4+3*i) => 3.0800 + 3.5600i}}
+\item {\color{red}\texttt{conj(1+2*i) => 1.0000 - 2.0000i}}
+\item {\color{red}\texttt{(1+2*i)*conj(1+2*i) => 5}}
+\end{enumerate}
+\subsection{Gauss'sche Zahlenebene}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{plot([1+2*i,2-3*i,4-5*i,-3+i,i, -6, -3-2*i], 'r*')}}
+\item {\color{red}\texttt{z=-2+i = -2.0000 + 1.0000i}}
+\item {\color{red}\texttt{betrag=abs(z) => betrag =  2.2361}}
+\item {\color{red}\texttt{sym=abs(z) => sym =  2.2361}}
+\item {\color{red}\texttt{winkel=angle(z) => winkel =  2.6779}}
+\item {\color{red}\texttt{winkel\_grad=winkel/pi*180 => winkel\_grad = 153.4349}}
+\end{enumerate}
+\subsection{Satz von Moivre}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{(-sqrt(3)-i)\^\,10 => 5.1200e+02 - 8.8681e+02i}}
+\item {\color{red}\texttt{abs((-sqrt(3)-i)\^\,10) => 1.0240e+03}}
+\item {\color{red}\texttt{angle((-sqrt(3)-i)\^\,10) => -1.0472}}
+\item {\color{red}\texttt{(-sqrt(3)-i)\^\,(1/3) => 0.8099 - 0.9652i}}
+\item {\color{red}\texttt{double(solve('z\^\,3-(-sqrt(3)-i)')) => 0.8099 - 0.9652i, -1.2408 - 0.2188i, 0.4309 + 1.1839i}}
+\item {\color{red}\texttt{compass(double(solve('z\^\,3-(-sqrt(3)-i)')))}}
+\end{enumerate}
+\subsection{Eulersche Formel}
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{log(-1) = 0.0000 + 3.1416i}}
+\item {\color{red}\texttt{log(-10*i) = 2.3026 - 1.5708i}}
+\item {\color{red}\texttt{log2(sqrt(2)-sqrt(2)*i) = 1.0000 - 1.1331i}}
+\item {\color{red}\texttt{exp(1+i*pi) = -2.7183 + 0.0000i}}
+\item {\color{red}\texttt{2\^i = 0.7692 + 0.6390i}}
+\item {\color{red}\texttt{(-i)\^\,(-i) = 0.2079}}
+\end{enumerate}
+\end{comment}
+\section{Ortskurven}
+\subsection{Einführung}
+Eine Ortskurve ist eine parametrisierte Abbildung in die Gauss'sche Zahlenebene der Form
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+f&:&\mathbb{R}\rightarrow \mathbb{C}\\
+t&\mapsto&z\left(t\right)=x\left(t\right)+jy\left(t\right)\\
+\end{array}
+}
+\end{equation}
+Gegeben sei eine veränderliche komplexe Grösse. Die komplexe Grösse kann bekanntlich als Zeiger in der Gauss'schen Zahlenebene aufgefasst werden. Die Ortskurve beinhaltet nun alle Zeigerspitzen der veränderlichen komplexen Grösse.
+\subsection{Kurven in der Gauss'schen Zahlenebene}
+\subsubsection{Die Gerade in der Gauss'schen Zahlenebene}
+Die allgemeine Gleichung einer Geraden in der Gauss'schen Zahlenebene lautet
+\begin{equation}
+\boxed{z\left(t\right)=z_0+f\left(t\right)z_1}
+\end{equation}
+Dabei bezeichnen $z_0$ und $z_1$ komplexe Zahlen (Zeiger) und $f\left(t\right)$ eine reellwertige Funktion für den Parameter. Analog der Parametergleichung
+\begin{equation}
+\boxed{\overrightarrow{r}=\overrightarrow{r}_0+t\overrightarrow{r}_1}
+\end{equation}
+Eine besonders einfache Form der Beschreibung einer Geraden in der Gauss'schen Zahlenebene liefert die folgende Gleichung
+\begin{equation}
+\boxed{z\left(t\right)=a\left(1+i\cdot f\left(t\right)\right)=a\left(1+i\cdot t\right)=\underbrace{\left(a\right)}_{z_0}+\underbrace{\left(i\cdot a\right)}_{z_1}\cdot t}
+\end{equation}
+Die komplexen Zeiger $z_0=a$ und $z_1=i\cdot a$ stehen senkrecht zueinader und die komplee Zahl $a$ ist der kürzeste Zeiger vom Ursprung auf die Gerade.
+\subsubsection{Der Kreis in der Gauss'schen Zahlenebene}
+Für einen beliebigen Kreis verschiebt man nun den Kreis um die komplexe Zahl $b$ und multiplizieren mit $a$. Der Mittelpunkt des Kreises lautet
+\begin{equation}
+\boxed{M\left(\dfrac{\text{Re}\left(a\right)}{2}+\text{Re}\left(b\right), \dfrac{\text{Im}\left(a\right)}{2}+\text{Im}\left(b\right)\right)}
+\end{equation}
+\begin{equation}
+\boxed{z\left(t\right)=az_0\left(t\right)+b}
+\end{equation}
+\subsection{Inversion}
+\subsubsection{Inversion einer Geraden durch den Ursprung}
+Betrachte die Gerade durch den Ursprung mit der Gleichung
+\begin{equation}
+\boxed{z\left(t\right)=f\left(t\right)z_0}
+\end{equation} \tabularnewline
+Für die Inversion $w=\dfrac{1}{z}$ findet man
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{f\left(t\right)z_0}=\dfrac{1}{f\left(t\right)}\dfrac{\overline{z_0}}{z_0\overline{z_0}}}
+\end{equation}
+Dies ist eine Gerade durch den Ursprung mit der Parametrisierung: $g\left(t\right)=\dfrac{1}{f\left(t\right)}$ und der Richtung $w_0=\dfrac{\overline{z_0}}{z_0\overline{z_0}}$. Die invertierte Gerade ist die Spiegelung der gegebenen Geraden an der reellen Achse.
+\subsubsection{Inversion einer Geraden nicht durch den Ursprung}
+Betrachte die Gerade mit $a=\Big\vert a\Big\vert e^{\text{j}\varphi}$
+\begin{equation}
+\boxed{z\left(t\right)=a\left(1+\text{j} f\left(t\right)\right)}
+\end{equation}
+Die Inversion ergibt
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{a\left(1+\text{j}f\left(t\right)\right)}=\underbrace{\dfrac{1}{a}}_{\text{Drehstreckung}}\cdot \underbrace{\dfrac{1}{1+\text{j}f\left(t\right)}}_{\text{Kreis durch den Ursprung}}}
+\end{equation}
+Die Inversion einer Geraden nicht durch den Ursprung ergibt einen Kreis durch den Ursprung mit den Daten
+\begin{equation}
+\boxed{R=\dfrac{1}{2\Big\vert a \Big\vert}}\quad \boxed{M\left(\dfrac{1}{2\Big\vert a\Big\vert}\cos\left(-\varphi\right), \dfrac{1}{2\Big\vert a\Big\vert}\sin\left(-\varphi\right)\right)}
+\end{equation}
+\subsubsection{Inversion eines Kreises durch den Ursprung}
+Die Inversion eines Kreises durch den Ursprung muss nach den Überlegungen des letzten Abschnittes eine Gerade ergeben, welche nicht durch den Ursprung geht. Sei also ein Kreis mit dem Mittelpunkt gegeben.
+\begin{equation}
+\boxed{M\left(\dfrac{\Big\vert a\Big\vert}{2}\cos\left(\varphi\right), \dfrac{\Big\vert a\Big\vert}{2}\sin\left(\varphi\right)\right)\Rightarrow R=\dfrac{\Big\vert a\Big\vert}{2}}
+\end{equation}
+Diesen Kreis kann man duch die folgende Gleichung beschrieben.
+\begin{equation}
+\boxed{z\left(t\right)=a\dfrac{1}{1+\text{j}f\left(t\right)}}
+\end{equation}
+Die Inversion ergibt nun
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{a}\left(1+\text{j}f\left(t\right)\right)=\dfrac{1}{\Big\vert a\Big\vert}e^{-\text{j}\varphi}\left(1+\text{j}f\left(t\right)\right)}
+\end{equation}
+Die Inversion eines Kreises durch den Ursprung ergibt eine Gerade die nicht durch den Ursprung geht. Dies ist eine Gerade durch den Punkt $z_0=\dfrac{1}{\Big\vert a\Big\vert}e^{-\text{j}\varphi}$ mit der Richtung $z_1=\text{j}z_0=\dfrac{1}{\Big\vert a\Big\vert}e^{\text{j}\dfrac{\pi}{2}-\varphi}$.
+\subsubsection{Inversion eines Kreises nicht durch den Ursprung}
+Die Inversion des Kreises $z\left(t\right)$ mit Mittelpunkt $z_M$ und Radius $R$ hat folgende Inversion
+\begin{equation}
+\boxed{z\left(t\right)=b+a\dfrac{1}{1+\text{j}f\left(t\right)}}
+\end{equation}
+\begin{equation}
+\boxed{z_M=\dfrac{a}{2}+b}
+\end{equation}
+\begin{equation}
+\boxed{R=\dfrac{\Big\vert a\Big\vert}{2}}
+\end{equation}
+\begin{equation}
+\boxed{w\left(t\right)=\dfrac{1}{z\left(t\right)}=\dfrac{1}{b+a\dfrac{1}{1+\text{j}f\left(t\right)}}=\dfrac{1+\text{j}f\left(t\right)}{a+b\left(1+\text{j}f\left(t\right)\right)}}
+\end{equation}
+Die Inversion eines Kreises nicht durch den Ursprung ergibt wieder einen Kreis der nicht durch den Ursprung geht.
+\begin{equation}
+\boxed{z_{w,n}=z_M\pm R_z\dfrac{z_M}{\Big\vert z_M\Big\vert}=z_M\left(1\pm \dfrac{R_z}{\Big\vert z_M\Big\vert}\right)=\dfrac{z_M}{\Big\vert z_M\Big\vert}\left(\Big\vert z_M\Big\vert\pm R_z\right)}
+\end{equation}
+\begin{equation}
+\boxed{w_{n,w}=\dfrac{1}{\dfrac{z_M}{\Big\vert z_M\Big\vert}\left(\Big\vert z_M\Big\vert\pm R_z\right)}=\dfrac{\overline{z_M}}{\Big\vert z_M\Big\vert}\cdot \dfrac{1}{\Big\vert z_M\Big\vert\pm R_z}}
+\end{equation}
+Der Mittelpunkt liegt zwischen diesen beiden Punkten.
+\begin{equation}
+\boxed{w_M=\dfrac{1}{2}\left(w_M+w_n\right)=\dfrac{\overline{z_M}}{2\Big\vert z_M\Big\vert}\left(\dfrac{1}{\Big\vert z_M\Big\vert-R_z}+\dfrac{1}{\Big\vert z_M\Big\vert+R_z}\right)=\dfrac{\overline{z_M}}{\Big\vert z_M\Big\vert^2-R_z^2}}
+\end{equation}
+Den Radius des neuen Kreises erhält man aus dem halben Betrag der Differenz der beiden Zeiger
+\begin{equation}
+\boxed{R_w=\dfrac{1}{2}\Big\vert W_w-W_n\Big\vert=\dfrac{R_z}{\Big\vert z_M\Big\vert^2-R_z^2}}
+\end{equation}
+\subsection{Ortskurven in MATLAB}
+Ortskurve
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{syms omega}}
+\item {\color{red}\texttt{omega\_r = [0,100];}}
+\item {\color{red}\texttt{omega\_w = [0,10,20,30,40,50,100];}}
+\item {\color{red}\texttt{z=0.5+i*omega*0.01}}
+\item {\color{red}\texttt{ezplot(real(z),imag(z),omega\_r)}}
+\item {\color{red}\texttt{hold on}}
+\item {\color{red}\texttt{for k=1:length(omega\_w)}}
+\item $\quad${\color{red}\texttt{zz=subs(z,omega,omega\_w(k));}}
+\item $\quad${\color{red}\texttt{xx=real(zz);}}
+\item $\quad${\color{red}\texttt{yy=imag(zz);}}
+\item $\quad${\color{red}\texttt{plot(xx,yy,'r*')}}
+\item $\quad${\color{red}\texttt{text(xx,yy,strcat('$\backslash$leftarrow $\backslash$omega=', num2str(omega\_w(k)), `1/\_s'))}}
+\item {\color{red}\texttt{end}}
+\end{enumerate}
+Inverse der Ortskurve
+\begin{enumerate}[$\texttt{>}\texttt{>}$]
+\item {\color{red}\texttt{z\_inv=1/z}}
+\item {\color{red}\texttt{ezplot(real(z\_inv), imag(z\_inv), omega\_r);}}
+\item {\color{red}\texttt{hold on}}
+\item {\color{red}\texttt{for k=1:length(omega\_w)}}
+\item $\quad${\color{red}\texttt{zz=subs(z\_inv, omega, omega\_w(k));}}
+\item $\quad${\color{red}\texttt{xx=real(zz);}}
+\item $\quad${\color{red}\texttt{yy=img(zz);}}
+\item $\quad${\color{red}\texttt{plot(xx, yy, `r*')}}
+\item $\quad${\color{red}\texttt{text(xx,yy,strcat('$\backslash$leftarrow $\backslash$omega=', num2str(omega\_w(k)), `1/\_s'))}}
+\item {\color{red}\texttt{end}}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+

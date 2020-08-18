@@ -21,4 +21,8 @@
 <p><b>Empfohlene Vorkenntnisse:</b> Analysis 1 (an1)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
 <div class="col"><hr></div>
-<p><b>Zusammenfassung:</b> <a href="docs/PHYSIK-CHEMIE/WÄRME UND STRAHLUNG/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> WàRME UND STRAHLUNG</a></p>
+<p>
+    <object data="uni/WAERME_UND_STRAHLUNG/ZUSAMMENFASSUNG/index/index.pdf" style="width:100%;height:540px">
+        <a href="uni/WAERME_UND_STRAHLUNG/ZUSAMMENFASSUNG/index/index.pdf">Laden</a>
+    </object>
+</p>

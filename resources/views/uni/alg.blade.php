@@ -39,4 +39,9 @@
 <p><b>Empfohlene Vorkenntnisse:</b> Lineare Algebra 1 (lalg1)</p>
 <p><b>Leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
 <div class="col"><hr></div>
-<p><b>Zusammenfassung:</b> <a href="docs/MATHEMATIK/ALGEBRA/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> ALGEBRA</a></p>
+<p><b>Zusammenfassung der Mathematik:</b>
+<p>
+    <object data="uni/ANALYSIS/ZUSAMMENFASSUNG/index/index.pdf" style="width:100%;height:540px">
+        <a href="uni/ANALYSIS/ZUSAMMENFASSUNG/index/index.pdf">Laden</a>
+    </object>
+</p>

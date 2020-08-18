@@ -1,0 +1,52 @@
+\subsection{Ebene Unterlagen}
+Ein starrer Körper auf ebener Unterlage heisst \textbf{standfest}, wenn er nicht kippt. Der Körper ist über eine Berührungsfläche mit der Unterlage in Kontakt und erfährt in jedem mit ihr gemeinsamen infinitesimalen Flächenelement $\text{d}A$ eine infinitesimale Normalkraft $\text{d}\overrightarrow{N}$ und eine infinitesimale Reibungskraft $\text{d}\overrightarrow{F}_R$, welche zusammen den Einfluss der Unterlage auf den Körper beschreiben und eine Kräftegruppe von flächenverteilten Kräften bilden.
+\newline\newline
+Die infinitesimalen Reibungskräften $\text{d}\overrightarrow{F}_R$ erschweren oder verhindern das Gleiten des Körpers auf der Unterlage. Die infinitesimalen Normalkräfte $\text{d}\overrightarrow{N}$ bilden eine Kräftegruppe von flächenverteilten, gleich gerichteten Kräften mit Massenangriffspunkten innerhalb der Berührungsfläche. Sie entsprechen die Bindungskräften einer einseitigen Bindung. Ihr Moment bezüglich eines beliebigen Punktes der ebenen Unterlage ist senkrecht zu jeder dieser infinitesimalen Kräfte. Das Gesamtmoment ist also senkrechtzur Resultierenden der Kräftegruppe. Die Kräftegruppe lässt sich statisch äquivalent auf eine Einzelkraft, auf eine resultierende Normalkraft $\overrightarrow{N}$ reduzieren. 
+\newline\newline
+Der Massenangriffspunkt dieser Einzelkraft, also der Kräftemittelpunkt ist vorerst unbekannt. Er muss aber innerhalb der kleinsten konvexen,die Berührungsfläche enthaltenden Fläche liegne. Man nennt diese Fläche die \textbf{Standfläche} des Körpers. Solange die Gleichgewichtsbedingungen eine resultierende Normalkraft liefern, die innerhalb der Standfläche angreift und gegen den Körper gerichtet ist, bleibt der Körper \textbf{standfest}.
+\subsection{Lager bei Balkenträgern und Wellen}
+\begin{enumerate}[$(a)$]
+\item \textbf{Auflager:} Sie wirken einseitig und verhindert die Bewegung der Berührungs-punkte eines Trägers in eine Halbebene. Die zugehörige Bindungskraft auf den Träger, die \textbf{Auflagerkraft}, ist demzufolge gegen den anderen Halbraum gerichtet. Ist das Auflager reibungsfrei, so muss die Stützkraft normal zur Trägerachse sein.
+\item \textbf{Kurze Querlager:} Sie verhindern die Quertranslation senkrecht zur Trägerachse eines ganzen Querschnitts eines Trägers oder einen drehenden Welle, lassen jedoch eine Längstranslation, Kipprotationen um Achse senkrecht zur Trägerachse und, bei kreisförmigen Querschnitten, Eigenrotationen um die Trägerachse zu. Technisch lassen sie sich durch schmale Ringlager oder durch Kugellager realisieren. Ist das Lager reibungsfrei, so besteht die Lagerkraft im Allgemeinen, den zwei Richtungen der verhinderten Quertranslationen entsprechend, aus zwei Komponenten senkrecht zur Trägerachse. Der Richtungsssinn der zwei Komponenten stellt sich je nach Belastung ein.  
+\item \textbf{Langslager:} Sie verhindern die Verschiebung des Trägers in Richtung seiner Achse. Das Längslager kann einseitig oder zweiseitig sein.
+\item \textbf{Lange Querlager:} Sie verhindern nicht nur Quertranslationen des Trägers, wie bei den kurzen Querlagern, sondern auch Kipprotationen. technisch lassen sie sich durch breite Gleitlager oder durch Rolllager realisieren. Die Lagerdyname besteht hier nicht nur aus einer resultierenden Lagerkraft, sondern, wegen der Verhinderung der Kipprotationen, auch aus einem resultierenden Kräftepaar, das durch sein Moment charakterisiert wird. Ist das Lager reibungsfrei, so besitzt die resultierende Lagerkraft keine Komponente in Richtung der Trägerachse, ausser wenn das Querlager durch ein Längslager ergänzt wird.
+\item \textbf{Starre Einspannung:} Eine starre Einspannung verhindert alle Bewegungen desTrägerquerschnittes. Die entsprechende Lagerdyname besteht aus einer resultierenden Kraft, der \textbf{Einspannkraft}, und einem Moment, dem \textbf{Einspannmoment}, welches das zugehörige resultierende Kräftepaar charakterisiert. Die Einspannkraft kann Quer- und Längskomponenten haben. In einem ebenen Problem ergibt die Einspanndyname 3 Unbekannte (2 Kraftkomponenten und 1 Momentkomponente), in einem räumlichen Problem 6 Unbekannte (je 3 Kraft- und 3 Momentkomponenten).
+\item \textbf{Kugelgelenke:} Sie verhindern im Idealfall alle 3 Verschiebungskomponenten des Trägerendes, lassen aber sämtliche Rotationsbewegungen um das Gelenk, also \textbf{Kreiselungen}, zu. 
+\item \textbf{Zylindergelenke:} Sie lassen eine Rotation um die Zapfenachse und gegebenfalls eine Verschiebung in Richtung der Zapfenachse zu, verhindern jedoch im Idealfall alle anderen Bewegungsmöglichkeiten. Bei einem ebenen Problem hat es 2 Kraftkomponenten und 2 Momentkomponenten, welche null sind.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Vorgehen zur Ermittlung der Lagerkräfte}
+Zur Ermittlung der unbekannten äusseren Lagerkräfte in der Ruhelage eignet sich das folgende Vorgehen durch Gleichgewichtsbedingungen.
+\begin{enumerate}[$(a)$]
+\item Abgrenzung des Massensystems.
+\item Einführung der äusseren Kräfte, insbesondere der Lasten und der äusseren Lagerkräfte.
+\item Wahl einer zweckmässigen Basis $\overrightarrow{e}_x$, $\overrightarrow{e}_y$, $\overrightarrow{e}_z$ mit dem zugehörogen Koordinatensystem $\left\{x, y, z\right\}$ zur komponentenweise Darstellung der Kraftvektoren.
+\item Ermittlung der statischen Bestimmtheit bzw. Unbestimmtheit des Systems durch Abzählen und Vergleich der Anzahl von skalaren Gleichungen und Unbekannten, sowie durch Lösen von Bindungen.
+\item komponentenweise Formulierung der skalaren Gleichgewichtsbedingungen in der Ruhelage.
+\item gegebenfalls Trennung des SYstems in Teilsysteme und Durchführung der Schritte $\left(a\right)$ bis $\left(e\right)$ für die Teilsysteme (statisch unbestimmte Systeme).
+\item Ermittlung der Unbekannten.
+\item Diskussion der Resultate.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bemerkungen}
+Lagerkräfte, d.h. lagerartige Bindungen entstehende Bindungskräfte, werden auch als \textbf{Lagerreaktionen} bezeichnet. Die Lagerkräfte sind nicht direkt die Reaktionen der auf den Träger wirkenden Lasten. Lagerkräfte stellen den Respons der ausserhalb des Massensystems liegenden Berührungspunkte der Lager auf die Einwirkung durch die gelagerten Trägerquerschnitte dar. Die Reaktionen zu den Lasten, die definitionsgemäss äussere Kräfte sind, befinden sich mit ihren Massenangriffspunkten ausserhalb des Massensystems, da dieses nur aus dem Träger selbst besteht.
+\newline\newline
+Die Wahl der Basis und vor allem des Bezugspunktes zur Formulierung der Momentenbedingungen kann unter Umständen die Lösung wesentlich erleichtern. In der Regel sollte der Bezugspunkt gewählt werden, wo sich möglichst viele Wirkungslinien von unbekanntenKräfte treffen. So erscheint in den Momentenbedingungen die kleinstmögliche Anzahl von Unbekannten.  
+\newline\newline
+Es ist nützlich bei der Formulierung von Gleichgewichtsbedingungen mehrere Momentenbedingungen bezüglich verschiedene Punkte aufzustellen. Man beachte, dass man bei ebenen Problemen keinesfalls mehr als drei unabhängige Gleichgewichtsbedingungen für die äussere Kräfte an einem gegebenen Träger formulieren kann. Diese garantieren, dass die resultierende Dyname verschwindet, und damit ist jede weitere Gleichgewichtsbedingungvon selbst erfüllt.
+\newline\newline
+Bei räumliche Probleme lassen sich drei Komponenten- und Momentenbedingungen beispielsweise durch 6 Momentenbedingungen bezüglich 6 räumlich liegenden Achsen ersetzen. Auch in diesem Fall können für einen gegebenen Träger nicht mehr als 6 linear unabhängige Gleichgewichtsbedingungen formuliert werdem. 
+\newline\newline
+;Man bezeichnet ein Gleichgewichtsproblem mit $n$ Unbekannten, für welche sich nur $m<n$ (linear unabhängige) Gleichungen aufstellen lassen, als $(n-m)$-\textbf{fach statisch unbestimmt}; im Fall $m=n$ heisst das Problem \textbf{statisch bestimmt}. Bei einem \textbf{statisch unbestimmten System} können Bindungen gelöst werden, und das System bleibt immer noch unbeweglich. Ein \textbf{statisch bestimmtes System} hingegen wird durch Lösen einer Bindungskomponente zu einem beweglichen Mechanismus. Statisch unbestimmte Probleme lassen sich nur durch Berücksichtigung der \textbf{Verformung} lösen.
+\newline\newline
+Die Gleichgewichtsbedingungen können nicht nur zur Ermittlung von Lager-kräften sondern mitunter auch zur Bestimmung der \textbf{Ruhelagen} selbst dienen.
+\newline\newline
+In Wirklichkeit sind jedoch sowohl der Träger als auch der Stützkörper deformierbar, so dass feste Lager einer Idealisierung entsprechen, bei der die Nachgiebigkeit des Lagers vernachlässigt wird. In einzelnen Anwendungen könnte aber diese Nachgiebigkeit eine wichtige Rolle spielen. In solchen Fällen werden die bisher erwähnten Lager durch \textbf{lineare Federn} ergänzt, welche die Lagerelastizität charakterisieren. Die Steifigkeit einer linearen Druck- und Zugfeder wird durch eine Federkonstante $k$ gegeben. Die zur Deformation der Feder nötige Federkraft ergibt sich aus der Längenänderung $\triangle x$, wobei $\overrightarrow{e}$ in der Zugrichtung liegt.
+\begin{equation}
+\boxed{\overrightarrow{F}=F\cdot \overrightarrow{e},\quad F=k\cdot \triangle x}
+\end{equation}
+Einspannungen können mit einer gewissen Drehnachgiebigkeit versehen sein. In einem solchen Fall kann man, im Sinne eines einfachen aber durchaus wirklichkeitsnahen Modells, die Einspannung durch eine lineare Drehfeder oder \textbf{Torsionsfeder} ersetzen, welche bei einem Drehwinkel von $\triangle \varphi$ ein Kräftepaar mit dem Moment $M$ entwickelt, 
+\begin{equation}
+\boxed{M=C\cdot \triangle \varphi}
+\end{equation}
+wobei $C$ die Federkonstante darstellt.Ist die Einspannung auch translatorisch nachgiebig, so kann dies durch entsprechende lineare Druck- und Zugfedern berücksichtigt werden. Damit entsteht eine \textbf{elastische Einspannung}.

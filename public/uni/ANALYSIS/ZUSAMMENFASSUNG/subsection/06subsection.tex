@@ -1,0 +1,752 @@
+\section{Vektordefinition}
+Vektoren kommen in der Kinematik udn Statik, Geschwindigkeit, Beschleunigung, Impuls, Kraft, elektrische und magnetische Feldstärke vor.
+\newline\newline
+Ein Vektor ist ein Element eines Vektorraums, also ein Objekt, das zu anderen Vektoren addiert und mit Skalaren multipliziert werden kann. Vektoren beschreiben Parallelverschiebungen in der Ebene oder im Raum. Vektoren werden durch Pfeile, der einen Urbildpunkt mit seinem Bildpunkt verbindet, dargestellt werden. In der Ebene werden Vektoren durch Zahlenpaare und im Raum durch Tripel bzw. Spaltenvektoren dargestellt. Im mehrdimensionalen Räume spricht man von Vektoren mit $n$-Tupel reeller Zahlen.
+\newline\newline
+Vektoren haben einen Betrag und eine Richtung. Sie bezeichnen Punkte im Raum durch Bezugspunkte wie den Ursprung $O$.
+\begin{equation}
+\boxed{\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}=\begin{pmatrix}OB_x-OA_x\\OB_y-OA_y\\OB_z-OA_z\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\vert \overrightarrow{AB}\vert=\sqrt{(OB_x-OA_x)^2+(OB_y-OA_y)^2+(OB_z-OA_z)^2}}
+\end{equation}
+Zwei Vektoren $\overrightarrow{OA}$ und $\overrightarrow{OB}$ werden addiert, indem
+\begin{equation}
+\boxed{\overrightarrow{OS}=\overrightarrow{OA}+\overrightarrow{OB}}
+\end{equation}
+$\overrightarrow{OB}$ parallel verschoben wird bis sein Anfangspunkt mit dem Endpunkt vom Vektor $\overrightarrow{OA}$ zusammenfällt. Der Summenvektor geht vom Anfangspunkt von $\overrightarrow{OA}$ bis zum Endpunkt von $\overrightarrow{OB}$.
+\newline\newline
+Der Differenz-Vektor ist die Summe von $\overrightarrow{OA}$ und $-\overrightarrow{OB}$
+\begin{equation}
+\boxed{\overrightarrow{OD}=\overrightarrow{OA}-\overrightarrow{OB}}
+\end{equation}
+Zu jedem Vektor $\overrightarrow{OA}$ gibt es einen Gegenvektor $-\overrightarrow{OA}$. Er besitzt den gleichen Betrag aber die entgegengesetzte Richtung.
+\begin{equation}
+\boxed{\overrightarrow{OA}+\left(-\overrightarrow{OA}\right)=\overrightarrow{O}}
+\end{equation}
+Durch die Multiplikation von $\overrightarrow{OA}$ mit einer reellen Zahl $\lambda$ entsteht ein neuer Vektor mit Betrag und Richtung. Für $\lambda>0$ ist er parallel und für $\lambda<0$ antiparallel zu $\overrightarrow{OA}$ gerichtet
+\begin{equation}
+\boxed{\lambda\overrightarrow{OA}=\lambda\cdot \overrightarrow{OA}}
+\end{equation}
+Ein Normalenvektor hat die Länge 1 und heisst deshalb normiert.
+\begin{equation}
+\boxed{\overrightarrow{n}_{\overrightarrow{OA}}=\dfrac{\overrightarrow{n}'_{\overrightarrow{OA}}}{\Big\vert \overrightarrow{n}'_{\overrightarrow{OA}}\Big\vert}}\quad \boxed{\overrightarrow{n}'_{OA}=\begin{pmatrix}-OA_y\\OA_x\end{pmatrix}=\begin{pmatrix}OA_y\\-OA_x\end{pmatrix}}
+\end{equation}
+\section{Vektorräume}
+Ein Vektorraum über $\mathbb{R}$ ist eine Menge $V$ mit einer Addition und einer skalaren Multiplikation. Seien $\overrightarrow{OA}$ und $\overrightarrow{OB}$ beliebige Elemente des Vektorraums $V$ mit $\lambda$, $\mu\in \mathbb{R}$, es gilt
+\begin{equation}
+\boxed{\overrightarrow{OA}+\overrightarrow{OB}=\overrightarrow{OB}+\overrightarrow{OA},\quad \text{mit }\overrightarrow{OA}+\overrightarrow{OB}\in V}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}+\overrightarrow{O}=\overrightarrow{OA}}\quad \boxed{\overrightarrow{OA}\cdot 1=\overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}+\left(-\overrightarrow{OA}\right)=\overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\lambda\cdot\left(\mu\cdot \overrightarrow{OA}\right)=\left(\lambda\cdot \mu\right)\cdot \overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\lambda\cdot \left(\overrightarrow{OA}\cdot \overrightarrow{OB}\right)=\lambda\cdot \overrightarrow{OA}+\lambda\cdot \overrightarrow{OB},\quad \text{mit }\lambda\cdot \overrightarrow{OA}\in V}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda+\mu\right)\cdot \overrightarrow{OA}=\lambda\cdot \overrightarrow{OA}+\mu\cdot \overrightarrow{OA}}
+\end{equation}
+\section{Beziehungen von Vektoren}
+Die Menge von Vektoren heisst linear abhängig genau dann, wenn die Gleichung eine Lösung mit $\lambda_i\neq 0$ für mindestens einen Koeffizienten gilt
+\begin{equation}
+\boxed{\lambda_1\cdot \overrightarrow{OA}_1+\lambda_2\cdot \overrightarrow{OA}_2+\dotso+\lambda_n\cdot \overrightarrow{OA}_n=\displaystyle \sum_{k=1}^n\lambda_i\cdot \overrightarrow{OA}_i=\overrightarrow{O},\quad \lambda_i\in <mathbb{R}}
+\end{equation}
+Zwei Vektoren sind kollinear, wenn es eine Zahl $\lambda$ gibt, so dass
+\begin{equation}
+\boxed{\overrightarrow{OA}_1-\lambda\cdot \overrightarrow{OA}_2=\overrightarrow{O}}
+\end{equation}
+Somit bilden eine Linearkombination und sind linear abhängig. Diese Vektoren liegen auf einer Geraden, zeigen in dieselbe Richtung und haben verschiedene Längen. Die Kollinearirär wird bei der Lagebeziehung mehreren Geraden durchgeführt.
+\newline\newline
+Drei Vektoren sind komplenar, wenn die Vektoren auf einer Ebene liegen und eine Vektorenkette schliessen., die zum Nullpunkt hinführt. Einer der drei Vektoren lässt sich also als Linearkombination der beiden anderen Vektoren darstellen. Somit sind sie linear abhängig. Dioe Komplanaität wird für die Lagebeziehung zwischen Geraden oder Lagebeziehung zwischen Gerade und Ebene verwendet.
+\begin{equation}
+\boxed{\lambda_1\cdot \overrightarrow{OA}_1+\lambda_2\cdot \overrightarrow{OA}_2+\lambda_3\cdot \overrightarrow{OA}_3=\overrightarrow{O}}
+\end{equation}
+Linear unabhängige Vektoren haben keine spezielle Lage zueinander. Zwei linear unabhängige Vektoren spannen eine Fläche auf. Drei linear unabhängige Vektoren spannen ein Hypervolumen auf. Wenn man entlang von jedem Vektor geht, kommt man nie wieder zum Ursprung zurück, ausser wenn man alle Schrittlängen auf null setzt.
+\newline\newline
+Aus zwei Vektoren $\overrightarrow{OP}$ und $\overrightarrow{OQ}$ lässt sich den Mittelpunkt wie folgt bestimmen
+\begin{equation}
+\boxed{\overrightarrow{OM}=\overrightarrow{OP}+\dfrac{1}{2}\cdot\left(\overrightarrow{OQ}-\overrightarrow{OP}\right)}
+\end{equation}
+Aus drei Vektoren $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$ die ein Dreieck bilden, lautet den zugehörigen Schwerpunkt
+\begin{equation}
+\boxed{\overrightarrow{OS}=\dfrac{1}{3}\cdot\left(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\right)}
+\end{equation}
+Bilden $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$ ein gleichschenkliges Dreieck. Den Flächeninhalt lautet
+\begin{equation}
+\boxed{F=\dfrac{1}{2}\cdot \Big\vert\overrightarrow{AB}\Big\vert\cdot \Big\vert\overrightarrow{M_cC}\Big\vert}
+\end{equation}
+Um die Orthogonalität eines Vektors zu überprüfen, wird dieser Vektor mit seinen zugehörigen senkrechten Komponenten skalar multipliziert und dies ergibt null
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OA}^{\perp}=0}
+\end{equation}
+\section{Trigonometrie}
+Unter dem Bogenmass $x$ versteht man die Länge des Bogens auf dem Einheitskreis
+\begin{equation}
+\boxed{\dfrac{x}{2\pi}=\dfrac{\alpha}{360^{\circ}}}
+\end{equation}
+Die Arkustangens-Funktion ordnet den Komponenten $x$ und $y$ den Winkel $\varphi$ zu. Dabei sind $x$, $y\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\arctan\left(\dfrac{y}{x}\right)+\left\{\begin{matrix}0^{\circ}\quad (Q_1\text{ und }Q_4)\\180^{\circ}\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Die Arkussinus-Funktion ordnet der Komponente $y$ und dem Radius $r$ den Winkel $\varphi$ zu. Dabei sind $r$, $y\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\left\{\begin{matrix}\arcsin\left(\dfrac{y}{r}\right)\quad (Q_1\text{ und }Q_4)\\180^{\circ}-\arcsin\left(\dfrac{y}{r}\right)\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Die Arkuskosinus-Funktion ordnet der Komponente $x$ und dem Radius $r$ den Winkel $\varphi$ zu. Dabei sind $r$, $x\in \mathbb{R}$
+\begin{equation}
+\boxed{\varphi=\left\{\begin{matrix}\arccos\left(\dfrac{x}{r}\right)\quad (Q_1\text{ und }Q_2)\\360^{\circ}-\arccos\left(\dfrac{x}{r}\right)\quad (Q_3\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+Somit lassen sich die Polarkoordinaten definieren
+\begin{equation}
+\boxed{\overrightarrow{OB}=\Big\vert\overrightarrow{OB}\Big\vert\cdot \begin{pmatrix}\cos\left(\varphi\right)\\\sin\left(\varphi\right)\end{pmatrix}}\quad \boxed{\varphi=\arctan\left(\dfrac{y}{x}\right)+\left\{\begin{matrix}0^{\circ}\quad (Q_1\text{ und }Q_4)\\180^{\circ}\quad (Q_2\text{ und }Q_3)\end{matrix}\right\}}
+\end{equation}
+\section{Das Skalarprodukt}
+Für $\overrightarrow{OA}$ und $\overrightarrow{OB}$, die den Winkel $\varphi$ einschliessen, ist das Skalarprodukt folgendermassen definert
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=\Big\vert \overrightarrow{OA}\Big\vert\cdot \Big\vert \overrightarrow{OB}\Big\vert\cdot \cos\left(\varphi\right)}
+\end{equation}
+und entspricht die Länge des Schattens von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$. Zu den Eigenschaften des Skalarproduktes zählen
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=\overrightarrow{OB}\bullet \overrightarrow{OA}}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda\cdot \overrightarrow{OA}\right)\bullet \overrightarrow{OB}=\lambda\cdot \left(\overrightarrow{OA}\bullet \overrightarrow{OB}\right)}
+\end{equation}
+\begin{equation}
+\boxed{\left(\lambda\cdot\overrightarrow{OA}\right)\bullet \left(\mu\cdot\overrightarrow{OB}\right)=\left(\lambda\cdot \mu\right)\cdot \left(\overrightarrow{OA}\bullet \overrightarrow{OB}\right)}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \left(\overrightarrow{OB}+\overrightarrow{OC}\right)=\overrightarrow{OA}\bullet \overrightarrow{OB}+\overrightarrow{OA}\bullet \overrightarrow{OC}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OA}=\Big\vert\overrightarrow{OA}\Big\vert^2\cdot \cos\left(0\right)=\Big\vert\overrightarrow{OA}\Big\vert^2}
+\end{equation}
+\begin{equation}
+\boxed{\Big\vert\overrightarrow{OA}\bullet\overrightarrow{OB}\Big\vert\leq\Big\vert\overrightarrow{OB}\Big\vert,\quad (\text{Kathete}\leq\text{Hypothenuse})}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \overrightarrow{OB}=0\Leftrightarrow \overrightarrow{OA}\perp \overrightarrow{OB},\quad (\text{Orthogonalität})}
+\end{equation}
+Das Skalarprodukt einer Orthogonalbasis in $\mathbb{R}^n$ lautet
+\begin{equation}
+\boxed{\begin{array}{l}
+\begin{pmatrix}OA_1\\OA_2\\\vdots\\OA_n\end{pmatrix}\bullet \begin{pmatrix}OB_1\\OB_2\\\vdots\\OB_n\end{pmatrix}\\
+=\left(OA_1\cdot OB_1\right)\cdot\left(\overrightarrow{e}_1\bullet \overrightarrow{e}_1\right)+\dotso+\left(OA_n\cdot OB_n\right)\cdot\left(\overrightarrow{e}_n\bullet \overrightarrow{e}_n\right)\\
+=\left(OA_1\cdot OB_1\right)+\dotso+\left(OA_n\cdot OB_n\right)=\displaystyle \sum_{i=1}^nOA_i\cdot OB_i\\
+\end{array}}
+\end{equation}
+Der Winkel zwischen Vektoren lautet
+\begin{equation}
+\boxed{\varphi=\arccos\left(\dfrac{\overrightarrow{OA}\bullet \overrightarrow{OB}}{\Big\vert\overrightarrow{OA}\Big\vert\cdot \Big\vert\overrightarrow{OB}\Big\vert}\right)}
+\end{equation}
+Die orthogonale Projektion von $\overrightarrow{OB}$ auf die durch den Vektor $\overrightarrow{OA}$ gegebene Richtung ist der Vektor $\overrightarrow{OB}_{\overrightarrow{OA}}=k\cdot \overrightarrow{OA}$ mit
+\begin{equation}
+\boxed{k=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\overrightarrow{OA}\bullet \overrightarrow{OA}}=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert^2}}
+\end{equation}
+Die Projektion von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$ steht parallel zu $\overrightarrow{OA}$
+\begin{equation}
+\boxed{\overrightarrow{OB}_{\overrightarrow{OA}}=\dfrac{\overrightarrow{OB}\bullet \overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert^2}\cdot \overrightarrow{OA}=\underbrace{\left(\overrightarrow{OB}\bullet \dfrac{\overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert}\right)}_{\text{Schattenlänge}}\cdot \underbrace{\dfrac{\overrightarrow{OA}}{\Big\vert\overrightarrow{OA}\Big\vert}}_{\text{normierte Richtung}}}
+\end{equation}
+Das Lot von $\overrightarrow{OB}$ auf $\overrightarrow{OA}$ steht senkrecht zu $\overrightarrow{OA}$
+\begin{equation}
+\boxed{\overrightarrow{OH}=\overrightarrow{OB}-\overrightarrow{OB}_{\overrightarrow{OA}}}
+\end{equation}
+Aus diesem Grund erzeugt es sich beispielsweise die Projektion eines Punktes auf einer Geraden durch den Ursprung (Lot).
+\begin{equation}
+\boxed{\overrightarrow{OP}'=\overrightarrow{OP}-\left(\overrightarrow{OP}\bullet \overrightarrow{n}\right)\cdot \overrightarrow{n}}\quad \boxed{\overrightarrow{n}=\dfrac{\overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}}
+\end{equation}
+und die Spiegelung eines Punktes auf einer Geraden durch den Ursprung
+\begin{equation}
+\boxed{\overrightarrow{OP}''=\overrightarrow{OP}-2\cdot \left(\overrightarrow{OP}\bullet \overrightarrow{n}\right)\cdot \overrightarrow{n}}\quad \boxed{\overrightarrow{n}=\dfrac{\overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}}
+\end{equation}
+\section{Das Spatprodukt}
+Betrachte man drei Vektoren $\overrightarrow{OA}$, $\overrightarrow{OB}$ und $\overrightarrow{OC}$. Das Parallelepiped aufgespannt durch die drei Vektoren nennt man Spat. Für die Vektoren heisst die Zahl Spatprodukt.
+\begin{equation}
+\boxed{\det\left(\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\right)=\overrightarrow{OA}\bullet \left(\overrightarrow{OB}\times \overrightarrow{OC}\right)}
+\end{equation}
+Der Vektor $\overrightarrow{OB}\times \overrightarrow{OC}$ ist senkrecht auf das Parallelogram aufgespannt durch $\overrightarrow{OB}$ und $\overrightarrow{OC}$. Die Fläche des Parallelograms ist $\Big\vert\overrightarrow{OB}\times \overrightarrow{OC}\Big\vert$.
+\newline\newline
+Durch das Skalarprodukt wird der Schatten von $\overrightarrow{OA}$ auf $\overrightarrow{OB}\times \overrightarrow{OC}$ berechnet
+\begin{equation}
+\boxed{\overrightarrow{OA}\bullet \left(\overrightarrow{OB}\times \overrightarrow{OC}\right)=\cos\left(\varphi\right)\cdot \Big\vert\overrightarrow{OA}\Big\vert\cdot \Big\vert\overrightarrow{OB}\times \overrightarrow{OC}\Big\vert}
+\end{equation}
+Der Betrag des Spatprodukts ist gleich dem Volumen des Spats. Dies ist genau die Höhe des Körpers aufgespannt durch die Vektoren und wird mit der Grundfläche multipliziert.
+\newline \newline
+Das Volumen des Spats ist unabhängig von der Reihenfolge. Nur das Vorzeichen kann eventuell ändern, wenn die Reihenfolge vertauscht wird.
+\begin{equation}
+\boxed{\Big[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\Big]=\Big[\overrightarrow{OC}, \overrightarrow{OA}, \overrightarrow{OB}\Big]=\Big[\overrightarrow{OB}, \overrightarrow{OC}, \overrightarrow{OA}\Big]}
+\end{equation}
+\begin{equation}
+\boxed{\Big[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}\Big]=-\Big[\overrightarrow{OA}, \overrightarrow{OC}, \overrightarrow{OB}\Big]}
+\end{equation}
+Falls das Volumen des Spats bzw. der Betrag des Spatprodukts null ist, sind die Vektoren linear abhängig und liegen auf einer Ebene.
+\section{Die Gerade}
+Die Parameterdarstellung der Gerade, mit $\overrightarrow{OA}$ als Bezugspunkt und $\overrightarrow{AB}$ als Richtungsvektor mit $\lambda\in \mathbb{R}$ als Parameter, lautet
+\begin{equation}
+\boxed{g:\overrightarrow{r}=\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}}
+\end{equation}
+Die Hessesche Normalform der Gerade, mit $\overrightarrow{OA}$ als Bezugspunkt und $\overrightarrow{n}_E$ als Normalensvektor der Geraden, lautet
+\begin{equation}
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E=0}
+\end{equation}
+Die Koordinatenform der Gerade, mit $n_i$ Komponenten des Normalenvektors $\overrightarrow{n}_E$ zur Richtungsvektor der Gerade, wobei diese Form zweidimensionell ist, lautet
+\begin{equation}
+\boxed{n_x\cdot x+n_y\cdot y+d=0}
+\end{equation}
+Von der parameterform in die Hessesche Normalenform der Gerade muss man aus dem Richtungsvektor $\overrightarrow{AB}$ der Gerade den Normalenvektor $\overrightarrow{n}_E$ erzeugen.\newline\newline
+Von der hessesche Normalenform im Koordinatenform muss man das Skalarprodukt und Terme berechnen.
+\newline\newline
+Aus dem Koordinatenform in die Hessesche Normalenform muss aus den Koeffizienten den $\overrightarrow{n}_E$ auslesen. $\overrightarrow{OA}$ generieren durch die Wahl einer Koordinate und die andere mit der Koordinatengleichung berehcnen.
+\section{Die Ebene}
+Die Parameterdarstellung der Ebene, wobei $\overrightarrow{OA}$ der Bezugspunkt und $\overrightarrow{AB}$ und $\overrightarrow{AC}$ die Richtungsvektoren mit $\lambda$, $\mu\in\mathbb{R}$ als Parametern, ausserdem die Richtungsvektoren müssen nicht unbedingt zueinander senkrecht bzw. nciht kollinear liegen, lautet
+\begin{equation}
+\boxed{E:\overrightarrow{r}=\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}+\mu\cdot \overrightarrow{AC}}
+\end{equation}
+Für die Ebene definiert man den Normalenvektor $\overrightarrow{n}'_E$ und den Ortsvektor des Bezugspunktes$\overrightarrow{OA}$. Somit wird die Normalenform der Ebene erzeugt.
+\begin{equation}
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet\overrightarrow{n}'_E=\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\overrightarrow{OA}\right]\bullet \left(\overrightarrow{AB}\times \overrightarrow{AC}\right)=0}
+\end{equation}
+Die Ebene $E$ ist definiert durch den normierten Normalenvektor $\overrightarrow{n}_E$ und den Bezugspunkt $\overrightarrow{OA}$. Somit wird die Hessesche Normalenform erzeugt.
+\begin{equation}
+\boxed{\left(\overrightarrow{r}-\overrightarrow{OA}\right)\bullet \dfrac{\overrightarrow{n}'_E}{\Big\vert \overrightarrow{n}'_E\Big\vert}=\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\overrightarrow{OA}\right]\bullet \dfrac{\overrightarrow{AB}\times \overrightarrow{AC}}{\Big\vert\overrightarrow{AB}\times \overrightarrow{AC}\Big\vert}=0}
+\end{equation}
+Die Ebene ist definiert durch die vier Parameter $n_1'$, $n_2'$, $n_3'$ und $n_4'$ und es gilt $(n_1')^2+(n_2')^2+(n_3')^2=1$. Der Wert $\vert n_4'\vert$ ist der Abstand zum Ursprung. Für den allgemeinen Punkt $\overrightarrow{r}$ in der Ebene gilt
+\begin{equation}
+\boxed{E:n_1'\cdot x+n_2'\cdot y+n_3'\cdot z+n_4'=0}
+\end{equation}
+Die Achsenabschnittsform der Ebene lautet
+\begin{equation}
+\boxed{E:\dfrac{1}{c_1}x+\dfrac{1}{c_2}y+\dfrac{1}{c_3}z-1=0}\quad \boxed{c_i=\dfrac{-n_4'}{n_i'}\quad \text{mit }i=1,2,3}
+\end{equation}
+Von der Koordinatenform in die Parameterform erfinde man drei Vektoren und erzeugt man daraus ein Bezugspunkt und zwei Richtungsvektoren.
+\begin{equation}
+\boxed{\overrightarrow{OA}=\begin{pmatrix}0\\0\\-n_4'/n_3'\end{pmatrix}, \overrightarrow{OB}=\begin{pmatrix}-n_4'/n_1'\\0\\0\end{pmatrix}, \overrightarrow{OC}=\begin{pmatrix}0\\-n_4'/n_2'\\0\end{pmatrix}}
+\end{equation}
+Von der Koordinatenform in die Normalenform erfinde man einen Bezugspunkt und aus den Konstanten $n_i'$ deb Normalenvektor. Mit diesen Informationen kann man die Normalenform und die Hessesche Normalenform der Ebene erzeugen.
+\begin{equation}
+\boxed{\overrightarrow{OA}=\begin{pmatrix}0\\0\\-n_4'/n_3'\end{pmatrix},\quad \overrightarrow{n}'_E=\begin{pmatrix}n_1'\\n_2'\\n_3'\end{pmatrix}}
+\end{equation}
+Von der Parameterform in die Koordinatenform berechnet man aus den Richtungsvektoren den Normalenvektor. Die Komponenten des Normalenvektors $\overrightarrow{n}'_E$ und das Einsetzen des Bezugspunktes $\overrightarrow{OA}$ erzeugt die Koordinatenform der Ebene.
+\newline\newline
+Von der Parameterform in die Normalenform erzeugt man den Normalenvektor aus den Richtungsvektoren. Mit den Bezugspunkt und den Normalenvektor erzeugt man die Normalenform der Ebene.
+\newline\newline
+Von der Normalenform in die Koordinatenform multipliziert man alles aus und so wird die gewnschte Form erzeugt.
+\newline\newline
+Von der Normalenform in die Parameterform erhält man, indem man die Normalenform in die Koordinatenform umwandelt ud dann diese in die Parameterform.
+\section{Abstände}
+Der Abstand eines Punktes $\overrightarrow{OP}$ zur Gerade $g:\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}$ erhält man aus der Berechnung der Fläche des Parallelograms.
+\begin{equation}
+\boxed{d=\dfrac{\Big\vert\overrightarrow{AB}\times\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\Big\vert}{\Big\vert\overrightarrow{AB}\Big\vert}=\left\vert\dfrac{\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}'}{\Big\vert\overrightarrow{n}'\Big\vert}\right\vert}
+\end{equation}
+Für die Berechnung des Fusspunktes eines Punktes $\overrightarrow{OP}$ auf einer Gerade $g:\overrightarrow{OA}+\lambda\cdot \overrightarrow{AB}$ sei den Fusspunkt $\overrightarrow{OF}$ gegeben. Man zerlegt den Vektor $\overrightarrow{AP}$ erstens in einer parallelen Komponente mit Betrag $\Big\vert\overrightarrow{AF}\Big\vert$ und Richtung $\overrightarrow{AB}$ und zweitens in eine senkrechte Komponente mit Betrag $\Big\vert\overrightarrow{FP}\Big\vert$ mit Richtung senkrecht zu $\overrightarrow{AB}$.
+\newline\newline
+Die Projektion von $\overrightarrow{AP}$ auf $\overrightarrow{AB}$ und Fusspunkt lauten
+\begin{equation}
+\boxed{\overrightarrow{OF}=\overrightarrow{OA}+\overrightarrow{AF}=\overrightarrow{OA}+\left[\overrightarrow{AP}\bullet \dfrac{\overrightarrow{AB}}{\Big\vert\overrightarrow{AB}\Big\vert}\right]\cdot \dfrac{\overrightarrow{AB}}{\Big\vert\overrightarrow{AB}\Big\vert}}
+\end{equation}
+Das Lot ist der Vektor zwischen dem Punkt $\overrightarrow{OP}$ und der Fusspunkt $\overrightarrow{OF}$
+\begin{equation}
+\boxed{\overrightarrow{h}_{\overrightarrow{OP}}=\overrightarrow{OP}-\overrightarrow{OF}}
+\end{equation}
+Der Abstand des Fusspunktes zum Punkt $\overrightarrow{OP}$ übereinstimmt mit dem Abstand Punkt-Gerade
+\begin{equation}
+\boxed{d=\Big\vert\overrightarrow{h}_{\overrightarrow{OP}}\Big\vert}
+\end{equation}
+Der Abstand eines Punktes $\overrightarrow{OP}$ von der Ebene $E$ in Parameterdarstellung lautet
+\begin{equation}
+\boxed{d=\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \dfrac{\overrightarrow{AB}\times \overrightarrow{AC}}{\Big\vert\overrightarrow{AB}\times \overrightarrow{AC}\Big\vert}=\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E}
+\end{equation}
+\begin{equation}
+\boxed{\left(\overrightarrow{OP}-\overrightarrow{OA}\right)\bullet \overrightarrow{n}_E-d=0}
+\end{equation}
+Die Punkte $\overrightarrow{OP}$ auf der Ebene $E$ kann man berechnen, indem $d=0$, so wird die Hessesche Form der Ebene erzeugt.
+\newline\newline
+Für die Projektion eines Punktes an einer Ebene wird der Punkt $\overrightarrow{OP}$ durch $\overrightarrow{OP}'$ auf die Ebene $E$ mit Bezugspunkt $\overrightarrow{OC}$ projiziert.
+\begin{equation}
+\boxed{\overrightarrow{OP}'=\overrightarrow{OP}-\left(\overrightarrow{CP}\bullet \overrightarrow{n}_E\right)\cdot \overrightarrow{n}_E}
+\end{equation}
+Durch $\overrightarrow{OP}''$ wird der Punkt $\overrightarrow{OP}$ an der Ebene mit Bezugspunkt $\overrightarrow{OC}$ gespiegelt.
+\begin{equation}
+\boxed{\overrightarrow{OP}''=\overrightarrow{OP}-2\cdot \left(\overrightarrow{CP}\bullet \overrightarrow{n}_E\right)\cdot \overrightarrow{n}_E}
+\end{equation}
+\section{Lineare Gleichungssysteme}
+Ein lineares Gleichungssystem besteht aus $m$ linearen Gleichungen und $n$ Unbekannte.
+\begin{equation}
+\boxed{\left\vert
+\begin{array}{ccccccccc}
+a_{11}x_1&+&a_{12}x_2&+&\dotso&+&a_{1n}x_n&=&b_1\\
+a_{21}x_1&+&a_{22}x_2&+&\dotso&+&a_{2n}x_n&=&b_2\\
+\vdots&&\vdots&&\ddots&&\vdots&&\vdots\\
+a_{m1}x_1&+&a_{m2}x_2&+&\dotso&+&a_{mn}x_n&=&b_m\\
+\end{array}
+\right\vert}
+\end{equation}
+Das System heisst homogen (Ebenen gehen durch $\overrightarrow{O}$), wenn alle $b_i=0$, anderenfalls inhomogen (Ebenen nicht durch $\overrightarrow{O}$).
+\newline\newline
+Das lineare Gleichungssystem besitzt keine Lösung, so nennt man inkonsistenz (zwei Ebenen schneiden sich in einer Gerade, diese Gerade ist parallel zu einer andere Gerade). Hat das lineare Gleichungssytem eine oder unendlich viele Lösungen, so nennt man konsistent (drei Ebenen schneiden sich in einem Punkt oder gehen durch eine Gerade).
+\newline\newline
+Die Matrix $A$ heisst Koeffizientenmatrix und wird durch elementare Zeilenoperationen oder linear Kombinationen umgeformt. Die erweiterte Koeffizientenmatrix $B=\left(A|\overrightarrow{b}\right)$ stellt eine Beziehung mit dem Spaltenvektor $\overrightarrow{b}$
+\newline\newline
+Durch elementare Zeilenoperationen (Zeilenvertauschung, Multiplikation einer Zeile mit einer konstanten ungleich null und Addition einer Zeile zu einer anderen Zeile) wird das lineare Gleichungssystemin Zeilenstufenform vermwandelt. Hieraus bestimmt man die Unbekannten des linearen Gleichungssystems durch Rückwärtseinsetzen oder durch die Cramersche Regel, wobei zwei Arten von Variablen auftreten: Die abhängige Variable, welche durch Pivotstellen bestimmt wird und die freie Variablen, also die Restlichen.
+\newline\newline
+Um die lineare Abhängigkeit einer Matrix $A$ eines linearen Gleichungssystems zu prüfen, transponiert man die Matrix $A$ und bringt sie durch Gauss-Eliminations-verfahren auf Zeilenstufenform. Hat es eine Nullzeile, so ist das System linear abhängig, sonst linear unabhängig.
+\newline\newline
+Die Anzahl $r$ von Zeilen verschieden von null ist eindeutig bestimmt. In jeder Zeile stehen links vor dem Pivotelement nur Null-Elementen, ebenso in den Spalten unter dem Pivotelement. Liest man von oben nach unten, so rückt die Pivotposition pro Zeile um mindestens eine Stelle nach rechts. Folgende Eigenschaften des Rangs $r(A)$ einer Matrix $A$ sind
+\begin{enumerate}[$(i)$]
+\item Der Rang ist die Anzahl der Zeilen ungleich null in der Zeilenstufenform.
+\item Der Rang ist die Anzahl linear unabhängiger Zeilen oder Spalten von $A$.
+\item Der Rang ist die Ordnung der grössten Unterdeterminante verschieden von Null der Matrix $A$
+\item $r\left(A\odot B\right)\leq \min\left[r\left(A\right), r\left(B\right)\right]$
+\item $r\left(A\odot A^T\right)=r\left(A^T\odot A\right)=r\left(A\right)$
+\end{enumerate}
+Sei $A\in\mathbb{R}^{n\times n}$ eine quadratische Matrix. Die Spur einer quadratischen Matrix ist die Summe seiner Diagonalelemente. Den Eigenschaften mit $x_i\in \mathbb{R}$ der Spur gehören dabei
+\begin{equation}
+\boxed{\text{Spur}\left(A\right)=\displaystyle \sum_{i=1}^na_{ii}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\text{Spur}\left(x_1\cdot A+x_2\cdot B\right)=x_1\cdot \text{Spur}\left(A\right)+x_2\cdot \text{Spur}\left(B\right)$
+\item $\text{Spur}\left(A\odot B\right)=\text{Spur}\left(B\odot A\right)$, wobei $A\in\mathbb{R}^{m\times n}$ und $B\in\mathbb{R}^{n\times m}$
+\item $\text{Spur}\left(A\right)=\displaystyle \sum_{i=1}^n\lambda_i$, ($\lambda_i$ sind die Eigenwerte von $A$)
+\end{enumerate}
+Für den Fall der unendlich viele Lösungen ist die Anzahl an freie variablen, wobei $n$ die Anzahl an Unbekannten und $r(A)$ der Rang der Matrix $A$, also die Anzahl an nciht Nullzeilen nach Gauss-Elimination.
+\begin{equation}
+\boxed{\text{Anzahl an freie variablen} = n-r(A)}
+\end{equation}
+Die Anzahl an Lösungen eines homogenen Systems ist abhängig von der Anzahl an linearen Gleichungen $m$ und der Anzahl an Unbekannten $n$.
+\begin{equation}
+\boxed{
+\begin{array}{l}
+n<m\Rightarrow\left\{
+\begin{matrix}r(A)=n\Rightarrow\text{eine Lösung}\\r(A)<n\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n=m\Rightarrow\left\{
+\begin{matrix}r(A)=n \text{ und } \det(A)\neq 0\Rightarrow\text{eine Lösung}\\r(A)<n \text{ und } \det(A)=0\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n>m\Rightarrow \infty\text{ - Lösungen}
+\end{array}
+}
+\end{equation}
+Die Anzahl an Lösungen eines inhomogenen Systems ist abhängig von der Anzahl an linearen Gleichungen $m$ und der Anzahl an Unbekannten $n$.
+\begin{equation}
+\boxed{
+\begin{array}{l}
+n<m\Rightarrow\left\{
+\begin{matrix}r(A)<r(B)\Rightarrow\text{keine Lösung}\\r(A)=r(B)=n\Rightarrow\text{ eine Lösung}\\r(A)=r(B)<n\Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n=m\Rightarrow\left\{
+\begin{matrix}r(A)=r(B)=n \text{ und } \det(A)\neq 0\Rightarrow\text{eine Lösung}\\r(A)<r(B) \Rightarrow\text{ keine Lösung}\\r(A)=r(B)<n \Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+n>m\Rightarrow\left\{
+\begin{matrix}r(A)<r(B) \Rightarrow\text{keine Lösung}\\r(A)=r(B) \Rightarrow\infty\text{ - Lösungen}\end{matrix}\right\}\\\\
+\end{array}
+}
+\end{equation}
+Hat das lineare Gleichungssystem keine Lösung, dann bleibt für alle $\overrightarrow{x}$ ein Defekt.
+\begin{equation}
+\boxed{\overrightarrow{d}=A\odot \overrightarrow{x}-\overrightarrow{b}}
+\end{equation}
+Wird für ein $\overrightarrow{x}$ die mittlere quadratische Abweichung minimal
+\begin{equation}
+\boxed{\eta=\sqrt{\dfrac{1}{m}\left(\epsilon_1^2+\epsilon_2^2+\dotso+2+\epsilon_n^2\right)}=\dfrac{1}{m}\cdot \Big\vert A\odot \overrightarrow{x}-\overrightarrow{b}\Big\vert}
+\end{equation}
+\begin{equation}
+\boxed{\left\{
+\begin{array}{lll}
+\epsilon_1&=&a_{11}\cdot x_1+a_{12}\cdot x_2+\dotso+a_{1n}\cdot x_n-b_1\\
+&=&\dotso\\
+\epsilon_m&=&a_{m1}\cdot x_1+a_{m2}\cdot x_2+\dotso+a_{mn}\cdot x_n-b_m\\
+\end{array}
+\right\}}
+\end{equation}
+so nennt man $\overrightarrow{x}$ eine im quadratischen Mittel beste Lösung. Die Gauss-Normalgleichung hat für jedes $A$ und $\overrightarrow{b}$ stets eine Lösung. Die Gauss-Normalgleichung lautet
+\begin{equation}
+\boxed{A^T\odot A\odot \overrightarrow{x}=A^T\odot \overrightarrow{b}}
+\end{equation}
+\section{Matrizen}
+Ein Spaltenvektor ist eine Anordnung von Elementen in einer Spalte.
+\begin{equation}
+\boxed{\overrightarrow{a}_i=\begin{pmatrix}a_{1i}\\a_{2i}\\\vdots\\a_{ni}\end{pmatrix},\quad a_{mi}\in \mathbb{R}^n, \quad i\in \mathbb{N}}
+\end{equation}
+Ein Zeilenvektor ist eine Anordnung von ELementen in einer Zeile
+\begin{equation}
+\boxed{\overrightarrow{a}_i^T=\begin{pmatrix}a_{i1}&a_{i2}&\dotso&a_{in}\end{pmatrix},\quad a_{ni}\in \mathbb{R}^n,\quad i\in\mathbb{N}}
+\end{equation}
+Das Matrix-Produkt aus einem Spalten- und einem Zeilenvektor ergibt
+\begin{equation}
+\boxed{\overrightarrow{a}_i\odot \overrightarrow{a}_i^T=a_{1i}^2+a_{2i}^2+\dotso+a_{ni}^2}
+\end{equation}
+Die Länge eines Spaltenvektors entspricht
+\begin{equation}
+\boxed{\Big\vert\overrightarrow{a}\Big\vert=\sqrt{\overrightarrow{a}^T\odot \overrightarrow{a}}=\sqrt{a_{1i}^2+a_{2i}^2+\dotso+a_{ni}^2}}
+\end{equation}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ ist eine rechteeckige Tabelle mit Zahlen angeordnet in $m$ Zeilen und $n$ Spalten
+\begin{equation}
+\boxed{A=\begin{pmatrix}a_{11}&a_{12}&\dotso&a_{1n}\\a_{21}&a_{22}&\dotso&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\dotso&a_{mn}\end{pmatrix}}
+\end{equation}
+Aus der Matrix $A\in\mathbb{R}^{m\times n}$ wird eine Matrix der Form $A\in\mathbb{R}^{n\times m}$ erzeugt. Diese Matrix ist die Transponierte Matrix $A^T$ von $A$. Folgende Eigenschaften sind
+\begin{equation}
+\boxed{A^T=\left(a^T\right)_{mn}=\left(a\right)_{nm}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A+B\right)^T=A^T+B^T$
+\item $\left(A\odot B\right)^T=B^T\odot A^T$
+\item $\left(A^T\right)^T=A$
+\end{enumerate}
+Eine Matrix $A\in\mathbb{R}^{n\times n}$ heisst quadratische Matrix, wenn die Anzahl an Spalten und der an Zeilen übereinstimmt.
+\newline\newline
+Eine Diagonalmatrix ist eine quadratische Matrix falls alle Elemente ausserhalb der Diagonale gleich null sind
+\begin{equation}
+\boxed{D=\text{diag}\begin{pmatrix}a_{11}&a_{22}&\dotso&a_{nn}\end{pmatrix},\quad a_{ij}=0, \,i<j}
+\end{equation}
+Eine Einheitsmatrix ist eine Diagonalmatrix mit Eins-Elementen.
+\begin{equation}
+\boxed{I=\text{diag}\begin{pmatrix}a_{11}&a_{22}&\dotso&a_{nn}\end{pmatrix},\quad \text{für}\quad \begin{matrix}a_{ij}=1, \,i=j\\a_{ij}=0, \,i\neq j\end{matrix}}
+\end{equation}
+Eine untere Dreiecksmatrix besitzt Null-Elemente oberhalb der Diagonale ($a_{ij}=0$ für $i<j$). Eine obere Dreiecksmatrix besitzt Nul-Elemente oberhalb der Diagonale.
+\newline\newline
+Eine Matrix heisst symmetrisch, falls
+\begin{equation}
+\boxed{A=A^T\Leftrightarrow a_{ij}=a_{ji},\quad \text{für alle }i,\,j}
+\end{equation}
+Eine Matrix heisst antisymmetrisch, falls
+\begin{equation}
+\boxed{A=-A^T\Leftrightarrow a_{ij}=-a_{ji},\quad \text{für alle }i,\,j,\text{ sonst }0\text{ für }i=j}
+\end{equation}
+Eine quadratische Matrix $A$ heisst Exponentialmatrix für
+\begin{equation}
+\boxed{e^A=\displaystyle \sum_{n=0}^{\infty}\dfrac{1}{n!}A^n}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $e^{A+B}=e^A\cdot e^B,\quad $ falls $A\cdot B=B\cdot A$
+\item $\left(e^A\right)^{-1}=e^{-A}$
+\item $\dfrac{\text{d}}{\text{d}x}e^{x\cdot A}=A\cdot e^{x\cdot A}$
+\end{enumerate}
+Eine quadratische Matrix $A$ heisst orthogonal wenn
+\begin{equation}
+\boxed{A^T\odot A=I}\quad \boxed{A^T=A^{-1}}
+\end{equation}
+Sei $A\in\mathbb{R}^{n\times n}$ eine quadratische Matrix. Es existiert eine Matrix $A^{-1}$ mit $\det\left(A\right)\neq 0$, wobei die Zeilen/Spalten von $A$ linear unabhängig sind. Die Matrix $A$ nennt man invertierbar und die Matrix $A^{-1}$ die Inverse von $A$
+\begin{equation}
+\boxed{A\odot A^{-1}=A^{-1}\odot A=I}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A\odot B\right)^{-1}=B^{-1}\odot A^{-1}$
+\item $\left(A^{-1}\right)^T=\left(A^T\right)^{-1}$
+\item $A\cdot \overrightarrow{x}=\overrightarrow{b}\Leftrightarrow \underbrace{ A^{-1}\odot A}_{I}\odot \overrightarrow{x}=\overrightarrow{x}=A^{-1}\odot\overrightarrow{b}$
+\item $\left(A^{-1}\right)^{-1}=A$
+\item $A^{-1}=A^T$, wobei $A$ ist orthogonal
+\end{enumerate}
+Die inverse Matrix einer Matrix $A\in\mathbb{R}^{2\times 2}$ lautet
+\begin{equation}
+\boxed{A^{-1}=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}=\dfrac{1}{\det\left(A\right)}\cdot \begin{pmatrix}a_{22}&-a_{12}\\-a_{21}&a_{11}\end{pmatrix}}
+\end{equation}
+Mit elementaren Zeilenumformungen lässt sich die Inverse Matrix durch das Gauss-Jordan-Verfahren oder die Jacobi-Methode berechnen
+\begin{equation}
+\boxed{\left(A\Big\vert I\right)=\left(I\Big\vert A^{-1}\right)}
+\end{equation}
+Sei eine Matrix $C$ bestehen aus Untermatrizen $A\in\mathbb{R}^{p\times p}$ und $B\in\mathbb{R}^{q\times q}$. Die Inverse Matrix $C^{-1}$ lautet
+\begin{equation}
+\boxed{C^{-1}=\begin{pmatrix}A&0\\0&B\end{pmatrix}^{-1}=\begin{pmatrix}A^{-1}&0\\0&B^{-1}\end{pmatrix}^{-1}}
+\end{equation}
+\section{Matrixalgebra}
+Zwei Matrizen $A$ und $B$ können addiert bzw. subtrahiert werden, wenn beide Matrizen die geiche Anzahl an Zeilen/Spalten besitzen
+\begin{equation}
+\boxed{C=A+B\Rightarrow c_{ij}=a_{ij}\pm b_{ij},\quad i,j\in \mathbb{N}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\left(A+B\right)+C=A+\left(B+C\right)$
+\item $A+O=O+A=A$
+\item $A+(-A)=(-A)+A=O$
+\item $A+B=B+A$
+\end{enumerate}
+Zwei Matrizen $A$ und $B$ können mit einem Skalar $\lambda\in\mathbb{R}$ multipliziert werden. Es gilt
+\begin{equation}
+\boxed{C=\lambda\cdot A\Rightarrow c_{ij}=\lambda\cdot a_{ij},\quad i,j\in\mathbb{N},\quad \lambda\in\mathbb{R}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $\lambda\cdot \left(A+B\right)=\lambda\cdot A+\lambda\cdot B$
+\item $\left(\lambda+\mu\right)\cdot A=\lambda\cdot A+\mu\cdot A$
+\item $\left(\lambda\cdot \mu\right)\cdot A=\lambda\cdot\left(\mu\cdot A\right)$
+\item $1\cdot A=A$
+\end{enumerate}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ kann mit einem Spaltenvektor $\overrightarrow{x}\in\mathbb{R}^{n\times 1}$ multipliziert werden und es wird einen Vektor $\overrightarrow{b}\in\mathbb{R}^{m\times 1}$ erzeugt. Es gilt
+\begin{equation}
+\boxed{\overrightarrow{b}=A\odot \overrightarrow{x}=x_1\cdot \overrightarrow{a}_1+x_2\cdot \overrightarrow{a}_2+\dotso+x_n\cdot \overrightarrow{a}_m}
+\end{equation}
+Eine Matrix $A\in\mathbb{R}^{m\times n}$ kann mit eine Matrix $B\in\mathbb{R}^{n\times p}$ multipliziert werden und es wird eine Matrix $C\in\mathbb{R}^{m\times p}$ erzeugt. Die Anzahl an Spalten von $A$ muss mit den Anzahl an Zeilen von $B$ übereinstimmen. Es gelten ausserdem folgende Eigenschaften
+\begin{equation}
+\boxed{\begin{array}{lll}
+C&=&A\odot B\Rightarrow c_{mp}=a_{mn}\cdot b_{np}=\displaystyle \sum_{k=1}^na_{mk}\cdot b_{np}\\
+&=&A\odot \begin{pmatrix}\overrightarrow{b}_1&\overrightarrow{b}_2&\dotso&\overrightarrow{b}_p\end{pmatrix}\\
+&=&\begin{pmatrix}A\odot \overrightarrow{b}_1&A\odot \overrightarrow{b}_2&\dotso&A\odot \overrightarrow{b}_p\end{pmatrix}\\
+\end{array}}
+\end{equation}
+\begin{enumerate}[$(i)$]
+\item $I\odot A=A\odot I=A$
+\item $\left(A\odot B\right)\odot C=A\odot\left(B\odot C\right)$
+\item $A\odot\left(B+C\right)=A\odot B+A\odot C$
+\item $A\odot B\neq B\odot A$
+\end{enumerate}
+Seien $A\in\mathbb{R}^{m\times n}$ und $B\in\mathbb{R}^{m\times n}$ zwei Matrizen in Funktion von $x$. Es gelten folgende Eigenschaften
+\begin{enumerate}[$(i)$]
+\item $A'\left(x\right)=\left(a_{ij}'\left(x\right)\right)$
+\item $\left(A\left(x\right)+B\left(x\right)\right)'=A'\left(x\right)+B'\left(x\right)$
+\item $\left(A\left(x\right)\odot B\left(x\right)\right)'=A\left(x\right)\odot B'\left(x\right)+A'\left(x\right)\odot B\left(x\right)$
+\item $\left(A^2\left(x\right)\right)'=A\left(x\right)\odot A'\left(x\right)+A'\left(x\right)\odot A\left(x\right)$
+\item $\left(A^{-1}\left(x\right)\right)'=-A^{-1}\left(x\right)\odot A'\left(x\right)\odot A^{-1}\left(x\right)$
+\end{enumerate}
+\section{Determinanten}
+Die Determinante einer quadratischen Matrix $A\in \mathbb{R}^{n\times n}$ berechnet den Flächeninhalt eines Parallelograms aufgespannt durch die Vektoren
+\begin{equation}
+\boxed{\left\vert\begin{matrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{matrix}\right\vert=a_{11}\cdot a_{22}-a_{12}\cdot a_{21}}
+\end{equation}
+Die Determinante einer quadratischen Matrix $A\in \mathbb{R}^{n\times n}$ benutzt die Berechnung von Untermatrizen. Die Matrix $A_{ik}$ ist die $\left(n-1\right)\times\left(n-1\right)$-Matrix und entsteht durch Streichen der $i$-ten Zeile und $k$-ten Spalte.
+\begin{equation}
+\boxed{\begin{array}{lll}
+\left\vert\begin{matrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{matrix}\right\vert&=&\displaystyle \sum_{k=1,\,i=1}^n\left(-1\right)^{k+i}a_{ik}\det\left(A_{ik}\right)\\
+&=&\left(-1\right)^{1+1}a_{11}\left\vert\begin{matrix}a_{22}&a_{23}\\a_{32}&a_{33}\end{matrix}\right\vert+\left(-1\right)^{1+2}a_{12}\left\vert\begin{matrix}a_{21}&a_{23}\\a_{31}&a_{33}\end{matrix}\right\vert+\left(-1\right)^{1+3}a_{13}\left\vert\begin{matrix}a_{21}&a_{22}\\a_{31}&a_{32}\end{matrix}\right\vert
+\end{array}}
+\end{equation}
+Die Determinante einer Dreiecksmatrix ist das Produkt der Diagonalelemente.
+\begin{equation}
+\boxed{\left\vert\begin{matrix}a_{11}&a_{12}\\0&a_{22}\end{matrix}\right\vert=a_{11}\cdot a_{22}}
+\end{equation}
+\begin{equation}
+\boxed{\left\vert\begin{matrix}a_{11}&a_{12}&a_{13}\\0&a_{22}&a_{23}\\0&0&a_{33}\end{matrix}\right\vert=\left\vert\begin{matrix}a_{11}&0&0\\a_{21}&a_{22}&0\\a_{31}&a_{32}&a_{33}\end{matrix}\right\vert=a_{11}a_{22}a_{33}}
+\end{equation}
+Wenn man eine Kante des Paralllograms um den Faktor $\lambda$ verlängert, muss die Fläche des Parallelograms (Determinante) um diesen Faktor anwachsen. Man nennt dies die Homogenität der Determinante.
+\newline\newline
+Wenn eine Fläche aufgespannt durch zwei Vektoren $\overrightarrow{a}$ und $\overrightarrow{b}+\overrightarrow{c}$, dann muss sich aus geometrischen Gründen die Gesamtfläche zusammensetzen aus dem kleinen Flächen aufgespannt durch $\overrightarrow{a}$ und $\overrightarrow{b}$ bzw. $\overrightarrow{a}$ und $\overrightarrow{c}$ und man nennt dies die Additivität der Determinante.
+\newline\newline
+Die Linearität der Determinante gilt, wenn die Homogenität und die Additivität der Determinante gelten.
+\begin{equation}
+\boxed{\det\begin{pmatrix}\lambda a_1&b_1\\\lambda a_2&b_2\end{pmatrix}=\lambda\begin{pmatrix}a_1&b_1\\a_2&b_2\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\det\begin{pmatrix}a_1+c_1&b_1\\a_2+c_2&b_2\end{pmatrix}=\det\begin{pmatrix}a_1&b_1\\a_2&b_2\end{pmatrix}+\det\begin{pmatrix}c_1&b_1\\c_2&b_2\end{pmatrix}}
+\end{equation}
+Die Linearität dreier Vektoren einer Matrix gehört der Linearität des Spatproduktes
+\begin{equation}
+\boxed{\det\begin{pmatrix}\lambda\overrightarrow{a}&\overrightarrow{b}&\overrightarrow{c}\end{pmatrix}=\lambda\cdot \det\begin{pmatrix}\overrightarrow{a}&\overrightarrow{b}&\overrightarrow{c}\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\det\begin{pmatrix}\overrightarrow{a}+\overrightarrow{d}&\overrightarrow{b}&\overrightarrow{c}\end{pmatrix}=\det\begin{pmatrix}\overrightarrow{a}&\overrightarrow{b}&\overrightarrow{c}\end{pmatrix}+\det\begin{pmatrix}\overrightarrow{d}&\overrightarrow{b}&\overrightarrow{c}\end{pmatrix}}
+\end{equation}
+Folgende sind Eigenschaften der Determinante im allgemeinen Sinne
+\begin{enumerate}[$(i)$]
+\item Werden alle Elemente einer Zeile/Spalte mit einer Konstanten $\lambda$ multipliziert, dann multipliziert sich die Determinante mit $1/\lambda$
+\item Vertauschung zweier Zeilen/Spalten ändert das Vorzeichen der Determinante.
+\item Die Determinante ändert sich nicht, wenn das Vielfache einer Zeile/Spalte zu einer anderen Zeile/Spalte addiert wird.
+\item Die Determinante ist Null, wenn entweder alle Elemente einer Zeile/Spalte Null sind oder zwei Zeilen/Spalten identisch sind.
+\item $\det\left(A^T\right)=\det\left(A\right)$
+\item $\det\left(A\odot B\right)=\det\left(A\right)\cdot \det\left(B\right)$
+\item $\det\left(A^{-1}\right)=\dfrac{1}{\det\left(A\right)}$
+\item $\det\left(I\right)=1$
+\item $\det\left(\lambda\cdot A\right)=\lambda^n\cdot \det\left(A\right)$
+\end{enumerate}
+\section{Transformationen von Basen}
+Die Vektoren $\overrightarrow{c}_{b,i}$ heissen Basisvektoren des Vektorraumes $V$, falls diese linear unabhängig sind und jeder Vektor $V$ als Linearkombination von den Basisvektoren geschrieben werden kann.
+\newline\newline
+Die Anzahl der Basisvektoren eines Vektorraums $V$ heisst Dimension von $V$.
+\newline\newline
+Seien $OA_i$ sind die Komponenten der Basisvektoren des Vektorraums $V$ gegeben.
+\begin{equation}
+\boxed{\overrightarrow{OA}=OA_1\cdot \overrightarrow{e}_{b,1}+OA_2\cdot \overrightarrow{e}_{b,2}+\dotso+OA_n\cdot \overrightarrow{e}_{b,n}=\displaystyle \sum_{i=1}^nOA_i\cdot \overrightarrow{e}_i}
+\end{equation}
+Die Vektoren $\overrightarrow{e}_i$ heissen Standard-Basis, auch kartesische Basis oder kartesisches Koordinatensystem.
+\begin{equation}
+\boxed{\overrightarrow{OA}=OA_1\cdot \overrightarrow{e}_1+OA_2\cdot \overrightarrow{e}_2+OA_3\cdot \overrightarrow{e}_3=\displaystyle \sum_{i=1}^3OA_i\cdot \overrightarrow{e}_i}
+\end{equation}
+Eine Basis heisst normiert, wenn die Basisvektoren die Länge 1 haben.
+\newline\newline
+Sei $A\in\mathbb{R}^{n\times n}$ eine Matrix und enthält die Basisvektoren in den Spalten
+\begin{equation}
+\boxed{A=\begin{pmatrix}\overrightarrow{OA}_1&\overrightarrow{OA}_2&\dotso&\overrightarrow{OA}_n\end{pmatrix}}
+\end{equation}
+Ein Vektor $\overrightarrow{OA}$ kann auf eine andere Basis ausgedrückt werden
+\begin{equation}
+\boxed{\overrightarrow{OA}=\lambda_1\cdot \overrightarrow{OF}_1+\lambda_2\cdot \overrightarrow{OF}_2+\dotso+\lambda_n\cdot \overrightarrow{OF}_n}
+\end{equation}
+Sei $A$ und $B$ zwei Matrizen zweier Basen. Seien $\overrightarrow{x}^A$ die Koordinaten bezüglich $A$ und $\overrightarrow{x}^B$ die Koordinaten von $\overrightarrow{x}$ bezüglich $B$. Jeder Vektor kann durch die Transformationsmatrix $T$ ausgedrückt werden. Es gilt dann
+\begin{equation}
+\boxed{\overrightarrow{x}^B=T\odot \overrightarrow{x}^A}\quad \boxed{T=B^{-1}\odot A}\quad \boxed{\overrightarrow{OB}_n=T\odot \overrightarrow{OA}_n}
+\end{equation}
+Ist die Basis sowohl orthogonal wie auch normiert, heisst sie Orthonormalbasis und die Vektoren sind linear unabhängig. Bei der Basis-Transformation von der Standard-Basis von vektoren mit $\overrightarrow{OA}_i\in\mathbb{R}^{n\times 1}$ in die Orthonormal-Basis mit $\overrightarrow{OB}_i\in\mathbb{R}^{n\times 1}$ kann der Vektor $\overrightarrow{OA}$ in die neue Komponenten umgewandelt werden.
+\begin{equation}
+\boxed{\overrightarrow{OA}_i=\lambda_1\cdot \overrightarrow{OB}_1+\lambda_2\cdot \overrightarrow{OB}_2+\dotso+\lambda_n\cdot \overrightarrow{OB}_n}\quad \boxed{\lambda_i=\overrightarrow{OA}_i\bullet \overrightarrow{OB}_i}
+\end{equation}
+Sei $B$ die Matrix eomer Orthonormalbasis aus den $\overrightarrow{OB}_i$ orthonormierten Vektoren. Seien $\overrightarrow{OA}_i$ die Koordianten von der Vektoren in der Standardbasis. Die Koordinaten aller Vektoren $\overrightarrow{OB}_i$ ergeben sich ausserdem aus
+\begin{equation}
+\boxed{\overrightarrow{OB}_i=T\odot \overrightarrow{OA}_i}\quad \boxed{T=B^{-1}\odot A=B^T\odot A=B^T}
+\end{equation}
+Die Basisvektoren heisst orthogonale Basis, wenn die Basisvektoren rechtwinklig zueinander sind. Ihr Skalarprodukt ist null. Bei der Basis-Transformation von der Standard-Basis von vektoren $\overrightarrow{OA}_i\in\mathbb{R}^{n\times 1}$ in die Orthogonal-basis mit $\overrightarrow{OB}_i\in\mathbb{R}^{n\times 1}$ kann der Vektor $\overrightarrow{OA}$ in die neue Komponenten umgewandelt werden.
+\begin{equation}
+\boxed{\overrightarrow{OA}_i=\lambda_1\cdot \overrightarrow{OB}_1+\lambda_2\cdot \overrightarrow{OB}_2+\dotso+\lambda_n\cdot \overrightarrow{OB}_n}\quad \boxed{\lambda_i=\dfrac{\overrightarrow{OA}_i\bullet \overrightarrow{OB}_i}{\Big\vert\overrightarrow{OB}_i\Big\vert^2}}
+\end{equation}
+Seien $A$ und $B$ Basismatrizen. Bezüglich $A$ hat die lineare Abbildung $L$ die Darstellung $L\left(\overrightarrow{x}_A\right)=M\cdot \overrightarrow{x}$ und bezüglich der Basis $B$ die Darstellung $L\left(\overrightarrow{x}_B\right)=K\cdot \overrightarrow{x}$, so gilt
+\begin{equation}
+\boxed{K=T\odot M\odot T^{-1}}\quad \boxed{T=B^{-1}\odot A}
+\end{equation}
+\section{Diskrete Fouriertransformationen}
+Die Amplituden von Teilschwingungen heissen Fourier-Koeffizienten und sind $a_0$, $a_1$, $a_2$, $b_1$ und $b_2$ für Stützstellen $\overrightarrow{t}$ und zugehörige Funktionswerte $\overrightarrow{f}\left(\overrightarrow{t}\right)$ einer gegebenen Funktion. Die Menge aller Fourier-Koeffizienten einer Schwingung bezeichnet man als ihr Fourier-Spektrum, diskret gelten die Vektoren $\overrightarrow{c}_i$ und kontinuerlich die trigonometrischen Funktionen. Die Koeffizienten gehören zur Funktion.
+\begin{equation}
+\boxed{\overrightarrow{t}=\begin{pmatrix}0\\\pi/3\\2\pi/3\\\pi\\4\pi/3\\5\pi/3\end{pmatrix}\quad \overrightarrow{f}=\begin{pmatrix}f\left(0\right)\\f\left(\pi/3\right)\\f\left(2\pi/3\right)\\f\left(\pi\right)\\f\left(4\pi/3\right)\\f\left(5\pi/3\right)\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{
+\begin{array}{lll}\overrightarrow{f}\left(\overrightarrow{t}\right)&=&a_0\overbrace{\cos\left(0\overrightarrow{t}\right)}^{\overrightarrow{c}_0=1}+a_1\overbrace{\cos\left(1\overrightarrow{t}\right)}^{\overrightarrow{c}_1=\cos\left(t\right)}+a_2\overbrace{\cos\left(2\overrightarrow{t}\right)}^{\overrightarrow{c}_2=\cos\left(2t\right)}+a_3\overbrace{\cos\left(3\overrightarrow{t}\right)}^{\overrightarrow{c}_3=\cos\left(3t\right)}+\\
+&&+b_1\underbrace{\sin\left(1\overrightarrow{t}\right)}_{\overrightarrow{s}_1=\sin\left(t\right)}+b_2\underbrace{\sin\left(2\overrightarrow{t}\right)}_{\overrightarrow{s}_2=\sin\left(2t\right)}
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{\begin{array}{l}
+\overrightarrow{c}_0=\begin{pmatrix}1\\1\\1\\1\\1\\1\\\end{pmatrix}\quad \overrightarrow{c}_1=\begin{pmatrix}1\\1/2\\-1/2\\-1\\-1/2\\1/2\end{pmatrix}\quad \overrightarrow{c}_2=\begin{pmatrix}1\\-1/2\\-1/2\\1\\-1/2\\-1/2\end{pmatrix}\\
+\overrightarrow{c}_3=\begin{pmatrix}1\\-1\\1\\-1\\1\\-1\end{pmatrix}\quad \overrightarrow{s}_1=\begin{pmatrix}0\\\sqrt{3}/2\\\sqrt{3}/2\\0\\-\sqrt{3}/2\\-\sqrt{3}/2\end{pmatrix}\quad \overrightarrow{s}_2=\begin{pmatrix}0\\\sqrt{3}/2\\-\sqrt{3}/2\\0\\\sqrt{3}/2\\-\sqrt{3}/2\end{pmatrix}
+\end{array}}
+\end{equation}
+\begin{equation}
+\boxed{a_i=\dfrac{\overrightarrow{f}\odot \overrightarrow{c}_i}{\Big\vert\overrightarrow{c}_i\Big\vert^2}}\quad \boxed{b_i=\dfrac{\overrightarrow{f}\odot \overrightarrow{s_i}}{\Big\vert\overrightarrow{s}_i\Big\vert^2}}
+\end{equation}
+Die periodische Funktionen auf einem Intervall $[0,T]$ ergeben sich die Cosinus- und Sinus-Listen mit der Winkelfrequenz
+\begin{equation}
+\boxed{\omega=\dfrac{2\pi}{T}}
+\end{equation}
+Die Abtastewerte an den Stellen $t_k=k\dfrac{T}{N}$ für $k=0$ bis $N-1$
+\begin{equation}
+\boxed{\overrightarrow{c}_j=\begin{pmatrix}\cos\left(t_0\cdot j\cdot \omega\right)\\\vdots\\\cos\left(t_{N-1}\cdot j\cdot \omega\right)\end{pmatrix}}\quad \boxed{\overrightarrow{s}_j=\begin{pmatrix}\sin\left(t_0\cdot j\cdot \omega\right)\\\vdots\\\sin\left(t_{N-1}\cdot j\cdot \omega\right)\end{pmatrix}}
+\end{equation}
+Es sei $N$ gerade und $n=N/2$. Die $n+1$ Cosinus-Listen $\overrightarrow{c}_0,\dotso, \overrightarrow{c}_n$ und die $n-1$ Sinus-Listen $\overrightarrow{s}_0,\dotso,\overrightarrow{s}_{n-1}$ bilden eine orthogonale Basis des Vektorraums aller $N$-Listen. Die Basisvektoren haben die Dimension $V$.
+\newline\newline
+Es sei $N$ ungerade und $n=(N-1)/2$. Die $n+1$ Cosinus-Listen $\overrightarrow{c}_0,\dotso, \overrightarrow{c}_n$ und die $n-1$ Sinus-Listen $\overrightarrow{s}_0,\dotso,\overrightarrow{s}_{n}$ bilden eine orthogonale Basis des Vektorraums aller $N$-Listen. Die Basisvektoren haben die Dimension $V$.
+\section{RCL-Netzwerke mit Wechselstrom}
+Feste Einschaltevorgang nennt man stationär. Das Verhalten um den Zeitpunkt herum, wo die Wechselspannung ein- oder ausgeschaltet wird, heisst transient.
+\newline\newline
+RCL-Netzwerke mit linearen Elementen, die mit einer festen Wechselspannung der Frequenz $\nu$ oder Winkelfrewuenz $\omega$ betrieben werden
+\begin{equation}
+\boxed{\nu=\dfrac{1}{T}}\quad \boxed{\omega=\dfrac{2\pi}{T}}
+\end{equation}
+Die Wechselspannung lautet
+\begin{equation}
+\boxed{u_Q\left(t\right)=\hat{u}\cdot\cos\left(\omega\cdot t\right)}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\begin{pmatrix}\hat{u}\cos\left(\omega\cdot \overrightarrow{t}\right)\\\hat{u}\cdot \sin\left(\omega\cdot \overrightarrow{t}\right)\end{pmatrix}}
+\end{equation}
+Lineare Netzwerke, die mit einer Wechselspannung der Frequenz $<omega$ betrieben werden, werden nach kurzer Zeit mit der frequenz $\omega$ schwingen. Die transiente Lösung fällt schnell exponentiell ab und es bleibt die stationäre Lösung bestehen. Da in der stationären Lösung Strom und Spannung mit Frequenz $\omega$ schwingen, führt man für beide die Basis $\overrightarrow{e}_1=\cos\left(\omega\cdot t\right)$ und $\overrightarrow{e}_e=\sin\left(\omega\cdot t\right)$.
+\newline\newline
+Man will die Spannungsabfall an den linearen Elementen betrachten. Man kann die Kirchhoff'sche Maschenregel anwenden um den Wechselstrom zu beschreiben, also die Summe aller Spannungen über jede geschlossene Masche muss null sein. Dabei sind $u_i\left(t\right)$ die Spannungen an den jeweiligen Elementen und $u_q\left(t\right)$.
+\begin{equation}
+\boxed{\displaystyle \sum_iu_i-u_q=0}
+\end{equation}
+Eine Kapazität $C$ ist proportional zur angelegten Spannung $u$. Um den Strom in Verbindung mit der Spannung zu bringen, leitet man auf beide Seiten nach der Zeiten ab. Die zeitliche Änderung des Spannungsabfalls und die zeitliche Spannung sind ausserdem
+\begin{equation}
+\boxed{q\left(t\right)=C\cdot u\left(t\right)}\quad \boxed{\underbrace{\dfrac{\text{d}q(t)}{\text{d}t}}_{i(t)}=\underbrace{\dfrac{\text{d}C}{\text{d}t}\cdot u(t)}_{0}+C\cdot \dfrac{\text{d}u(t)}{\text{d}t}\Rightarrow i(t)=C\cdot \dfrac{\text{d}u(t)}{\text{d}t}}
+\end{equation}
+\begin{equation}
+\boxed{\dfrac{\text{d}u(t)}{\text{d}t}=\dfrac{i(t)}{C}}\quad \boxed{u(t)=\displaystyle \int_{\infty}^t\dfrac{i\left(\tau\right)}{C}\text{d}\tau}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert des der Kapazität
+\begin{equation}
+\boxed{Z_C=\begin{pmatrix}0&-\dfrac{1}{\omega C}\\\dfrac{1}{\omega C}&0\end{pmatrix}}\quad \boxed{G_C=\left(Z_C\right)^{-1}=\begin{pmatrix}0&\omega C\\\omega C&0\end{pmatrix}}
+\end{equation}
+
+
+Aus einem Ohmschen Widerstand fällt folgende Spannung ab
+\begin{equation}
+\boxed{u(t)=R\cdot i(t)}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert des Widerstandes
+\begin{equation}
+\boxed{Z_R=\begin{pmatrix}R&0\\0&R\end{pmatrix}}\quad \boxed{G_R=\left(Z_R\right)^{-1}=\begin{pmatrix}\dfrac{1}{R}&0\\0&\dfrac{1}{R}\end{pmatrix}}
+\end{equation}
+Aus einem Ohmschen Widerstand fällt folgenden Strom, wobei $G$ der Leitwert ist, ab
+\begin{equation}
+\boxed{i(t)=G\cdot u(t)}
+\end{equation}
+An einer Induktivität fällt folgende Spannung ab
+\begin{equation}
+\boxed{u(t)=L\cdot \dfrac{\text{d}}{\text{d}t}i(t)}
+\end{equation}
+Mit der Basis $\overrightarrow{e}_1=\cos\left(\omega t\right)$ und $\overrightarrow{e}_2=\sin\left(\omega t\right)$ entsteht die Impendanz und der Leitwert der Induktivität
+\begin{equation}
+\boxed{Z_L=\begin{pmatrix}0&\omega L\\-\omega L&0\end{pmatrix}}\quad \boxed{G_L=\left(Z_L\right)^{-1}=\begin{pmatrix}0&-\dfrac{1}{\omega L}\\\dfrac{1}{\omega L}&0\end{pmatrix}}
+\end{equation}
+Die Gesamt Impendanz eines Netzwerkes entsteht durch Maschenregel, um die Impendanz einer Serienschaltung von zwei Impendanzen zu berechnen. Die Ströme $i_1(t)$ und $i_2(t)$ in einer Serienschaltung sind gleich. Das heisst die Widerstände können addiert werden und analog mit den Impendanzen weiter berechnen
+\begin{equation}
+R_1\cdot i_1(t)+R_2\cdot i_2(t)=\left(R_1+R_2\right)\cdot i(t)-u_Q\left(t\right)=0
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\left(Z_1+Z_2\right)\cdot \overrightarrow{i}(t),\quad \text{(Serie)}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{u}_Q=\left(Z_1^{-1}+Z_2^{-1}\right)^{-1}\cdot i(t)=\left(G_1+G_2\right)^{-1}\cdot \overrightarrow{i}(t),\quad \text{(Parallel)}}
+\end{equation}
+Eine Kapazität $C$ und eine Induktivität $L$ in Serienkreis mit einer Wechselspannung $u_Q(t)$ sei gegeben. Es ergibt sich aus dem Maschenregel
+\begin{equation*}
+\begin{array}{lll}
+u_C+u_L-u_Q(t)&=&0\\
+\left(Z_C+Z_L\right)\odot \overrightarrow{i}(t)&=&\overrightarrow{u}_Q(t)\\
+\overrightarrow{i}(t)&=&\left(Z_C+Z_L\right)^{-1}\odot \overrightarrow{u}_Q(t)\\
+\overrightarrow{i}(t)&=&\begin{pmatrix}0&-\dfrac{1}{\omega C}+\omega L\\\dfrac{1}{\omega C}-\omega L&0\end{pmatrix}^{-1}\odot \overrightarrow{u}_Q(t)\\
+\end{array}
+\end{equation*}
+Der Phasenwinkel bei Cosinus entsteht falls
+\begin{equation}
+\boxed{
+\begin{array}{l}
+A=\sqrt{a^2+b^2}\\
+\varphi=-\arctan\left(b/a\right)+\Big\{\begin{matrix}+\pi,\quad (a<0)\\+0,\quad \text{sonst}\end{matrix}\\
+\tau=\omega t
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{a\cdot \cos\left(\tau\right)+b\cdot \sin\left(\tau\right)=A\cdot \cos\left(\tau+\varphi\right)}
+\end{equation}
+Der Phasenwinkel bei Sinus entsteht falls
+\begin{equation}
+\boxed{
+\begin{array}{l}
+A=\sqrt{a^2+b^2}\\
+\varphi=\arctan\left(a/b\right)+\Big\{\begin{matrix}+\pi,\quad (b<0)\\+0,\quad \text{sonst}\end{matrix}\\
+\tau=\omega t
+\end{array}
+}
+\end{equation}
+\begin{equation}
+\boxed{a\cdot \cos\left(\tau\right)+b\cdot \sin\left(\tau\right)=A\cdot \sin\left(\tau+\varphi\right)}
+\end{equation}
+\section{Funktionen und Transformationen}
+Die Funktion $f\left(x\right):\mathbb{R}\rightarrow \mathbb{R}$ kann wie folgt transformiert werden
+\begin{equation}
+\boxed{-f(x):=\text{ Spiegelung an der }x\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(-x):=\text{ Spiegelung an der }y\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(x)+c:=\text{ Verschiebung in positive }y\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(x)-c:=\text{ Verschiebung in negative }y\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(x-c):=\text{ Verschiebung in positive }x\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(x+c):=\text{ Verschiebung in negative }x\text{-Achse}}
+\end{equation}
+\begin{equation}
+\boxed{f(c\cdot x):=\text{ Stauchung in }x\text{-Richtung mit }(a>1)}
+\end{equation}
+\begin{equation}
+\boxed{f(c\cdot x):=\text{ Streckung in }x\text{-Richtung mit }(0<a<1)}
+\end{equation}
+\begin{equation}
+\boxed{c\cdot f(x):=\text{ Streckung in }y\text{-Richtung mit }(a>1)}
+\end{equation}
+\begin{equation}
+\boxed{c\cdot f(x):=\text{ Stauchung in }y\text{-Richtung mit }(0<a<1)}
+\end{equation}

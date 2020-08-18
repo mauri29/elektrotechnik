@@ -20,4 +20,9 @@
 <p><b>Empfohlene Vorkenntnisse: </b>Analysis 1 (an1)</p>
 <p><b>leistungsbewertung:</b> Erfahrungsnote und schriftliche MSP</p>
 <div class="col"><hr></div>
-<p><b>Zusammenfassung:</b> <a href="docs/PHYSIK-CHEMIE/MECHANIK/ZUSAMMENFASSUNG/index/index.pdf"><i class="fa fa-book" aria-hidden="true"></i> MECHANIK</a></p>
+<p><b>Zusammenfassung der Mechanik:</b>
+<p>
+    <object data="uni/MECHANIK/ZUSAMMENFASSUNG/index/index.pdf" style="width:100%;height:540px">
+        <a href="uni/MECHANIK/ZUSAMMENFASSUNG/index/index.pdf">Laden</a>
+    </object>
+</p>

@@ -1,0 +1,321 @@
+\section{Grundbegriffe}
+\subsection{Ein einführendes Beispiel}
+Ein Körper unter Einfluss der Schwerkraft erfährt in der Nähe der Erdoberfläche die konstante Erdbeschleunigung $a=-g$. Die Geschwindigkeit und Beschleunigung einer Bewegung lautet
+\begin{equation}
+\boxed{a\left(t\right)=\dot{v}\left(t\right)=\ddot{s}\left(t\right)-g}
+\end{equation}
+Diese Gleichung enthält die 2. Ableitung einer unbekannten Weg-Zeit-Funktion $s=s\left(t\right)$. Gleichungen dieser Art werden in der Mathematik als Differentialgleichungen bezeichnet. Die Lösung der Differentialgleichung ist eine Funktion, nämlich die Weg-Zeit-Funktion der Fallbewegung und entsteht durch zweimal integrieren mit zwei unbekannten Parameter, welche mit einer physikalischen Nebenbedingung wie Anfangshöhe bzw. Anfangsgeschwindigkeit bestimmt werden können.
+\begin{equation}
+\boxed{v\left(t\right)=\displaystyle \int a\left(t\right)\,\text{d}t=-\displaystyle \int g\,\text{d}t=-gt+C_1}\quad \boxed{v\left(0\right)=C_1=v_0}
+\end{equation}
+\begin{equation}
+\boxed{s\left(t\right)=\displaystyle \int v\left(t\right)\,\text{d}t=\displaystyle \int \left(-gt+C_1\right)\,\text{d}t=-\dfrac{1}{2}gt^2+C_1t+C_2}\quad \boxed{s\left(0\right)=C_2=s_0}
+\end{equation}
+Die \textbf{allgemeine Löeung} geht dann in die spezielle, den physikalischen ANfangsbedingungen angepasste Lösung über, die auch als \textbf{partikuläre Lösung} der Differentialgleichung bezeichnet wird.
+\begin{equation}
+\boxed{s\left(t\right)=-\dfrac{1}{2}gt^2+v_ot+s_0\quad \left(t\geq 0\right)}
+\end{equation}
+\subsection{Definition einer gewöhnliche Differentialgleichung}
+Eine \textbf{gewöhnliche Differentialgleichung} $n$-ter Ordnung enthält als höchste Ableitung die $n$-te Ableitung der unbekannten Funktion $y=y\left(x\right)$, kann aber auch Ableitungen niedrigerer Ordnung sowie die Funktion $y=y\left(x\right)$ und deren unabhängige Variable $x$ enthalten. Sie ist in der impliziten Form oder falls diese Gleichung nach der höchsten Ableitung auflösbar ist in der expliziren Form
+\begin{equation} 
+\boxed{F\left(x; y; y'; y''; \dotso\right)=0}\quad \boxed{y^{\left(n\right)}=f\left(x; y; y'; y'';\dotso\right)}
+\end{equation} 
+Neben den gewöhnlichen Differentialgleichungen gibt es noch die partiellen Differentialgleichungen. Sie enthalten \textbf{partiellen Ableitungen} einer unbekannten Funktion von mehreren Variablen. 
+\subsection{Lösungen einer Differentialgleichung}
+Eine Funktion $y=y\left(x\right)$ heisst eine Lösung der Differentialgleichung, wenn sie mit ihren Ableitungen der Differentialgleichung identisch erfüllt. Man unterscheidet zwischen der allgemeinen Lösung und der speziellen oder partikulären Lösung. Die allgemeine Lösung einer Differentialgleichung $n$-ter Ordnung enthält noch $n$ voneinander unabhängige Parameter. Eine partikuläre Lösung wird aus der allgemeinen Lösung gewonnen, indem man aufgrund zusätzlicher Bedingungen den $n$ Parametern feste Werte zuweist. Dies kann durch Anfangsbedingungen oder Randbedingungen geschehen. 
+\newline \newline
+Die Anzahl der unabhängigen Parameter in der allgemeinen Lösung einer Differentialgleichung ist durch die Ordnung der Differentialgleichung bestimmt. Die allgemeine Lösung einer Differentialgleichung 1. Ordnung enthält somit einen Parameter, die allgemeine Lösung einer Differentialgleichung 2. Ordnung genau zwei unabhängige Parameter.
+\newline\newline
+Die allgemeine Lösung einer Differentialgleichung $n$-ter Ordnung repräsentiert eine Kurvenschar mit $n$ Parametern. Für jede spezielle Parameterwahl erhält man eine Lösungskurve. Die Lösungen einer Differentialgleichung werden als Integrale bezeichnet.
+\section{Differentialgleichungen 1. Ordnung}
+\subsection{Geometrische Betrachtung}
+Die Differentialgleichung $y'=f\left(x; y\right)$ besitze die Eigenschaft, dass durch jeden Punkt des Definitionsbereiches von $f\left(x; y\right)$ genau eine Lösungskurve verlaufe. $P_0=\left(x_0; y_0\right)$ ist ein solcher Punkt und $y=y\left(x\right)$ die durch den Punkt $P_0$ gehende Lösungskurve.
+\newline\newline
+Die Steigung $m=\tan\left(\alpha\right)$ der Kurventangejte $P_0$ kann auf zwei verschiedene Arten berechnet werden: Aus der Funktionsgleichung $y=y\left(x\right)$ der Lösungskurve durch Differentiation nach der Variablen $x$: $m=y'\left(x_0\right)$ und aus der Differentialgleichung $y'=f\left(x; y\right)$ selbst, indem man in diese Gleichung die Koordinaten des Punktes $P_0$ einsetzt: $m=f\left(x_0; y_0\right)$. Somit gilt
+\begin{equation}
+\boxed{m=y'\left(x_0\right)=f\left(x_0; y_0\right)}
+\end{equation}
+Der Anstieg der Lösungskurve durch den Punkt $P_0$ kann somit direkt aus der Differentialgleichung berechnet werden, die Funktionsgleichung der Lösungskurve wird dabei überhaupt nicht benötigt. Durch die Differentiagleichung der Funktion $f\left(x; y\right)$ wird nämlich jedem Punkt $P=\left(x; y\right)$ aus dem Definitionsbereich der Funktion $f\left(x; y\right)$  ein Richtungs- oder Steigungswert zugeordnet. Er gibt den Anstieg der durch $P$ gehenden Lösungskurve in diesem Punkt an.
+\newline\newline
+Die Richtung der Kurventangente in $P$ kennzeichnet man graphisch durch eine kleine, in der Tangente liegende Strecke, die als Linien- oder Richtungselement bezeichnet wird. Das dem Punkt $P=\left(x; y\right)$ zugeordnete Linienelement ist demnach durch die Angabe der beiden Koordinaten $x$, $y$ und des Steigungsswertes $m=f\left(x; y\right)$ eindeutig bestimmt. Die Gesamtheit der Linienelemente bildet das Richtungsfeld der Differentialgleichung, aus dem sich ein erster, grober Überblick über den Verlauf der Lösungskurven gewinnen lässt. Eine Lösungskurve muss dabei in jedem ihrer Punkte die durch das Richtungsfeld vorgegebene Steigung aufweisen.
+\newline\newline
+Bei der Konstruktion von Näherungskurven erweisen sich die sogenannten Isoklinen als sehr hilfreich. Unter einer Isokline versteht man dabei die Verbindungslinie aller Punkte, deren zugehörige Linienelemente in die gleiche Richtung zeigen, d.h. zueinande rparallel sind. Die Isoklinen der Differentialgleichung $y'=f\left(x; y\right)$ sind daher durch folgende Gleichung definiert
+\begin{equation}
+\boxed{f\left(x; y\right)=\text{const.}}
+\end{equation}
+Im Richtungsfeld der Differentialgleichung konstruiert man nun Kurven, die in ihren Schnittpunkten mit den Isoklinen den gleichen Anstieg besitzen wie die dortigen Linienelemente. In einem Schnittpunkt verlaufen somit Kurventangente und Linienelement parallel, d.h. das Linienelement fällt in die dortige Kurventangente. Kurven mit dieser Eigenschaft sind dann Näherungen für die tatsächlichen Lösungskurven.
+\subsection{Differentialgleichungen mit trennbaren Variablen}
+Eine Differentialgleichung 1. Ordnung vom Typ 
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}=f\left(x\right)\cdot g\left(x\right)}
+\end{equation}
+heisst separabel und lässt sich durch Trennung der Variablen lösen. Dabei wird die Differentialgleichung zunächst wie folgt, wobei $g\left(y\right)\neq 0$ umgestellt
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}=f\left(x\right)\cdot g\left(y\right)\Longrightarrow \dfrac{\text{d}y}{g\left(y\right)}=f\left(x\right)\,\text{d}x}
+\end{equation}
+Die linke Seite der Gleichung enthält nur noch die Variable $y$und deren Differential $\text{d}y$, die rechte Seite dagegen nur noch die Variable $x$ und deren Differential $\text{d}x$. Die Variablen wurden somit getrennt und beide Seiten integriert.
+\begin{equation}
+\boxed{\displaystyle \int \dfrac{\text{d}y}{g\left(y\right)}=\displaystyle \int f\left(x\right)\,\text{d}x}
+\end{equation}
+Die dann in Form einer impliziten Gleichung vom Typ $F_1\left(y\right)=F_2\left(x\right)$ vorliegende Lösung wird nach der Variablen $y$ aufgelöst, was in den meisten Fällen möglich ist und man erhält die allgemeine Lösung der Differentialgleichung $y'=f\left(x\right)\cdot g\left(y\right)$ in der expliziten Form $y=y\left(x\right)$. Die Lösungen der Gleichung $g\left(y\right)=0$ sind vom Typ $y=\text{const.}=a$ und zugleich dauch Lösungen der Differentialgleichung $y'=f\left(x\right)\cdot g\left(y\right)$.
+\subsection{Differentialgleichungen durch Substitution}
+In einigen Fällen ist es möglich, eine expliziten Differentialgleichung 1. Ordnung $y'=f\left(x; y\right)$ mit Hilfe einer geeigneten Substitution auf eine separable Differentialgleichung 1. Ordnung zurückzuführen, die dann durch Trennung der Variablen gelöst werden kann. 
+\subsubsection{Differentialgleichungen vom Typ $y'=f\left(ax+by+c\right)$}
+Eine Differentialgleichung von diesem Typ lässt sich durch die lineare Substitution lösen
+\begin{equation}
+\boxed{u=ax+by+c}
+\end{equation}
+Dabei sind $y$ und $u$ als Funktionen von $x$ zu betrachten. Berücksichtigt man noch, dass $y'=f\left(u\right)$ ist, so folgt hieraus die Differentialgleichung
+\begin{equation}
+\boxed{\dfrac{\text{d}u}{\text{d}x}=a+b\dfrac{\text{d}y}{\text{d}x}=a+b\cdot f\left(u\right)}
+\end{equation}
+\subsubsection{Differentialgleichungen vom Typ $y'=f\left(\dfrac{y}{x}\right)$}
+Eine Differentialgleichung von diesem Typ wird durch die Substitution gelöst
+\begin{equation}
+\boxed{u=\dfrac{y}{x}\Longleftrightarrow y=x\cdot u}
+\end{equation}
+Man differenziert diese Gleichung nach $x$ und erhält
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}=u+x\cdot \dfrac{\text{d}u}{\text{d}x}}
+\end{equation}
+wobei $y$ und $u$ Funktionen von $x$ sind. Da $\dfrac{\text{d}y}{\text{d}x}=f\left(x\right)$ ist, geht die Differentialgleichung schliesslich in die separable Differentialgleichung über, die ebenfalls durch Trennung der Variablen gelöst werden kann. Anschluessen folgt die Rücksubstitution und Auflösen nach $y$.
+\begin{equation} 
+\boxed{u+x\cdot \dfrac{\text{d}u}{\text{d}x}=f\left(u\right)\Longleftrightarrow \dfrac{\text{d}u}{\text{d}x}=\dfrac{f\left(u\right)-u}{x}}
+\end{equation} 
+\subsection{Exakte Differentialgleichungen}
+Eine Differentialgleichung 1. Ordnung vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}=-\dfrac{g\left(x; y\right)}{h\left(x; y\right)}}
+\end{equation}
+heisst \textbf{exakt} oder vollständig, wenn sie folgende Bedingung erfüllt
+\begin{equation}
+\boxed{\dfrac{\partial g\left(x; y\right)}{\partial y}=\dfrac{\partial h\left(x; y\right)}{\partial x}}
+\end{equation}
+Die linke Seite der Gleichung ist dann das \textbf{totale Differential} einer unbekannten Funktion $u\left(x; y\right)$. Es gilt
+\begin{equation}
+\boxed{\text{d}u=\dfrac{\partial u}{\partial x}\text{d}x+\dfrac{\partial u}{\partial y}\text{d}y=h\left(x; y\right)\text{d}x+g\left(x; y\right)\text{d}y=0}
+\end{equation}
+Die Faktorfunktionen $g\left(x; y\right)$ und $h\left(x; y\right)$ in der exakten Differentialgleichung sind also die partiellen Ableitungen 1. Ordnung von $u\left(x; y\right)$
+\begin{equation}
+\boxed{\dfrac{\partial u}{\partial x}=g\left(x; y\right)}\quad \boxed{\dfrac{\partial u}{\partial y}=h\left(x; y\right)}
+\end{equation}
+Die allgemeine Lösung der Differentialgleichung lautet dann in impliziter Form $u\left(x; y\right)=\text{const}=C$. Die Funktion $u\left(x; y\right)$ lässt sich aus den Gleichungen bestimmen. Die erste der beiden Gleichungen wird bezüglich der Variablen $x$ integriert, wobei zu beachten ist, dass die Integrationskonstante $K$ noch von $y$ abhängen
+\begin{equation}
+\boxed{u=\displaystyle \int \dfrac{\partial u}{\partial x}\,\text{d}x=\displaystyle \int g\left(x; y\right)\,\text{d}x+K\left(y\right)}
+\end{equation}
+Wenn man diese Funktion nach der Variable $y$ partiell ableitet, erhält man die Faktorfunktion $h\left(x; y\right)$
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\dfrac{\partial u}{\partial y}&=&\dfrac{\partial}{\partial y}\Big[\displaystyle \int g\left(x; y\right)\,\text{d}x+K\left(y\right)\Big]=\dfrac{\partial}{\partial y}\displaystyle \int g\left(x; y\right)\,\text{d}x+\dfrac{\partial}{\partial y}K\left(y\right)\\\\
+&=&\displaystyle \int \dfrac{\partial g\left(x; y\right)}{\partial y}\,\text{d}x+K'\left(y\right)=h\left(x; y\right)
+\end{array}
+}
+\end{equation}
+Aufgelöst nach $K'\left(y\right)$ und durch Integration erhält man die gesuchte Funktion $K\left(y\right)$. Damit ist auch $u\left(x; y\right)$ und die allgemeine Lösung der exakten Differentialgleichung bekannt.
+\subsection{Lineare Differentialgleichungen 1. Ordnung}
+\subsubsection{Definition}
+Eine Differentialgleichung 1. Ordnung heisst \textbf{linear}, wenn sie in folgender Form darstellbar ist
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+f\left(x\right)\cdot y=g\left(x\right)}
+\end{equation}
+Die Funktion $g\left(x\right)$ wird als \textbf{Störfunktion} bezeichnet. Ist $g\left(x\right)=0$, so heisst die lineare Fifferentialgleichung \textbf{homogen}, ansonsten \textbf{inhomogen}.
+\subsubsection{Integration der homogenen linearen Differentialgleichung}
+Eine homogene lineare Differentialgleichung 1. Ordnung
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+f\left(x\right)\cdot y=0}
+\end{equation}
+lässt sich durch Trennung der Variablen wie folgt lösen. Zunächst trennt man die beiden Variablen
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+\displaystyle \int\dfrac{\text{d}y}{y}&=&-\displaystyle \int f\left(x\right)\, \text{d}x\\
+\ln\Big\vert y\Big\vert&=&-\displaystyle \int f\left(x\right)\, \text{d}x+\ln\Big\vert C\Big\vert\\
+y&=&e^C\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}\quad \left(C\in \mathbb{R}\right)
+\end{array}
+}
+\end{equation}
+\subsubsection{Integration der inhomogenen linearen Differentialgleichung durch Variation der Konstanten}
+Eine inhomogene lineare Differentialgleichung 1. Ordnung 
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+f\left(x\right)\cdot y=g\left(x\right)}
+\end{equation}
+lässt sich wie folgt durch Variation der Konstanten lösen. Zunächst wird die zugehörige homogene Differentialgleichung durch Trennung der Variablen gelöst. Dies führt zu der allgemeinen Lösung. Die Integrationskonstante $K$ wird durch eine noch unbekannte Funktion $K\left(x\right)$ ersetzt. 
+\begin{equation} 
+\boxed{y_0=K\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}\quad \boxed{y=K\left(x\right)\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}
+\end{equation} 
+Die inhomogene Differentialgleichung wird durch die 1. Ableitung unter Verwendung von Produkt- und Kettenregel gelöst
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}=\dfrac{\text{d}}{\text{d}x}\Big[K\left(x\right)\Big]\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}-K\left(x\right)\cdot f\left(x\right)\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}
+\end{equation}
+Man setzt für die für $y$ und $\dfrac{\text{d}y}{\text{d}x}$ gefundenen Funktionsterme in die inhomogene Differentialgleichung ein
+\begin{equation}
+\boxed{\underbrace{\dfrac{\text{d}}{\text{d}x}\Big[K\left(x\right)\Big]\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}-K\left(x\right)\cdot f\left(x\right)\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}_{\dfrac{\text{d}y}{\text{d}x}}+f\left(x\right)\cdot \underbrace{K\left(x\right)\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}_{y}=g\left(x\right)}
+\end{equation}
+Somit erhält man
+\begin{equation}
+\boxed{\dfrac{\text{d}}{\text{d}x}\Big[K\left(x\right)\Big]\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}=g\left(x\right)\Longrightarrow \dfrac{\text{d}}{\text{d}x}\Big[K\left(x\right)\Big]=g\left(x\right)\cdot e^{\displaystyle \int f\left(x\right)\,\text{d}x}}
+\end{equation}
+
+Durch Integration erfolgt
+\begin{equation}
+\boxed{K\left(x\right)=\displaystyle \int g\left(x\right)\cdot e^{\displaystyle \int f\left(x\right)\,\text{d}x}\,\text{d}x+C}
+\end{equation}
+Diesen Ausdruck setzt man für die Faktorfunktion $K\left(x\right)$ des Lösungsansatzes ein und erhält dann die allgemeine Lösung der inhomogenen Differentialgleichung
+\begin{equation}
+\boxed{y=\underbrace{\Big[\displaystyle \int g\left(x\right)\cdot e^{\displaystyle \int f\left(x\right)\,\text{d}x}\,\text{d}x+C\Big]}_{K\left(x\right)}\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}}
+\end{equation}
+Durch die Bezeichnung "Variation der Konstanten" soll zum Ausdruck gebracht werden, dass die Integrationskonstante $K$ "variiert", d.h. durch eine Funktion $K\left(x\right)$ ersetzt wird.
+\subsubsection{Integration der inhomogenen Differentialgleichung durch Aufsuchen einer partikulären Lösung}
+Die allgemeine Lösung einer inhomogenen linearen Differentialgleichung 1. Ordnung vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+f\left(x\right)\cdot y=g\left(x\right)}
+\end{equation}
+ist als Summe aus der allgemeinen Lösung $y_0=y_0\left(x\right)$ der zugehörigen homogenen linearen Differentialgleichung
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+f\left(x\right)\cdot y=0}
+\end{equation}
+und einer beliebigen partikulären Lösung $y_p=y_p\left(x\right)$ der inhomogenen linearen Differentialgleichung darstellbar
+\begin{equation}
+\boxed{y\left(x\right)=y_0\left(x\right)+y_p\left(x\right)}\quad \boxed{y_0=C\cdot e^{-\displaystyle \int f\left(x\right)\,\text{d}x}\quad \left(C\in \mathbb{R}\right)}
+\end{equation}
+Auch lineare Differentialgleichung 2. und höherer Ordnung besitzen diese Eigenschaft. Der Lösungsansatz für eine partikuläre Lösung $y_p$ hängt noch sowohl vom Typ der Koeffizientenfunktion $f\left(x\right)$ als auch vom Typ der Störfunktion $g\left(x\right)$ ab. Man muss sich für einen speziellen Funktionstyp entscheiden und dann versuchen, die im Ansatz $y_p$ enthaltenen Parameter so zu bestimmen, dass diese Funktion der inhomogenen Differentialgleichung genügt. Der partikuläre Lösungsansatz $y_p$ wird in die ursprüngliche lineare Differentialgleichung eingesetzt und die Parameter ausgerechnet. 
+\subsection{Lineare Differentialgleichung 1. Ordnung mit konstanten Koeffizienten} 
+In den Anwendungen spielen lineare Differentialgleichungen 1. Ordnung mit konstzanten Koeffizienten iene besondere Rolle. Sie sind vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+ay=g\left(x\right)}
+\end{equation}
+Die zugehörige homogene Gleichung enthält nur konstante Koeffizienten und wird durch Trennung der Variablen oder durch den Exponentialansatz gelöst.
+\begin{equation}
+\boxed{\dfrac{\text{d}y}{\text{d}x}+ay=0}\quad \boxed{y_0=C\cdot e^{\lambda x}}\quad \boxed{y_0'=\lambda \cdot C \cdot e^{\lambda x}}
+\end{equation}
+Mit diesem Ansatz geht man in die homogene Differentialgleichung ein und erhält eine Bestimmungsgleichung für den Parameter $\lambda$
+\begin{equation}
+\boxed{y_0'+ay_0=\lambda \cdot C\cdot e^{\lambda x}+a\cdot C\cdot e^{\lambda x}=\underbrace{\left(\lambda + a\right)}_{0}\cdot C\cdot e^{\lambda x}=0\Longrightarrow \lambda = -a}
+\end{equation}
+Die homogene Differentialgleichung $y'+ay=0$ besitzt also die allgemeine Lösung
+\begin{equation}  
+\boxed{y_0=C\cdot e^{-ax}\quad \left(C\in \mathbb{R}\right)}
+\end{equation}  
+Folgende Tabelle zeigt die Lösungsansätze $y_p$ für einige in den Anwendungen besonders häufig auftretende Störfunktionen
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Störfunktion $g\left(x\right)$}& \textbf{Lösungsansatz $y_p\left(x\right)$}\\\hline
+Konstante Funktion& $y_p=c_0$\\\hline
+Lineare Funktion& $y_p=c_1x+c_0$\\\hline
+Quadratische Funktion& $y_p=c_2x^2+c_1x+c_0$\\\hline
+Polynomfunktion vom Grade $n$& $y_p=c_nx^n+\dotso+c_1x+c_0$\\\hline
+$\begin{array}{l}g\left(x\right)=A\cdot \sin\left(\omega x\right)\\g\left(x\right)=B\cdot \cos\left(\omega x\right)\\g\left(x\right)=A\cdot \sin\left(\omega x\right)+B\cdot \cos\left(\omega x\right)\end{array}$& $\begin{array}{l}y_p=C_1\cdot \sin\left(\omega x\right)+C_2\cdot \cos\left(\omega x\right)\\\text{oder}\\y_p=C\cdot \sin\left(\omega x+\varphi\right)\end{array}$\\\hline
+$g\left(x\right)=A\cdot e^{bx}$ & $y_p=\Big\{\begin{array}{l}C\cdot e^{bx}\text{ für } b\neq -a\\Cx\cdot e^{bx}\text{ für } b=-a\end{array}$\\\hline
+\end{tabular}
+\caption{Lösungsansatz für die partikuläre Lösung $y_p\left(x\right)$ der inhomogenen Differentialgleichung 1. Ordnung mit konstanten Koeffizienten}
+\end{table}
+\noindent Die im Lösungsansatz $y_p$ enthaltenen Parameter sind so zu bestimmen, dass die Funktion eine partikuläre Lösung der vorgegebenen inhomogenen Differentialgleichung darstellt. Bei einem richtig gewählten Ansatz stösst man stets auf ein eindeutig lösbares Gleichungssystem für die im Lösungsansatz  enthaltenen Stellparameter.
+\newline\newline
+Die Störfunktion $g\left(x\right)$ ist eine Summe aus mehreren Störgliedern, somit werden die Lösungsansätze für die einzelnen Glieder addiert. Die Störfunktion $g\left(x\right)$ ist ein Produkt aus mehreren Störgliedern, somit werden die einzelnen Gliedern multipliziert.
+\section{Lineare Differentialgleichung 2. Ordnung mit konstanten Koeffizienten}
+\subsection{Definition einer linearen Differentialgleichung 2. Ordnung}
+Eine Differentialgleichung vom Typ 
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=g\left(x\right)}
+\end{equation}
+heisst lineare Differentialgleichung 2. Ordnung mit konstanten Koeffizienten $\left(a, b\in \mathbb{R}\right)$. Die Funktion $g\left(x\right)$ wird als Störfunktion oder Störglied bezeichnet. Fehlt das Störglied, so heisst die lineare Differentialgleichung homogen, sonst inhomogen.
+\subsection{Allgemeine Eigenschaft der homogenen linearen Differentialgleichung}
+Eine homogene lineare Differentialgleichung vom Typ 
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=0}
+\end{equation}
+besitzt folgende Eigenschaften
+\begin{itemize}
+\item Ist $y_1\left(x\right)$ eine Lösung der Differentialgleichung, so ist auch die mit einer beliebigen Konstanten $C$ multiplizierte Funktion eine Lösung der Differentialgleichung $\left(C\in \mathbb{R}\right)$
+\begin{equation}
+\boxed{y\left(x\right)=C\cdot y_1\left(x\right)}\quad \boxed{y'\left(x\right)=C\cdot y_1'\left(x\right)}\quad \boxed{y''\left(x\right)=C\cdot y_1''\left(x\right)}
+\end{equation}
+\item Sind $y_1\left(x\right)$ und $y_2\left(x\right)$ zwei Lösungen der Differentialgleichung, so ist auch die aus ihnen gebildete Linearkombination eine Lösung der Differentialgleichung $\left(C_1, C_2\in \mathbb{R}\right)$
+\begin{equation}
+\boxed{y\left(x\right)=C_1\cdot y_1\left(x\right)+C_2\cdot y_2\left(x\right)}\quad \boxed{y'\left(x\right)=C_1\cdot y_1'\left(x\right)+C_2\cdot y_2'\left(x\right)}
+\end{equation}
+\begin{equation}
+\boxed{y''\left(x\right)=C_1\cdot y_1''\left(x\right)+C_2\cdot y_2''\left(x\right)}
+\end{equation}
+\item Ist $y\left(x\right)$ eine komplexwertige Lösung der Differentialgleichung, so sind auch Realteil $u\left(x\right)$ und Imaginärteil $v\left(x\right)$ reelle Lösungen der Differentialgleichung
+\begin{equation}
+\boxed{y\left(x\right)=u\left(x\right)+\text{j}\cdot v\left(x\right)}\quad \boxed{y'\left(x\right)=u'\left(x\right)+\text{j}\cdot v'\left(x\right)}\quad \boxed{y''\left(x\right)=u''\left(x\right)+\text{j}\cdot v''\left(x\right)}
+\end{equation}
+\end{itemize}
+Zwei Lösungen $y_1=y_1\left(x\right)$ und $y_2=y_2\left(x\right)$ einer homogenen linearen Differentialgleichung 2. Ordnung mit konstanten Koeffizienten vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=0}
+\end{equation}
+werden als Basisfunktionen oder Basislösungen der Differentialgleichung bezeichnet, wenn die aus ihnen gebildete sog. \textbf{Wronski-Determinante} von Null verschieden ist
+\begin{equation}
+\boxed{W\left(y_1; y_2\right)=\begin{vmatrix}y_1\left(x\right)&y_2\left(x\right)\\y_1'\left(x\right)&y_2'\left(x\right)\end{vmatrix}}
+\end{equation}
+Die Wronski-Determinante ist eine 2-reihige Determinante. Sie enthält in der 1. Zeile die beiden Lösungsfunktionen $y_1$ und $y_2$ und in der 2. Zeile deren Ableitungen $y_1'$ und $y_2'$. Man beachte, dass der Wert der Wronski-Determinante noch von der Variablen $x$ abhängt. Es genügt zu zeigen, dass die Wronski-Determinante an einer Stelle $x_0$ vom Null verschieden ist.
+\newline\newline
+Zwei Basislösungen $y_1\left(x\right)$ und $y_2\left(x\right)$ der homogenen Differentialgleichung werden auch als linear unabhängige Lösungen bezeichnet. Verschwindet dagegen die Wronski-Determinante zweier Lösungen $y_1$ und $y_2$, so werden die Lösungen als linear abhängig bezeichnet. 
+\newline\newline
+Die Konstanten im Lösungsansatz müssen eindeutig aus Anfangsbedingungen bestimmbar sein. Mit den Anfangsbedingungen erhält man ein lineares Gleichungssystem. Das System hat genau eine Lösung, wenn die Wronski-Determinante an der Stelle $x_0$ von Null verschieden ist.
+\subsection{Integration der homogenen linearen Differentialgleichung}
+Eine Fundamentalbasis der homogenen linearen Differentialgleichung 2. Ordnung mit konstanten Koeffizienten vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=0}
+\end{equation}
+lässt sich durch einen Lösungsansatz in Form einer Exponentialfunktion mit Parameter $\lambda$ vom Typ
+\begin{equation}
+\boxed{y=e^{\lambda x}}\quad \boxed{\dfrac{\text{d}y}{\text{d}x}=\lambda \cdot e^{\lambda x}}\quad \boxed{\dfrac{\text{d}^2y}{\text{d}x}=\lambda^2\cdot e^{\lambda x}}
+\end{equation}
+Eingesetzt in die lineare Differentialgleichung erhält man die charakteristische Gleichung der homogenen Gleichung
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=\lambda^2\cdot e^{\lambda x}+a\lambda\cdot e^{\lambda x}+b\cdot e^{\lambda x}=e^{\lambda x}\left(\lambda^2+a\lambda+b\right)=0}
+\end{equation}
+\begin{equation}
+\boxed{\lambda^2+a\lambda+b=0}\quad \boxed{\lambda_{1,2}=-\dfrac{a}{2}\pm \sqrt{\dfrac{a^2}{4}-b}=-\dfrac{a}{2}\pm \dfrac{\sqrt{a^2-4b}}{2}}
+\end{equation}
+Die Diskriminante $a^2-4b$ entscheidet dabei über die Art der Lösungen
+\begin{itemize}
+\item Fall $a^2-4b<0$: $\lambda_1\neq \lambda_2$
+\begin{equation}
+\boxed{y_1=e^{\lambda_1 x}}\quad \boxed{y_2=e^{\lambda_2 x}}\quad \boxed{y=C_1\cdot e^{\lambda_1 x}+C_2\cdot e^{\lambda_2 x}}
+\end{equation}
+\item Fall $a^2-4b<0$: $\lambda_1=\lambda_2=c$
+\begin{equation}
+\boxed{y_1=e^{c x}}\quad \boxed{y_2=x\cdot e^{c x}}\quad \boxed{y=\left(C_1+C_2\cdot x\right)\cdot e^{c x}}
+\end{equation}
+\item Fall $a^2-4b>0$: $\lambda_{1,2}=\alpha\pm\text{j}\omega$
+\begin{equation}
+\boxed{y_1=e^{\alpha x}\cdot \sin\left(\omega x\right)}\quad \boxed{y_2=e^{\alpha x}\cdot \cos\left(\omega x\right)}\quad \boxed{y=e^{\alpha x}\cdot \Big[C_1\cdot \sin\left(\omega x\right)+C_2\cdot \cos\left(\omega x\right)\Big]}
+\end{equation}
+\end{itemize}
+Die charakteristische Gleichung hat dieselben Koeffizienten wie die homogene Differentialgleichung.
+\subsection{Integration der inhomogenen linearen Differentialgleichung}
+Die allgemeine Lösung $y=y\left(x\right)$ einer inhomogenen linearen Differentialgleichung 2. Ordnung mit konstanten Koeffizienten vom Typ
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=g\left(x\right)}
+\end{equation}
+ist als Summe aus der allgemeinen Lösung $y_0=y_0\left(x\right)$ der zugehörigen homogenen linearen Differentialgleichung
+\begin{equation}
+\boxed{\dfrac{\text{d}^2y}{\text{d}x}+a\dfrac{\text{d}y}{\text{d}x}+by=0}
+\end{equation}
+und einer beliebigen partikulären Lösung $y_p=y_p\left(x\right)$ der inhomogenen linearen Differentialgleichung 
+\begin{equation}
+\boxed{y\left(x\right)=y_0\left(x\right)+y_p\left(x\right)}
+\end{equation}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Störfunktion $g\left(x\right)$}& \textbf{Lösungsansatz $y_p\left(x\right)$}\\\hline
+$g\left(x\right)=P_n\left(x\right)$& $y_p=\Big\{\begin{array}{l}Q_n\left(x\right)\text{ für } b\neq 0\\x\cdot Q_n\left(x\right)\text{ für } a\neq 0 \text{ und } b=0\\x^2\cdot Q_n\left(x\right)\text{ für } a=b=0\end{array}$\\\hline
+$g\left(x\right)=e^{cx}$&$y_p=\Big\{\begin{array}{l}A\cdot e^{cx}\text{ für } c \text{ keine Lösung der ch. Gleichung}\\Ax\cdot e^{cx}\text{ für } c \text{ eindeutige Lösung der ch. Gleichung}\\Ax^2\cdot e^{cx}\text{ für } c \text{ doppelte Lösung der ch. Gleichung}\end{array}$\\\hline
+$g\left(x\right)=\sin\left(\beta x\right)+\cos\left(\beta x\right)$& $y_p=\Big\{\begin{array}{l}A\cdot \sin\left(\beta x\right)+B\cdot \cos\left(\beta x\right)\text{ für }\text{j}\beta \text{ keine Lösung}\\C\cdot \sin\left(\beta x+ \varphi\right)\text{ für }\text{j}\beta \text{ keine Lösung}\end{array}$\\
+& $y_p=\Big\{\begin{array}{l}x\cdot \Big[A\cdot \sin\left(\beta x\right)+B\cdot \cos\left(\beta x\right)\Big]\text{ für }\text{j}\beta \text{ eindeutige Lösung}\\C\cdot x\cdot \sin\left(\beta x+ \varphi\right)\text{ für }\text{j}\beta \text{ eindeutige Lösung}\end{array}$\\\hline
+$g\left(x\right)=P_n\left(x\right)\cdot e^{cx}\cdot \sin\left(\beta x\right)$&$\text{Für }\text{j}\beta \text{ keine Lösung}$\\
+$g\left(x\right)=P_n\left(x\right)\cdot e^{cx}\cdot \cos\left(\beta x\right)$& $y_p=e^{cx}\cdot \Big[Q_n\left(x\right)\cdot \sin\left(\beta x\right)+R_n\left(x\right)\cdot \cos\left(\beta x\right)\Big]$\\
+&$\text{Für }\text{j}\beta \text{ eindeutige Lösung}$\\
+&$y_p=x\cdot e^{cx}\cdot \Big[Q_n\left(x\right)\cdot \sin\left(\beta x\right)+R_n\left(x\right)\cdot \cos\left(\beta x\right)\Big]$\\\hline
+\end{tabular}
+\caption{Lösungsansatz für die partikuläre Lösung $y_p\left(x\right)$ der inhomogenen Differentialgleichung 1. Ordnung mit konstanten Koeffizienten}
+\end{table}

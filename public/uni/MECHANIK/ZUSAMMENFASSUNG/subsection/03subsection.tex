@@ -1,0 +1,153 @@
+\subsection{Vektorfunktion einer skalaren Variable}
+Für die Stetigkeit und Differenzierbarkeit von Vektorfunktionen $\overrightarrow{r}$ gelten ähnliche Definitionen wie für skalare Funktionen. Die Ableitung einer differenzierbaren Vektorfunktion ist
+\begin{equation}
+\boxed{\overrightarrow{\dot{r}}:=\dfrac{\text{d}\overrightarrow{r}}{\text{d}t}:=\displaystyle \lim_{\triangle t\rightarrow 0}\dfrac{\overrightarrow{r}\left(t+\triangle t\right)-\overrightarrow{r}\left(t\right)}{\triangle t}}
+\end{equation}
+Die folgenden Eigenschaften gehören der Ableitung einer Vektorfunktion.
+\begin{enumerate}[$(i)$]
+\item $\dot{\left(s\cdot \overrightarrow{r}\right)}=\dot{s}\cdot \overrightarrow{r}+s\cdot \dot{\overrightarrow{r}}$
+\item $\dot{\left(\overrightarrow{q}\bullet \overrightarrow{r}\right)}=\dot{\overrightarrow{q}}\bullet \overrightarrow{r}+\overrightarrow{q}\bullet \dot{\overrightarrow{r}}$
+\item $\dot{\left(\overrightarrow{q}\times \overrightarrow{r}\right)}=\dot{\overrightarrow{q}}\times \overrightarrow{r}+\overrightarrow{q}\times \dot{\overrightarrow{r}}$
+\item $\dfrac{\text{d}\overrightarrow{r}}{\text{d}t}=\dfrac{\text{d}\overrightarrow{r}}{\text{d}s}\cdot \dfrac{\text{d}s}{\text{d}t}$
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Schnelligkeit und Geschwindigkeit}
+Ein Massenpunkt $M$ beschreibt durch seine Bewegung eine Bahnkurve $C$. Durch die Wahl eines Punktes $A$ auf der Bahnkurve in Beziehung mit dem Massenpunkt $M$ entsteht die \textbf{Bogenlänge} $s:={AM}$. Damit kann $s$ als krummlinige Koordinate von $M$ auf der Bahnkurve $C$ aufgefasst werden. Die Bewegung auf $C$ sei durch die Funktion $t\rightarrow s$ für $t\in[t_1, t_2]$ beschrieben. Die Ableitung heisst Schnelligkeit von $M$ auf $C$
+\begin{equation}
+\boxed{\dot{s}=\displaystyle \lim_{\triangle t\rightarrow 0}\dfrac{s\left(t+\triangle t\right)-s\left(t\right)}{\triangle t}}
+\end{equation}
+Hat ein Massenpunkt zu jedem Zeitpunkt eine konstante Schnelligkeit, so heisst seine Bewegung \textbf{gleichförmig}. Die Bogenlänge ist dann eine lineare Funktion der Zeit von der Form $s=s_0+\dot{s}t$. Ist die Bahnkurve $C$ eine Gerade, so heisst die Bewegung \textbf{geradlinig gleichförmig}.
+\newline\newline
+Die \textbf{Schnelligkeit} $\dot{s}$ ist eine skalare Grösse und enthält deshalb keine Information über die Richtung der Bahnkurve bezüglich $O_{xyz}$. Die \textbf{Geschwindigkeit} ist tangential an die Bahnkurve $C$ und wird durch einen tangentialen Einheitsvektor $\overrightarrow{\tau}$ in positive Richtung der Bogenlänge $s$ eingeführt. Dieser Einheitsvektor entspricht einer Vektorfunktion der Zeit $t\rightarrow \overrightarrow{\tau}$. Die Geschwindigkeit wird durch den Vektor $\overrightarrow{v}$ definiert, dessen Betrag $s=\Big\vert\overrightarrow{v}\Big\vert$ der Absolutwert der Schnelligkeit und dessen positiver Richtung jene von $\overrightarrow{\tau}$ und dessen negative Richtung jene von $-\overrightarrow{\tau}$ ist. 
+\begin{equation} 
+\boxed{\overrightarrow{v}:=s\cdot \overrightarrow{\tau}}\quad \boxed{\overrightarrow{\tau}=\dfrac{\overrightarrow{v}}{\Big\vert\overrightarrow{v}\Big\vert}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ortsvektor und Geschwindigkeit}
+Auf der Bahnkurve $C$ seien zwei Massenpunkte $M$ und $M'$ gegeben. Die längs $C$ gemessene krummlinige Strecke soll als $\triangle s:=s\left(M'\right)-s\left(M\right)$, die Differenz der Ortsvektore als $\triangle \overrightarrow{r}:=\overrightarrow{r}\left(M'\right)-\overrightarrow{r}\left(M\right)$. Der Betrag $\Big\vert\overrightarrow{r}\Big\vert$ entspricht der Länge $MM'$ der Sehne von $M$ zu $M'$. Fasst man den Ortsvektor $\overrightarrow{r}$ als Vektorfunktion der Bogenlänge auf und lässt $M'$ gegen $M$ streben, so kann man beweisen, dass $\dot{\overrightarrow{r}}$ die Ableitung des Ortsvektors nach $s$ den tangentialen Einheitsvektor ergibt. Die Geschwindigkeit $\overrightarrow{v}$ ist demzufolge die zeitliche Änderung des Ortsvektors $\dot{\overrightarrow{r}}$.
+\begin{equation}
+\boxed{\dfrac{\text{d}\overrightarrow{r}}{\text{d}s}:=\displaystyle \lim_{\triangle s\rightarrow 0}\dfrac{\triangle \overrightarrow{r}}{\triangle s}=\overrightarrow{\tau}}\quad \boxed{\overrightarrow{v}=\dot{\overrightarrow{\tau}}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Kartesische Komponenten der Geschwindigkeit}
+Die Ableitung des Ortsvektors in kartesischen Komponenten ist hier zu achten, dass die Einheitsvektoren der kartesischen Basis zeitlich konstant sind, d.h. $\dot{\overrightarrow{e}_x}=\dot{\overrightarrow{e}_y}=\dot{\overrightarrow{e}_z}=0$. Bei der Anwendungdes Produktregels ergeben sich die kartesischen Komponenten der Geschwindigkeit.
+\begin{equation}
+\boxed{\overrightarrow{v}\left(t\right)=\dot{x}\left(t\right)\cdot \overrightarrow{e}_x+\dot{y}\left(t\right)\cdot \overrightarrow{e}_y+\dot{z}\left(t\right)\cdot \overrightarrow{e}_z}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Zylindrische Komponenten der Geschwindigkeit}
+Die Ableitung des Ortsvektors in zylindrischen Komponenten ist hier zu achten, dass der Einheitsvektor $\overrightarrow{e}_{\rho}$ trotz seines konstanten Betrages eine Funktion des WInkels $\varphi=\varphi\left(t\right)$ und damit der Zeit. Seine Ableitung beträgt $\dot{\overrightarrow{e}}_{\rho}=\dot{\varphi}\left(t\right)\cdot \overrightarrow{e}_{\varphi}$. Bei der Anwendung des Produkt- und Kettenregels ergeben sich die zylindrische Komponenten der Geschwindigkeit.
+\begin{equation}  
+\boxed{\overrightarrow{v}\left(t\right)=\dot{\rho}\left(t\right)\cdot\overrightarrow{e}_\rho+\rho\left(t\right)\cdot \dot{\varphi}\left(t\right)\cdot \overrightarrow{e}_{\varphi}+\dot{z}\left(t\right)\cdot \overrightarrow{e}_z}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\subsection{Sphärische Komponenten der Geschwindigkeit}
+Die Ableitung des Ortsvektor in sphärischen Komponenten ist hier zu achten, dass die Richtung des Einheitsvektors $\overrightarrow{e}_r$ abhängig von $\theta\left(t\right)$, $\psi\left(t\right)$ und der Zeit ist. Seine Ableitung beträgt $\dot{\overrightarrow{e}_r}=\dot{\theta}\left(t\right)\cdot \overrightarrow{e}_{\theta}+\dot{\psi}\cdot \sin\left(\theta\right)\left(t\right)\cdot \overrightarrow{e}_{\psi}$. Bei der Anwendung des Produkt- und Kettenregels ergeben sich die sphärischen Komponenten der Geschwindigkeit.
+\begin{equation}
+\boxed{\overrightarrow{v}\left(t\right)=\dot{r}\left(t\right)\cdot \overrightarrow{e}_r+r\left(t\right)\cdot \dot{\theta}\left(t\right)\cdot \overrightarrow{e}_{\theta}+r\left(t\right)\cdot \sin\left(\theta(t)\right)\cdot \dot{\psi}\left(t\right)\cdot \overrightarrow{e}_{\psi}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Mittlere Geschwindigkeit}
+Beschreiben $\overrightarrow{r}\left(t_1\right)$ und $\overrightarrow{r}\left(t_2\right)$ zu den Zeitpunkten $t_1$ und $t_2$ den Ort des Massenpunktes bezüglich eines Koordinatensystems, so ist die mittlere Geschwindigkeit $\triangle \overrightarrow{v}\left(t\right)$ des Massenpunktes im Zeitintervall $[t_1, t_2]$ gegeben durch
+\begin{equation} 
+\boxed{\triangle \overrightarrow{v}\left(t\right)=\dfrac{\overrightarrow{r}\left(t_2\right)-\overrightarrow{r}\left(t_1\right)}{t_2-t_1}=\dfrac{\triangle \overrightarrow{r}\left(t\right)}{t_2-t_1}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Momentane Geschwindigkeit}
+Beschreiben $\overrightarrow{r}\left(t_1\right)$ und $\overrightarrow{r}\left(t_2\right)$ zu den Zeitpunkten $t_1$ und $t_2$ den Ort des Massenpunktes bezüglich eines Koordinatensystems, so ist die Momentangeschwindigkeit $\triangle \overrightarrow{v}\left(t_1\right)$ des Massenpunktes zur Zeit $t_1$ gegeben durch
+\begin{equation} 
+\boxed{\overrightarrow{v}\left(t_1\right)=\displaystyle \lim_{t_2\rightarrow t_1}\dfrac{\overrightarrow{r}\left(t_2\right)-\overrightarrow{r}\left(t_1\right)}{t_2-t_1}=\dfrac{\text{d} \overrightarrow{r}}{\text{d}t}\left(t_1\right)}
+\end{equation} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Momentane Schnelligkeit}
+Beschreibt $\overrightarrow{r}\left(t\right)$ den Ort der Bewegung eines Massenpunktes bezüglich eines Koordinatensystems, so ist die momentane Schnelligkeit $\dot{s}\left(t\right)$ zur Zeit $t$ durch den Betrag der Geschwindigkeit des Massenpunkts definiert
+\begin{equation}
+\boxed{\dot{s}\left(t\right)=\Big\vert\overrightarrow{v}\left(t\right) \Big\vert=\Big\vert\dot{\overrightarrow{r}}\left(t\right) \Big\vert}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Mittlere Schnelligkeit}
+Legt ein Massenpunkt, der der eine Bewegung vollzieht, in der Zeit $\triangle t$ die Strecke $s$ zurück, so gilt für seine mittlere Schnelligkeit
+\begin{equation}
+\boxed{\triangle \dot{s}\left(t\right)=\dfrac{s}{\triangle t}}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Mittlere Beschleunigung}
+Beschreiben $\overrightarrow{v}\left(t_1\right)$ und $\overrightarrow{v}\left(t_2\right)$ zu den Zeitpunkten $t_1$ und $t_2$ die Momentan-geschwindigkeit eines Massenpunkts bezüglich eines Koordinatensystems, so ist die mittlere Beschleunigung $\triangle \overrightarrow{a}\left(t\right)$ des Massenpunkts im Zeitintervall $[t_1, t_2]$ gegeben durch
+\begin{equation}
+\boxed{\triangle \overrightarrow{a}\left(t\right)=\dfrac{\overrightarrow{v}\left(t_2\right)-\overrightarrow{v}\left(t_1\right)}{t_2-t_1}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Momentane Beschleunigung}
+Beschreiben $\overrightarrow{v}\left(t_1\right)$ und $\overrightarrow{v}\left(t_2\right)$ zu den Zeitpunkten $t_1$ und $t_2$ die Momentan-geschwindigkeit eines Massenpunkts bezüglich eines Koordinatensystems, so ist die Momentanbeschleunigung $\triangle \overrightarrow{a}\left(t_1\right)$ des Massenpunkts zur Zeit $t_1$ gegeben durch
+\begin{equation}
+\boxed{\overrightarrow{a}\left(t_1\right)=\lim_{t_2\rightarrow t_1}\dfrac{\overrightarrow{v}\left(t_2\right)-\overrightarrow{v}\left(t_1\right)}{t_2-t_1}=\dfrac{\text{d}\overrightarrow{v}}{\text{d}t}\left(t_1\right)=\dfrac{\text{d}^2\overrightarrow{r}}{\text{d}t^2}\left(t_1\right)}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Integralformulierungen}
+Beschreibt $\overrightarrow{a}\left(t\right)$ die Momentanbeschleunigung eines Massenpunktes bezüglich eines Koordinatensystems, so gilt für die Momentangeschwindigkeit $\overrightarrow{v}\left(t\right)$ des Massenpunktes zur Zeit $t$
+\begin{equation} 
+\boxed{\overrightarrow{v}\left(t\right)=\displaystyle \int \overrightarrow{a}\left(t\right)+\overrightarrow{C}}
+\end{equation} 
+Beschreibt $\overrightarrow{v}\left(t\right)$ die Momentangeschwindigkeit eines Massenpunktes bezüglich eines Koordinatensystems, so gilt für den Ort $\overrightarrow{r}\left(t\right)$ des Massenpunktes zur Zeit $t$
+\begin{equation} 
+\boxed{\overrightarrow{r}\left(t\right)=\displaystyle \int \overrightarrow{v}\left(t\right)+\overrightarrow{C}}
+\end{equation} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Schiefer Wurf}
+Unter der Annahme $\overrightarrow{a}\left(t\right)=-g\cdot \overrightarrow{e}_y$ einer konstanten Gravitationsbeschleunigung lässt sich der schiefe Wurf eines Massenpunktes kinematisch wie folgt beschreiben, wobei $x_0$, $y_0$, $v_{0,x}$, $v_{0,y}$ die Komponenten von Ort und Geschwindig-keit zur Zeit $t=0$, $v_0$ die Schnelligkeit des Massenpunktes zur Zeit $t=0$, $\beta$ der Abschusswinkel zur Horizontalen und $y\left(x\right)$ die Gleichung der Wurfparabel sind 
+\begin{equation}
+\boxed{\overrightarrow{a}\left(t\right)=\begin{pmatrix}a_x\left(t\right)\\a_y\left(t\right)\\a_z\left(t\right)\end{pmatrix}=\begin{pmatrix}0\\-g\\0\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{v}\left(t\right)=\begin{pmatrix}v_x\left(t\right)\\v_y\left(t\right)\\v_z\left(t\right)\end{pmatrix}=\begin{pmatrix}v_{0,x}\\-gt+v_{0,y}\\0\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{\overrightarrow{r}\left(t\right)=\begin{pmatrix}x\left(t\right)\\y\left(t\right)\\z\left(t\right)\end{pmatrix}=\begin{pmatrix}v_{0,x}t+x_0\\-\dfrac{g}{2}t^2+v_{0,y}t+y_0\\0\end{pmatrix}}
+\end{equation}
+\begin{equation}
+\boxed{v_{0,x}=v_0\cdot \cos\left(\varphi\right)}\quad \boxed{v_{0,y}=v_0\cdot \sin\left(\varphi\right)}
+\end{equation}
+\begin{equation}
+\boxed{v_0=\Big\vert\overrightarrow{v}\left(0\right)\Big\vert=\sqrt{v_{0,x}^2+v_{0,y}^2}}
+\end{equation}
+\begin{equation}
+\boxed{y\left(x\right)=-\dfrac{g}{2v_0^2\cos^2\left(\beta\right)}\cdot \left(x-x_0\right)^2+\tan\left(\beta\right)\cdot \left(x-x_0\right)+y_0}
+\end{equation}
+\begin{equation}
+\boxed{\beta=\arctan\left(\dfrac{v_{0,y}}{v_{0,x}}\right)}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Spezieller Fall: Die Kreisbewegung}
+Bei der Bewegung auf einer Kreisbahn mit dem Radius $R$ gelten die Bewegungsgleichungen
+\begin{equation} 
+\boxed{\rho\left(t\right)=R}\quad \boxed{\varphi\left(t\right)=\varphi}\quad \boxed{z=z_0}
+\end{equation} 
+Die Geschwindigkeit beträgt
+\begin{equation}
+\boxed{\overrightarrow{v}=R\cdot \dot{\varphi}\cdot \overrightarrow{e}_{\varphi}}\quad \boxed{\overrightarrow{e}_{\varphi}=\overrightarrow{e}_z\times \overrightarrow{e}_\rho}
+\end{equation} 
+Die Schnelligkeit ist $\dot{s}=R\dot{\varphi}$ und der tangentiale Einehitsvektor $\overrightarrow{\tau}=\overrightarrow{e}_{\varphi}$. Die Grösse $\dot{\varphi}$ heisst \textbf{Winkelschnelligkeit}. Der Einheitsvektor $\overrightarrow{e}_{\varphi}$ ist in Funktion von $\overrightarrow{e}_z$ und $\overrightarrow{e}_{\rho}$. Eingesetzt in die Geschwindigkeit erhält man folgende Beziehungen
+\begin{equation}
+\boxed{\begin{array}{lll}
+\overrightarrow{v}&=&R\cdot \dot{\varphi}\cdot \left(\overrightarrow{e}_z\times \overrightarrow{e}_{\rho}\right)\\
+&=&\dot{\varphi}\cdot \overrightarrow{e}_z\times R\cdot \overrightarrow{e}_{\rho}\\
+&=&\dot{\varphi}\cdot \overrightarrow{e}_z\times \left(\overrightarrow{r}-z_0\cdot \overrightarrow{e}_z\right)\\
+&=&\dot{\varphi}\cdot \overrightarrow{e}_z\times \overrightarrow{r}\underbrace{-\dot{\varphi}\cdot \overrightarrow{e}_z\times z_0\cdot \overrightarrow{e}_z}_{0}\\
+\end{array}}
+\end{equation}
+Der Vektor $\dot{\varphi}\cdot \overrightarrow{e}_z$ soll \textbf{Winkelgeschwindigkeit} der Kreisbewegung um die $z$-Achse genannt und mit $\overrightarrow{\omega}$ bezeichnet werden.
+\begin{equation}
+\boxed{\overrightarrow{\omega}=\dot{\varphi}\cdot \overrightarrow{e}_z=\omega\cdot \overrightarrow{e}_z}
+\end{equation}
+Für die Geschwindigkeit der Kreisbewegung ergibt sich
+\begin{equation}
+\boxed{\overrightarrow{v}=\overrightarrow{\omega}\times \overrightarrow{r}}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection{Allgemeinste Kreisbewegung}
+Führt ein Massenpunkt eine Kreisbewegung durch, so ist seine Bewegung bezüglich eines Polarkoordinatensystems durch folgende Grössen: Radius $\rho\left(t\right)=R$ [m], Winkel $\varphi\left(t\right)$ [rad], Winkelgeschwindigkeit $\omega\left(t\right)=\dot{\varphi}\left(t\right)$ [rad s$^{-1}$] oder [s$^{-1}$] und Winkelbeschleunigung $\alpha\left(t\right)=\dot{\omega}\left(t\right)=\ddot{\varphi}\left(t\right)$ [rad s$^{-2}$] oder [s$^{-2}$]. Für die Beschreibung der Bewegung bezüglich eines Koordinatensystems mit gleichem Ursprung wie das Polarkoordinatensystem gilt
+\begin{equation}
+\boxed{\overrightarrow{r}\left(t\right)=\begin{pmatrix}x\left(t\right)\\y\left(t\right)\\z
+\left(t\right)\end{pmatrix}}
+\end{equation}

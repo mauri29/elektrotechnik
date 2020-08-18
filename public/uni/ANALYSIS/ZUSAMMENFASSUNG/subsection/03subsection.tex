@@ -1,0 +1,363 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Das bestimmte Integral}
+\subsection{Definition des bestimmten Integrals}
+Das bestimmte Integral ist der Flächeninhalt $A$ zwischen der stetigen Funktion $y=f\left(x\right)$, der $x$-Achse und den beiden zur $y$-Achse parallelen Geraden $x=a$ und $x=b$, sofern die Kurve im gesamten Intervall $a\leq x\leq b$ oberhalb der $x$-Achse verläuft
+\newline\newline
+Die Fläche $A$ wird in $n$ Streifen gleicher Breite $\triangle x$ zerlegt und durch endlich viele Rechteckflächen ersetzt. Dies führt zu der Untersumme $U_n$ die einen Näherungswert für den gesuchten Flächeninhalt darstellt.
+\begin{equation}
+\boxed{
+\begin{array}{lll}
+U_n&=&f\left(x_0\right)\cdot \triangle x+f\left(x_1\right)\cdot \triangle x+f\left(x_2\right)\cdot \triangle x+\dotso+f\left(x_{n-1}\right)\cdot \triangle x\\
+&=&\displaystyle \sum_{k=1}^n\Big(f\left(x_{k-1}\right)\cdot \triangle x\Big)\\
+\end{array}}
+\end{equation}
+Beim Grenzübergang $n\rightarrow \infty$ und somit $\triangle x\rightarrow 0$ strebt die Untersumme $U_n$ gegen einen Grenzwert, der als bestimmtes Integral von $f\left(x\right)$ in den Grenzen $x=a$ und $x=b$ bezeichnet wird und geometrisch als Flächeninhalt $A$ unter der Kurve $y=f\left(x\right)$ im Intervall $a\leq x\leq b$ interpretiert werden darf.
+\begin{equation}
+\boxed{\displaystyle \lim_{n\rightarrow \infty}U_n=\displaystyle \lim_{n\rightarrow \infty}\displaystyle \sum_{k=1}^n\Big(f\left(x_{k-1}\right)\cdot \triangle x\Big)=\displaystyle \int_a^bf\left(x\right)\,\text{d}x}
+\end{equation}
+Somit sei $x$ die Integrationsvariable, $f\left(x\right)$ die Integrandfunktion oder der Integrand und $a,\,b$ die untere bzw. obere Integrationsgrenze. Das Integral existiert, wenn $f\left(x\right)$ stetig ist oder aber beschränkt ist und nur endlich viele Unstetigkeiten im Integrationsintervall enthält. 
+\subsection{Berechnung des bestimmten Integrals}
+Die Berechnung des bestimmten Integrals beruht auf den \textbf{Hauptsatz der Integralrechnung}. Sei $F\left(x\right)$ die eine \textbf{Stammfunktion} von $f\left(x\right)$. 
+\begin{equation}
+\boxed{\displaystyle \int_a^bf\left(x\right)\,\text{d}x=\Big[F\left(x\right)\Big]_a^b=F\left(b\right)-F\left(a\right)}
+\end{equation}
+\subsection{Integrationsregeln für bestimmte Integrale}
+\subsubsection{Faktorregel}
+Ein konstanter Faktor $C$ darf vor das Integral gezogen werden
+\begin{equation}
+\boxed{\displaystyle \int_a^bC\cdot f\left(x\right)\,\text{d}x=C\cdot \displaystyle \int_a^bf\left(x\right)\,\text{d}x,\quad \left(C\in \mathbb{R}\right)}
+\end{equation}
+\subsubsection{Summenregel}
+Eine endliche Summe von Funktionen darf gliedweise integriert werden
+\begin{equation}
+\boxed{\displaystyle \int_a^b\Big[f_1\left(x\right)+\dotso+f_n\left(x\right)\Big]\,\text{d}x=\displaystyle \int_a^bf_1\left(x\right)\,\text{d}x+\dotso+\displaystyle \int_a^bf_n\left(x\right)\,\text{d}x}
+\end{equation}
+\subsubsection{Vertauschregel}
+Vertauschen der Integrationsgrenzen bewirkt einen Vorzeichenwechsel des Integrals
+\begin{equation}
+\boxed{\displaystyle \int_a^bf\left(x\right)\,\text{d}x=-\displaystyle \int_b^af\left(x\right)\,\text{d}x}
+\end{equation}
+Der Flächeninhalt unter der Kurve ist Null: Fallen die Integrationsgrenzen zusammen, so ist der Integralwert gleich Null
+\begin{equation}
+\boxed{\displaystyle \int_a^af\left(x\right)\,\text{d}x=0}
+\end{equation}
+Die Fläche wird in zwei Teilflächen zerlegt: Für jede Stelle $c$ aus dem Integrationsintervall gilt
+\begin{equation}
+\boxed{\displaystyle \int_a^bf\left(x\right)\,\text{d}x=\displaystyle \int_a^cf\left(x\right)\,\text{d}x+\displaystyle \int_c^bf\left(x\right)\,\text{d}x,\quad \left(a\leq c\leq b\right)}
+\end{equation}
+\section{Das unbestimmte Integral}
+\subsection{Definition des unbestimmten Integrals}
+Das unbestimmte Integral beschreibt den Flächeninhalt $A$ zwischen der stetigen Kurve $y=f\left(t\right)$ und der $t$-Achse im Intervall $a\leq t\leq x$ in Abhängigkeit von der oberen variabel gehaltenen Grenze $x$ und wird daher auch als \textbf{Flächenfunktion} $I\left(x\right)$ bezeichnet.
+\begin{equation}
+\boxed{I\left(x\right)=\displaystyle \int_a^xf\left(t\right)\,\text{d}t}
+\end{equation}
+\subsection{Allgemeine Eigenschaften der unbestimmten Integrale}
+\begin{enumerate}[$(a)$]
+\item Zu jeder stetigen Funktion $f\left(x\right)$ gibt es unendlich viele unbestimmte Integrale, die sich in ihrer unteren Integrationsgrenze voneinander unterscheiden.
+\item Die Differenz zweier unbestimmter Integrale von $f\left(x\right)$ ist eine \textbf{Konstante}.
+\item Differenziert man ein unbestimmtes Integral $I\left(x\right)$ nach der oberen Grenze $x$, so erhält man die Integrandfunktion $f\left(x\right)$, sogenannte \textbf{Fundamentalsatz der Differential- und Integralrechnung}.
+\newline\newline
+Eine differenzierbare Funktion $F\left(x\right)$ mit der Eigenschaft $\dfrac{\text{d}}{\text{d}x}F\left(x\right)=f\left(x\right)$ wird als eine Stammfunktion von $f\left(x\right)$ bezeichnet. Jedes unbestimmte Integral $I\left(x\right)$ von $f\left(x\right)$ ist eine Stammfunktion von $f\left(x\right)$.
+\begin{equation}
+\boxed{I\left(x\right)=\displaystyle \int_a^xf\left(t\right)\,\text{d}t\Longrightarrow \dfrac{\text{d}I}{\text{d}x}=f\left(x\right)}
+\end{equation}
+\item Ist $F\left(x\right)$ irgendeine Stammfunktion von $f\left(x\right)$ und $C_1$ eine geeignete reelle Konstante, die aus der Bedingung $I\left(a\right)=F\left(a\right)+C_1=0$ berechnen lässt, so gilt
+\begin{equation}
+\boxed{I\left(x\right)=\displaystyle \int_a^xf\left(t\right)\,\text{d}t=F\left(x\right)+C_1}
+\end{equation}
+\item Die Menge aller Funktionen vom Typ $I\left(x\right)+K=\displaystyle \int_a^xf\left(t\right)\,\text{d}t+K$ wird als unbestimmtes Integral von $f\left(x\right)$ bezeichnet und durch das Symbol $\displaystyle \int f\left(x\right)\,\text{d}x$ gekennzeichnet.
+\begin{equation}
+\boxed{\displaystyle \int f\left(x\right)\,\text{d}x=\displaystyle \int_a^xf\left(t\right)\,\text{d}t+K,\quad \left(K\in \mathbb{R}\right)}
+\end{equation}
+\item Die Begriffe ''Stammfunktion von $f\left(x\right)$'' und ''unbestimmtes Integral von $f\left(x\right)$'' sind somit gleichwertig. Das unbestimmte Integral $\displaystyle \int f\left(x\right)\,\text{d}x$ von $f\left(x\right)$ ist daher in folgender Form darstellbar, wobei $F\left(x\right)$ irgendeine Stammfunktion zu $f\left(x\right)$ bedeutet und die Integrationskonstante $C$ alle reelle Werte durchläuft. Das Aufsuchen sämtlicher Stammfunktionen $F\left(x\right)$ zu einer vorgegebenen Funktion $f\left(x\right)$ heisst \textbf{unbestimmte Integration}.
+\begin{equation}
+\boxed{\displaystyle \int f\left(x\right)\,\text{d}x=F\left(x\right)+C,\quad \left(\dfrac{\text{d}}{\text{d}x}F\left(x\right)=f\left(x\right)\right)}
+\end{equation}
+\item Die Stammfunktionen oder Integralkurven zu einer stetigen Funktion $f\left(x\right)$ bilden eine \textbf{einparametrige Kurvenschar}. Jede Integralkurve entsteht dabei aus jeder anderen durch Parallelverschiebung in der $y$-Richtung.
+\item Faktor- und Summenregel für bestimmte Integrale gelten sinngemäss auch für unbestimmte Integrale.
+\end{enumerate}
+\section{Integrale elementarer Funktionen}
+\subsection{Integralen der Potenzfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int 0\,\text{d}x=C$
+\item $\displaystyle \int 1\,\text{d}x=x+C$
+\item $\displaystyle \int x^n\,\text{d}x=\dfrac{x^{n+1}}{n+1}+C$
+\item $\displaystyle \int \dfrac{1}{x}\,\text{d}x=\ln\Big\vert x\Big\vert+C$
+\end{enumerate}
+\subsection{Integralen der trigonometrischen Funktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int \sin\left(x\right)\,\text{d}x=-\cos\left(x\right)+C$
+\item $\displaystyle \int \cos\left(x\right)\,\text{d}x=\sin\left(x\right)+C$
+\item $\displaystyle \int \dfrac{1}{\cos^2\left(x\right)}\,\text{d}x=\tan\left(x\right)+C$
+\item $\displaystyle \int \dfrac{1}{\sin^2\left(x\right)}\,\text{d}x=-\cot\left(x\right)+C$
+\end{enumerate}
+\subsection{Integralen der Arkusfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int \dfrac{1}{\sqrt{1-x^2}}\,\text{d}x=\Bigg\{\begin{matrix}\arcsin\left(x\right)+C_1\\-\arccos\left(x\right)+C_2\end{matrix}$
+\item $\displaystyle \int \dfrac{1}{1+x^2}\,\text{d}x=\Bigg\{\begin{matrix}\arctan\left(x\right)+C_1\\-\arccot\left(x\right)+C_2\end{matrix}$
+\end{enumerate}
+\subsection{Integralen der Exponentialfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int e^x\,\text{d}x=e^x+C$
+\item $\displaystyle \int a^x\,\text{d}x=\dfrac{a^x}{\ln\left(a\right)}+C$
+\end{enumerate}
+\subsection{Integralen der Hyperbelfunktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int \sinh\left(x\right)\,\text{d}x=\cosh\left(x\right)+C$
+\item $\displaystyle \int \cosh\left(x\right)\,\text{d}x=\sinh\left(x\right)+C$
+\item $\displaystyle \int \dfrac{1}{\cosh^2\left(x\right)}\,\text{d}x=\tanh\left(x\right)+C$
+\item $\displaystyle \int \dfrac{1}{\sinh^2\left(x\right)}\,\text{d}x=-\coth\left(x\right)+C$
+\end{enumerate}
+\subsection{Integralen der Areafunktionen}
+\begin{enumerate}[$(a)$]
+\item $\displaystyle \int \dfrac{1}{\sqrt{x^2+1}}\,\text{d}x=\text{Arsinh}\left(x\right)+C=\ln\Big\vert x+\sqrt{x^2+1} \Big\vert+C$
+\item $\displaystyle \int \dfrac{1}{\sqrt{x^2-1}}\,\text{d}x=\text{Arcosh}\left(x\right)+C=\ln\Big\vert x+\sqrt{x^2-1} \Big\vert+C,\quad \left(\Big\vert x\Big\vert>1\right)$
+\item $\displaystyle \int \dfrac{1}{1-x^2}\,\text{d}x=\Bigg\{\begin{matrix}\text{Artanh}\left(x\right)+C_1=\dfrac{1}{2}\cdot \ln\left(\dfrac{1+x}{1-x}\right)+C_1,\quad \left(\Big\vert x\Big\vert<1\right)\\\text{Arcoth}\left(x\right)+C_2=\dfrac{1}{2}\cdot \ln\left(\dfrac{x+1}{x-1}\right)+C_2,\quad \left(\Big\vert x\Big\vert>1\right)\end{matrix}$
+\end{enumerate}
+\section{Integrationsmethoden}
+\subsection{Integration durch Substitution}
+\subsubsection{Allgemeines Verfahren}
+Das vorgegebene Integral wird mit Hilfe einer geeigneten Substitution in ein Grund- oder Stammintegral ersetzt
+\begin{equation}
+\boxed{\displaystyle \int f\left(x\right)\,\text{d}x\Rightarrow \begin{matrix}u=g\left(x\right)\\\\\dfrac{\text{d}}{\text{d}x}\Big[u\Big]=\dfrac{\text{d}}{\text{d}x}\Big[g\left(x\right)\Big]\\\\\text{d}x=\dfrac{\text{d}u}{\dfrac{\text{d}}{\text{d}x}\Big[g\left(x\right)\Big]}\end{matrix}=\displaystyle \int \varphi\left(u\right)\,\text{d}u=\Phi\left(u\right)=\Phi\Big(g\left(x\right)\Big)=F\left(x\right)}
+\end{equation}
+Anmerkungen
+\begin{enumerate}[$(i)$]
+\item In bestimmten Fällen ist es günstiger, die Hilfsvariable $u$ durch eine Substitution om Typ $x=h\left(u\right)$ einzuführen. Es gilt dann
+\begin{equation} 
+\boxed{x=h\left(u\right),\quad \dfrac{\text{d}}{\text{d}u}\Big[x\Big]=\dfrac{\text{d}}{\text{d}u}\Big[h\left(u\right)\Big],\quad \text{d}x=\dfrac{\text{d}}{\text{d}u}\Big[h\left(u\right)\Big]\cdot \text{d}u}
+\end{equation} 
+\item Die Substitutionen $u=g\left(x\right)$ und $x=h\left(u\right)$ müssen monotone und stetige differenzierbare Funktionen sein.
+\item Bei einem bestimmten Integral kann auf die Rücksubstitution verzichtet werden, wenn man die Integrationsgrenzen mit Hilfe der Substitutionsgleichung $u=g\left(x\right)$ bzw. $x=h\left(u\right)$ mitsubstituiert. 
+\end{enumerate}
+\subsubsection{Spezielle Integrationssubstitutionen}
+\begin{enumerate}[$(a)$]
+\item $\begin{array}{lll}\displaystyle \int f\left(ax+b\right)\,\text{d}x&=&\left\{\begin{matrix}u=ax+b\\\\\dfrac{\text{d}u}{\text{d}x}=a\Rightarrow \text{d}u=a\cdot \text{d}x\end{matrix}\right\}\\\\&=&\dfrac{1}{a}\displaystyle \int f\left(u\right)\,\text{d}u=\dfrac{1}{a}\cdot F\left(u\right)+C=\dfrac{1}{2}\cdot F\left(ax+b\right)+C\end{array}$
+\item $\begin{array}{lll}\displaystyle \int f\left(x\right)\cdot \dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\,\text{d}x&=&\left\{\begin{matrix}u=f\left(x\right)\\\\\dfrac{\text{d}u}{\text{d}x}=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\Rightarrow \text{d}u=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\cdot \text{d}x\end{matrix}\right\}\\\\&=&\displaystyle \int u\,\text{d}u=\dfrac{1}{2}u^2+C=\dfrac{1}{2}\Big[f\left(x\right)\Big]^2+C\end{array}$
+\item $\begin{array}{lll}\displaystyle \int \Big[f\left(x\right)\Big]^n\cdot \dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\,\text{d}x&=&\left\{\begin{matrix}u=f\left(x\right)\\\\\dfrac{\text{d}u}{\text{d}x}=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\Rightarrow \text{d}u=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\cdot \text{d}x\end{matrix}\right\}\\\\&=&\displaystyle \int u^n\,\text{d}u=\dfrac{u^{n+1}}{n+1}=\dfrac{\Big[f\left(x\right)\Big]^{n+1}}{n+1}+C\end{array}$
+\item $\begin{array}{lll}\displaystyle \int f\Big[g\left(x\right)\Big]\cdot \dfrac{\text{d}}{\text{d}x}\Big[g\left(x\right)\Big]\,\text{d}x&=&\left\{\begin{matrix}u=g\left(x\right)\\\\\dfrac{\text{d}u}{\text{d}x}=\dfrac{\text{d}}{\text{d}x}\Big[g\left(x\right)\Big]\Rightarrow \text{d}u=\dfrac{\text{d}}{\text{d}x}\Big[g\left(x\right)\Big]\cdot \text{d}x\end{matrix}\right\}\\\\&=&\displaystyle \int f\left(u\right)\,\text{d}u=F\left(u\right)+C=F\Big[g\left(x\right)\Big]+C\end{array}$
+\item $\begin{array}{lll}\displaystyle \int \dfrac{\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]}{f\left(x\right)}\,\text{d}x&=&=\left\{\begin{matrix}u=f\left(x\right)\\\\\dfrac{\text{d}u}{\text{d}x}=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\Rightarrow \text{d}u=\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\cdot \text{d}x\end{matrix}\right\}\\\\&=&\displaystyle \int \dfrac{\text{d}u}{u}=\ln\Big\vert u\Big\vert+C=\ln\Big\vert f\left(x\right)\Big\vert+C\end{array}$
+\item $\begin{array}{lll}\displaystyle \int R\left(x;\sqrt{a^2-x^2}\right)\,\text{d}x&=&\left\{\begin{matrix}x=a\cdot \sin\left(u\right)\\\\\dfrac{\text{d}x}{\text{d}u}=a\cdot \cos\left(u\right)\Rightarrow \text{d}x=a\cdot \cos\left(u\right)\text{d}u\\\\\sqrt{a^2-x^2}=a\cdot \cos\left(u\right)\end{matrix}\right\}\end{array}$
+\item $\begin{array}{lll}\displaystyle \int R\left(x;\sqrt{x^2+a^2}\right)\,\text{d}x&=&\left\{\begin{matrix}x=a\cdot \sinh\left(u\right)\\\\\dfrac{\text{d}x}{\text{d}u}=a\cdot \cosh\left(u\right)\Rightarrow \text{d}x=a\cdot \cosh\left(u\right)\text{d}u\\\\\sqrt{x^2+a^2}=a\cdot \cosh\left(u\right)\end{matrix}\right\}\end{array}$
+\item $\begin{array}{lll}\displaystyle \int R\left(x;\sqrt{x^2-a^2}\right)\,\text{d}x&=&\left\{\begin{matrix}x=a\cdot \cosh\left(u\right)\\\\\dfrac{\text{d}x}{\text{d}u}=a\cdot \sinh\left(u\right)\Rightarrow \text{d}x=a\cdot \sinh\left(u\right)\text{d}u\\\\\sqrt{x^2-a^2}=a\cdot \sinh\left(u\right)\end{matrix}\right\}\end{array}$
+\item $\begin{array}{lll}\displaystyle \int R\Big(\sin\left(x\right); \cos\left(x\right)\Big)\,\text{d}x&=&\left\{\begin{matrix}u=\tan\left(\dfrac{x}{2}\right)\\\\\dfrac{\text{d}u}{\text{d}x}=\dfrac{1+\left(\tan\left(\dfrac{x}{2}\right)\right)^2}{2}=\dfrac{1+u^2}{2}\Rightarrow \text{d}x=\dfrac{2}{1+u^2}\text{d}u\\\\\sin\left(x\right)=\dfrac{2u}{1+u^2}\\\\\cos\left(x\right)=\dfrac{1-u^2}{1+u^2}\end{matrix}\right\}\end{array}$
+\item $\begin{array}{lll}\displaystyle \int R\Big(\sinh\left(x\right); \cosh\left(x\right)\Big)\,\text{d}x&=&\left\{\begin{matrix}u=e^x\\\\\dfrac{\text{d}u}{\text{d}x}=e^x=u\Rightarrow \text{d}u=u\,\text{d}x\\\\\sinh\left(x\right)=\dfrac{u^2-1}{2u}\\\\\cosh\left(x\right)=\dfrac{u^2+1}{2u}\end{matrix}\right\}\end{array}$
+\end{enumerate}
+\subsection{Partielle Integration}
+Die Formel der partiellen Integration lautet
+\begin{equation}
+\boxed{\displaystyle \int f\left(x\right)\,\text{d}x=\displaystyle \int u\left(x\right)\cdot \dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]\,\text{d}x=u\left(x\right)\cdot v\left(x\right)-\displaystyle \int \dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\Big]\cdot v\left(x\right)\,\text{d}x}
+\end{equation}
+\begin{equation}
+\boxed{\displaystyle \int_a^b f\left(x\right)\,\text{d}x=\displaystyle \int_a^b u\left(x\right)\cdot \dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]\,\text{d}x=\Bigg[u\left(x\right)\cdot v\left(x\right)\Bigg]_a^b-\displaystyle \int_a^b \dfrac{\text{d}}{\text{d}x}\Big[u\left(x\right)\Big]\cdot v\left(x\right)\,\text{d}x}
+\end{equation}
+Der Integrand $f\left(x\right)$ wird in geeigneter Weise in ein Produkt aus zwei Funktionen $u\left(x\right)$ und $\dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]$ zerlegt. Die Integration gelingt, wenn sich eine Stammfunktion zum kritischen Faktor $\dfrac{\text{d}}{\text{d}x}\Big[v\left(x\right)\Big]$ angeben lässt und das neue Hilfsintegral der rechten Seite elementar lösbar ist.
+\newline\newline
+Anmerkungen
+\begin{enumerate}[$(a)$]
+\item in einigen Fällen muss man mehrmals hintereinander partiell integrieren, ehe man auf ein Grundintegral stösst.
+\item Die Formel der partiellen Integration gilt sinngemäss auch für bestimmte Integrale.
+\end{enumerate}
+\subsection{Integration durch Partialbruchzerlegung}
+\subsubsection{Vorgehensweise}
+Die Integration einer gebrochenrationale Funktion $f\left(x\right)$ geschieht nach dem folgenden Schema
+\begin{enumerate}[$(a)$]
+\item Ist die Funktion $f\left(x\right)$ unecht gebrochenrational, so wird sie zunächst durch Polynomdivision in eine ganzrationale Funktion $p\left(x\right)$ und eine echt gebrochenrationale Funktion $r\left(x\right)$ zerlegt. 
+\begin{equation}
+\boxed{f\left(x\right)=p\left(x\right)+r\left(x\right)}
+\end{equation}
+\item Der echt gebrochenrationale Anteil $r\left(x\right)$ wird in Partialbrüche zerlegt.
+\item Anschliessend erfolgt die Integration des ganzrationalen Anteils $p\left(x\right)$ sowie sämtlicher Partialbrüche.
+\end{enumerate}
+\subsubsection{Fall 1: Der Nenner $N\left(x\right)$ besitzt reelle Nullstellen}
+Die echt gebrochenrationale Funktion ist dann als Summe sämtlicher Partialbrüche darstellbar. Besitzt der Nenner $N\left(x\right)$ ausschliesslich $n$ verschiedene einfache Nullstellen, so lautet die Partialbruchzerlegung 
+\begin{equation} 
+\boxed{r\left(x\right)=\dfrac{Z\left(x\right)}{N\left(x\right)}=\dfrac{A_1}{x-x_1}+\dfrac{A_2}{x-x_2}+\dotso+\dfrac{A_n}{x-x_n}}
+\end{equation}
+Ist $x_1$ eine $r$-fache Nullstelle des Nenners $N\left(x\right)$ so lautet der Partialbruch
+\begin{equation} 
+\boxed{\dfrac{A_1}{x-x_1}+\dfrac{A_2}{\left(x-x_1\right)^2}+\dotso+\dfrac{A_r}{\left(x-x_1\right)^r}}
+\end{equation} 
+\subsubsection{Fall 2: Der Nenner $N\left(x\right)$ besitzt auch komplexe Nullstellen}
+Die komplexen Nullstellen des Nenners $N\left(x\right)$ treten immer paarweise, d.h. in komplex konjugierte Form auf. Für zwei einfache konjugiert komplexe Nennernullstellen $x_1$ und $x_2$, wobei $x_1$ und $x_2$ die konjugiert komplexen Lösungen der quadratischen Gleichung $x^2+px+q=0$, lautet der Partialbruchansatz 
+\begin{equation}
+\boxed{\dfrac{Bx+C}{\left(x-x_1\right)\left(x-x_2\right)}=\dfrac{Bx+C}{x^2+px+q}}
+\end{equation}
+Sind $x_1$ und $x_2$ $r$-fach konjugiert komplexen Nullstellen so lautet der Partialbruch
+\begin{equation}
+\boxed{\dfrac{B_1x+C_1}{x^2+px+q}+\dfrac{B_2x+C_2}{\left(x^2+px+q\right)^2}+\dotso+\dfrac{B_rx+C_r}{\left(x^2+px+q\right)^r}}
+\end{equation}
+\subsubsection{Integration der Partialbrüche bei reellen Nullstellen von $N\left(x\right)$}
+\begin{equation}
+\boxed{\displaystyle \int \dfrac{\text{d}x}{x-x_1}\,\text{d}x=\ln\Big\vert x-x_1\Big\vert+C_1}
+\end{equation}
+\begin{equation}
+\boxed{\displaystyle \int \dfrac{\text{d}x}{\left(x-x_1\right)^r}\,\text{d}x=\dfrac{1}{\left(1-r\right)\left(x-x_1\right)^{r-1}}+C_2,\quad \left(r\geq 2\right)}
+\end{equation}
+\subsubsection{Integration der Partialbrüche bei komplexen Nullstellen von $N\left(x\right)$}
+\begin{equation}
+\boxed{\displaystyle \int \dfrac{Bx+C}{x^2+px+q}\,\text{d}x=\dfrac{B}{2}\cdot \ln\Big\vert x^2+px+q\Big\vert+\left(\dfrac{2C-Bp}{\sqrt{4q-p^2}}\right)\cdot \arctan\left(\dfrac{2x+p}{\sqrt{4q-p^2}}\right)+C_3}
+\end{equation}
+\section{Uneigentliche Integrale}
+Uneigentliche Integrale werden durch Grenzwerte erklärt. Ist der jeweilige Grenzwert vorhanden, so heisst das uneigentliche Integral \textbf{konvergent}, sonst \textbf{divergent}.
+\subsection{Unendliches Integrationsintervall}
+Die Integration erfolgt über ein unendliches Intervall. Falls der Grenzwert vorhanden ist, setzt man $\lambda=a$
+\begin{equation}
+\boxed{\displaystyle \int_{a}^{\infty}f\left(x\right)\,\text{d}x=\displaystyle \lim_{\lambda\rightarrow \infty}\left(\displaystyle \int_a^{\lambda}f\left(x\right)\,\text{d}x\right)}
+\end{equation}
+\subsection{Integrand mit einer Unendlichkeitsstelle (Pol)}
+Der Integrand $f\left(x\right)$ besitzt an der Stelle $x=b$ einen \textbf{Pol}. Falls der Grenzwert vorhanden ist, setzt man $a<\lambda < b$
+\begin{equation} 
+\boxed{\displaystyle \int_a^bf\left(x\right)\,\text{d}x=\displaystyle \lim_{\lambda\rightarrow b}\left(\displaystyle \int_a^{\lambda}f\left(x\right)\,\text{d}x\right)}
+\end{equation} 
+\section{Anwendungen der Integralrechnung}
+\subsection{Integration der Bewegungsgleichung}
+Aus der Beschleunigungs-Zeit-Funktion $a\left(t\right)$ einer geradlinigen Bewegung erhält man durch ein- bzw. zweimalige Integration bezüglich der Zeitvariablen $t$ den zeitlichen Verlauf der Geschwindigkeit $v\left(t\right)$ und Weg $s\left(t\right)$. Die Integrationskonstanten $v_0$ und $s_0$ erhält man durch Anfangswerte für $t=0$.
+\begin{equation}
+\boxed{v\left(t\right)=\displaystyle \int a\left(t\right)\,\text{d}t+v_0}\quad \boxed{s\left(t\right)=\displaystyle \int v\left(t\right)\,\text{d}t+s_0}
+\end{equation}
+\subsection{Die Arbeit einer ortsabhängigen Kraft}
+Ein Massenpunkt $m$ wird durch eine ortsabhängige Kraft $\overrightarrow{F}\left(s\right)$ geradlinig von $s_1$ nach $s_2$ verschoben. Es sei $F_s\left(s\right)$ die skalare ortsabhängige Kraftkomponente in Richtung des Weges, $s$ die Ortskoordinate und $\text{d}s$ da Wegelement. Die dabei verrichtete Arbeit beträgt:
+\begin{equation}
+\boxed{W=\displaystyle \int_{s_1}^{s_2}\left(\overrightarrow{F}\bullet \text{d}\overrightarrow{s}\right)=\displaystyle \int_{s_1}^{s_2}F_s\left(s\right)\text{d}\overrightarrow{s}}
+\end{equation}
+\subsection{Lineare und quadratische Mittelwerte einer Funktion}
+\subsubsection{Der lineare Mittelwert}
+Die Fläche unter der Kurve $f\left(x\right)$ im Intervall $a\leq x\leq b$ entspricht dem Flächeninhalt eines Rechtecks mit den Seitenlängen $b-a$ und $\overline{y}_{\text{linear}}$. Voraussetzung dabei ist der Verlauf gilt oberhalb der $x$-Achse. Allgemein ist der lineare Mittelwert eine Art mittlere Ordinate der Kurve $f\left(x\right)$ im Intervall $a\leq x\leq b$.
+\begin{equation}
+\boxed{\overline{y}_{\text{linear}}=\dfrac{1}{b-a}\displaystyle \int_a^bf\left(x\right)\,\text{d}x}
+\end{equation}
+\subsubsection{Der quadratische Mittelwert}
+\begin{equation}
+\boxed{\overline{y}_{\text{quadratisch}}=\sqrt{\dfrac{1}{b-a}\displaystyle \int_a^b\Big[f\left(x\right)\Big]^2\,\text{d}x}}
+\end{equation}
+\subsubsection{Die zeitliche Mittelwerte einer periodischen Funktion}
+Sei $y=f\left(t\right)$ eine zeitabhängige periodische Funktion mit der Periodendauer $T$. Bei Wechselströmen und Wechselspannungen werden die quadratischen Mittelwerte als \textbf{Effektivwerte} bezeichnet.
+\begin{equation} 
+\boxed{\overline{y}_{\text{linear}}=\dfrac{1}{T}\displaystyle \int_{\left(T\right)}f\left(t\right)\,\text{d}t}\quad \boxed{\overline{y}_{\text{quadratisch}}=\sqrt{\dfrac{1}{T}\displaystyle \int_{\left(T\right)}\Big[f\left(t\right)\Big]^2\,\text{d}t}}
+\end{equation} 
+\subsection{Der Flächeninhalt}
+\subsubsection{In kartesische Koordinaten}
+Sei $f_o\left(x\right)$ die obere Randkurve und $f_u\left(x\right)$ die untere Randkurve. Voraussetzung ist es, die beiden Randkurven im Intervall $a\leq x\leq b$ sollen sich nicht durchschneiden, andererseits muss die Fläche in Teilflächen zerlegt werden.
+\begin{equation}
+\boxed{A=\displaystyle \int_a^b\Big(f_o\left(x\right)-f_u\left(x\right)\Big)\,\text{d}x}
+\end{equation}
+\subsubsection{in der Parameterform}
+Sei $f\left(t\right)$ die Parametergleichung der oberen Randkurve, so lautet den Flächeninhalt unterhalb der Kurve
+\begin{equation}
+\boxed{f\left(t\right)=\left\{\begin{matrix}x=x\left(t\right)\\y=y\left(t\right)\end{matrix}\right\}\Longrightarrow A=\displaystyle \int_{t_1}^{t_2}y\left(t\right)\cdot \dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]\,\text{d}t}
+\end{equation}
+\subsubsection{Leibnizsche Sektorformel}
+Sei $f\left(t\right)$ die Parametergleichung der oberen Randkurve, so lautet den Flächeninhalt unterhalb der Kurve bezüglich des Ursprungs
+\begin{equation}
+\boxed{f\left(t\right)=\left\{\begin{matrix}x=x\left(t\right)\\y=y\left(t\right)\end{matrix}\right\}\Longrightarrow A=\dfrac{1}{2}\Big\vert\displaystyle \int_{t_1}^{t_2}x\left(x\right)\cdot \dfrac{\text{d}}{\text{d}t}\Big[y\left(t\right)\Big]-y\left(t\right)\cdot \dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]\,\text{d}t\Big\vert}
+\end{equation}
+\subsubsection{in Polarkoordinaten}
+Sei $r\left(\varphi\right)$ die Randkurve in Polarkoordinaten. Den Flächeninhalt unterhalb der Kurve bezüglich des Ursprungs lautet
+\begin{equation}
+\boxed{A=\dfrac{1}{2}\cdot \displaystyle \int_{\varphi_1}^{\varphi_2}\Big[r\left(\varphi\right)\Big]^2\,\text{d}\varphi}
+\end{equation}
+\subsection{Der Schwerpunkt einer homogenen ebenen Fläche}
+Sei $f_o\left(x\right)$ die obere Randkurve, $f_u\left(x\right)$ die untere Randkurve und $A$ den Flächeninhalt. So lautet den Schwerpunkt
+\begin{equation} 
+\boxed{x_S=\dfrac{1}{A}\cdot \displaystyle \int_a^bx\cdot \Big(f_o\left(x\right)-f_u\left(x\right)\Big)\,\text{d}x}
+\end{equation} 
+\begin{equation} 
+\boxed{y_S=\dfrac{1}{2A}\cdot \displaystyle \int_a^b\Big(f_o^2\left(x\right)-f_u^2\left(x\right)\Big)\,\text{d}x}
+\end{equation} 
+Multipliziert man die Formeln mit der Fläche $A$, so erhält man die statischen Momente $M_x$ und $M_y$ der Fläche bezogen auf die $x$- bzw. $y$-Achse
+\begin{equation}  
+\boxed{M_x=A\cdot y_S=\dfrac{1}{2}\cdot \displaystyle \int_a^b\Big(f_o^2\left(x\right)-f_u^2\left(x\right)\Big)\,\text{d}x}
+\end{equation}
+\begin{equation}
+\boxed{M_y=A\cdot x_S=\displaystyle \int_a^bx\cdot \Big(f_o\left(x\right)-f_u\left(x\right)\Big)\,\text{d}x}
+\end{equation}
+\subsubsection{Teilschwerpunktsatz}
+Der Schwerpunkt $S$ der Fläche $A$ liegt auf der Verbindungslinie der beiden Teilflächenschwerpunkte $S_1$ und $S_2$ zweier Flächen $A_1$ und $A_2$
+\begin{equation}
+\boxed{A\cdot x_S=A_1\cdot x_{S_1}+A_2\cdot x_{S_2}}\quad \boxed{A\cdot y_S=A_1\cdot y_{S_1}+A_2\cdot y_{S_2}}
+\end{equation}
+\subsection{Das Flächenträgheitsmoment}
+Sei $f_o\left(x\right)$ die obere Randkurve und $f_u\left(x\right)$ die untere Randkurve, $I_x$ und $I_y$ die axiale oder äquatoriale Flächenmomente 2. Grades bezüglich der $x$- bzw. y-Achse und $I_p$ das polare Flächenmoment 2. Grades bezüglich des Nullpunktes 
+\begin{equation}
+\boxed{I_x=\dfrac{1}{3}\cdot \displaystyle \int_a^b\Big(f_o^3\left(x\right)-f_u^3\left(x\right)\Big)\,\text{d}x}
+\end{equation}
+\begin{equation}
+\boxed{I_y=\displaystyle \int_a^bx^2\cdot \Big(f_o\left(x\right)-f_u\left(x\right)\Big)\,\text{d}x}
+\end{equation}
+\begin{equation}
+\boxed{I_p=I_x+I_y}
+\end{equation}
+\subsubsection{Satz von Steiner}
+Sei $I$ das Flächenmoment bezüglich der gewählten Bezugsachse. $I_S$ das Flächenmoment bezüglich der zur Bezugsachse parallelen Schwerpunktachse, $A$ die Fläche und $d$ der Abstand zwischen Bezugs- und Schwerpunktachse.
+\begin{equation} 
+\boxed{I=I_S+A\cdot d^2}
+\end{equation} 
+\subsection{Die Bogenlänge einer ebenen Kurve}
+\subsubsection{In kartesischen Koordinaten}
+\begin{equation}
+\boxed{s=\displaystyle \int_a^b\sqrt{1+\Big(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\Big)^2\,\text{d}x}}
+\end{equation}
+\subsubsection{In der Parameterform}
+\begin{equation}
+\boxed{s=\displaystyle \int_{t_1}^{t_2}\sqrt{\Big(\dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]\Big)^2+\Big(\dfrac{\text{d}}{\text{d}t}\Big[y\left(t\right)\Big]\Big)^2}\,\text{d}t}
+\end{equation}
+\subsubsection{In Polarkoordinaten}
+\begin{equation}
+\boxed{s=\displaystyle \int_{\varphi_1}^{\varphi_2}\sqrt{\Big(r\left(\varphi\right)\Big)^2+\Big(\dfrac{\text{d}}{\text{d}\varphi}\Big[r\left(\varphi\right)\Big]\Big)^2}}
+\end{equation}
+\subsection{Das Volumen eines Rotationskörpers}
+\subsubsection{Rotation um die $x$-Achse in kartesische Koordinaten}
+\begin{equation}
+\boxed{V_x=\pi\cdot \displaystyle \int_a^b\Big[f\left(x\right)\Big]^2\,\text{d}x}
+\end{equation}
+\subsubsection{Rotation um die $y$-Achse in kartesische Koordinaten}
+\begin{equation}
+\boxed{V_y=\pi\cdot \displaystyle \int_c^d\Big[f^{-1}\left(x\right)\Big]^2\,\text{d}x}
+\end{equation}
+\subsubsection{Rotation um die $x$-Achse in Parameterform}
+\begin{equation}
+\boxed{f\left(t\right)=\left\{\begin{matrix}x=x\left(t\right)\\y=y\left(t\right)\end{matrix}\right\}\Longrightarrow V_x=\pi\cdot \displaystyle \int_{t_1}^{t_2}\Big[y\left(t\right)\Big]^2\cdot \dfrac{\text{d}}{\text{d}t}\Big[x\left(t\right)\Big]\,\text{d}t}
+\end{equation}
+\subsubsection{Rotation um die $y$-Achse in Parameterform}
+\begin{equation}
+\boxed{f\left(t\right)=\left\{\begin{matrix}x=x\left(t\right)\\y=y\left(t\right)\end{matrix}\right\}\Longrightarrow V_y=\pi\cdot \displaystyle \int_{t_1}^{t_2}\Big[x\left(t\right)\Big]^2\cdot y\left(t\right)\,\text{d}t}
+\end{equation}
+\subsection{Die Mantelfläche eines Rotationskörpers}
+\subsubsection{Rotation um die $x$-Achse}
+\begin{equation}
+\boxed{M_x=2\pi\cdot \displaystyle \int_a^b f\left(x\right)\cdot \sqrt{1+\Big(\dfrac{\text{d}}{\text{d}x}\Big[f\left(x\right)\Big]\Big)^2}\,\text{d}t}
+\end{equation}
+\subsubsection{Rotation um die $y$-Achse}
+\begin{equation}
+\boxed{M_y=2\pi\cdot \displaystyle \int_c^df^{-1}\left(x\right)\cdot \sqrt{1+\Big(\dfrac{\text{d}}{\text{d}x}\Big[f^{-1}\left(x\right)\Big]\Big)^2}\,\text{d}t}
+\end{equation}
+\subsection{Der Schwerpunkt eines homogenen Rotationskörpers}
+\subsubsection{Rotation um die $x$-Achse}
+\begin{equation}
+\boxed{x_S=\dfrac{\pi}{V_x}\cdot \displaystyle \int_a^bx\cdot \Big[f\left(x\right)\Big]^2\text{d}x,\quad y_S=z_S=0}
+\end{equation}
+\subsubsection{Rotation um die $x$-Achse}
+\begin{equation}
+\boxed{y_S=\dfrac{\pi}{V_y}\cdot \displaystyle \int_a^bf\left(x\right)\cdot \Big[f^{-1}\left(x\right)\Big]^2\text{d}x}
+\end{equation}
+\subsection{Das Massenträgheitsmoment eines Körpers}
+\subsubsection{Allgemeine Definition}
+Sei $\text{d}m$ das Massenelement, $\text{d}V$ das Volumenelement, $r$ der senkrechte Abstand des Massen- bzw. Volumenelements von der gewählten Bezugsachse, $\rho$ die Dichte des homogenen Körpers.
+\begin{equation}
+\boxed{J=\displaystyle \int_{\left(m\right)}r^2\,\text{d}m=\rho\cdot \displaystyle \int_{\left(V\right)}r^2\,\text{d}V}
+\end{equation}
+\subsubsection{Satz von Steiner}
+Sei $J$ das Massenträgheitsmoment bezüglich der gewählten Bezugsachse, $J_S$ das Massenträgheitsmoment bezüglich der zur Bezugsachse parallelen Schwerpunktachse, $m$ die Masse des Körpers und $d$ der Abstand zwischen Bezugs- und Schwerpunktachse
+\begin{equation}
+\boxed{J=J_S+m\cdot d^2}
+\end{equation}
+\subsubsection{Massenträgheitsmoment eines Rotationskörpers}
+\subsubsection{Rotation um die $x$-Achse}
+\begin{equation}
+\boxed{J_x=\dfrac{1}{2}\cdot \pi\cdot \rho\cdot \displaystyle \int_a^b\Big[f\left(x\right)\Big]^4\,\text{d}x}
+\end{equation}
+\subsubsection{Rotation um die $y$-Achse}
+\begin{equation}
+\boxed{J_y=\dfrac{1}{2}\cdot \pi\cdot \rho\cdot \displaystyle \int_c^d\Big[f^{-1}\left(x\right)\Big]^4\,\text{d}x}
+\end{equation}

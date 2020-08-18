@@ -1,0 +1,61 @@
+\documentclass[10pt, a4paper]{report}
+%%%%%%%%%%%%%%%%%%%%%%%% INPUT %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+%MATHEMATIK
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{enumerate}
+\usepackage{esint}
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arccot}{arccot}
+
+%LAYOUT
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{float}
+\usepackage[margin=1cm, justification=centering, singlelinecheck=no,tablename=Tab., figurename=Abb.]{caption}
+\usepackage{comment}
+\usepackage{graphicx}
+%\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+
+% BOLD
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{cyan}{\oldtextbf{#1}}}
+
+% COLORS
+\usepackage{sectsty}
+\chapterfont{\color{cyan}}
+\sectionfont{\color{orange}}
+\subsectionfont{\color{blue}}
+\subsubsectionfont{\color{violet}}
+
+%BOXED
+\newcommand*{\boxedcolor}{orange}
+\makeatletter
+\renewcommand{\boxed}[1]{\textcolor{\boxedcolor}{%
+  \fbox{\normalcolor\m@th$\displaystyle#1$}}}
+
+
+\title{Allgemeine Elektrotechnik}
+\author{Ramirez Robayo, Oscar Mauricio}
+\date{\today}
+
+\begin{document}
+
+%\maketitle
+
+%\tableofcontents
+
+%\part{First Part of this document}
+
+\chapter{Einführung}
+\input{../subsection/01subsection}
+\chapter{Grundbegriffe und Grundgesetze}
+\input{../subsection/02subsection}
+
+\end{document}

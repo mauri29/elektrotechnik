@@ -1,0 +1,774 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  18 AUG 2020 14:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**index.tex
+(./index.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/03/22 3.42 The Babel package
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-german/german.ldf
+Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
+y)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-german/germanb.ldf
+Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograp
+hy)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/03/22 3.42 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+Package babel Info: Making " an active character on input line 135.
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen136
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen137
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks19
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks20
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks23
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/charter.sty
+Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count190
+\float@exts=\toks24
+\float@box=\box47
+\@float@everytoks=\toks25
+\@floatcapt=\box48
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+\captionmargin=\dimen145
+\captionmargin@=\dimen146
+\captionwidth=\dimen147
+\caption@tempdima=\dimen148
+\caption@indent=\dimen149
+\caption@parindent=\dimen150
+\caption@hangindent=\dimen151
+Package caption Info: Standard document class detected.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: Document class `report' detected.
+)
+\c@caption@flags=\count191
+\c@continuedfloat=\count192
+Package caption Info: float package is loaded.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen154
+\WF@size=\dimen155
+\c@WF@wrappedlines=\count193
+\WF@box=\box49
+\WF@everypar=\toks27
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count194
+\l__pdf_internal_box=\box50
+) (./index.aux)
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 44
+.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1bch.fd
+File: t1bch.fd 2004/10/18 font definitions for T1/bch.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: `float' package detected.
+Package newfloat Info: `wrapfig' package detected.
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count195
+\scratchdimen=\dimen156
+\scratchbox=\box51
+\nofMPsegments=\count196
+\nofMParguments=\count197
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count198
+\MPscratchDim=\dimen157
+\MPnumerator=\count199
+\makeMPintoPDFobject=\count266
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(../section/01section.tex
+Kapitel 1.
+(../subsection/01subsection.tex
+<../img/I/Ia.png, id=1, 190.7125pt x 156.585pt>
+File: ../img/I/Ia.png Graphic file (type png)
+<use ../img/I/Ia.png>
+Package pdftex.def Info: ../img/I/Ia.png  used on input line 6.
+(pdftex.def)             Requested size: 85.81982pt x 70.46259pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+0.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+<../img/I/Ib.png, id=3, 234.8775pt x 115.43124pt>
+File: ../img/I/Ib.png Graphic file (type png)
+<use ../img/I/Ib.png>
+Package pdftex.def Info: ../img/I/Ib.png  used on input line 17.
+(pdftex.def)             Requested size: 140.92758pt x 69.25926pt.
+ [1
+
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img/
+I/Ia.png>]
+<../img/I/Ic.png, id=16, 258.9675pt x 158.5925pt>
+File: ../img/I/Ic.png Graphic file (type png)
+<use ../img/I/Ic.png>
+Package pdftex.def Info: ../img/I/Ic.png  used on input line 25.
+(pdftex.def)             Requested size: 168.32686pt x 103.08388pt.
+<../img/I/Id.png, id=17, 229.85875pt x 164.615pt>
+File: ../img/I/Id.png Graphic file (type png)
+<use ../img/I/Id.png>
+Package pdftex.def Info: ../img/I/Id.png  used on input line 33.
+(pdftex.def)             Requested size: 149.4064pt x 106.99847pt.
+
+[2 <../img/I/Ib.png> <../img/I/Ic.png>]
+<../img/I/Ie.png, id=23, 268.00125pt x 227.85126pt>
+File: ../img/I/Ie.png Graphic file (type png)
+<use ../img/I/Ie.png>
+Package pdftex.def Info: ../img/I/Ie.png  used on input line 43.
+(pdftex.def)             Requested size: 160.80197pt x 136.71179pt.
+<../img/I/If.png, id=24, 271.0125pt x 225.84375pt>
+File: ../img/I/If.png Graphic file (type png)
+<use ../img/I/If.png>
+Package pdftex.def Info: ../img/I/If.png  used on input line 50.
+(pdftex.def)             Requested size: 189.70744pt x 158.08954pt.
+ [3 <../img/I/Id.png> <../img/I/Ie.png>]
+<../img/I/Ig.png, id=30, 192.72pt x 135.50626pt>
+File: ../img/I/Ig.png Graphic file (type png)
+<use ../img/I/Ig.png>
+Package pdftex.def Info: ../img/I/Ig.png  used on input line 57.
+(pdftex.def)             Requested size: 134.90306pt x 94.85371pt.
+[4 <../img/I/If.png> <../img/I/Ig.png>]
+<../img/I/Ih.png, id=38, 369.38pt x 201.75375pt>
+File: ../img/I/Ih.png Graphic file (type png)
+<use ../img/I/Ih.png>
+Package pdftex.def Info: ../img/I/Ih.png  used on input line 81.
+(pdftex.def)             Requested size: 258.56422pt x 141.22665pt.
+<../img/I/Ii.png, id=39, 324.21124pt x 182.6825pt>
+File: ../img/I/Ii.png Graphic file (type png)
+<use ../img/I/Ii.png>
+Package pdftex.def Info: ../img/I/Ii.png  used on input line 89.
+(pdftex.def)             Requested size: 226.94632pt x 127.87686pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+
+ []
+
+[5 <../img/I/Ih.png> <../img/I/Ii.png>]
+<../img/I/Ij.png, id=45, 231.86626pt x 207.77625pt>
+File: ../img/I/Ij.png Graphic file (type png)
+<use ../img/I/Ij.png>
+Package pdftex.def Info: ../img/I/Ij.png  used on input line 97.
+(pdftex.def)             Requested size: 139.12082pt x 124.6667pt.
+<../img/I/Ik.png, id=46, 168.63pt x 65.24374pt>
+File: ../img/I/Ik.png Graphic file (type png)
+<use ../img/I/Ik.png>
+Package pdftex.def Info: ../img/I/Ik.png  used on input line 102.
+(pdftex.def)             Requested size: 118.04018pt x 45.6703pt.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 1
+09.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+) [6 <../img/I/Ij.png> <../img/I/Ik.png>]
+<../img/I/Il.png, id=52, 182.6825pt x 243.91125pt>
+File: ../img/I/Il.png Graphic file (type png)
+<use ../img/I/Il.png>
+Package pdftex.def Info: ../img/I/Il.png  used on input line 141.
+(pdftex.def)             Requested size: 127.87686pt x 170.7367pt.
+ [7 <../img/I/Il.png>]
+<../img/I/Im.png, id=58, 176.66pt x 115.43124pt>
+File: ../img/I/Im.png Graphic file (type png)
+<use ../img/I/Im.png>
+Package pdftex.def Info: ../img/I/Im.png  used on input line 161.
+(pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
+<../img/I/Imm.png, id=59, 176.66pt x 115.43124pt>
+File: ../img/I/Imm.png Graphic file (type png)
+<use ../img/I/Imm.png>
+Package pdftex.def Info: ../img/I/Imm.png  used on input line 186.
+(pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
+ [8 <../img/I/Im.png>]
+<../img/I/Immm.png, id=64, 176.66pt x 115.43124pt>
+File: ../img/I/Immm.png Graphic file (type png)
+<use ../img/I/Immm.png>
+Package pdftex.def Info: ../img/I/Immm.png  used on input line 222.
+(pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
+ [9 <../img/I/Imm.png>]
+<../img/I/Immmm.png, id=69, 176.66pt x 115.43124pt>
+File: ../img/I/Immmm.png Graphic file (type png)
+<use ../img/I/Immmm.png>
+Package pdftex.def Info: ../img/I/Immmm.png  used on input line 246.
+(pdftex.def)             Requested size: 123.66115pt x 80.80132pt.
+<../img/I/In.png, id=70, 159.59625pt x 230.8625pt>
+File: ../img/I/In.png Graphic file (type png)
+<use ../img/I/In.png>
+Package pdftex.def Info: ../img/I/In.png  used on input line 253.
+(pdftex.def)             Requested size: 111.7166pt x 161.60263pt.
+ [10 <../img/I/Immm.png> <../img/I/Immmm.png>]))
+(../section/02section.tex [11 <../img/I/In.png>] [12]
+Kapitel 2.
+(../subsection/02subsection.tex
+<../img/II/IIa.png, id=83, 452.69125pt x 173.64874pt>
+File: ../img/II/IIa.png Graphic file (type png)
+<use ../img/II/IIa.png>
+Package pdftex.def Info: ../img/II/IIa.png  used on input line 8.
+(pdftex.def)             Requested size: 226.34506pt x 86.82416pt.
+ [13
+
+ <../img/II/IIa.png>]
+<../img/II/IIb.png, id=89, 381.425pt x 104.39pt>
+File: ../img/II/IIb.png Graphic file (type png)
+<use ../img/II/IIb.png>
+Package pdftex.def Info: ../img/II/IIb.png  used on input line 31.
+(pdftex.def)             Requested size: 190.71202pt x 52.19485pt.
+<../img/II/IId.png, id=90, 204.765pt x 90.3375pt>
+File: ../img/II/IId.png Graphic file (type png)
+<use ../img/II/IId.png>
+Package pdftex.def Info: ../img/II/IId.png  used on input line 35.
+(pdftex.def)             Requested size: 204.76448pt x 90.33727pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+
+Overfull \hbox (1.42345pt too wide) in paragraph at lines 47--50
+\T1/bch/m/n/10 Typischerweise ist der In-nen-wi-der-stand von Strom-mes-sern []
+\T1/bch/b/n/10 sehr klein[]\T1/bch/m/n/10 . Die Span-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
+
+ []
+
+
+Overfull \hbox (21.354pt too wide) in paragraph at lines 47--50
+\T1/bch/m/n/10 Die Span-nungs-feh-ler-schal-tung wird bei hoch-oh-mi-gen Last-w
+i-der-stän-den $[][]$
+ []
+
+[14 <../img/II/IIb.png> <../img/II/IId.png>]
+<../img/II/IIc.png, id=98, 211.79124pt x 95.35625pt>
+File: ../img/II/IIc.png Graphic file (type png)
+<use ../img/II/IIc.png>
+Package pdftex.def Info: ../img/II/IIc.png  used on input line 52.
+(pdftex.def)             Requested size: 211.79073pt x 95.356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+
+Overfull \hbox (31.98946pt too wide) in paragraph at lines 64--67
+\T1/bch/m/n/10 Die Strom-feh-ler-schal-tung wird bei nie-de-roh-mi-gen Last-wi-
+der-stän-den $[][]$
+ []
+
+[15 <../img/II/IIc.png>]
+<../img/II/IIe.png, id=103, 274.02374pt x 102.3825pt>
+File: ../img/II/IIe.png Graphic file (type png)
+<use ../img/II/IIe.png>
+Package pdftex.def Info: ../img/II/IIe.png  used on input line 72.
+(pdftex.def)             Requested size: 219.21928pt x 81.9061pt.
+ [16 <../img/II/IIe.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+[17] [18])) (../section/03section.tex [19]
+Kapitel 3.
+(../subsection/03subsection.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Overfull \hbox (5.73389pt too wide) in paragraph at lines 25--28
+[]\T1/bch/m/n/10 Von ei-ner Au-to-bat-te-rie wer-den fol-gen-de zwei Punk-te ge
+-mes-sen: ($\OML/cmm/m/it/10 U[] \OT1/cmr/m/n/10 = 13\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 80[]$\T1/bch/m/n/10 ,
+ []
+
+[20
+
+]
+<../img/III/IIIa.png, id=122, 202.7575pt x 147.55125pt>
+File: ../img/III/IIIa.png Graphic file (type png)
+<use ../img/III/IIIa.png>
+Package pdftex.def Info: ../img/III/IIIa.png  used on input line 30.
+(pdftex.def)             Requested size: 101.3785pt x 73.77544pt.
+<../img/III/IIIb.png, id=123, 204.765pt x 147.55125pt>
+File: ../img/III/IIIb.png Graphic file (type png)
+<use ../img/III/IIIb.png>
+Package pdftex.def Info: ../img/III/IIIb.png  used on input line 31.
+(pdftex.def)             Requested size: 102.38223pt x 73.77544pt.
+<../img/III/IIIc.png, id=124, 201.75375pt x 147.55125pt>
+File: ../img/III/IIIc.png Graphic file (type png)
+<use ../img/III/IIIc.png>
+Package pdftex.def Info: ../img/III/IIIc.png  used on input line 33.
+(pdftex.def)             Requested size: 100.87662pt x 73.77544pt.
+<../img/III/IIId.png, id=125, 203.76125pt x 148.555pt>
+File: ../img/III/IIId.png Graphic file (type png)
+<use ../img/III/IIId.png>
+Package pdftex.def Info: ../img/III/IIId.png  used on input line 34.
+(pdftex.def)             Requested size: 101.88037pt x 74.27731pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
+
+ []
+
+<../img/III/IIIe.png, id=126, 224.84pt x 111.41624pt>
+File: ../img/III/IIIe.png Graphic file (type png)
+<use ../img/III/IIIe.png>
+Package pdftex.def Info: ../img/III/IIIe.png  used on input line 42.
+(pdftex.def)             Requested size: 224.83945pt x 111.41597pt.
+[21 <../img/III/IIIa.png> <../img/III/IIIb.png> <../img/III/IIIc.png> <../img/I
+II/IIId.png>]
+<../img/III/IIIf.png, id=134, 465.74pt x 256.96pt>
+File: ../img/III/IIIf.png Graphic file (type png)
+<use ../img/III/IIIf.png>
+Package pdftex.def Info: ../img/III/IIIf.png  used on input line 45.
+(pdftex.def)             Requested size: 232.86943pt x 128.47968pt.
+ [22 <../img/III/IIIe.png> <../img/III/IIIf.png>]
+<../img/III/IIIg.png, id=140, 229.85875pt x 112.42pt>
+File: ../img/III/IIIg.png Graphic file (type png)
+<use ../img/III/IIIg.png>
+Package pdftex.def Info: ../img/III/IIIg.png  used on input line 75.
+(pdftex.def)             Requested size: 229.85817pt x 112.41972pt.
+<../img/III/IIIh.png, id=141, 457.71pt x 232.87pt>
+File: ../img/III/IIIh.png Graphic file (type png)
+<use ../img/III/IIIh.png>
+Package pdftex.def Info: ../img/III/IIIh.png  used on input line 78.
+(pdftex.def)             Requested size: 228.85445pt x 116.43471pt.
+
+Overfull \hbox (127.57817pt too wide) in paragraph at lines 77--88
+\OML/cmm/m/it/10 U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 I[]\OT1/cmr/m/n/10 )$\T1/bch/m/n/10 . Ta-bel-lie-ren Sie auch die W
+i-der-stands-wer-te. [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--88
+
+ []
+
+)) (../section/04section.tex [23 <../img/III/IIIg.png> <../img/III/IIIh.png>]
+Kapitel 4.
+(../subsection/04subsection.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+[24
+
+]
+<../img/IV/IVd.png, id=150, 412.54124pt x 130.4875pt>
+File: ../img/IV/IVd.png Graphic file (type png)
+<use ../img/IV/IVd.png>
+Package pdftex.def Info: ../img/IV/IVd.png  used on input line 27.
+(pdftex.def)             Requested size: 206.27011pt x 65.24358pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+
+ []
+
+[25 <../img/IV/IVd.png>]
+<../img/IV/IVe.png, id=156, 527.9725pt x 560.0925pt>
+File: ../img/IV/IVe.png Graphic file (type png)
+<use ../img/IV/IVe.png>
+Package pdftex.def Info: ../img/IV/IVe.png  used on input line 46.
+(pdftex.def)             Requested size: 263.9856pt x 280.04556pt.
+ [26]
+<../img/IV/IVf.png, id=160, 304.13625pt x 187.70125pt>
+File: ../img/IV/IVf.png Graphic file (type png)
+<use ../img/IV/IVf.png>
+Package pdftex.def Info: ../img/IV/IVf.png  used on input line 51.
+(pdftex.def)             Requested size: 152.06775pt x 93.85039pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+
+ []
+
+[27 <../img/IV/IVe.png> <../img/IV/IVf.png>]
+<../img/IV/IVg.png, id=166, 543.02875pt x 489.83pt>
+File: ../img/IV/IVg.png Graphic file (type png)
+<use ../img/IV/IVg.png>
+Package pdftex.def Info: ../img/IV/IVg.png  used on input line 93.
+(pdftex.def)             Requested size: 244.36067pt x 220.42146pt.
+ [28 <../img/IV/IVg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+
+ []
+
+<../img/IV/IVh.png, id=171, 481.8pt x 168.63pt>
+File: ../img/IV/IVh.png Graphic file (type png)
+<use ../img/IV/IVh.png>
+Package pdftex.def Info: ../img/IV/IVh.png  used on input line 123.
+(pdftex.def)             Requested size: 240.8994pt x 84.31479pt.
+<../img/IV/IVj.png, id=172, 568.1225pt x 612.2875pt>
+File: ../img/IV/IVj.png Graphic file (type png)
+<use ../img/IV/IVj.png>
+Package pdftex.def Info: ../img/IV/IVj.png  used on input line 126.
+(pdftex.def)             Requested size: 255.65276pt x 275.52682pt.
+[29 <../img/IV/IVh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--150
+
+ []
+
+[30 <../img/IV/IVj.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
+
+ []
+
+<../img/IV/IVa.png, id=181, 232.87pt x 199.74625pt>
+File: ../img/IV/IVa.png Graphic file (type png)
+<use ../img/IV/IVa.png>
+Package pdftex.def Info: ../img/IV/IVa.png  used on input line 159.
+(pdftex.def)             Requested size: 174.65205pt x 149.80931pt.
+<../img/IV/IVb.png, id=182, 563.10374pt x 132.495pt>
+File: ../img/IV/IVb.png Graphic file (type png)
+<use ../img/IV/IVb.png>
+Package pdftex.def Info: ../img/IV/IVb.png  used on input line 163.
+(pdftex.def)             Requested size: 225.2375pt x 52.99706pt.
+<../img/IV/IVc.png, id=183, 588.1975pt x 181.67876pt>
+File: ../img/IV/IVc.png Graphic file (type png)
+<use ../img/IV/IVc.png>
+Package pdftex.def Info: ../img/IV/IVc.png  used on input line 166.
+(pdftex.def)             Requested size: 235.27483pt x 72.6702pt.
+[31 <../img/IV/IVa.png> <../img/IV/IVb.png>]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: $\bullet $ on input line 172.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--186
+
+ []
+
+[32 <../img/IV/IVc.png>]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: $\bullet $ on input line 202.
+
+)) [33] (./index.aux) ) 
+Here is how much of TeX's memory you used:
+ 5694 strings out of 480608
+ 81712 string characters out of 5903630
+ 331591 words of memory out of 5000000
+ 21437 multiletter control sequences out of 15000+600000
+ 568592 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,13n,42p,826b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
+Output written on index.pdf (33 pages, 2088838 bytes).
+PDF statistics:
+ 235 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+

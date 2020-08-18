@@ -1,0 +1,108 @@
+\section{Einführung}
+MATLAB eignet sich für die Durchführung von Berechnungen der Lineare Algebra als Grundlage weitere numerischen Berechnungen anderer mathematische Gebiete.
+\newline\newline
+MATLAB verarbeitet, analysier und visualisiert aus wissenschaftlichen Experimenten und Simulationen und erzeugt durch deren Daten Modelle.
+\newline\newline
+MATLAB ist mit einer Vielfältigkeit von Funktionen ausgerüstet, welche die Durchführung sämtlicher Operationen der Lineare Algebra und die Darstellung der Resultate in graphischer Weise erzeugt. Im Laufe der Zeit wurden gruppierten Funktionen in verschiedene Anwendungsbereiche kreiert. Eine Toolbox eintspricht einer solchen speziellen Gruppe von sogenannten M-Files, explizit zusammengesetzt zur Lösung einer besonderen Klasse von Problemen.
+\newline\newline
+MATLAB wurde geschrieben, umden raschen Zugang zu Matrix-Software zu erlauben, welche im Umfeld der LINPACK- und EISPACK-Projekte entwickelt wurde. Matrizen aus reellen oder komplexen Zahlen sind dementsprechend die Grundlemente für alle Operationen.
+\newline\newline
+MATLAB verfügt über ein Online-Portal, welches zusätzliche Informationen erhält. Diese sind unter  zu finden.
+\section{Einstieg}
+MATLAB wird durch Doppelklicken der entsprechende Ikone gestartet und und durch den Befehl im Command Window \boxed{\textbf{\texttt{quit}}} oder \boxed{\textbf{\texttt{exit}}} verlassen.
+\newline\newline
+Um den Pfad zu den M-Files zu zeigen, schreibt man im Command Window den Befehl \boxed{\textbf{\texttt{pwd}}}. Muss einen neuen Pfad hergestellt werden, so muss man den neuen Path neu setzen durch den Befehl \boxed{\textbf{\texttt{cd}}} zum Wechseln zwischen Directories. Bei aufwendige Berechnungen ist es von grossem Vorteil, wenn man die Befehlsabfolge in ein M-File schreibt, anstatt die einzelnen Befehle im Command Window einzutippen.
+\newline\newline
+M-Files sind nichts anderes als gewöhnliche Text-Files, deren Namen mit \boxed{\textbf{\texttt{.m}}} enden. M-Files werden auch als ``Scripts'' bezeichnet. Die Ausführung von bestimmten Zeilen können im Command Window untersucht werden. Die Ausführung von M-Files erfolgt linear. Die Namen von M-Files müssen keine reservierte Wörter bzw. Variable enthalten.
+\newline\newline
+Kommentare in Scripts sind sehr nützlich und erfolgt am Anfang einer Zeile durch ein Prozentzeichen \boxed{\textbf{\texttt{\%}}} und somit MATLAB ignoriert den Inhalt dieser Zeile. Die Ausgabe von Resultate im Command Window kann man unterbinden, indem man am Ende einer Zeile einen Strichpunkt \boxed{\textbf{\texttt{;}}} anbringt. Die Befehle werden ausgeführt, aber nicht angezeigt. Der Wert einer bestimmten Variablen erfolgt durch den Befehl \boxed{\textbf{\texttt{disp}}} sowie Texte {\color{red}\texttt{disp('Text')}} durch im Command Window. Der Befehl {\color{red}\texttt{input('any text')}} verlangt eine Eingabe über die Tastatur. Mit \boxed{\textbf{\texttt{pause}}} stoppt man die laufende Evaluation des M-Files bis man eine beliebige Taste gedrückt hat. Mit dem Befehl \boxed{\textbf{\texttt{figure}}} öffnet man ein neues, für Graphiken reserviertes Fenster.
+\newline\newline
+Mit M-Files kann man neue Funktionen definieren. Funktionen sind Prozeduren, welche allfällige Argumente verarbeitet und/oder eine Reihe von Befehlen ausführt um ein Resultat zu liefern. Die Name der Funktion muss mit der Name des M-Files übereinstimmen.
+\newline\newline
+Der Name einer Variablen darf fast beliebig gewählt werden. Der Variablenname darf nicht mit dem Namen eines M-Files übereinstimmen. Der Name muss ein einziges Wort ohne Leerzeichen sein, aus maximal 31 Zeichen bestehen und mit einem Buchstaben beginnen. Variablennamen dürfen Zahlen und Underscores ``{\color{red}\texttt{\_}}'' enthalten. In MATLAB sind die Variablen von in M-Files definierten Funktionen lokal. Wenn der Variablenname ``test'' sowohl in einer Funktion als aich direckt im Command Window exsitieren soll, dann addressiert man diese Namen zwei verschiedene Werte im Speicher. Man kann in einer Funktion definierte Variable \boxed{\textbf{\texttt{global}}} deklarieren.
+\section{Allgemeine Befehle}
+\subsection{Hilfe}
+Mit dem Befehl {\color{red}\texttt{help data}} wird die zur Verfügung stehende Kommentare im File ``\texttt{data.m}'' angezeigt. Jeder Funktion in MATLAB beinhaltet einen Help-Abschnitt, welcher meistens aus einer ausführlichen Befehlssyntax besteht.
+\newline\newline
+Mit dem Befehl \boxed{\textbf{\texttt{help}}} wird allein eine Reihe von Themen aufgelistet, aus welchen dann einzelne Begriffe abgefragt werden können.
+\newline\newline
+Mit dem Befehl \boxed{\textbf{\texttt{demo}}} wird das MATLAB-eigene Demonstrationsprogramm gestartet. Nebst einer kurzen Einführung beinhaltet es eine praktische Beispiele.
+\newline\newline
+\subsection{Workspaces}
+Die Befehle \boxed{\textbf{\texttt{who}}} werden die Namen aller während der laufenden Session definierten Variablen aufgelistet. Mit {\color{red}\texttt{whos}} werden ausführliche Informationen gezeigt.
+\newline\newline
+Den Befehl \boxed{\textbf{\texttt{clear}}} löscht alle vom Benutzer definierten Variablen, es ist ratsam am Anfang jedes M-Files diesen Befehl einzuführen, um ältere Variablen aus dem Speicher zu entfernen. Mit der Variablen {\color{red}\texttt{clear var}} löscht man nur die Variable \texttt{var}. Mit dem Befehl {\color{red}\texttt{clear na*}} löscht man alle Variablen, die mit \texttt{na} beginnen. {\color{red}\texttt{clear all}} entfernt alle Variablen, globale Variablen, Funktionen und MEX-Verbindungen.
+\newline\newline
+Mit dem Befehl \boxed{\textbf{\texttt{load}}} lädt man Variablen oder Daten aus einem File in dem Workspace. Mit {\color{red}\texttt{load filename}} werden die in einem MAT-File namens ``filename.mat'' abgespeicherte Variablen in den Arbeitsspeicher eingelesen. Mit dem Befehl {\color{red}\texttt{load filename X Y}} werden nur die Variablen \texttt{X} und \texttt{Y} aus dem File eingelesen.
+\newline\newline
+Den Befehl {\boxed{\textbf{\texttt{save}}} speichert alle in der Arbeitsoberfläche definierten Variablen in ein File. Mit {\color{red}\texttt{save filename}} werden alle definierten Varaiblen in einem MAT-File namens ``filename.mat'' abgespeichert. Der ganze Path muss angegeben werden, falls das File nicht im aktuellen Directory gespeichert werden soll. Der Befehl {\color{red}\texttt{save filename X}} speichert nur die Variable \texttt{X} ab.
+\newline\newline
+Mit den Befehlen \boxed{\textbf{\texttt{quit}}} oder \boxed{\textbf{\texttt{exit}}} wird MATLAB verlassen. Die definierten Variablen werden nicht automatisch gespeichert.
+\subsection{Funktionen suchen und editieren}
+Mit dem Befehl {\color{red}\texttt{edit filename}} wird vom default Texteditor das File \texttt{filename} aufgemacht. Der ganze Path muss angegeben werden, falls das File sich nicht im aktuellen Directory befindet. Mit dem Befehl {\color{red}\texttt{lookfor string}} wird in allen zur Verfügung stehenden M-Files und in allen Beschreibungen von eingebauten Funktionen nach der Zeichenfolge ``string'' gesucht. Eine Liste von möglicherweise zutreffenden Begriffen wird anschliessend im Command Window editiert. Der Befehl \boxed{\textbf{\texttt{lookfor}}} eignet sich zur Suche von Funktionen, wenn nur eine Vorstellung vorhanden ist, welche Begriffe, Wörter oder Wortabschnitte in Beschreibungsteil vorhanden sein könnten.
+\newline\newline
+Mit dem Befehl \boxed{\textbf{\texttt{which filename}}} wird der Path des M-Files \texttt{filename} gezeigt. Mit {\color{red}\texttt{which xyz}} wird beschrieben, was für ein Objekt \texttt{xyz} (Variable, Funktion, usw.) ist.
+\subsection{Ausgabeformat}
+Mit dem Befehl \boxed{\textbf{\texttt{format}}} wird das Ausgabeformat von numerischen Resultaten definiert: Fliesskommaformat mit 4 oder 14 Nachkommastellen oder wissen-schaftliche Notation mit 5- oder 16-stelliger Mantissa und 2-stelligem Exponenten. Möglicher Auswahl sind: {\color{red}\texttt{format short}}, {\color{red}\texttt{format long}}, {\color{red}\texttt{format short e}}, {\color{red}\texttt{format long e}}.
+\subsection{Systembefehle}
+Mit dem Befehl {\color{red}\texttt{cd path}} wird der Path gesetzt und damit das laufende Directory geändert. Mit dem Befehl {\color{red}\texttt{pwd}} wird den aktiuellen Path angezeigt.
+\newline\newline
+Mit dem Befehl \boxed{\textbf{\texttt{dir}}} werden die Directories und Files im aktiellen Directory aufgelistet. Der Befehl {\color{red}\texttt{dir .m*}} listet alle M-Files im aktuellen Directory. Der Befehl {\color{red}\texttt{delete filename}} löscht das File \texttt{filename}. Analog der Befehl {\color{red}\texttt{delete .m*}} löscht alle M-Files im aktuellen Directory.
+\subsection{Spezielle Tasten}
+MATLAB führt eine Liste der während einer Session durchgeführten Befehle. Mit {\color{red}\texttt{Ctrl-P}} für previous und {\color{red}\texttt{Ctrl-N}} für next. Mit {\color{red}\texttt{Ctrl-B}} für backward und {\color{red}\texttt{Ctrl-F}} für forward läuft der Cursor rück- oder vorwärts über eine Zeile. Damit können Änderungen an einem schon eingetippten Befehl durchgeführt werden, ohne dass der Befehl gelöscht werden muss. Mit {\color{red}\texttt{Ctrl-A}} mit dem Cursor an den Zeilenanfang bzw. mit {\color{red}\texttt{Ctrl-E}} an den Zeilenende. Mit {\color{red}\texttt{Ctrl-U}} wird eine Zeile gelöscht und mit {\color{red}\texttt{Ctrl-C}} wird eine laufende Rechnung oder die Durchführung eines Befehls unterbrochen.
+\section{Zeichen und Operatoren}
+\subsection{Spezielle Zeichen}
+Befehle und Funktionen, die Daten in Form von Vektoren, Matrizen oder Strings benötigen, sind mit einem Klammerpaar \boxed{\textbf{\texttt{( )}}} zu versehen. Runde Klammern haben eine höhere Priorität bei der Rechenoperationen.
+\newline\newline
+Mit den eckigen Klammerpaar \boxed{\textbf{\texttt{[ ]}}} werden Vektoren und Matrizen definiert. Jede Zeile wird mit einem Strichpunkt abgeschlossen, die Kolonnen mit einem Komma oder Leertaste.
+\newline\newline
+Mit einem Punkt \boxed{\textbf{\texttt{.}}} werden die Dezimalstellen einer rationalen Zahl angegeben. Ein Punkt vor den Operatoren bewirkt, dass die Multiplikation, die Links-und Rechtsdivision und die Exponentialfunktion elementweise abläuft.
+\newline\newline
+Zwei Punkte \boxed{\textbf{\texttt{..}}} werden nur in Verbindung mit dem befehl \boxed{\textbf{\texttt{cd}}} gebraucht. Mit dem Befehl {\color{red}\texttt{cd ..}} wechselt der Path vom aktuellen Directory in das hierarchisch nächst höherliegende Directory.
+\newline\newline
+Drei Punkte \boxed{\textbf{\texttt{...}}} am Ende einer Zeile verbinden das Ende der Zeile mit dem Anfang der folgenden Zeile. Für eine übersichtliche Darstellung werden lange Zeilen oft mit drei Punkten zwei oder dreigeteilt.
+\newline\newline
+Bei der Definition von Matrizen werden die Kolonnen durch Kommas \boxed{\textbf{\texttt{,}}} oder Leerzeichen getrennt. Befehle oder Funktionen können mehrere Eingabeargumente haben. Diese werden mit Kommas voneinander getrennt. Mehrere befehle auf einer Zeile werden ebenfalls mit Kommas getrennt. Dies sollte jedoch vermieden werden.
+\newline\newline
+Bei der Definition von Matrizen werden die Zeilen mit einem Strichpunkt \boxed{\textbf{\texttt{;}}} abgeschlossen. Die Ausgabe von Zwischenresultaten wird im Command Window unterdrückt, wenn die entsprechende Befehlzeile mit einem Strichpunkt abgeschlossen wurde.
+\newline\newline
+Buchstaben und Zeichen können innerhalb von zwei halben Anführungszeichen \boxed{\textbf{\texttt{' '}}} als Zeichenreihe dargestellt werden. 'Ein Text' ist ein Vektor. Jedes einzelnen Zeichen dieses Vektors wird intern im entsprechenden ASCII-Code abgespeichert. Ein halbes Anführungszeichen innerhalb eines beliebigen Textes wird mit zwei halben Anführungszeichen definiert.
+\newline\newline
+Programme sollten ausführliche Kommantare \boxed{\textbf{\texttt{\%}}} enthalten, damit das Programmierte zu einem späteren Zeitpunkt leichter nachvollzogen werden kann. Programme ohne Kommentare sind nutzlos. Ein Kommentar besteht aus einem Prozentzeichen und einem darauffolgenden Text. Es ist ratsam, ein M-File mit iner kurzen Inhaltsangabe hinter Prozentzeichen zu versehen. Insbesondere sollte vor jedem einzelnen Programm-Abschnitt ein kurzer Kommentar stehen.
+\newline\newline
+Das Gleichheitszeichen \boxed{\textbf{\texttt{=}}} weist einer Variable einen bestimmten Zahlenwert zu.
+\subsection{Arithmetische Operatoren}
+Das \boxed{\textbf{\texttt{+}}}-Zeichen addiert Zahlen, Vektoren oder Matrizen. Bei der Addition von Vektoren oder Matrizen müssen die Dimensionen übereinstimmen.
+\newline\newline
+Das \boxed{\textbf{\texttt{-}}}-Zeichen subtrahiert Zahlen, Vektoren oder Matrizen. Die Matrixdimensionen müssen bei der Subtraktion ebenfalls übereinstimmen.
+\newline\newline
+Mit \boxed{\textbf{\texttt{*}}} werden die Matrizen oder Vektoren miteinander multipliziert. Dabei ist zu beachten, dass bei der Multiplikation zweier Vektoren oder Matrizen \texttt{A*B} die Anzahl Kolonnen von \texttt{A} mit der Anzahl Zeilen von \texttt{B} übereinstimmen. Mit {\color{red}\texttt{.*}} multipliziert man Vektoren oder Matrizen elementweise. Die Anzahl Zeilen und Kolonnen von \texttt{A} und \texttt{B} müssen identisch sein.
+\newline\newline
+Die linke Division \boxed{\textbf{\texttt{$\backslash$}}} wird für das Lösen von linearen Gleichungssystemen verwendet. Für das lineare Gleichungssystem \texttt{Ax=b} lautet die nach \texttt{x} aufgelöste Gleichung \texttt{x=A$^{-1}$b}. Dafür wird der Befehl \texttt{A$\backslash$b} verwendet. \texttt{A} ist eine quadratische Matrix und \texttt{b} ein Kolonnenvektor.
+\newline\newline
+Falls das lineare Gleichungssystem die Form \texttt{xA=b} hat, kommt die rechte Division \boxed{\textbf{\texttt{/}}} zur Anwendung. Die Lösung ist \texttt{x=bA$^{-1}$}, und der dazugehörige MATLAB-Befehl lautet \texttt{b/A}. Wie bei der Multiplikation können die Vektoren und Matrizen elementweise dividiert werden. Vor das Divisionszeichen ist dafür ein Punkt zu setzen.
+\newline\newline
+Mit dem Zeichen \boxed{\textbf{\texttt{\^}}} kann auf quadratische Matrizen angewandt werden, um \texttt{A$\,\wedge\,$n} zu berechnen. \texttt{n} ist eine Integer. Für \texttt{n$>$0} wird die Matrix \texttt{A} $\texttt{n}$ mal mit sich selbst multipliziert. \texttt{n=0} ergibt die Identitätsmatrix. \texttt{n$<$0} entspricht der Inversen von \texttt{A}.
+\subsection{Logische Operatoren}
+Das logische ``und'' \boxed{\textbf{\texttt{\&}}} vergleicht zwei gleich grosse Objekte miteinander. Der logische Vergleich erfolgt elementweise. Somit sind auch Vektoren und Matrizen untereinander vergleichbar.
+\newline\newline
+Haben die Matrizen \texttt{A} und \texttt{B} dieselbe Grösse, so ergibt sich aus \texttt{A$\&$B} wiederum eine Matrix derselben Grösse mit Nullen und Einsen. Ist sowohl das eine Element von \texttt{A} als auch das entsprechende von \texttt{B} ungleich Null, so erhält die Antwort-Matrix an derjenigen Stelle eine Eins.
+\newline\newline
+Ist sowohl das eine Element von \texttt{A} als auch das entsprechende von \texttt{B} ungleich Null, so erhält die Antwort-Matrix an derjenigen Stelle eine Eins. Ist irgendein Element \texttt{A} oder \texttt{B} gleich >Null, dann schreibt MATLAB an derselben Stelle eine Null.
+\newline\newline
+Für das logische ``oder'' \boxed{\textbf{\texttt{$\vert$}}} gelten die gleichen Vorschriften wüe für das logische ``und''. Ein Element der resultierenden Matrix ist jedoch nur dann Null, falls das Element von \texttt{A} und das entsprechende von \texttt{B} ebenfalls Null sind.
+\newline\newline
+Für das logische ``nicht'' \boxed{\textbf{\texttt{$\sim$}}} gelten dieselben Vorschriften wie für das logische ``und''. Der Befehl \texttt{$\sim$A} wandelt alle Elemente der Matrix \texttt{A}, die den Wert Null haben, in eine Eins und alle anderen in eine Null um.
+\newline\newline
+Das doppelte Gleichheitszeichen \boxed{\textbf{\texttt{==}}} vergleicht zwei Matrizen miteinander. Es kann aber auch ein Vektor und eine Matrix oder ein Skalar und ein Vektor gegenübergestellt werden. Der Vektor ird mit den einzelnen Zeilen oder Kolonnen der Matrix verglichen und der Skalar mit den einzelnen Elementen des Vektors. Dieser Befehl wird häufig bei der Programmierung von ``while'' Schlaifen, ``if-else-end'' Beziehungen oder ``switch-case'' Konstruktionen verwendet.
+\newline\newline
+\boxed{\textbf{\texttt{>}}}, \boxed{\textbf{\texttt{<}}}, \boxed{\textbf{\texttt{<=}}}, \boxed{\textbf{\texttt{>=}}} sind Vergleichsoperatoren zweier Argumente. Gleichheit liefert aber die Antwort ``falsch'' bzw. den Wert 0.
+\section{Elementare Mathematik}
+\subsection{Trigonometrie}
+Die Funktionen \boxed{\textbf{\texttt{sin(x)}}}, \boxed{\textbf{\texttt{cos(x)}}}, \boxed{\textbf{\texttt{tan(x)}}}, \boxed{\textbf{\texttt{cot(x)}}} berechnen die trigonometrischen Funktionen von \texttt{x} in Radians, wobei \texttt{x} eine beliebige Zahl ist.
+\subsection{Exponential- und Logarithmusfunktionen}
+Der Befehl \boxed{\textbf{\texttt{exp(x)}}} berechnet die Exponentialfunktion von \texttt{x}. Der Befehl \boxed{\textbf{\texttt{ln(x)}}} berechnet den natürlicher Logarithmus von \texttt{x}. Der Befehl \boxed{\textbf{\texttt{sqrt(x)}}} berechnet die Quadratwurzel von \texttt{x}, wobei \texttt{x} eine beliebige Zahl ist.
+\subsection{Komplexe Zahlen}
+Der Befehl \boxed{\textbf{\texttt{abs(z)}}} berechnet den Absolutwert von \texttt{z}. Falls \texttt{x} eine komplexe Zahl ist, wird den Betrag von \texttt{x} ermittelt.  Der Befehl \boxed{\textbf{\texttt{angle(z)}}} berechnet den Winkel von \texttt{z} in Radians, wobei \texttt{z} eine komplexe Zahl ist. Die komplexe Zahl besteht aus einem Real- und einem Imaginäranteil \texttt{z=x+yi}. Der Winkel ergibt sich aus dem tangens von Imaginär- über Realteil. Der Befehl \boxed{\textbf{\texttt{conj(z)}}} berechnet die Konjugiertkomplexe der Zahl \texttt{z}, d.h. \texttt{$\overline{\texttt{z}}$}. Der Befehl \boxed{\textbf{\texttt{imag(z)}}} gibt den Imaginärteil der komplexen Zahl \texttt{z} wieder. Der Befehl \boxed{\textbf{\texttt{real(z)}}} gibt den Realteil der komplexen Zahl \texttt{z} wieder.
+\subsection{Runden}
+Der Befehl \boxed{\textbf{\texttt{fix(x)}}} rundet in Richtung Null auf die nächste ganze Zahl. Der Befehl \boxed{\textbf{\texttt{floor(x)}}} rundet die natürliche Zahl \texttt{x} auf den nächstkleineren ganzzahligen Wert. Mit \boxed{\textbf{\texttt{ceil(x)}}} wird die natürliche Zahl \texttt{x} auf den nächstgrösseren ganzzahligen Wert gerundet. Mit dem Befehl \boxed{\textbf{\texttt{round(x)}}} kann die Zahl \texttt{x} auf den nächstliegenden ganzzahligen Wert runden. Der Befehl \boxed{\textbf{\texttt{sign(x)}}} gibt das Vorzeichen von \texttt{x} an.

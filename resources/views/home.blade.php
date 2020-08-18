@@ -18,6 +18,7 @@
                                         <div class="col"><hr></div>
                                     </div>
                                     <a class="nav-link" id="v-pills-aet1-tab" data-toggle="pill" href="#v-pills-aet1" role="tab" aria-controls="v-pills-aet1" aria-selected="true">Allgemeine Elektrotechnik 1</a>
+                                    <a class="nav-link" id="v-pills-konvE-tab" data-toggle="pill" href="#v-pills-konvE" role="tab" aria-controls="v-pills-konvE" aria-selected="true">Konvergenz Elektrotechnik</a>
                                     <a class="nav-link" id="v-pills-dt1-tab" data-toggle="pill" href="#v-pills-dt1" role="tab" aria-controls="v-pills-dt1" aria-selected="true">Digitaltechnik 1</a>
                                     <div class="row">
                                         <div class="col"><hr></div>
@@ -42,6 +43,7 @@
                                         <div class="col"><hr></div>
                                     </div>
                                     <a class="nav-link" id="v-pills-oop1-tab" data-toggle="pill" href="#v-pills-oop1" role="tab" aria-controls="v-pills-oop1" aria-selected="false">Objektorientierte Programmierung 1</a>
+                                    <a class="nav-link" id="v-pills-matlab-tab" data-toggle="pill" href="#v-pills-matlab" role="tab" aria-controls="v-pills-matlab" aria-selected="false">MATLAB</a>
                                     <div class="row">
                                         <div class="col"><hr></div>
                                         <div class="col-auto"><i class="fa fa-book" aria-hidden="true"></i> LABOR</div>
@@ -54,6 +56,9 @@
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-aet1" role="tabpanel" aria-labelledby="v-pills-aet1-tab">
                                         @include('uni.aet1')
+                                    </div>
+                                    <div class="tab-pane fade show" id="v-pills-konvE" role="tabpanel" aria-labelledby="v-pills-konvE-tab">
+                                        @include('uni.konvE')
                                     </div>
                                     <div class="tab-pane fade show" id="v-pills-dt1" role="tabpanel" aria-labelledby="v-pills-dt1-tab">
                                         @include('uni.dt1')
@@ -81,6 +86,9 @@
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-oop1" role="tabpanel" aria-labelledby="v-pills-oop1-tab">
                                         @include('uni.oop1')
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-matlab" role="tabpanel" aria-labelledby="v-pills-matlab-tab">
+                                        @include('uni.matlab')
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-glaL1" role="tabpanel" aria-labelledby="v-pills-glaL1-tab">
                                         @include('uni.glaL1')
