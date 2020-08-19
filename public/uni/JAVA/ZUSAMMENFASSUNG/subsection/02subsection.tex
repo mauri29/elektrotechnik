@@ -1,113 +1,97 @@
 \section{Elemente der Programmiersprache Java}
 \subsection{Bytecode}
-Der Compiler erzeugt aus dem Quellcode den so genannten Bytecode. Dieser Code ist binär und Ausgangspunkt für die virtuelle Machine zur Ausführung.
+Der Java-Compiler erzeugt aus den Quellcode-Dateien den so genannten \textbf{Bytecode}. Dieser Code ist binär und Ausgangspunkt für die virtuelle Machine zur Ausführung. Der Bytecode ist wie ein Prozessor, der Anweiungen wie arithmetische Operationen, Sprünge und Weiteres kennt.
 \subsection{Java Virtual Machine}
-Die Java Virtual Machine kümmert sich um den Bytecode, den Quellcode auszuführen. Die Laufzeitumgebung lädt den Bytecode, prüft ihn und führt ihn in einer kontrollierten Umgebung aus. Java ist plattform- und Betriebssystemunabhängig.
+Die Java Virtual Machine (JVM) kümmert sich um den Bytecode, den Quellcode auszuführen. Die Laufzeitumgebung lädt den Bytecode, prüft ihn und führt ihn in einer kontrollierten Umgebung aus. Java ist Plattform- und Betriebssystemunabhängig. ZU der JVM und der Programmiersprache kommen Standardbibliotheken für Datenstrukturen, Zeichenkettenverarbeitung, Datumverarbeitung, grafische Oberflächen, Ein- und Ausgabe, Netzwerkoperationen und mehr.
 \subsection{Objektorientierung}
-Eine Laufzeitumgebung eliminiert viele Fehler. Objektorientierte Programmierung versucht, die Komplexität des Softwareproblems besser zu modellieren. Menschen denken objektorientiert, darum Java bildet diese ab. Objekte bestehen aus Eigenschaften, also Dinge, die ein Objekt ``hat'' und ``kann''. Objekte entstehen aus Klassen, das sind Beschreibungen für den Aufbau von Objekten.
+Eine Laufzeitumgebung eliminiert viele Fehler. Objektorientierte Programmierung versucht, die Komplexität des Softwareproblems besser zu modellieren. Menschen denken objektorientiert, darum Java bildet diese ab. Objekte bestehen aus \textbf{Eigenschaften}, also Dinge, die ein Objekt ``hat'' und ``kann''. Objekte entstehen aus \textbf{Klassen}, das sind Beschreibungen für den Aufbau von Objekten.
 \\\\
-Primitive Datentypen für numerische Zahlen oder Unicode-Zeichen werden nicht als Objekte betrachtet. Das Java-Security-Modell sicherstellt den Ablauf. Der Verifier liest Code und überprüft die Korrektheit. Treten Sicherheitsprobleme auf, werden sie durch Exceptions zur Laufzeit gemeldet. Das Security-Manager überwächt Zugriffe auf das Dateisystem, die Netzwerk-Ports, externe Prozesse und weitere Systemressourcen.
+Primitive Datentypen für numerische Zahlen oder Unicode-Zeichen werden nicht als Objekte betrachtet. Das \textbf{Java-Security-Modell} sicherstellt den Programmablauf. Der \textbf{Verifier} liest Code und überprüft die Korrektheit und Typsicherheit. Treten Sicherheitsprobleme auf, werden sie durch Exceptions zur Laufzeit gemeldet. Das Security-Manager überwächt Zugriffe auf das Dateisystem, die Netzwerk-Ports, externe Prozesse und weitere Systemressourcen.
 \\\\
-In Java gibt es keine Zeiger auf Speicherbereiche, dagegen führt Java Referenzen ein. Eine Referenz repräsentiert ein Objekt, und eine Variable speichert diese Referenz, sie wird Referenzvariable genannt. JVM verbindet die Referenz mit einem Speicherbereich und einem Referenztyp; der Zugriff, Dereferenzierung genannt, ist indirekt. Referenz und Speicherblock sind getrennt.
+In Java gibt es keine Zeiger auf Speicherbereiche, dagegen führt Java \textbf{Referenzen} ein. Eine Referenz repräsentiert ein Objekt, und eine Variable speichert diese Referenz, sie wird Referenzvariable genannt. JVM verbindet die Referenz mit einem Speicherbereich und einem Referenztyp; der Zugriff, Dereferenzierung genannt, ist indirekt. Referenz und Speicherblock sind getrennt.
 \\\\
-In Java gibt es keine benutzerdefinierten überladenen Operatoren. Da das Operatorzeichen auf unterschiedlichen Datentypen gültig ist, nennt sich so ein Operator ``überladen''. Bei Zeichenketten werden Pluszeichen als Konkatenation angewendet. Java braucht keine Präprozessoren.
+In Java gibt es keine benutzerdefinierten überladenen Operatoren. Da das Operatorzeichen auf unterschiedlichen Datentypen gültig ist, nennt sich so ein Operator \textbf{Überladen}. Bei Zeichenketten werden Pluszeichen als \textbf{Konkatenation} angewendet. Java braucht keine \textbf{Präprozessoren}.
 \subsection{Java Platform}
-Mit dem ava Development Kit (JDK) lassen sich Java SE-Applikationen entwickeln. Dem JDK sind Hilfsprogramme beigelegt, die für die Java-Entwicklung nötig sind. Dazu zählen der essenzielle Compiler, abe rauch andere Hilfsprogramme, etwa zur Signierung von Java-Archiven oder zum Start einer Management-Konsole.
+Mit dem Java Development Kit (JDK) lassen sich Java SE-Applikationen entwickeln. Dem JDK sind Hilfsprogramme beigelegt, die für die Java-Entwicklung nötig sind. Dazu zählen der essenzielle Compiler, aber auch andere Hilfsprogramme, etwa zur Signierung von Java-Archiven oder zum Start einer Management-Konsole.
 \\\\
 Das Java SE Runtime (JRE) enthält genau das, was zur Ausführung von Java-Programmen nötig ist. Die Distribution umfasst nur die JVM und Java-Bibliotheken, aber weder den Quellcode der Java-Bibliotheken noch Tools wie Management-Tools.
-\subsection{Das erste Programm}
-Ein Compiler übersetzt bzw. transformiert das geschriebene Programm in eine andere Repräsentation nämlich den Bytecode und erzeugt aus dem Program mit Endung \texttt{.java} die Daten \texttt{.class}.
+\subsection{Das erste Programm compilieren und testen}
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/Squares.java}
+Ein Compiler übersetzt bzw. transformiert das geschriebene Programm in eine andere Repräsentation nämlich den Bytecode und erzeugt aus dem Program mit Endung \texttt{.java} die Datei \texttt{.class}, welche Bytecode enthält.
 \\\\
 Wenn der Compiler aufgrund eines syntaktischen Fehlers eine Übersetzung in Java-Bytecode nicht durchführen kann, spricht man von einem Compilerfehler.
 \\\\
 Eine Laufzeitumgebung liest die Bytecode-Datei Anweisung für Anweisung aus und führt sie auf den konkreten Mikroprozessor aus. Der Interpreter bringt das Programm zur Ausführung.
 \\\\
 Ein Java-Projekt braucht eine ordentliche Ordnerstruktur, und hier gibt es zur Organisation der Dateien unterschiedliche Ansätze. Die einfachste Form ist, Quellen, Klassendateien und Ressourcen in ein Verzeichnis zu setzen. Es gibt zwei Verzeichnisse \texttt{src} für die Quellen und \texttt{bin} für die erzeugten Klassendateien. Ein eigener Ordner \texttt{lib} ist sinnvoll für Java-Bibliotheken.
+\\\\
+Das Programm sitzt in einer Klasse, die drei Methoden enthält. Die Methode $\texttt{quadrat(int)}$, bekommt als Übergangsparameter eine ganze Zahl und berechnet daraus die Quadratzahl, die sie anschliessend zurückgibt. Eine weitere Methode übernimmt die Ausgabe der Quadratzahlen bis zu einer vorgegebenen Grenze. Die Methode \texttt{main()}, als Anfangspunkt, ruft die Methode \texttt{ausgabe(int)} auf.
 \section{Imperative Sprachkonzepte}
-\subsection{Elemente von Java}
+\subsection{Elemente der Programmiersprache Java}
 Unter dem Begriff \textbf{Semantik} versteht man die Lexikalik, Syntax und Semantik eines Programms. Der Compiler verläuft diese Schritte bevor er den Bytecode erzeugt.
 \\\\
-Ein \textbf{Token} ist eine lexikalische Einheit, die dem Compiler die Bausteine des Programms liefert. Der Compiler erkenntan der Grammatik einer Sprache, welche Folgen von Zeichen ein Token bilden.
+Ein \textbf{Token} ist eine lexikalische Einheit, die dem Compiler die Bausteine des Programms liefert. Der Compiler erkennt an der Grammatik einer Sprache, welche Folgen von Zeichen ein Token bilden.
 \\\\
 \textbf{Whitespaces} sind Leerzeichen, Tabulatoren, Zeilenvorschub und Seitenvorschubzeichen.
 \\\\
 Neben den Trennern gibt es noch zwölf ASCII-Zeichen geformte Tokens, die als \textbf{Separator} definiert werden: \texttt{( ) \{ \} [ ] ; , . ... @ ::}
 \\\\
-Für Variablen, Methoden, Klassen und Schnittstellen werden \textbf{Bezeichner}, auch \textbf{Identifizierer} genannt, vergeben. Unter Variablen sind dann Daten verfügbar. Methoden sind die Unterprogramme in objektorientierten Programmiersprachen, und Klassen sind die Bausteine objektorientierter Programme. Ein Bezeichner ist eine Folge von Zeichen, die fast beliebig sein kann. Die Zeichen sind Elemente aus dem Unicode-Zeichensatz. Der Bezeichner muss mit einem Java-Buchstaben beginnen.
+Für Variablen, Methoden, Klassen und Schnittstellen werden \textbf{Bezeichner}, auch \textbf{Identifizierer} genannt, vergeben. Unter \textbf{Variablen} sind dann Daten verfügbar. \textbf{Methoden} sind die Unterprogramme in objektorientierten Programmiersprachen, und \textbf{Klassen} sind die Bausteine objektorientierter Programme. Ein Bezeichner ist eine Folge von Zeichen, die fast beliebig sein kann. Die Zeichen sind Elemente aus dem Unicode-Zeichensatz. Der Bezeichner muss mit einem Java-Buchstaben beginnen. String ist eine Klasse und kein Datentyp.
 \\\\
-Ein Java-Buchstabe umfasst unsere lateinische Buchstaben ``A'' bis ``Z'', ``a'' bis ``z'', sondern auch viele Zeichen aus dem Unicode-Alphabet, den Unterstrich, Währungszeichen, griechische oder arabische Buchstaben. Java unterscheidet zweischen Gross- und Kleinschreibung. Nicht erlaubt sind Zahlen am Anfang, Leerzeichen, Ausrufezeichen, reservierte Wörter oder reservierte Schlüsselwörter.
+Ein Java-Buchstabe umfasst unsere lateinische Buchstaben ``A'' bis ``Z'', ``a'' bis ``z'', sondern auch viele Zeichen aus dem Unicode-Alphabet, den Unterstrich, Währungszeichen, griechische oder arabische Buchstaben, Akzente. Java unterscheidet zwischen Gross- und Kleinschreibung. Nicht erlaubt sind Zahlen am Anfang, Leerzeichen, Ausrufezeichen, reservierte Wörter oder reservierte Schlüsselwörter.
 \\\\
 Ein \textbf{Literal} ist ein konstanter Ausdruck wie die Wahrheitswerte \texttt{true} und \texttt{false}, Integrale Literale für Zahlen, Fliesskommaliterale, Zeichenliterale wie $\backslash$n, String-Literale für Zeichenketten wie ``Hello World'', Referenztypen wie \texttt{null}.
 \\\\
 Bestimmte Wörter sind reservierte Schlüsselwörter com Compiler besonders behandelt. Schlüsselwörter bestimmen die Sprache eines Compilers. Es können keine eigenen Schlüsselwörter hinzugefügt werden. Schlüsselwörter sind:
 \\\\
-\texttt{abstract}, \texttt{continue}, \texttt{for}, \texttt{new}, \texttt{switch}, \texttt{assert}, \texttt{default}, \texttt{goto}, \texttt{package}, \texttt{synchronized}, \texttt{boolean}, \texttt{do}, \texttt{if}, \texttt{private}, \texttt{this}, \texttt{break}, \texttt{double}, \texttt{implements}, \texttt{protected}, \texttt{throw}, \texttt{byte}, \texttt{else}, \texttt{import}, \texttt{public}, \texttt{throws}, \texttt{case}, \texttt{enum}, \texttt{instanceof}, \texttt{return}, \texttt{transient}, \texttt{catch}, \texttt{extends}, \texttt{int}, \texttt{short}, \texttt{try}, \texttt{char}, \texttt{final}, \texttt{interface}, \texttt{static}, \texttt{void}, \texttt{class}, \texttt{finally}, \texttt{long}, \texttt{strictfp}, \texttt{volatile}, \texttt{const}, \texttt{float}, \texttt{native}, \texttt{super}, \texttt{while}.
+\texttt{abstract}, \texttt{assert}, \texttt{boolean}, \texttt{break}, \texttt{byte}, \texttt{case}, \texttt{catch}, \texttt{char}, \texttt{class}, \texttt{const}, \texttt{continue}, \texttt{default}, \texttt{do}, \texttt{double}, \texttt{else}, \texttt{enum}, \texttt{extends}, \texttt{final}, \texttt{finally}, \texttt{float}, \texttt{for}, \texttt{goto}, \texttt{if}, \texttt{implements}, \texttt{import}, \texttt{instanceof}, \texttt{int}, \texttt{interface}, \texttt{long}, \texttt{native}, \texttt{new}, \texttt{package}, \texttt{private}, \texttt{protected}, \texttt{public}, \texttt{return}, \texttt{short}, \texttt{static}, \texttt{strictfp}, \texttt{super}, \texttt{switch}, \texttt{synchronized}, \texttt{this}, \texttt{throw}, \texttt{throws}, \texttt{transient}, \texttt{try}, \texttt{void}, \texttt{volatile}, \texttt{while}
 \\\\
-Der Compiler überliest alle Kommentare und die Trennzeichen bringen den Compiler von Token zu Token. Zeilenkommentare kann man mit Schrägsstrichen \texttt{//} und kommentieren den Rest einer Zeile bis Zeilenumbruchzeichen aus. Blockkommentare (``Wie'') kommentiert in Blöcke mit \texttt{/* */} aus. Javadoc-Kommentare (``Was'') sind besondere Blockkommentare mit \texttt{/** */} und beschreibt die Methode oder die Parameter, aus denen sich später die API-Dokumentation generieren lässt. Kein Kommentar kommt in den Bytecode.
+Der Compiler überliest alle Kommentare und die Trennzeichen bringen den Compiler von Token zu Token. \textbf{Zeilenkommentare} kann man mit Schrägsstrichen \boxed{\textbf{\texttt{//}}} und kommentieren den Rest einer Zeile bis Zeilenumbruchzeichen aus. \textbf{Blockkommentare} (``Wie'') kommentiert in Blöcke mit \boxed{\textbf{\texttt{/* */}}} aus. \textbf{Javadoc-Kommentare} (``Was'') sind besondere Blockkommentare mit \boxed{\textbf{\texttt{/** */}}} und beschreibt die Methode oder die Parameter, aus denen sich später die API generieren lässt. Kein Kommentar kommt in den Bytecode.
 \subsection{Anweisungen}
-Programme sind Ablauffolgen, die im Kern aus Anweisungen bestehen. Sie werden zu grösseren Bausteinen zusammengesetzt, den Methoden, die wiederum Klassen bilden. Klassen selbst werden in Paketen gesammelt, und eine Sammlung von Paketen wird als Java-Archiv ausgeliefert.
+Programme sind Ablauffolgen, die im Kern aus \textbf{Anweisungen} bestehen. Sie werden zu grösseren Bausteinen zusammengesetzt, den Methoden, die wiederum Klassen bilden. Klassen selbst werden in Paketen gesammelt, und eine Sammlung von Paketen wird als Java-Archiv ausgeliefert.
 \\\\
-Durch Anweisungen werden Algorithmen geschrieben. Anweisungen können Ausdrucksanweisungen, Zuweisungen oder Methodenaufrufe, Fallunterscheidungen, Schleifen für Wiederholungen sein.
+Durch Anweisungen werden \textbf{Algorithmen} geschrieben. Anweisungen können Ausdrucksanweisungen für Zuweisungen oder Methodenaufrufe, auch  Fallunterscheidungen, oder Schleifen für Wiederholungen sein.
 \\\\
-Anweisungen müssen in einen Rahmen gepackt werden. Dieser Rahmen heisst Kompilationseinheit und deklariert eine Klasse mit ihren Methoden und Variablen. Anweisungen ausserhalb von Klassen sind nicht erlaubt. Der Klassenname ist ein Bezeichner und beinhaltet die gleiche Dateiname. Klassennamen beginnen mit Grossbuchstabe und Methoden sind kleingeschrieben. Zwischen den geschweiften Klammern folgen Deklarationen von Methoden und zwischen den Methoden die Anweisungen.
+Anweisungen müssen in einen Rahmen gepackt werden. Dieser Rahmen heisst \textbf{Kompilationseinheit} und deklariert eine Klasse mit ihren Methoden und Variablen. Anweisungen ausserhalb von Klassen sind nicht erlaubt. Der Klassenname ist ein Bezeichner und beinhaltet die gleiche Dateiname. Klassennamen beginnen mit Grossbuchstabe und Methoden sind kleingeschrieben. Zwischen den geschweiften Klammern folgen Deklarationen von Methoden und zwischen den Methoden die Anweisungen.
 \\\\
-Eine besondere Methode ist \texttt{public static void(String[] args)\{\}}. Die \texttt{main(String[])}-Methode ist für die Laufzeitumgebung etwas Besonders, denn beim Aufruf des Java-Interpreters mit einem Klassennamen wird diese Methode als Erstes ausgeführt. Demnach werden die Anweisungen ausgeführt, die innerhalb der geschweiften Klammern stehen. Der Parameter \texttt{args} wird immer verwendet.
+Eine besondere Methode ist \boxed{\textbf{\texttt{public static void(String[] args)\{\}}}}. Die Methode ist für die Laufzeitumgebung etwas Besonders, denn beim Aufruf des Java-Interpreters mit einem Klassennamen wird diese Methode als Erstes ausgeführt. Demnach werden die Anweisungen ausgeführt, die innerhalb der geschweiften Klammern stehen. Der Parameter \texttt{args} wird immer verwendet.
 \\\\
 Haltet man sich nicht an die Syntax für den Startpunkt, so kann der Interpreter die Ausführung nicht beginnen und man hätte einen semantischen Fehler produziert, obwohl die Methode korrekt gebildet ist.
 \\\\
-Die Methode \texttt{println(...)} gibt Meldungen auf der Konsole aus. Innerhalb der Klammern können Argumente angegeben werden. Zeichenketten oder \textbf{Strings} sind Argumente oder eine Folge von Buchstaben, Ziffern oder Sonderzeichen in doppelten Anführungszeichen. Die Methode \texttt{println(...)} gehört zum Typ \texttt{out} und diese zu \texttt{System}.
+Die Methode \boxed{\textbf{\texttt{println(...)}}} gibt Meldungen auf der Konsole aus. Innerhalb der Klammern können Argumente angegeben werden wie Zeichenketten oder \textbf{Strings} oder eine Folge von Buchstaben, Ziffern oder Sonderzeichen in doppelten Anführungszeichen. Die Methode \texttt{println(...)} gehört zum Typ \textbf{\texttt{out}} und diese zu \textbf{\texttt{System}}.
 \lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/PrimeraClase.java}
 Java erlaubt Methoden, die gleich heissen, denen aber unterschiedliche Dinge übergeben werden können; diese Methoden nennt man \textbf{überladen}. Viele \texttt{println()}-Methoden akzeptieren zahlartige Argumente und sind überladen.
-\begin{lstlisting}
-public class OverloadedPrintln {
-    public static void main( String[] args ) {
-        System.out.println( "Verhaften Sie die ueblichen Verdaechtigen!" );
-        System.out.println( true );
-        System.out.println( -273 );
-        System.out.println(); // Gibt eine Leerzeile aus
-        System.out.println( 1.6180339887498948 );
-    }
-}
-\end{lstlisting}
-Die Methode \texttt{printf()} ermöglicht variable Argumentenlisten gemäss einer Formatierungsanweisung. Die Formatierungsanweisung \texttt{$\backslash$n} setzt einen Zeilenumbruch, \texttt{$\backslash$d} ist ein Platzhalter für eine ganze Zahl, \texttt{$\backslash$f} ist ein Platzhalter für eine Fliesskommazahl, \texttt{$\backslash$s} ist eine Zeichenkette oder etwas, was in einen String konvertiert werden soll.
-\begin{lstlisting}
-public class VarArgs {
-    public static void main( String[] args ) {
-        System.out.printf( "Was sagst du?%n" );
-        System.out.printf( "%d Kanaele und ueberall nur %s.%n", 220, "Katzen" );
-    }
-}
-\end{lstlisting}
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/OverloadedPrintln.java}
+Die Methode \boxed{\textbf{\texttt{printf()}}} ermöglicht variable Argumentenlisten gemäss einer Formatierungsanweisung. Die Formatierungsanweisung \boxed{\textbf{\texttt{$\backslash$n}}} setzt einen Zeilenumbruch, \boxed{\textbf{\texttt{$\backslash$d}}} ist ein Platzhalter für eine ganze Zahl, \boxed{\textbf{\texttt{$\backslash$f}}} ist ein Platzhalter für eine Fliesskommazahl, \boxed{\textbf{\texttt{$\backslash$s}}} ist eine Zeichenkette oder etwas, was in einen String konvertiert werden soll.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/VarArgs.java}
 Methodenaufrufe lassen sich als Anweisungen einsetzen, wenn sie mit einem Semikolon abegschlossen sind, man spricht von einer \textbf{Ausdrucksanweisung} (expression statement). Jeder Methodenaufruf mit Semikolon bildet eine Ausdrucksanweisung. Dabei ist es egal, ob die Methode selbst eine Rückgabe liefert oder nicht.
 \\\\
-Die Methode \texttt{Math.random()} liefert als Ergebnis einen Zufallswert zwischen 0 (inklusiv) und 1 (exklusiv).
+Die Methode \boxed{\textbf{\texttt{Math.random()}}} liefert eine Fliesskommazahl zwischen 0 (inklusiv) und 1 (exklusiv). In einer objektorientierte Programmiersprache sind alle Methoden an bestimmte Objekte mit einem Zustand gebunden. Alle Operationen und Zustände sind an Objekte bzw. Klassen gebunden. Der Aufruf einer Methode auf einem Objekt richtet die Anfrage genau an dieses bestimmte Objekt.
 \\\\
-In einer objektorientierte Programmiersprache sind alle Methoden an bestimmte Objekte mit einem Zustand gebunden. Alle Operationen und Zustände sind an Objekte bzw. Klassen gebunden. Der Aufruf einer Methode auf einem Objekt richtet die Anfrage genau an dieses bestimmte Objekt. Die Methode \texttt{println(...)} gehört zu einem Objekt \texttt{out}, das die Bildschirmausgabe übernimmt. Dieses Objekt \texttt{out} bzw. \texttt{err} wiederum gehört zu der Klasse \texttt{System}.
+Die Deklaration einer Klasse oder Methode kann einen oder mehrere \textbf{Modifizierer} enthalten, die zum Beispiel die Nutzung einschränken oder parallelen Zugriff synchronisieren. Der Modifizierer \boxed{\textbf{\texttt{public}}} ist ein Sichtbarkeitsmodifizierer. Er bestimmt, onb die Klasse bzw. die Methode für Programmcode anderer Klassen sichtbar ist oder nicht. Der Modifizierer \boxed{\textbf{\texttt{static}}} zwingt den Programmierer nicht dazu, vor dem Methodenaufruf ein Objekt der Klasse zu bilden. Dieser Modifizierer bestimmt die Eigenschaft, ob sich eine Methode nur über ein konkretes Objekt aufrufen lässt oder eine Eigenschaft der Klasse ist, sodass für den Aufruf kein Objekt der Klasse nötig wird.
 \\\\
-Die Deklaration einer Klasse oder Methode kann einen oder mehrere \textbf{Modifizierer} enthalten, die zum Beispiel die Nutzung einschränken oder parallelen Zugriff synchronisieren. Der Modifizierer \texttt{public} ist ein Sichtbarkeitsmodifizierer. Er bestimmt, onb die Klasse bzw. die Methode für Programmcode anderer Klassen sichtbar ist oder nicht. Der Modifizierer \texttt{static} zwingt den Programmierer nicht dazu, vor dem Methodenaufruf ein Objekt der Klasse zu bilden. Dieser Modifizierer bestimmt die Eigenschaft, ob sich eine Methode nur über ein konkretes Objekt aufrufen lässt oder eine Eigenschaft der Klasse ist, sodass für den Aufruf kein Objekt der Klasse nötig wird.
-\\\\
-Ein Block fasst eine Gruppe von Anweisungen,die hintereinander ausgeführt werden. Ein Block \texttt{\{\}} ist eine Anweisung, die in geschweiften Klammern eine Folge von Anweisungen zu einer neuen Anweisung zusammenfasst. Ein Block kann überall dort verwendet werden, wo auch eine einzelne Anweisung stehen kann. Der neue Block hat jedoch eine Besonderheit in Bezug auf Variablen, da er einen lokalen Bereich für die darin befindlichen Anweisungen inklusive der Variablen bildet.
+Ein \textbf{Block} fasst eine Gruppe von Anweisungen,die hintereinander ausgeführt werden. Ein Block \boxed{\textbf{\texttt{\{\}}}} ist eine Anweisung, die in geschweiften Klammern eine Folge von Anweisungen zu einer neuen Anweisung zusammenfasst. Ein Block kann überall dort verwendet werden, wo auch eine einzelne Anweisung stehen kann. Der neue Block hat jedoch eine Besonderheit in Bezug auf Variablen, da er einen lokalen Bereich für die darin befindlichen Anweisungen inklusive der Variablen bildet.
 \\\\
 Ein Block ohne Anweisung nennt sich ein leerer Block. Er verhält sich wie eine leere Anweisung, also wie ein Semikolon. Es gibt innere und äussere Blöcke. Blöcke fassen Anweisungen zusammen.
 \subsection{Datentypen, Variablen und Zuweisungen}
 Java speichert Variablen. Eine Variable ist ein reservierter Speicherbereich und belegt eine feste Anzahl von Bytes. Variablen und Ausdrücke haben einen \textbf{Datentyp} und einen \textbf{Datenwert}. Der Datentyp bestimmt die zulässigen Operationen. Java ist eine streng typisierte Programmiersprache. Datentypen werden unterteilt in \textbf{primitive Datentypen} (Zahlen, Unicode-Zeichen und Wahrheitswerte) und \textbf{Referenztypen} (Zeichenketten, Datenstrukturen, Zwergpinscher) und Bytecode durch den Compiler einfacher erzeugt.
-\\\\
-Die primitive Datentypen unterteilen sich in \textbf{arithmetische Typen} und \textbf{Wahr-heitswerte}. Folgende Tabelle vermittelt einen Überblick
-\\\\
+\begin{table}[H]
+\centering
 \begin{tabular}{|l|l|}
 \hline
 Typ&Belegung (Wertebereich)\\\hline
 boolean&\texttt{true} oder \texttt{false}\\
 char& 16-Bit-Unicode-Zeichen (0x0000 ... 0xFFFF)\\
-byte&–27 bis 27 – 1 (–128 ... 127)\\
-short&–215 bis 215 – 1 (–32.768 ... 32.767)\\
-int&–231 bis 231 – 1 (–2.147.483.648 ... 2.147.483.647)\\
-long&–263 bis 263 – 1 (–9.223.372.036.854.775.808 ... 9.223.372.036.854.775.807)\\
-float&1,40239846E–45f ... 3,40282347E+38f\\
-double&4,94065645841246544E–324 ... 1,79769131486231570E+308\\\hline
+byte&$-2^7$ bis $2^7-1$\\
+short&$-2^{15}$ bis $2^{15}-1$\\
+int&$-2^{31}$ bis $2^{31}-1$ \\
+long&$-2^{63}$ bis $2^{63}-1$\\
+float&$1,4023\cdot 10^{-45} \dotso 3,4028\cdot10^{38}$\\
+double&$4,9406\cdot 10^{-324} \dotso 1,7976\cdot 10^{308}$\\\hline
 \end{tabular}
-\newline\newline
-Es gibt mehr negative Werte als positive Werte, das liegt an der Kodierung im Zweierkomplement. Bei \texttt{float} und \texttt{double} ist das Vorzeichen nicht angegeben, die Wertebereiche unterscheiden sich nicht, die kleinsten und grössten darstellbaren Zahlen können sowohl positiv als auch negativ sein.
+\caption{Java-Datentypen}
+\end{table}
+\noindent Es gibt mehr negative Werte als positive Werte, das liegt an der Kodierung im Zweierkomplement. Bei \textbf{\texttt{float}} und \textbf{\texttt{double}} ist das Vorzeichen nicht angegeben, die Wertebereiche unterscheiden sich nicht, die kleinsten und grössten darstellbaren Zahlen können sowohl positiv als auch negativ sein.
 
 
 

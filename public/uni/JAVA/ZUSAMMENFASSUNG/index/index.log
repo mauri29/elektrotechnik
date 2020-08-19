@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  18 AUG 2020 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  19 AUG 2020 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,249 +477,193 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
+(../../PROJEKTE/000001HelloWorld/src/Squares.java
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
-0.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2
+8.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 20--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 20--29
 
  []
 
 
-Overfull \hbox (6.0908pt too wide) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 20--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--29
+
+ []
+
+[5]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 49.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
+
+ []
+
+
+Overfull \hbox (6.0908pt too wide) in paragraph at lines 31--50
 []\T1/bch/b/n/10 Whitespaces[] \T1/bch/m/n/10 sind Leer-zei-chen, Ta-bu-la-to-r
 en, Zei-len-vor-schub und Sei-ten-vor-schub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Overfull \hbox (2.16147pt too wide) in paragraph at lines 28--47
+Overfull \hbox (2.16147pt too wide) in paragraph at lines 31--50
 \T1/bch/m/n/10 In-te-gra-le Li-te-ra-le für Zah-len, Flies-skom-ma-li-te-ra-le,
  Zei-chen-li-te-ra-le wie $\OMS/cmsy/m/n/10 n$\T1/bch/m/n/10 n, String-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
 
  []
 
 
-Overfull \hbox (37.714pt too wide) in paragraph at lines 28--47
-\T1/cmtt/m/n/10 abstract\T1/bch/m/n/10 , \T1/cmtt/m/n/10 continue\T1/bch/m/n/10
- , \T1/cmtt/m/n/10 for\T1/bch/m/n/10 , \T1/cmtt/m/n/10 new\T1/bch/m/n/10 , \T1/
-cmtt/m/n/10 switch\T1/bch/m/n/10 , \T1/cmtt/m/n/10 assert\T1/bch/m/n/10 , \T1/c
-mtt/m/n/10 default\T1/bch/m/n/10 , \T1/cmtt/m/n/10 goto\T1/bch/m/n/10 , \T1/cmt
-t/m/n/10 package\T1/bch/m/n/10 , \T1/cmtt/m/n/10 synchronized\T1/bch/m/n/10 ,
+Overfull \hbox (0.97298pt too wide) in paragraph at lines 31--50
+\T1/cmtt/m/n/10 for\T1/bch/m/n/10 , \T1/cmtt/m/n/10 goto\T1/bch/m/n/10 , \T1/cm
+tt/m/n/10 if\T1/bch/m/n/10 , \T1/cmtt/m/n/10 implements\T1/bch/m/n/10 , \T1/cmt
+t/m/n/10 import\T1/bch/m/n/10 , \T1/cmtt/m/n/10 instanceof\T1/bch/m/n/10 , \T1/
+cmtt/m/n/10 int\T1/bch/m/n/10 , \T1/cmtt/m/n/10 interface\T1/bch/m/n/10 , \T1/c
+mtt/m/n/10 long\T1/bch/m/n/10 , \T1/cmtt/m/n/10 native\T1/bch/m/n/10 ,
  []
 
 
-Overfull \hbox (0.97298pt too wide) in paragraph at lines 28--47
-\T1/cmtt/m/n/10 boolean\T1/bch/m/n/10 , \T1/cmtt/m/n/10 do\T1/bch/m/n/10 , \T1/
-cmtt/m/n/10 if\T1/bch/m/n/10 , \T1/cmtt/m/n/10 private\T1/bch/m/n/10 , \T1/cmtt
-/m/n/10 this\T1/bch/m/n/10 , \T1/cmtt/m/n/10 break\T1/bch/m/n/10 , \T1/cmtt/m/n
-/10 double\T1/bch/m/n/10 , \T1/cmtt/m/n/10 implements\T1/bch/m/n/10 , \T1/cmtt/
-m/n/10 protected\T1/bch/m/n/10 , \T1/cmtt/m/n/10 throw\T1/bch/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
+
  []
 
-
-Overfull \hbox (11.47041pt too wide) in paragraph at lines 28--47
-\T1/cmtt/m/n/10 byte\T1/bch/m/n/10 , \T1/cmtt/m/n/10 else\T1/bch/m/n/10 , \T1/c
-mtt/m/n/10 import\T1/bch/m/n/10 , \T1/cmtt/m/n/10 public\T1/bch/m/n/10 , \T1/cm
-tt/m/n/10 throws\T1/bch/m/n/10 , \T1/cmtt/m/n/10 case\T1/bch/m/n/10 , \T1/cmtt/
-m/n/10 enum\T1/bch/m/n/10 , \T1/cmtt/m/n/10 instanceof\T1/bch/m/n/10 , \T1/cmtt
-/m/n/10 return\T1/bch/m/n/10 , \T1/cmtt/m/n/10 transient\T1/bch/m/n/10 ,
- []
-
-
-Overfull \hbox (0.61493pt too wide) in paragraph at lines 28--47
-\T1/cmtt/m/n/10 catch\T1/bch/m/n/10 , \T1/cmtt/m/n/10 extends\T1/bch/m/n/10 , \
-T1/cmtt/m/n/10 int\T1/bch/m/n/10 , \T1/cmtt/m/n/10 short\T1/bch/m/n/10 , \T1/cm
-tt/m/n/10 try\T1/bch/m/n/10 , \T1/cmtt/m/n/10 char\T1/bch/m/n/10 , \T1/cmtt/m/n
-/10 final\T1/bch/m/n/10 , \T1/cmtt/m/n/10 interface\T1/bch/m/n/10 , \T1/cmtt/m/
-n/10 static\T1/bch/m/n/10 , \T1/cmtt/m/n/10 void\T1/bch/m/n/10 , \T1/cmtt/m/n/1
-0 class\T1/bch/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--47
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
  []
 
 
-Overfull \hbox (28.34006pt too wide) in paragraph at lines 28--47
-\T1/bch/m/n/10 schreibt die Me-tho-de oder die Pa-ra-me-ter, aus de-nen sich sp
-ä-ter die API-Dokumentation
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
  []
 
 
-Overfull \hbox (5.69086pt too wide) in paragraph at lines 48--59
-\T1/bch/m/n/10 Aus-drucks-an-wei-sun-gen, Zu-wei-sun-gen oder Me-tho-den-auf-ru
--fe, Fall-un-ter-schei-dun-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
+Overfull \hbox (4.79884pt too wide) in paragraph at lines 51--62
+\T1/bch/m/n/10 Eine be-son-de-re Me-tho-de ist [][][]. Die Me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
  []
 
 
-Overfull \hbox (57.91093pt too wide) in paragraph at lines 48--59
-\T1/bch/m/n/10 Eine be-son-de-re Me-tho-de ist \T1/cmtt/m/n/10 public static vo
-id(String[] args){}\T1/bch/m/n/10 . Die \T1/cmtt/m/n/10 main(String[])\T1/bch/m
-/n/10 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
-
- []
-
-[6] (../../PROJEKTE/000001HelloWorld/src/PrimeraClase.java
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
-) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 81--92
+[7] (../../PROJEKTE/000001HelloWorld/src/PrimeraClase.java)
+(../../PROJEKTE/000001HelloWorld/src/OverloadedPrintln.java)
+(../../PROJEKTE/000001HelloWorld/src/VarArgs.java)
+Underfull \hbox (badness 10000) in paragraph at lines 67--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--92
+Underfull \hbox (badness 10000) in paragraph at lines 67--76
 
  []
 
 
-Overfull \hbox (8.91815pt too wide) in paragraph at lines 81--92
-\T1/bch/m/n/10 rich-tet die An-fra-ge ge-nau an die-ses be-stimm-te Ob-jekt. Di
-e Me-tho-de \T1/cmtt/m/n/10 println(...)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--92
+Underfull \hbox (badness 10000) in paragraph at lines 67--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--92
+Underfull \hbox (badness 10000) in paragraph at lines 67--76
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--111
-
- []
-
-
-Overfull \hbox (60.53976pt too wide) in paragraph at lines 93--111
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--111
-
- []
-
-[8])) [9] (./index.aux) ) 
+[8] [9])) [10] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 7101 strings out of 480608
- 99362 string characters out of 5903630
- 587253 words of memory out of 5000000
- 22875 multiletter control sequences out of 15000+600000
- 565546 words of font info for 58 fonts, out of 8000000 for 9000
+ 7118 strings out of 480608
+ 99949 string characters out of 5903630
+ 614253 words of memory out of 5000000
+ 22883 multiletter control sequences out of 15000+600000
+ 571527 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,58p,933b,1286s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm
--super/cm-super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a
-.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pf
-b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfit0800.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on index.pdf (9 pages, 146001 bytes).
+ 41i,11n,58p,932b,1286s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvi
+ps/cm-super/cm-super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips
+/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/b
+chb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr
+8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfit0800.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on index.pdf (10 pages, 182409 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
