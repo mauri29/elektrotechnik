@@ -1,0 +1,12 @@
+public class Prefixen
+{
+    public static void main(String[] args)
+    {
+        int i = 10, j=20;
+        System.out.println(++i);	//i=11
+        System.out.println(i);		//i=11
+
+        System.out.println(j++);	//j=20
+        System.out.println(j);		//j=21
+    }
+}

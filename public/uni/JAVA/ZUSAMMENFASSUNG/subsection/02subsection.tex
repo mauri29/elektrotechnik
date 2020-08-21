@@ -2,7 +2,7 @@
 \subsection{Bytecode}
 Der Java-Compiler erzeugt aus den Quellcode-Dateien den so genannten \textbf{Bytecode}. Dieser Code ist binär und Ausgangspunkt für die virtuelle Machine zur Ausführung. Der Bytecode ist wie ein Prozessor, der Anweiungen wie arithmetische Operationen, Sprünge und Weiteres kennt.
 \subsection{Java Virtual Machine}
-Die Java Virtual Machine (JVM) kümmert sich um den Bytecode, den Quellcode auszuführen. Die Laufzeitumgebung lädt den Bytecode, prüft ihn und führt ihn in einer kontrollierten Umgebung aus. Java ist Plattform- und Betriebssystemunabhängig. ZU der JVM und der Programmiersprache kommen Standardbibliotheken für Datenstrukturen, Zeichenkettenverarbeitung, Datumverarbeitung, grafische Oberflächen, Ein- und Ausgabe, Netzwerkoperationen und mehr.
+Die Java Virtual Machine (JVM) kümmert sich um den Bytecode, den Quellcode auszuführen. Die Laufzeitumgebung lädt den Bytecode, prüft ihn und führt ihn in einer kontrollierten Umgebung aus. Java ist Plattform- und Betriebssystemunabhängig. Zu der JVM und der Programmiersprache kommen Standardbibliotheken für Datenstrukturen, Zeichenkettenverarbeitung, Datumverarbeitung, grafische Oberflächen, Ein- und Ausgabe, Netzwerkoperationen und mehr.
 \subsection{Objektorientierung}
 Eine Laufzeitumgebung eliminiert viele Fehler. Objektorientierte Programmierung versucht, die Komplexität des Softwareproblems besser zu modellieren. Menschen denken objektorientiert, darum Java bildet diese ab. Objekte bestehen aus \textbf{Eigenschaften}, also Dinge, die ein Objekt ``hat'' und ``kann''. Objekte entstehen aus \textbf{Klassen}, das sind Beschreibungen für den Aufbau von Objekten.
 \\\\
@@ -73,30 +73,201 @@ Die Deklaration einer Klasse oder Methode kann einen oder mehrere \textbf{Modifi
 Ein \textbf{Block} fasst eine Gruppe von Anweisungen,die hintereinander ausgeführt werden. Ein Block \boxed{\textbf{\texttt{\{\}}}} ist eine Anweisung, die in geschweiften Klammern eine Folge von Anweisungen zu einer neuen Anweisung zusammenfasst. Ein Block kann überall dort verwendet werden, wo auch eine einzelne Anweisung stehen kann. Der neue Block hat jedoch eine Besonderheit in Bezug auf Variablen, da er einen lokalen Bereich für die darin befindlichen Anweisungen inklusive der Variablen bildet.
 \\\\
 Ein Block ohne Anweisung nennt sich ein leerer Block. Er verhält sich wie eine leere Anweisung, also wie ein Semikolon. Es gibt innere und äussere Blöcke. Blöcke fassen Anweisungen zusammen.
-\subsection{Datentypen, Variablen und Zuweisungen}
+\section{Datentypen, Variablen und Zuweisungen}
 Java speichert Variablen. Eine Variable ist ein reservierter Speicherbereich und belegt eine feste Anzahl von Bytes. Variablen und Ausdrücke haben einen \textbf{Datentyp} und einen \textbf{Datenwert}. Der Datentyp bestimmt die zulässigen Operationen. Java ist eine streng typisierte Programmiersprache. Datentypen werden unterteilt in \textbf{primitive Datentypen} (Zahlen, Unicode-Zeichen und Wahrheitswerte) und \textbf{Referenztypen} (Zeichenketten, Datenstrukturen, Zwergpinscher) und Bytecode durch den Compiler einfacher erzeugt.
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{lll}
 \hline
-Typ&Belegung (Wertebereich)\\\hline
-boolean&\texttt{true} oder \texttt{false}\\
-char& 16-Bit-Unicode-Zeichen (0x0000 ... 0xFFFF)\\
-byte&$-2^7$ bis $2^7-1$\\
-short&$-2^{15}$ bis $2^{15}-1$\\
-int&$-2^{31}$ bis $2^{31}-1$ \\
-long&$-2^{63}$ bis $2^{63}-1$\\
-float&$1,4023\cdot 10^{-45} \dotso 3,4028\cdot10^{38}$\\
-double&$4,9406\cdot 10^{-324} \dotso 1,7976\cdot 10^{308}$\\\hline
+Typ&Grösse&Belegung (Wertebereich)\\\hline
+boolean&1 Bit&\texttt{true} oder \texttt{false}\\
+char& 16Bit&$\text{0x0000 \dotso 0xFFFF}$\\\hline
+byte*&8 Bit&$-2^7$ bis $2^7-1$\\
+short*&16 Bit&$-2^{15}$ bis $2^{15}-1$\\
+int*&32 Bit&$-2^{31}$ bis $2^{31}-1$ \\
+long*&64 Bit&$-2^{63}$ bis $2^{63}-1$\\\hline
+float&32 Bit&$1,4023\cdot 10^{-45} \dotso 3,4028\cdot10^{38}$\\
+double&64 Bit&$4,9406\cdot 10^{-324} \dotso 1,7976\cdot 10^{308}$\\\hline
 \end{tabular}
-\caption{Java-Datentypen}
+\caption{Java-Datentypen, Grössen und Formate. *\textit{Zweierkomplement}}
 \end{table}
 \noindent Es gibt mehr negative Werte als positive Werte, das liegt an der Kodierung im Zweierkomplement. Bei \textbf{\texttt{float}} und \textbf{\texttt{double}} ist das Vorzeichen nicht angegeben, die Wertebereiche unterscheiden sich nicht, die kleinsten und grössten darstellbaren Zahlen können sowohl positiv als auch negativ sein.
-
-
-
-
-
+\subsection{Variablendeklarationen}
+Mit Variablen lassen sich Daten speichern, die vom Programm gelesen und geschrieben werden können. Variablen müssen deklariert werden. Hinter dem Typnamen folgt der Name der Variablen. Die \textbf{Deklaration} ist eine Anweisung und wird daher mit einem Semikolon abgeschlossen.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/FirstVariable.java}
+Gleich bei der Deklaration lassen sich Variablen mit einem Anfangswert initialisieren. Hinter einem Gleichheitszeichen steht der Wert, der oft ein Literal ist.
+\newline\newline
+Eine Konsoleneingabe. Eine Variante ist die Klasse \texttt{java.util.Scanner}. Folgende Tabelle zeigt die Eingabe von drei verschiedenen Datentypen.
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Eingabe & Anweisung\\\hline
+\texttt{String}&\texttt{String s = new java.util.Scanner(System.in).nextLine();}\\
+\texttt{int}&\texttt{int i = new java.util.Scanner(System.in).nextInt();}\\
+\texttt{double}&\texttt{double d = new java.util.Scanner(System.in).nextDouble();}\\\hline
+\end{tabular}
+\caption{Einlesen einer Zeichenkette, Ganz- und Fliesskommazahl von der Konsole}
+\end{table}
+\noindent Folgendes Beispiel zeigt eine Anwendung aller Eingabenmöglichkeiten mit der Klasse \texttt{java.util.Scanner}.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/SmallConversation.java}
+\subsection{Fliesskommazahlen}
+Java bietet die Datentypen \textbf{\texttt{float}} und \textbf{\texttt{double}}. Fliesskommazahl können einen Vorkommateil und einen Nachkommateil besitzen, die durch einen Dezimalzahl getrennt sind. Standardmässig sind die Fliesskommaliterale vom Typ \textbf{\texttt{double}}. Ein nachgestelltes \textbf{\texttt{f}} oder \textbf{\texttt{F}} zeigt dem Computer an, dass es sich um einen \texttt{float} handelt.
+\newline\newline
+So ist beispielsweise \texttt{1+2+4.0} eine Addition aus \texttt{1+2} dann in \texttt{double} transformiert und anschliessend \texttt{3.0+4.0}. Die Standardbibliothek \textbf{\texttt{java.math}} bietet die Klasse \textbf{\texttt{BigDecimal}} an. Diese Klasse eignet sich gut für gute Genauigkeit wie Währungen.
+\subsection{Ganzzahlige Datentypen}
+Java stellt fünf ganzzahlige Datentypen zur Verfügung: \textbf{\texttt{byte}}, \textbf{\texttt{short}}, \textbf{\texttt{char}}, \textbf{\texttt{int}} und \textbf{\texttt{long}}. Ganzzahlige Datentypen sind immer vorzeichenbehaftet (mit Ausnahme von \texttt{char}). Einen Modifizierer \texttt{unsigned} gibt es nicht. Java reserviert nicht so viele Bits wie benötigt und wählt nicht automatisch den passenden Wertebereich. Dabei ist \textbf{\texttt{System.out.println( 122323423434525345345435);}} fehlerbehaftet. Der Datentyp \textbf{\texttt{int}} ist in Java standardmässig.
+\newline\newline
+An das Ende von Ganzzahlliteralen vom Typ \textbf{\texttt{long}} wird ein \textbf{\texttt{l}} oder ein \textbf{\texttt{L}} gesetzt. Dabei wird \textbf{\texttt{System.out.println( 122323423434525345345435L);}} gültig.
+\newline\newline
+Ein \textbf{\texttt{byte}} ist ein Datentyp mit einem kleineren Wertebereich. Eine Initialisierung \textbf{\texttt{byte b = 200;}} ist fehlerbehaftet. Eine explizite Typumwandlung lässt Zahlen in einem \textbf{\texttt{byte}} speichern und zwar \textbf{\texttt{byte b = (byte) 200;$\Longrightarrow$ -56}}.
+\newline\newline
+Der Datentyp \textbf{\texttt{short}} stehen 16 Bits, (1 Bit für das Vorzeichen und 15 Bit für die Zahlen) Speicher zur Verfügung. Ein \texttt{short} ohne Vorzeichen kann folgendermassen initialisiert werden: \textbf{\texttt{short s = (short) 3300;$\Longrightarrow$ -32536}}
+\subsection{Wahrheitswerte}
+Der Datentyp \textbf{\texttt{boolean}} beschreibt einen Wahrheitswert, der entweder \textbf{\texttt{true}} oder \textbf{\texttt{false}} ist. Diese sind reservierte Wörter und bilden neben konstanten Strings und primitiven Datentypen Literale. Numerische Werte werden nicht als Wahrheitswerte interpretiert. Der boolesche Typ wird für Bedingungen, Verzweigungen oder Schleifen benötigt. Ein Wahrheitswerte ergibt sich aus Vergleichen.
+\subsection{Unterstriche in Zahlen}
+Eine Variante um grosse Zahlen mit viele Nullen zu schreiben ist es, Unterstriche in Zahlen einzusetzen, denn ein Unterstrich gliedert die Zahl in Blöcke. Unterstriche machen Tausender-Blöcke gut sichtbar. Hilfreich ist die Schreibweise auch bei Literalen in Binär- und Hexadezimaldarstellung. Mit \textbf{\texttt{0b}} beginnt ein Literal in Binärschreibweise und mit \textbf{\texttt{0x}} beginnt ein Literal in Hexadezimalschreibweise. Zwei aufeinanderfolgende Unterstriche sind aber nicht erlaubt und er darf nicht am Anfang stehen.
+\subsection{Alphanumerische Zeichen}
+Der alphanumerische Datentyp \textbf{\texttt{char}} ist 2 Byte gross und nimmt ein Unicode-Zeichen auf. Ein \texttt{char} ist nicht vorzeichenbehaftet. Die Literale werden in Hochkommata (nicht Anführungszeichen) gesetzt. Ein \texttt{char} kann automatisch in ein \texttt{int} konvertiert werden.
+\subsection{Initialisierung von lokalen Variablen}
+Die Laufzeitumgebung bzw. der Compiler initialisiert lokale Variablen nicht automatisch mit einem Nullwert bzw. einen \texttt{false}. Sind Variablen nicht initialisiert, so gibt es Fehlermeldungen.
+\section{Ausdrücke, Operanden und Operatoren}
+Mathematische Ausdrücke bestehen aus \textbf{Operanden} und \textbf{Operatoren}. Ein Operand ist eine Varaible, ein Literal oder Rückgabe eines Methodenaufrufs. Die Operatoren verknüpfen die Operanden. Je nach Anzahl der Operanden unterscheidet man folgende Arten von Operatoren:
+\begin{itemize}
+\item Ist ein Operator auf genau einem Operanden definiert, so nennt er sich unärer Operator. Bsp: Negatives Vorzeichen.
+\item Die üblichen Operatoren für mathematische Ausdrücke sind binäre Operatoren.
+\item Das Fragezeichen-Operator für bedingte Ausdrücke ist ein tertiäres Operator.
+\end{itemize}
+\subsection{Zuweisungsoperator}
+Das Gleichheitszeichen \textbf{\texttt{=}} dient in Java der Zuweisung. Der Zuweisungsoperator ist ein binärer Operator, bei dem auf der linken Seite due zu belegende Variable steht und auf der rechten Seite ein Ausdruck. Erst nach dem Auswerten des Ausdrucks kopiert der Zuweisungsoperator das Ergebnis in die Variable. Division durch Null, so gibt es keinen Schreibzugriff auf die Variable. Zuweisungen können geschachtelt werden.
+\subsection{Arithmetische Operatoren}
+Ein arithmetischer Operator verknüpft die Operanden mit den Operatoren Addition (\textbf{\texttt{+}}), Subtraktion (\textbf{\texttt{-}}), Multiplikation (\textbf{\texttt{*}}), Division (\textbf{\texttt{/}}) und den Rest-Operator (\textbf{\texttt{\%}}). Die arithmetische Operatoren sind binär.
+\newline\newline
+Bei Ausdrücken mit unterschiedlichen numerischen Datentypen, bringt der Compiler vor der Anwendung der Operation alle Operanden auf den umfassenderen Typ. Vor der Auswertung von \texttt{1+2.0} wird die Ganzzahl \texttt{1} in ein \texttt{double} konvertiert und dann die Addition vorgenommen - das Ergebnis ist auch vom Typ \texttt{double}. Das nennt sich \textbf{numerische Umwandlung}. Die Operation wird ausgeführt, und der Ergebnistyp entspricht dem umfassenden Typ.
+\newline\newline
+Der binäre Operator bildet den Quotienten aus Dividend und Divisor. Die Division ist für Ganzzahlen und für Fliesskomazahlen definiert. Bei der Ganzzahldivision wird zu null hin gerundet und das Ergebnis ist keine Fliesskomazahl. Den Datentyp des Ergebnisses bestimmen die Operanden und nicht der Operator. Soll das Ergebnis vom Typ \texttt{double} sein, muss mindestens ein Operand ebenfalls \text{double} sein.
+\subsection{Der Restwert-Operator \%}
+Der Restwert-Operator liefert der Rest einer Division zweier Ganzzahlen und Fliesskomazahlen. Die DIvision und der Restwert richten sich nach einer einfachen Formel: \texttt{(int)(a/b)*b+(a\%b)=a}. Das Ergebnis ist nur dann negativ, wenn der Dividend negativ ist; das Ergebnis ist nur dann positiv, wenn der Dividend positiv ist. Um mit \texttt{value\%2 == 1} zu testem, ob \texttt{value} eine ungerade Zahl ist, muss \texttt{value} positiv sein.
+\subsection{Präfix- oder Postfix-Inkrement und -Dekrement}
+Die Operatoren \textbf{\texttt{++}} und \textbf{\texttt{--}} kürzen die Programmzeilen zum Inkrement und Dekrement ab. Eine lokale Variable muss allerdings vorher initialisiert sein, da ein Lesezugriff vor einem Schreibzugriff stattfindet. Beide Operatoren erfüllen somit zwei Aufgaben: Neben der Wertrückgabe gibt es eine Veränderung der Variablen.
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\hline
+&Präfix&Postfix\\\hline
+Inkrement & Prä-Inkrement, \textbf{\texttt{++i}}&Post-Inkrement, \textbf{\texttt{i++}}\\
+Dekrement & Prä-Dekrement, \textbf{\texttt{--i}}&Post-Dekrement, \textbf{\texttt{i--}}\\\hline
+\end{tabular}
+\caption{Präfix- oder Postfix-Inkrement und -Dekrement}
+\end{table}
+\noindent Die beiden Operatoren liefern einen Ausdruck und geben daher einen Wert zurück. Es macht jedoch einen feinen Unterschied, wo dieser Operator platziert wird: Er kann vor der Variablen stehen, wie \texttt{++i} oder dahinter wie \texttt{i++}. Der \textbf{Präfix-Operator} verändert die Variable vor der Auswertung des Ausdrucks, und der \textbf{Postfix-Operator} verändert die Variable nach der Auswertung des Ausdrucks.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/Prefixen.java}
+\subsection{Auswertung bei Array-Zugriffen}
+Falls die linke Seite beim Verbundoperator ein Array-Zugriff ist, wird die Indexberechnung nur einmal vorgenommen. Dies ist wichtig beim Einsatz vom Präfix-/Postfix-Operator oder von Methodenaufrufen, die Nebenwirkungen besitzen, also etwa Zustände wie einen Zähler verändern.
+\subsection{Zuweisung mit Operation (Verbundoperator)}
+Zuweisungen lassen sich mit numerischen Operatoren kombinieren. Für einen binären Operator (symbolisch \textbf{\texttt{\#}} genannt) im Ausdruck \textbf{\texttt{a = a\#(b)}} kürzt der Verbundoperator den Ausdruck zu \textbf{\texttt{a\#b}} ab. Der Verbundoperator erlaubt eine kompakte Schreibweise.
+\subsection{Relationale und Gleichheitsoperatoren}
+Relationale Operatoren sind Vergleichsoperatoren, die Ausdrücke miteinander vergleichen und einen Wahrheitswert vom Typ \texttt{boolean} ergeben. Die numerische Vergleiche sind: grösser (\textbf{\texttt{>}}), kleiner (\textbf{\texttt{<}}), grösser/gleich (\textbf{\texttt{$\geq$}}), kleiner/gleich (\textbf{\texttt{$\leq$}}), Gleichheit (\textbf{\texttt{==}}), Ungleichheit (\textbf{\texttt{!=}}).
+\subsection{Logische Operatoren}
+Die Programmierung ist an Bedingungen verknüpft. Diese Bedingungen sind komplex zusammengesetzt, wobei drei Operatoren am häufigsten vorkommen. \textbf{Nicht \texttt{!}:} (Negation) dreht die Aussage um; aus \texttt{wahr} wird \texttt{falsch} und aus \texttt{falsch} wird \texttt{wahr}. \textbf{Und \texttt{\&\&}:} (Konjunktion) beide Aussagen müssen \texttt{wahr} sein, damit die Gesamtaussage \texttt{wahr} wird. \textbf{Oder \texttt{||}:} (Disjunktion) eine der beiden Aussagen muss \texttt{wahr} sein, damit die Gesamtaussage \texttt{wahr} wird. \textbf{Xor \texttt{\^}:} (Exklusives Oder) Operation, die nur dann \texttt{wahr} liefert, wenn genau einer der beiden Operanden \texttt{wahr} ist. Sind beide Operanden gleich, so ist das Ergebnis \texttt{false}.
+\begin{table}[H]
+\centering
+\begin{tabular}{llllll}
+\hline
+boolean a& boolean b&\texttt{!a}&\texttt{a\&\&b}&\texttt{a||b}&\texttt{a\^\,b}\\\hline
+\texttt{true}&\texttt{true}&\texttt{false}&\texttt{true}&\texttt{true}&\texttt{false}\\
+\texttt{true}&\texttt{false}&\texttt{false}&\texttt{false}&\texttt{true}&\texttt{true}\\
+\texttt{false}&\texttt{true}&\texttt{true}&\texttt{false}&\texttt{true}&\texttt{true}\\
+\texttt{false}&\texttt{false}&\texttt{true}&\texttt{false}&\texttt{false}&\texttt{true}\\\hline
+\end{tabular}
+\caption{Verknüpfungen der logischen Operatoren.}
+\end{table}
+\subsection{Rang der Operatoren}
+Neben Plus und Mail gibt es eine Vielzahl von Operatoren., die alle ihre eigenenn Vorrangregeln besitzen. Der Multiplikationsoperator besitzt eine höhere Priorität als der Plus-Operator. Der \textbf{arithmetische Typ} steht für Ganz- und Fliesskommazahlen, der \textbf{integrale Typ} für \texttt{char} und Ganzzahlen und der Eintrag primitiv für jegliche primitiven Datentypen.
+\begin{table}[H]
+\centering
+\begin{tabular}{llll}
+\hline
+Operator&Rang&Typ&Beschreibung\\\hline
+\texttt{++}, \texttt{--}&1&arithmetisch&Inkrement und Dekrement\\
+\texttt{+}, \texttt{-}&1&arithmetisch&unäres Plus und Minus\\
+\texttt{\~}&1&integral&bitweises Komplement\\
+\texttt{!}&1&boolean&logisches Komplement\\
+\texttt{(Typ)}&1&jeder&Cast\\\hline
+\texttt{*}, \texttt{/}, \texttt{\%}&2&arithmetisch&Multiplikation, Division, Rest\\\hline
+\texttt{+}, \texttt{-}&3&arithmetisch&Addition und Subtraktion\\
+\texttt{+}&3&String&String-Konkatenation\\
+\texttt{<<}&4&integral&Verschiebung links\\
+\texttt{>>}&4&integral&Rechtsverschiebung mit Vorzeichenerweiterung\\
+\texttt{>>>}&4&integral&Rechtsverschiebung ohne Vorzeichenerweiterung\\\hline
+\texttt{<}, \texttt{<=}, \texttt{>}, \texttt{>=}&5&arithmetisch&Numerische Vergleiche\\
+\texttt{instanceof}&5&Objekt&Typvergleich\\
+\texttt{==}, \texttt{!=}&6&primitiv&Gleich-/Ungleichheit von Werten\\
+\texttt{==}, \texttt{!=}&6&Objekt&Gleich-/Ungleichheit von Referenzen\\
+\texttt{\&}&7&integral&bitweises Und\\
+\texttt{\&}&7&boolean&logisches Und\\\hline
+\texttt{\^}&8&integral&bitweises XOR\\
+\texttt{\^}&8&boolean&logisches XOR\\
+\texttt{|}&9&integral&bitweises Oder\\
+\texttt{|}&9&boolean&logisches Oder\\\hline
+\texttt{\&\&}&10&boolean&logisches konditionales Und, Kurzschluss\\\hline
+\texttt{||}&11&boolean&logisches konditionales Oder, Kurzschluss\\
+\texttt{?:}&12&jeder&Bedingungsoperator\\
+\texttt{=}&13&jeder&Zuweisung\\
+\texttt{*=}, \texttt{/=}, \texttt{\%=}&13&arithmetisch&Zuweisung mit Operation\\
+\texttt{+=}, \texttt{=}, \texttt{<<=}&13&arithmetisch&Zuweisung mit Operation\\
+\texttt{>>=}, \texttt{>>>=}, \texttt{\&=}&13&arithmetisch&Zuweisung mit Operation\\
+\texttt{\^=}, \texttt{|=}&13&arithmetisch&Zuweisung mit Operation\\
+\texttt{+=}&14&String&Zuweisung mit String-Konkatenation\\\hline
+\end{tabular}
+\caption{Operatoren mit Rangordnung}
+\end{table}
+\subsection{Die Typumwandlung (Casting)}
+Datentypen können konvertiert werden, dies nennt sich \textbf{Typumwandlung}. Java unterscheidet zwischen zwei Arten der Typumwandlung. EIne Typumwandlung hat eine sehr hohe Priorität. DAher muss der Ausdruck gegebenfalls geklammert werden.
+\begin{itemize}
+\item \textbf{Implizite Typumwandlung:} Daten eines kleineren Datentyps werden automatisch dem grösseren angepasst. Der Compiler nimmt die Anpassung selbständig vor.
+\item \textbf{Explizite Typumwandlung:} Ein grösserer Typ kann einem kleineren Typ mit möglichem Verlust von Informationen zugewiesen werden.
+\end{itemize}
+Werte der Datentypen \texttt{byte} und \texttt{short} werden bei Rechenoperationen automatisch in den Datentyp \texttt{int} umgewandelt. Ist ein Operand vom Datentyp \texttt{long}, dann werden alle Operanden auf \texttt{long} erweitert. Wird aber \texttt{short} oder \texttt{byte} als Ergebnis verlangt, dann ist dieses durch einen expliziten Typecast anzugeben, und nur die niederwertigen Bits des Ergebniswerts werden übergeben.
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+Vom Typ&in den Typ\\\hline
+\texttt{byte} (8 Bit)&\texttt{short}, \texttt{int}, \texttt{long}, \texttt{float}, \texttt{double}\\
+\texttt{short} (16 Bit)&\texttt{int}, \texttt{long}, \texttt{float}, \texttt{double}\\
+\texttt{char} (16 Bit)&\texttt{int},\texttt{long}, \texttt{float}, \texttt{double}\\
+\texttt{int} (32 Bit)&\texttt{long}, \texttt{float}, \texttt{double}\\
+\texttt{long} (64 Bit)&\texttt{float}, \texttt{double}\\
+\texttt{float} (32 Bit)&\texttt{double}\\
+\texttt{double} (64 Bit)&\texttt{double}\\\hline
+\end{tabular}
+\caption{Implizite Typumwandlungen}
+\end{table}
+\noindent Die Anpassung ist eine Erweiterung des Wertebereichs (widening conversion). Der Typ \texttt{boolean} taucht nicht auf, er lässt sich in keinen anderen primitiven Typ konvertieren. Dass ein \texttt{long} auf ein \texttt{double} gebracht werden kann bzw. ein \texttt{int} auf ein \texttt{float} ist als Fehler in der Java zu sehen, denn es gehen Informationen verloren. Ein \texttt{double} kann die 64 Bit für Ganzzahlen nicht effizient nutzen wie ein \texttt{long}.
+\newline\newline
+Die explizite Anpassung engt einen Typ ein (narrowing conversion). Der gewünschte Typ für eine Typumwandlung wird vor den umzuwandelnden Datentyp in Klammern gesetzt. Bei jeder expliziten Typumwandlung geht Information verloren.
+\newline\newline
+Bei der expliziten Typumwandlung von \texttt{double} und \texttt{float} in einen Ganzzahltyp kann es selbstverständlich zum Verlust von Genauigkeit kommen sowie zur Einschränkung des Wertebereichs. Bei der konvertierung von Fliesskommazahlen verwendet Java eine Rundung gegen null, schneidet also schlicht den Nachkommaanteil ab.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/Typumwandlung.java}
+Die String-Konkatenation ist strikt von links nach rechts und natürlich nicht kommutativ wie die numerische Addition. Besteht der Auddruck aus mehreren Teilen, so muss die Auswertungsreihenfolge beachtet werden, andernfalls kommt es zu seltsamen Zusammensetzungen.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/PlusString.java}
+Nur eine Zeichenkette in doppelten Anführungszeichen ist ein String, und der Plus-Operator entfaltet seine besondere Wirkung. Ein einzelnes Zeichen in einfachen Hochkommata konvertiert Java nach den Regeln der Typumwandlung bei Berechnungen in ein \texttt{int} und Additionen sind Ganzzahl-Additionen.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/PlusZeichen.java}
+\section{Bedingte Anweisungen}
+\subsection{Verzweigung mit der \texttt{if}-Anweisung}
+Die \textbf{\texttt{if}}-Anweisung besteht aus dem Schlüsselwort \texttt{if}, dem zwingend ein Ausdruck mit dem Typ \texttt{boolean} in Klammern folgt. Es folgt eine Anweisung, die oft eine Blockanweisung ist.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/WhatsYourNumber.java}
+Ist das Ergebnis in der Bedingung \texttt{true}, so werden die Anweisungen in der Fallunterscheidung ausgeführt, sonst werden die \text{else}-Anweisungen ausgeführt. Eine Fallunterscheidung hat kein Semikolon. \texttt{if} und \texttt{if-else}-Anweisungen werden geschachtelt (kaskadiert).
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/IsLeapYear.java}
+Die eingerückten Verzweigungen nennen sich auch angehäufte \texttt{if}-Anweisungen oder \texttt{if}-Kaskade.
+\subsection{Der Bedingungsoperator}
+Der Bedingungsoperator, auch Konditionaloperator, erlaubt es, den Wert eines Ausdrucks von einer Bedingung abhängig zu machen, ohne dass dazu eine \texttt{if}-Anweisung verwendet werden muss. Die Operanden sind durch \textbf{\texttt{?}} und \textbf{\texttt{:}} voneinander getrennt.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/BedingungsOperator.java}
+Drei Ausdrücke kommen in Bedingunsoperator vor. Der erste Ausdruck muss vom Typ \texttt{boolean} sein. Der Bedingungsoperator kann eingesetzt werden, wenn der zweite und dritte Operand ein numerischer Typ, boolescher Typ oder Referenztyp sind.
+\subsection{Die \texttt{switch}-Anweisung}
+Eine Kurzform für speziell gebaute, angehäufte \texttt{if}-Anweisungen bietet \textbf{\texttt{switch}}. Es gibt eine Reihe von unterschiedlichen Sprungzeilen, die mit \textbf{\texttt{case}} markiert sind. Die \texttt{switch}-Anweisung erlaubt die Auswahl vin Ganzzahlen, Wrapper-Typen, Aufzählungen und Strings.
+\lstinputlisting[language=Java]{../../PROJEKTE/000001HelloWorld/src/Calculator.java}
 
 
 
