@@ -1,0 +1,17 @@
+>> x=[-pi./2:0.3:pi./2];
+>> y=[-pi./2:0.3:pi./2];
+>> [X,Y]=meshgrid(x,y);
+>> z=[cos(Y).*sin(X)];
+>> subplot(2,2,1)
+>> surf(x,y,z)
+>> view(3)
+>> subplot(2,2,2)
+>> surf(x,y,z)
+>> view(25,-10)
+>> subplot(2,2,3)
+>> surf(x,y,z)
+>> view(0,0)
+>> subplot(2,2,4)
+>> surf(x,y,z)
+>> view(-40,-25)
+>> colormap(jet)

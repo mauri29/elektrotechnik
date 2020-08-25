@@ -1,0 +1,117 @@
+\section{Grundgesetze im Zeitbereich}
+Der Strom und die Spannung sollen beliebige Zeitabhängigkeit aufweisen. Die Grossbuchstaben werden für konstante Grössen (\textbf{DC}) und die Mittelwerte bzw. Effektivwerte verwendet. Formal wird dies durch folgende Schreibweise ausgedrückt
+\begin{equation}
+\boxed{
+\begin{array}{ll}
+i\left(t\right):&\text{Momentanwert des Stromes}\\
+u\left(t\right):&\text{Momentanwert der Spannung}\\
+p\left(t\right):&\text{Momentanwert der Leistung}\\
+\end{array}
+}
+\end{equation}
+Wird elektrische Energie einem elementaren Netzwerkelement (1-Tor) zugeführt, so sind drei grundsätzliche Fälle zu unterscheiden.
+\begin{itemize}
+\item Wird die Energie verbraucht (in Wärme umgewandelt), so ist das Element ein \textbf{reiner Widerstand}.
+\item Wird die Energie im magnetischen Feld gespeichert, so handelt es sich um eine \textbf{Spule}.
+\item Wird die Energie im elektrischen Feld gespeichert, so ist das Element ein \textbf{Kondensator}.
+\end{itemize}
+Die neue Elemente sind \textbf{Energiespeicher}. Beim Füllen der Speicher wirken die Spule und Kondensator als Verbraucher. Beim Entleeren wirken die Spule und Kondensator als Quelle. Da keine Energie verloren geht, nennt man diese Elemente \textbf{verlustlose Elemente}.
+\newline\newline
+Bei \textbf{idealen Elementen} bleibt die Energie beliebig lang gespeichert, für diesen Zustand werden die Klemmen beim Kondensator offen gelassen (konstante Spannung) und bei der Spule kurzgeschlossen (konstanter Strom).
+\subsection{Widerstand}
+Strom $i\left(t\right)$ und Spannung $u\left(t\right)$ sind zueinander proportional. Der Proportionalitätsfaktor ist der Widerstandswert $R$. Das \textbf{ohmsche Gesetz am Widerstand} lautet
+\begin{equation}
+\boxed{u_R\left(t\right)=R\cdot i\left(t\right)}\quad \boxed{i\left(t\right)=\dfrac{u_R\left(t\right)}{R}}
+\end{equation}
+\subsection{Spule}
+Ein zeitlich ändernder Strom in einer Drahtschleife erzeugt ein zeitlich änderndes Magnetfeld. Diese Flussänderung induziert in der Drahtschleife ein elektrisches Gegenfeld $\overrightarrow{E}$, das der ursprünglichen Stromänderung entgegenwirkt.
+\newline\newline
+Die induzierte Spannung ist proportional zur zeitlichen Änderung des Stromes. Die Proportionalitätskonstante $L$ heisst \textbf{Induktivität} und wird in Henry H angegeben. Das \textbf{ohmsche Gesetz an der Spule} lautet
+\begin{equation}
+\boxed{u_L\left(t\right)=L\cdot \dfrac{\text{d}}{\text{d}t}\Big[i\left(t\right)\Big]}\quad \boxed{i\left(t\right)=\dfrac{1}{R}\cdot \displaystyle \int_0^tu_L\left(\tau\right)\,\text{d}\tau+i\left(t=0\right)}
+\end{equation}
+Das Phänomen bei der Spule wird mit einer der Maxwell'schen Gleichungen begründet. Selbstinduktion bedeutet, dass ein Stromanstieg oder Abfall behindert wird. Die Spule wehrt sich gegen eine Änderung des Stromes.
+\subsection{Kondensator}
+Der Kondensator besteht aus zwei Leitern, die durch einen Isolator getrennt sind. Eine solche Anordnung ist in der Lage, elektrische Ladungen zu speichern. Das \textbf{ohmsche Gesetz am Kondensator} lautet
+\begin{equation}
+\boxed{i_C\left(t\right)=C\cdot \dfrac{\text{d}}{\text{d}t}\Big[u_C\left(t\right)\Big]}\quad \boxed{u_C\left(t\right)=\dfrac{1}{C}\cdot \underbrace{\displaystyle \int_0^ti\left(\tau\right)\,\text{d}\tau+u_C\left(t=0\right)}_{q_C\left(t\right)}}\quad \boxed{q_C\left(t\right)=C\cdot u_C\left(t\right)}
+\end{equation}
+Die Proportionalitätskonstante zwischen der Ladung und der Spannung ist die \textbf{Kapazität} $C$ und wird in Farad F angegeben. Die Elemente Kondensator und Spule sid zueinander dual.
+\subsection{Momentanleistung und Energie}
+Die Leistung wird als Produkt von Strom und Spannung definiert, wobei jetzt aber Strom und Spannung zeitabhängig sind. Man bezeichnet diese Leistung als \textbf{Momentanleistung}, wird in Watt W angegeben und lautet
+\begin{equation}
+\boxed{p\left(t\right)=u\left(t\right)\cdot i\left(t\right)}
+\end{equation}
+Im allgemeinen Fall wird auch $p\left(t\right)$ eine zeitabhängige Funktion. Der Grossbuchstabe $P$ wird für konstante Leistung oder mittlere Leistung verwendet.
+\newline\newline
+Für die Energie definiert man
+\begin{equation}
+\boxed{w\left(t\right)=\displaystyle \int_0^tp\left(\tau\right)\,\text{d}\tau+w\left(t=0\right)}
+\end{equation}
+Ob ein 1-Tor momentan aktiv oder passiv wirkt, kann wiederum mit dem Vorzeichen von $p\left(t\right)$ entschieden (Zählpfeile beachten) werden. Ist ein 1-Tor mit dem VZS bepfeilt, so bedeuten
+\begin{itemize}
+\item $p\left(t\right)>0$, das 1-Tor ist für diese Zeitpunkte eine \textbf{Last} (nimmt Leistung auf)
+\item $p\left(t\right)<0$, das 1-Tor ist für diese Zeitpunkte eine \textbf{Quelle} (gibt Leistung ab)
+\end{itemize}
+\section{Periodische Zeitabhängigkeit}
+\subsection{Definitionen und Begriffe}
+Die \textbf{periodischen Funktionen} bilden eine wichtige Klasse innerhalb der Funktionen mit beliebiger Zeitabhängigkeit. Bei einer periodischen Zeitfunktion wiederholt sich der Verlauf der zeitlichen Änderung nach Ablauf einer Periodendauer $T$. Mit $n$ als ganzer Zahl gilt also für eine periodische Funktion allgemein
+\begin{equation}
+\boxed{s\left(t\right)=s\left(t+nT\right)}
+\end{equation}
+$s\left(t\right)$ ist die neutrale Bezeichnung für irgendeine elektrische Grösse wie Strom $i\left(t\right)$, Spannung $u\left(t\right)$ oder Leistung $p\left(t\right)$. Handelt es sich um eine sinus- oder cosinusförmige Zeitabhängigkeit, so spricht man von \textbf{harmonischer Zeitabhängigkeit} oder \textbf{harmonische Funktionen}. Die allgemeine harmonisch zeitabhängige Spannung lautet
+\begin{equation}
+\boxed{u\left(t\right)=\hat{U}\cdot \cos\left(\omega t+\varphi_0\right)}\quad \boxed{\omega=\dfrac{2\pi}{T}=2\pi f}
+\end{equation}
+wobei $u$ der Momentanwert in Volt V, $\hat{U}$ die Amplitude in Volt V, $\omega$ die Kreisfrequenz in $\text{rad s}^{-1}$, $\varphi_0$ der Nullphasenwinkel in $\text{rad}$ und $f$ die Frequenz in Herz Hz.
+\subsection{Mittelwerte}
+Man unterscheidet algemein für zeitabhängige periodische Wechselgrössen folgende Kennwerte
+\subsubsection{Linearer Mittelwert}
+Dieser lineare Mittelwert wird auch als \textbf{arithmetischer Mittelwert} bzw. \textbf{DC-Anteil} bezeichnet. Für harmonische Zeitfunktionen ist der Wert Null. Der lineare Mittelwert lautet
+\begin{equation}
+\boxed{\overline{x}=\dfrac{1}{T}\cdot \displaystyle \int_0^Tx\left(t\right)\,\text{d}t}
+\end{equation}
+\subsubsection{Betragsmittelwert}
+Die Wechselgrösse wird zuerst gleichgerichtet und anschliessend gemittelt. Bei elektrolytischen Vorgängen ist dieser Mittelwert ebenfalls von Bedeutung und heisst ach elektrolytischer Mittelwert. Der \textbf{Betragsmittelwert} lautet
+\begin{equation}
+\boxed{\Big\vert\overline{x}\Big\vert=\dfrac{1}{T}\cdot \displaystyle \int_0^T\Big\vert x\left(t\right)\Big\vert\,\text{d}t}
+\end{equation}
+\subsubsection{Effektivwert oder Quadratischer Mittelwert}
+Berechnet man an einem ohmschen Widerstand die Momentanleistung: $p\left(t\right)=i^2\cdot R$ oder $p\left(t\right)=u^2/R$. Strom und Spannung treten \textbf{quadratisch} auf. Durch Mittelwertbildung der Leistung $p\left(t\right)$ tritt die \textbf{mittlere Leistung} $P$ und erhält
+\begin{equation}
+\boxed{P=\overline{p\left(t\right)}=\dfrac{1}{T}\cdot \displaystyle \int_0^Tp\left(t\right)\,\text{d}t}
+\end{equation}
+Die mittlere Leistung $P$ ist nun massgebend für die \textbf{Wärmewirkung} oder die umgesetzte \textbf{Wirkleistung} $P$. Denkt man sich einen Gleichstrom $I$ so, dass die Gleichstromleistung identisch mit obiger mittlerer Leistung wird. Die Grösse dieses fiktiven Gleichstroms $I$ bezeichnet man als \textbf{Effektivwert} $I_{\text{eff}}$ des Wechselstromes $i\left(t\right)$.
+\begin{equation}
+\boxed{
+I^2\cdot R=\dfrac{1}{T}\cdot \displaystyle \int_0^TR\cdot i^2\left(t\right)\,\text{d}t\Longrightarrow I_{\text{eff}}=\sqrt{\dfrac{1}{T}\cdot \displaystyle \int_0^Ti^2\left(t\right)\,\text{d}t}
+}
+\end{equation}
+Eine analoge Rechnung mit der Spannung $u\left(t\right)$, so erhält man für den \textbf{Effektivwert} $U_{\text{eff}}$
+\begin{equation}
+\boxed{\dfrac{U^2}{R}=\dfrac{1}{T}\cdot \displaystyle \int_0^T\dfrac{u^2\left(t\right)}{R}\,\text{d}t\Longrightarrow U_{\text{eff}}=\sqrt{\dfrac{1}{T}\cdot \displaystyle \int_0^Tu^2\left(t\right)\,\text{d}t}}
+\end{equation}
+Die Wirkleistung $P$ ist der lineare Mittelwert der periodischen Momentanleistung $p\left(t\right)$. Bei einem Widerstand ist die Wirkleistung $P$ proportional zum Quadrat des Effektivwertes $P\approx I_{\text{eff}}^2$ bzw. $P\approx U_{\text{eff}}^2$
+\newline\newline
+Übliche Strom- und Spannungsmessgeräte sind immer so ausgelegt, dass sie für harmonische Zeitabhängigkeit den Effektivwert anzeigen, obwohl die interne Signalverarbeitung z.B. den Betragsmittelwert misst. Misst man mit einem solchen Messgerät nichtharmonische Zeitfunktionen wie Dreieck, Rechteck, Sägezahn, usw, so erhält man eine falsche Anzeige.
+\subsubsection{Scheitelfaktor SF}
+Als Scheitelfaktor bezeichnet man ganz allgemein das Verhältnis von Scheitelwert zu Effektivwert. Für \textbf{harmonische Zeitabhängigkeit} beträgt der Scheitelfaktor $SF=\sqrt{2}$. Beim Widerstand ist der Scheitelfaktor gleich gross; für ein beliebiges Eintor kann er unterschiedliche Werte annehmen, wenn die Kurvenformen von Strom und Spannung voneinander abweichen.
+\subsubsection{Formfaktor FF}
+Der Formfaktor stellt das Verhältnis von Effektivwert zu Betragsmittelwert dar und wird gern zur Beurteilung der Kurvenform, insbesondere für nichtharmonische Wechselgrössen, herangezogen. Fpr harmonische Zeitabhängigkeit beträgt der Formfaktor $FF=\pi/(2\sqrt{2})$
+\section{Ein- und Ausschaltvorgänge}
+Im allgemeinen Fall sind der zeitliche Strom- und Spannungsverlauf unbekannte Grössen. Stellt man für ein beliebiges RLC-Netzwerk die Maschengleichung auf und setzt die ohmsche Gesetze ein, so resultiert eine \textbf{Differentialgleichung}. Die Lösung beschreibt die gesuchte Grösse, nämlich die zeitabhängige Spannung oder den zeitabhängigen Strom.
+\subsection{RC-Netzwerke}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

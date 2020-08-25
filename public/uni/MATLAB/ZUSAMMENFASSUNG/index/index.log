@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  18 AUG 2020 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  22 AUG 2020 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,7 +567,13 @@ Overfull \hbox (3.22818pt too wide) in paragraph at lines 104--105
 n \T1/cmtt/m/n/10 x\T1/bch/m/n/10 . Der Be-fehl [][][]
  []
 
-)) (../section/02section.tex [7]
+(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(../../BEISPIELE/bsp1.m
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
+ [7]))) (../section/02section.tex [8]
 Kapitel 2.
 (../subsection/02subsection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--18
@@ -610,7 +616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--18
 
  []
 
-[8
+[9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--24
@@ -622,7 +628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
@@ -637,7 +643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--47
 
  []
 
-[10]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 53--63
 
  []
@@ -668,12 +674,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
-)) (../section/03section.tex
-Underfull \hbox (badness 10000) in paragraph at lines 70--1
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
-[11] [12]
+[12] (../../BEISPIELE/bsp2.m))) (../section/03section.tex [13]
 Kapitel 3.
 (../subsection/03subsection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--28
@@ -741,7 +747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--28
 
  []
 
-[13
+[14
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 29--38
@@ -763,12 +769,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--38
 
  []
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
-[15]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 44--50
 
  []
@@ -816,7 +822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--65
 
  []
 
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 66--71
 
  []
@@ -838,45 +844,52 @@ Overfull \hbox (10.70546pt too wide) in paragraph at lines 66--71
 -er-te 3D-Rotation.
  []
 
-[17]
+[18]
 Overfull \hbox (0.31053pt too wide) in paragraph at lines 72--73
 \T1/bch/m/n/10 In ei-nem 3D-Plot be-zieht sie sich auf die Wer-te der \T1/cmtt/
 m/n/10 z\T1/bch/m/n/10 -Achse. []\T1/cmtt/m/n/10 colorbar('horiz')[]
  []
 
-)) (../section/04section.tex
-Underfull \hbox (badness 10000) in paragraph at lines 74--1
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--1
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--1
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--1
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--1
+Underfull \hbox (badness 10000) in paragraph at lines 74--85
 
  []
 
 
-Overfull \hbox (5.6459pt too wide) in paragraph at lines 74--1
+Overfull \hbox (5.6459pt too wide) in paragraph at lines 74--85
 \T1/bch/m/n/10 wen-det für den Kon-tur-plot \T1/cmtt/m/n/10 N \T1/bch/m/n/10 Hö
 -hen-li-ni-en. []\T1/cmtt/m/n/10 contour(Z,v)[] \T1/bch/m/n/10 und []\T1/cmtt/m
 /n/10 contour(x,y,Z,v)[]
  []
 
-[18] [19]
+[19] (../../BEISPIELE/bsp3.m) (../../BEISPIELE/bsp3a.m [20])
+(../../BEISPIELE/bsp3b.m) (../../BEISPIELE/bsp3c.m) (../../BEISPIELE/bsp3d.m)
+(../../BEISPIELE/bsp3e.m) [21] (../../BEISPIELE/bsp3f.m)
+(../../BEISPIELE/bsp3g.m) (../../BEISPIELE/bsp3h.m) (../../BEISPIELE/bsp3i.m)
+(../../BEISPIELE/bsp3j.m [22]) (../../BEISPIELE/bsp3k.m)
+(../../BEISPIELE/bsp3l.m) (../../BEISPIELE/bsp3m.m) (../../BEISPIELE/bsp3n.m)
+(../../BEISPIELE/bsp3o.m) (../../BEISPIELE/bsp3p.m [23])
+(../../BEISPIELE/bsp3q.m))) (../section/04section.tex [24]
 Kapitel 4.
 (../subsection/04subsection.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
@@ -889,13 +902,6 @@ Overfull \hbox (6.43047pt too wide) in paragraph at lines 7--8
 o-gi-schen Be-din-gung ab-hän-gi-ge Schlau-
  []
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Underfull \hbox (badness 10000) in paragraph at lines 11--28
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--28
 
@@ -911,12 +917,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--28
 
  []
 
-[20
 
-] (../../PROJEKTE/bspif/bspif.m
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
-)
+Underfull \hbox (badness 10000) in paragraph at lines 11--28
+
+ []
+
+[25
+
+] (../../PROJEKTE/bspif/bspif.m)
 Underfull \hbox (badness 10000) in paragraph at lines 29--40
 
  []
@@ -926,7 +934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--40
 
  []
 
-(../../PROJEKTE/bspfor/bspfor.m) (../../PROJEKTE/bspfor/bspfor2.m [21])
+(../../PROJEKTE/bspfor/bspfor.m) (../../PROJEKTE/bspfor/bspfor2.m [26])
 Underfull \hbox (badness 10000) in paragraph at lines 42--51
 
  []
@@ -946,7 +954,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--67
 
  []
 
-(../../PROJEKTE/bspswitch/bspswitch.m [22])
+(../../PROJEKTE/bspswitch/bspswitch.m [27])
 (../../PROJEKTE/bspswitch/bspswitch2.m)
 Underfull \hbox (badness 10000) in paragraph at lines 70--89
 
@@ -992,7 +1000,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--89
 
  []
 
-[23] (../../PROJEKTE/functions/botta.m)
+[28] (../../PROJEKTE/functions/botta.m)
 Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
@@ -1008,7 +1016,7 @@ Overfull \hbox (1.31914pt too wide) in paragraph at lines 94--97
 nier-ten Aus-ga-be-ar-gu-men-te der Funk-
  []
 
-[24] (../../PROJEKTE/bspnargout/bspnargout.m)
+[29] (../../PROJEKTE/bspnargout/bspnargout.m)
 Underfull \hbox (badness 10000) in paragraph at lines 98--101
 
  []
@@ -1033,7 +1041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--112
 
  []
 
-[25])) [26] (../section/01ubung.tex
+[30])) [31] (../section/01ubung.tex
 Kapitel 5.
 (../ubungen/01ubungen.tex
 
@@ -1054,7 +1062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--38
 
  []
 
-[27
+[32
 
 ]
 Overfull \hbox (3.82155pt too wide) in paragraph at lines 44--45
@@ -1062,13 +1070,13 @@ Overfull \hbox (3.82155pt too wide) in paragraph at lines 44--45
 a-fisch dar-ge-stellt wer-
  []
 
-[28]
+[33]
 Overfull \hbox (2.73352pt too wide) in paragraph at lines 65--68
 \T1/bch/m/n/10 her-un-ter-ge-la-den. Dies geht üb-ri-gens auch für klei-ne Pro-
 zes-so-ren und DSPs. 
  []
 
-)) (../section/02ubung.tex [29]
+)) (../section/02ubung.tex [34]
 Kapitel 6.
 (../ubungen/02ubungen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--22
@@ -1079,7 +1087,7 @@ LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
 3.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-) [30
+) [35
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 37--40
@@ -1102,7 +1110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--51
  []
 
 (../../PROJEKTE/ubungm2a/ubungm2a.m)
-<../../PROJEKTE/ubungm2a/ubungm2a.png, id=110, 1124.2pt x 843.15pt>
+<../../PROJEKTE/ubungm2a/ubungm2a.png, id=126, 1124.2pt x 843.15pt>
 File: ../../PROJEKTE/ubungm2a/ubungm2a.png Graphic file (type png)
 <use ../../PROJEKTE/ubungm2a/ubungm2a.png>
 Package pdftex.def Info: ../../PROJEKTE/ubungm2a/ubungm2a.png  used on input li
@@ -1113,8 +1121,8 @@ Overfull \hbox (6.6626pt too wide) in paragraph at lines 57--58
  [] 
  []
 
-[31] (../../PROJEKTE/ubungm2b/ubungm2b.m)
-<../../PROJEKTE/ubungm2b/ubungm2b.png, id=115, 1124.2pt x 843.15pt>
+[36] (../../PROJEKTE/ubungm2b/ubungm2b.m)
+<../../PROJEKTE/ubungm2b/ubungm2b.png, id=130, 1124.2pt x 843.15pt>
 File: ../../PROJEKTE/ubungm2b/ubungm2b.png Graphic file (type png)
 <use ../../PROJEKTE/ubungm2b/ubungm2b.png>
 Package pdftex.def Info: ../../PROJEKTE/ubungm2b/ubungm2b.png  used on input li
@@ -1125,9 +1133,9 @@ Overfull \hbox (6.6626pt too wide) in paragraph at lines 62--63
  [] 
  []
 
-[32 <../../PROJEKTE/ubungm2a/ubungm2a.png (PNG copy)>]
+[37 <../../PROJEKTE/ubungm2a/ubungm2a.png (PNG copy)>]
 (../../PROJEKTE/ubungm2c/ubungm2c.m)
-<../../PROJEKTE/ubungm2c/ubungm2c.png, id=119, 1124.2pt x 843.15pt>
+<../../PROJEKTE/ubungm2c/ubungm2c.png, id=135, 1124.2pt x 843.15pt>
 File: ../../PROJEKTE/ubungm2c/ubungm2c.png Graphic file (type png)
 <use ../../PROJEKTE/ubungm2c/ubungm2c.png>
 Package pdftex.def Info: ../../PROJEKTE/ubungm2c/ubungm2c.png  used on input li
@@ -1138,18 +1146,18 @@ Overfull \hbox (6.6626pt too wide) in paragraph at lines 67--68
  [] 
  []
 
-[33 <../../PROJEKTE/ubungm2b/ubungm2b.png (PNG copy)>]))
-(../section/03ubung.tex [34 <../../PROJEKTE/ubungm2c/ubungm2c.png (PNG copy)>]
+[38 <../../PROJEKTE/ubungm2b/ubungm2b.png (PNG copy)>]))
+(../section/03ubung.tex [39 <../../PROJEKTE/ubungm2c/ubungm2c.png (PNG copy)>]
 Kapitel 7.
 (../ubungen/03ubungen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--36
 
  []
 
-[35
+[40
 
 ]
-<../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.png, id=129, 1124.2pt x 8
+<../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.png, id=145, 1124.2pt x 8
 43.15pt>
 File: ../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.png Graphic file (ty
 pe png)
@@ -1157,9 +1165,9 @@ pe png)
 Package pdftex.def Info: ../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.p
 ng  used on input line 37.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- (../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.m [36 <../../PROJEKTE/ub
+ (../../PROJEKTE/ubungm3wurfparabel/ubungm3wurfparabel.m [41 <../../PROJEKTE/ub
 ungm3wurfparabel/ubungm3wurfparabel.png (PNG copy)>])
-(../../PROJEKTE/ubungm3a/ubungm3a.m [37])
+(../../PROJEKTE/ubungm3a/ubungm3a.m [42])
 
 LaTeX Warning: The counter will not be printed.
              The label is: $\bullet $ on input line 49.
@@ -1180,19 +1188,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
-[38])) [39] (./index.aux) )
+[43])) [44] (./index.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 38 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7884 strings out of 480608
- 110299 string characters out of 5903630
- 711253 words of memory out of 5000000
- 23559 multiletter control sequences out of 15000+600000
+ 8077 strings out of 480608
+ 112769 string characters out of 5903630
+ 717253 words of memory out of 5000000
+ 23691 multiletter control sequences out of 15000+600000
  571844 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,58p,1259b,1828s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,58p,1259b,2334s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></us
@@ -1208,10 +1216,10 @@ ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 live/2020/texmf-dist/fonts/type1/public/cm-super/sfit0800.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on index.pdf (39 pages, 489611 bytes).
+Output written on index.pdf (44 pages, 508341 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

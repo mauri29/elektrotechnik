@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  18 AUG 2020 14:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.21)  24 AUG 2020 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -242,7 +242,17 @@ LaTeX Warning: Command \underline  has changed.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count194
 \l__pdf_internal_box=\box50
-) (./index.aux)
+) (./index.aux
+
+LaTeX Warning: Label `fig_IIIk' multiply defined.
+
+
+LaTeX Warning: Label `fig_IIIs' multiply defined.
+
+
+LaTeX Warning: Label `fig_IIIu' multiply defined.
+
+)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -382,246 +392,553 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--38
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
 [6]
-Overfull \hbox (2.95355pt too wide) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+
+ []
+
+
+Overfull \hbox (2.95355pt too wide) in paragraph at lines 80--86
 \T1/bch/m/n/10 Häufigste Leit-werk-stof-fe sind Kup-fer und Alu-mi-ni-um. Für K
 on-tak-te wer-den Gold,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 158--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+Underfull \hbox (badness 10000) in paragraph at lines 158--165
+
+ []
+
+
+Overfull \hbox (2.43951pt too wide) in paragraph at lines 158--165
+\T1/bch/m/n/10 Bei []\T1/bch/b/n/10 Le-gie-run-gen[] \T1/bch/m/n/10 führt der u
+n-re-gel-mäs-si-ge Git-ter-auf-bau zu ei-ner er-höh-ten Wahr-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--187
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--193
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 1
-99.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-) [10]
-Overfull \hbox (38.07185pt too wide) in paragraph at lines 214--222
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--223
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--223
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--223
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--223
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 
  []
 
 [11]
-Overfull \hbox (8.68015pt too wide) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 200--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--206
+
+ []
+
+
+Overfull \hbox (1.45345pt too wide) in paragraph at lines 207--210
+\T1/bch/m/n/10 ne Bat-te-rie bzw. ein Ak-ku-mu-la-tor mit hin-rei-chend gros-se
+r Ener-gie-re-ser-ve kommt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
+
+ []
+
+<../img/IIId.png, id=49, 448.67625pt x 333.245pt>
+File: ../img/IIId.png Graphic file (type png)
+<use ../img/IIId.png>
+Package pdftex.def Info: ../img/IIId.png  used on input line 220.
+(pdftex.def)             Requested size: 291.63611pt x 216.60667pt.
+[12]
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
+28.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+)
+Overfull \hbox (38.07185pt too wide) in paragraph at lines 243--251
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--252
+
+ []
+
+[13 <../img/IIId.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 253--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--260
+
+ []
+
+<../img/IIIe.png, id=59, 325.215pt x 153.57375pt>
+File: ../img/IIIe.png Graphic file (type png)
+<use ../img/IIIe.png>
+Package pdftex.def Info: ../img/IIIe.png  used on input line 263.
+(pdftex.def)             Requested size: 243.91064pt x 115.18002pt.
+
+Overfull \hbox (0.98946pt too wide) in paragraph at lines 268--269
+\T1/bch/m/n/10 Für die Quel-len ver-wen-det man üb-lich-wer-wei-se das []\T1/bc
+h/b/n/10 Ge-ne-ra-tor-zähl-pfeil-sy-stem[]\T1/bch/m/n/10 ,
+ []
+
+[14 <../img/IIIe.png>]
+<../img/IIIf.png, id=64, 257.96375pt x 163.61125pt>
+File: ../img/IIIf.png Graphic file (type png)
+<use ../img/IIIf.png>
+Package pdftex.def Info: ../img/IIIf.png  used on input line 280.
+(pdftex.def)             Requested size: 128.98155pt x 81.80542pt.
+<../img/IIIg.png, id=65, 218.8175pt x 158.5925pt>
+File: ../img/IIIg.png Graphic file (type png)
+<use ../img/IIIg.png>
+Package pdftex.def Info: ../img/IIIg.png  used on input line 281.
+(pdftex.def)             Requested size: 109.40848pt x 79.29604pt.
+<../img/IIIh.png, id=66, 185.69376pt x 132.495pt>
+File: ../img/IIIh.png Graphic file (type png)
+<use ../img/IIIh.png>
+Package pdftex.def Info: ../img/IIIh.png  used on input line 282.
+(pdftex.def)             Requested size: 92.84665pt x 66.24733pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--290
+
+ []
+
+[15 <../img/IIIf.png> <../img/IIIg.png> <../img/IIIh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--321
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 325--328
+
+ []
+
+<../img/IIIk.png, id=77, 416.55624pt x 142.5325pt>
+File: ../img/IIIk.png Graphic file (type png)
+<use ../img/IIIk.png>
+Package pdftex.def Info: ../img/IIIk.png  used on input line 330.
+(pdftex.def)             Requested size: 312.41641pt x 106.8991pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--338
+
+ []
+
+[17 <../img/IIIk.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 344--348
+
+ []
+
+<../img/IIIm.png, id=82, 166.6225pt x 150.5625pt>
+File: ../img/IIIm.png Graphic file (type png)
+<use ../img/IIIm.png>
+Package pdftex.def Info: ../img/IIIm.png  used on input line 350.
+(pdftex.def)             Requested size: 108.30333pt x 97.86446pt.
+<../img/IIIn.png, id=83, 288.07625pt x 159.59625pt>
+File: ../img/IIIn.png Graphic file (type png)
+<use ../img/IIIn.png>
+Package pdftex.def Info: ../img/IIIn.png  used on input line 351.
+(pdftex.def)             Requested size: 187.24733pt x 103.73631pt.
+<../img/IIIl.png, id=84, 417.56pt x 166.6225pt>
+File: ../img/IIIl.png Graphic file (type png)
+<use ../img/IIIl.png>
+Package pdftex.def Info: ../img/IIIl.png  used on input line 362.
+(pdftex.def)             Requested size: 313.16922pt x 124.96655pt.
+[18 <../img/IIIm.png> <../img/IIIn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
+
+ []
+
+
+Overfull \hbox (10.1677pt too wide) detected at line 372
+[][] [][]
+ []
+
+[19 <../img/IIIl.png>]
+<../img/IIIr.png, id=95, 178.6675pt x 149.55875pt>
+File: ../img/IIIr.png Graphic file (type png)
+<use ../img/IIIr.png>
+Package pdftex.def Info: ../img/IIIr.png  used on input line 387.
+(pdftex.def)             Requested size: 134.00029pt x 112.16878pt.
+ Excluding 'comment' comment.
+<../img/IIIo.png, id=96, 250.9375pt x 168.63pt>
+File: ../img/IIIo.png Graphic file (type png)
+<use ../img/IIIo.png>
+Package pdftex.def Info: ../img/IIIo.png  used on input line 421.
+(pdftex.def)             Requested size: 163.10742pt x 109.60818pt.
+<../img/IIIp.png, id=97, 277.035pt x 234.8775pt>
+File: ../img/IIIp.png Graphic file (type png)
+<use ../img/IIIp.png>
+Package pdftex.def Info: ../img/IIIp.png  used on input line 422.
+(pdftex.def)             Requested size: 152.3697pt x 129.18301pt.
+ [20 <../img/IIIr.png> <../img/IIIo.png> <../img/IIIp.png>]
+<../img/IIIq.png, id=105, 165.61874pt x 172.645pt>
+File: ../img/IIIq.png Graphic file (type png)
+<use ../img/IIIq.png>
+Package pdftex.def Info: ../img/IIIq.png  used on input line 434.
+(pdftex.def)             Requested size: 107.6509pt x 112.21791pt.
+<../img/IIIs.png, id=106, 252.945pt x 128.48pt>
+File: ../img/IIIs.png Graphic file (type png)
+<use ../img/IIIs.png>
+Package pdftex.def Info: ../img/IIIs.png  used on input line 445.
+(pdftex.def)             Requested size: 164.4123pt x 83.511pt.
+ [21 <../img/IIIq.png> <../img/IIIs.png>]
+<../img/IIIt.png, id=112, 338.26375pt x 164.615pt>
+File: ../img/IIIt.png Graphic file (type png)
+<use ../img/IIIt.png>
+Package pdftex.def Info: ../img/IIIt.png  used on input line 456.
+(pdftex.def)             Requested size: 219.86882pt x 106.99847pt.
+<../img/IIIu.png, id=113, 339.2675pt x 163.61125pt>
+File: ../img/IIIu.png Graphic file (type png)
+<use ../img/IIIu.png>
+Package pdftex.def Info: ../img/IIIu.png  used on input line 467.
+(pdftex.def)             Requested size: 220.52126pt x 106.34604pt.
+
+[22 <../img/IIIt.png> <../img/IIIu.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 475--479
+
+ []
+
+
+Overfull \hbox (0.39954pt too wide) in paragraph at lines 475--479
+\T1/bch/m/n/10 teils durch gleich-zei-ti-ge Strom- und Span-nungs-mes-sung und 
+mit Hil-fe des Ohm'-
+ []
+
+
+Overfull \hbox (8.68015pt too wide) in paragraph at lines 483--504
 \T1/bch/m/n/10 Man be-trach-te ein be-lie-bi-ges Netz-werk aus Wi-der-stän-den,
  Spannungs- und Strom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Overfull \hbox (2.72943pt too wide) in paragraph at lines 254--275
+Overfull \hbox (2.72943pt too wide) in paragraph at lines 483--504
 \T1/bch/m/n/10 Die Er-satz-netz-wer-ke sind die []\T1/bch/b/n/10 The-ve-nin'sch
 e Er-satz-schal-tung[] \T1/bch/m/n/10 (ei-ne idea-le Span-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--275
+Underfull \hbox (badness 10000) in paragraph at lines 483--504
 
  []
 
-[12] [13]
-Overfull \hbox (1.22948pt too wide) in paragraph at lines 277--283
+[23]
+Overfull \hbox (1.22948pt too wide) in paragraph at lines 506--512
 \T1/bch/m/n/10 Die bei-den Er-satz-schal-tun-gen nach The-ve-nin und Nor-ton si
 nd voll-stän-dig gleich-
  []
 
 
-Overfull \hbox (7.85347pt too wide) in paragraph at lines 277--283
+Overfull \hbox (7.85347pt too wide) in paragraph at lines 506--512
 \T1/bch/m/n/10 wer-tig. Mit obi-ger Glei-chung kann ei-ne Thevenin-Ersatzschalt
 ung in ei-ner Norton-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--283
+Underfull \hbox (badness 10000) in paragraph at lines 506--512
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--283
+Underfull \hbox (badness 10000) in paragraph at lines 506--512
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--292
+Underfull \hbox (badness 10000) in paragraph at lines 517--521
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 554--558
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 360--363
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
 
  []
 
 
-Overfull \hbox (3.2695pt too wide) in paragraph at lines 360--363
+Overfull \hbox (3.2695pt too wide) in paragraph at lines 589--592
 \T1/bch/m/n/10 Jede Span-nungs-quel-le hat nun einen Se-ri-en-wi-der-stand und 
 kann in ei-ne []\T1/bch/b/n/10 Norton-
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 364--367
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--371
+Underfull \hbox (badness 10000) in paragraph at lines 597--600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--375
+Underfull \hbox (badness 10000) in paragraph at lines 601--604
 
  []
 
-) [17] (./index.aux) ) 
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 605--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--619
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 630--633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--642
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--642
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 651--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--656
+
+ []
+
+) [30]
+Kapitel 3.
+(../subsection/03subsection.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+
+ []
+
+[31
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+
+ []
+
+
+Overfull \hbox (33.94498pt too wide) detected at line 38
+[][] [][] [][]
+ []
+
+
+Overfull \hbox (0.3803pt too wide) in paragraph at lines 44--48
+\T1/bch/m/n/10 Im all-ge-mei-nen Fall wird auch $\OML/cmm/m/it/10 p []$ \T1/bch
+/m/n/10 ei-ne zeit-ab-hän-gi-ge Funk-ti-on. Der Grossbuch-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
+
+ []
+
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
+
+ []
+
+[34]) [35] (./index.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5348 strings out of 480608
- 75680 string characters out of 5903630
- 334619 words of memory out of 5000000
- 21153 multiletter control sequences out of 15000+600000
- 568592 words of font info for 58 fonts, out of 8000000 for 9000
+ 5498 strings out of 480608
+ 77999 string characters out of 5903630
+ 340619 words of memory out of 5000000
+ 21279 multiletter control sequences out of 15000+600000
+ 573125 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,23n,42p,650b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.
-pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on index.pdf (17 pages, 171475 bytes).
+ 41i,23n,42p,905b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on index.pdf (35 pages, 462097 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 207 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

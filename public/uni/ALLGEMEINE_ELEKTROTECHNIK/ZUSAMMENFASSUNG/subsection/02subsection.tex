@@ -24,9 +24,9 @@ Stellt man Kräfte auf Ladungen fest, so ist die Ursache ein \textbf{elektrische
 \newline\newline
 Durch Feldlinien werden elektrische Felder dargestellt. Diese geben in jedem Raumpunkt die Richtung des Feldvektors an. Solche Feldbilder vermitteln einen anschaulichen Überblick über den Verlauf des Feldes.
 \subsection{Arbeit im Feld, Spannung und Potential}
-Für die Verschiebung von Massen im Gravitationsfeld (i.d.R. Potentialfeld) benötigt man Arbeit. Die zu leistende Arbeit von einem Punkt $A$ nach $B$ ist nicht vom Weg abhängig, sondern nur vonder Höhendifferenz zwischen $A$ und $B$.
+Für die Verschiebung von Massen im Gravitationsfeld (i.d.R. Potentialfeld) benötigt man Arbeit. Die zu leistende Arbeit von einem Punkt $A$ nach $B$ ist nicht vom Weg abhängig, sondern nur von der Höhendifferenz zwischen $A$ und $B$.
 \begin{equation}
-\boxed{W_{AB}=\displaystyle \int_A^B\overrightarrow{F}\bullet \text{d}\overrightarrow{s}=q\cdot \underbrace{\displaystyle\int_A^B\overrightarrow{E}\bullet \text{d}\overrightarrow{s}}_{U_{AB}}}
+\boxed{W_{AB}=\displaystyle \int_{P_A}^{P_B}\overrightarrow{F}\bullet \text{d}\overrightarrow{s}=q\cdot \underbrace{\displaystyle\int_{P_A}^{P_B}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}}_{U_{AB}}}
 \end{equation}
 Diese wegunabhängige Arbeit führt zu der Definition der \textbf{elektrischen Spannung}, nämlich Arbeit pro Ladung.
 \begin{equation}
@@ -36,24 +36,29 @@ Für die Spannung $U_{AB}$ wird ein gerichteter Spannungspfeil eingetragen. Der 
 \newline\newline
 Mit der Spannung wird das elektrische Potential eingeführt. Die Spannung wird durch zwei Punkte angegeben, das Potential hingegen wird einem Punkt im Raum zugeordnet. Für die Einführung des Potentials wird ein Punkt im Raum zum sogenannten \textbf{Potentialnullpunkt} bzw. \textbf{Bezugspunkt} erklärt und von diesem Punkt wird die Spannung gemessen. Die Wahl des Bezugspunktes mit $V=0$ ist willkürlich. Für den Zusammenhang zwischen Spannung und Potential gilt folgende \textbf{Potentialdifferenz}, wobei Potential und Spannung dieselbe Einheit Volt $\left([U]=[V]=V\right)$ haben.
 \begin{equation}
-\boxed{U_{AB}=V_A-V_B}
+\boxed{
+\begin{array}{lll}
+U_{AB}=V_A-V_B&=&-\displaystyle \int_{P_0}^{P_A}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}+\displaystyle \int_{P_0}^{P_B}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}\\
+&=&\displaystyle \int_{P_A}^{P_0}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}+\displaystyle \int_{P_0}^{P_B}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}=\displaystyle \int_{P_A}^{P_B}\overrightarrow{E}\bullet \text{d}\overrightarrow{s}
+\end{array}
+}
 \end{equation}
 Liegt eine Ladung $q$ im Punkt $P$, der das Potential $V\left(P\right)$ aufweist, so ergibt folgendes Produkt die potentielle Energie der Ladung gegenüber dem Potentialnullpunkt
 \begin{equation}
 \boxed{E_{\text{pot}}=q\cdot V\left(P\right)}
 \end{equation}
 \subsection{Strom}
-Die Bewegung von elektrischen Ladungsträgern ist der elektrische Strom bzw. \textbf{Ladungsfluss} von Ladungsträger. In einem Leiter, durch dessen Querschnitt die Ladung $Q=n\cdot e$ in der Zeit $t$ hindurchtritt, ist die Stromstärke $I$
+Die Bewegung von elektrischen Ladungsträgern ist der \textbf{elektrische Strom} bzw. \textbf{Ladungsfluss} von Ladungsträger. Die Richtung eines positiven Stromes ist so definiert, dass er von der Elektrode höheren Potentials zur Elektrode niedrigeren Potenttials fliesst. Innerhalb der leitenden Verbindung hat er die gleiche Richtung wie die elektrische Feldstärke. In einem Leiter, durch dessen Querschnitt die Ladung $Q=n\cdot e$ in der Zeit $t$ hindurchtritt, ist die Stromstärke $I$ definiert als
 \begin{equation}
 \boxed{I=\dfrac{Q}{t}}
 \end{equation}
-Einen solchen zeitlich konstanten Strom nennt man \textbf{GHleichstrom}. Einheit der elektrischen Stromstärke ist das Ampere $([I]=\text{A})$. Bezogen auf die Fläche $A$, durch die Strom tritt, ist ferner die \textbf{Stromdichte}
+Einen solchen zeitlich konstanten Strom nennt man \textbf{Gleichstrom}. Einheit der elektrischen Stromstärke ist das Ampere $([I]=\text{A})$. Bezogen auf die Fläche $A$, durch die Strom tritt, ist ferner die \textbf{Stromdichte}
 \begin{equation}
 \boxed{J=\dfrac{I}{A}}
 \end{equation}
-Die nicht zeitlich konstanter elektrische Stromstärke ist definiert als
+Die nicht zeitlich konstanter elektrische Stromstärke ist definiert als die \textbf{momentane Stromstärke} bei einem beliebigen Zeitpunkt $t$
 \begin{equation}
-\boxed{i\left(t\right)=\dfrac{\text{d}q\left(t\right)}{\text{d}t}}
+\boxed{i\left(t\right)=\displaystyle \lim_{\triangle t\rightarrow 0}\dfrac{\triangle Q}{\triangle t}=\dfrac{\text{d}q\left(t\right)}{\text{d}t}}
 \end{equation}
 Man ordnet dem elektrischen Strom eine positive Zählrichtung zu, welche der Bewegungsrichtung positiver Ladungsträger im Leiter entsprechen würde, also vom Pluspol zum Minuspol, und kennzeichnet diese positive Zählrichtung durch einen entsprechenden Zählpfeil.
 \newline\newline
@@ -67,11 +72,25 @@ So ist $R$ der elektrische Widerstand und $G$ der elektrische Leitwert des Zweip
 \begin{equation}
 \boxed{r=\dfrac{\triangle u}{\triangle i}\Longrightarrow \dfrac{\text{d}u}{\text{d}i}}
 \end{equation}
-Die Einheit des Widerstandes ist das Ohm $\left(\Omega\right)$ und die Einheit des elektrischen Leitwerts ist das Siemens $\left(\text{S}\right)$ oder $\left(\Omega^{-1}\right)$. Der elektrische Widerstand ist eine Materialgrösse, d.h. $R\approx l/A$. Für einen linearen Leiter der Länge $l$ mit dem überall gleichen Querschnitt $A$ erhält man
+Die Einheit des Widerstandes ist das Ohm $\left(\Omega\right)$ und die Einheit des elektrischen Leitwerts ist das Siemens $\left(\text{S}\right)$ oder $\left(\Omega^{-1}\right)$.
+\subsection{Spezifische Leitfähigkeit und spezifischer Widerstand}
+Der elektrische Widerstand ist eine \textbf{Materialgrösse}, d.h. $R\approx l/A$. Für einen linearen Leiter der Länge $l$ mit dem überall gleichen Querschnitt $A$ erhält man
 \begin{equation}
 \boxed{R=\dfrac{\rho\cdot l}{A}=\dfrac{l}{\sigma\cdot A}}
 \end{equation}
 So ist $\rho$ mit Einheit $\left([\rho]=\Omega\,\text{m}\right)$ der spazifische Widerstand und $\sigma$ mit Einheit $\left([\sigma]=\text{S}\,\text{m}^{-1}=\Omega^{-1}\,\text{m}^{-1}\right)$ der spezifische Leitwert oder die Leitfähigkeit des Leitermaterials.
+\newline\newline
+Häufigste Leitwerkstoffe sind Kupfer und Aluminium. Für Kontakte werden Gold, Silber und Wolfram eingesetzt und für Heizleiter Chromnickel. Für Messwiderstände werden Manganin und Konstatan wegen ihrer thermischen Eigenschaften verwendet. Der elektrische Widerstand eines Leiters ist temperaturabhängig $R=f\left(\theta\right)$.
+\newline\newline
+Die nichtlineare Temperaturen wird für den unteren Bereich bis $200^{\circ}\,\text{C}$ mit folgendem Ansatz linearisiert, wobei $R_{20}$ der Widerstandswert bei $20^{\circ}\,\text{C}$, $R_W$ der Widerstandswert bei der Temperatur $\theta_W$, $\theta_W$ die Temperatur des Widerstandes in $^{\circ}\,\text{C}$ und $\alpha_{20}$ der Temperaturkoeffizient in $1/^{\circ}\,\text{C}$
+\begin{equation}
+\boxed{R_{\text{W}}=R_{20}\cdot \Big[1+\alpha_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)\Big]}
+\end{equation}
+Für höhere Temperaturen ab $200^{\circ}\,\text{C}$ wird zusätzlich noch ein quadratischer Term in der Näherung eingefügt, wobei $\beta_{20}$ der Temperaturkoeffizient in $\left(1/^{\circ}\,\text{C}\right)^2$
+\begin{equation}
+\boxed{R_{\text{W}}=R_{20}\cdot \Big[1+\alpha_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)+\beta_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)^2\Big]}
+\end{equation}
+Somit sind $\alpha_{20}$ und $\beta_{20}$ temperaturabhängig. Die meisten häufig eingesetzten Metalle haben einen Temperaturbeiwert in der Nähe von $\alpha=0.004\,\text{K}^{-1}$. Widerstände ändern bei einer Temperaturänderung um je $1\,\text{K}$ ihren Wert um etwa $0.4\,\%$.
 \begin{table}[H]
 \centering
 \begin{tabular}{ccc}\hline
@@ -115,17 +134,6 @@ Nb3(Al-Ge)&Supraleiter&$\infty$\\\hline
 \end{tabular}
 \caption{Übersicht der Leitfähigkeiten}
 \end{table}
-\noindent Häufigste Leitwerkstoffe sind Kupfer und Aluminium. Für Kontakte werden Gold, Silber und Wolfram eingesetzt und für Heizleiter Chromnickel. Für Messwiderstände werden Manganin und Konstatan wegen ihrer thermischen Eigenschaften verwendet. Der elektrische Widerstand eines Leiters ist temperaturabhängig $R=f\left(\theta\right)$.
-\newline\newline
-Die nichtlineare Tempearturen wird für den unteren Bereich bis $200^{\circ}\,\text{C}$ mit folgendem Ansatz linearisiert, wobei $R_{20}$ der Widerstandswert bei $20^{\circ}\,\text{C}$, $R_W$ der Widerstandswert bei der Temperatur $\theta_W$, $\theta_W$ die Temperatur des Widerstandes in $^{\circ}\,\text{C}$ und $\alpha_{20}$ der Temperaturkoeffizient in $1/^{\circ}\,\text{C}$
-\begin{equation}
-\boxed{R_{\text{W}}=R_{20}\cdot \Big[1+\alpha_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)\Big]}
-\end{equation}
-Für höhere Temperaturen ab $200^{\circ}\,\text{C}$ wird zusätzlich noch ein quadratischer Term in der Näherung eingefügt, wobei $\beta_{20}$ der Temperaturkoeffizient in $\left(1/^{\circ}\,\text{C}\right)^2$
-\begin{equation}
-\boxed{R_{\text{W}}=R_{20}\cdot \Big[1+\alpha_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)+\beta_{20}\cdot \left(\theta_W-20^{\circ}\,\text{C}\right)^2\Big]}
-\end{equation}
-Somit sind $\alpha_{20}$ und $\beta_{20}$ temperaturabhängig. Die meisten häufig eingesetzten Metalle haben einen Temperaturbeiwert in der Nähe von $\alpha=0.004\,\text{K}^{-1}$. Widerstände ändern bei einer Temperaturänderung um je $1\,\text{K}$ ihren Wert um etwa $0.4\,\%$.
 \begin{table}[H]
 \centering
 \begin{tabular}{llll}
@@ -147,13 +155,46 @@ Novokonstant&$0.22\cdot 10^7$&$-0.01\cdot 10^{-3}$&$-$\\\hline
 \end{tabular}
 \caption{Leitfähigkeiten und Temperaturbeiwerte}
 \end{table}
+\noindent Die \textbf{Temperaturabhängigkeit des spezifischen Widerstandes} wird von verschiedenen Faktoren beeinflusst. Betrachte man zunächst die Metalle mit ihrem relativ regelmässigen Gitteraufbau. Die Beweglichkeit der freien Elektronen ist abhängig von der mittleren freien Weglänge zwischen zwei Zusammenstössen. Der Wert für die Beweglichkeit wird geringer mit abnehmender freier Weglänge. In Abhängigkeit von der Temperatur schwingen die Atome um ihre feste Gleichgewichtslage und zwar umso mehr, je höher die Temperatur wird.
+\newline\newline
+Die Wahrscheinlichkeit der Stösse nehmen durch steigender Temperatur zu, die mittlere freie Weglänge wird kürzer und der spezifische Widerstand steigt an. Der Temperaturkoeffizient $\alpha$ ist daher positiv und liegt bei allen reinen Metallen in ähnlicher Grossenanordnung.
+\newline\newline
+Bei \textbf{Legierungen} führt der unregelmässige Gitteraufbau zu einer erhöhten Wahrscheinlichkeit für Zusammenstösse der Elektronen mit den Gitteratomen. Der spezifische Widerstand ist bei Legierungen daher wesentlicher grösser. Gleichzeitig spielt der Einfluss der thermischen Gitterschwingungen auf die Anzahl der Zusammenstösse nur noch eine untergeordnete Rolle, so dass der Temperaturkoeffizient deutlich geringer ist. Solche Legierungen werden bevorzugt benutzt zur Herstellung temperaturabhängiger Präzisionswiderstände.
+\newline\newline
+Bei \textbf{Halbleitern} nimmt die Beweglichkeit $\mu_e$ der freien Ladungsträger mit steigender Temperatur zwar ebenfalls ab, ihre Zahl pro Volumen steigt aber an, so dass die Leitfähigkeit dennoch zunimmt und der Temperaturkoeffizient einen negativen Zahlenwert besitzt.
+\subsection{Praktische Ausführungsformen von Widerstände}
+Neben dem Widerstandswert sind insbesondere die Herstellungstoleranz, die Temperaturabhängigkeit des Widerstandes, die maximal zulässige Verlustleistung, die Kurzzeitbelastung oder der Dauerbetrieb von besonderer Bedeutung.
+\subsubsection{Festwiderstände}
+Die \textbf{Festwiderstände} haben eine lineare Widerstandscharakteristik und genügen dem Ohm'schen Gesetz. Die Abstufung der Widerstandtswerte entspricht den in den Normen festgelegtem E-Reihen. Die spezielle Kennzeichnung einer E-Reihe durch den betreffenden Zahlenwert gibt an, wie viele Werte innerhalb jeder Dekade liegen. Festwiderstände werden als \textbf{Schicht-}, \textbf{Draht-} oder \textbf{Massewiderstände} hergestellt.
+\newline\newline
+Bei den \textbf{Schichtwiderständen} wird eine dünne Widerstandsschicht aus Kohle oder Metall auf einen zylindrischen Träger aus Keramik oder Glas aufgebracht. An den Enden werden Kappen aufgepresst und mit den Anschlüssen versehen. Zum Schutz wird das Bauelement mit einer Schicht aus Lack oder Kunststoffüberzogen. Zur Herstellung grösserer Widerstandswerte wird die dünne Metall- oder Kohleschicht gewendelt ausgeführt.
+\newline\newline
+Bei höheren Leistungen werden \textbf{Drahtwiderstände} eingesetzt, bei denen der Träger mit einem Draht umwickelt wird. Kleine Widerstandswerte können auf diese Weise leicht hergestellt werden, bei grösseren Werten wird spezieller Widerstandsdraht verwendet. Der Drahtquerschnitt begrenzt den maximal zulässigen Strom und die maximale Verlustleistung wird durch die Wärmeabfuhr, d.h. die Bauteilgrösse und die Ausführung der Oberfläche bestimmt. Zur Reduzierung parasitären Induktivitäten werden die Wicklungen \textbf{bifilar} ausgeführt, d.h. es werden zwei Drähte so nebeneinander gewickelt, dass sie in entgegengesetzter Richtung vom Strom durchflossen werden. Eine weitere Möglichkeit zur Reduzierung der parasitären Induktivitäten besteht darin, den Wickelsinn mehrfach umzudrehen.
+\newline\newline
+Die \textbf{Massenwiderstände} besitzen keinen Träger, sondern bestehen insgesamt aus einem Widerstandsmaterial. Sie werden in verschiedenen Bauformen, bpsw. als Stäbe oder Scheiben, hergestellt.
+\subsubsection{Einstellbare Widerstände}
+Bei einstellbaren Widerständen wird ein Schleifkontakt über das nicht isolierte Widerstandsmaterial bewegt. Bei einem \textbf{Schiebewiderstand} ist der Wickelkörper linear gestreckt, bei einem \textbf{Drehwiderstand} dagegen ringförmig ausgeführt. Üblichwerweise spricht man bei diesen Bauelementen von \textbf{Potentiometern}, wenn sie im Betrieb immer wieder neu eingestellt werden, bzw. von \textbf{Trimmpotentiometern}, wenn sie nur einmal, zum Abgleich einer Schaltung auf einen bestimmten Wert justiert werden.
+\subsection{Weitere Widerstände}
+Für besondere Aufgaben gibt es eine grosse Gruppe von nichtlinearen Widerständen, deren Verhalten von unterschiedlichen physikalischen Grössen abhängen kann.
+\newline\newline
+Zu der \textbf{temperaturabhängigen Widerstände} gehören die \textbf{Heissleiter}, deren Widerstand mit steigender Temperatur kleiner wird. Sie werden als \textbf{NTC} (negative temperature coefficient) bezeichnet. Diese Bauelemente besitzen bei Raumtemperatur einen grosseren Widerstand und begrenzen beim Einschalten eines elektronischen Gerätes dessen Einschaltstrom. Infolge der ohmschen Verluste werden sie stark aufgeheizt, wodurch ihr Widerstand sehr viel kleiner wird. Im Dauerbetrieb einer Schaltung verursachen sie dann lediglich geringe Verluste. Das temperaturabhängige Verhalten ist bei den als \textbf{PTC} (positive temperature coefficient) bezeichneten \textbf{Kaltleitern} genau umgekehrt.
+\newline\newline
+Widerstände, deren Wert von der Spannung abhängt, werden als \textbf{VDR} (voltage dependent resistor) bezeichnet. Sie werden zur Spannungsstabilisierung oder zur Unterdrückung von kurzzeitigen Spannungsspitzen eingesetzt.
+\newline\newline
+Eine weitere Gruppe sind die als \textbf{LDR} (light dependent resistor) bezeichneten lichtabhängigen Widerstände, die für Belichtungsmesse oder bei helligkeitsabhängigen Steuerungen verwendet werden.
 \section{Der einfache Gleichstromkreis}
+\subsection{Definitionen}
+Unter einem \textbf{Zweipol} versteht man ein Bauelement mit zwei Anschlussklemmen. Für die Behandlung von Zweipolen in den Netzwerken ist nur noch ihr \textbf{Klemmenverhalten}, also der Zusammenhang zwischen Strom und Spannung am betreffenden Bauelement, von Interesse, die praktische Realisierung durch eine dreidimensionale Anordnung und die ortsabhängige Verteilung der Feldgrössen spielen keine Rolle mehr. Die Beschreibung erfolgt durch einfache skalare Beziehungen zwischen den an den Klemmen zugänglichen Grössen Strom und Spannung.
+\newline\newline
+Durch die Zusammenschaltung von Bauelementen entstehen \textbf{elektrische Netzwerke}. Zur vollständigen Beschreibung eines Netzwerks muss neben dem Klemmenverhalten aller Komponenten auch die Verknüpfung der Bauelemente untereinander bekannt sein. Die Zusammenschaltung bezeichnet man als \textbf{Topologie}.
+\newline\newline
+Die grafische Darstellung von Netzwerken bezeichnet man als \textbf{Schaltbilder}. zur Darstellung der Bauelemente werden die Schaltsymbole verwendet. Die leitende Verbindung zwischen den Bauelementen wird als idealer Leiter angesehen und spielt bei der Schaltungsanalyse keine Rolle. Die einzelnen Verbindungen sollten möglichst geradlinig, kreuzungsfrei und ohne Richtungsänderungen dargestellt werden. Gleichzeitig sollte die Wirkungsrichtung bzw. die Signalflussrichtung den Normen entsprechend von links nach rechts oder von oben nach unten verlaufen.
 \subsection{Zählpfeile und Zählpfeilrichtungen}
 Zählpfeile oder \textbf{Bezugspfeile} geben an, mit welchem Vorzeichen die einzelnen Strom- und Spannungsgrössen in die Netzwerkgleichungen eingehen. Zählpfeile können skalare Grössen zugeordnet werden.
 \newline\newline
-Der Richtungssinn für den Strom wird in Übereinstimmung mit der Bewegungsrichtung positiver Ladungsträger festgelegt. Der Bezugspfile wird in den Leitungszug gezeichnet. Er kann mit dem Richtungssinn der Stromstärke über-einstimmen oder ihm entgegengerichtet sein.
+Der \textbf{Richtungssinn für den Strom} wird in Übereinstimmung mit der Bewegungsrichtung positiver Ladungsträger festgelegt. Der Bezugspfile wird in den Leitungszug gezeichnet. Er kann mit dem Richtungssinn der Stromstärke über-einstimmen oder ihm entgegengerichtet sein.
 \newline\newline
-Der Bezugssinn einer Spannung zwischen zwei Punkten kann durch die Bezeichnung dieser Punkte angegeben werden. Bei Verwendung eines Bezugspfeils kann der Doppelindex auch entfallen.
+Der \textbf{Bezugssinn einer Spannung} zwischen zwei Punkten kann durch die Bezeichnung dieser Punkte angegeben werden. Bei Verwendung eines Bezugspfeils kann der Doppelindex auch entfallen.
 \begin{equation}
 \boxed{U_A=U_{12}=V_1-V_2}\quad \boxed{U_A=U_{21}=V_2-V_1}
 \end{equation}
@@ -162,37 +203,25 @@ An einem allgemeinen Zweipol (Eintor) kann man die Bezugsrichtungen durch das Ve
 Handelt es sich beim Eintor um einen \textbf{Verbraucher}, so wird das Produkt $UI$ beim VZS positiv und beim EZS negativ. Ist das Eintor aber eine \textbf{Quelle}, so wird das Produkt $UI$ beim VZS negativ und beim EZS positiv.
 \newline\newline
 An jedem Eintor können die Bezugspfeile für $I$ und $U$ beliebig gewählt werden. Häufig wird bei einer Quelle das EZS und bei einem Verbraucher das VZS angewendet. Man spricht dabei von einem gemischten System.
-\subsection{Das ohmsche Gesetz}
-In einem linearen Leiter sind Strom und Spannung zueinander proportional. Bei einem linearen Leiter ist der ihn durchfliessenden Strom der angelegten Spannung proportional und dem Leiterwiderstand gegenüber umgekehrt proportional.
-\begin{equation}
-\boxed{I\left(U\right)=\dfrac{U}{R}=U\cdot G}
-\end{equation}
-Das ohmsche Gesetz ist ein Grundgesetz des elektrischen Stromes in Leitern. Als ohmschen Widerstand bezeichnet man einen idealen Zweipol, bei dem das ohmsche Gesetz unabhängig von äusseren Einflüssen stets erfüllt ist. Ein ohmscher Widerstand ist ein linearer passiver Zweipol: seine $I$-$U$-Kennlinie ist eine Gerade.
-\subsection{Die Kirchhoffschen Gesetze}
-\textbf{Knotensatz:} In jedem Knoten (auch Superknoten) ist die Summe der zufliessenden Ströme gleich der Summe der abfliessenden Ströme.
-\begin{equation}
-\boxed{\displaystyle \sum_{k=1}^nI_k=0}
-\end{equation}
-\textbf{Maschensatz:} Wird in einem Potentialfeld eine Ladung vom Ausgangspunkt $A$ aus bewegt und wieder zurück zum Punkt $A$ gebracht, so ist die verrichtete Arbeit Null und somit ist auch die Spannung Null. In jeder Masche ist die Summe aller Spannungen (Umlaufspannung) gleich Null.
-\begin{equation}
-\boxed{\displaystyle \sum_{k=1}^nU_k=0}
-\end{equation}
-Die Bezugspfeile für alle Spannungen sind entsprechend dem Umlaufsinn zu orientieren. Wenn der Bezugssinn einer Spannung nicht mit dem Umlaufsinn übereinstimmt, wird beim Aufstellen der Maschengleichung diese Spannung mit dem entsprechenden Vorzeichen versehen.
+\subsection{Spannungs- und Stromquellen}
+Von einer \textbf{idealen Gleichspannungsquelle} wird jedoch erwartet, dass sie die Spannung unabhängig von dem Belastungswiderstand zeitlich konstant hält. Eine Batterie bzw. ein Akkumulator mit hinreichend grosser Energiereserve kommt dieser Situation schon sehr nahe. Mit elektronischen Schaltungen, die die vom 230V-Netz angebotene Energie in eine Gleichspannung  umwandeln, lassen sich nahezu ideale Spannungsquellen realisieren.
 \newline\newline
-Ohmsches Gesetz, Knotensatz und Maschensatz sind drei grundlegende Gesetze, mit denen schon allgemeine Netzwerkprobleme gelöst werden können.
-\subsection{Leistung und Arbeit}
-Wird ein Leiter an eine Gleichspannung $U$ angeschlossen, so fliesst durch ihn ein Strom $I$. Ist $Q$ dabei die durch den Leiterquerschnitt hindurchtretende Ladung, so ist zum Überwinden des Leiterwiderstandes $R$ die Energie $W=Q\cdot U$ erforderlich, es muss also die Arbeit $W$ geleistet werden, um den Strom $I$ durch den Leiter aufrecht zu erhalten.
-\newline\newline
-Die Energie $W$ mit Einheit $\left([W]=\text{W}\,\text{s}=\text{J}=\text{N}\,\text{m}\right)$ muss von der speisenden Quelle als Energiequelle aufgebracht werden. Praktisch interessiert wie schnell diese Arbeit geleistet werden muss, das ist die Leistungsaufnahme $P$ mit Einheit $\left([P]=\text{W}\right)$ des betrachteten Leiters vom Widerstand $R$.
-\begin{equation}
-\boxed{P=\dfrac{W}{t}=\dfrac{Q\cdot U}{t}=\dfrac{U\cdot I\cdot \bcancel{t}}{\bcancel{t}}=U\cdot I=I^2\cdot R=\dfrac{U^2}{R}}
-\end{equation}
-Die in einem Widerstand verbrauchte Energie wird restlos in Wärme umgewandelt. Ein elektrischer Widerstand ist demnach ein Energiewandler, der elektrische Energie in Wärme oder mechanische Energie umwandelt.
-\newline\newline
-Die nutzbare abgegebene Leistung $P_{\text{ab}}$ ist um die Verlustleistung $P_{\text{verl}}$ kleiner als die zugeführte Leistung $P_{\text{zu}}$. Anstelle der Verluste wird häufig der \textbf{Wirkungsgrad} $\eta$ eines Gerätes angegeben
-\begin{equation}
-\boxed{P_{\text{zu}}=P_{\text{ab}}+P_{\text{Verl}}}\quad \boxed{\eta=\dfrac{P_{\text{ab}}}{P_{\text{zu}}}\leq 1}
-\end{equation}
+Für eine \textbf{ideale Spannungsquelle} gilt
+\begin{enumerate}[$(i)$]
+\item die Ausgangsspannung ist unabhängig von dem angeschlossenen Netzwerk.
+\item der Strom hängt von dem angeschlossenen Netzwerk ab und stellt sich z.B. im Falle eines ohmschen Widerstandes entsprechend der Beziehung $I=U/R$ ein.
+\end{enumerate}
+Für eine \textbf{ideale Stromquelle} gilt
+\begin{enumerate}[$(i)$]
+\item der Ausgangsstrom ist unabhängig von dem angeschlossenen Netzwerk.
+\item die Ausgangsspannung hängt von dem angeschlossenen Netzwerk ab und stellt sich im Falle eines ohmschen Widerstandes entsprechend der Beziehung $U=RI$ ein.
+\end{enumerate}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIId}}
+\centering
+\caption{Ideale Spannungs- und Stromquellen.}
+\label{fig_IIId}
+\end{figure}
 \subsection{Elemente von Stromkreisen}
 Zur Darstellung von Stromkreisen oder Netzwerken werden Symbole, Schaltzeichen und Konvenktionen benützt. Folgende Eintore bzw. Bauelemente werden verwendet: Spannungsquelle $U_q$, Stromquelle $I_q$ und Widerstand $R$. Diese Bauelemente stellen ein idealisiertes Verhalten dar und haben folgende Eigenschaften
 \begin{itemize}
@@ -228,9 +257,144 @@ Die einzelne Elemente sind durch \textbf{Linien} miteinander verbunden. Diese Ve
 In den \textbf{Knoten} sollen mindestens 3 Verbindungsleitungen zusammentreffen. Ein \textbf{Zweig} verbindet zwei Knoten
 \newline\newline
 Unter einer \textbf{Masche} versteht man einen in sich geschlossenen Kettenzug bzw. Ringschaltung von Zweigen und Knoten. Geht man von irgend einem Knoten aus, so durchwandert man eine Masche, wenn man, ohne irgend einen Zweig mehrfach zu durchlaufen, zum Ausgangspunkt zurückkehrt.
+\subsection{Zählpfeilsysteme}
+Ein Zählpfeilsystem am ohmschen Widerstand bei dem Strom und Spannung gleich gerichtet sind heisst \textbf{Verbraucherzählpfeilsystem}. Für $U>0$ wird der in die positive Anschlussklemme hineinfliessende Strom positiv gezählt.
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.75]{../img/IIIe}}
+\centering
+\caption{Generator- und Verbraucherzählpfeilsystem.}
+\label{fig_IIIe}
+\end{figure}
+\noindent Für die Quellen verwendet man üblichwerweise das \textbf{Generatorzählpfeilsystem}, bei dem Spannung und Strom entgegengesetzt gerichtet sind. Der aus der positiven Anschlussklemme herausfliessende Strom wird positiv gezählt. Diese Festlegung ist angepasst an den physikalischen Hintergrund, dass der Generator (Quelle) die Energie liefert, während der Verbraucher die Energie aufnimmt.
+\subsection{Das ohmsche Gesetz}
+In einem linearen Leiter sind Strom und Spannung zueinander proportional. Bei einem linearen Leiter ist der ihn durchfliessenden Strom der angelegten Spannung proportional und dem Leiterwiderstand gegenüber umgekehrt proportional.
+\begin{equation}
+\boxed{I\left(U\right)=\dfrac{U}{R}=U\cdot G}
+\end{equation}
+Das \textbf{ohmsche Gesetz} ist ein Grundgesetz des elektrischen Stromes in Leitern. Als ohmschen Widerstand bezeichnet man einen idealen Zweipol, bei dem das ohmsche Gesetz unabhängig von äusseren Einflüssen stets erfüllt ist. Ein ohmscher Widerstand ist ein linearer passiver Zweipol: seine $I$-$U$-Kennlinie ist eine Gerade.
+\subsection{Die Kirchhoffschen Gesetze}
+Eine der Hauptaufgaben der \textbf{Netzwerkanalyse} besteht darin, die Ströme und Spannungen an den einzelnen Zweipolen auszurechnen, sofern die verwendeten Netzwerkelemente (Widerstände, Kondensatoren, usw), ihre Verknüpfungen untereinander sowie die Quellen innerhalb des Netzwerkes bekannt sind.
+\newline\newline
+Die schwarz ausgefüllten Markierungspunkte oder \textbf{Knoten} in dem Netzwerk zeigen an, dass die Leitungen an dieser Stelle elektrisch leitend miteinander verbunden sind, z.B. durch Zusammenschrauben oder Verlöten. Die Kreisringe markieren diejenigen Punkte im Netzwerk, zwischen denen die eingezeichnete Spannung gemessen wird.
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.5]{../img/IIIf}}
+\frame{\includegraphics[scale=0.5]{../img/IIIg}}
+\frame{\includegraphics[scale=0.5]{../img/IIIh}}
+\centering
+\caption{Einfaches Netzwerk, Maschen- und Knotenregel.}
+\label{fig_IIIf}
+\end{figure}
+\noindent Zur allgemeinen Netzwerkanalyse werden offenbar weitere Bestimmungsgleichungen benötigt. Einen ersten Zusammenhang erhält man aus dem Umlaufintegral der elektrischen Feldstärke, welches entlang eines geschlossenen Weges verschwinden muss. Zur Verdeutlichung dieses Zusammenhangs betrachtet man eine \textbf{Masche} in dargestellten Netzwerk.
+\newline\newline
+\textbf{Knotensatz:} In jedem Knoten (auch Superknoten) ist die Summe der zufliessenden Ströme gleich der Summe der abfliessenden Ströme.
+\begin{equation}
+\boxed{\displaystyle \sum_{k=1}^nI_k=0}
+\end{equation}
+\textbf{Maschensatz:} Wird in einem Potentialfeld eine Ladung vom Ausgangspunkt $A$ aus bewegt und wieder zurück zum Punkt $A$ gebracht, so ist die verrichtete Arbeit Null und somit ist auch die Spannung Null. In jeder Masche ist die Summe aller Spannungen (Umlaufspannung) gleich Null.
+\begin{equation}
+\boxed{\displaystyle \sum_{k=1}^nU_k=0}
+\end{equation}
+Die Bezugspfeile für alle Spannungen sind entsprechend dem Umlaufsinn zu orientieren. Wenn der Bezugssinn einer Spannung nicht mit dem Umlaufsinn übereinstimmt, wird beim Aufstellen der Maschengleichung diese Spannung mit dem entsprechenden Vorzeichen versehen.
+\newline\newline
+Im Beispiel lauten die Gleichungen
+\begin{equation}
+\begin{array}{lll}
+I_{R_1}-I_{R_3}-I_{R_5}&=&0\\
+I_{R_3}+I_{R_4}-I_{R_2}&=&0\\
+U_{R_1}+U_{R_3}-U_{R_4}&=&0\\
+U_{R_3}+U_{R_2}-U_{R_5}&=&0\\
+U_{R_1}+U_{R_3}+U_{R_2}-U&=&0
+\end{array}
+\end{equation}
+\newline\newline
+Ohmsches Gesetz, Knotensatz und Maschensatz sind drei grundlegende Gesetze, mit denen schon allgemeine Netzwerkprobleme gelöst werden können.
+\subsection{Leistung und Arbeit}
+Wird ein Leiter an eine Gleichspannung $U$ angeschlossen, so fliesst durch ihn ein Strom $I$. Ist $Q$ dabei die durch den Leiterquerschnitt hindurchtretende Ladung, so ist zum Überwinden des Leiterwiderstandes $R$ die \textbf{Energie} $W=Q\cdot U$ erforderlich, es muss also die Arbeit $W$ geleistet werden, um den Strom $I$ durch den Leiter aufrecht zu erhalten.
+\newline\newline
+Die Energie $W$ mit Einheit $\left([W]=\text{W}\,\text{s}=\text{J}=\text{N}\,\text{m}\right)$ muss von der speisenden Quelle als Energiequelle aufgebracht werden. Praktisch interessiert wie schnell diese Arbeit geleistet werden muss, das ist die Leistungsaufnahme $P$ mit Einheit $\left([P]=\text{W}\right)$ des betrachteten Leiters vom Widerstand $R$.
+\begin{equation}
+\boxed{P=\dfrac{W}{t}=\dfrac{Q\cdot U}{t}=\dfrac{U\cdot I\cdot \bcancel{t}}{\bcancel{t}}=U\cdot I=I^2\cdot R=\dfrac{U^2}{R}}
+\end{equation}
+Die in einem Widerstand verbrauchte Energie wird restlos in Wärme umgewandelt. Ein elektrischer Widerstand ist demnach ein Energiewandler, der elektrische Energie in \textbf{Wärme} oder \textbf{mechanische Energie} umwandelt.
+\newline\newline
+Die nutzbare abgegebene Leistung $P_{\text{ab}}$ ist um die Verlustleistung $P_{\text{verl}}$ kleiner als die zugeführte Leistung $P_{\text{zu}}$. Anstelle der Verluste wird häufig der \textbf{Wirkungsgrad} $\eta$ eines Gerätes angegeben
+\begin{equation}
+\boxed{P_{\text{zu}}=P_{\text{ab}}+P_{\text{Verl}}}\quad \boxed{\eta=\dfrac{P_{\text{ab}}}{P_{\text{zu}}}\leq 1}
+\end{equation}
 \subsection{Einfache Schaltungen von Widerständen}
+Die Netzwerkanylsse kann dadurch vereinfacht werden, dass einzelne Teile eines Betzwerks vorab zusammengefasst werden. Dabei muss lediglich darauf geachtet werden, dass sich das Klemmenverhalten des neuen vereinfachten Netzwerks gegenüber dem ursprünglichen Netzwerk nicht ändert, d.h. beim Anlegen der gleichen Spannung an die Klemmen muss in beiden Fällen der gleiche Strom fliessen.
+\newline\newline
 Mit Hilfe von Knotensatz, Maschensatz und ohmsches Gesetz können nun für die Serienschaltung und Parallelschaltung von Widerständen einfache Regeln hergeleitet werden.
-\subsubsection{Serieschaltung von Widerständen - Spannungsteilung}
+\subsection{Reihenschaltung - Spannungsteiler}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.75]{../img/IIIk}}
+\centering
+\caption{Reihenschaltung von $n$ Widerständen.}
+\label{fig_IIIk}
+\end{figure}
+Bei einer \textbf{Reihenschaltung} werden alle Widerstände von dem gleichen Strom $I$ durchfliessen. Die gesamte anliegende Spannung $U_{\text{ges}}$ entsprechend dem Maschenumlauf setzt sich aus den Teilspannungen $U_k$ an den einzelnen Widerständen $R_k$ zusammen.
+\newline\newline
+Bei der Reihenschaltung von Widerstände, addieren sich die Werte der einzelnen Widerstände und der Gesamtwiderstand ist grösser als der grösste Einzelwiderstand.
+\begin{equation}
+\boxed{U_{\text{ges}}=\displaystyle \sum_{k=1}^nU_k=\displaystyle \sum_{k=1}^n\left(R_k\cdot I\right)=\underbrace{\left(\displaystyle \sum_{k=1}^nR_k\right)}_{R_{\text{ges}}}\cdot I}\quad \boxed{R_{\text{ges}}=\displaystyle \sum_{k=1}^nR_k}
+\end{equation}
+Fliesst der gleiche Strom durch mehrere in Reihe geschaltete Widerstände, dann stehen die Teilspannungen im gleichen Verhältnis wie die Teilwiderstände, an denen sie abfallen.
+\begin{equation}
+\boxed{\dfrac{U_i}{U_{i+1}}=\dfrac{R_i}{R_{i+1}}}\quad \boxed{\dfrac{U_i}{U_{\text{ges}}}=\dfrac{U_i}{\displaystyle \sum_{k=1}^n U_k}=\dfrac{\bcancel{I}\cdot R_i}{\bcancel{I}\cdot \displaystyle \sum_{k=1}^n R_k}=\dfrac{R_i}{R_{\text{ges}}}}
+\end{equation}
+Infolge des gleichen Stromes stehen die \textbf{Leistungen} an den Widerständen im gleichen Verhältnis zueinander wie die Spannungen und wie die Widerstände. Die an einem Widerstand entstehende Teilspannung wird als \textbf{Spannungsabfall} bezeichnet.
+\newline\newline
+Definiert man das Potential am Minusanschluss der Spannungsquelle als Bezugswert $V=0$, dann besitzt das Potential am positiven Anschluss den Wert $V=U$. Mit einem ortsunabhängigen Feldstärkeverlauf innerhalb der Widerstände nimmt das Potential linear ab und man erhält entlang der Reihenschaltung für ein angenommenes Widerstandsverhältnis dargestellten Potentialverlauf.
+\subsubsection{Beispiel einer Reihenschaltung}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIm}}\quad
+\frame{\includegraphics[scale=0.65]{../img/IIIn}}
+\centering
+\caption{Schaltung zur Spannungsteilung und Potentialverlauf.}
+\label{fig_IIIm}
+\end{figure}
+\textbf{Maschensatz:} $-U+U_1+U_2=0\Longrightarrow U=U_1+U_2$\\
+\textbf{Ohmsches Gesetz:} $U_1=R_1\cdot I\quad U_2=R_2\cdot I$\\
+\textbf{Verhältnis:} $\dfrac{U_1}{U_2}=\dfrac{R_1\cdot \bcancel{I}}{R_2\cdot \bcancel{I}}$\\
+\textbf{Verhältnis:} $\dfrac{U_2}{U}=\dfrac{U_2}{U_1+U_2}=\dfrac{R_2\cdot \bcancel{I}}{\left(R_1+R_2\right)\cdot \bcancel{I}}$
+\subsection{Parallelschaltung - Stromteiler}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.75]{../img/IIIl}}
+\centering
+\caption{Parallelschaltung von $n$ Widerständen.}
+\label{fig_IIIk}
+\end{figure}
+\noindent Bei der \textbf{Parallelschaltung} ist die Spannung $U$ an allen Widerständen gleich gross und der gesamte Eingangsstrom $I_{\text{ges}}$ setzt sich aus den Teilströmen $I_k$ durch die einzelnen Widerstände $R_k$ zusammen. Bei der Parallelschaltung ist die Verwendung der Leitwerte sinnvoll.
+\newline\newline
+Bei der Parallelschaltung berechnet sich der gesamte Leitwert aus der Summe der einzelnen Leitwerte und der Gesamtwiderstand ist kleiner als der kleinste Einzelwiderstand.
+\begin{equation}
+\boxed{I_{\text{ges}}=\displaystyle \sum_{k=1}^nI_k=\displaystyle \sum_{k=1}^n\left(\dfrac{U}{R_k}\right)=U\cdot \underbrace{\left(\displaystyle \sum_{k=1}^n\dfrac{1}{R_k}\right)}_{G_{\text{ges}}}}\quad \boxed{R_{\text{ges}}=\dfrac{1}{G_{\text{ges}}}=\dfrac{1}{\displaystyle \sum_{k=1}^n\dfrac{1}{R_k}}=\dfrac{\displaystyle \prod_{k=1}^nR_k}{\displaystyle \sum_{k=1}^nR_k}}
+\end{equation}
+\begin{equation}
+\boxed{\dfrac{I_i}{I_{i+1}}=\dfrac{G_i}{G_{i+1}}=\dfrac{R_{i+1}}{R_i}}\quad \boxed{\dfrac{I_i}{I_{\text{ges}}}=\dfrac{I_i}{\displaystyle \sum_{k=1}^nI_k}=\dfrac{\bcancel{U_i}\cdot \dfrac{1}{R_i}}{\bcancel{U_i}\cdot \displaystyle \sum_{k=1}^n\dfrac{1}{R_k}}=\dfrac{G_i}{G_{\text{ges}}}}
+\end{equation}
+\noindent Für den Sondernfall mit nur zwei parallel geschalteten Widerständen gilt
+\begin{equation}
+\boxed{R_{\text{ges}}=\dfrac{R_1\cdot R_2}{R_1+R_2}}
+\end{equation}
+Für den Sondernfall mit $n$ parallel gleiche geschalteten Widerständen gilt
+\begin{equation}
+\boxed{R_{\text{ges}}=\dfrac{R}{n}}
+\end{equation}
+Liegt die gleiche Spannung an mehreren parallel geschachtelten Widerständen, dann stehen die Ströme im gleichen Verhältnis wie die Leitwerte, die sie durchfliessen. Die \textbf{Leistungen} an den Widerständen verhalten sich wegen der gleichen Spannung wie die Ströme durch die Widerstände und stehen im gleichen Verhältnis wie die Leitwerte.
+\subsubsection{Beispiel einer Parallelschaltung}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.75]{../img/IIIr}}
+\centering
+\caption{Schaltung zur Stromleitung.}
+\label{fig_IIIr}
+\end{figure}
+\textbf{Knotensatz:} $-I+I_1+I_2=0\Longrightarrow I=I_1+I_2$\\
+\textbf{Ohmsches Gesetz:} $I_1=\dfrac{U}{R_1}\quad I_2=\dfrac{U}{R_2}$\\
+\textbf{Verhältnis:} $\dfrac{I_1}{I_2}=\dfrac{R_2}{R_1}=\dfrac{G_1}{G_2}$\\
+\textbf{Verhältnis:} $\dfrac{I_2}{I}=\dfrac{R_1}{R_1+R_2}=\dfrac{G_2}{G_1+G_2}$
+\begin{comment}
+\subsection{Serieschaltung von Widerständen - Spannungsteilung}
 Anwendung des Maschensatzes und des ohmsches Gesetzes liefert in einer Serienschaltung
 \begin{equation}
 \boxed{\displaystyle \sum_{k=1}^nU_k-U_q=\displaystyle \sum_{k=1}^nI\cdot R_k-U_q=I\cdot \underbrace{\displaystyle \sum_{k=1}^nR_k}_{R_E}-U_q=0\Longrightarrow U_q=I\cdot R_E}
@@ -240,7 +404,7 @@ Damit ergibt sich für den \textbf{Ersatzwiderstand} $R_E$ und für das Verhält
 \boxed{R_E=\displaystyle \sum_{k=1}^nR_k}\quad \boxed{\dfrac{U_k}{U_q}=\dfrac{I\cdot R_k}{I\cdot R_E}=\dfrac{R_k}{R_E}}
 \end{equation}
 Bei in Serie geschalteten Widerständen ist der Ersatzwiderstand die Summe der einzelnen Widerstände. Bei in Serie geschalteten Widerständen teilt sich die Spannung direkt proportional zu jedem Widerstand.
-\subsubsection{Parallelschaltung von Widerständen - Stromteilung}
+\subsection{Parallelschaltung von Widerständen - Stromteilung}
 Anwendung des Knotensatzes und des ohmschen Gesetzes liefert in einer Parallelschaltung
 \begin{equation}
 \boxed{\displaystyle \sum_{k=1}^n I_k-I_q=\displaystyle \sum_{k=1}^n \dfrac{U}{R_k}-I_q=U\cdot \underbrace{\displaystyle \sum_{k=1}^n \dfrac{1}{R_k}}_{G_E}-I_q=0\Longrightarrow I_q=U\cdot G_E}
@@ -250,6 +414,71 @@ Damit ergibt sich für den \textbf{Ersatzleitwert} $G_E$ und für das Verhältni
 \boxed{G_E=\displaystyle \sum_{k=1}^n\dfrac{1}{R_k}}\quad \boxed{\dfrac{I_k}{I_q}=\dfrac{U\cdot G_k}{U\cdot G_E}=\dfrac{G_k}{G_E}=\dfrac{R_E}{R_k}}
 \end{equation}
 Bei parallel geschalteten Widerständen ist der Ersatzleitwert die Summe der einzelnen Leitwerte. Bei parallel geschalteten Widerständen teilt sich der Strom direkt proportional zu den Leitwerten bzw. indirekt proportional zu jedem Widerstand.
+\end{comment}
+\subsection{Anwendungen der Schaltungen}
+\subsubsection{Der belastete Spannungsteiler}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIo}}
+\frame{\includegraphics[scale=0.55]{../img/IIIp}}
+\centering
+\caption{\textbf{\textit{Links:}} Belasteter Spannungsteiler. \textbf{\textit{Rechts:}} Ausgangsspannung am belasteten Spannungsteiler für $R_1+R_2=10k\Omega$}
+\label{fig_IIIo}
+\end{figure}
+\noindent Die Spannung an dem Schleifkontakt eines Potentiometers soll mit einem realen \textbf{Spannungsmessgerät} (Voltmeter) gemessen werden. Dabei ist zu beachten, dass fast alle Spannungsmessgeräte von einem kleinen Strom durchflossen werden, der die in \textbf{Gleichung des Spannungsteilers} berechnete Spannungsteilung beeinflusst und das Messergebnis verfälscht. Diese Einfluss kann man erfassen, indem man das reale Messgerät durch ein ideales Messgerät mit unendlich grossem Innenwiderstand und zusätzlich durch einen parallel geschalteten Widerstand $R_V$ ersetzen.
+\noindent Die Berechnung der resultierenden Spannung $U_2$ wird wesentlich vereinfacht, wenn man die Parallelschaltung der beiden WIderstände $R_2$ und $R_V$ durch einen neuen Widerstand $R_{\text{par}}$ ersetzen und die Spannung $U_2$ aus der Reihenschaltung von $R_1$ und $R_{\text{par}}$ bestimmen.
+\begin{equation}
+\boxed{R_{\text{par}}=\dfrac{R_2\cdot R_V}{R_2+R_V}}\quad \boxed{\dfrac{U_2}{U}=\dfrac{R_{\text{par}}}{R_1+R_{\text{par}}}}
+\end{equation}
+\subsubsection{Messbereich eines Spannungsmessgerätes}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIq}}
+\centering
+\caption{Voltmeter mit Vorwiderstand.}
+\label{fig_IIIs}
+\end{figure}
+\noindent Ein Anwendungsbeispiel für den Spannungsteiler ist die Messbereichserweiterung eines Voltmeters. Soll mit dem Messgerät eine Spannung $U$ gemessen werden, die die maximal zulässige Spannung am Voltmeter $U_{\text{max}}$ überschreitet, dann kann die zu messende Spannung mit einem in Serie geschalteten Vorwiderstand $R_S$ heruntergeteilt weerden. Der Wert des Vorwiderstandes kann mit Hilfe der \textbf{Gleichung des Spannungsteilers} berechnet werden.
+\begin{equation}
+\boxed{\dfrac{U_{\text{max}}}{U}=\dfrac{R_V}{R_S+R_V}}
+\end{equation}
+\subsubsection{Messbereich eines Strommessgeräts}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIs}}
+\centering
+\caption{Ampèremeter mit Parallelwiderstand.}
+\label{fig_IIIs}
+\end{figure}
+\noindent Zur Messung eines Stromes wird das \textbf{Ampèremeter} in den Strompfad geschaltet, sein Innenwiderstand  $R_A$ sollte daher möglichst gering sein, um das Messergebnis nur wenig zu beeinflussen. Soll ein Strom gemessen werden, der den maximal zulässigen Bereich des Ampèremeters $I_{\text{max}}$ überschreitet, dann kann der Gesamtstrom $I$ durch einen parallel geschalteten Widerstand heruntergeteilt werden. Der Wert des Parallelwiderstandes kann mit Hilf der \textbf{Gleichung des Stromleiters} berechnet werden.
+\begin{equation}
+\boxed{\dfrac{I_{\text{max}}}{I}=\dfrac{R_P}{R_P+R_A}}
+\end{equation}
+\subsubsection{Widerstandsmessung}
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIt}}
+\centering
+\caption{Korrekte Spannungsmessung.}
+\label{fig_IIIu}
+\end{figure}
+Bei der obigen Schaltung wird die Spannung am Widerstand richtig erfasst, dass Ampèremeter misst allerdings nicht nur den Strom $I_R$ durch den Widerstand, sondern zusätzlich auch noch den Strom $I_V$ durch das Voltmerer. Für den Widerstandswert $R$ erhält man
+\begin{equation}
+\boxed{R=\dfrac{U_R}{I_R}=\dfrac{U_V}{I_A-I_V}=\dfrac{U_V}{I_A-U_V/R_V}=\dfrac{U_VR_V}{I_AR_V-U_V}}
+\end{equation}
+Der Innenwiderstand des Ampèremeters spielt bei dieser Messanordnung keine Rolle. Im Falle eines idealen Voltmeters $R_V\rightarrow \infty$ vereinfacht sich die obige Gleichung auf den Zusammenhang $R=U_V/I_A$, d.h. der Wert $R$ kann direkt aus den beiden Messwerten berechnet werden.
+\begin{figure}[H]
+\frame{\includegraphics[scale=0.65]{../img/IIIu}}
+\centering
+\caption{Korrekte Spannungsmessung.}
+\label{fig_IIIu}
+\end{figure}
+\noindent Bei den alternativen Messanordnung wird der Strom durch den Widerstand richtig gemessen, allerdings wird jetzt der Spannungsabfall $U_A$ am Innenwiderstand des Ampèremeters bei der Spannungsmessung miterfasst. Den Widerstandswert erhält man aus der Bezeichnung
+\begin{equation}
+\boxed{R=\dfrac{U_R}{I_R}=\dfrac{U_V-U_A}{I_A}=\dfrac{U_V-R_AI_A}{I_A}}
+\end{equation}
+In diesem Fall spielt der Innenwiderstand des Voltmeters keine Rolle. Im Falle eines idealen Ampèremeters $R_A\rightarrow 0$ vereinfacht sich die obige Gleichung auf den Zusammenhang $R=U_V/I_A$, d.h. der Wert $R$ kann wieder direkt aus den beiden Messwerten berechnet werden.
+\newline\newline
+Allgemein stellt man sich die Aufgabe, den ohmschen Widerstand $R$ eines Bauteils durch gleichzeitige Strom- und Spannungsmessung und mit Hilfe des Ohm'-schen Gesetzes zu bestimmen. Da das Ampèremeter den Strom durch den Widerstand messen soll, muss es in Reihe zum Widerstand geschaltet werden. Zur Erfassung der Spannung am Widerstand muss das Voltmeter aber parallel zum Widerstand angeschlossen werden.
+
+
+
 \subsection{Quellen, Ersatzschaltungen und Kennlinien}
 Man betrachte ein beliebiges Netzwerk aus Widerständen, Spannungs- und Stromquellen besteht. Nun wird das Netzwerk an zwei Klemmen zugänglich gemacht. Belastet man jetzt das Netzwerk, so sind $U_a$ und $I_a$ linear voneinander abhängig (Gerade in $U$-$I$-Kennlinie).
 \newline\newline
@@ -372,20 +601,69 @@ Einführen von zwei zusätzliche Klemmen und Umzeichen der Quelle. Blickt man vo
 Überlagerung bedeutet, jede Ursache (fliessende Ströme $I_k$, Spannungsquellen $U_k$) wirkt einzeln im Netzwerk. Die Gesamtwirkung erhält man durch Addition der einzelnen Wirkungen. Die Methoden macht nur Sinn, wenn mehrere Quellen beteiligt sind.
 \newline\newline
 Dabei gelten Konvenktionen: Erster Index ist der Ort, wo der Ursache gemessen wird. Zweiter Index ist der Ort, wo die Ursache wirkt. So gilt $U_{xy}$ die Spannung $U_x$ verursacht durch die Ursache $U_y$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{Knotenpotentialverfahren}
+Die Einströmungen $I_i$ eines Netzwerks sind gegeben und die Potentiale $V_i$ der Knoten sind die unbekannten Grössen. Die Knoten werden nummeriert und jeder Knoten erhält sein Knotenpotential. Ebenso erhält jeder Knoten eine Einströmung. Für die Netzwerkelemente trägt man Leitwerte ein.
+\newline\newline
+Für jeden Knoten wird jetzt der \textbf{Knotensatz} formuliert, d.h. der zufliessende Strom ist gleich der Summe der wegfliessenden Ströme. Die Ströme in den Zweigen werden durch die Potentialdifferenzen (Spannungen) und die Leitwerte $G_i$ ausgedrückt (Ohmsches Gesetz). Danach ordnet man das Gleichungssystem um und sortiert nach den Knotenpotentialen, so ergibt sich
+\begin{equation}
+\boxed{Y_{UAM}\cdot \overrightarrow{V}=\overrightarrow{I}}
+\end{equation}
+wobei $Y_{UAM}$ eine unbestimmte Admittanzmatrix (UAM) mit den Leitwerten $G_i$, $\overrightarrow{V}$ ein Spaltenvektor mit den Potentialen $V_i$ und $\overrightarrow{I}$ ein Spaltenvektor mit den Einströmungen $I_i$ sind. Folgende sind Eigenschaften der $Y_{UAM}$:
+\newline\newline
+Die Summe aller Elemente einer Zeile von $Y_{UAM}$ ist Null. Die Summe aller Elemente einer Spalte von $Y_{UAM}$ ergibt Null. Die Elemente der $i$-te Zeile und $i$-te Spalte von $Y_{UAM}$ sind identisch. Alle Elemente auf der Hauptdiagonalen von $Y_{UAM}$ sind positiv, restliche Elemente sind alle negativ. Auf der Hauptdiagonalen steht die Summe aller am Knoten $i$ angeschlossener Leitwerte. Das Element $\left(j,k\right)$ enthält den negativen Leitwert, der die Knoten $j$ und $k$ verbindet. Die Summe aller am Knoten $i$ angeschlossener Leitwerte heisst Eignleitwert des Knoten $i$. Die Summe aller Leitwerte, die Knoten $j$ und $k$ verbinden heisst Koppelleitwert zwischen Knoten $j$ und Knoten $k$. Fehlt eine Verbindung zwischen Knoten $j$ und $k$, so trägt man eine Null an der entsprechenden Stelle $\left(j,k\right)$ in der $Y_{UAM}$ ein
+\newline\newline
+Um die Lösungsmenge eindeutig zu machen, muss ein Potentialnullpunkt festgelegt werden. Der Ort des Potentialnullpunktes ist frei und kann willkürlich gewählt werden. Sinnvollerweise wählt man eiinen Netzwerkknoten als Potentialnullpunkt. Durch die Wahl eines Knotens zum Potentialnullpunkt wird sein Potentail im Gleichungsystem Null. Dadurch lassen sich im Gleichungssystem eine Spalte und eine Zeile streichen.
+\newline\newline
+Folgende Schema zeigt die Vorgehensweise der Methode
+\begin{enumerate}
+\item Netzwerk so umzeichnen/umwandeln, dass nur doch Einströmungen als Quellen vorliegen.
+\item Knoten des Netzwerkes numerieren.
+\item bezugspfeile für EInströmungen einheitlich definieren
+\item Aufstellen der $Y_{UAM}$.
+\item Kontrolle der $Y_{UAM}$
+\item Einströmungsvektor aufstellen
+\item Potentialnullpunkt wählen und entsprechende Zeile und Spalte streichen
+\item Gleichungssystem numerisch lösen
+\item Diskussion
+\end{enumerate}
+\subsection{Maschenstromverfahren}
+Die Spannungen eines Netzwerks sind gegeben und die Maschenströme sind die unbekannten Grössen. Die Maschen werden nummeriert und erhalten einen Umlaufsinn (identisch für alle Maschen). Für die Netzwerkelemente trägt man Widerstände ein.
+\newline\newline
+Für jede Masche wird der \textbf{Maschensatz} formuliert, d.h. die Umlaufspannung in jeder Masche ist gleich Null. Die Teilspannungen werden durch die Maschenströme und die Widerstände ausgedrückt (Ohmsches Gesetz). Ordnet man alle Gleichungen um und sortiert man nach den Maschenströmen so ergibt sich
+\begin{equation}
+\boxed{Z_{KIM}\cdot \overrightarrow{I}=\overrightarrow{U}}
+\end{equation}
+Wobei $Z_{KIM}$ die Kreisimpendanzmatrix ist, $\overrightarrow{I}$ der Spaltenvektor mit Maschenströmen und $\overrightarrow{U}$ der Spaltenvektor mit Spannungsquellen.
+\newline\newline
+Die Kreisimpendanzmatrix weist einige besondere Eigenschaften auf: die $i$-te Zeile und die $i$-te Spalte sind identisch. Alle Elemente auf der Hauptdiagonalen sind positiv, die restliche Elemente sind alle negativ. Auf der Hauptdiagonalen $\left(i, i\right)$ steht die Summe aller Widerstände in der Masche $i$. Das Element $\left(j.k\right)$ enthält den gemeinsamen Widerstand der Maschen $j$ und $k$. Das Vorzeichen des Koppelwiderstandes in der Matrix hängt von den angenommenen Umlaufsrichtungen der beiden beteiligten Maschen ab.
+\newline\newline
+Folgende Schema zeigt die Vorgehensweise der Methode
+\begin{enumerate}
+\item Netzwerk so umzeichnen/umwandeln, dass nur noch Spannungsquellen vorliegen
+\item Maschenströme mit Umlaufsrichtung einführen
+\item Aufstellen der $Z_{KIM}$
+\item Kontrolle der $Z_{KIM}$
+\item Spannugsquellenvektor aufstellen
+\item Gleichungssystem numerisch lösen
+\item Diskussion
+\end{enumerate}
+\subsection{Dualität}
+Von äquivalenten $n$-Toren spricht man, wenn sich zwei $n$-Tore bezüglich ihrer Klemmen nach aussen identisch verhaltne. Dabei dürfen an den Klemmen beliebige Experimente durchgeführt werden.
+\newline\newline
+Eine häufig verwendete Verwandschaft von Netzwerken ist die \textbf{Dualität}. Zwei Netzwerke heissen \textbf{dual}, wenn sich die Ströme in einem Netzwerk genau so verhalten wie die Spannungen im anderen Netzwerk. Die Spannungen in einem Netzwerk verhalten sich dann genau so wie die Ströme in anderem Netzwerk.
+\newline\newline
+Betrachtet man ein Originalnetzwerk und das zugehörige duale Netzwerk, so gelten folgende Beziehungen
+\begin{equation}
+\boxed{\begin{array}{lll}
+\text{Originalnetzwerk}&&\text{duales Netzwerk}\\\\
+\text{Spannungen}&\Longleftrightarrow & \text{Strom}\\
+\text{Widerstand}&\Longleftrightarrow & \text{Leitwert}\\
+\text{Spule}&\Longleftrightarrow & \text{Kondensator}\\
+U\text{-Quelle}&\Longleftrightarrow & I\text{-Quelle}\\
+\text{Serieschaltung}&\Longleftrightarrow & \text{Parallelschaltung}\\
+\text{Leerlauf}&\Longleftrightarrow & \text{Kurzschluss}\\
+\text{Masche}&\Longleftrightarrow & \text{Knoten}\\
+\end{array}}
+\end{equation}
 
 
